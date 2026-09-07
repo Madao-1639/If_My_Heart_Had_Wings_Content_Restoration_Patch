@@ -1,0 +1,4735 @@
+{
+  "script": "SL_HUT_001",
+  "source": "RIO",
+  "total": 788,
+  "texts": [
+    {
+      "lng_idx": 0,
+      "text": "「姉さん、見て。とっても濃厚なミルクがこの中に……\\n　……それにすごく大きい。姉さん、そっちはどう？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 1,
+      "text": "「だ、だめ依瑠ちゃん……そんな風に触ったら……\\n　あぁっ！　スイッチ……入っちゃう……ああっ！\\n　そんな……ダメ……！　かき回されちゃ……ひゃぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 2,
+      "text": "「…………あ、あの、二人とも」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 3,
+      "text": "「こんなこってり濃厚ミルクが、卵と出会っちゃったら……\\n　あぁぁ……もう我慢できませんっ！\\n　先輩っ、わたしに……ください……！」%K%P",
+      "text_with_name": "%LC碧「こんなこってり濃厚ミルクが、卵と出会っちゃったら……\\n　あぁぁ……もう我慢できませんっ！\\n　先輩っ、わたしに……ください……！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 4,
+      "text": "「あァっ！　こんなのわたし、知らな……ひゃぁぁっ！\\n　す、すごい……こんな風にされたら……あぁっ！\\n　わたしにも……先輩っ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 5,
+      "text": "「あの、ちょっと二人に言いたいことがあるんだけど……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 6,
+      "text": "「先輩、ホントありがとうございます」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 7,
+      "text": "「なんだか申し訳ないです。\\n　付き合ってもらった上に、買ってもらっちゃうなんて」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 8,
+      "text": "「いやいや、気にしないでいいよ。\\n　ほんの心ばかりのプレゼントだと思ってくれれば。\\n　それよりもさ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 9,
+      "text": "「前々から目をつけてたんですよ……このハンドミキサー。\\n　つい興奮しちゃって……はぁ、ずっとずっと……\\n　ううん、一生大事に使いますからね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 10,
+      "text": "「きっととびっきりのホイップクリームができますよ。\\n　スペシャルなスイーツご馳走するので、\\n　楽しみにしててくださいね、先輩」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 11,
+      "text": "「うん、楽しみにしてるよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 12,
+      "text": "晴れの日曜、ショッピングモール。今日は絶好のお出掛け日和。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 13,
+      "text": "日頃の息抜きも兼ねて、俺達は三人でショッピングモールへ繰り出していた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 14,
+      "text": "デート。それも三人でのトリプルデートだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 15,
+      "text": "たしかに俺達の付き合いは周りからすれば不純かもしれないけど、今のところ大きなトラブルもなく楽しくやっている%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 16,
+      "text": "「じゃあ先輩、次は……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 17,
+      "text": "「ダメだよ、依瑠ちゃん、次はわたしの番なんだから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 18,
+      "text": "「痛たたた……引っ張らないで」%K%P",
+      "text_with_name": "%LC亜紗「痛たたた……引っ張らないで」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 19,
+      "text": "「いいじゃない。\\n　姉さんは昨日いっぱい独り占めしたんだから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 20,
+      "text": "「そんなことないもん。\\n　途中で依瑠ちゃん邪魔したじゃないっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 21,
+      "text": "ここしばらくで、二人の性格は少しだけ変わったような気がする。%K%P",
+      "text_with_name": "%LC亜紗ここしばらくで、二人の性格は少しだけ変わったような気がする。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 22,
+      "text": "亜紗ちゃんも依瑠ちゃんも、以前にも増して積極的になって……なんというか、スキンシップが滅茶苦茶激しくなった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 23,
+      "text": "おかげさまで、奇異の目というか、憎しみにも近い視線が痛いほど突き刺さってくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 24,
+      "text": "だって――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 25,
+      "text": "「もう、先輩……\\n　そんな困った顔しないでくださいよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 26,
+      "text": "「さっきから笑顔引きつってますよっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 27,
+      "text": "「い、いや……だってさ」%K%P",
+      "text_with_name": "%LC亜紗「い、いや……だってさ」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 28,
+      "text": "絡んだ両腕に感じる柔らかな感触。%K%P",
+      "text_with_name": "%LC碧絡んだ両腕に感じる柔らかな感触。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 29,
+      "text": "近すぎる距離。鼻をくすぐる二人の甘い香り。%K%P",
+      "text_with_name": "%LC碧近すぎる距離。鼻をくすぐる二人の甘い香り。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 30,
+      "text": "寮を出てからずっと両手に花状態で俺は二人に挟まれているのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 31,
+      "text": "「（気づいてくれ、二人とも。周りの目を……！）」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 32,
+      "text": "「せっかくのデートなんだからもっと楽しみましょうよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 33,
+      "text": "ふにふにと腕に胸を押し付け、妖しく囁く依瑠ちゃん。%K%P",
+      "text_with_name": "%LC依瑠ふにふにと腕に胸を押し付け、妖しく囁く依瑠ちゃん。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 34,
+      "text": "「そうですよ、先輩っ。\\n　楽しい時間はあっという間なんですから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 35,
+      "text": "負けじと亜紗ちゃんも押し付けてくる。%K%P",
+      "text_with_name": "%LC亜紗負けじと亜紗ちゃんも押し付けてくる。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 36,
+      "text": "「そ、そうだね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 37,
+      "text": "苦笑いを浮かべる俺。%K%P",
+      "text_with_name": "%LC碧苦笑いを浮かべる俺。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 38,
+      "text": "「むっ！　依瑠ちゃん！\\n　ちょっと先輩にくっつきすぎじゃない？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 39,
+      "text": "「姉さんだって人のこと言えないでしょ？\\n　明らかに度を超してるし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 40,
+      "text": "「そんなことないもん。\\n　依瑠ちゃんは独占禁止法に抵触するレベルだもん！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 41,
+      "text": "「姉さんは不可侵条約破棄っ！　宣戦布告してるっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 42,
+      "text": "「むむむむむ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 43,
+      "text": "一体これはなんの争いなんだ……。%K%P",
+      "text_with_name": "%LC亜紗・依瑠一体これはなんの争いなんだ……。%K%P",
+      "char_name": "亜紗・依瑠"
+    },
+    {
+      "lng_idx": 44,
+      "text": "「まぁまぁ、二人とも。ちょっと落ち着いて――」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 45,
+      "text": "「先輩は黙っててくださいっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 46,
+      "text": "「っう……うぐぅ……」%K%P",
+      "text_with_name": "%LC亜紗・依瑠「っう……うぐぅ……」%K%P",
+      "char_name": "亜紗・依瑠"
+    },
+    {
+      "lng_idx": 47,
+      "text": "「ハァ……\\n　だいたい先輩が煮え切らないのがいけないんですよ。\\n　えっちのときだって、いつもどっちからするか悩んでるし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 48,
+      "text": "「３人でするのもいいですけど……\\n　たまには２人きりで愛し合いたいですっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 49,
+      "text": "「ハハ、アハハ……」%K%P",
+      "text_with_name": "%LC亜紗「ハハ、アハハ……」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 50,
+      "text": "なんだろう……まるで爆発しろと訴えかけられているようなこの重圧。%K%P",
+      "text_with_name": "%LC碧なんだろう……まるで爆発しろと訴えかけられているようなこの重圧。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 51,
+      "text": "「笑って誤魔化そうとしないで――うわっ、なにこれ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 52,
+      "text": "「ん？　おぉっ！　すごい行列」%K%P",
+      "text_with_name": "%LC依瑠「ん？　おぉっ！　すごい行列」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 53,
+      "text": "目線の先にずらりと並ぶ人、人、人。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 54,
+      "text": "しかも、よく見ると男性ばかり。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 55,
+      "text": "なんだろう、アイドルのイベントでもやってるのだろうか？%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 56,
+      "text": "「メイド喫茶オープンって書いてあります。\\n　へぇ、この町にもついにできたんですね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 57,
+      "text": "「ふぅん、メイド喫茶ねぇ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 58,
+      "text": "そのまま通り過ぎようとすると――、%K%P",
+      "text_with_name": "%LC碧そのまま通り過ぎようとすると――、%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 59,
+      "text": "「わぁっ！　見てください、先輩っ！\\n　メイドさんがいますよぉ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 60,
+      "text": "アンティーク調の店から小柄なメイドさんがひょっこり現れた。%K%P",
+      "text_with_name": "%LC亜紗アンティーク調の店から小柄なメイドさんがひょっこり現れた。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 61,
+      "text": "「おおっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 62,
+      "text": "透きとおるような白い肌、黒髪、舌足らずな声。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 63,
+      "text": "そして、ヒラヒラのメイド服。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 64,
+      "text": "絵に描いたようなかわいらしいメイドさんだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 65,
+      "text": "「かわいいぃ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 66,
+      "text": "彼女は「いってらっしゃいませ、ご主人様」とかわいらしい声でお見送りすると、笑顔を振りまきながら、店の中に消えていった。%K%P",
+      "text_with_name": "%LC亜紗彼女は「いってらっしゃいませ、ご主人様」とかわいらしい声でお見送りすると、笑顔を振りまきながら、店の中に消えていった。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 67,
+      "text": "「うわぁ！　メイドさんですよ！　メイドさん！\\n　この町にもとうとうやってきたんですね、メイドさん！\\n　あうぅ～、かわいかったですねぇ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 68,
+      "text": "「あぁ、すごくかわいかったね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 69,
+      "text": "「わたし、初めて見ました。生メイドさん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 70,
+      "text": "「俺も初めてだよ、生メイドさん……」%K%P",
+      "text_with_name": "%LC亜紗「俺も初めてだよ、生メイドさん……」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 71,
+      "text": "どんな時でも笑顔を絶やさず、ご主人様の帰りを待って送り出してくれるあのメイドさんの健気さ。%K%P",
+      "text_with_name": "%LC碧どんな時でも笑顔を絶やさず、ご主人様の帰りを待って送り出してくれるあのメイドさんの健気さ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 72,
+      "text": "……可憐だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 73,
+      "text": "「…………先輩、鼻の下伸びてますよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 74,
+      "text": "「――っ！　そ、そんなことはないよ。べ、\\n　別にメイドさんに興味なんて……」%K%P",
+      "text_with_name": "%LC依瑠「――っ！　そ、そんなことはないよ。べ、\\n　別にメイドさんに興味なんて……」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 75,
+      "text": "「先輩っ、折角ですから行ってみましょうよ！\\n　生メイドさんに会いに行きましょう！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 76,
+      "text": "「うん、そこまで言うなら行くしかないよねっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 77,
+      "text": "「じぃぃぃぃぃぃぃぃぃぃぃぃ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 78,
+      "text": "うっ……そんなジト目で睨まないで……。%K%P",
+      "text_with_name": "%LC依瑠うっ……そんなジト目で睨まないで……。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 79,
+      "text": "「はぁ……男って単純なんですね。\\n　わたしは行きたくないです」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 80,
+      "text": "「えぇー、ちょっとだけ寄ってみようよ～\\n　メイドさんだよ、メイドさん。\\n　生メイドさん間近で見れるんだよ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 81,
+      "text": "「……知らない。そんなに行きたいなら二人でどうぞっ。\\n　…………わたし、先行きますから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 82,
+      "text": "「あっ……行っちゃった。そんな怒らなくてもいいのに」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 83,
+      "text": "「仕方ないね……メイド喫茶はまた今度ということで。\\n　おーい、待ってよ依瑠ちゃんっ！」%K%P",
+      "text_with_name": "%LC亜紗「仕方ないね……メイド喫茶はまた今度ということで。\\n　おーい、待ってよ依瑠ちゃんっ！」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 84,
+      "text": "大股でズンズン進んで行く依瑠ちゃんの背中を小走りで追う。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 85,
+      "text": "……う～ん、ちょっと行ってみたかったな、メイド喫茶。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 86,
+      "text": "「わっ、安っ……鍵なんてオモチャみたいだし……。\\n　この自転車大丈夫なのかしら？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 87,
+      "text": "「きっと、盗まれてもいいようにこの価格なのよ、\\n　依瑠ちゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 88,
+      "text": "「なるほどね……どうりで作りが粗雑なのね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 89,
+      "text": "「（いや、これ普通のママチャリなんですけど……）」%K%P",
+      "text_with_name": "%LC依瑠「（いや、これ普通のママチャリなんですけど……）」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 90,
+      "text": "メイド喫茶を通り過ぎ、俺達が次に向かったのは激安の殿堂ド○キ。%K%P",
+      "text_with_name": "%LC碧メイド喫茶を通り過ぎ、俺達が次に向かったのは激安の殿堂ド○キ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 91,
+      "text": "二人は店先に出ている自転車が物珍しいのか、さらっとお嬢様トークを繰り広げながら興味津々に品定めしていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 92,
+      "text": "依瑠ちゃんも、どうにか機嫌を取り戻してくれたみたいだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 93,
+      "text": "「でも、こういう形の自転車だったら二人で乗れるよね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 94,
+      "text": "「こんな自転車二人でなんか乗ったら危ないわよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 95,
+      "text": "「依瑠ちゃんはわかってないな。ほら、よくあるじゃない。\\n　ドラマとか漫画とかで女の子が後ろに乗って、\\n　……こう、寄りかかって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 96,
+      "text": "「むっ……ダメよ、そんなの。わたしが乗れないじゃない。\\n　……三人で乗れるのはないのかしら？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 97,
+      "text": "「あ、そっかっ！\\n　すみませーん、店員さん。三人で乗れるのありませんか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 98,
+      "text": "いや、そんなの観光用のしかないから。というか、縦一列で乗ってどうするんだろう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 99,
+      "text": "……やっぱりこの二人はどこか世間とズレてるよな。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 100,
+      "text": "そんな二人の微笑ましい様子を尻目に、ふらふら歩いていると、%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 101,
+      "text": "「……むっ、これはっ！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 102,
+      "text": "ある商品の前でぴたりと足が止まった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 103,
+      "text": "ヒラヒラのスカートと、眩いほど白いエプロン。そして付属品のヘッドドレスの特殊な衣装一式セット。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 104,
+      "text": "まぎれもなくそれは――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 105,
+      "text": "「メイド服……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 106,
+      "text": "湧いた生唾をごくりと飲み込み、わきゃわきゃはしゃいでいる二人をちらりと見る。%K%P",
+      "text_with_name": "%LC碧湧いた生唾をごくりと飲み込み、わきゃわきゃはしゃいでいる二人をちらりと見る。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 107,
+      "text": "たしかにさっきのメイドさんも可愛かったけれど、二人の方が断然メイド映えすること間違いなしだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 108,
+      "text": "これを二人に着せることができたら……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 109,
+      "text": "「……いい。すごく、いい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 110,
+      "text": "思わず値札に手を伸ばしてしまったのだが……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 111,
+      "text": "「た、高いっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 112,
+      "text": "しかも買うとしたら当然二着購入しなければならない。%K%P",
+      "text_with_name": "%LC碧しかも買うとしたら当然二着購入しなければならない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 113,
+      "text": "……残念ながら、そんなお金はなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 114,
+      "text": "仕方ない、ここは潔く諦めるしか……だが、しかし……うーん。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 115,
+      "text": "「先輩……ってまたメイド服見てるし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 116,
+      "text": "依瑠ちゃんに再びジト目で睨まれてしまう。%K%P",
+      "text_with_name": "%LC依瑠依瑠ちゃんに再びジト目で睨まれてしまう。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 117,
+      "text": "「いや……。\\n　これはたまたまここにあったものを見てただけで……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 118,
+      "text": "普通コスプレ衣装は店内にあって然るべきはずなのに！%K%P",
+      "text_with_name": "%LC碧普通コスプレ衣装は店内にあって然るべきはずなのに！%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 119,
+      "text": "「じ～……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 120,
+      "text": "「いや、だから、たまたま手に取っただけだって……\\n　別にメイドなんかホントに全然……」%K%P",
+      "text_with_name": "%LC依瑠「いや、だから、たまたま手に取っただけだって……\\n　別にメイドなんかホントに全然……」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 121,
+      "text": "「……先輩、本当にメイド服が好きなんですね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 122,
+      "text": "「そんなに好きならいっそ自分で着たらどうですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 123,
+      "text": "「あ、それ名案かもっ！\\n　先輩のメイド服姿……ふふ……いいかも」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 124,
+      "text": "「これ着て鏡に向かっておかえりなさいませ～、俺様って\\n　自分を迎えてれば、一石二鳥ですよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 125,
+      "text": "「いやいやいや……俺に女装趣味はないから。\\n　もしコスプレするならこっちの執事の方が……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 126,
+      "text": "「ダメですっ！　先輩は断然メイドさんです！\\n　もうこの際買っちゃいましょう！\\n　すみませーん、店員さーん……むぐぐ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 127,
+      "text": "「ちょ、ちょっと亜紗ちゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 128,
+      "text": "慌てて亜紗ちゃんの口を塞ぐ。%K%P",
+      "text_with_name": "%LC碧慌てて亜紗ちゃんの口を塞ぐ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 129,
+      "text": "「これ結構高いし、おいそれとは買えないよっ！\\n　それに、俺は着せたい派であって、着たい派ではないから」%K%P",
+      "text_with_name": "%LC碧「これ結構高いし、おいそれとは買えないよっ！\\n　それに、俺は着せたい派であって、着たい派ではないから」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 130,
+      "text": "「着せたいって……誰にですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 131,
+      "text": "「それは……」%K%P",
+      "text_with_name": "%LC依瑠「それは……」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 132,
+      "text": "「それは？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 133,
+      "text": "亜紗ちゃんと依瑠ちゃんに……そう言おうと思ったけれど、俺は口を噤んでしまった。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんと依瑠ちゃんに……そう言おうと思ったけれど、俺は口を噤んでしまった。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 134,
+      "text": "たしかに、二人には是非ともメイド服を着てもらいたい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 135,
+      "text": "だけど――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 136,
+      "text": "もしそんなこと言ったら、引かれてしまうかもしれない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 137,
+      "text": "だって、よくよく考えるとそれってコスプレってことだし。\\nそうなったらえっちなことだって……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 138,
+      "text": "これ以上マニアックな道に進むと、後戻りができなくなってしまう気がする。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 139,
+      "text": "「……アハハ、ハハ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 140,
+      "text": "だから、俺は笑って誤魔化すことにした。%K%P",
+      "text_with_name": "%LC碧だから、俺は笑って誤魔化すことにした。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 141,
+      "text": "「……じぃ～」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 142,
+      "text": "「ふふ……正直じゃないんですからっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 143,
+      "text": "ジト目を向ける依瑠ちゃんに、ニコニコ笑う亜紗ちゃん。%K%P",
+      "text_with_name": "%LC亜紗ジト目を向ける依瑠ちゃんに、ニコニコ笑う亜紗ちゃん。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 144,
+      "text": "……バレバレだったかな。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 145,
+      "text": "「……そろそろ行こうか、時間もないし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 146,
+      "text": "「はいっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 147,
+      "text": "「……ハァ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 148,
+      "text": "微妙に気まずい空気のまま、俺たちはその場を後にした。%K%P",
+      "text_with_name": "%LC依瑠微妙に気まずい空気のまま、俺たちはその場を後にした。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 149,
+      "text": "「ねぇ、依瑠ちゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 150,
+      "text": "「うん？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 151,
+      "text": "「メイドさんってさ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 152,
+      "text": "「…………」%K%P",
+      "text_with_name": "%LC亜紗「…………」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 153,
+      "text": "「ううん、やっぱりなんでもない」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 154,
+      "text": "「……そう？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 155,
+      "text": "「ねぇ、依瑠ちゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 156,
+      "text": "「……なに？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 157,
+      "text": "「呼んでみただけ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 158,
+      "text": "「…………はぁ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 159,
+      "text": "「ねぇ、依瑠ちゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 160,
+      "text": "「……今度は、なに？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 161,
+      "text": "「メイドと家政婦の違いって知ってる？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 162,
+      "text": "「さぁ……年齢じゃないの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 163,
+      "text": "「まぁ、わたしも知らないんだけどね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 164,
+      "text": "「…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 165,
+      "text": "「……ねぇ、依瑠ちゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 166,
+      "text": "「もぉっ！　さっきからねぇねぇねぇねぇって……\\n　なんなのよ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 167,
+      "text": "「先輩、メイドさんが好きみたいだね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 168,
+      "text": "「……そうね。ずいぶん興味深そうだった」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 169,
+      "text": "「昔、家にメイドさんがいたの覚えてる？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 170,
+      "text": "「お父さんたちが雇ってたメイドよね。覚えてるわよ。\\n　ったく、面白そうだからって、メイドなんか雇って……\\n　あのバカ親たちは……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 171,
+      "text": "「……探せばメイド服でてくるかな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 172,
+      "text": "「まさか姉さん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 173,
+      "text": "「…………うん、そのまさか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 174,
+      "text": "「ハァ……。\\n　わたしは嫌よ、メイド服なんて着るの」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 175,
+      "text": "「え～……どうしてそう毛嫌いするの？\\n　依瑠ちゃんだったら絶対に似合うと思うんだけどな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 176,
+      "text": "「嫌ったら嫌！　わたし、そういうの柄じゃないし！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 177,
+      "text": "「いいじゃない。依瑠ちゃん前に比べて、\\n　先輩にデレデレしちゃってるし……。\\n　今更、柄とか気にすることもないよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 178,
+      "text": "「だ、だ、だって……\\n　コスプレって、ちょっとマニアックだし……\\n　わたしたちにはまだ早すぎる気が……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 179,
+      "text": "「あはは、大丈夫よ、依瑠ちゃん。\\n　それ以上に恥ずかしいと、もういっぱい\\n　してきたでしょ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 180,
+      "text": "「うぅ……そうだけど……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 181,
+      "text": "「わたし、着てみたいもん。メイド服。\\n　すっごくかわいいし……。\\n　メイド服着るくらいなんてことないじゃない」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 182,
+      "text": "「うぅ……まあ、そうだけど、だけどぉぉ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 183,
+      "text": "「それに、いいの？　依瑠ちゃんは闘わずして、\\n　あのメイドさんに負けを認めたことになるよ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 184,
+      "text": "「それはちょっと……悔しいかも」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 185,
+      "text": "「かわいいって言われたいよね？　先輩に」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 186,
+      "text": "「それは……まあ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 187,
+      "text": "「メイド服着れば、\\n　きっといっぱいかわいいって言ってもらえるよ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 188,
+      "text": "「……今でも結構言ってもらってるけど」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 189,
+      "text": "「それがもっと言ってもらえるようになるんだよ。\\n　昼間見かけたメイドさんに負けたくないよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 190,
+      "text": "「それはまぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 191,
+      "text": "「……ハァ、わかったわよ。\\n　なんだか、うまく乗せられちゃった気が……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 192,
+      "text": "「だってだって、あんなにかわいい衣装が着られて、\\n　しかも先輩も喜んでくれるなんて、Ｗの幸せじゃない！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 193,
+      "text": "「……姉さん、なんだかすごくノリノリ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 194,
+      "text": "「やぁぁん、すっごくかわいい……！\\n　ここのふわふわフリルとか、ヘッドドレスとか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 195,
+      "text": "「でしょでしょ？\\n　何事も食わず嫌いはダメなんだよ、依瑠ちゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 196,
+      "text": "「ねぇねぇ姉さん、もう一回着ちゃダメ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 197,
+      "text": "「だ～め。もうこれで5回目じゃない。\\n　これ以上やってると朝になっちゃうよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 198,
+      "text": "「むぅ、姉さんの意地悪。\\n　今日はメイド服抱きながら寝るもん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 199,
+      "text": "「ダメよ皺になっちゃうから。\\n　ふふ、あんなに毛嫌いしてたのに、依瑠ちゃんったら」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 200,
+      "text": "「……これで先輩喜んでくれるかな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 201,
+      "text": "「うん、きっと喜ぶと思うよ。\\n　この前よりももーっと鼻の下伸ばしちゃうんだから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 202,
+      "text": "「でも、これどのタイミングで着たらいいんだろ？\\n　これ着て先輩の部屋に行くのはちょっと違う気がするし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 203,
+      "text": "「よくぞ聞いてくれました。\\n　実はですね、お姉ちゃんに考えがあるんです。\\n　ちょっと依瑠ちゃん耳貸して……ごにょごにょごにょ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 204,
+      "text": "「えぇ……！？　そ、そんなことするの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 205,
+      "text": "「むしろそのくらいしないと、雰囲気出ないと思う。\\n　折角メイドさんになるんだから、\\n　きちんと持ち味出さないと」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 206,
+      "text": "「さ、さすがにそれは……！\\n　そこまでやったら、先輩引いちゃうんじゃ……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 207,
+      "text": "「うん、間違いないと思うよ。\\n　きっと、ほっぺたも落ちちゃうんじゃないかな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 208,
+      "text": "「はぁ……どうなっても知らないからね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 209,
+      "text": "「決行は明日の夜。みんなが寝静まったあとで。\\n　じゃあ、早速……準備に取り掛かろっか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 210,
+      "text": "「仕方ないわね、今回は姉さんに付き合ってあげるわ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 211,
+      "text": "「とか言って、依瑠ちゃんもノリノリじゃない？\\n　メイド服そんな握りしめちゃって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 212,
+      "text": "「うっ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 213,
+      "text": "「ん……もう、こんな時間か、ふあぁぁ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 214,
+      "text": "重い瞼を擦り、時計を確認する。時刻は午前一時。%K%P",
+      "text_with_name": "%LC碧重い瞼を擦り、時計を確認する。時刻は午前一時。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 215,
+      "text": "「……んじゃ、そろそろ行きますか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 216,
+      "text": "首をポキポキ鳴らしながら、俺は部屋を後にした。%K%P",
+      "text_with_name": "%LC碧首をポキポキ鳴らしながら、俺は部屋を後にした。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 217,
+      "text": "みんなが起きてしまわないように慎重に忍び足を踏みながら、ゆっくりと俺は食堂に向かった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 218,
+      "text": "「しかし、なんでまたこんな時間に……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 219,
+      "text": "ちょうど一時間前。%K%P",
+      "text_with_name": "%LC碧ちょうど一時間前。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 220,
+      "text": "突然部屋に双子がやってきて、一時間後に食堂に来るように言われたのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 221,
+      "text": "当然その訳を聞いたのだけれども、二人は笑顔を浮かべるだけで結局教えてはくれなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 222,
+      "text": "「この前お菓子用具プレゼントしたし……そういえば、\\n　スイーツを振舞ってくれるとか言ってたっけ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 223,
+      "text": "しかし、仮にそうだとしても、こんな時間にはやらないよな。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 224,
+      "text": "「……まさか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 225,
+      "text": "ひやり冷たいものが背筋を駆け抜ける。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 226,
+      "text": "よくよく考えてみると、ここ数日、二人の様子はちょっと変だった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 227,
+      "text": "全然顔を合わせなかったし、考えようによっては避けられているようにも見えた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 228,
+      "text": "すれ違っても亜紗ちゃんは愛想笑いを浮かべるだけ、依瑠ちゃんに至っては目も合わせてくれなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 229,
+      "text": "そう、ちょうど、あのメイドさんの一件以来、俺達の関係はぎこちなくなってしまっていたのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 230,
+      "text": "もしかして、愛想を尽かされて……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 231,
+      "text": "「これが、最後の晩餐！？　だから食堂なのか！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 232,
+      "text": "急に足取りが重くなる。%K%P",
+      "text_with_name": "%LC碧急に足取りが重くなる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 233,
+      "text": "だが、気がつけばもう食堂前まで来てしまっていた。もう後戻りはできない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 234,
+      "text": "そっとドアノブに触れる。額から冷や汗がつぅと流れ落ちる。\\n……落ち着け。落ち着け。落ち着け。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 235,
+      "text": "深く息を吸い、吐くと同時に、俺はゆっくりと扉を開いた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 236,
+      "text": "「お、お待たせ、二人とも――えっ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 237,
+      "text": "目に飛び込んできた光景に驚き、俺は言葉を失ってしまった。%K%P",
+      "text_with_name": "%LC碧目に飛び込んできた光景に驚き、俺は言葉を失ってしまった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 238,
+      "text": "食堂で俺を待っていたもの。それは――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 239,
+      "text": "「お帰りなさいませ、ご主人様っ♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 240,
+      "text": "メイド服に身を包んだ亜紗ちゃんと依瑠ちゃんだった。%K%P",
+      "text_with_name": "%LC亜紗・依瑠メイド服に身を包んだ亜紗ちゃんと依瑠ちゃんだった。%K%P",
+      "char_name": "亜紗・依瑠"
+    },
+    {
+      "lng_idx": 241,
+      "text": "「えっ、ええ！？　な、なに、どういうこと？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 242,
+      "text": "ご主人様！？　え、なんで俺迎えられてるの？　なんでメイド服？%K%P",
+      "text_with_name": "%LC碧ご主人様！？　え、なんで俺迎えられてるの？　なんでメイド服？%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 243,
+      "text": "しかも……なんで二人ともスカートたくし上げてるんだ……？%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 244,
+      "text": "状況が飲み込めず、あたふたしていると、%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 245,
+      "text": "「美味しいスイーツを用意しましたので……\\n　突っ立ってないで、こっち来てくれませんか、先輩」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 246,
+      "text": "「こほんっ、依瑠ちゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 247,
+      "text": "「ご……ご主人様」%K%P",
+      "text_with_name": "%LC亜紗「ご……ご主人様」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 248,
+      "text": "ドキン、と心臓が鳴った。ご主人様って……俺のことだよな？%K%P",
+      "text_with_name": "%LC依瑠ドキン、と心臓が鳴った。ご主人様って……俺のことだよな？%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 249,
+      "text": "「あ、あぁ……え、えっと……\\n　二人ともこれはどういった趣向で……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 250,
+      "text": "チラチラと下着を盗み見ながら、二人の顔色をうかがう。%K%P",
+      "text_with_name": "%LC碧チラチラと下着を盗み見ながら、二人の顔色をうかがう。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 251,
+      "text": "「依瑠ちゃんが今言った通り、ご主人様に美味しいスイーツを\\n　召し上がってもらおうと思いまして」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 252,
+      "text": "「あ、ありがとう。\\n　でも、肝心のスイーツはどこにあるのかな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 253,
+      "text": "見回してみたものの、それらしきものは見当たらない。%K%P",
+      "text_with_name": "%LC碧見回してみたものの、それらしきものは見当たらない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 254,
+      "text": "テーブルの上には、ホイップクリームのチューブがあるだけだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 255,
+      "text": "「ふふ、目の前にあるじゃないですか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 256,
+      "text": "「目の前って……？」%K%P",
+      "text_with_name": "%LC亜紗「目の前って……？」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 257,
+      "text": "「……わたしたちのことですよ」%K%P",
+      "text_with_name": "%LC碧「……わたしたちのことですよ」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 258,
+      "text": "「なっ――！？」%K%P",
+      "text_with_name": "%LC依瑠「なっ――！？」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 259,
+      "text": "つまり、それって……俺が二人を食べるってこと？%K%P",
+      "text_with_name": "%LC碧つまり、それって……俺が二人を食べるってこと？%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 260,
+      "text": "「この前買い物に付き合ってもらったとき、スペシャルな\\n　スイーツご馳走するって言ったの……覚えてます？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 261,
+      "text": "「覚えてるけど……でも、まさかこんな……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 262,
+      "text": "「その日、ご主人様はずっとメイド服に目を\\n　奪われてましたよね。だからわたし達、考えたんです」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 263,
+      "text": "「どうしたら、スペシャルなスイーツを提供できるかって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 264,
+      "text": "「そこで出した答えがコレです。\\n　わざわざ実家に取りに戻ったんですよ、メイド服」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 265,
+      "text": "「だけど、ただ着るだけじゃ芸がないから、\\n　ここを選んだんです。\\n　食堂ですけど、少しは雰囲気出るかなって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 266,
+      "text": "「スイーツもご主人様が喜ぶものを選びました。\\n　いかがでしょう？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 267,
+      "text": "「……すごく……いいと思う」%K%P",
+      "text_with_name": "%LC依瑠「……すごく……いいと思う」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 268,
+      "text": "なるほど、ここ数日二人がよそよそしかったのは、俺を避けてたんじゃなくて、サプライズを用意してたからなのか。%K%P",
+      "text_with_name": "%LC碧なるほど、ここ数日二人がよそよそしかったのは、俺を避けてたんじゃなくて、サプライズを用意してたからなのか。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 269,
+      "text": "しかもこんな夢のような演出までしてくれて……嬉しさのあまり、胸がじぃんと熱くなる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 270,
+      "text": "「喜んでくれてなによりです……それではご主人様」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 271,
+      "text": "「わたしたちをたっぷりご堪能くださいませ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 272,
+      "text": "「うわぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 273,
+      "text": "二人は胸元をはだけさせると、おもむろにホイップクリームを手に取り、体に垂らしはじめたのだ。%K%P",
+      "text_with_name": "%LC碧二人は胸元をはだけさせると、おもむろにホイップクリームを手に取り、体に垂らしはじめたのだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 274,
+      "text": "「それでは召し上がれ、ご主人様っ♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 275,
+      "text": "妖艶な上目遣いで見上げられ、俺はゴクリと唾を飲んだ。%K%P",
+      "text_with_name": "%LC亜紗・依瑠妖艶な上目遣いで見上げられ、俺はゴクリと唾を飲んだ。%K%P",
+      "char_name": "亜紗・依瑠"
+    },
+    {
+      "lng_idx": 276,
+      "text": "滑らかな乳肌に、雪のようなクリーム。そして、その頂上にはかわいらしいピンク色の乳首。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 277,
+      "text": "まるで、ショートケーキのようだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 278,
+      "text": "「こほんっ、えーっと。それでは……いただこうかな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 279,
+      "text": "雰囲気を壊さないよう、俺も厳粛な態度で振舞い、白く彩られた乳房へ吸いついた。%K%P",
+      "text_with_name": "%LC碧雰囲気を壊さないよう、俺も厳粛な態度で振舞い、白く彩られた乳房へ吸いついた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 280,
+      "text": "「あぁ、やんっ……\\n　もう、そんな欲張っちゃダメですよ、ご主人様……あっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 281,
+      "text": "「ふふ、もっと、じっくり、味わってください……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 282,
+      "text": "「うん、ぺろっ、ちゅる、ぺろ、ちゅるるっ……」%K%P",
+      "text_with_name": "%LC亜紗「うん、ぺろっ、ちゅる、ぺろ、ちゅるるっ……」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 283,
+      "text": "「焦っても逃げやしませんから……\\n　ほら、ご主人様、こっちも……んんっ……んあっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 284,
+      "text": "クリームを舌で掬い取るように、交互に二人のおっぱいを堪能する。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 285,
+      "text": "口いっぱいに広がる甘みは普段よりも濃く、舐めているだけで、頭の中がとろけてしまいそうだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 286,
+      "text": "「んっ……お味はいかがでしょうか？　ご主人様」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 287,
+      "text": "「最高だよ……。今まで食べてきたスイーツの中で、\\n　一番美味しいよ、ちゅっ……」%K%P",
+      "text_with_name": "%LC亜紗「最高だよ……。今まで食べてきたスイーツの中で、\\n　一番美味しいよ、ちゅっ……」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 288,
+      "text": "「ありがとうございます、ご主人様っ……ふぁっ……\\n　そんな喜んでくれるなんて、メイド冥利に尽きます……\\n　ふわぁぁ……いつもより、舌の動きも活発で……んんっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 289,
+      "text": "ご主人様……なんて蠱惑的な響きなんだろう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 290,
+      "text": "そんな風に呼ばれるたび、スイッチが入り、この雰囲気に染まっていってしまう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 291,
+      "text": "「ご主人様、依瑠ちゃんばかりでなくわたしも……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 292,
+      "text": "「仕方がないな……ちゅっ、ちゅるっ」%K%P",
+      "text_with_name": "%LC亜紗「仕方がないな……ちゅっ、ちゅるっ」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 293,
+      "text": "「やぁ……ご主人様ぁ。途中でやめちゃ嫌です……\\n　うぅ……ん、んん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 294,
+      "text": "「二人とも、俺より欲張りさんなんだから……\\n　ちゅ、ちゅるっ」%K%P",
+      "text_with_name": "%LC依瑠「二人とも、俺より欲張りさんなんだから……\\n　ちゅ、ちゅるっ」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 295,
+      "text": "「あっ……んん、ふわぁ……焦らされてるみたいで……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 296,
+      "text": "「逆に舐められたときが気持ちよくって……\\n　なんだか、わたし……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 297,
+      "text": "二人は揃ってもどかしそうに、太股をもじもじと動かしている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 298,
+      "text": "……よく見ると、色濃い染みがクロッチに広がっていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 299,
+      "text": "「ご主人様ぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 300,
+      "text": "依瑠ちゃんの乳首を吸っていると、切なげな瞳で亜紗ちゃんに見つめられる。%K%P",
+      "text_with_name": "%LC亜紗依瑠ちゃんの乳首を吸っていると、切なげな瞳で亜紗ちゃんに見つめられる。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 301,
+      "text": "「あんまりお預けしないでください……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 302,
+      "text": "「ダメですよご主人様ぁ……。\\n　姉さんはこらえ性がないんだから、甘やかしちゃダメです」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 303,
+      "text": "「うぅ……意地悪しないでくださいぃ……。\\n　ご主人様、お願いですぅ……\\n　このままだと、わたし、一人でしちゃうかも……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 304,
+      "text": "かと言って、亜紗ちゃんのところに行けば、今度は依瑠ちゃんがおねだりするし……かくなる上は！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 305,
+      "text": "「んくぅ――！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 306,
+      "text": "亜紗ちゃんの秘所に手を伸ばし、ショーツをずらしてから、裂唇に指を沈めた。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんの秘所に手を伸ばし、ショーツをずらしてから、裂唇に指を沈めた。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 307,
+      "text": "「中に……んあぁっ……そこです……んんんっ……\\n　ご主人様の手が……ん、んんん……あっ、くぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 308,
+      "text": "開いた膣口の隙間からとろりと愛液がこぼれ落ちた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 309,
+      "text": "膣内は体温よりもほんのりと温かい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 310,
+      "text": "「……はぁ、はぁ……うぅ……んんん、あぁ……\\n　ありがとうございます、ご主人様ぁ……んんっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 311,
+      "text": "「こんなにビショビショにさせて……\\n　ホント、亜紗ちゃんはえっちなメイドさんだね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 312,
+      "text": "指先を鉤の形にして、前後にスライドさせてやる。%K%P",
+      "text_with_name": "%LC碧指先を鉤の形にして、前後にスライドさせてやる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 313,
+      "text": "ジュブジュブと水音が立つほどに、激しく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 314,
+      "text": "「だって、だって……んん……くぅ……\\n　依瑠ちゃんとご主人様のえっちな姿見てたら……\\n　羨ましくなっちゃって……んん、くぅぅ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 315,
+      "text": "「姉さん、すごく気持ちよさそうな顔してる……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 316,
+      "text": "切なげな声を上げ、俺を見つめる依瑠ちゃん。%K%P",
+      "text_with_name": "%LC依瑠切なげな声を上げ、俺を見つめる依瑠ちゃん。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 317,
+      "text": "「ご主人様ぁ……。\\n　わたしにも、その……姉さんと同じように……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 318,
+      "text": "「ああ、わかってるよ……\\n　依瑠ちゃんのこっちのスイーツはどんな具合かな？」%K%P",
+      "text_with_name": "%LC依瑠「ああ、わかってるよ……\\n　依瑠ちゃんのこっちのスイーツはどんな具合かな？」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 319,
+      "text": "「ご主人様は相変わらず変態ですね……んくぅっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 320,
+      "text": "遊ばせていたもう片方の手で、亜紗ちゃん同様、依瑠ちゃんの膣を愛撫してやる。%K%P",
+      "text_with_name": "%LC依瑠遊ばせていたもう片方の手で、亜紗ちゃん同様、依瑠ちゃんの膣を愛撫してやる。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 321,
+      "text": "「……これはこれは、濃厚なシロップが」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 322,
+      "text": "「ば、ばか……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 323,
+      "text": "「こ、こら、依瑠ちゃん……\\n　ご主人様に向かってなんて、口聞いてるのっ……！」%K%P",
+      "text_with_name": "%LC依瑠「こ、こら、依瑠ちゃん……\\n　ご主人様に向かってなんて、口聞いてるのっ……！」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 324,
+      "text": "「も、申し訳ございません……くぅ……。\\n　ご主人様、こちらのスイーツは……\\n　ん、あ、あぁ、くぅ……いかがでしょうか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 325,
+      "text": "「質感といい、濡れ具合といい……\\n　うん、三ツ星あげてもいいんじゃないかな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 326,
+      "text": "さすが姉妹だけあって、膣内の形もよく似ている。同時に両手で触れている分、二人の差異も比較できる。%K%P",
+      "text_with_name": "%LC碧さすが姉妹だけあって、膣内の形もよく似ている。同時に両手で触れている分、二人の差異も比較できる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 327,
+      "text": "依瑠ちゃんは奥に行くほどきゅっとよく締まるし、亜紗ちゃんは全体的にふっくらモチモチしている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 328,
+      "text": "……どちらも、甲乙はつけがたい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 329,
+      "text": "「お褒めの言葉ありがとうございます……あっ、くぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 330,
+      "text": "かき回すような手つきで責めあげると、二人は悶えながら、大きく体をくねらせた。%K%P",
+      "text_with_name": "%LC亜紗かき回すような手つきで責めあげると、二人は悶えながら、大きく体をくねらせた。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 331,
+      "text": "「あっ、やだ、やだ、んっ、いぃ……\\n　くぅ、あっ、んんっ、んんんっ！\\n　あっ、あっ、ひゃぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 332,
+      "text": "「あ、奥、そこ、いいです、ふわぁ……\\n　んんっ……いぃ……あぁぁ、\\n　気持ち、いぃ……んぃぃっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 333,
+      "text": "「あ、シロップこぼれちゃ……んんあぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 334,
+      "text": "「あっ、んんっ、くぅ、ひぃっ、うぅ……\\n　あぁ、んんん、ふわぁぁっ、あぁぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 335,
+      "text": "「ふぅわぁ、んんっ、ご主人様ぁ……\\n　お腹が奥が熱くてなってきて……んああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 336,
+      "text": "「んぅっ、ふぅ、んあ……\\n　んひぃ、んあああ、あああぁぁ、いぃあああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 337,
+      "text": "甲高い嬌声が耳をつんざいた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 338,
+      "text": "二人の顔は紅潮し、緩んだ口元からは熱い吐息が漏れ出ている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 339,
+      "text": "「しぃー！　静かに……\\n　そんな大声出したらみんなに聞こえちゃうよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 340,
+      "text": "とは言いつつも、俺の手は止まらない。%K%P",
+      "text_with_name": "%LC碧とは言いつつも、俺の手は止まらない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 341,
+      "text": "「だ、だめ……ご主人様っ！\\n　声、声が……出ちゃ……う、あぁあ……\\n　あぁぁぁあああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 342,
+      "text": "「そんな喘いだらみんな起きてきちゃうよ。\\n　いいの？　二人のこんな姿見たらみんななんて言うかな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 343,
+      "text": "「やだ……やだ……そんなのやだ……。\\n　んんっ、でも、ああっ、んんんっ……\\n　ご主人様のお手々、お上手だから……ひゃぅうっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 344,
+      "text": "嫌だとは言いつつ二人は抵抗する素振りを一切見せない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 345,
+      "text": "たぶん、それは二人がメイドになりきっているから。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 346,
+      "text": "ご主人様の言うことは絶対――抗えるわけがないのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 347,
+      "text": "そんな従順な二人を見てるうちに、芽生えた嗜虐心も徐々に膨らみ、ますます手つきも加速していく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 348,
+      "text": "「もうこの際みんなに聞かせてあげようよ。\\n　亜紗ちゃんと、依瑠ちゃんのえっちな声……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 349,
+      "text": "「そ、そんなぁ……んん、で、でも……\\n　ああぁぁ、んん、くぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 350,
+      "text": "「ご、ご主人様がそう言うなら、\\n　わたし達は従うまで……ですからっ。\\n　あぁぁん、ハァ、ハァ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 351,
+      "text": "「いいの、二人ともみんなに見つかっても？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 352,
+      "text": "「よくはないですけど……でも、んんっ……。\\n　ご主人様がそうしたいなら……んんあぁっ……。\\n　喜んで受け入れます……わたし達はメイドですからぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 353,
+      "text": "「それに、もし見つっかても、みんなに\\n　見せつけられるから……いいんですっ……。\\n　わたしたちは……ご主人様のものですから……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 354,
+      "text": "「亜紗ちゃん……依瑠ちゃん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 355,
+      "text": "なんてゾクゾクすることを言ってくれるんだろうか。%K%P",
+      "text_with_name": "%LC碧なんてゾクゾクすることを言ってくれるんだろうか。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 356,
+      "text": "こんな恥ずかしいことをされてるのに、それでも受け入れてくれるなんて……ご主人様ライフ、最高じゃないか！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 357,
+      "text": "「くぅぅあぁぁぁあっ！\\n　ご主人様ぁ……なんだか、体がポカポカして\\n　きちゃって……うぅぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 358,
+      "text": "「ね、姉さん、口の端から……\\n　ヨダレ、でてる……んんっ！　んんっ、あっ……\\n　えっちな顔してる……んんっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 359,
+      "text": "「依瑠ちゃんだって……あうぅっ、ふぁぁ……\\n　いやらしい顔……してる……\\n　んんあっ、女の顔になってる……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 360,
+      "text": "「だって……だってぇ……。\\n　目の前で姉さんが……えっちなことされてるし……\\n　あぅぅ、ひゃああっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 361,
+      "text": "「お腹の中ゴリゴリかき回されて……あぁっ……。\\n　意識飛んじゃいそうだよぉ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 362,
+      "text": "「あぁぁぁっ、ご主人様ぁ……もう、わたし……\\n　ひぁぁああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 363,
+      "text": "「わたし、わたしもぉ……んんん、うぅ……\\n　ふわぁ、ダメ、ダメなのにぃ……あぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 364,
+      "text": "愛液の量がさらに増し、二人の膣が脈打つように蠢きはじめる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 365,
+      "text": "「あぁぁぁああっ、ダメ、膝の力が抜けちゃ……\\n　んああぁっ！\\n　や、やぁ……ああぁっ、そこ、んん……くぅぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 366,
+      "text": "「ご主人様、わたし、あぁぁあああっ！\\n　イッちゃ……う……ふぇっ、イッちゃ……\\n　きちゃうっ、んんあっ……くぅ、あぁぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 367,
+      "text": "ぶるぶると体を震わせ、二人ともなにかに耐えるように下唇をきゅっと噛んでいた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 368,
+      "text": "その表情を見ているうちに、手つきも佳境に入っていき……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 369,
+      "text": "「あ、や……ふわぁ……わたしもイッちゃう……。\\n　あ、あ、あぁぁ、だめだめ……だめぇ！\\n　んはぁ、くぅぅっ、いぃぃ、いいの……んんっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 370,
+      "text": "「わ、わたし、も……あぁぁぁ、ダメッ、\\n　これ以上されたら――あぅっ！　んんっ！\\n　あっ、あっ、あ、あ、あぁぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 371,
+      "text": "「いいよ、二人ともこのまま俺の目の前でイッてみて……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 372,
+      "text": "「そんなはしたない姿、\\n　ご主人様の前で晒すなんて……でき、ません。\\n　うぅぅぅくぅぅ、で、でも、もう……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 373,
+      "text": "「ダメよ、依瑠ちゃん……\\n　ご主人様はわたしたちがイくところ、\\n　ご所望なんだからぁ……あっ、んんあっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 374,
+      "text": "「でも、でもぉ……あああっ、見られちゃう、\\n　イくところ、見られ……あぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 375,
+      "text": "「あ、あぁぁっ！　んぃぃっ、あぁっ、あぁぁ！\\n　ご主人、んっ、様ぁぁ、あぁぁっ、\\n　ひうぅうっ！　んんいぃぃっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 376,
+      "text": "「はぁ、はぁ、んいぃ、んんんっ……\\n　も、もう、わたし、わたしぃ……\\n　あっ、んんんっ……いぃ、あぁぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 377,
+      "text": "「いいぃっ、あぁぁっ、ご、ご主人様ぁっ、\\n　イクッ、イクッ――！　ふわぁぁああああ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 378,
+      "text": "「きちゃうっ、きちゃうよ……あぁぁあっ、んんんっ。\\n　く、くる――きちゃ、あぁぁっ、きちゃうぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 379,
+      "text": "「あぁぁぁ、あぁぁっぁぁあああ、ああああああああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 380,
+      "text": "しぃぃぃ、しぃぃぃぃ、しゃあああああああっ！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 381,
+      "text": "絶叫とともに、二人は生温いしぶきを勢いよく噴き出した。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 382,
+      "text": "「んあ……あぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 383,
+      "text": "「ふぅ……ふぅ、あうぅ、ふわぁぁ……」%K%P",
+      "text_with_name": "%LC亜紗「ふぅ……ふぅ、あうぅ、ふわぁぁ……」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 384,
+      "text": "余韻に体を震わせながら、躊躇うことなく最後の一滴まで放尿する二人。%K%P",
+      "text_with_name": "%LC依瑠余韻に体を震わせながら、躊躇うことなく最後の一滴まで放尿する二人。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 385,
+      "text": "「おもらし、しちゃったね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 386,
+      "text": "かすかに二人の表情はうっとりしているようにも見えた。%K%P",
+      "text_with_name": "%LC碧かすかに二人の表情はうっとりしているようにも見えた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 387,
+      "text": "「……あうぅ……。\\n　気持ちよすぎて、その……ごめんなさい……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 388,
+      "text": "「いいよ、気にしなくて。もう慣れたからさ」%K%P",
+      "text_with_name": "%LC亜紗「いいよ、気にしなくて。もう慣れたからさ」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 389,
+      "text": "「でも先輩の手、おしっこでべとべとになっちゃって……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 390,
+      "text": "「かわいいメイドのおしっこなんだから、全然……」%K%P",
+      "text_with_name": "%LC依瑠「かわいいメイドのおしっこなんだから、全然……」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 391,
+      "text": "そう言って、濡れた指先を口元に運びぺろりと舐めてみせる。%K%P",
+      "text_with_name": "%LC碧そう言って、濡れた指先を口元に運びぺろりと舐めてみせる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 392,
+      "text": "「も、もう……えっちなんですから……\\n　ところで、ご主人様……これで終わりじゃないですよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 393,
+      "text": "「ご主人様のアソコ、テントみたいに張って……\\n　すごく苦しそうですし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 394,
+      "text": "亜紗ちゃんの言うとおり、ペッティングを始めてから、ずっとペニスは張りつめたままだった。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんの言うとおり、ペッティングを始めてから、ずっとペニスは張りつめたままだった。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 395,
+      "text": "「ふふ……今度はわたしたちがご主人様を……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 396,
+      "text": "「いただいちゃいますねっ♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 397,
+      "text": "「こうして見ると、お料理みたいですね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 398,
+      "text": "テーブルの上に押し倒された俺を見て、亜紗ちゃんが妖しく笑った。%K%P",
+      "text_with_name": "%LC亜紗テーブルの上に押し倒された俺を見て、亜紗ちゃんが妖しく笑った。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 399,
+      "text": "「二人とも、なにを……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 400,
+      "text": "俺を見下ろす亜紗ちゃんと、見上げる依瑠ちゃんの顔を交互に見やる。%K%P",
+      "text_with_name": "%LC碧俺を見下ろす亜紗ちゃんと、見上げる依瑠ちゃんの顔を交互に見やる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 401,
+      "text": "俺のズボンはいつの間にか下ろされていて、Ｔシャツもすでに捲くられてしまっていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 402,
+      "text": "「怖がらないでください、ご主人様……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 403,
+      "text": "「先ほどたっぷりかわいがって頂きましたから、\\n　今度はわたしたちがご主人様をもてなす番」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 404,
+      "text": "「前菜、スープときたら次は魚料理。\\n　ご主人様は、さしずめ……\\n　テーブルに乗ったマグロと言ったところでしょうか……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 405,
+      "text": "なに、ちょっとうまいこと言ってるんだよ、依瑠ちゃん……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 406,
+      "text": "「今からたっぷりご奉仕してあげますから……\\n　ご主人様はわたし達に身を任せてくださいませ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 407,
+      "text": "「――ンッ！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 408,
+      "text": "思わずうめき声を上げてしまった。%K%P",
+      "text_with_name": "%LC碧思わずうめき声を上げてしまった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 409,
+      "text": "「んちゅ、れろ……少しだけしょっぱい味がしますね。\\n　汗の味、でしょうか……れろっ……ん、れろっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 410,
+      "text": "亜紗ちゃんは小さな舌をチロチロ動かしながら、俺の乳首を舐めはじめたのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 411,
+      "text": "「亜紗ちゃん、そこは……くぅっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 412,
+      "text": "味わったことのない新たな刺激に、体がくねってしまう。%K%P",
+      "text_with_name": "%LC碧味わったことのない新たな刺激に、体がくねってしまう。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 413,
+      "text": "こそばゆくて、ぞわぞわするような……ともかく、やけにじれったい感触だった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 414,
+      "text": "「れろ……いかがですか、ご主人様っ……\\n　んちゅ、れろっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 415,
+      "text": "「ちょっと恥ずかしいかな……。\\n　だって、こういうのは普通男側がするものだし」%K%P",
+      "text_with_name": "%LC亜紗「ちょっと恥ずかしいかな……。\\n　だって、こういうのは普通男側がするものだし」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 416,
+      "text": "「そんなことありませんよ……。\\n　男性だって、ここはきっと気持ちいいはずですから……\\n　……れろっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 417,
+      "text": "「たしかに気持ちいいけど……くぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 418,
+      "text": "ゾワリとした刺激が背筋を走りぬけた。%K%P",
+      "text_with_name": "%LC碧ゾワリとした刺激が背筋を走りぬけた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 419,
+      "text": "「ほら、ここも勃ってきましたし……ふふ、\\n　ちっちゃくてかわいい……でもちゃんとぽっこり膨らんで\\n　……れろっ、ちゅるっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 420,
+      "text": "「れろっ……んちゅ、れろれろ……んちゅぅ、れろっれろっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 421,
+      "text": "「うぅ……あぁぁっ、くぅっ！」%K%P",
+      "text_with_name": "%LC亜紗「うぅ……あぁぁっ、くぅっ！」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 422,
+      "text": "亜紗ちゃんは濡れた目で俺を見つめながら、乳輪に沿って舌をくるくる動かしていた。%K%P",
+      "text_with_name": "%LC碧亜紗ちゃんは濡れた目で俺を見つめながら、乳輪に沿って舌をくるくる動かしていた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 423,
+      "text": "そして、時折思い出したように、乳首を突いたかと思うと――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 424,
+      "text": "「んじゅ、じゅるるるるぅぅぅ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 425,
+      "text": "口いっぱいに含み、思い切り吸い上げた。%K%P",
+      "text_with_name": "%LC亜紗口いっぱいに含み、思い切り吸い上げた。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 426,
+      "text": "「あっ、ダメっ、くぁ……んんっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 427,
+      "text": "ねちっこい舌使いに、耐え切れず情けない声が上がってしまった。%K%P",
+      "text_with_name": "%LC碧ねちっこい舌使いに、耐え切れず情けない声が上がってしまった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 428,
+      "text": "「いかがでしょうか、ご主人様。女の子になった気分は……。　ご主人様の声、とってもかわいかったですよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 429,
+      "text": "「よ、依瑠ちゃん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 430,
+      "text": "「こっちもさっきからビクビクって……\\n　えっちなお汁もこんなに……」%K%P",
+      "text_with_name": "%LC碧「こっちもさっきからビクビクって……\\n　えっちなお汁もこんなに……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 431,
+      "text": "「う、くぁ――ッ！」%K%P",
+      "text_with_name": "%LC依瑠「う、くぁ――ッ！」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 432,
+      "text": "滲んだカウパーを舐め取るように、今度は依瑠ちゃんの舌がペニスを這った。%K%P",
+      "text_with_name": "%LC碧滲んだカウパーを舐め取るように、今度は依瑠ちゃんの舌がペニスを這った。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 433,
+      "text": "「んちゅっ……こっちはもっと濃い味が、ちゅるっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 434,
+      "text": "味見するように這いまわる、柔らかな舌の感触。%K%P",
+      "text_with_name": "%LC依瑠味見するように這いまわる、柔らかな舌の感触。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 435,
+      "text": "「こんなになるまで、ずっと我慢しちゃって……\\n　んちゅっ……れろっ……。\\n　先っぽこんなにベトベトにして……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 436,
+      "text": "「二人にこんなことされたら誰だって――あぅくぅ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 437,
+      "text": "「こんな贅沢なこと、なかなか味わえませんからね……。\\n　たっぷり堪能してください……ちゅる、じゅるるるぅ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 438,
+      "text": "「ん、あぁっ、んごくっ、ちゅる、ぺろっ、じゅるるる！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 439,
+      "text": "「依瑠ちゃん、あぁっ、亜紗ちゃんも、うぅぅっ！」%K%P",
+      "text_with_name": "%LC依瑠「依瑠ちゃん、あぁっ、亜紗ちゃんも、うぅぅっ！」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 440,
+      "text": "亜紗ちゃんは乳首を、依瑠ちゃんはペニスを、それぞれの舌が動き回る。%K%P",
+      "text_with_name": "%LC碧亜紗ちゃんは乳首を、依瑠ちゃんはペニスを、それぞれの舌が動き回る。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 441,
+      "text": "柔らかくて生温い、少しざらりとした得もいわれぬ感触……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 442,
+      "text": "「ピクピク跳ねちゃって……活きのいい魚料理……んちゅっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 443,
+      "text": "「踊り食いみたい……んちゅっ、れろっ……。\\n　おいしいです、ご主人様……んちゅっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 444,
+      "text": "暴れるペニスを手で押さえ、咥えた口で上下に揺する依瑠ちゃん。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 445,
+      "text": "かすかに歯を当てながら、温かい粘膜でペニスを包んでくれる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 446,
+      "text": "「んんっ……ちゅるぅ……んっ、\\n　いふもよりおおひふて（いつもより大きくて）、\\n　んふぅっ、ぷはぁ、ちょっと嫉妬しちゃうっ……れろ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 447,
+      "text": "「れろっ……ふぅ、乳首舐められて、感じてるんですよね？\\n　んちゅぅ……れろっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 448,
+      "text": "吐息を混じらせながら、丹念に乳首を舐めあげる。%K%P",
+      "text_with_name": "%LC亜紗吐息を混じらせながら、丹念に乳首を舐めあげる。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 449,
+      "text": "「亜紗ちゃん、あくぅ……依瑠ちゃんも……\\n　あっ、うぅっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 450,
+      "text": "敏感な箇所を同時に責められるのがこんなに気持ちいいなんて。%K%P",
+      "text_with_name": "%LC碧敏感な箇所を同時に責められるのがこんなに気持ちいいなんて。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 451,
+      "text": "刺激もさることながら、奉仕されている夢のようなこの光景に、頭がクラクラしてきてしまう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 452,
+      "text": "「れろっ……んちゅっ、じゅるるぅ……れろっ、じゅるっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 453,
+      "text": "「んじゅ、じゅるるっ、ご主人様ぁ……\\n　んくぅ……あぁっ、んじゅるっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 454,
+      "text": "口の中に溜まった涎をジュルジュルいわせながら、真剣な顔で俺を奉仕する亜紗ちゃんと依瑠ちゃん。%K%P",
+      "text_with_name": "%LC依瑠口の中に溜まった涎をジュルジュルいわせながら、真剣な顔で俺を奉仕する亜紗ちゃんと依瑠ちゃん。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 455,
+      "text": "「もっと感じてくださいね、ご主人様ぁ……\\n　んちゅるぅ、じゅるるぅ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 456,
+      "text": "「うぁ……くぁうぅ……」%K%P",
+      "text_with_name": "%LC亜紗「うぁ……くぁうぅ……」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 457,
+      "text": "「んくぅ……\\n　ご主人様のえっちな汁は全部飲んでさしあげますから。\\n　ん、ごくっ……ん……れろっ」%K%P",
+      "text_with_name": "%LC碧「んくぅ……\\n　ご主人様のえっちな汁は全部飲んでさしあげますから。\\n　ん、ごくっ……ん……れろっ」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 458,
+      "text": "過熱する競争。激しくなる舌使い。高まるボルテージ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 459,
+      "text": "段々と二人の頬にも赤みが増していき……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 460,
+      "text": "「あぁん……んんっ、わたし……なんだか……んちゅる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 461,
+      "text": "「ん、んっ、ちゅる……れろっ、ご主人様ぁ……んくぅ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 462,
+      "text": "「んちゅる……あぁ、んふぅ……れろっ。\\n　さっき、弄られたばかりなのに……もう、わたし……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 463,
+      "text": "「ん、じゅるる、んくぅ……ハァ、ハア……\\n　ご主人様のえっちな汁飲んでたら、わたしも……んんっ！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 464,
+      "text": "二人の表情はだらしないほどに蕩けきってしまっていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 465,
+      "text": "なのに、二人はそれでもなお、奉仕し続けてくれている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 466,
+      "text": "「んちゅるぅ……へへ、気持ちいいですか……\\n　んちゅるっ、れろっ……\\n　ご主人様すごくいやらしい顔してますぅ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 467,
+      "text": "「こっちだって、さっきからずっとビクビク震えて……\\n　んくぅ……飲んでも飲んでも、間に合わないくらい……\\n　んん、えっちな汁がいっぱいっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 468,
+      "text": "「んじゅるぅ、これからムラムラしたら……\\n　……わたし達を呼んでくださいませ。\\n　いつでも駆けつけますので……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 469,
+      "text": "「もう一人でする必要ないですからね……\\n　ふふ、というか、しちゃ……ダメです……んちゅるっ……\\n　わたし達が処理してあげますから……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 470,
+      "text": "「そんな……うくぅ……うぅ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 471,
+      "text": "それは嬉しい提案だけど、それじゃ、まるで――。%K%P",
+      "text_with_name": "%LC碧それは嬉しい提案だけど、それじゃ、まるで――。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 472,
+      "text": "「ご主人様なんですから……れろっ……\\n　お好きなときにわたし達を……\\n　お使いくださいませっ、んれろっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 473,
+      "text": "ああ、なんてご主人様は贅沢なんだろう……後でバチが当たるんじゃないかと心配になってくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 474,
+      "text": "だけど、競うように俺を奉仕する姿を見ていると……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 475,
+      "text": "「うんっ、だけど……\\n　その時は二人のことも、\\n　たっぷりかわいがってあげるからッ――！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 476,
+      "text": "後ろめたさよりも、数倍優越感が勝っていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 477,
+      "text": "「ご主人様らしさが……んじゅるぅ……\\n　だいぶ、板についてきましたね……んっ、じゅるる……\\n　ご主人様のおち○ちん、さっきより大きくなって……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 478,
+      "text": "「ちゅるっ、じゅるるぅ、れろっ、んちゅっ、\\n　じゅるるるっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 479,
+      "text": "「くぁっ……そこ、激しっ……くぅうっ！」%K%P",
+      "text_with_name": "%LC依瑠「くぁっ……そこ、激しっ……くぅうっ！」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 480,
+      "text": "「んふふ、我慢しないでくださいませ……\\n　んちゅ、れろっ、れろろっ……んちゅるっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 481,
+      "text": "「あむっぅ、じゅるる、んふぅ……\\n　ご主人様の悦びはわたし達の悦びですから……んじゅっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 482,
+      "text": "舐り、嚥下し、弄り、さらに舐り……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 483,
+      "text": "二人の攻勢にペニスはひっきりなしにひくつき、腹の底がグツグツと煮え立ってくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 484,
+      "text": "「れろっ、んちゅっ、れろ、こくっ\\n　んちゅ、れろれろっ、んっ、じゅるるるぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 485,
+      "text": "「んちゅっ、れろっ、んちゅるるっ、じゅるるるっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 486,
+      "text": "絶頂をいざなうように二人の舌使いもさらに加速していく。%K%P",
+      "text_with_name": "%LC依瑠絶頂をいざなうように二人の舌使いもさらに加速していく。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 487,
+      "text": "唾液まみれのぬめった舌が、しつこいほどに這いまわる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 488,
+      "text": "「れろっ、んちゅ、れろっ、れろっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 489,
+      "text": "「んちゅっ、ちゅるぅ、じゅるるる、\\n　はぁ、んくぅ、じゅるるるぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 490,
+      "text": "「俺……も、もう――ッ！」%K%P",
+      "text_with_name": "%LC依瑠「俺……も、もう――ッ！」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 491,
+      "text": "射精を待ち構えているように、上目遣いで俺を見つめる二人。%K%P",
+      "text_with_name": "%LC碧射精を待ち構えているように、上目遣いで俺を見つめる二人。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 492,
+      "text": "先端に向かって、一気に熱が雪崩れこんでくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 493,
+      "text": "「イってくださいませ、ご主人様っ……\\n　依瑠ちゃんの口に溢れるくらい、\\n　精を吐き出してくださいませ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 494,
+      "text": "「ご主人様の……いやらしいミルク……\\n　口で受け止めてさしあげますっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 495,
+      "text": "「全部、おいしく頂きますので……\\n　んちゅぅ……じゅるるっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 496,
+      "text": "――ッ！！%K%P",
+      "text_with_name": "%LC依瑠――ッ！！%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 497,
+      "text": "そんなこと言われたら、もう我慢なんて……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 498,
+      "text": "「ご主人様の精液で、\\n　わたしのお口、マーキングして……くださいませ……\\n　んじゅ、ちゅるるっ、じゅるるっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 499,
+      "text": "「れろ、んく、れろれろっ、ちゅっ……\\n　ずずぅ、じゅるるるぅ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 500,
+      "text": "「んちゅ、じゅるるるっ、ちゅぅ、じゅるっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 501,
+      "text": "「ご主人様ぁ、んれろっ、んれろ、んちゅるぅぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 502,
+      "text": "「ヤバ……出る、出るッ――！　うぅうぁあっ――！」%K%P",
+      "text_with_name": "%LC亜紗「ヤバ……出る、出るッ――！　うぅうぁあっ――！」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 503,
+      "text": "「んくっ、んんん……こく……\\n　んふぅ……んぐっこ、こくんっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 504,
+      "text": "「ぷはぁ……んくっ、ハァ、ハァ……んくっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 505,
+      "text": "放たれた精液を、口を窄めて吸い取る依瑠ちゃん。%K%P",
+      "text_with_name": "%LC依瑠放たれた精液を、口を窄めて吸い取る依瑠ちゃん。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 506,
+      "text": "「んちゅっ、こくんっ……ごちそう様でした、ご主人様っ。\\n　濃厚で、喉に絡みついて……とてもおいしかったです……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 507,
+      "text": "垂れた精液をぺロリと舐める依瑠ちゃんを、亜紗ちゃんは羨ましそうに見つめていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 508,
+      "text": "「いいな、依瑠ちゃん……\\n　わたしも、飲みたかったな……ご主人様の精液」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 509,
+      "text": "「だぁめ、これはわたしの分なんだから……\\n　んくぅ、ぷはぁ……\\n　……いかがでしたでしょうか？　わたし達のもてなしは」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 510,
+      "text": "「……文句なしだったよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 511,
+      "text": "尾を引く快楽の余韻に、体の力が抜けていった。%K%P",
+      "text_with_name": "%LC碧尾を引く快楽の余韻に、体の力が抜けていった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 512,
+      "text": "にもかかわらず、股間の強張りだけは維持したままだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 513,
+      "text": "二人の上気した顔を見ていると……収まるものも収まらなくなってしまう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 514,
+      "text": "おかわりしたい。そう、言おうとした矢先だった――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 515,
+      "text": "「あの、ご主人様ぁ……その、えと……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 516,
+      "text": "亜紗ちゃんが恥ずかしそうにペニスへ視線を注ぐ。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんが恥ずかしそうにペニスへ視線を注ぐ。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 517,
+      "text": "「ふふ、まだまだいけそうですね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 518,
+      "text": "確かめるように依瑠ちゃんが俺のペニスをぎゅっと握る。%K%P",
+      "text_with_name": "%LC依瑠確かめるように依瑠ちゃんが俺のペニスをぎゅっと握る。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 519,
+      "text": "果てたばかりだというのに、俺の肉竿は硬いままだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 520,
+      "text": "「メインディッシュが残っておりますが……\\n　いかがなさいましょう？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 521,
+      "text": "「本日のメインディッシュはたっぷり蜜が施された、\\n　熟れた双子のお肉でございます……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 522,
+      "text": "照れを隠すように冗談交じりに求められる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 523,
+      "text": "答えはもちろん――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 524,
+      "text": "「どうぞ、ご主人様……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 525,
+      "text": "「お好きな方から……ご自由にお召し上がりくださいませ」%K%P",
+      "text_with_name": "%LC依瑠「お好きな方から……ご自由にお召し上がりくださいませ」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 526,
+      "text": "目の前に並ぶかわいらしい二つのお尻。%K%P",
+      "text_with_name": "%LC亜紗目の前に並ぶかわいらしい二つのお尻。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 527,
+      "text": "二人はテーブルにつき、熱っぽい目で俺を見つめながら、俺に向かって腰を突き出していた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 528,
+      "text": "「ふふ……ご主人様、すごくいやらしい顔してます」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 529,
+      "text": "「だって、とっても素敵なメインディッシュだから……」%K%P",
+      "text_with_name": "%LC亜紗「だって、とっても素敵なメインディッシュだから……」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 530,
+      "text": "二つの尻がゆらゆらと揺れる。%K%P",
+      "text_with_name": "%LC碧二つの尻がゆらゆらと揺れる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 531,
+      "text": "綻んだ膣口は艶かしく光り、ヒクヒクと挑発的に蠢いていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 532,
+      "text": "「どちらがお好みですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 533,
+      "text": "「そんな比べられないよ。二人とも、すごく綺麗だし……」%K%P",
+      "text_with_name": "%LC依瑠「そんな比べられないよ。二人とも、すごく綺麗だし……」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 534,
+      "text": "「見てるだけじゃ、判断できないと思いますので」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 535,
+      "text": "「冷めないうちに早く召し上がってくださいませ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 536,
+      "text": "「それに、そんな風にジロジロ見られてると……\\n　わたし達もだんだん……我慢の方が……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 537,
+      "text": "二人の太股がしきりにもじもじと動きはじめる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 538,
+      "text": "溢れた愛液がつぅと太股を垂れていった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 539,
+      "text": "「ご主人様ぁ……お願いします……\\n　早く、わたし達の……はしたないおま○こを……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 540,
+      "text": "「ご主人様のたくましいおち○ちんで……\\n　教育してくれませんか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 541,
+      "text": "いじらしいおねだりに、心がゾクゾクと震え上がった。%K%P",
+      "text_with_name": "%LC依瑠いじらしいおねだりに、心がゾクゾクと震え上がった。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 542,
+      "text": "倒錯した主従関係に、肉竿にも一層熱がこもっていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 543,
+      "text": "「あぁ、わかった。\\n　スケベなメイドさんには教育が必要だもんな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 544,
+      "text": "「ご主人様、お願いします……\\n　わたしのおま○こから、是非……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 545,
+      "text": "「やだやだ……わたしのおま○こから味わってくださいませ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 546,
+      "text": "「焦らないで、二人とも。\\n　両方ともかわいがってあげるからさ……\\n　じゃあ、早い者勝ちということで、亜紗ちゃんから……」%K%P",
+      "text_with_name": "%LC依瑠「焦らないで、二人とも。\\n　両方ともかわいがってあげるからさ……\\n　じゃあ、早い者勝ちということで、亜紗ちゃんから……」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 547,
+      "text": "脈打つペニスを持ち上げ、トロトロになった花弁に照準を合わせる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 548,
+      "text": "そして――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 549,
+      "text": "「んふぁっ、くっ…………あ、あァッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 550,
+      "text": "ぐじゅりと音を立たせながら、根元まで一気に押し入れた。%K%P",
+      "text_with_name": "%LC亜紗ぐじゅりと音を立たせながら、根元まで一気に押し入れた。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 551,
+      "text": "「あッ――ぐっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 552,
+      "text": "にゅるにゅるとぬめる膣壁が、待ち構えていたかのように、ペニスをきゅっと包み込んだ。%K%P",
+      "text_with_name": "%LC碧にゅるにゅるとぬめる膣壁が、待ち構えていたかのように、ペニスをきゅっと包み込んだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 553,
+      "text": "火照った中は熱く、グチョグチョに蕩けきっていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 554,
+      "text": "「んっ……ご主人様っ……はあぁ、大きい、です……。\\n　奥までぴったりきて……あうぅ、んんっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 555,
+      "text": "「亜紗ちゃんのここ、温かくて……\\n　それに吸いつきもっ、くっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 556,
+      "text": "「離したくないんです……\\n　ずっとずっと繋がってたいからっ……んん、んんっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 557,
+      "text": "亜紗ちゃんの体温が、想いと一緒にじわじわと体に染み入ってくる。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんの体温が、想いと一緒にじわじわと体に染み入ってくる。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 558,
+      "text": "それは、優しくて、柔らかくて、ほんのちょっとくすぐったいようで。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 559,
+      "text": "こぼれそうな多幸感に、背筋がぶるぶる震えてしまう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 560,
+      "text": "「姉さんひどいよ……わたしに見せつけちゃってさ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 561,
+      "text": "拗ねて頬を膨らませる依瑠ちゃんに、亜紗ちゃんは優しく微笑み返す。%K%P",
+      "text_with_name": "%LC依瑠拗ねて頬を膨らませる依瑠ちゃんに、亜紗ちゃんは優しく微笑み返す。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 562,
+      "text": "「依瑠ちゃんも、すぐに味わえるから。\\n　んくぅ、あっ……はぁ……。\\n　だから、今だけは……ね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 563,
+      "text": "「……はぁい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 564,
+      "text": "「じゃあ……動くよ、亜紗ちゃん」%K%P",
+      "text_with_name": "%LC依瑠「じゃあ……動くよ、亜紗ちゃん」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 565,
+      "text": "「はい……ん、んんっ……あぁぁっ！」%K%P",
+      "text_with_name": "%LC碧「はい……ん、んんっ……あぁぁっ！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 566,
+      "text": "馴染ませるように腰をゆっくりスライドさせる。%K%P",
+      "text_with_name": "%LC亜紗馴染ませるように腰をゆっくりスライドさせる。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 567,
+      "text": "「あっ、ふあぁ……ひっ……ん……んんっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 568,
+      "text": "もう十分に濡れているためか、強張りも引っ掛りも感じなかった。%K%P",
+      "text_with_name": "%LC亜紗もう十分に濡れているためか、強張りも引っ掛りも感じなかった。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 569,
+      "text": "トロトロの愛液が潤滑油となって、スムーズに運んでくれた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 570,
+      "text": "「あぁぁ、んんん、ふぁ……あくっぅ……\\n　んん……もっと、もっと……\\n　突いてくださいませ、ご主人様……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 571,
+      "text": "「うん、わかった……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 572,
+      "text": "ピッチをゆっくりと上げていく。%K%P",
+      "text_with_name": "%LC碧ピッチをゆっくりと上げていく。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 573,
+      "text": "「ふあぁ、んっ……そう、そのくらい激しく……\\n　んんっあっ！　ん、んんっ……ひぃっ！\\n　あぁ、いいですよ、ご主人様ぁ、ふぁっ、あぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 574,
+      "text": "亜紗ちゃんもまた、俺のリズムに合わせながら腰を動かしはじめた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 575,
+      "text": "だんだんと、二人の吐息が重なりあっていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 576,
+      "text": "「姉さん、気持ちいい？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 577,
+      "text": "「うん……先っぽで奥、くっ、ん、んんんっ……\\n　コンコンノックされて……あっ、あぁ、あぁっ！」%K%P",
+      "text_with_name": "%LC依瑠「うん……先っぽで奥、くっ、ん、んんんっ……\\n　コンコンノックされて……あっ、あぁ、あぁっ！」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 578,
+      "text": "「これ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 579,
+      "text": "「そう、んいぃ……ふぅぁぁ、っく、うぅ……\\n　そ、それです……あうぅっっ、あぁっ……んあっ！」%K%P",
+      "text_with_name": "%LC碧「そう、んいぃ……ふぅぁぁ、っく、うぅ……\\n　そ、それです……あうぅっっ、あぁっ……んあっ！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 580,
+      "text": "角度をつけて、亜紗ちゃんの体を持ち上げるようにペニスを突き上げてやる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 581,
+      "text": "「あっ……そ、それだめ、ですっ……んんっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 582,
+      "text": "突き上げた状態で、子宮口を亀頭でぐりぐり突くと、結合部からこぽりと蜜がこぼれていった。%K%P",
+      "text_with_name": "%LC亜紗突き上げた状態で、子宮口を亀頭でぐりぐり突くと、結合部からこぽりと蜜がこぼれていった。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 583,
+      "text": "「でも、これ……俺も気持ちよくて……あくぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 584,
+      "text": "「あぁぁっ！　ご主人様のおち○ちんが、\\n　中で、ゴリゴリ擦れて……んんっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 585,
+      "text": "「ご主人様、わたし、わた……し……んっ、あっ、ああ！\\n　体の力、抜け……ちゃ、くぅぅううっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 586,
+      "text": "「亜紗ちゃん……！　中、すっごく、気持ちいいよ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 587,
+      "text": "「わたしもです……あっ、あ、いぃ、くぅぅ、んあっ……\\n　ふぁ、あっぁぁ、熱いぃ……んんっ、あっ、あぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 588,
+      "text": "「……ご主人様ぁ……姉さんだけじゃなく、\\n　わたしのことも忘れちゃいやですよぉ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 589,
+      "text": "「んふぅ、依瑠ちゃん、ごめんね……我慢させちゃって……\\n　んっ、んんっ……少し名残惜しいですが……\\n　ご主人様、依瑠ちゃんの相手も……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 590,
+      "text": "「あぁ、うん……じゃあっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 591,
+      "text": "「あっ、んんっ、ふわぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 592,
+      "text": "亜紗ちゃんからペニスを引き抜き、そのまま依瑠ちゃんの中へ。%K%P",
+      "text_with_name": "%LC依瑠亜紗ちゃんからペニスを引き抜き、そのまま依瑠ちゃんの中へ。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 593,
+      "text": "「あふっ、んん……すっぽり入っちゃいました……あふぅっ\\n　んんっ、いぃ……姉さんの、お汁も一緒に……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 594,
+      "text": "「わわ……ごめんね、依瑠ちゃん。気持ち悪い？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 595,
+      "text": "「うぅん……ヌメヌメしてて、んんっ……\\n　すごく気持ちいい……んっ、ああっ！\\n　やっ、んんっ……うくぅ…んあぁぁっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 596,
+      "text": "具合を確かめるように、最初はゆっくりと動く。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 597,
+      "text": "が、そんな必要もないくらい、依瑠ちゃんの中も十分に濡れ火照っていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 598,
+      "text": "「うくぅ……依瑠ちゃんの中、\\n　すごく窮屈で……気持ちいいよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 599,
+      "text": "「あぁあ……あんっ……んん……\\n　わたし、ふあぁ、わたし――ッ！\\n　くぅ、くっ、あ、あっ、あぁぁっ、ふぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 600,
+      "text": "応えるようにぎゅっ、ぎゅっと締め付けられる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 601,
+      "text": "「くぅぅ――よ、依瑠ちゃんッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 602,
+      "text": "「ご主人様ぁ……んんんっ、ふぅ……\\n　わたしも姉さんみたく激しくしてください……\\n　もっと、もっと……きてくださいぃ……」%K%P",
+      "text_with_name": "%LC碧「ご主人様ぁ……んんんっ、ふぅ……\\n　わたしも姉さんみたく激しくしてください……\\n　もっと、もっと……きてくださいぃ……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 603,
+      "text": "「うんっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 604,
+      "text": "挿入が深くなるにつれ、締めつけが増していく。%K%P",
+      "text_with_name": "%LC碧挿入が深くなるにつれ、締めつけが増していく。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 605,
+      "text": "依瑠ちゃんは体を震わせながら、甘いため息をこぼしていた。%K%P",
+      "text_with_name": "%LC碧依瑠ちゃんは体を震わせながら、甘いため息をこぼしていた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 606,
+      "text": "奥へ奥へと狭まる膣洞を、ぐいぐいと肉竿でこじ開けていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 607,
+      "text": "「んんあぁあ……あぁぁっ……\\n　ご主人様のおち○ちんが入って……いぃっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 608,
+      "text": "そして、一気に貫きあげる。%K%P",
+      "text_with_name": "%LC依瑠そして、一気に貫きあげる。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 609,
+      "text": "「アッ……あ、アァァァァァァッ！\\n　お、奥、まで、おち○ちん、当たってっ！\\n　んくぅ、あぁぁっ！　んひぃぃ、いぃぃっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 610,
+      "text": "ビクビクビクと膣壁が脈動し、強い快感が突き抜けていった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 611,
+      "text": "「あ、くぅ……もっと動いてもいいよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 612,
+      "text": "「はい……もっともっと求めてください……！\\n　んんあっ、あぁ！\\n　もっと、もっとぉ……んん、くぅぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 613,
+      "text": "「依瑠ちゃん、すごい声……みんなに聞こえちゃうよ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 614,
+      "text": "「いいっ……聞こえても、いい……！\\n　やめられないもん、んあっ、ふわぁぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 615,
+      "text": "お構いなしに嬌声を上げる依瑠ちゃん。%K%P",
+      "text_with_name": "%LC依瑠お構いなしに嬌声を上げる依瑠ちゃん。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 616,
+      "text": "「ご主人様、わたしにも……\\n　姉さんと同じことしてください……\\n　奥っ、グリグリって！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 617,
+      "text": "「これのこと？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 618,
+      "text": "亜紗ちゃんにしたのと同様、腰をさらに突き上げ、竿先で最深部のコリっとした蕾を突いてやる。%K%P",
+      "text_with_name": "%LC碧亜紗ちゃんにしたのと同様、腰をさらに突き上げ、竿先で最深部のコリっとした蕾を突いてやる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 619,
+      "text": "「アァァァ、そこ、そこ……\\n　き、気持ち、い、い、んんっ、あぁぁ……\\n　うく、あ、あぁっ、アァァァッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 620,
+      "text": "「依瑠ちゃんの赤ちゃんの……入り口」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 621,
+      "text": "「んあっ、変な言い方しないで、ください、あっ……んっ。\\n　くっ、ふわぁぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 622,
+      "text": "小刻みに振動させ、何度も何度も叩きこむ。%K%P",
+      "text_with_name": "%LC依瑠小刻みに振動させ、何度も何度も叩きこむ。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 623,
+      "text": "「依瑠ちゃん、それ気持ちいいでしょ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 624,
+      "text": "「う、うん……なにも考えられなくなっちゃ、うぅ……\\n　ハァ、んん、くぅ……あぁあっ、\\n　ごしゅ、ご主人様ぁ、あぁっ、いきぃっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 625,
+      "text": "ジュブジュブジュブと掻きまわすように、抽挿を繰り返していく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 626,
+      "text": "普段とは違う依瑠ちゃんの従順な姿に、変な支配欲までも芽生えはじめてきてしまう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 627,
+      "text": "「依瑠ちゃんの声聞いてたら……わたしもまた……\\n　ご主人様ぁ……\\n　そろそろわたしにもくださいませんか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 628,
+      "text": "俺を求める猫撫で声。優越感がみなぎってくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 629,
+      "text": "「仕方ないなぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 630,
+      "text": "「ふわぁ、ひゃぁぁぁあああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 631,
+      "text": "再び亜紗ちゃんの中へペニスをねじこむ。%K%P",
+      "text_with_name": "%LC亜紗再び亜紗ちゃんの中へペニスをねじこむ。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 632,
+      "text": "「あぁ、さっきよりも大きくなって……\\n　んんあぁぁあっ、熱いぃ！　うくぅっ！　あぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 633,
+      "text": "ぴぃんと伸びる亜紗ちゃんの背筋。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 634,
+      "text": "膝はがくがくと笑い、もがくように頭をぶんぶん振っている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 635,
+      "text": "「あぁぁ……ヤバっ、亜紗ちゃんの中、\\n　滅茶苦茶気持ちよくて、俺ッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 636,
+      "text": "よがる亜紗ちゃんに向けて、さらに激しく腰を打ちつける。%K%P",
+      "text_with_name": "%LC碧よがる亜紗ちゃんに向けて、さらに激しく腰を打ちつける。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 637,
+      "text": "「わたしも……わたしもです……\\n　あうぅ……んんっ……\\n　ご主人様に、こんなたくさん愛されて、あくぅ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 638,
+      "text": "「俺も、嬉しいよ……\\n　こんなにご奉仕されて……幸せ者だよっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 639,
+      "text": "亜紗ちゃんの熱で、体が溶けてしまいそうだった。%K%P",
+      "text_with_name": "%LC碧亜紗ちゃんの熱で、体が溶けてしまいそうだった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 640,
+      "text": "「ンあ、体がふわぁって、してき……あ、あああアァっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 641,
+      "text": "気の遠くなるような快楽に溺れ、ただ、貪るように亜紗ちゃんの体を求め続けていく。%K%P",
+      "text_with_name": "%LC亜紗気の遠くなるような快楽に溺れ、ただ、貪るように亜紗ちゃんの体を求め続けていく。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 642,
+      "text": "「ん、あっ、ハァ、ご主人様、ご主人様のおち○ちん……\\n　おま○こズボズボって、はぁ、んんっ、あ、やぁ、ふわぁ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 643,
+      "text": "「んぉ、あくぅうう、んひぃい、あっ、あっ……いっ、\\n　ふぁ……あぁあ、ひゃあああぁああんんッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 644,
+      "text": "猛獣のような声を上げ、腰をクイクイと動かす亜紗ちゃん。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 645,
+      "text": "その度に竿先に強烈な刺激が走り、瞼の裏でバチバチと火花が散っていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 646,
+      "text": "「ご主人様、ご主人さ、まぁぁ……\\n　あっ、いぎぃ……くぅぅぅぅ、あぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 647,
+      "text": "「ひあ、ひぃ、くっ、ううっ、ああぁ、んくっ、あぁあっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 648,
+      "text": "「ハァ、ハァ……あぁぁっ！　亜紗ちゃん、亜紗ちゃんっ！」%K%P",
+      "text_with_name": "%LC亜紗「ハァ、ハァ……あぁぁっ！　亜紗ちゃん、亜紗ちゃんっ！」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 649,
+      "text": "「なか、なかぁ……あひぃいい！\\n　あっ、もっと、もっと、もっとぉ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 650,
+      "text": "皮膚と皮膚がぶつかりあう音。絡み合う熱、吐息。%K%P",
+      "text_with_name": "%LC亜紗皮膚と皮膚がぶつかりあう音。絡み合う熱、吐息。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 651,
+      "text": "二人の体が溶けて、一つに混ざりあっていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 652,
+      "text": "「くぅ……亜紗ちゃん、俺……もうッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 653,
+      "text": "茫洋とする意識の中、俺は声を振り絞った。%K%P",
+      "text_with_name": "%LC碧茫洋とする意識の中、俺は声を振り絞った。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 654,
+      "text": "理性はとうに弾けとび、快楽はもうこぼれてしまいそうだった。限界がすぐそこまで迫っている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 655,
+      "text": "願わくば、このまま、亜紗ちゃんの中で……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 656,
+      "text": "「は、はいっ、きてください……んひぃ！\\n　ご主人様の精液……中に、ひぃぃ！\\n　中に、中に出してくださいませ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 657,
+      "text": "「うっ、うん、いっぱい、中で……ッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 658,
+      "text": "「いっぱいいっぱい、射精して、んひぃっ！\\n　おま○こ、ぐじょぐじょに……してっ、くださいっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 659,
+      "text": "「あっ、あっ、んんあっ、ひぃっ、ひぃぃ……\\n　ああぁぁっ、くぅ、んん、あぁぁっ、んんあっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 660,
+      "text": "「あぁ……くうっ、あぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 661,
+      "text": "「あっ、すごっ、大きいのが、中で、擦れ、あぁぁっ！\\n　もうダメっ！　飛んじゃう、変になるっ！\\n　あっ、あっ、あぁぁぁ！！」%K%P",
+      "text_with_name": "%LC碧「あっ、すごっ、大きいのが、中で、擦れ、あぁぁっ！\\n　もうダメっ！　飛んじゃう、変になるっ！\\n　あっ、あっ、あぁぁぁ！！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 662,
+      "text": "「ダメ、もう、ダ、メ……あぁぁぁ、んんっ！\\n　ふぁ、んん、あ……あぁぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 663,
+      "text": "「あ、くぅ――イク、イクよ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 664,
+      "text": "「あっ、んんっ……んんあああっ！\\n　きて、きてください、ご主人様ぁ！\\n　んひぃ、ん、うっ、くぅ、あっ、あんっ、あっ、ああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 665,
+      "text": "「んあ、ああっ……あっ……\\n　んあっ、くぅ、ひゃああああああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 666,
+      "text": "「あぁ……うぅう……あぁぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 667,
+      "text": "真っ白に爆ぜ、思いの丈を亜紗ちゃんに向けて叩きつけた。%K%P",
+      "text_with_name": "%LC亜紗真っ白に爆ぜ、思いの丈を亜紗ちゃんに向けて叩きつけた。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 668,
+      "text": "「んんっ、熱ぅっ……\\n　あぁぁ、お腹の中、ご主人様のでいっぱい……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 669,
+      "text": "「ハァハァ……くぅっ！」%K%P",
+      "text_with_name": "%LC亜紗「ハァハァ……くぅっ！」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 670,
+      "text": "体をぶるりと震わせ、尿道に残っていた精液すべてを出し切った。%K%P",
+      "text_with_name": "%LC碧体をぶるりと震わせ、尿道に残っていた精液すべてを出し切った。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 671,
+      "text": "……なのに、まだ俺のペニスは熱いままで……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 672,
+      "text": "「ご主人様、わたし……今日はお預けじゃないですよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 673,
+      "text": "子犬のような目で、お尻を揺らす依瑠ちゃん。%K%P",
+      "text_with_name": "%LC依瑠子犬のような目で、お尻を揺らす依瑠ちゃん。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 674,
+      "text": "膣口からヨダレのように、透明な蜜を滴らせながら。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 675,
+      "text": "「大丈夫よ、依瑠ちゃん……\\n　ご主人様のおち○ちん、まだ中で大きいままだから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 676,
+      "text": "「じゃあ……ご主人様、次はわたしを……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 677,
+      "text": "「ああ、もちろん」%K%P",
+      "text_with_name": "%LC依瑠「ああ、もちろん」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 678,
+      "text": "「あっ……ひぃぃぁぁあッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 679,
+      "text": "間髪入れずに依瑠ちゃんの中へぶちこむ。%K%P",
+      "text_with_name": "%LC依瑠間髪入れずに依瑠ちゃんの中へぶちこむ。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 680,
+      "text": "もういい加減体力的にはヘトヘトなのに、それでもペニスは硬さを保ったままだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 681,
+      "text": "「すごぃっ、ご主人様の逞しくて……んひぃぃっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 682,
+      "text": "待たせていたせいか、依瑠ちゃんの中は尋常じゃないほどヌルヌルだった。%K%P",
+      "text_with_name": "%LC依瑠待たせていたせいか、依瑠ちゃんの中は尋常じゃないほどヌルヌルだった。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 683,
+      "text": "狭い膣洞も俺を受け入れてくれるように広がり、奥へ奥へと誘いこんでくれている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 684,
+      "text": "「んくぅぁあっ！　刻まれちゃうぅ……\\n　おま○こ広げられて……ご主人様に刻まれちゃうッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 685,
+      "text": "「嫌なのかな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 686,
+      "text": "「ううん、ちがうっ……嬉しいんですっ……。\\n　ご主人様のモノになれて……くぅ、あぁ……\\n　幸せいっぱいなんですぅっ！」%K%P",
+      "text_with_name": "%LC碧「ううん、ちがうっ……嬉しいんですっ……。\\n　ご主人様のモノになれて……くぅ、あぁ……\\n　幸せいっぱいなんですぅっ！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 687,
+      "text": "「俺もっ、くっ、かわいいメイドさんに囲まれて幸せだよっ。　依瑠ちゃんは、俺のモノだよっ、誓ってくれるかな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 688,
+      "text": "「はいぃ……誓いますっ……\\n　わたし、風戸依瑠は、ご主人様に忠誠を尽くしっ……\\n　心も体も……おま○こも、ぜんぶ捧げることを誓います！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 689,
+      "text": "やばいやばいやばい……なんて危険な香りのする台詞なんだろう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 690,
+      "text": "幼い顔の相乗効果で、余計に犯罪臭がしてしまう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 691,
+      "text": "でも、だけど……すごく、ゾクゾクする。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 692,
+      "text": "「ああ、俺も……誠心誠意、かわいがってあげるからねッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 693,
+      "text": "「はっ、はい――ありがとうございまっ……んひぃ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 694,
+      "text": "勢いに任せて、ガツガツと腰を振り乱す。%K%P",
+      "text_with_name": "%LC依瑠勢いに任せて、ガツガツと腰を振り乱す。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 695,
+      "text": "あぁ、本当にご主人様になった気分だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 696,
+      "text": "「あっ、くぅ、うぅぅっ！\\n　ご主人様のおち○ちん、好きぃぃっ、あっ、んっ！\\n　大好きですぅ……あぁっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 697,
+      "text": "「わたしの体はご主人様専用なんですからぁ……\\n　お好きなように、使ってくださいませっ、んんんっ！\\n　あぁあ！　もっと、もっとぉ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 698,
+      "text": "扇情的な言葉が、俺の自制心をますますかき乱していく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 699,
+      "text": "「そんなこと言われたら、\\n　２４時間呼び出してエッチなことしちゃうよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 700,
+      "text": "「んひぃ……い、いいですよ。\\n　呼ばれたらすぐにかけつけますから、あぁっ！\\n　はぁ、んんんっ、くぅ……んいぃ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 701,
+      "text": "「ご主人様が望むのであれば、すぐできるよう……\\n　パンツ穿かないで、駆けつけますのでッ……くぅ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 702,
+      "text": "「そんな……恥ずかしくないの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 703,
+      "text": "「恥ずかしくない、もんっ……\\n　あくぅ、嘘っ、ちょっと恥ずかしいかもですけど……\\n　ご主人様が喜ぶのであれば……なんでもしますから……」%K%P",
+      "text_with_name": "%LC碧「恥ずかしくない、もんっ……\\n　あくぅ、嘘っ、ちょっと恥ずかしいかもですけど……\\n　ご主人様が喜ぶのであれば……なんでもしますから……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 704,
+      "text": "「なんでも……変態チックなことでも？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 705,
+      "text": "「…………がんばります、んんひぃ……。\\n　見たいって言うなら、\\n　オナニーだって、おしっこしてる姿だってお見せします！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 706,
+      "text": "その瞬間、依瑠ちゃんの中でペニスが跳ね上がってしまった。\\n甘い言葉にくすぐられ、快楽の泡がしわしわ込み上がってきて――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 707,
+      "text": "「あぁあぁ……また、大きくなって、んくぅ……あぁっ、\\n　すごい……ですっ……あぁぁ、くぅぅ……あぁぁっ！\\n　ご主人様ぁ、ご主人様ぁ！　あっ、ん、ひぃぃっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 708,
+      "text": "「やばいよ、依瑠ちゃん……\\n　そんなこと言われると、俺、俺――ッ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 709,
+      "text": "「んあっ、んんっ、出して、出してくださいご主人様ッ！\\n　わたしの一番奥で……ひっ、あっ、くぅううっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 710,
+      "text": "「満たして、くださいぃ……んいぃぃっ、\\n　いっぱい、いっぱい……くぅぅ、あぁ、あぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 711,
+      "text": "「あっ、あ、あぁぁっ、んんっ、いぃ、あぁぁっ、\\n　んくぅ、いぎぃ、ご主人様ぁ……あぁぁ、んんっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 712,
+      "text": "「依瑠――ちゃんっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 713,
+      "text": "「あ、うぅ、ひぎぃ……ご主人様ぁぁぁ……あぁ……\\n　ひいっ……ああ、あぁぁあああああああっ！」%K%P",
+      "text_with_name": "%LC碧「あ、うぅ、ひぎぃ……ご主人様ぁぁぁ……あぁ……\\n　ひいっ……ああ、あぁぁあああああああっ！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 714,
+      "text": "依瑠ちゃんの背筋がぴぃんと弓なりになる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 715,
+      "text": "俺は、汗を迸らせながらラストスパートをかけた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 716,
+      "text": "「うっ、いぃ、くぅ、あっ、あっ、はぁ、いっ、\\n　いぎっ……くぅ……んん、あっ、くぅぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 717,
+      "text": "「依瑠ちゃん、俺、そろそろっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 718,
+      "text": "「くださいっ、いっぱい、中に出して、んいぃっ！\\n　ご主人様の証、あぁぁっ、注いで、くださいっ、んひぃ！」%K%P",
+      "text_with_name": "%LC碧「くださいっ、いっぱい、中に出して、んいぃっ！\\n　ご主人様の証、あぁぁっ、注いで、くださいっ、んひぃ！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 719,
+      "text": "「あっ、うっ、あくッ！　はぁン！　うっ、うっ、くっ、\\n　ひゃっ、んん、くぅううううううっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 720,
+      "text": "「依瑠ちゃんッ！　あっ、くぅうう！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 721,
+      "text": "「あぁぁっ！　体壊れちゃうっ、壊れっ、あぁぁ！\\n　んあ、ひぃ、あぁっ、ああぁぁ！\\n　ダメ、もう……あぁぁあ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 722,
+      "text": "竿先を子宮口へ突き立てた瞬間――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 723,
+      "text": "「ああああぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 724,
+      "text": "「あ、あ、イク……イク、イッちゃ、あうぅ、\\n　いいいい！　いあ……あぁぁっ……ふわぁぁっ！」%K%P",
+      "text_with_name": "%LC碧「あ、あ、イク……イク、イッちゃ、あうぅ、\\n　いいいい！　いあ……あぁぁっ……ふわぁぁっ！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 725,
+      "text": "「あぁぁぁあああああああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 726,
+      "text": "「ハァ……ハァ……うぅう……ふぅ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 727,
+      "text": "三人分の荒い息が食堂中に満ちていく。%K%P",
+      "text_with_name": "%LC依瑠三人分の荒い息が食堂中に満ちていく。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 728,
+      "text": "「あ……んん、あっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 729,
+      "text": "「すごい量だ……」%K%P",
+      "text_with_name": "%LC依瑠「すごい量だ……」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 730,
+      "text": "二人の膣口から垂れた精液を見て、なんだか達成感のようなものを感じてしまう。%K%P",
+      "text_with_name": "%LC碧二人の膣口から垂れた精液を見て、なんだか達成感のようなものを感じてしまう。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 731,
+      "text": "「んはぁ……メインディッシュはいかがでしたでしょうか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 732,
+      "text": "「最高だったよ」%K%P",
+      "text_with_name": "%LC亜紗「最高だったよ」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 733,
+      "text": "まさにこの一言に尽きる。%K%P",
+      "text_with_name": "%LC碧まさにこの一言に尽きる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 734,
+      "text": "エッチで献身的なメイドさんがこんなに近くにいるなんて……。%K%P",
+      "text_with_name": "%LC碧エッチで献身的なメイドさんがこんなに近くにいるなんて……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 735,
+      "text": "倒錯したプレイもドキドキしちゃったし。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 736,
+      "text": "「ただ、ちょっと疲れちゃったけどね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 737,
+      "text": "額から汗がつぅと流れ落ちた。%K%P",
+      "text_with_name": "%LC碧額から汗がつぅと流れ落ちた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 738,
+      "text": "心臓は脈打ち、喉もカラカラだった。%K%P",
+      "text_with_name": "%LC碧心臓は脈打ち、喉もカラカラだった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 739,
+      "text": "それに玉袋がひくついて、キリキリと痛い。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 740,
+      "text": "備蓄していた精液すべてを出しきってしまったような感じがした。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 741,
+      "text": "「ご主人様、コース料理はまだ残ってますよ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 742,
+      "text": "「……へ？」%K%P",
+      "text_with_name": "%LC依瑠「……へ？」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 743,
+      "text": "「メインディッシュの後はデザート……\\n　お口直しですよ、ご主人様……」%K%P",
+      "text_with_name": "%LC碧「メインディッシュの後はデザート……\\n　お口直しですよ、ご主人様……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 744,
+      "text": "そう言って、ギラギラした目で俺を見つめる二人。%K%P",
+      "text_with_name": "%LC亜紗そう言って、ギラギラした目で俺を見つめる二人。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 745,
+      "text": "もう、全部出しきったはずなのに……再び、ペニスは熱くなりはじめてしまい……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 746,
+      "text": "「ご主人様、今度は別の体勢で……んしょっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 747,
+      "text": "「やんっ……依瑠ちゃん、乳首が当たって……あっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 748,
+      "text": "饗宴は、まだまだ続きそうだ。%K%P",
+      "text_with_name": "%LC亜紗饗宴は、まだまだ続きそうだ。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 749,
+      "text": "それから、数日後――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 750,
+      "text": "あの日以来、メイドプレイが頭から離れず、俺は毎日のように食堂の一夜のことを思い返していた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 751,
+      "text": "「（二人とも、本当にかわいかったなぁ……）」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 752,
+      "text": "亜紗ちゃんも依瑠ちゃんも従順で、それにすごく積極的で。%K%P",
+      "text_with_name": "%LC碧亜紗ちゃんも依瑠ちゃんも従順で、それにすごく積極的で。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 753,
+      "text": "……なによりも、あのメイド服。あれを着てるだけで……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 754,
+      "text": "「あ、はーい、開いてますよ～っ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 755,
+      "text": "「失礼しまーす」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 756,
+      "text": "「あ、二人とも」%K%P",
+      "text_with_name": "%LC亜紗・依瑠「あ、二人とも」%K%P",
+      "char_name": "亜紗・依瑠"
+    },
+    {
+      "lng_idx": 757,
+      "text": "「先輩、なんだか嬉しそう……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 758,
+      "text": "「ん？　そ、そう？」%K%P",
+      "text_with_name": "%LC依瑠「ん？　そ、そう？」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 759,
+      "text": "「はい。なんか楽しいことがあったような顔してますよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 760,
+      "text": "んー……楽しいことを思い出してたのは確かだな。%K%P",
+      "text_with_name": "%LC亜紗んー……楽しいことを思い出してたのは確かだな。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 761,
+      "text": "もしかしたらそれで、自然と顔が綻んでいたのかもしれない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 762,
+      "text": "「……でも、好都合です」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 763,
+      "text": "「……好都合？」%K%P",
+      "text_with_name": "%LC亜紗「……好都合？」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 764,
+      "text": "二人はニコニコしたまま、俺の顔色をうかがっていた。%K%P",
+      "text_with_name": "%LC碧二人はニコニコしたまま、俺の顔色をうかがっていた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 765,
+      "text": "「実は先輩にですね……とびっきりのプレゼントが\\n　あるんですよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 766,
+      "text": "依瑠ちゃんが亜紗ちゃんに合図を送る。%K%P",
+      "text_with_name": "%LC依瑠依瑠ちゃんが亜紗ちゃんに合図を送る。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 767,
+      "text": "亜紗ちゃんはこくりと頷き、あるものを俺に差し出した。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 768,
+      "text": "「これは……メイド服？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 769,
+      "text": "あの時とまったく同じメイド服だった。%K%P",
+      "text_with_name": "%LC碧あの時とまったく同じメイド服だった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 770,
+      "text": "もしかして、またあのプレイを味わえるのだろうか？%K%P",
+      "text_with_name": "%LC碧もしかして、またあのプレイを味わえるのだろうか？%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 771,
+      "text": "しかし、差し出されたメイド服は一着しかなく……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 772,
+      "text": "「今度は先輩がメイドさんになる番ですよっ♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 773,
+      "text": "男が奉仕するんだったら普通執事の格好するんじゃ……。%K%P",
+      "text_with_name": "%LC亜紗男が奉仕するんだったら普通執事の格好するんじゃ……。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 774,
+      "text": "「……えぇっ！？　ちょ、ちょっと待って……\\n　俺にそんな趣味は……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 775,
+      "text": "「いいじゃないですか。\\n　大好きなメイドさんになれるんですよ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 776,
+      "text": "「……わたし、見てみたいです。\\n　先輩の女装メイド姿……ふふ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 777,
+      "text": "しかも、よく見るとメイド服一式のほかに、丁寧にウィッグまで用意されていた。%K%P",
+      "text_with_name": "%LC亜紗しかも、よく見るとメイド服一式のほかに、丁寧にウィッグまで用意されていた。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 778,
+      "text": "「い、いや、ちょっと……待って……\\n　たしかに好きだけど、これは……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 779,
+      "text": "「待ちませんよ、先輩……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 780,
+      "text": "「今からメイドさんになるんです。\\n　これは確定事項です……ふふ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 781,
+      "text": "触手のように指をわしわし動かしながら、迫りくる二人。後ずさりする俺。%K%P",
+      "text_with_name": "%LC亜紗触手のように指をわしわし動かしながら、迫りくる二人。後ずさりする俺。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 782,
+      "text": "「ふふ、もう後には引けませんよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 783,
+      "text": "「暴れないでください、恥ずかしいのは最初だけですから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 784,
+      "text": "「ちょ、ちょっと――あああぁぁぁぁぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 785,
+      "text": "結局、俺は二人から逃れられず、服をひん剥かれ、強制的にメイド服を着させられてしまった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 786,
+      "text": "……それどころか、悲鳴を聞いて、駆けつけてきたみんなにメイド姿をバッチリ見られてしまい……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 787,
+      "text": "俺は笑われながらも、その日一日、トビウオ荘のメイドとして、過ごすハメになってしまったのであった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    }
+  ]
+}

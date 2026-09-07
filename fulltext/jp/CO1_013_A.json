@@ -1,0 +1,367 @@
+{
+  "script": "CO1_013_A",
+  "source": "Rio.arc",
+  "total": 60,
+  "texts": [
+    {
+      "lng_idx": 1,
+      "text": "「すぐ終わるって言ってるし、\\n　ここで待ってるよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 2,
+      "text": "「そう。\\n　じゃあ、私は先にいく」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 3,
+      "text": "なんとなく不機嫌そうに言うと、小鳥は先にいってしまった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 4,
+      "text": "「……怒らせちまったかな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 5,
+      "text": "まあ、いつものことではある。%K%P",
+      "text_with_name": "%LC碧まあ、いつものことではある。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 6,
+      "text": "「おまたせー。\\n　あれ、羽々音さんは？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 7,
+      "text": "「先いくって」%K%P",
+      "text_with_name": "%LCあげは「先いくって」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 8,
+      "text": "「そう……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 9,
+      "text": "「ねえ、碧」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 10,
+      "text": "「なんだ？」%K%P",
+      "text_with_name": "%LCあげは「なんだ？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 11,
+      "text": "「羽々音さんってさぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 12,
+      "text": "「……わたしのこと、どう思ってるのかな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 13,
+      "text": "「あー」%K%P",
+      "text_with_name": "%LCあげは「あー」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 14,
+      "text": "思わず「あー」と言ってしまった。%K%P",
+      "text_with_name": "%LC碧思わず「あー」と言ってしまった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 15,
+      "text": "「やっぱ、嫌われてる？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 16,
+      "text": "「んなことないと思うぞ。\\n　挨拶すりゃ返すし」%K%P",
+      "text_with_name": "%LCあげは「んなことないと思うぞ。\\n　挨拶すりゃ返すし」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 17,
+      "text": "あの子の場合、嫌ってたらそれすらしない気がする。%K%P",
+      "text_with_name": "%LC碧あの子の場合、嫌ってたらそれすらしない気がする。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 18,
+      "text": "「でも、碧とは超仲良しだよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 19,
+      "text": "「そうか？」%K%P",
+      "text_with_name": "%LCあげは「そうか？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 20,
+      "text": "「だってさ、碧が今一番仲いい子って、\\n　羽々音さんじゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 21,
+      "text": "「まあ、同じ寮に住んでるからなぁ」%K%P",
+      "text_with_name": "%LCあげは「まあ、同じ寮に住んでるからなぁ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 22,
+      "text": "「亮子もトビウオ荘だけど、\\n　学校じゃほとんど話さないじゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 23,
+      "text": "亮子さんはうちの寮生で、俺らと同学年。\\nあげはの友達でもある。%K%P",
+      "text_with_name": "%LCあげは亮子さんはうちの寮生で、俺らと同学年。\\nあげはの友達でもある。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 24,
+      "text": "でも学校で話したことは、ほとんどない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 25,
+      "text": "「ほら」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 26,
+      "text": "「……まあ、そうかもな。\\n　でも、なんだよ急に」%K%P",
+      "text_with_name": "%LCあげは「……まあ、そうかもな。\\n　でも、なんだよ急に」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 27,
+      "text": "「べっつにー。\\n　言ってみただけ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 28,
+      "text": "「……なんか怒ってる？」%K%P",
+      "text_with_name": "%LCあげは「……なんか怒ってる？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 29,
+      "text": "「かもね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 30,
+      "text": "「……それって、焼き餅みたいなもんか？」%K%P",
+      "text_with_name": "%LCあげは「……それって、焼き餅みたいなもんか？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 31,
+      "text": "「はい？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 32,
+      "text": "「いや、俺とおまえって、幼なじみで、\\n　ガキの頃からすげー仲よかったじゃん」%K%P",
+      "text_with_name": "%LCあげは「いや、俺とおまえって、幼なじみで、\\n　ガキの頃からすげー仲よかったじゃん」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 33,
+      "text": "「俺、おまえのこと親友だって思ってたし」%K%P",
+      "text_with_name": "%LC碧「俺、おまえのこと親友だって思ってたし」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 34,
+      "text": "ガキの頃、俺にとって一番の親友と言えば、あげはだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 35,
+      "text": "５年のブランクがある今でも、それは変わらないつもりだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 36,
+      "text": "けど、あげはから見れば、俺は最近小鳥と一番仲が良いらしい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 37,
+      "text": "たしかに、一緒にいることが多い。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 38,
+      "text": "だから焼き餅妬いてるんじゃないだろうか、と思ったわけだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 39,
+      "text": "「自惚れすぎ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 40,
+      "text": "「……って言いたいところだけど、\\n　それもあるかなぁ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 41,
+      "text": "「碧を羽々音さんにとられちゃった気分」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 42,
+      "text": "情けなさそうに言う。%K%P",
+      "text_with_name": "%LCあげは情けなさそうに言う。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 43,
+      "text": "「俺、別にそんなつもりないぞ。\\n　おまえの事は、今でも一番の親友だって思ってるし」%K%P",
+      "text_with_name": "%LCあげは「俺、別にそんなつもりないぞ。\\n　おまえの事は、今でも一番の親友だって思ってるし」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 44,
+      "text": "「俺が困ってる時におまえが助けてくれたみたいに、\\n　おまえが困ってる時は俺が助ける」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 45,
+      "text": "「そこんとこ、もうちょい信用しろ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 46,
+      "text": "あげはは、「いつの間にそんな話になったんだ？」って顔をしつつ、%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 47,
+      "text": "「あははは、なに言い出すのよあんたはっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 48,
+      "text": "「いやー、相変わらず熱い子だねぇ碧は。\\n　うん、今ので元気出た♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 49,
+      "text": "「そうか。\\n　ならよかった」%K%P",
+      "text_with_name": "%LCあげは「そうか。\\n　ならよかった」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 50,
+      "text": "「でもさ、焼き餅と言われればその通りかもしれない」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 51,
+      "text": "「わたし、碧に焼き餅妬いてんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 52,
+      "text": "「俺に？」%K%P",
+      "text_with_name": "%LCあげは「俺に？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 53,
+      "text": "「だって、わたしの羽々音さん懐柔作戦は失敗したのに、\\n　碧とはあっさり仲良くなっちゃって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 54,
+      "text": "「わたしって魅力ないのかなぁ～」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 55,
+      "text": "「たまたまだろ」%K%P",
+      "text_with_name": "%LCあげは「たまたまだろ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 56,
+      "text": "「碧には、人を惹き付ける魅力があるのよ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 57,
+      "text": "「なんつって♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 58,
+      "text": "「なんだそりゃ」%K%P",
+      "text_with_name": "%LCあげは「なんだそりゃ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 59,
+      "text": "「どうすりゃ羽々音さんと仲良くなれるんだろ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 60,
+      "text": "あげはは頭の上で腕を組みながら、ため息混じりにうなった。%K%P",
+      "text_with_name": "%LCあげはあげはは頭の上で腕を組みながら、ため息混じりにうなった。%K%P",
+      "char_name": "あげは"
+    }
+  ]
+}

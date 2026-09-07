@@ -1,0 +1,811 @@
+{
+  "script": "CO1_020",
+  "source": "Rio.arc",
+  "total": 134,
+  "texts": [
+    {
+      "lng_idx": 0,
+      "text": "校舎裏にひっそりと建つ古びたガレージ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 1,
+      "text": "誰かが使っている様子はなく、誰からも見向きもされていない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 2,
+      "text": "何か面白い物があるかもと、こっそり中に忍び込んでみた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 3,
+      "text": "初めてアレを見た時は、「なんかヘンな物があるなぁ」って程度で、たいして興味もなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 4,
+      "text": "それが１８０度変わったのは――あの写真を見つけてから。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 5,
+      "text": "一冊のノートに大事に挟んであったそれは、とても綺麗な雲の写真。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 6,
+      "text": "こんな美しい空があってもいいの！？%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 7,
+      "text": "ってくらいグレートな空。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 8,
+      "text": "けど、なんかヘンだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 9,
+      "text": "なんでだろう、この写真……%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 10,
+      "text": "あ、わかった！！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 11,
+      "text": "そう、その写真は、“雲の上から”撮影されていたのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 12,
+      "text": "挟んであったノートのページには、こう書かれてあった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 13,
+      "text": "『なんという幸運だろう！\\n　我々は、風ヶ浦に突如出現したモーニンググローリーを、\\n　偶然にも飛ぶことができた！』%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 14,
+      "text": "『それはもう奇跡と言ってもいい、素晴らしい体験だった』%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 15,
+      "text": "モーニンググローリー？\\n飛んだ？？%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 16,
+      "text": "そのノート――航行日誌を読み進めるうちに、ぼくは、どんどんのめり込んでいった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 17,
+      "text": "雲の写真は、このガレージを使っていた人たちが、グライダーという飛行機に乗って空の上から撮影したもので、%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 18,
+      "text": "そのグライダーにはエンジンはついてなくて、風に乗って雲の上まで飛ぶんだという……%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 19,
+      "text": "いったいどんな気分だろう、風に乗って空を飛ぶのは。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 20,
+      "text": "あの美しい雲の廻廊を渡るのは……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 21,
+      "text": "そうして想いを巡らせた時、もうぼくの心は決まっていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 22,
+      "text": "そこに打ち{棄:す}てられたグライダーを修復し、雲の{彼方:かなた}を目指そうと。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 23,
+      "text": "次の日ぼくは、早速その{偉大:グレート}な計画を親友に打ち明けた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 24,
+      "text": "「陽も暮れてきたし、\\n　今日はこのへんにしときますか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 25,
+      "text": "フライトから戻って来て一息ついていると、あげはが言った。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 26,
+      "text": "「もう１回飛べるんじゃないか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 27,
+      "text": "完全に陽が暮れるまで、まだもう少しある。%K%P",
+      "text_with_name": "%LC碧完全に陽が暮れるまで、まだもう少しある。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 28,
+      "text": "「この辺り街灯なんてないし、\\n　陽が落ちる前でもかなり暗くなるよ？\\n　そしたら着陸の時危ないじゃん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 29,
+      "text": "たしかにそうだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 30,
+      "text": "さっき戻ってくる時も、滑走路が見えづらくて距離感が狂いそうになった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 31,
+      "text": "「というわけで、今日はもうおしまい。\\n　小鳥ー、撤収するよー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 32,
+      "text": "あげはが携帯電話で小鳥に呼びかける。\\n小鳥は今、ウインチのところにいる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 33,
+      "text": "「今日はもうおわりか……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 34,
+      "text": "「ええ。\\n　訓練にはちょうどいい風が出てたんですけどね」%K%P",
+      "text_with_name": "%LC天音「ええ。\\n　訓練にはちょうどいい風が出てたんですけどね」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 35,
+      "text": "「しょうがない。\\n　……事故を起こすわけにはいかないからな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 36,
+      "text": "そう言いつつ、先輩は東の空を見上げる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 37,
+      "text": "そこには、いつもと変わらぬオレンジ色の夕焼けが。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 38,
+      "text": "「来てないですね、{予兆:・・}」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 39,
+      "text": "「……」%K%P",
+      "text_with_name": "%LC碧「……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 40,
+      "text": "明日の朝に、何も起こらない事を示す空。%K%P",
+      "text_with_name": "%LC天音明日の朝に、何も起こらない事を示す空。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 41,
+      "text": "それを見つめる先輩の横顔には、焦りの色が{滲:にじ}んでいるように見えた。%K%P",
+      "text_with_name": "%LC天音それを見つめる先輩の横顔には、焦りの色が{滲:にじ}んでいるように見えた。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 42,
+      "text": "ウインチが戻ってきてから、毎日、可能な限りのテストを重ねていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 43,
+      "text": "機体の調整もあるが、一番の目的は天音先輩と俺のフライト訓練だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 44,
+      "text": "「今日、かなり高くまで上がってたね。\\n　どのくらいいった？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 45,
+      "text": "「６００ｍってとこだな」%K%P",
+      "text_with_name": "%LCあげは「６００ｍってとこだな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 46,
+      "text": "「ほう、記録更新だねー。\\n　だいぶ掴めてきたんじゃない？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 47,
+      "text": "「ああ。\\n　でも、まだサーマルに乗るのは難しいよ」%K%P",
+      "text_with_name": "%LCあげは「ああ。\\n　でも、まだサーマルに乗るのは難しいよ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 48,
+      "text": "サーマルとは、地表によって暖められた空気が形成する上昇気流のことだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 49,
+      "text": "周囲より温度が高くなりやすい土の上や、アスファルトの上に発生しやすい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 50,
+      "text": "そのサーマルを捕まえ、それに乗って高度を上げる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 51,
+      "text": "しかし、なにせ相手は目に見えない風。\\n簡単には捕まえられない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 52,
+      "text": "上手く乗った後も、やはり風は気まぐれだ。\\n流れや強さは一定じゃなく、突然消えてしまったりもする。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 53,
+      "text": "しかし、それを乗りこなせなければ、天高く延びる雲の廻廊には届かない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 54,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 55,
+      "text": "天音先輩が無表情に俯いて、フォークでパスタを食べるでもなくつついている。%K%P",
+      "text_with_name": "%LC天音天音先輩が無表情に俯いて、フォークでパスタを食べるでもなくつついている。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 56,
+      "text": "「口に合いませんでしたか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 57,
+      "text": "「え……？\\n　ああ、いや、そうじゃないんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 58,
+      "text": "「ちょっと考え事をしてただけだ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 59,
+      "text": "弱々しく笑うと、またパスタをつついた。%K%P",
+      "text_with_name": "%LC天音弱々しく笑うと、またパスタをつついた。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 60,
+      "text": "俺はあげはと顔を見合わせ、肩をすくめる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 61,
+      "text": "小鳥はというと、先輩の隣で図書館から借りてきた本を開いて読み耽っていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 62,
+      "text": "「飯食い終わってからにしたらどうだ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 63,
+      "text": "「うん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 64,
+      "text": "ダメだ、聞こえてない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 65,
+      "text": "小鳥はずっとこの調子で、モーニンググローリーについて調べてくれていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 66,
+      "text": "テストが始まってから、足の不自由な小鳥はウインチ操作くらいしかやることがない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 67,
+      "text": "どうもそのせいで「私ってば役立たず！」とか考えているらしい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 68,
+      "text": "主翼造りではあんなに活躍してくれたし、そんなことはまったくないんだが。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 69,
+      "text": "でも、そのおかげで重要なことが解った。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 70,
+      "text": "先日の送別会が終わった後のこと……%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 71,
+      "text": "「うーんと……オーストラリアのバークタウンで起こる\\n　気象現象について書いてあるわね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 72,
+      "text": "小鳥にせがまれ、ひばりさんが英語の本を訳してくれた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 73,
+      "text": "モーニンググローリーについて書かれた本だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 74,
+      "text": "それによると、オーストラリアで発生するその雲は、全長およそ１０００キロにも及ぶという。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 75,
+      "text": "発生する雲は１本とは限らず、何本もできることがある。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 76,
+      "text": "陽が昇り、気温が上昇していくと雲は消える。\\nそれまで、わずか２時間程度。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 77,
+      "text": "地元の人たちにとっては雨の前触れであり、雲の下には暴風が吹き荒れているという。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 78,
+      "text": "雲の高さは１～２キロ。\\n上手く上昇気流に乗れれば、充分手の届く高さだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 79,
+      "text": "「海風と陸風が衝突してできる前線が\\n　発生の原因なんですって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 80,
+      "text": "「夜になると気流が冷えて下降し、逆転層が……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 81,
+      "text": "「メカニズムが解れば、予想は立てやすくなるけど、\\n　風ヶ浦とオーストラリアじゃ地形も気象も\\n　違いすぎるわね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 82,
+      "text": "「もっとこうわかりやすい前兆とかないのかしら」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 83,
+      "text": "「ここに、それらしいことが書いてあるわ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 84,
+      "text": "ひばりさんが訳しながら読み上げる。%K%P",
+      "text_with_name": "%LCひばりひばりさんが訳しながら読み上げる。%K%P",
+      "char_name": "ひばり"
+    },
+    {
+      "lng_idx": 85,
+      "text": "「北から湿った強い風が吹き、\\n　夕暮れ時、東の空が紫色になる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 86,
+      "text": "「パブの冷蔵庫に水滴ができたら、\\n　翌日起こるんですって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 87,
+      "text": "「この辺りにパブってあったかしら！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 88,
+      "text": "「落ち着け、これはオーストラリアの話だ」%K%P",
+      "text_with_name": "%LC小鳥「落ち着け、これはオーストラリアの話だ」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 89,
+      "text": "「気温が低く、湿度が高い早朝に発生することが多い……\\n　ですって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 90,
+      "text": "「気温が低く湿度は高く、\\n　前日の夕方、東の空が紫色に、か……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 91,
+      "text": "「ちょっと待って！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 92,
+      "text": "小鳥が興奮した様子で、一冊の古いノートを開く。%K%P",
+      "text_with_name": "%LC小鳥小鳥が興奮した様子で、一冊の古いノートを開く。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 93,
+      "text": "それはＯＢの航行日誌だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 94,
+      "text": "「ほら、ここ見て」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 95,
+      "text": "あの写真が撮影された日、つまり、この風ヶ浦でモーニンググローリーが発生した日の{前日の:・・・}日誌を、小鳥は開いていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 96,
+      "text": "その日もテストをしたらしく、航行日誌には、その日の気象データなどが詳細に記録されていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 97,
+      "text": "「テストをした１６時頃の気温は２３度……\\n　真夏の日中にしちゃ随分低いわね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 98,
+      "text": "「“その後、日暮れから強い風が吹いて、\\n　肌寒いくらいだった”って書いてあるわ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 99,
+      "text": "備考欄にそう記されていた。わざわざ書くくらいだから、よほど大きな気温の変化があったんだろう。%K%P",
+      "text_with_name": "%LC小鳥備考欄にそう記されていた。わざわざ書くくらいだから、よほど大きな気温の変化があったんだろう。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 100,
+      "text": "「空の色については……書いてないな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 101,
+      "text": "重要なのは、この日誌が、\\n“翌日モーニンググローリーが発生する”\\nとは知らずに書かれたことだ。%K%P",
+      "text_with_name": "%LC碧重要なのは、この日誌が、\\n“翌日モーニンググローリーが発生する”\\nとは知らずに書かれたことだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 102,
+      "text": "彼らは、それが予兆であるとは気付かずに、これを記していたことになる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 103,
+      "text": "「これはかなりのヒントなんじゃない？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 104,
+      "text": "「うん！\\n　ありがとう、お姉ちゃんっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 105,
+      "text": "「うふふ、どういたしまして♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 106,
+      "text": "以来、小鳥は毎日朝夕の天気予報をチェックし、気象予報士にでもなるつもりかってくらい、気象に関する本を読み漁っていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 107,
+      "text": "というわけで、モーニンググローリーが発生する前兆らしきものは以下の３つ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 108,
+      "text": "１：前日、湿った強い風が吹き、パブの冷蔵庫に水滴ができるくらい湿度が高くなる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 109,
+      "text": "２：前日の夕暮れ、東の空が紫色になる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 110,
+      "text": "３：夏とは思えないほど冷え込む。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 111,
+      "text": "もしかすると、全然でたらめかもしれないが、俺たちがすがれる情報はこれだけだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 112,
+      "text": "「ねえ、碧。\\n　今日の当番って誰だっけ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 113,
+      "text": "「誰だっけな」%K%P",
+      "text_with_name": "%LCあげは「誰だっけな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 114,
+      "text": "毎日交代で夜明け前に起きて、空にそれらしい雲ができていないか見張ることにしている。%K%P",
+      "text_with_name": "%LC碧毎日交代で夜明け前に起きて、空にそれらしい雲ができていないか見張ることにしている。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 115,
+      "text": "前日に予兆がなくてもだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 116,
+      "text": "その今日の当番は誰だったか……%K",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 122,
+      "text": "「小鳥じゃなかったか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 123,
+      "text": "俺が言うと、小鳥が顔をあげた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 124,
+      "text": "「うん、そうよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 126,
+      "text": "「おまえだろ、あげは」%K%P",
+      "text_with_name": "%LC小鳥「おまえだろ、あげは」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 127,
+      "text": "「あれ、そうだっけ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 128,
+      "text": "「おいおい、ボケてんのかよ」%K%P",
+      "text_with_name": "%LCあげは「おいおい、ボケてんのかよ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 130,
+      "text": "「天音先輩じゃなかったか？」%K%P",
+      "text_with_name": "%LC碧「天音先輩じゃなかったか？」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 131,
+      "text": "「ん？　あぁ、そうだ、私だ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 132,
+      "text": "「そっか。\\n　先輩、よろしくお願いしますね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 134,
+      "text": "「俺だ」%K%P",
+      "text_with_name": "%LCあげは「俺だ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 135,
+      "text": "「そっか、碧か」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 136,
+      "text": "「さてと、さっさと風呂入って寝るか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 137,
+      "text": "もしモーニンググローリーが来たら、すぐに飛ばなければいけない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 138,
+      "text": "そのために、機体はシートをかけて滑走路においたままにしてある。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 139,
+      "text": "もし発生しなくても、そのまま朝からテストフライトできるって寸法だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 140,
+      "text": "少々手荒ではあるが、しばらく雨は降らなさそうだし仕方がない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 141,
+      "text": "俺たちは、万に一つのチャンスも逃すわけにはいかないのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    }
+  ]
+}

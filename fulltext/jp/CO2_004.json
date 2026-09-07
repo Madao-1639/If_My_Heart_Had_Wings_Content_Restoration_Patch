@@ -1,0 +1,2953 @@
+{
+  "script": "CO2_004",
+  "source": "Rio.arc",
+  "total": 491,
+  "texts": [
+    {
+      "lng_idx": 0,
+      "text": "「やっほー、朱莉ちゃーん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 1,
+      "text": "「こんにちは、佳奈子さん。\\n　やけにご機嫌ね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 2,
+      "text": "「へへ～ん、ちょっとねー。\\n　うちの寮に新しい子が来たんだけどさぁ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 3,
+      "text": "「例の、水瀬碧が寮母を務めているという、\\n　不純な寮に？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 4,
+      "text": "「そうそう、そのいかがわしい寮に」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 5,
+      "text": "「すんごい可愛い子なんだけどさー。\\n　上手く馴染めないみたいで心配してたんだよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 6,
+      "text": "「でもやっと打ち解けてきたみたいで」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 7,
+      "text": "「……ふぅん。\\n　あなたって、案外面倒見がいいのね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 8,
+      "text": "「そっちはどうなの。\\n　生徒会、気合いいれてやってるみたいだけど」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 9,
+      "text": "「問題は多いけど、一つずつ解消していってるわ。\\n　中でも、一番厄介なのが……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 10,
+      "text": "「ソアリング部？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 11,
+      "text": "「そうよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 12,
+      "text": "「まったく、望月先輩が引退なさったんだから、\\n　他のこと始めればいいものを……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 13,
+      "text": "「そんなこと言って、結構応援してるくせにー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 14,
+      "text": "「してません」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 15,
+      "text": "「私はいつだって公正なだけです」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 16,
+      "text": "「ふぅん。先生はちっとも公正じゃないのにねー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 17,
+      "text": "「でさぁ、その新しい子もソアリング部に……\\n　お、噂をすれば」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 18,
+      "text": "「おーい、亜紗ちゃーん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 19,
+      "text": "「？　あ、佳奈子さん、こんにちは」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 20,
+      "text": "「……どうも」%K%P",
+      "text_with_name": "%LC亜紗「……どうも」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 21,
+      "text": "「なにしてんのー？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 22,
+      "text": "「碧先輩たちを探してるんです。\\n　部活のことでお話があって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 23,
+      "text": "「碧先輩……？\\n　部活……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 24,
+      "text": "「そっかそっか。\\n　がんばりなよー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 25,
+      "text": "「はい。それじゃ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 26,
+      "text": "「……（ぺこり）」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 27,
+      "text": "「佳奈子さんってキレイだよねー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 28,
+      "text": "「そう？　水準以上だとは思うけど」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 29,
+      "text": "「ふふふ、かーわいいでしょ～～♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 30,
+      "text": "「ねえ、佳奈子さん……あの二人って、まさか」%K%P",
+      "text_with_name": "%LC佳奈子「ねえ、佳奈子さん……あの二人って、まさか」%K%P",
+      "char_name": "佳奈子"
+    },
+    {
+      "lng_idx": 31,
+      "text": "「うんそう、今年入った風戸姉妹。\\n　理事長の孫だっけ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 32,
+      "text": "「やっぱり！\\n　水瀬碧めぇ……飛岡先生と対立しているからって、\\n　理事長を味方につける気ね！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 33,
+      "text": "「いやー、ないない」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 34,
+      "text": "「やはり、抜け目がないわ、あの男！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 35,
+      "text": "「ぎゅっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 36,
+      "text": "「きゃあっ、なんで急に抱きつくのっ！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 37,
+      "text": "「碧くんのことになると熱くなる朱莉ちゃんが、\\n　可愛かったものでつい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 38,
+      "text": "「なによそれ、いいから放しなさいっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 39,
+      "text": "「やだもーん♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 40,
+      "text": "「このセクハラ女ー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 41,
+      "text": "「碧せんぱーい！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 42,
+      "text": "昼休み、弁当を食っていると、亜紗ちゃんが教室にやってきた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 43,
+      "text": "小鳥とあげはは女子グループと、俺は仲のいい男子グループと食べていたわけだが。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 44,
+      "text": "その男子グループが、亜紗ちゃんを見て急に色めき立った。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 45,
+      "text": "「誰だ、あの可愛い子！\\n　またおまえの知り合いかっ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 46,
+      "text": "「知り合いだよ、見りゃわかるだろ」%K%P",
+      "text_with_name": "%LCクラスの男子Ａ「知り合いだよ、見りゃわかるだろ」%K%P",
+      "char_name": "クラスの男子Ａ"
+    },
+    {
+      "lng_idx": 47,
+      "text": "じゃなきゃ、いきなり名前呼ばれたりしないだろう。%K%P",
+      "text_with_name": "%LC碧じゃなきゃ、いきなり名前呼ばれたりしないだろう。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 48,
+      "text": "「どういうことだよっ！\\n　なんでおまえばっか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 49,
+      "text": "とりあえずうるさい連中を押しのけて、入口で待ってた亜紗ちゃんのところへいく。%K%P",
+      "text_with_name": "%LCクラスの男子Ａとりあえずうるさい連中を押しのけて、入口で待ってた亜紗ちゃんのところへいく。%K%P",
+      "char_name": "クラスの男子Ａ"
+    },
+    {
+      "lng_idx": 50,
+      "text": "「やあ、亜紗ちゃん。どうしたの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 51,
+      "text": "「あの、えっと……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 52,
+      "text": "上級生の視線が集まってるのに気付いて、亜紗ちゃんが赤くなる。%K%P",
+      "text_with_name": "%LC亜紗上級生の視線が集まってるのに気付いて、亜紗ちゃんが赤くなる。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 53,
+      "text": "「今日の……部活のことで」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 54,
+      "text": "「どうかしたのー？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 55,
+      "text": "小鳥が席についたまま声をかけてきた。%K%P",
+      "text_with_name": "%LC小鳥小鳥が席についたまま声をかけてきた。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 56,
+      "text": "「あ、小鳥先輩、あげは先輩、こんにちはっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 57,
+      "text": "ぺこっと、お行儀よく頭を下げる。%K%P",
+      "text_with_name": "%LC亜紗ぺこっと、お行儀よく頭を下げる。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 58,
+      "text": "「そんなとこいないで、\\n　こっちおいでよー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 59,
+      "text": "あげはに手招きされ、亜紗ちゃんが恐る恐る教室に入ってくる。%K%P",
+      "text_with_name": "%LCあげはあげはに手招きされ、亜紗ちゃんが恐る恐る教室に入ってくる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 60,
+      "text": "上級生のクラスに入るというのは、緊張するものだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 61,
+      "text": "「し、失礼します……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 62,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 63,
+      "text": "扉の陰からぬっと依瑠ちゃんが現れて、まるで影のように亜紗ちゃんの後ろについていった。%K%P",
+      "text_with_name": "%LC依瑠扉の陰からぬっと依瑠ちゃんが現れて、まるで影のように亜紗ちゃんの後ろについていった。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 64,
+      "text": "ていうか、いたのか依瑠ちゃん。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 65,
+      "text": "「（この二人は、どこへいくのも何をするのも\\n　一緒なんだな……）」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 66,
+      "text": "今度は女子グループが騒がしくなった。%K%P",
+      "text_with_name": "%LC碧今度は女子グループが騒がしくなった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 67,
+      "text": "「ふたごなのー？\\n　かわいいー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 68,
+      "text": "「ねえねえ、誰なの？\\n　どういう知り合い？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 69,
+      "text": "「ふっふっふー、この子は私たちの後輩よ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 70,
+      "text": "小鳥が、さも「ワシが育てた！」と言わんばかりに自慢げにする。%K%P",
+      "text_with_name": "%LC小鳥小鳥が、さも「ワシが育てた！」と言わんばかりに自慢げにする。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 71,
+      "text": "つい最近知り合ったばかりのくせに。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 72,
+      "text": "「はじめましてっ、\\n　風戸亜紗です……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 73,
+      "text": "またお行儀よく頭を下げて自己紹介する亜紗ちゃん。%K%P",
+      "text_with_name": "%LC亜紗またお行儀よく頭を下げて自己紹介する亜紗ちゃん。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 74,
+      "text": "人見知りするようだけど、そういうところはしっかりしている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 75,
+      "text": "それに引き替え、妹の方は……%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 76,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 77,
+      "text": "つんとした態度で、興味のない表情でそっぽを向いていた。%K%P",
+      "text_with_name": "%LC依瑠つんとした態度で、興味のない表情でそっぽを向いていた。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 78,
+      "text": "つまり、我関せず。%K%P",
+      "text_with_name": "%LC依瑠つまり、我関せず。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 79,
+      "text": "「小鳥のとこの寮生なんだけどね。\\n　今はソアリング同好会のメンバーでもあるの」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 80,
+      "text": "あげはにメンバーだと紹介され、亜紗ちゃんが照れくさそうに頬を赤らめる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 81,
+      "text": "その仕草に「カワイイー♪」という声があがる。\\nたしかに可愛い。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 82,
+      "text": "「ねえ、お弁当もう食べた？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 83,
+      "text": "「いえ、まだです。\\n　これから、依瑠ちゃんと一緒に食べようと思って……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 84,
+      "text": "持参していたお弁当を見せる。%K%P",
+      "text_with_name": "%LC亜紗持参していたお弁当を見せる。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 85,
+      "text": "「じゃあ、一緒に食べましょうよ！\\n　ね、決まり♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 86,
+      "text": "小鳥が強引に決めてしまう。%K%P",
+      "text_with_name": "%LC小鳥小鳥が強引に決めてしまう。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 87,
+      "text": "亜紗ちゃんはいいだろうが、%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 88,
+      "text": "「依瑠ちゃんも、一緒にどう？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 89,
+      "text": "「……別にかまいませんけど」%K%P",
+      "text_with_name": "%LCあげは「……別にかまいませんけど」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 90,
+      "text": "渋々って顔をして、依瑠ちゃんも承諾した。%K%P",
+      "text_with_name": "%LC依瑠渋々って顔をして、依瑠ちゃんも承諾した。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 91,
+      "text": "まるでお人形さんのような双子の美少女に、女子グループはやいのやいのと盛り上がる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 92,
+      "text": "「ちっくしょー、水瀬のヤツぅぅ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 93,
+      "text": "訂正、男子グループもだった。%K%P",
+      "text_with_name": "%LCクラスの男子Ａ訂正、男子グループもだった。%K%P",
+      "char_name": "クラスの男子Ａ"
+    },
+    {
+      "lng_idx": 94,
+      "text": "「あー、先にいいかー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 95,
+      "text": "「なに？　碧くんも一緒に食べる？」%K%P",
+      "text_with_name": "%LC碧「なに？　碧くんも一緒に食べる？」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 96,
+      "text": "「いや、それは遠慮する。\\n　亜紗ちゃん、何か話があって来たんじゃ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 97,
+      "text": "「そ、そうだった！\\n　ごめんなさい、わたしそそっかしくて……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 98,
+      "text": "「……今日の部活って、あそこでするんですよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 99,
+      "text": "あそことは、先日教えてもらった秘密基地のことだろう。%K%P",
+      "text_with_name": "%LC亜紗あそことは、先日教えてもらった秘密基地のことだろう。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 100,
+      "text": "「そのつもりよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 101,
+      "text": "会長が答える。%K%P",
+      "text_with_name": "%LC小鳥会長が答える。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 102,
+      "text": "「じゃあこれ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 103,
+      "text": "亜紗ちゃんが、小鳥に鍵を渡した。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんが、小鳥に鍵を渡した。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 104,
+      "text": "「合い鍵作ってもらったから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 105,
+      "text": "「勝手に出入りしちゃっていいの……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 106,
+      "text": "さすがの小鳥も、遠慮がちだ。%K%P",
+      "text_with_name": "%LC小鳥さすがの小鳥も、遠慮がちだ。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 107,
+      "text": "「はい、構いません。\\n　お祖父ちゃんの許可ももらってます」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 108,
+      "text": "「ありがとう、亜紗～！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 109,
+      "text": "「……ふんっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 110,
+      "text": "放課後、新しい拠点にグライダーを運び込んだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 111,
+      "text": "必要な工具なども運び込み、作業ができるように整えていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 112,
+      "text": "「なんだか秘密基地みたいだね～♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 113,
+      "text": "「その表現がぴったりくるな」%K%P",
+      "text_with_name": "%LCあげは「その表現がぴったりくるな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 114,
+      "text": "「子供の頃に戻ったみたい。\\n　なんか燃えるわー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 115,
+      "text": "そう言って作業するあげはは、ご機嫌だ。%K%P",
+      "text_with_name": "%LCあげはそう言って作業するあげはは、ご機嫌だ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 116,
+      "text": "たしかにこの感じは、小さい頃、秘密基地ごっこをして遊んだ時に似ている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 117,
+      "text": "この鉄骨で組み上げられたドックは、あの頃思い描いた秘密基地のイメージそのままだし。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 118,
+      "text": "宇宙船やロボットのかわりに、グライダーがある。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 119,
+      "text": "俺たちの秘密兵器だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 120,
+      "text": "「うおー、なんかやる気出てきたー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 121,
+      "text": "「けほっけほっ……すごいホコリ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 122,
+      "text": "「……全然掃除とかしてなかったので」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 123,
+      "text": "「こりゃてこずりそうね。\\n　まずはホコリを払って、それから拭き掃除して……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 124,
+      "text": "こっちの部屋では、掃除が進行中だった。%K%P",
+      "text_with_name": "%LC小鳥こっちの部屋では、掃除が進行中だった。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 125,
+      "text": "電気も通ってるし、キレイにすればここで寝泊まりすることだってできるだろう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 126,
+      "text": "「一度寮に戻って、掃除機とってくるか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 127,
+      "text": "「そうした方がいいかも……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 128,
+      "text": "小鳥がホコリに顔をしかめながら答える。%K%P",
+      "text_with_name": "%LC小鳥小鳥がホコリに顔をしかめながら答える。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 129,
+      "text": "「今日は、依瑠ちゃんはどうしたの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 130,
+      "text": "風戸姉妹は、いつも一緒にいる印象だったけど、今日は依瑠ちゃんが来ていない。%K%P",
+      "text_with_name": "%LC碧風戸姉妹は、いつも一緒にいる印象だったけど、今日は依瑠ちゃんが来ていない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 131,
+      "text": "「今日は用事があるとかで……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 132,
+      "text": "「もしかして、怒ってる？\\n　ここを貸すのも反対してたみたいだったし」%K%P",
+      "text_with_name": "%LC亜紗「もしかして、怒ってる？\\n　ここを貸すのも反対してたみたいだったし」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 133,
+      "text": "「ええ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 134,
+      "text": "亜紗ちゃんが暗い顔をしたところで、亜紗ちゃんのケータイが短く鳴った。メールのようだ。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんが暗い顔をしたところで、亜紗ちゃんのケータイが短く鳴った。メールのようだ。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 135,
+      "text": "「依瑠ちゃんからだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 136,
+      "text": "「“オマエの大切なモノをいただいた――怪盗Ｙより”」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 137,
+      "text": "「画像が添付されてる、なんだろう」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 138,
+      "text": "俺も小鳥も、興味を惹かれてケータイを覗き込む。%K%P",
+      "text_with_name": "%LC亜紗俺も小鳥も、興味を惹かれてケータイを覗き込む。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 139,
+      "text": "「んぅ？　なにこれ……なんかしましま模様が」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 140,
+      "text": "「なんだろうな……」%K%P",
+      "text_with_name": "%LC小鳥「なんだろうな……」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 141,
+      "text": "最初、なんの画像かわからなかった。%K%P",
+      "text_with_name": "%LC碧最初、なんの画像かわからなかった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 142,
+      "text": "人の素肌っぽいものと、三角形をした布地と……そしてしましま模様……%K%P",
+      "text_with_name": "%LC碧人の素肌っぽいものと、三角形をした布地と……そしてしましま模様……%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 143,
+      "text": "「きゃっ！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 144,
+      "text": "「こ、これ、わたしのお気に入りのしましまパンツ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 145,
+      "text": "「なぬっ！！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 146,
+      "text": "それはピンクのしましまパンツで、しかもどうやら依瑠ちゃんが装着した状態で、スカートをまくって撮影したもののようだった。%K%P",
+      "text_with_name": "%LC碧それはピンクのしましまパンツで、しかもどうやら依瑠ちゃんが装着した状態で、スカートをまくって撮影したもののようだった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 147,
+      "text": "つまり、依瑠ちゃんのスカートの中身ってことだ！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 148,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 149,
+      "text": "亜紗ちゃんが画面を前にして硬直する。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんが画面を前にして硬直する。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 150,
+      "text": "またメールが来る。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 151,
+      "text": "『フハハハ、恐れ入ったか。\\n　これに懲りたら、妹をないがしろにしないことだな。\\n　　　　　　　　　　　　　　　　　　　　　　怪盗Ｙ』%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 152,
+      "text": "「あの子、天才じゃなくてバカだよね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 153,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 154,
+      "text": "相変わらず、固まったままの亜紗ちゃん。%K%P",
+      "text_with_name": "%LC亜紗相変わらず、固まったままの亜紗ちゃん。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 155,
+      "text": "どうやら、大切なパンツを奪われてよほどショックだったらしい。%K%P",
+      "text_with_name": "%LC亜紗どうやら、大切なパンツを奪われてよほどショックだったらしい。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 156,
+      "text": "こんな時、どんな言葉で慰めればいいんだろう……？%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 157,
+      "text": "無力な俺には、そっと肩を叩いてやることしかできなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 158,
+      "text": "そんなハプニングに見舞われつつも、半日かけてなんとか掃除を終わらせた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 159,
+      "text": "「結構キレイになったな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 160,
+      "text": "「そうね、寝袋とかあれば、\\n　ここで寝られそう」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 161,
+      "text": "物を勝手に捨てるわけにはいかないので、ごちゃごちゃしたままだが、キレイにはなった。%K%P",
+      "text_with_name": "%LCあげは物を勝手に捨てるわけにはいかないので、ごちゃごちゃしたままだが、キレイにはなった。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 162,
+      "text": "「しくしく……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 163,
+      "text": "「元気出しなさい、亜紗。\\n　パンツなら、今度私が、\\n　もっといいのを選んであげるから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 164,
+      "text": "「そ、そうじゃなくて。いや、それもあるけど、碧先輩に\\n　パンツ見られたことが悲しいんです……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 165,
+      "text": "「もうお嫁に行けないかも……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 166,
+      "text": "え？　そうだったの？%K%P",
+      "text_with_name": "%LC亜紗え？　そうだったの？%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 167,
+      "text": "とりあえず、その話は面倒なので聞かなかったことにして、写真立てを置く。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 168,
+      "text": "「……ここでいいかな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 169,
+      "text": "俺は、腰ぐらいの高さの棚の上に、写真立てを置いた。%K%P",
+      "text_with_name": "%LC碧俺は、腰ぐらいの高さの棚の上に、写真立てを置いた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 170,
+      "text": "さっき、掃除機と一緒に寮から持ってきたのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 171,
+      "text": "「いいんじゃない？\\n　部屋のどこからでも見えるし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 172,
+      "text": "「うん。気合い入るよね。\\n　天音先輩に見られてるかと思うと」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 173,
+      "text": "天音先輩と――あの頃の俺たちを、裏切ることはできない。%K%P",
+      "text_with_name": "%LCあげは天音先輩と――あの頃の俺たちを、裏切ることはできない。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 174,
+      "text": "そんな想いで、今日までやってきた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 175,
+      "text": "あの日はひとつの終わりであり、新しい出発点でもあった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 176,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 177,
+      "text": "写真の中の俺たちを、亜紗ちゃんは、少しシュンとした様子で見ていた。%K%P",
+      "text_with_name": "%LC亜紗写真の中の俺たちを、亜紗ちゃんは、少しシュンとした様子で見ていた。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 178,
+      "text": "そこに、彼女だけいない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 179,
+      "text": "「一緒に撮ろうね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 180,
+      "text": "「え？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 181,
+      "text": "「記念写真。\\n　わたしたちのグライダーが飛んだら」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 182,
+      "text": "「は、はいっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 183,
+      "text": "「そうだ、飛んだ時だけじゃなくってさ、\\n　普段から撮っておきましょうよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 184,
+      "text": "「私たちの活動の記録ってことで」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 185,
+      "text": "「おー、いいなぁ。\\n　後輩たちにも残せるしな、どんな活動してたのかって」%K%P",
+      "text_with_name": "%LC小鳥「おー、いいなぁ。\\n　後輩たちにも残せるしな、どんな活動してたのかって」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 186,
+      "text": "「後輩たち？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 187,
+      "text": "「だってこれ、部活動だろ？\\n　下の世代に残してくんだから」%K%P",
+      "text_with_name": "%LCあげは「だってこれ、部活動だろ？\\n　下の世代に残してくんだから」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 188,
+      "text": "「そっか。\\n　そんなこと考えたことなかったわ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 189,
+      "text": "「おいおい、こうして新入部員も入ったってのに」%K%P",
+      "text_with_name": "%LCあげは「おいおい、こうして新入部員も入ったってのに」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 190,
+      "text": "俺たちが天音先輩からグライダーを引き継いだように、同じ気持ちで雲を見上げる奴らに、残していけたらと思う。%K%P",
+      "text_with_name": "%LC碧俺たちが天音先輩からグライダーを引き継いだように、同じ気持ちで雲を見上げる奴らに、残していけたらと思う。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 191,
+      "text": "なんて考えるのは、まだ早いか。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 192,
+      "text": "でも、そういう未来を想像するのは楽しかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 193,
+      "text": "「ごめんなさい、怪盗Ｙ様……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 194,
+      "text": "「もう二度と依瑠ちゃんを、\\n　ないがしろにはいたしません」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 195,
+      "text": "「大切なモノを奪われる気持ちが、\\n　少しはわかったかしら？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 196,
+      "text": "「はい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 197,
+      "text": "「フハハハ、これに懲りたら、\\n　妹にもっと優しくするのだー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 198,
+      "text": "「それ以上に、男の人にパンツを見られる恥ずかしさを\\n　学びました」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 199,
+      "text": "「え？　男の人に？　パンツ？　さっきの写真？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 200,
+      "text": "「一緒に碧先輩がいたから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 201,
+      "text": "「……私が履いてたところ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 202,
+      "text": "「依瑠ちゃんが履いてたところ。わたしのパンツ、\\n　碧先輩に見られちゃった」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 203,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 204,
+      "text": "「ええええええええええええええええええ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 205,
+      "text": "風車の丘の秘密基地に拠点を移してから、俺たちの活動は本格化した。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 206,
+      "text": "今までアンダーグラウンドに活動し、目立った成果を挙げられなかった分、みんなここぞとばかりに働いた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 207,
+      "text": "俺たちがまず着手したのは、損傷した機体の修理だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 208,
+      "text": "「ガラスマットが含んだ空気を、\\n　{刷毛:はけ}で押し出すようにして樹脂を塗るの」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 209,
+      "text": "「こうでしょうか……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 210,
+      "text": "「塗りすぎっ、もっと少しずつでいいから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 211,
+      "text": "「このくらいですか……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 212,
+      "text": "「まだ多い。\\n　ＦＲＰは樹脂の割合が多いと、強度が弱くなるの」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 213,
+      "text": "「じゃあ、このくらい？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 214,
+      "text": "「少なすぎ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 215,
+      "text": "「あぅあぅ……難しいです」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 216,
+      "text": "ドックの隅では、小鳥が亜紗ちゃんにＦＲＰの加工の仕方を教えている。%K%P",
+      "text_with_name": "%LC亜紗ドックの隅では、小鳥が亜紗ちゃんにＦＲＰの加工の仕方を教えている。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 217,
+      "text": "１年前、小鳥があげはに教わった時と同様、ＦＲＰ製のお皿を作ろうとしていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 218,
+      "text": "「そうそう、その調子よ。\\n　で、なるべく手早くね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 219,
+      "text": "「なるべく手早く……あうちっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 220,
+      "text": "「わー、こぼしたっ！？\\n　流れてる流れてるっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 221,
+      "text": "「はわわー、どうしようーー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 222,
+      "text": "亜紗ちゃんが樹脂の入ったバケツを倒してしまった。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんが樹脂の入ったバケツを倒してしまった。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 223,
+      "text": "「もぉ、何やってんのよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 224,
+      "text": "「あーあ、これじゃもう使えないわね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 225,
+      "text": "「……ごめんなさい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 226,
+      "text": "シュンとして謝る亜紗ちゃん。%K%P",
+      "text_with_name": "%LC亜紗シュンとして謝る亜紗ちゃん。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 227,
+      "text": "しかし、あげはは甘やかさない。%K%P",
+      "text_with_name": "%LC亜紗しかし、あげはは甘やかさない。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 228,
+      "text": "「いい？　ここにある資材には限りがあるの。\\n　足りなくなったら、グライダーを造れなくなっちゃう」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 229,
+      "text": "「技術はおいおい身に付ければいいけど、\\n　資材や道具は大切にしないとね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 230,
+      "text": "「はい……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 231,
+      "text": "「わかればよろしい」って感じで、あげはがこっちに戻ってくる。%K%P",
+      "text_with_name": "%LC亜紗「わかればよろしい」って感じで、あげはがこっちに戻ってくる。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 232,
+      "text": "俺とあげはは、機体の損傷箇所を修理していた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 233,
+      "text": "ＦＲＰの修理は、分割して造った部品の接合と同じ要領で行う。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 234,
+      "text": "損傷部の裏からガラスマットを貼り付け、樹脂を塗り、積層していく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 235,
+      "text": "乾いたらサンディングして、再度塗装したら完了。\\n結構簡単だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 236,
+      "text": "これの問題は、損傷部を補強した分、そこだけＦＲＰが厚くなり重量が増えてしまうことだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 237,
+      "text": "重くなるのも当然困るのだが、グライダーの場合、機体のバランスが崩れることも問題だった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 238,
+      "text": "「右翼の損傷箇所はここだけ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 239,
+      "text": "「ああ。あとは{胴体:ボディ}だな」%K%P",
+      "text_with_name": "%LCあげは「ああ。あとは{胴体:ボディ}だな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 240,
+      "text": "「よし、今日中に全部終わらせよう」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 241,
+      "text": "１年間、直してやれず放置していた傷だ。%K%P",
+      "text_with_name": "%LCあげは１年間、直してやれず放置していた傷だ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 242,
+      "text": "早く飛べるようにしてやりたかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 243,
+      "text": "「はぁぁ、また失敗しちゃったぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 244,
+      "text": "ため息をつきながら亜紗ちゃんが、自分がこぼした樹脂を片付けている。%K%P",
+      "text_with_name": "%LC亜紗ため息をつきながら亜紗ちゃんが、自分がこぼした樹脂を片付けている。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 245,
+      "text": "床にこぼした樹脂には不純物が混じるので使えないが、今は練習でお皿を作っているだけなので、そのまま使用するようだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 246,
+      "text": "あげはが言った通り、資材には限りがあり、足りなくなった時簡単に補充できるほど資金繰りがいいわけじゃなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 247,
+      "text": "「空気を押し出すように……うんしょ、うんしょ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 248,
+      "text": "「ふふ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 249,
+      "text": "「？　なんですか、小鳥先輩」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 250,
+      "text": "「ううん、ちょっと思い出してたのよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 251,
+      "text": "「私もね、あなたみたいな時期があったわ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 252,
+      "text": "小鳥が、ゆっくりと目を閉じながら、なにやら語り始めた。%K%P",
+      "text_with_name": "%LC小鳥小鳥が、ゆっくりと目を閉じながら、なにやら語り始めた。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 253,
+      "text": "その様子は、さながら大女優が自らの半生を振り返るかのようだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 254,
+      "text": "「はぁ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 255,
+      "text": "「何をやっても上手くいかなくて、\\n　自分はみんなのお荷物なんじゃないかって悩んだりもした」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 256,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 257,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 258,
+      "text": "「でもね、そんな私を変えてくれたのは、\\n　かけがえのない仲間たち……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 259,
+      "text": "「かけがえのない仲間たち……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 260,
+      "text": "「そうよ。仲間たちとの絆で、\\n　私は変わることができたの！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 261,
+      "text": "「……もう無理、限界っ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 262,
+      "text": "あげはが樹脂を塗っていた刷毛を投げ出した。%K%P",
+      "text_with_name": "%LCあげはあげはが樹脂を塗っていた刷毛を投げ出した。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 263,
+      "text": "「？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 264,
+      "text": "「なーにかゆくなるようなこと、\\n　真顔で語ってんのよっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 265,
+      "text": "「見なさいよこれっ、\\n　さぶいぼ立っちゃったじゃなーい！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 266,
+      "text": "俺は隣で、腹を抱えて笑い転げていた。%K%P",
+      "text_with_name": "%LCあげは俺は隣で、腹を抱えて笑い転げていた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 267,
+      "text": "「ぶわははははははっっっ！！\\n　お、おま、なんだよそれっ、\\n　笑わすなよ、手元狂うだろう！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 268,
+      "text": "「真面目に言ってるのに！！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 269,
+      "text": "「あー、かゆいかゆいっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 270,
+      "text": "「ぐはははははっ！！\\n　ひぃひぃ……うくく！！」%K%P",
+      "text_with_name": "%LCあげは「ぐはははははっ！！\\n　ひぃひぃ……うくく！！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 271,
+      "text": "「き、気を付けてね、亜紗ちゃん。\\n　こいつ、時々大まじめな顔して面白いこと言うから」%K%P",
+      "text_with_name": "%LC碧「き、気を付けてね、亜紗ちゃん。\\n　こいつ、時々大まじめな顔して面白いこと言うから」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 272,
+      "text": "「はぁ……\\n　今のはギャグだったんですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 273,
+      "text": "「ギャグじゃないもん！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 274,
+      "text": "怒った小鳥が何か投げてきた。%K%P",
+      "text_with_name": "%LC小鳥怒った小鳥が何か投げてきた。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 275,
+      "text": "「いてっ、わるい、冗談だって、いててっ！？」%K%P",
+      "text_with_name": "%LC小鳥「いてっ、わるい、冗談だって、いててっ！？」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 276,
+      "text": "「こらっ、機体に当たるでしょーがっ、いたたっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 277,
+      "text": "「バカバカ！\\n　デリカシーのないアホヤロウどもっ！！\\n　地獄に堕ちろぉぉ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 278,
+      "text": "「ごめん、悪かったって！\\n　いや、おまえの気持ちは嬉しいよ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 279,
+      "text": "「ただ、ＴＰＯわきまえろって言ってるだけでっ、\\n　なぁ、あげは！」%K%P",
+      "text_with_name": "%LC碧「ただ、ＴＰＯわきまえろって言ってるだけでっ、\\n　なぁ、あげは！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 280,
+      "text": "「うんうん、嬉しいけど、\\n　真面目に作業してる時に言うのやめてっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 281,
+      "text": "「ほらほら、ここ！\\n　手が震えて歪んじゃったよ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 282,
+      "text": "「そんなの私のせいじゃないもん！！\\n　あんたたちが悪いんだーー！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 283,
+      "text": "冗談だか本気だかわからない俺たちのやりとりを、亜紗ちゃんはついていけてない様子で見守っている。%K%P",
+      "text_with_name": "%LC小鳥冗談だか本気だかわからない俺たちのやりとりを、亜紗ちゃんはついていけてない様子で見守っている。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 284,
+      "text": "「みなさん、やっぱり仲がいいんですね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 285,
+      "text": "「ちっともよくない！　今の聞いたでしょ？\\n　友情を信じてたのは私だけなんだからっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 286,
+      "text": "「ちょっとからかっただけだってばぁ、\\n　愛してるよー小鳥ちゃーん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 287,
+      "text": "「俺たちの友情は永遠に不滅だ！」%K%P",
+      "text_with_name": "%LCあげは「俺たちの友情は永遠に不滅だ！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 288,
+      "text": "「もう絶交よっ、バーーカっ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 289,
+      "text": "いかん、完全に拗ねてしまった。%K%P",
+      "text_with_name": "%LC小鳥いかん、完全に拗ねてしまった。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 290,
+      "text": "これはほっとくと一週間くらい引きずることになるぞ。%K%P",
+      "text_with_name": "%LC小鳥これはほっとくと一週間くらい引きずることになるぞ。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 291,
+      "text": "「あとでアイスおごってやるか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 292,
+      "text": "「ハーゲンダッチのストロベリーね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 293,
+      "text": "そんな懐柔策を話し合う俺たちに背を向けて、小鳥は亜紗ちゃんとＦＲＰ講座を再開している。%K%P",
+      "text_with_name": "%LCあげはそんな懐柔策を話し合う俺たちに背を向けて、小鳥は亜紗ちゃんとＦＲＰ講座を再開している。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 294,
+      "text": "「だいぶ形になってきたわね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 295,
+      "text": "「こんなのが、あの大きなグライダーになるんですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 296,
+      "text": "「そうよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 297,
+      "text": "「へぇ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 298,
+      "text": "「自分たちが造った翼が飛んでるところを見るのは、最高よ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 299,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 300,
+      "text": "亜紗ちゃんの目がらんらんと輝く。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんの目がらんらんと輝く。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 301,
+      "text": "「……わたし、頑張ります！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 302,
+      "text": "「うんうん、その意気だ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 303,
+      "text": "機体の修理は、すぐに完了した。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 304,
+      "text": "部分的に亀裂が入っていたというだけなので、補修作業自体は簡単なものだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 305,
+      "text": "あとは全体を点検して、他に問題は見つからなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 306,
+      "text": "これで、飛ぼうと思えば飛べる状態になったわけだが――%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 307,
+      "text": "「いよいよ始めるわよ、\\n　大改造プロジェクトを！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 308,
+      "text": "小鳥会長の号令に従い、あげはが設計図を机の上に広げた。%K%P",
+      "text_with_name": "%LC小鳥小鳥会長の号令に従い、あげはが設計図を机の上に広げた。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 309,
+      "text": "亜紗ちゃんが、その緻密な図面を覗き込む。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 310,
+      "text": "「すごいですねぇ。\\n　これも、先輩たちが描いたんですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 311,
+      "text": "「まさか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 312,
+      "text": "「これは天音ちゃんが描いたのよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 313,
+      "text": "「天音さん？\\n　ああ、あの写真の方ですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 314,
+      "text": "「そ。天音ちゃんは天才だから。\\n　正真正銘のね！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 315,
+      "text": "小鳥が、部屋の奥で椅子に腰掛け、インスタントコーヒーをすすっていた依瑠ちゃんに、ことさら聞こえよがしに言う。%K%P",
+      "text_with_name": "%LC小鳥小鳥が、部屋の奥で椅子に腰掛け、インスタントコーヒーをすすっていた依瑠ちゃんに、ことさら聞こえよがしに言う。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 316,
+      "text": "以前、亜紗ちゃんの大切なものを奪った依瑠ちゃんは、それで少しは溜飲が下がったのか、時々、姉にくっついてここへ来るようになった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 317,
+      "text": "「……ずずぅ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 318,
+      "text": "依瑠ちゃんは、余裕の表情で無視している。%K%P",
+      "text_with_name": "%LC依瑠依瑠ちゃんは、余裕の表情で無視している。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 319,
+      "text": "まるで、犬に吠えられても、知らん顔で昼寝を決め込む猫のように。%K%P",
+      "text_with_name": "%LC依瑠まるで、犬に吠えられても、知らん顔で昼寝を決め込む猫のように。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 320,
+      "text": "先生方や一部の生徒の間で、彼女は天才と騒がれているらしいが、本人がそれを自称したところは見たことがない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 321,
+      "text": "「どんな人だったんですか、\\n　その天音さんって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 322,
+      "text": "「天然すれすれの天才よ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 323,
+      "text": "「天然すれすれ……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 324,
+      "text": "「ヘンな人だったよねー。自分がスゴイって事に、\\n　まるで気付いてないみたいだったし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 325,
+      "text": "「客観性が欠如してるのか、\\n　はたまた頭の回路が常人とはかけ離れているのか……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 326,
+      "text": "「よく言ってたもんな、\\n　“私はバカだから”って」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 327,
+      "text": "「へー。でも、優しそうな人ですよね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 328,
+      "text": "「優しいっていうか、子供みたい？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 329,
+      "text": "「それも、とびきり手のかかるね♪」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 330,
+      "text": "見た目は綺麗で、すらりと背が高くスタイルもいい、女性らしい女性だった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 331,
+      "text": "けどその瞳は少年のようで、プリズムに透かすように世界を見ていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 332,
+      "text": "不思議な雰囲気を持つ人だった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 333,
+      "text": "「この設計図は、天音先輩が、\\n　親友のためにデザインしたものなんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 334,
+      "text": "「親友？？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 335,
+      "text": "「そ。私たちの大先輩……のはずなんだけど、\\n　実はどんな人なのかよく知らないの」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 336,
+      "text": "「イスカさんって言って、\\n　天音先輩と二人でソアリング部を復活させたんだけど、\\n　その後、いきなり学校を辞めちゃったんだって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 337,
+      "text": "「イスカ……イスカ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 338,
+      "text": "「亜紗ちゃん？」%K%P",
+      "text_with_name": "%LC亜紗「亜紗ちゃん？」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 339,
+      "text": "「あ、いえ……変わった名前だなって思って」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 340,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 341,
+      "text": "「だから、これを造るんですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 342,
+      "text": "「それもあるけど、\\n　それだけじゃないんだ」%K%P",
+      "text_with_name": "%LC亜紗「それもあるけど、\\n　それだけじゃないんだ」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 343,
+      "text": "「亜紗ちゃんも見てたあの不思議な雲を、\\n　俺たちが目指してたことはもう話しただろ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 344,
+      "text": "天音先輩と飛んだ最後のフライトについては、もう何度も話していた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 345,
+      "text": "「なぜ失敗したのか、\\n　いくつかの理由を考えてみたんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 346,
+      "text": "「それは、大きく３つある」%K%P",
+      "text_with_name": "%LC碧「それは、大きく３つある」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 347,
+      "text": "俺は亜紗ちゃんに、解りやすくそれを説明していった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 348,
+      "text": "まず１つ目が、揚力不足だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 349,
+      "text": "今の機体は非常にバランスのいい機体で、グライダーで行うあらゆるフライトに、適応できるように造られている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 350,
+      "text": "いわば、オールラウンダー。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 351,
+      "text": "それは逆に言えば、どこにも特化していないということで、目的を一つに絞っている俺たちにはマイナスの要因になる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 352,
+      "text": "俺たちが必要としているのは、高く飛ぶための翼だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 353,
+      "text": "少ない上昇気流で、できる限り速く高度を上げなければならず、そのために適した翼が必要だった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 354,
+      "text": "次に必要なのは操縦技術。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 355,
+      "text": "限られた時間で上昇気流を見つけ、モーニンググローリーの上まであがるには、相当な技術と知識が必要だとわかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 356,
+      "text": "だから俺は滑空場へ通って、ちゃんとしたインストラクターの下で訓練を受け、先日ようやくパイロットの資格を取得した。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 357,
+      "text": "そして最後に、{飛行計画:フライトプラン}。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 358,
+      "text": "モーニンググローリーが発生している時、普段の風ヶ浦とはまったく違った気象状態になることがわかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 359,
+      "text": "どこにどのような上昇気流が発生するのか、それはどのくらいの高さまでグライダーを運んでくれるのか。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 360,
+      "text": "どの風に乗っていけばいいのか。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 361,
+      "text": "それらプランの組み立てが必要だった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 362,
+      "text": "「というわけなんだ。\\n　ここまではわかってもらえたかな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 363,
+      "text": "「はい！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 364,
+      "text": "力強く返事したけど、あまりわかってなさそうだ。%K%P",
+      "text_with_name": "%LC亜紗力強く返事したけど、あまりわかってなさそうだ。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 365,
+      "text": "しょうがない、まだテストフライトもしたことがない新入部員だからな。%K%P",
+      "text_with_name": "%LC亜紗しょうがない、まだテストフライトもしたことがない新入部員だからな。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 366,
+      "text": "「簡単に言っちゃうと、\\n　より高く飛ぶために高揚力の翼に改造しようってわけ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 367,
+      "text": "「それが、この設計図なわけよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 368,
+      "text": "天音先輩は、それらを見越してこの設計図を描いていたんだろう。%K%P",
+      "text_with_name": "%LC小鳥天音先輩は、それらを見越してこの設計図を描いていたんだろう。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 369,
+      "text": "だけど、ひとりでは造りようがなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 370,
+      "text": "その幻の機体を、俺たちで造ろうというのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 371,
+      "text": "「んじゃ、早速取り掛かりましょうか！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 372,
+      "text": "ドックへ移動して、まずは新しい主翼造り。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 373,
+      "text": "以前やったのと同じように、発泡スチロールで型を作るところから始める。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 374,
+      "text": "すでに経験済みなので、てきぱきと作業は進められていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 375,
+      "text": "「ふわぁ……こうやって造るんだぁ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 376,
+      "text": "「感心してないで、亜紗も手伝う」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 377,
+      "text": "「は、はいっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 378,
+      "text": "「このヒートカッターで、\\n　発泡スチロールを切っていくの。\\n　ほら、やってみ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 379,
+      "text": "ちゃんと亜紗ちゃんにも教える。%K%P",
+      "text_with_name": "%LC小鳥ちゃんと亜紗ちゃんにも教える。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 380,
+      "text": "「ゆっくりよ、ゆっくり……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 381,
+      "text": "「ううう……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 382,
+      "text": "「そう、その調子よ……慎重にね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 383,
+      "text": "「にょわー！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 384,
+      "text": "「ちょっと、どこ切ってんのーー！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 385,
+      "text": "「碧ー、ここ押さえててー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 386,
+      "text": "「おう」%K%P",
+      "text_with_name": "%LCあげは「おう」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 387,
+      "text": "「広いと作業しやすいわねー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 388,
+      "text": "「まあな。ちょっと暑いけど」%K%P",
+      "text_with_name": "%LCあげは「まあな。ちょっと暑いけど」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 389,
+      "text": "ドックにはエアコンはない。%K%P",
+      "text_with_name": "%LC碧ドックにはエアコンはない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 390,
+      "text": "持ち込んだ扇風機で涼を得ていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 391,
+      "text": "汗をしたたらせながら、俺たちは作業に没頭していく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 392,
+      "text": "「あんな汗だくで必死な顔しちゃって。\\n　理解の外にいる頑張り屋さんばかりね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 393,
+      "text": "壁際で見ていた依瑠ちゃんが、ドックから出ていこうとする。%K%P",
+      "text_with_name": "%LC依瑠壁際で見ていた依瑠ちゃんが、ドックから出ていこうとする。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 394,
+      "text": "「依瑠ちゃん、帰るのか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 395,
+      "text": "「……飲み物買ってくるだけ。\\n　ここ暑くて死にそうだもの」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 396,
+      "text": "「姉さん、なにかいる？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 397,
+      "text": "「えっと……じゃあ、サイダー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 398,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 399,
+      "text": "「他の先輩方は？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 400,
+      "text": "「え？」%K%P",
+      "text_with_name": "%LC依瑠「え？」%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 401,
+      "text": "「あー……じゃあウーロン茶」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 402,
+      "text": "「えと、私はコーラ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 403,
+      "text": "「俺も」%K%P",
+      "text_with_name": "%LC小鳥「俺も」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 404,
+      "text": "「サイダーとウーロン茶とコーラ２つね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 405,
+      "text": "すました顔でそう言うと、依瑠ちゃんはドックを出ていった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 406,
+      "text": "俺たちは不思議そうに顔を見合わせたけど、とくになにもコメントせず、作業を再開したのだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 407,
+      "text": "グライダーの改良計画に無事着手したものの、俺たちにはまだやらねばならない事があった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 408,
+      "text": "それは――%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 409,
+      "text": "滑走路の草刈りだ！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 410,
+      "text": "真夏日となった土曜日の昼下がり、炎天下の中、人を集めて手伝ってもらいながらの作業となった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 411,
+      "text": "その途中、俺は小鳥に付き添って、ここの土地の所有者のところへ挨拶にいっていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 412,
+      "text": "「あづいぃ……融けちゃうよぉ、依瑠ちゃ～ん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 413,
+      "text": "「ならこっち来て、一緒に休めば？\\n　日陰、涼しいよ。ジュースもあるわよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 414,
+      "text": "「うぅぅ……いい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 415,
+      "text": "「ほら、がんばって亜紗ちゃん！\\n　これやらないと、飛べないんだから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 416,
+      "text": "「はいぃぃ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 417,
+      "text": "みんなが汗だくになって作業しているところへ、俺は小鳥の車椅子を押しながら帰ってきた。%K%P",
+      "text_with_name": "%LC亜紗みんなが汗だくになって作業しているところへ、俺は小鳥の車椅子を押しながら帰ってきた。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 418,
+      "text": "「おっかえりー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 419,
+      "text": "「おかえりなさい、先輩。\\n　……どうかしたんですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 420,
+      "text": "小鳥の暗い表情を見て、亜紗ちゃんが聞く。%K%P",
+      "text_with_name": "%LC亜紗小鳥の暗い表情を見て、亜紗ちゃんが聞く。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 421,
+      "text": "「みんな、ごめん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 422,
+      "text": "戻ってくるなり頭を下げて謝った小鳥に、みんな困惑する。%K%P",
+      "text_with_name": "%LC小鳥戻ってくるなり頭を下げて謝った小鳥に、みんな困惑する。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 423,
+      "text": "「どうしたの？\\n　なにかあったの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 424,
+      "text": "「……滑走路を借りられなくなった」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 425,
+      "text": "「え、なんで……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 426,
+      "text": "困惑を深めたあげはが、小鳥に付き添っていた俺に視線を向ける。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 427,
+      "text": "「小鳥が言った通りだ。\\n　俺たちには貸せないって」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 428,
+      "text": "ここの所有者は恵風学園ソアリング部のＯＢで、去年は快く滑走路を使わせてくれていた。%K%P",
+      "text_with_name": "%LC碧ここの所有者は恵風学園ソアリング部のＯＢで、去年は快く滑走路を使わせてくれていた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 429,
+      "text": "ところが、今年は駄目だという。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 430,
+      "text": "「実は……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 431,
+      "text": "小鳥がみんなに事情を語った。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 432,
+      "text": "先方は、ソアリング部が廃部になったことを知っていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 433,
+      "text": "元ソアリング部のメンバーに滑走路を使わせないようにと、学校側から要請があったというのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 434,
+      "text": "連絡してきたのは、飛岡だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 435,
+      "text": "部活動じゃないんじゃ、問題が起こった時に責任が取れない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 436,
+      "text": "だから貸したくても貸せない、というのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 437,
+      "text": "当然の判断だろう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 438,
+      "text": "向こうは全然悪くないのに、何度も謝られてしまった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 439,
+      "text": "「またあのおっさんか。\\n　ったく、どこまで邪魔する気よ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 440,
+      "text": "「たぶん、俺たちがこそこそ活動してることに、\\n　気付いてたんだろうな」%K%P",
+      "text_with_name": "%LCあげは「たぶん、俺たちがこそこそ活動してることに、\\n　気付いてたんだろうな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 441,
+      "text": "倉庫からグライダーを持ち出したのも俺たちだって、とっくにばれてるんだろう。%K%P",
+      "text_with_name": "%LC碧倉庫からグライダーを持ち出したのも俺たちだって、とっくにばれてるんだろう。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 442,
+      "text": "「ごめんなさい、私のせいだわ。\\n　私がこんな身体だから、余計に警戒されちゃったのよ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 443,
+      "text": "「だから、そんなの関係ないって！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 444,
+      "text": "「ちょちょっ、なんでそうなるわけ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 445,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 446,
+      "text": "先方の反応を、小鳥は敏感に感じていたんだろう。%K%P",
+      "text_with_name": "%LC小鳥先方の反応を、小鳥は敏感に感じていたんだろう。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 447,
+      "text": "確かに、その気配はあった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 448,
+      "text": "身障者である小鳥にもしものことがあれば、問題が大きくなる可能性がある。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 449,
+      "text": "先方は口に出しては何も言わなかったが、飛岡にそれを{示唆:しさ}されたようだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 450,
+      "text": "「はっきりそう言ったわけじゃないけど、\\n　学校からそれらしいことを言われてたみたいなんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 451,
+      "text": "「なにそれ、サイテー……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 452,
+      "text": "けど、それが原因じゃない。%K%P",
+      "text_with_name": "%LCあげはけど、それが原因じゃない。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 453,
+      "text": "断られた理由はあくまで、ソアリング部が廃部扱いになったからだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 454,
+      "text": "「……じゃあ、飛べないんですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 455,
+      "text": "「滑走路がないんじゃ、お手上げね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 456,
+      "text": "「そんな……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 457,
+      "text": "亜紗ちゃんが、草むしりをして泥だらけになった手を見て悲しそうにする。%K%P",
+      "text_with_name": "%LC亜紗亜紗ちゃんが、草むしりをして泥だらけになった手を見て悲しそうにする。%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 458,
+      "text": "「他の場所、探してみたら？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 459,
+      "text": "「無理よ。\\n　平らで充分な広さがある土地なんて、\\n　限られてるもの」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 460,
+      "text": "「バカみたい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 461,
+      "text": "日陰で俺たちのやりとりを聞いていた依瑠ちゃんが、イライラした様子で言った。%K%P",
+      "text_with_name": "%LC依瑠日陰で俺たちのやりとりを聞いていた依瑠ちゃんが、イライラした様子で言った。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 462,
+      "text": "小鳥が、ムッとして依瑠ちゃんを睨む。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 463,
+      "text": "「その程度で諦めちゃうわけ？\\n　さっきまでやる気満々だったくせに」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 464,
+      "text": "「なによ。\\n　あんたには関係ないでしょ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 465,
+      "text": "「あるわよ。あの場所を貸してるし、\\n　姉さんだって巻き込まれちゃってるし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 466,
+      "text": "「ま、でも、その程度なら、\\n　さっさとやめちゃった方がいいかもね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 467,
+      "text": "「依瑠ちゃん、やめて」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 468,
+      "text": "「ほんとのこと言ってるだけよ、わたしは」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 469,
+      "text": "依瑠ちゃんの言ってることは、何も間違っていない。%K%P",
+      "text_with_name": "%LC依瑠依瑠ちゃんの言ってることは、何も間違っていない。%K%P",
+      "char_name": "依瑠"
+    },
+    {
+      "lng_idx": 470,
+      "text": "この程度で凹んだり諦めたりするくらいなら、最初からやらない方がマシなのだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 471,
+      "text": "だから、誰も何も言い返さなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 472,
+      "text": "「諦めたりしないよ。\\n　な、小鳥」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 473,
+      "text": "「ええ、もちろんよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 474,
+      "text": "順調に動き始めたところでカウンターパンチを喰らって、動揺してしまった。%K%P",
+      "text_with_name": "%LC小鳥順調に動き始めたところでカウンターパンチを喰らって、動揺してしまった。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 475,
+      "text": "でも、この程度で意気消沈する俺たちじゃない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 476,
+      "text": "「でも、どうするの？\\n　他に場所探すったって……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 477,
+      "text": "「いや、その必要はない」%K%P",
+      "text_with_name": "%LCあげは「いや、その必要はない」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 478,
+      "text": "「？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 479,
+      "text": "「簡単なことさ。俺たちのこと、\\n　部活動として認めさせればいい」%K%P",
+      "text_with_name": "%LCあげは「簡単なことさ。俺たちのこと、\\n　部活動として認めさせればいい」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 480,
+      "text": "「元からそれを目指してたんだ。\\n　別に、落ち込む理由にはなんないだろ？」%K%P",
+      "text_with_name": "%LC碧「元からそれを目指してたんだ。\\n　別に、落ち込む理由にはなんないだろ？」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 481,
+      "text": "「あ、そっか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 482,
+      "text": "小鳥が力強く頷く。%K%P",
+      "text_with_name": "%LCあげは小鳥が力強く頷く。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 483,
+      "text": "「この程度、私たちにとっちゃ逆境でもなんでもないって、\\n　あのおっさんに思い知らせてやるのよ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 484,
+      "text": "「飛岡先生の嫌がらせは、\\n　今に始まったことじゃないしねー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 485,
+      "text": "「テストはもうしばらくお預けになるけどな」%K%P",
+      "text_with_name": "%LCあげは「テストはもうしばらくお預けになるけどな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 486,
+      "text": "「みなさん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 487,
+      "text": "「……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 488,
+      "text": "「この私をコケにしてくれたこと、\\n　必ず後悔させてやるわ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 489,
+      "text": "どうやら、部活動への復帰を急ぐ必要がありそうだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 490,
+      "text": "一日でも早く、あの空へ舞い戻るためにも。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    }
+  ]
+}

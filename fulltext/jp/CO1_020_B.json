@@ -1,0 +1,625 @@
+{
+  "script": "CO1_020_B",
+  "source": "Rio.arc",
+  "total": 103,
+  "texts": [
+    {
+      "lng_idx": 0,
+      "text": "「……お？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 1,
+      "text": "まだ、窓の外は暗い。%K%P",
+      "text_with_name": "%LC碧まだ、窓の外は暗い。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 2,
+      "text": "アラームも、鳴ってない。%K%P",
+      "text_with_name": "%LC碧アラームも、鳴ってない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 3,
+      "text": "なのに、勝手に目が覚めてしまった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 4,
+      "text": "「むう……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 5,
+      "text": "この感覚は、おぼえがある。%K%P",
+      "text_with_name": "%LC碧この感覚は、おぼえがある。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 6,
+      "text": "競技会の前日なんかに、よく経験したもんだ……。%K%P",
+      "text_with_name": "%LC碧競技会の前日なんかに、よく経験したもんだ……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 7,
+      "text": "外はまだまだ暗く、東の空もまだ明るくはなっていない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 8,
+      "text": "えっと、当番のあげはが起きてるはずだよな。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 9,
+      "text": "起きてなかったらとっちめてやる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 10,
+      "text": "「お、いた」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 11,
+      "text": "「わっ！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 12,
+      "text": "「おっと、驚かせたか、悪い悪い」%K%P",
+      "text_with_name": "%LCあげは「おっと、驚かせたか、悪い悪い」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 13,
+      "text": "と、あげはが俺を見て、もともと大きな目をさらに大きくして――。%K%P",
+      "text_with_name": "%LC碧と、あげはが俺を見て、もともと大きな目をさらに大きくして――。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 14,
+      "text": "「うきゃああああああああああああああああっ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 15,
+      "text": "「わあああっ！？」%K%P",
+      "text_with_name": "%LCあげは「わあああっ！？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 16,
+      "text": "すごい反応に、こっちも驚いてしまった。%K%P",
+      "text_with_name": "%LC碧すごい反応に、こっちも驚いてしまった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 17,
+      "text": "「な、なんでなんで！　なんで碧が！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 18,
+      "text": "「何でって、起きたからだけど」%K%P",
+      "text_with_name": "%LCあげは「何でって、起きたからだけど」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 19,
+      "text": "「いやー、なんか緊張してるみたいでさ、\\n　目が覚めちまった」%K%P",
+      "text_with_name": "%LC碧「いやー、なんか緊張してるみたいでさ、\\n　目が覚めちまった」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 20,
+      "text": "「大会の前、よくあったよ、こういうの。\\n　落ちついてるつもりだったけど、地味に、\\n　緊張してるみたいで」%K%P",
+      "text_with_name": "%LC碧「大会の前、よくあったよ、こういうの。\\n　落ちついてるつもりだったけど、地味に、\\n　緊張してるみたいで」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 21,
+      "text": "「そ、そう……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 22,
+      "text": "「っ……う……うう……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 23,
+      "text": "「どうした？」%K%P",
+      "text_with_name": "%LCあげは「どうした？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 24,
+      "text": "「何も……聞いてないわよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 25,
+      "text": "「ん？　鼻歌でも歌ってたとか？」%K%P",
+      "text_with_name": "%LCあげは「ん？　鼻歌でも歌ってたとか？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 26,
+      "text": "「いや、聞いてないならいいの、うん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 27,
+      "text": "「何か言ってたのか？」%K%P",
+      "text_with_name": "%LCあげは「何か言ってたのか？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 28,
+      "text": "「いや、何も言ってないからね、別に何も、\\n　聞かれてまずいことなんか何一つ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 29,
+      "text": "「？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 30,
+      "text": "なんなんだ、一体。%K%P",
+      "text_with_name": "%LC碧なんなんだ、一体。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 31,
+      "text": "起き抜けで、頭がまだよく働いてないので、追及する気力が湧かない。%K%P",
+      "text_with_name": "%LC碧起き抜けで、頭がまだよく働いてないので、追及する気力が湧かない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 32,
+      "text": "「で、どうだ、空は？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 33,
+      "text": "「今んとこ、それっぽい気配なし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 34,
+      "text": "「だよなあ」%K%P",
+      "text_with_name": "%LCあげは「だよなあ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 35,
+      "text": "外に出た時からわかっていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 36,
+      "text": "気温が、未明なので涼しくはあるが、記録にあるような寒いくらいの低下は示していない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 37,
+      "text": "風もまた、ほとんどなく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 38,
+      "text": "空も、一面の――いや満天の星。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 39,
+      "text": "「きれい……なんだけどねえ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 40,
+      "text": "「そうだな……」%K%P",
+      "text_with_name": "%LCあげは「そうだな……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 41,
+      "text": "空が綺麗ということは、望む現象が起こりそうにないということだ。%K%P",
+      "text_with_name": "%LC碧空が綺麗ということは、望む現象が起こりそうにないということだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 42,
+      "text": "「だめっぽいな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 43,
+      "text": "「そういうこと言わない」%K%P",
+      "text_with_name": "%LC碧「そういうこと言わない」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 44,
+      "text": "「だな。悪い」%K%P",
+      "text_with_name": "%LCあげは「だな。悪い」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 45,
+      "text": "競技が始まる前から負ける話をするのはタブーだもんな。俺が言われてちゃ世話がない。%K%P",
+      "text_with_name": "%LC碧競技が始まる前から負ける話をするのはタブーだもんな。俺が言われてちゃ世話がない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 46,
+      "text": "「……それにしても」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 47,
+      "text": "空に輝く星々の配置が、こんな時間なので、かなり違う。%K%P",
+      "text_with_name": "%LC碧空に輝く星々の配置が、こんな時間なので、かなり違う。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 48,
+      "text": "いわゆる夏の星座は西に消え去り、空に輝いているのは秋の、ペガサス座の四角形とかカシオペアのＷ字とか、そういうもの。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 49,
+      "text": "多分、東の地平線あたりには、冬のオリオン座も、ちらりと姿をのぞかせていることだろう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 50,
+      "text": "「寝てる間に、こういう星が頭上に出てるなんて、変な感じだよなあ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 51,
+      "text": "「だねえ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 52,
+      "text": "あげはは、目をきらきらさせて星空を見上げている。%K%P",
+      "text_with_name": "%LCあげはあげはは、目をきらきらさせて星空を見上げている。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 53,
+      "text": "多分俺も、同じ顔をしているはず。%K%P",
+      "text_with_name": "%LCあげは多分俺も、同じ顔をしているはず。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 54,
+      "text": "「すごい、不思議」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 55,
+      "text": "「何が？」%K%P",
+      "text_with_name": "%LCあげは「何が？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 56,
+      "text": "「色々。何から何まで」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 57,
+      "text": "「空の星も、それをこの時間に見ているのも、\\n　この場所にいるのも、碧といるのも、何もかも」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 58,
+      "text": "「そうだなあ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 59,
+      "text": "「昔のわたしたちに、何年かしたら“魔女の館”で\\n　グライダー飛ばすために明け方の星を見るんだぞ、\\n　なんて言ったらどうだったかな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 60,
+      "text": "「信じないな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 61,
+      "text": "「でしょ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 62,
+      "text": "あの頃は、ここはとにかく怖い場所だった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 63,
+      "text": "秘密基地でいつも遊んで、遊び疲れたら古くさい商店街に戻って、太陽軒でラーメン食って、家に帰ってバタンキュー……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 64,
+      "text": "もう戻らない、懐かしい日々。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 65,
+      "text": "「そうだよな……俺が、引っ越して、５年して戻ってきて、\\n　“魔女の館”で仕事して、グライダーで明け方の空を……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 66,
+      "text": "「口にすると、うそみたいだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 67,
+      "text": "「ふふっ、碧には感謝してるよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 68,
+      "text": "「俺に？」%K%P",
+      "text_with_name": "%LCあげは「俺に？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 69,
+      "text": "「うん。碧が戻ってきてくれて、ここの寮母になって……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 70,
+      "text": "「だから、天音先輩と知り合いになれて、\\n　グライダーなんてものにも関われた」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 71,
+      "text": "「そうでなかったら、普通にロボット部で\\n　大会目指してただろうからね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 72,
+      "text": "「悪いことしちゃったか？」%K%P",
+      "text_with_name": "%LCあげは「悪いことしちゃったか？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 73,
+      "text": "「んなわけないっしょ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 74,
+      "text": "「自分のこととして、めいっぱい楽しんでるよ。\\n　だから、ありがとね、碧」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 75,
+      "text": "いい顔で、あげはは笑った。\\nこんな時間なのに、まぶしく見えるほどに。%K%P",
+      "text_with_name": "%LCあげはいい顔で、あげはは笑った。\\nこんな時間なのに、まぶしく見えるほどに。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 76,
+      "text": "そしてあげはは、あらためて星空を見上げた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 77,
+      "text": "俺は、そのあごや喉の線に見入った。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 78,
+      "text": "昔と全然違う……その、女らしい丸みを帯びた、白い輪郭。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 79,
+      "text": "だけど昔の面影もそのままあって――その姿に、俺は、一度、思いを口にして告げて……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 80,
+      "text": "い、いや。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 81,
+      "text": "慌てて、俺も顔をあげた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 82,
+      "text": "視界一面、星空。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 83,
+      "text": "「……あんちゃんの作ったものが、この宇宙を飛んでるんだよね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 84,
+      "text": "「ああ。すごいよなあ」%K%P",
+      "text_with_name": "%LCあげは「ああ。すごいよなあ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 85,
+      "text": "「あれ聞いてさ、すごく、気合い入ったんだ、わたし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 86,
+      "text": "「グライダー？」%K%P",
+      "text_with_name": "%LCあげは「グライダー？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 87,
+      "text": "「うん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 88,
+      "text": "「自分の作ったものが、誰も見たことのない、\\n　すごい所へ行って、すごいものを見てくる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 89,
+      "text": "「それって、最高にかっこいいと思うんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 90,
+      "text": "「そうだな」%K%P",
+      "text_with_name": "%LCあげは「そうだな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 91,
+      "text": "俺は、東の空に目をこらした。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 92,
+      "text": "この時間帯、地上より先に陽光を浴びた人工衛星が、肉眼でも見えることがたまにあるらしい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 93,
+      "text": "そこを、あんちゃんの作ったものが飛んでゆく……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 94,
+      "text": "格好いいよなあ、確かに。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 95,
+      "text": "「……俺たちも、飛びたいな。誰も見たことのない空を」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 96,
+      "text": "「飛べるよ。碧なら、必ず」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 97,
+      "text": "「だといいな」%K%P",
+      "text_with_name": "%LCあげは「だといいな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 98,
+      "text": "俺達は並んで、東の空を見上げ続けた。%K%P",
+      "text_with_name": "%LC碧俺達は並んで、東の空を見上げ続けた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 99,
+      "text": "少しだけ、紫色がにじんできたような気がする。%K%P",
+      "text_with_name": "%LC碧少しだけ、紫色がにじんできたような気がする。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 100,
+      "text": "「……来ない、かな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 101,
+      "text": "相変わらず雲はなく、モーニンググローリーが発生しそうな気配はない。%K%P",
+      "text_with_name": "%LCあげは相変わらず雲はなく、モーニンググローリーが発生しそうな気配はない。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 102,
+      "text": "それでも俺たちは、色々なものを思い描いて、明け方の空を見上げ続けていた……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    }
+  ]
+}

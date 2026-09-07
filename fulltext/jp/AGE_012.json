@@ -1,0 +1,487 @@
+{
+  "script": "AGE_012",
+  "source": "Rio.arc",
+  "total": 80,
+  "texts": [
+    {
+      "lng_idx": 0,
+      "text": "そして――その日の、夕方。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 1,
+      "text": "「さあて、そろそろかな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 2,
+      "text": "「そろそろ……あっ、出た！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 3,
+      "text": "「では、地域のニュースです」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 4,
+      "text": "「今朝、地元の学生たちが、\\n　きわめて珍しい雲の撮影に成功しました」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 5,
+      "text": "「これがその映像です」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 6,
+      "text": "「なんだい、あげはや碧くんは映らないのかい」%K%P",
+      "text_with_name": "%LC女性キャスター「なんだい、あげはや碧くんは映らないのかい」%K%P",
+      "char_name": "女性キャスター"
+    },
+    {
+      "lng_idx": 7,
+      "text": "「このあと」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 8,
+      "text": "「すごいですね」%K%P",
+      "text_with_name": "%LCほたる「すごいですね」%K%P",
+      "char_name": "ほたる"
+    },
+    {
+      "lng_idx": 9,
+      "text": "「この横に長い雲は、モーニンググローリーと呼ばれ、\\n　オーストラリアで発生することは知られていましたが、\\n　それがこのように、日本で発生するとは――」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 10,
+      "text": "「いや、説明はいいからさ、ほらほら、\\n　うちの子たちを映しておくれよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 11,
+      "text": "「おかーさん、うるさい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 12,
+      "text": "「これは本当に貴重な映像ですよ」%K%P",
+      "text_with_name": "%LCほたる「これは本当に貴重な映像ですよ」%K%P",
+      "char_name": "ほたる"
+    },
+    {
+      "lng_idx": 13,
+      "text": "「これを撮影した学生たちは、自作のグライダーで\\n　飛んだんだそうですよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 14,
+      "text": "「しかも、そのパイロットの一人は、歩行が不自由で、\\n　日常的に車椅子を使っており――」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 15,
+      "text": "「映ったと思ったら小鳥ちゃんかあ。あの子美人だもんねえ。\\n　おっ、後ろ、碧くんだよ！　ほらほら間違いない碧くんだ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 16,
+      "text": "「いやあこうして見ても男前だねえいいお婿さんになるよ\\n　その日が楽しみだよ卒業したらすぐかな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 17,
+      "text": "「だからおかーさん、うるさい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 18,
+      "text": "「……わたし、まだあきらめてないからね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 19,
+      "text": "――熱い夏が終わり、新学期が始まった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 20,
+      "text": "「ニュース見たよ！\\n　すごいね羽々音さん、テレビデビューだよ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 21,
+      "text": "「ソアリング部、有名人になってるよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 22,
+      "text": "「あー……ありがとう……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 23,
+      "text": "「なんか、元気ない？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 24,
+      "text": "「何というか……燃え尽きちゃったかな……\\n　色々、だるいの……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 25,
+      "text": "「あらら」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 26,
+      "text": "「それに……どうにも、気力が、吸われて……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 27,
+      "text": "「……あいつらに」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 28,
+      "text": "「おーっす、久しぶり！　見たぜ、ニュース！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 29,
+      "text": "「すげーな、ソアリング部！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 30,
+      "text": "「いやいや、まあまあ」%K%P",
+      "text_with_name": "%LCクラスの男子Ｂ「いやいや、まあまあ」%K%P",
+      "char_name": "クラスの男子Ｂ"
+    },
+    {
+      "lng_idx": 31,
+      "text": "「姫城も、映ってたよな！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 32,
+      "text": "「いやいや、どもども」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 33,
+      "text": "「で、水瀬とくっついた、と」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 34,
+      "text": "「けっ、水瀬このやろうらやましいやつ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 35,
+      "text": "「いやー、あはは」%K%P",
+      "text_with_name": "%LCクラスの男子Ａ「いやー、あはは」%K%P",
+      "char_name": "クラスの男子Ａ"
+    },
+    {
+      "lng_idx": 36,
+      "text": "「いやいやー、まあ、そういうことで、彼氏できましたー、\\n　ありがとー！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 37,
+      "text": "「こらこら、そういうことあんまり大声で言うなよこのぉ」%K%P",
+      "text_with_name": "%LCあげは「こらこら、そういうことあんまり大声で言うなよこのぉ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 38,
+      "text": "「やあん、碧だって、嬉しいくせにぃ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 39,
+      "text": "「……ね。甘すぎて胸焼けが」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 40,
+      "text": "「あー……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 41,
+      "text": "「なんか、いいなー。あたしも彼氏作るかな」%K%P",
+      "text_with_name": "%LCクラスの女子Ａ「なんか、いいなー。あたしも彼氏作るかな」%K%P",
+      "char_name": "クラスの女子Ａ"
+    },
+    {
+      "lng_idx": 42,
+      "text": "「ソアリング部は、毎週土曜日、飛行練習してまーっす！\\n　興味ある人、見に来てね！　入部も歓迎だよ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 43,
+      "text": "「……元気よね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 44,
+      "text": "「お、呼んだ！？\\n　そうなの、元気いっぱいなの！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 45,
+      "text": "「おう、これからこれから！　まだまだ飛ぶぜ！\\n　みんな、空はいいぞ！」%K%P",
+      "text_with_name": "%LCあげは「おう、これからこれから！　まだまだ飛ぶぜ！\\n　みんな、空はいいぞ！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 46,
+      "text": "「…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 47,
+      "text": "「何なの、このテンションの差？」%K%P",
+      "text_with_name": "%LC小鳥「何なの、このテンションの差？」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 48,
+      "text": "「いやー、新しい目標があるから、かな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 49,
+      "text": "「そうだぞあげは、一体いつになったら！」%K%P",
+      "text_with_name": "%LCあげは「そうだぞあげは、一体いつになったら！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 50,
+      "text": "「ま～た始まった……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 51,
+      "text": "「何のこと？」%K%P",
+      "text_with_name": "%LC小鳥「何のこと？」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 52,
+      "text": "「いや聞いてくれよ、こいつさ、いつになっても、\\n　俺のこと好きって言ってくれないんだよ」%K%P",
+      "text_with_name": "%LCクラスの女子Ａ「いや聞いてくれよ、こいつさ、いつになっても、\\n　俺のこと好きって言ってくれないんだよ」%K%P",
+      "char_name": "クラスの女子Ａ"
+    },
+    {
+      "lng_idx": 53,
+      "text": "「ここまできたら、言ったら負けみたいな感じでさー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 54,
+      "text": "「……え！　まだ、言ってないわけ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 55,
+      "text": "「ありえないよ！　あそこまでしておいて！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 56,
+      "text": "「うう……あげはぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 57,
+      "text": "「お父さん、何回見てるんです、その場面ばっかり」%K%P",
+      "text_with_name": "%LC姫城父「お父さん、何回見てるんです、その場面ばっかり」%K%P",
+      "char_name": "姫城父"
+    },
+    {
+      "lng_idx": 58,
+      "text": "「娘を持っていかれて、悲しまない父親がいるか！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 59,
+      "text": "「碧くんじゃないの、変な男よりずっといいわよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 60,
+      "text": "「このグライダーは、恵風学園ソアリング部のみなさんが、\\n　自分たちで改良したもので……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 61,
+      "text": "「おっと、これはこれは」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 62,
+      "text": "「映画のワンシーンのようですね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 63,
+      "text": "「あんなとこ、テレビで流されておいて、いまさらかよ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 64,
+      "text": "「爆発しやがれお前ら！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 65,
+      "text": "「あげは！　言ってくれ！」%K%P",
+      "text_with_name": "%LCクラスの男子Ｂ「あげは！　言ってくれ！」%K%P",
+      "char_name": "クラスの男子Ｂ"
+    },
+    {
+      "lng_idx": 66,
+      "text": "「明日で世界が終わる、っていう時になったら言ってあげる」%K%P",
+      "text_with_name": "%LC碧「明日で世界が終わる、っていう時になったら言ってあげる」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 67,
+      "text": "「いや、今！　今すぐ！」%K%P",
+      "text_with_name": "%LCあげは「いや、今！　今すぐ！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 68,
+      "text": "「……碧…………す」%K%P",
+      "text_with_name": "%LC碧「……碧…………す」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 69,
+      "text": "「す！？」%K%P",
+      "text_with_name": "%LCあげは「す！？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 70,
+      "text": "「す……」%K%P",
+      "text_with_name": "%LC碧「す……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 71,
+      "text": "「す……！」%K%P",
+      "text_with_name": "%LCあげは「す……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 72,
+      "text": "「スズの金属特性ってなーんだ？」%K%P",
+      "text_with_name": "%LC碧「スズの金属特性ってなーんだ？」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 73,
+      "text": "「かーっ！　このいじめっ子！」%K%P",
+      "text_with_name": "%LCあげは「かーっ！　このいじめっ子！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 74,
+      "text": "「うふふっ。碧のそういう顔、可愛いっ」%K%P",
+      "text_with_name": "%LC碧「うふふっ。碧のそういう顔、可愛いっ」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 75,
+      "text": "「だから、そうじゃなく！　ＳとＵ！　ＫとＩ！」%K%P",
+      "text_with_name": "%LCあげは「だから、そうじゃなく！　ＳとＵ！　ＫとＩ！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 76,
+      "text": "「硫黄とウラン、カリウムとヨウ素」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 77,
+      "text": "「だーーーっ！　俺は言えるのに、お前のこと愛してるって\\n　いつでもどこでも言えるのにーーー！」%K%P",
+      "text_with_name": "%LCあげは「だーーーっ！　俺は言えるのに、お前のこと愛してるって\\n　いつでもどこでも言えるのにーーー！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 78,
+      "text": "「あはは！　いつまでも、ずーっと、一緒だよ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 79,
+      "text": "「いい加減にしなさいあんたらーーーっ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    }
+  ]
+}

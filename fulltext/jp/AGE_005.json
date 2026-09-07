@@ -1,0 +1,4429 @@
+{
+  "script": "AGE_005",
+  "source": "Rio.arc",
+  "total": 737,
+  "texts": [
+    {
+      "lng_idx": 0,
+      "text": "さあ……期末テスト、初日！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 1,
+      "text": "「赤点取らない！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 2,
+      "text": "「夏休みはグライダー！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 3,
+      "text": "「俺たちの夢のために！」%K%P",
+      "text_with_name": "%LCあげは「俺たちの夢のために！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 4,
+      "text": "おーっ、と試合前の運動部のような気合いを入れて、登校。%K%P",
+      "text_with_name": "%LC碧おーっ、と試合前の運動部のような気合いを入れて、登校。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 5,
+      "text": "…………終了。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 6,
+      "text": "「…………生きてるー？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 7,
+      "text": "「ああ」%K%P",
+      "text_with_name": "%LCあげは「ああ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 8,
+      "text": "「まあ、普段通りだったわ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 9,
+      "text": "「終わった……さようなら、私の夏……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 10,
+      "text": "「あんなに勉強したじゃないか！」%K%P",
+      "text_with_name": "%LCあげは「あんなに勉強したじゃないか！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 11,
+      "text": "「記憶の揮発時間を計算に入れてなかったわ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 12,
+      "text": "「ま、いくらなんでも、赤点はないでしょ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 13,
+      "text": "「……ないわよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 14,
+      "text": "「信用されてない！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 15,
+      "text": "「明日は実習系の科目重なってるし、\\n　そっちなら問題ないだろ」%K%P",
+      "text_with_name": "%LCあげは「明日は実習系の科目重なってるし、\\n　そっちなら問題ないだろ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 16,
+      "text": "「まあねえ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 17,
+      "text": "「で、どうする？　帰る？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 18,
+      "text": "テスト期間中の部活動は禁止。%K%P",
+      "text_with_name": "%LC小鳥テスト期間中の部活動は禁止。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 19,
+      "text": "でもまあ、部室に行くことまではいちいちとがめられないし、そもそも俺たちの秘密基地は校内にないわけで。%K%P",
+      "text_with_name": "%LC小鳥でもまあ、部室に行くことまではいちいちとがめられないし、そもそも俺たちの秘密基地は校内にないわけで。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 20,
+      "text": "「んー、私は、明日は心配ないから、\\n　ちょっと作業してく」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 21,
+      "text": "「立場が逆ね。悪いけど私は、自信ないから、\\n　戻ってちょっと練習しておくわ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 22,
+      "text": "「お、キミたち」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 23,
+      "text": "「先輩……じゃない、先生」%K%P",
+      "text_with_name": "%LC天音「先輩……じゃない、先生」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 24,
+      "text": "「試験終わって、早速部活かな？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 25,
+      "text": "「いやいやいやいや、終わってないし」%K%P",
+      "text_with_name": "%LC天音「いやいやいやいや、終わってないし」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 26,
+      "text": "「悪いが、ちょっと依瑠を借りるぞ。\\n　相談したいことがあるんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 27,
+      "text": "「私だって、まだ試験あるんですけど」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 28,
+      "text": "「テストなんて、生きる上では大して役に立たないぞー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 29,
+      "text": "「私たちにとっては死活問題なんですけど」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 30,
+      "text": "「大丈夫、留年なんて一年ぐらいどうってことない」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 31,
+      "text": "「これ以上ない説得力」%K%P",
+      "text_with_name": "%LC天音「これ以上ない説得力」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 32,
+      "text": "「風車のあれについて、依瑠の意見をじっくり聞きたい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 33,
+      "text": "「はぁ……すみません、先輩方、私はこういう次第で」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 34,
+      "text": "「わたしも、一緒に行きます」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 35,
+      "text": "「仕方ないな。がんばれよ」%K%P",
+      "text_with_name": "%LC亜紗「仕方ないな。がんばれよ」%K%P",
+      "char_name": "亜紗"
+    },
+    {
+      "lng_idx": 36,
+      "text": "「ではそちらも、火の始末と電源と、\\n　データのバックアップに気をつけてな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 37,
+      "text": "「ふふっ、どうだ、先生らしいことも\\n　ちゃんと言えるんだぞ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 38,
+      "text": "「はいはい、天音先生……では」%K%P",
+      "text_with_name": "%LC天音「はいはい、天音先生……では」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 39,
+      "text": "「つまり、俺たちだけか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 40,
+      "text": "「そうみたいだね……って」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 41,
+      "text": "「碧も、来るの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 42,
+      "text": "「俺だって、実習系ならそれほど心配ないし、\\n　土日は作業できてなかったし」%K%P",
+      "text_with_name": "%LCあげは「俺だって、実習系ならそれほど心配ないし、\\n　土日は作業できてなかったし」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 43,
+      "text": "「そっか。じゃ、行こっか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 44,
+      "text": "「ああ」%K%P",
+      "text_with_name": "%LCあげは「ああ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 45,
+      "text": "「…………」%K%P",
+      "text_with_name": "%LC碧「…………」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 46,
+      "text": "「…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 47,
+      "text": "変な沈黙が落ちた。%K%P",
+      "text_with_name": "%LCあげは変な沈黙が落ちた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 48,
+      "text": "この間、一緒に出かけた時はこんなことなかったのに。%K%P",
+      "text_with_name": "%LCあげはこの間、一緒に出かけた時はこんなことなかったのに。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 49,
+      "text": "「ふう……暑いな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 50,
+      "text": "「暑いね……湿度、高いよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 51,
+      "text": "「風は南東、雲ありか。これは降るな」%K%P",
+      "text_with_name": "%LCあげは「風は南東、雲ありか。これは降るな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 52,
+      "text": "この一年、気象関係の勉強は熱心にやったので、この地域の天気なら、下手な予報士には負けない自信がある。%K%P",
+      "text_with_name": "%LC碧この一年、気象関係の勉強は熱心にやったので、この地域の天気なら、下手な予報士には負けない自信がある。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 53,
+      "text": "「降りそうだね。でもまあ、置き傘あるし」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 54,
+      "text": "「だな」%K%P",
+      "text_with_name": "%LCあげは「だな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 55,
+      "text": "「…………」%K%P",
+      "text_with_name": "%LC碧「…………」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 56,
+      "text": "「…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 57,
+      "text": "また、沈黙が落ちる。%K%P",
+      "text_with_name": "%LCあげはまた、沈黙が落ちる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 58,
+      "text": "長いつきあいで、お互い気を遣う間柄でもないので、特に話題がなければこういうのも珍しくないんだけど……。%K%P",
+      "text_with_name": "%LCあげは長いつきあいで、お互い気を遣う間柄でもないので、特に話題がなければこういうのも珍しくないんだけど……。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 59,
+      "text": "今日はなぜか、妙にそれが、落ち着かなかった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 60,
+      "text": "「……あのさ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 61,
+      "text": "「ん？」%K%P",
+      "text_with_name": "%LCあげは「ん？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 62,
+      "text": "「ほたるから……メール……行ってない？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 63,
+      "text": "「ほたるから？　いや、特に」%K%P",
+      "text_with_name": "%LCあげは「ほたるから？　いや、特に」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 64,
+      "text": "「本当に？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 65,
+      "text": "「ああ」%K%P",
+      "text_with_name": "%LCあげは「ああ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 66,
+      "text": "「変な写真なんか、送られてないよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 67,
+      "text": "「あー……」%K%P",
+      "text_with_name": "%LCあげは「あー……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 68,
+      "text": "「残念ながら、まだだ。\\n　試験終わったら、あらためて頼むさ」%K%P",
+      "text_with_name": "%LC碧「残念ながら、まだだ。\\n　試験終わったら、あらためて頼むさ」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 69,
+      "text": "「碧のすけべー！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 70,
+      "text": "「俺の寝顔なんか保存してる変態に、\\n　言われたくないぞー」%K%P",
+      "text_with_name": "%LCあげは「俺の寝顔なんか保存してる変態に、\\n　言われたくないぞー」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 71,
+      "text": "「だ、誰が保存なんか！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 72,
+      "text": "「当たり前だ、されててたまるか！」%K%P",
+      "text_with_name": "%LCあげは「当たり前だ、されててたまるか！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 73,
+      "text": "「しないよ……別に、碧の写真なんか……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 74,
+      "text": "「ん？」%K%P",
+      "text_with_name": "%LCあげは「ん？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 75,
+      "text": "「何でもない！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 76,
+      "text": "突然、日が陰り、暗雲が頭上にたちこめた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 77,
+      "text": "「え！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 78,
+      "text": "「速すぎる！」%K%P",
+      "text_with_name": "%LCあげは「速すぎる！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 79,
+      "text": "地平線の方に、いやな感じの雲が見えていたのは確かだ。%K%P",
+      "text_with_name": "%LC碧地平線の方に、いやな感じの雲が見えていたのは確かだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 80,
+      "text": "しかしそれが、唖然とするほどの速さで、頭上に広がったかと思うと……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 81,
+      "text": "大雨が降ってきた！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 82,
+      "text": "「きゃーーっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 83,
+      "text": "「うわああっ！」%K%P",
+      "text_with_name": "%LCあげは「うわああっ！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 84,
+      "text": "ゲリラ豪雨、というやつだ。%K%P",
+      "text_with_name": "%LC碧ゲリラ豪雨、というやつだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 85,
+      "text": "それも、とんでもない勢い。目を開けていられないほど。%K%P",
+      "text_with_name": "%LC碧それも、とんでもない勢い。目を開けていられないほど。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 86,
+      "text": "周囲には雨をしのぐ場所がない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 87,
+      "text": "向こうに見えている秘密基地の入り口が一番近かった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 88,
+      "text": "「走れ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 89,
+      "text": "あげはの腕を取り、引っ張って走る。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 90,
+      "text": "そして、ほとんど頭から、秘密基地に転がりこんだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 91,
+      "text": "秘密基地の中にまで、雑音のような雨音が響いていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 92,
+      "text": "「ふう……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 93,
+      "text": "「うへ～、やられたねえ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 94,
+      "text": "ぼたぼた、水滴が床にしたたり落ちる。%K%P",
+      "text_with_name": "%LCあげはぼたぼた、水滴が床にしたたり落ちる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 95,
+      "text": "ほんのちょっとの間だったのに、全身ずぶ濡れだ。%K%P",
+      "text_with_name": "%LCあげはほんのちょっとの間だったのに、全身ずぶ濡れだ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 96,
+      "text": "「くそっ、読み損なった！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 97,
+      "text": "ゲリラ豪雨とはいえ、こんな大雨の襲来を予想し損なうなんて。%K%P",
+      "text_with_name": "%LC碧ゲリラ豪雨とはいえ、こんな大雨の襲来を予想し損なうなんて。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 98,
+      "text": "風を読んでグライダーで飛ぶパイロットとしては、赤っ恥、いや失格と言われても文句いえないところ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 99,
+      "text": "「これから、こういうの増えそうなのに……\\n　急な積乱雲の発達条件、もっと敏感にとらえないとだめか\\n　……ちくしょう！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 100,
+      "text": "「あー、悔しい気持ちはわかるけど……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 101,
+      "text": "あげはの声が、妙に近くから聞こえた。%K%P",
+      "text_with_name": "%LCあげはあげはの声が、妙に近くから聞こえた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 102,
+      "text": "「とりあえず、離してほしいかな、って……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 103,
+      "text": "「あ……」%K%P",
+      "text_with_name": "%LCあげは「あ……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 104,
+      "text": "気づけば、俺は……。%K%P",
+      "text_with_name": "%LC碧気づけば、俺は……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 105,
+      "text": "思いっきり、あげはの肩を抱いていた。%K%P",
+      "text_with_name": "%LC碧思いっきり、あげはの肩を抱いていた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 106,
+      "text": "「…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 107,
+      "text": "理解が追いつかない状態で、感覚が先に来る。%K%P",
+      "text_with_name": "%LC碧理解が追いつかない状態で、感覚が先に来る。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 108,
+      "text": "濡れた布地の下の、あげはの体。%K%P",
+      "text_with_name": "%LC碧濡れた布地の下の、あげはの体。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 109,
+      "text": "温かい……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 110,
+      "text": "そして、細い。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 111,
+      "text": "「わっ！？　すまん、悪い！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 112,
+      "text": "「いや、いいけど……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 113,
+      "text": "あげはは、微妙に目をそらしつつ、俺から離れた。%K%P",
+      "text_with_name": "%LCあげはあげはは、微妙に目をそらしつつ、俺から離れた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 114,
+      "text": "急に、体の前面が、寒くなった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 115,
+      "text": "「うわー、びしょ濡れ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 116,
+      "text": "あげはは、ベストを脱ぎ、あらためて自分の状態を確認した。%K%P",
+      "text_with_name": "%LCあげはあげはは、ベストを脱ぎ、あらためて自分の状態を確認した。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 117,
+      "text": "「…………！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 118,
+      "text": "俺の心臓が、強く跳ねた。%K%P",
+      "text_with_name": "%LC碧俺の心臓が、強く跳ねた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 119,
+      "text": "す……透けてる……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 120,
+      "text": "ぐしょ濡れのベストを脱いだら、シャツまで濡れていて、ブラが思いっきり！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 121,
+      "text": "前を向いているから、カップの、ふくらんでいる状態、立体構造が、はっきりと！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 122,
+      "text": "「着替え、どうしよ……ジャージ、今日は置いてないし……\\n　誰か、置いててくれないかな、悪いけど借りて……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 123,
+      "text": "つぶやきながら、身じろぎする。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 124,
+      "text": "……気がついてない！？%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 125,
+      "text": "すると、濡れた布地が、素肌に張りついて……ブラジャーだけじゃなく、肌の色合いまで、浮かび上がってきて……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 126,
+      "text": "濡れた髪が額に張りつき、手で顔をぬぐい、水滴が肌の上を転がり流れ……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 127,
+      "text": "肩が動き、胸が揺れ、腰がくねり……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 128,
+      "text": "「あ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 129,
+      "text": "「ん？」%K%P",
+      "text_with_name": "%LC碧「ん？」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 130,
+      "text": "「顔ぐらい拭きなよ。タオル持ってきてあげ――」%K%P",
+      "text_with_name": "%LCあげは「顔ぐらい拭きなよ。タオル持ってきてあげ――」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 131,
+      "text": "「ん…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 132,
+      "text": "あげはが、俺の視線に気づいた。%K%P",
+      "text_with_name": "%LCあげはあげはが、俺の視線に気づいた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 133,
+      "text": "目が、自分の胸元に落ちた。%K%P",
+      "text_with_name": "%LCあげは目が、自分の胸元に落ちた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 134,
+      "text": "それから、大きく見開かれる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 135,
+      "text": "「や！　ちょ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 136,
+      "text": "あげはの頬が、見る間に、ものすごく赤くなった。%K%P",
+      "text_with_name": "%LCあげはあげはの頬が、見る間に、ものすごく赤くなった。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 137,
+      "text": "頬ばかりか、首筋、耳まで真っ赤に染まる。%K%P",
+      "text_with_name": "%LCあげは頬ばかりか、首筋、耳まで真っ赤に染まる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 138,
+      "text": "そして、顔をそむけ……体を抱くようにして……身を縮め……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 139,
+      "text": "「あ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 140,
+      "text": "眉を吊り上げるでもない、目をむくでもない、あげはの反応。%K%P",
+      "text_with_name": "%LC碧眉を吊り上げるでもない、目をむくでもない、あげはの反応。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 141,
+      "text": "俺の知っているあげはではない、別な女の子がそこにいるかのようだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 142,
+      "text": "胸が、痛いほどに打った。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 143,
+      "text": "さっき抱いていた肩の、丸みを帯びたその感覚が、手の平いっぱいに蘇ってくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 144,
+      "text": "「っ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 145,
+      "text": "ぶん殴られたように、我に返った。%K%P",
+      "text_with_name": "%LC碧ぶん殴られたように、我に返った。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 146,
+      "text": "「わ、悪いっ！　つい！」%K%P",
+      "text_with_name": "%LC碧「わ、悪いっ！　つい！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 147,
+      "text": "「…………」%K%P",
+      "text_with_name": "%LC碧「…………」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 148,
+      "text": "あげはが、まるで泣き出す寸前のように、押し黙ってしまう。%K%P",
+      "text_with_name": "%LCあげはあげはが、まるで泣き出す寸前のように、押し黙ってしまう。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 149,
+      "text": "「う……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 150,
+      "text": "俺もまた、あげはが固まっているので、動けなくなる。%K%P",
+      "text_with_name": "%LC碧俺もまた、あげはが固まっているので、動けなくなる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 151,
+      "text": "その間も、あげはから――下着を、体の線を、素肌を透かせたその悩ましい姿から、目を離すことができない。%K%P",
+      "text_with_name": "%LC碧その間も、あげはから――下着を、体の線を、素肌を透かせたその悩ましい姿から、目を離すことができない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 152,
+      "text": "心臓の音が耳で鳴る。喉が動く。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 153,
+      "text": "「ごくっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 154,
+      "text": "顔が熱い。%K%P",
+      "text_with_name": "%LC碧顔が熱い。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 155,
+      "text": "俺の頬を、水滴がしたたり落ちる。%K%P",
+      "text_with_name": "%LC碧俺の頬を、水滴がしたたり落ちる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 156,
+      "text": "どくん、どくんと、鼓動ばかりが繰り返される。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 157,
+      "text": "心臓が強く打つと、反響するように、少し遅れて、指先や首筋に、じわっとした脈拍を感じる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 158,
+      "text": "「あ…………碧…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 159,
+      "text": "「んぁ……？」%K%P",
+      "text_with_name": "%LCあげは「んぁ……？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 160,
+      "text": "俺は、口の中が乾いて、返事がまともな声にならなかった。%K%P",
+      "text_with_name": "%LC碧俺は、口の中が乾いて、返事がまともな声にならなかった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 161,
+      "text": "あげはが、おずおずと、顔をあげた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 162,
+      "text": "「そんなに…………見たい？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 163,
+      "text": "「……え……？」%K%P",
+      "text_with_name": "%LCあげは「……え……？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 164,
+      "text": "「見たいなら……見ても……いいよ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 165,
+      "text": "こちらもかすれた、低い声で、あげはは言った。%K%P",
+      "text_with_name": "%LCあげはこちらもかすれた、低い声で、あげはは言った。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 166,
+      "text": "「別に……碧、だし……見られても……碧なら……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 167,
+      "text": "あげはの指が、胸元に動く。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 168,
+      "text": "俺の意識が、そこに吸いこまれた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 169,
+      "text": "爪がまだ濡れている、白い指が……ふくらみの間に張りつめているシャツの、ボタンを……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 170,
+      "text": "外した……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 171,
+      "text": "「あ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 172,
+      "text": "濡れた布地が、左右に離れる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 173,
+      "text": "その隙間に……淡い色の……ブラジャーが……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 174,
+      "text": "どくん、どくん。鼓動がさらに高まる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 175,
+      "text": "あげはも、泣くのをこらえているみたいに、目を潤ませて、こちらを見つめて、無言。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 176,
+      "text": "慣れている――見慣れているはずだ、ブラジャーぐらい。俺は頭の中で自分に言い聞かせる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 177,
+      "text": "佳奈子さんがしょっちゅう見せている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 178,
+      "text": "寮内で干してあるのは普通に見かける。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 179,
+      "text": "夜トイレに立った由佳さんとか早苗さんが油断しててブラだけで、なんてのも見たことある。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 180,
+      "text": "夏になれば、背中に透けて見えるのは当たり前。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 181,
+      "text": "雑誌やらネットやらで、ブラジャーも、その中身だって、いくらでも見放題。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 182,
+      "text": "だから、慣れている――この程度で、動揺なんかしない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 183,
+      "text": "しないんだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 184,
+      "text": "「ほら……この前も……\\n　昔は男みたいだ、って……碧が言ってて……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 185,
+      "text": "「でも、今は……完全に…………女の子……でしょ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 186,
+      "text": "「あ……ああ……」%K%P",
+      "text_with_name": "%LCあげは「あ……ああ……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 187,
+      "text": "「た……確かめてみて……いいよ……」%K%P",
+      "text_with_name": "%LC碧「た……確かめてみて……いいよ……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 188,
+      "text": "「……！？」%K%P",
+      "text_with_name": "%LCあげは「……！？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 189,
+      "text": "頭の中に、白い光が爆発した。%K%P",
+      "text_with_name": "%LC碧頭の中に、白い光が爆発した。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 190,
+      "text": "た、確かめるって……！%K%P",
+      "text_with_name": "%LC碧た、確かめるって……！%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 191,
+      "text": "「お、お返しに、わたしも……碧の体……確かめるから、\\n　それで、おあいこだよね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 192,
+      "text": "「な、何……言って……ううっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 193,
+      "text": "突然、寒気がはしった。%K%P",
+      "text_with_name": "%LC碧突然、寒気がはしった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 194,
+      "text": "「んっ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 195,
+      "text": "あげはも、ブルッと大きく震える。%K%P",
+      "text_with_name": "%LCあげはあげはも、ブルッと大きく震える。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 196,
+      "text": "「冷えちゃった……ね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 197,
+      "text": "「ああ……冷えた……」%K%P",
+      "text_with_name": "%LCあげは「ああ……冷えた……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 198,
+      "text": "「風邪、引いちゃう……」%K%P",
+      "text_with_name": "%LC碧「風邪、引いちゃう……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 199,
+      "text": "どちらが動いたのか、わからない。%K%P",
+      "text_with_name": "%LCあげはどちらが動いたのか、わからない。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 200,
+      "text": "俺の視界の中で、あげはの姿が、大きくなってくる。%K%P",
+      "text_with_name": "%LCあげは俺の視界の中で、あげはの姿が、大きくなってくる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 201,
+      "text": "体がフレームアウトして、顔だけが、大きく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 202,
+      "text": "熱を、腕の中に感じて。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 203,
+      "text": "熱く、やわらかな体が、腕の中に入って。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 204,
+      "text": "まぶたが……瞳が、隠れて……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 205,
+      "text": "濡れた色の、唇が。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 206,
+      "text": "磁石のように、そこに、俺は引き寄せられた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 207,
+      "text": "「ん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 208,
+      "text": "「んっ……」%K%P",
+      "text_with_name": "%LC碧「んっ……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 209,
+      "text": "ふにゅっ。%K%P",
+      "text_with_name": "%LCあげはふにゅっ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 210,
+      "text": "最初に感じたのは、弾力。%K%P",
+      "text_with_name": "%LCあげは最初に感じたのは、弾力。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 211,
+      "text": "それから、熱と……ぬめり。%K%P",
+      "text_with_name": "%LCあげはそれから、熱と……ぬめり。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 212,
+      "text": "「ん……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 213,
+      "text": "ぬるっとしたものが唇を覆う。%K%P",
+      "text_with_name": "%LCあげはぬるっとしたものが唇を覆う。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 214,
+      "text": "「……！」%K%P",
+      "text_with_name": "%LCあげは「……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 215,
+      "text": "な、なんだ、これ。%K%P",
+      "text_with_name": "%LC碧な、なんだ、これ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 216,
+      "text": "甘い爆発。%K%P",
+      "text_with_name": "%LC碧甘い爆発。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 217,
+      "text": "頭の中が真っ白に。%K%P",
+      "text_with_name": "%LC碧頭の中が真っ白に。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 218,
+      "text": "「ちゅっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 219,
+      "text": "いつ、唇が離れたのか、わからない。%K%P",
+      "text_with_name": "%LCあげはいつ、唇が離れたのか、わからない。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 220,
+      "text": "あげはが、目を開いて、俺を見ている。%K%P",
+      "text_with_name": "%LCあげはあげはが、目を開いて、俺を見ている。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 221,
+      "text": "その顔がものすごく赤く、まぶたは半開き、瞳はとろんと甘く濡れて。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 222,
+      "text": "「すごい……ね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 223,
+      "text": "「ああ……」%K%P",
+      "text_with_name": "%LCあげは「ああ……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 224,
+      "text": "何がすごいのか、わかっているけれど、これという単語にならない。%K%P",
+      "text_with_name": "%LC碧何がすごいのか、わかっているけれど、これという単語にならない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 225,
+      "text": "また、引き寄せられていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 226,
+      "text": "「ん……ちゅ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 227,
+      "text": "再び、甘い爆発。%K%P",
+      "text_with_name": "%LCあげは再び、甘い爆発。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 228,
+      "text": "でも今度は、わかった。%K%P",
+      "text_with_name": "%LCあげはでも今度は、わかった。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 229,
+      "text": "キスした。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 230,
+      "text": "俺、あげはと、キスしてる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 231,
+      "text": "「んっ……ん……んん……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 232,
+      "text": "ふに……むにゅ……言葉にできない、そんな感覚。%K%P",
+      "text_with_name": "%LCあげはふに……むにゅ……言葉にできない、そんな感覚。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 233,
+      "text": "むに、むにと、唇がたわむ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 234,
+      "text": "横に動かす。擦る。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 235,
+      "text": "鼻息。唇がふさがったまま、お互い、荒く。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 236,
+      "text": "「んふ……ん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 237,
+      "text": "「ん……ふあ……ん……んっ！」%K%P",
+      "text_with_name": "%LC碧「ん……ふあ……ん……んっ！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 238,
+      "text": "「んっ！？」%K%P",
+      "text_with_name": "%LCあげは「んっ！？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 239,
+      "text": "ぬるっとした、熱いものが、唇の間に生まれた。%K%P",
+      "text_with_name": "%LC碧ぬるっとした、熱いものが、唇の間に生まれた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 240,
+      "text": "唇の、歯列の、さらに内側……舌……！？%K%P",
+      "text_with_name": "%LC碧唇の、歯列の、さらに内側……舌……！？%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 241,
+      "text": "「んっ……はぁ、はぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 242,
+      "text": "あげはが、びっくりしたように、顔を離す。%K%P",
+      "text_with_name": "%LCあげはあげはが、びっくりしたように、顔を離す。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 243,
+      "text": "俺も、呆然として、停止。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 244,
+      "text": "あげはの目と、唇と――そして、脳内に渦巻く、今の“ぬるっ”の感触。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 245,
+      "text": "「……ぷはっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 246,
+      "text": "呼吸を忘れていて、派手な音を立てて息をした。%K%P",
+      "text_with_name": "%LC碧呼吸を忘れていて、派手な音を立てて息をした。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 247,
+      "text": "肌を、水滴がしたたる。%K%P",
+      "text_with_name": "%LC碧肌を、水滴がしたたる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 248,
+      "text": "でもこれ、雨か、それとも汗か……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 249,
+      "text": "「あ……あのさ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 250,
+      "text": "あげはが、潤んだ目のまま、俺を見上げてきた。%K%P",
+      "text_with_name": "%LCあげはあげはが、潤んだ目のまま、俺を見上げてきた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 251,
+      "text": "「もうちょっと……確かめて……みない？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 252,
+      "text": "あげはの手が、俺の体に触れてきた。%K%P",
+      "text_with_name": "%LCあげはあげはの手が、俺の体に触れてきた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 253,
+      "text": "腰に。胸に。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 254,
+      "text": "肩から胸板を、ゆっくりと、マッサージでもするみたいに、手の平いっぱいを使って、少しずつ撫で回してくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 255,
+      "text": "そして――シャツのボタンを、外し始めた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 256,
+      "text": "「碧は、男の子が、男になって……わたし、女の子だよ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 257,
+      "text": "「な、何言ってるんだろ、わかんないや……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 258,
+      "text": "あげはの指が、震えている。%K%P",
+      "text_with_name": "%LCあげはあげはの指が、震えている。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 259,
+      "text": "俺のシャツの、ボタンが外される。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 260,
+      "text": "アンダーシャツの下、素肌に、あげはの手が入りこんでくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 261,
+      "text": "濡れた布地をめくりあげられて、腹筋や、あばらの上を、あげはの手が滑る。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 262,
+      "text": "「お……お……お……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 263,
+      "text": "ぞわっ、ぞくっ、びくっ。体が、細かく、何度も震える。%K%P",
+      "text_with_name": "%LC碧ぞわっ、ぞくっ、びくっ。体が、細かく、何度も震える。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 264,
+      "text": "鳥肌が立ち、未経験の感覚に体がねじれ、顔が歪む。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 265,
+      "text": "「ほら……碧も……ね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 266,
+      "text": "何をしろと求められているのか、自然と頭に理解が広がった。%K%P",
+      "text_with_name": "%LCあげは何をしろと求められているのか、自然と頭に理解が広がった。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 267,
+      "text": "鼻と鼻がくっつくほどの至近距離のまま、あげはの体に手を伸ばす。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 268,
+      "text": "濡れた布地に、触れて……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 269,
+      "text": "首のところから、ひとつひとつ、ボタンを外し……あげはの素肌を、あらわにしてゆく……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 270,
+      "text": "「ん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 271,
+      "text": "お互い、体をまさぐりながら、服を脱がせていって……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 272,
+      "text": "あげはが横たわったのか、俺が押し倒したのか、やっぱりそれもよくわからない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 273,
+      "text": "「ああ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 274,
+      "text": "立体だ。球面。盛り上がり。%K%P",
+      "text_with_name": "%LC碧立体だ。球面。盛り上がり。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 275,
+      "text": "仰向けになった、あげはの、胸。%K%P",
+      "text_with_name": "%LC碧仰向けになった、あげはの、胸。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 276,
+      "text": "ブラジャーのカップが包む、上向きの、ふくらみ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 277,
+      "text": "細い首、丸い肩、鎖骨、しっとりした肌。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 278,
+      "text": "そこに盛り上がる、女の子の証。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 279,
+      "text": "「お……大きい……よな……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 280,
+      "text": "「うん……育った……」%K%P",
+      "text_with_name": "%LC碧「うん……育った……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 281,
+      "text": "「女の子だ」%K%P",
+      "text_with_name": "%LCあげは「女の子だ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 282,
+      "text": "「でしょ……」%K%P",
+      "text_with_name": "%LC碧「でしょ……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 283,
+      "text": "らちもないことを言い交わしながら、さらに、着ているものをはだけてゆく。%K%P",
+      "text_with_name": "%LCあげはらちもないことを言い交わしながら、さらに、着ているものをはだけてゆく。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 284,
+      "text": "少し体を起こして、腕を抜かせた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 285,
+      "text": "「ん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 286,
+      "text": "目で促され、俺も、着ているものを脱ぐ。%K%P",
+      "text_with_name": "%LCあげは目で促され、俺も、着ているものを脱ぐ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 287,
+      "text": "手が、自分のものじゃないようだ。%K%P",
+      "text_with_name": "%LCあげは手が、自分のものじゃないようだ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 288,
+      "text": "あげはの視線に、その意志に、操られている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 289,
+      "text": "「びしょ濡れ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 290,
+      "text": "雨に濡れ、肌に張りついていたシャツを脱ぎ捨て、放る。%K%P",
+      "text_with_name": "%LCあげは雨に濡れ、肌に張りついていたシャツを脱ぎ捨て、放る。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 291,
+      "text": "濡れた衣服が、床でびしゃっと音を立てた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 292,
+      "text": "アンダーシャツも脱ぎ、上半身裸になる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 293,
+      "text": "途端にぞわぞわっと、むずがゆさに似た感覚が広がった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 294,
+      "text": "毛穴が開き、身をよじり、くねらせずにはいられない……なんだこれ……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 295,
+      "text": "「……いい体……だね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 296,
+      "text": "あげはの手が、腰骨から、脇腹に触れてくる。%K%P",
+      "text_with_name": "%LCあげはあげはの手が、腰骨から、脇腹に触れてくる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 297,
+      "text": "腹筋の上を指が動き、あるいは腕に触れてきて、軽く握りながら撫で回す。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 298,
+      "text": "その動きに、“ぞわぞわ”がさらに広がり、喉からも変な声が漏れる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 299,
+      "text": "「ふあ……あ……う……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 300,
+      "text": "悶える俺を、あげはが見つめる。%K%P",
+      "text_with_name": "%LC碧悶える俺を、あげはが見つめる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 301,
+      "text": "高熱に冒されているような、まぶたを重たく下ろした半開きの目で、俺の体を舐め回すように見る。%K%P",
+      "text_with_name": "%LC碧高熱に冒されているような、まぶたを重たく下ろした半開きの目で、俺の体を舐め回すように見る。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 302,
+      "text": "その視線が、素肌に、さらにぬるぬるした感触をもたらす。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 303,
+      "text": "「ん……や……あぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 304,
+      "text": "俺もまた、あげはを視線で舐め回す。%K%P",
+      "text_with_name": "%LCあげは俺もまた、あげはを視線で舐め回す。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 305,
+      "text": "視界の中には、あげはだけ。%K%P",
+      "text_with_name": "%LCあげは視界の中には、あげはだけ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 306,
+      "text": "見つめるあげはが、俺と同じように、身をよじり、悶える。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 307,
+      "text": "その様が、信じられないほど、綺麗だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 308,
+      "text": "手、俺の手が、それに、このとても綺麗なものに……触れた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 309,
+      "text": "「は…………んっ…………！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 310,
+      "text": "白い素肌、熱い体。やわらかな線、魅惑的な曲面。%K%P",
+      "text_with_name": "%LCあげは白い素肌、熱い体。やわらかな線、魅惑的な曲面。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 311,
+      "text": "女の子の、熱い、肌。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 312,
+      "text": "それが、ぴくっ、ぴくっと、震える。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 313,
+      "text": "俺の手の動きに合わせて、くすぐったそうに、あるいは泣き出しそうに、頬や目尻を引きつらせ、体を反応させる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 314,
+      "text": "「んっ……そこ……やっ……だめ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 315,
+      "text": "小さく、あげはは声を上げる。%K%P",
+      "text_with_name": "%LCあげは小さく、あげはは声を上げる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 316,
+      "text": "その声が、耳に入るたびに、さっきのキスと同じ、白い衝撃となって俺の脳髄をぶっ叩く。%K%P",
+      "text_with_name": "%LCあげはその声が、耳に入るたびに、さっきのキスと同じ、白い衝撃となって俺の脳髄をぶっ叩く。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 317,
+      "text": "「や……ん……あ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 318,
+      "text": "「あ……！」%K%P",
+      "text_with_name": "%LCあげは「あ……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 319,
+      "text": "あげはが身をよじると、胸が揺れ、ブラジャーのストラップが左右別々に動く。%K%P",
+      "text_with_name": "%LC碧あげはが身をよじると、胸が揺れ、ブラジャーのストラップが左右別々に動く。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 320,
+      "text": "脇のところで、食いこんでいる……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 321,
+      "text": "「……外して……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 322,
+      "text": "「ん……」%K%P",
+      "text_with_name": "%LCあげは「ん……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 323,
+      "text": "ブラジャーを、外す。%K%P",
+      "text_with_name": "%LC碧ブラジャーを、外す。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 324,
+      "text": "あげはが浮かせた背中に、手を入れて、ホックを外す……。%K%P",
+      "text_with_name": "%LC碧あげはが浮かせた背中に、手を入れて、ホックを外す……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 325,
+      "text": "「ん……と……ここ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 326,
+      "text": "あげはが、俺の腕をつかんで、上体を持ち上げ続ける。%K%P",
+      "text_with_name": "%LC碧あげはが、俺の腕をつかんで、上体を持ち上げ続ける。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 327,
+      "text": "俺は、あげはの両脇から手を入れて、支えつつ、手首を曲げてホックをまさぐる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 328,
+      "text": "構造はわかってる、こうして……こう！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 329,
+      "text": "「ん…………はあぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 330,
+      "text": "ホックが外れ、ストラップがゆるんだ途端に、あげはは解放感に顔をゆるめ、大きく息をついた。%K%P",
+      "text_with_name": "%LCあげはホックが外れ、ストラップがゆるんだ途端に、あげはは解放感に顔をゆるめ、大きく息をついた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 331,
+      "text": "「わ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 332,
+      "text": "カップが外れ、あらわになった、乳房。%K%P",
+      "text_with_name": "%LC碧カップが外れ、あらわになった、乳房。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 333,
+      "text": "あげはの、胸……。%K%P",
+      "text_with_name": "%LC碧あげはの、胸……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 334,
+      "text": "白くて、張っていて、まるくて、大きくて、やわらかくて、揺れて、ゆらめいて、ぷるんとして……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 335,
+      "text": "「…………！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 336,
+      "text": "ものを考えることができない。%K%P",
+      "text_with_name": "%LC碧ものを考えることができない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 337,
+      "text": "生の、あげはの、本物の、おっぱい。%K%P",
+      "text_with_name": "%LC碧生の、あげはの、本物の、おっぱい。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 338,
+      "text": "「や、やだな、そんな……見ちゃ……や……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 339,
+      "text": "冗談めかして言おうとしたあげはもまた、顔がどんどん赤くなり、息が詰まったような声音になり、ついには口をつぐんでしまう。%K%P",
+      "text_with_name": "%LCあげは冗談めかして言おうとしたあげはもまた、顔がどんどん赤くなり、息が詰まったような声音になり、ついには口をつぐんでしまう。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 340,
+      "text": "ばくん、ばくん。心臓の音が、俺自身のだけじゃない、あげはのそれも、聞こえてくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 341,
+      "text": "あげはもまた、ドキドキしてる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 342,
+      "text": "上向きの胸の、頂点に息づく、きれいな色の乳首。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 343,
+      "text": "そこが、ふる、ふると、揺れている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 344,
+      "text": "「…………！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 345,
+      "text": "俺は、手を伸ばした。%K%P",
+      "text_with_name": "%LC碧俺は、手を伸ばした。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 346,
+      "text": "あげはが息をのむ。%K%P",
+      "text_with_name": "%LC碧あげはが息をのむ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 347,
+      "text": "俺も、息を止めて、ふくらみに触る。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 348,
+      "text": "ふにゅっ……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 349,
+      "text": "「！！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 350,
+      "text": "手！　手の平！　これ！%K%P",
+      "text_with_name": "%LC碧手！　手の平！　これ！%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 351,
+      "text": "この感触、この感覚、感動、衝撃、快感！　とにかくすごい！%K%P",
+      "text_with_name": "%LC碧この感触、この感覚、感動、衝撃、快感！　とにかくすごい！%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 352,
+      "text": "「や……んっ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 353,
+      "text": "手の平いっぱいに、この上なくやわらかで、しかも弾力のある、未知の快感が広がる。%K%P",
+      "text_with_name": "%LCあげは手の平いっぱいに、この上なくやわらかで、しかも弾力のある、未知の快感が広がる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 354,
+      "text": "たまらず、握ってしまう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 355,
+      "text": "「んっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 356,
+      "text": "苦痛の響きを聞き取って、すぐ力を抜いた。%K%P",
+      "text_with_name": "%LCあげは苦痛の響きを聞き取って、すぐ力を抜いた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 357,
+      "text": "「こ、こう……？」%K%P",
+      "text_with_name": "%LCあげは「こ、こう……？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 358,
+      "text": "「ん……」%K%P",
+      "text_with_name": "%LC碧「ん……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 359,
+      "text": "今度は大丈夫みたいだ。%K%P",
+      "text_with_name": "%LCあげは今度は大丈夫みたいだ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 360,
+      "text": "じゃあ、このくらいで……揉むと……。%K%P",
+      "text_with_name": "%LCあげはじゃあ、このくらいで……揉むと……。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 361,
+      "text": "「ん……ん…………んっ…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 362,
+      "text": "す、すごい、なんて手触り、なんて気持ちよさ……！%K%P",
+      "text_with_name": "%LCあげはす、すごい、なんて手触り、なんて気持ちよさ……！%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 363,
+      "text": "夢中になって揉む手の平に、くすぐったい感触が生まれる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 364,
+      "text": "これは、乳首……硬くなってる……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 365,
+      "text": "それを、転がしてみた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 366,
+      "text": "「んんっ、んっ……んっ、はんっ、ふあっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 367,
+      "text": "あげはの声と思えないくらいに、甘い声をあげて悶える。%K%P",
+      "text_with_name": "%LCあげはあげはの声と思えないくらいに、甘い声をあげて悶える。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 368,
+      "text": "「んっ、ま、待って！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 369,
+      "text": "「痛い？」%K%P",
+      "text_with_name": "%LCあげは「痛い？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 370,
+      "text": "「違うの、す、すごくて……電気……はしるから……\\n　もっと、ゆっくり……お願い……」%K%P",
+      "text_with_name": "%LC碧「違うの、す、すごくて……電気……はしるから……\\n　もっと、ゆっくり……お願い……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 371,
+      "text": "「ん……こう……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 372,
+      "text": "手をずらして、指をあてがい、壊れ物のように、丁寧に……。%K%P",
+      "text_with_name": "%LC碧手をずらして、指をあてがい、壊れ物のように、丁寧に……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 373,
+      "text": "そっと触れ、そっと撫で……そっと、そっと、いじくる……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 374,
+      "text": "「んんっ……ん…………んぁ……あ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 375,
+      "text": "あげはの瞳が揺れ、口元がひくついた。%K%P",
+      "text_with_name": "%LCあげはあげはの瞳が揺れ、口元がひくついた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 376,
+      "text": "「ふあ……あ……あ……んふ、ふっ……あっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 377,
+      "text": "間違いない……あげは……感じてる……！%K%P",
+      "text_with_name": "%LCあげは間違いない……あげは……感じてる……！%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 378,
+      "text": "「……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 379,
+      "text": "もう何度目かわからない衝撃。%K%P",
+      "text_with_name": "%LC碧もう何度目かわからない衝撃。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 380,
+      "text": "そして、俺の方も――血流が、ごうごうと逆巻き、煮えたぎる。%K%P",
+      "text_with_name": "%LC碧そして、俺の方も――血流が、ごうごうと逆巻き、煮えたぎる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 381,
+      "text": "息が詰まり、視界は狭まり、体は燃えて、全身びりびりして、股間が――男のモノが、爆発しそう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 382,
+      "text": "「はぁっ、だ、だめ……あ…………碧ぃ……んっ、ふ……\\n　ひゃぅっ、だめ、だめだよぉ……は、あぁぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 383,
+      "text": "乳首を転がすと、あげはは悶え、くねり、熱い体をさらに熱くした。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 384,
+      "text": "その反応に、俺も全身が痺れ、股間がすごいことになる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 385,
+      "text": "そしてあげはが、悶えながらも、手を伸ばしてきて……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 386,
+      "text": "お返しとばかりに、俺の体を、撫で回してきた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 387,
+      "text": "「んっ、ん……うあっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 388,
+      "text": "ぞわっ、ぞくっ、びくびくっと、体が反応し、声が出てしまう。%K%P",
+      "text_with_name": "%LC碧ぞわっ、ぞくっ、びくびくっと、体が反応し、声が出てしまう。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 389,
+      "text": "恥ずかしい。でも気持ちいい。すごくいい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 390,
+      "text": "「ん…………ここ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 391,
+      "text": "あげはの指が、俺の胸板に来て、乳首をいじる。%K%P",
+      "text_with_name": "%LCあげはあげはの指が、俺の胸板に来て、乳首をいじる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 392,
+      "text": "「ひゃうっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 393,
+      "text": "情けない声が出た。%K%P",
+      "text_with_name": "%LC碧情けない声が出た。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 394,
+      "text": "だけど、それを恥ずかしいと思うこともできないくらい、大きな刺激だった……股間が破裂しそうになるくらい……。%K%P",
+      "text_with_name": "%LC碧だけど、それを恥ずかしいと思うこともできないくらい、大きな刺激だった……股間が破裂しそうになるくらい……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 395,
+      "text": "「はぁ、はぁ……はぁ……はぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 396,
+      "text": "「……はっ……はっ……」%K%P",
+      "text_with_name": "%LCあげは「……はっ……はっ……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 397,
+      "text": "お互い、手を止めて、見つめ合いながら、荒い息をつく。%K%P",
+      "text_with_name": "%LC碧お互い、手を止めて、見つめ合いながら、荒い息をつく。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 398,
+      "text": "心臓がばくばく言って、股間がずきずきして。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 399,
+      "text": "俺は、まともにものを考えられないまま、震える手で、下半身をあらわにした。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 400,
+      "text": "「あ…………！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 401,
+      "text": "あげはは、俺のそれを見て、目を見張った。%K%P",
+      "text_with_name": "%LCあげはあげはは、俺のそれを見て、目を見張った。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 402,
+      "text": "でも同時に、腰を浮かせて――そこに手をやって……。%K%P",
+      "text_with_name": "%LCあげはでも同時に、腰を浮かせて――そこに手をやって……。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 403,
+      "text": "俺と同じように、自分で……大事な部分を隠す、最後の一枚を……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 404,
+      "text": "脱いだ……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 405,
+      "text": "「わあ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 406,
+      "text": "隠す布地のない、生まれたままの姿。%K%P",
+      "text_with_name": "%LC碧隠す布地のない、生まれたままの姿。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 407,
+      "text": "胸は大きく、腰はくびれ、そして両脚はむっちりとして……。%K%P",
+      "text_with_name": "%LC碧胸は大きく、腰はくびれ、そして両脚はむっちりとして……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 408,
+      "text": "その間には……両脚の間……そこに……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 409,
+      "text": "お、女の子の、あそこ、あの部分……が……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 410,
+      "text": "「…………ごくっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 411,
+      "text": "「う…………」%K%P",
+      "text_with_name": "%LC碧「う…………」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 412,
+      "text": "あげはが、羞恥に耐えかねるように、喉から音を漏らした。%K%P",
+      "text_with_name": "%LCあげはあげはが、羞恥に耐えかねるように、喉から音を漏らした。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 413,
+      "text": "俺はしかし、あげはを思いやることも忘れて、その部分に見入る。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 414,
+      "text": "股間に、縦にはしる、割れ目。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 415,
+      "text": "すごい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 416,
+      "text": "これが、女の子の、あそこなんだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 417,
+      "text": "ただの縦スジじゃない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 418,
+      "text": "左右は盛り上がって、中央には肉襞がぷっくりして……正直、かなり生々しい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 419,
+      "text": "合わせ目に突き出ているのが、クリトリスだよな……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 420,
+      "text": "そして、その間……ぬらぬらしている、そこに……そこ……その中に、俺の、これを……入れるんだ……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 421,
+      "text": "生々しく息づく、あげはのその場所に、俺は腰を近づけていった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 422,
+      "text": "「い…………行くぞ…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 423,
+      "text": "「う、うん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 424,
+      "text": "勃起したモノを触れさせる。%K%P",
+      "text_with_name": "%LCあげは勃起したモノを触れさせる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 425,
+      "text": "ぬるりとして、熱い。%K%P",
+      "text_with_name": "%LCあげはぬるりとして、熱い。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 426,
+      "text": "俺のモノも、先からぬるぬるした汁をたっぷり漏らして、触れさせるだけで射精しそう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 427,
+      "text": "ば、場所は……ここ……だよな……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 428,
+      "text": "握って、あてがう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 429,
+      "text": "こ、ここでいいのか？%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 430,
+      "text": "「う…………うう…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 431,
+      "text": "ここか？　ここなのか？%K%P",
+      "text_with_name": "%LC碧ここか？　ここなのか？%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 432,
+      "text": "「や……んっ……擦っちゃ……だめぇ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 433,
+      "text": "ペニスの先が、割れ目を上下に擦るかたちになって、ぬる、ぬると、お互いの汁をまぶしてゆく。%K%P",
+      "text_with_name": "%LCあげはペニスの先が、割れ目を上下に擦るかたちになって、ぬる、ぬると、お互いの汁をまぶしてゆく。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 434,
+      "text": "……ああ、そうだ、これ、俺が漏らしてる先走りだけじゃない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 435,
+      "text": "割れ目の内側からも、とろとろ、甘酸っぱい粘液が漏れ出てきている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 436,
+      "text": "あげはも……濡れてる……興奮してる……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 437,
+      "text": "「行くぞ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 438,
+      "text": "全身が、もどかしい気持ちで、爆発しそう。%K%P",
+      "text_with_name": "%LC碧全身が、もどかしい気持ちで、爆発しそう。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 439,
+      "text": "早くあげはの中に入りたい。つながりたい。%K%P",
+      "text_with_name": "%LC碧早くあげはの中に入りたい。つながりたい。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 440,
+      "text": "したい。したい。あげはと、ここで、ひとつになりたい。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 441,
+      "text": "セックス。本番。初めての経験を……ついに！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 442,
+      "text": "「はぁっ、はっ、は……ん……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 443,
+      "text": "握って場所を探ったペニスの、先端が、割れ目の間に埋まった。%K%P",
+      "text_with_name": "%LC碧握って場所を探ったペニスの、先端が、割れ目の間に埋まった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 444,
+      "text": "「ここ……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 445,
+      "text": "思っていたよりかなり下の方だった。%K%P",
+      "text_with_name": "%LC碧思っていたよりかなり下の方だった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 446,
+      "text": "体の位置を少しずらして、場所を合わせ……。%K%P",
+      "text_with_name": "%LC碧体の位置を少しずらして、場所を合わせ……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 447,
+      "text": "指をやり、あげはのその部分に触れた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 448,
+      "text": "「あ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 449,
+      "text": "ぬるっとした、弾力ある肉襞を、左右に開く。%K%P",
+      "text_with_name": "%LCあげはぬるっとした、弾力ある肉襞を、左右に開く。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 450,
+      "text": "俺の張りつめた亀頭よりもさらに鮮やかな色の、花のような肉筒が口を開ける。%K%P",
+      "text_with_name": "%LCあげは俺の張りつめた亀頭よりもさらに鮮やかな色の、花のような肉筒が口を開ける。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 451,
+      "text": "すごい……こんな風になってるんだ……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 452,
+      "text": "と、感動したのも一瞬で、見つけ出したその場所に、亀頭を押し当てる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 453,
+      "text": "それしか考えられない。この場所に、これを、入れるという、そのことしか。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 454,
+      "text": "「んっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 455,
+      "text": "「くうっ……お……お……おおっ！」%K%P",
+      "text_with_name": "%LCあげは「くうっ……お……お……おおっ！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 456,
+      "text": "ぬぷ、ずぶ、ずぶ。%K%P",
+      "text_with_name": "%LC碧ぬぷ、ずぶ、ずぶ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 457,
+      "text": "じわじわ、一ミリ、一ミリ、あげはの中に入りこんでゆく。%K%P",
+      "text_with_name": "%LC碧じわじわ、一ミリ、一ミリ、あげはの中に入りこんでゆく。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 458,
+      "text": "入ってゆく。亀頭の先が、亀頭の中程が、エラが……あげはの、熱い熱い、すごく熱い所に、めりこんでゆく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 459,
+      "text": "「んっ、くっ、ま、待って……ぐっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 460,
+      "text": "濡れている。%K%P",
+      "text_with_name": "%LCあげは濡れている。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 461,
+      "text": "ぬるぬるしてる。狭い、でもぬめって、さらに入る、入りこむ、あげはの濡れた穴の中に、俺が、入って……。%K%P",
+      "text_with_name": "%LCあげはぬるぬるしてる。狭い、でもぬめって、さらに入る、入りこむ、あげはの濡れた穴の中に、俺が、入って……。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 462,
+      "text": "狭く、きつい、その穴を、ガチガチになったモノが押し広げ……さらに、じわじわ、入りこんでいって……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 463,
+      "text": "「ぐ、ぐ！　あっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 464,
+      "text": "めりっ。%K%P",
+      "text_with_name": "%LCあげはめりっ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 465,
+      "text": "みち……めり……ずぶっ！%K%P",
+      "text_with_name": "%LCあげはみち……めり……ずぶっ！%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 466,
+      "text": "「ぎっ！　ぐっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 467,
+      "text": "あげはが、歯を食いしばって、強くうめいた。%K%P",
+      "text_with_name": "%LCあげはあげはが、歯を食いしばって、強くうめいた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 468,
+      "text": "ペニスが、さらに入りこみ、あげはのそこを押し広げる。%K%P",
+      "text_with_name": "%LCあげはペニスが、さらに入りこみ、あげはのそこを押し広げる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 469,
+      "text": "「うっ、ぐ……く……うう……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 470,
+      "text": "甘いものが消え失せ、眉間はつらそうに歪む。%K%P",
+      "text_with_name": "%LCあげは甘いものが消え失せ、眉間はつらそうに歪む。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 471,
+      "text": "「い……痛い……か……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 472,
+      "text": "「当たり前……よ……！」%K%P",
+      "text_with_name": "%LC碧「当たり前……よ……！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 473,
+      "text": "涙目をあげはは向けてきた。%K%P",
+      "text_with_name": "%LCあげは涙目をあげはは向けてきた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 474,
+      "text": "「そっか……悪い……」%K%P",
+      "text_with_name": "%LCあげは「そっか……悪い……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 475,
+      "text": "そう謝ってから、理解が追いかけてきた。%K%P",
+      "text_with_name": "%LC碧そう謝ってから、理解が追いかけてきた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 476,
+      "text": "俺――あげはと……したんだ。%K%P",
+      "text_with_name": "%LC碧俺――あげはと……したんだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 477,
+      "text": "あげはの初めてを。処女を。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 478,
+      "text": "今、俺が、奪ったんだ……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 479,
+      "text": "「あ…………！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 480,
+      "text": "俺もまた……自分のモノを、女の子に入れて。%K%P",
+      "text_with_name": "%LC碧俺もまた……自分のモノを、女の子に入れて。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 481,
+      "text": "童貞じゃ、なくなった。%K%P",
+      "text_with_name": "%LC碧童貞じゃ、なくなった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 482,
+      "text": "経験した……エッチ……本番――セックス、を……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 483,
+      "text": "「だ……大丈夫……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 484,
+      "text": "入ってるよ、本当に、こんなに、あげはの中に。%K%P",
+      "text_with_name": "%LC碧入ってるよ、本当に、こんなに、あげはの中に。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 485,
+      "text": "入るんだ、すごい……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 486,
+      "text": "でもあげはは、痛そうにしてる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 487,
+      "text": "痛いんだ。処女膜、破れた――肉が裂けるってことだよな。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 488,
+      "text": "まずい、あげはが、すごく痛そう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 489,
+      "text": "「痛いよ……でも、これなら……なんとか……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 490,
+      "text": "「無理するな」%K%P",
+      "text_with_name": "%LCあげは「無理するな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 491,
+      "text": "「大丈夫だって。\\n　痛いことは痛いけど、想像してたのよりは、\\n　ひどくなかったから……」%K%P",
+      "text_with_name": "%LC碧「大丈夫だって。\\n　痛いことは痛いけど、想像してたのよりは、\\n　ひどくなかったから……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 492,
+      "text": "「でも、痛いんだろ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 493,
+      "text": "「気にしないの。そういうものなんだから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 494,
+      "text": "「……ごめんな」%K%P",
+      "text_with_name": "%LCあげは「……ごめんな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 495,
+      "text": "俺がいたわられてどうするんだ。%K%P",
+      "text_with_name": "%LC碧俺がいたわられてどうするんだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 496,
+      "text": "「それより……ね、これで終わりじゃないよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 497,
+      "text": "「え……いや、痛いなら、無理しなくても……」%K%P",
+      "text_with_name": "%LCあげは「え……いや、痛いなら、無理しなくても……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 498,
+      "text": "「だめだよ。碧、気持ちよくなってないでしょ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 499,
+      "text": "「これで終わったんじゃ、わたしが痛いだけじゃない」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 500,
+      "text": "「む……」%K%P",
+      "text_with_name": "%LCあげは「む……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 501,
+      "text": "ずきん、ずきんと、股間がうずいている。%K%P",
+      "text_with_name": "%LC碧ずきん、ずきんと、股間がうずいている。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 502,
+      "text": "あげはが痛がっているのに、ペニスは萎えきらず、この熱い場所をもっと味わわせろと訴える。%K%P",
+      "text_with_name": "%LC碧あげはが痛がっているのに、ペニスは萎えきらず、この熱い場所をもっと味わわせろと訴える。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 503,
+      "text": "俺の鼓動も、収まらない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 504,
+      "text": "あげはの、素肌を、おっぱいを、曲線美を、目の当たりにして、昂りを抑えられない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 505,
+      "text": "「いいのか……？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 506,
+      "text": "「もちろん……体、許したんだから、\\n　好きなだけやっていいよ」%K%P",
+      "text_with_name": "%LC碧「もちろん……体、許したんだから、\\n　好きなだけやっていいよ」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 507,
+      "text": "「でも…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 508,
+      "text": "あげはは、まぎれもない本音の声で、言った。%K%P",
+      "text_with_name": "%LCあげはあげはは、まぎれもない本音の声で、言った。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 509,
+      "text": "「優しく、してね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 510,
+      "text": "「……ああ……！」%K%P",
+      "text_with_name": "%LCあげは「……ああ……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 511,
+      "text": "俺は、あげはに覆いかぶさり、あげはのお腹の動きを見て、呼吸を合わせた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 512,
+      "text": "すぅぅ、はぁぁと何度か息をしたところで、動く。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 513,
+      "text": "あげはの腰に手をやり、体重を乗せて。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 514,
+      "text": "半分くらい埋まっていたペニスを、一気に、奥へ！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 515,
+      "text": "「くううっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 516,
+      "text": "痛いだろうところを、無理矢理刺激され、あげははまた痛みに顔を歪めた。%K%P",
+      "text_with_name": "%LCあげは痛いだろうところを、無理矢理刺激され、あげははまた痛みに顔を歪めた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 517,
+      "text": "ごめんな……でも、こういうのは、じわじわより、一気にやってしまった方がいいと思って。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 518,
+      "text": "「わ…………！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 519,
+      "text": "そして俺も、驚き、かつ感動する。%K%P",
+      "text_with_name": "%LC碧そして俺も、驚き、かつ感動する。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 520,
+      "text": "ペニスが、根元まで、あげはの中に。%K%P",
+      "text_with_name": "%LC碧ペニスが、根元まで、あげはの中に。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 521,
+      "text": "「すごい、こんなに入るんだ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 522,
+      "text": "「そ、そうだね……すごい……こんな……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 523,
+      "text": "あげはが、自分で自分の下腹を、こわごわと触る。%K%P",
+      "text_with_name": "%LCあげはあげはが、自分で自分の下腹を、こわごわと触る。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 524,
+      "text": "「本当に、入るんだ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 525,
+      "text": "「ああ……」%K%P",
+      "text_with_name": "%LCあげは「ああ……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 526,
+      "text": "「うう……形、わかる……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 527,
+      "text": "あげはが軽く下腹部を押すと、その感覚がペニスに伝わってきた。%K%P",
+      "text_with_name": "%LCあげはあげはが軽く下腹部を押すと、その感覚がペニスに伝わってきた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 528,
+      "text": "わっ、し、刺激、ぬるって……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 529,
+      "text": "「んっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 530,
+      "text": "ペニスが反応してしまったので、痛みに襲われたあげはが顔を引きつらせる。%K%P",
+      "text_with_name": "%LCあげはペニスが反応してしまったので、痛みに襲われたあげはが顔を引きつらせる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 531,
+      "text": "「ふぅ。\\n　これ……射精、したいんだよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 532,
+      "text": "「あ……ああ……でも……」%K%P",
+      "text_with_name": "%LCあげは「あ……ああ……でも……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 533,
+      "text": "「いいよ。言ったでしょ、これで終わったら、\\n　痛いだけなんだから……」%K%P",
+      "text_with_name": "%LC碧「いいよ。言ったでしょ、これで終わったら、\\n　痛いだけなんだから……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 534,
+      "text": "あげはは、無理気味の笑みを作って、俺を促した。%K%P",
+      "text_with_name": "%LCあげはあげはは、無理気味の笑みを作って、俺を促した。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 535,
+      "text": "「……行くよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 536,
+      "text": "でも、その前に、あげはに覆いかぶさった。%K%P",
+      "text_with_name": "%LC碧でも、その前に、あげはに覆いかぶさった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 537,
+      "text": "「ん……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 538,
+      "text": "「ああ……！」%K%P",
+      "text_with_name": "%LCあげは「ああ……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 539,
+      "text": "肌と肌、体と体がくっつく。%K%P",
+      "text_with_name": "%LC碧肌と肌、体と体がくっつく。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 540,
+      "text": "俺の胸板に、あげはの胸が触れ、たわむ。%K%P",
+      "text_with_name": "%LC碧俺の胸板に、あげはの胸が触れ、たわむ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 541,
+      "text": "「ん……んっ、ん……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 542,
+      "text": "あげはの中で、俺のモノが鋼鉄のようになる。%K%P",
+      "text_with_name": "%LCあげはあげはの中で、俺のモノが鋼鉄のようになる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 543,
+      "text": "こんな、気持ちよすぎる、あげはの素肌におっぱいに、何から何まで、よすぎて、わけがわからなくなる！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 544,
+      "text": "「んうっ、うっ、う……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 545,
+      "text": "全身の血液が煮えたぎり、脳髄もぐつぐつ音を立てて沸騰する。%K%P",
+      "text_with_name": "%LC碧全身の血液が煮えたぎり、脳髄もぐつぐつ音を立てて沸騰する。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 546,
+      "text": "ただ、抱きしめただけなのに――体をくっつけただけだっていうのに。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 547,
+      "text": "どうして、こんな……こんなに……気持ちいい……！？%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 548,
+      "text": "「ふっ、あっ、あ……は……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 549,
+      "text": "あげはの声が、耳のすぐそばから聞こえ、脳を直撃。%K%P",
+      "text_with_name": "%LCあげはあげはの声が、耳のすぐそばから聞こえ、脳を直撃。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 550,
+      "text": "体は燃え、理性が溶ける。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 551,
+      "text": "腰が動いて、ペニスを前後に摩擦させ始める。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 552,
+      "text": "「うっ……うあ……あ……あ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 553,
+      "text": "すっ、すごいっ！%K%P",
+      "text_with_name": "%LC碧すっ、すごいっ！%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 554,
+      "text": "ぬるっとした熱い中を、前後に動くと、手でするのとは比べものにならない、ものすごい快感！%K%P",
+      "text_with_name": "%LC碧ぬるっとした熱い中を、前後に動くと、手でするのとは比べものにならない、ものすごい快感！%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 555,
+      "text": "きっ、気持ちいいっ！　すごい！　すごすぎる！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 556,
+      "text": "これが、セックス！？%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 557,
+      "text": "「んっ……くっ……ん……う……ふ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 558,
+      "text": "あげはの中から出て――入って……出て……入って……。%K%P",
+      "text_with_name": "%LCあげはあげはの中から出て――入って……出て……入って……。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 559,
+      "text": "あげはを気遣わなきゃ、痛がらせないようにしなくちゃって、頭の中ではわかっている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 560,
+      "text": "なのに、体の動きを制御できない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 561,
+      "text": "息が乱れ、目が霞む。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 562,
+      "text": "口元に力が入らない。頬がゆるむ。よだれさえ垂れそうなほど、とろけるような、深く強い快感が俺を支配する。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 563,
+      "text": "たまらない……ああ……気持ちいい……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 564,
+      "text": "「ん……ん……ん……ん……ん……んっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 565,
+      "text": "腰が、機械のように、動き続けてしまう。%K%P",
+      "text_with_name": "%LC碧腰が、機械のように、動き続けてしまう。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 566,
+      "text": "「んっ、んっ……んっ……ん……ん……んっ……\\n　ふっ……ふっ……ん……はっ……くっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 567,
+      "text": "俺の動きと共に、あげはも声を漏らし続ける。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 568,
+      "text": "最初は、まだ痛そうだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 569,
+      "text": "でもそれが、だんだんと……甘い響きを帯びてきた……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 570,
+      "text": "「んっ、んっ、ん……あ……んっ、ふ……はぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 571,
+      "text": "「痛い？」%K%P",
+      "text_with_name": "%LCあげは「痛い？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 572,
+      "text": "「うん、まだ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 573,
+      "text": "抜き差しするペニスの、外に出てくる部分は、ぬらぬらする汁と一緒に、赤いものに濡れていた。%K%P",
+      "text_with_name": "%LCあげは抜き差しするペニスの、外に出てくる部分は、ぬらぬらする汁と一緒に、赤いものに濡れていた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 574,
+      "text": "「んっ…………で、でも……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 575,
+      "text": "あげはの目に、これまでと違う光が揺れた。%K%P",
+      "text_with_name": "%LCあげはあげはの目に、これまでと違う光が揺れた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 576,
+      "text": "「さっきから……だんだん……変な……ん……変な、\\n　ぞわっとする、感じ、に……んっ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 577,
+      "text": "「…………！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 578,
+      "text": "「……ごくっ……」%K%P",
+      "text_with_name": "%LC碧「……ごくっ……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 579,
+      "text": "自然と、口が乾き、喉が鳴る。%K%P",
+      "text_with_name": "%LC碧自然と、口が乾き、喉が鳴る。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 580,
+      "text": "「すごい、熱いよ、あげは……中……こんな……\\n　これが……女の子の……！」%K%P",
+      "text_with_name": "%LC碧「すごい、熱いよ、あげは……中……こんな……\\n　これが……女の子の……！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 581,
+      "text": "「やっ、そんな……言わないで……恥ずかしい……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 582,
+      "text": "「でも、入ってる、入ってるから……こんなに……\\n　いっぱい、深く……入るなんて……！」%K%P",
+      "text_with_name": "%LCあげは「でも、入ってる、入ってるから……こんなに……\\n　いっぱい、深く……入るなんて……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 583,
+      "text": "「そうだね、こんなに……大きくて、熱くて……\\n　すごい、なんて……思わなかった……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 584,
+      "text": "あげはが下腹部をまた見下ろす。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 585,
+      "text": "俺は、その間も、腰を動かし、あげはの中を往復し続けている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 586,
+      "text": "「んっ、ん……んっ……ふ……あ……なんか……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 587,
+      "text": "抜き差しに伴い漏れ出るあげはの声に、甘い響きが混じり始めた。%K%P",
+      "text_with_name": "%LCあげは抜き差しに伴い漏れ出るあげはの声に、甘い響きが混じり始めた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 588,
+      "text": "「ん……んっ……あ……んっ……これ……はぁ……\\n　だんだん、よく……ん……あ……あっ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 589,
+      "text": "「……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 590,
+      "text": "あげはの漏らす声の響きが、耳どころか全身に響く。%K%P",
+      "text_with_name": "%LC碧あげはの漏らす声の響きが、耳どころか全身に響く。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 591,
+      "text": "あげはの中にあるモノにも、いやそこに一番強く、じんじん響いた。%K%P",
+      "text_with_name": "%LC碧あげはの中にあるモノにも、いやそこに一番強く、じんじん響いた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 592,
+      "text": "そのせいで、さらに硬くなる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 593,
+      "text": "「んっ、うっ、ううっ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 594,
+      "text": "張り詰めた亀頭が、すべての角度から粘膜に包まれ、擦れる。%K%P",
+      "text_with_name": "%LC碧張り詰めた亀頭が、すべての角度から粘膜に包まれ、擦れる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 595,
+      "text": "味わったことのない快感に、全身の毛穴が開き、あらゆる神経が活性化する。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 596,
+      "text": "「んっ、すごい……ね……こんなに……んあ……あ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 597,
+      "text": "「碧が、気持ちよく、なってるの、わかるよ、わかる、\\n　すごく、伝わる……よ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 598,
+      "text": "「んっ、あげは……ごめん……！\\n　気持ちよすぎて、止められない……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 599,
+      "text": "「あっ、謝らないでよ……平気……さっきから、痛いより、\\n　気持ちいい方が……って……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 600,
+      "text": "じゅわっという感じで、あげはの体が熱を帯びた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 601,
+      "text": "「言わせないでよ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 602,
+      "text": "「気持ちいいのか？」%K%P",
+      "text_with_name": "%LCあげは「気持ちいいのか？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 603,
+      "text": "「……うん……」%K%P",
+      "text_with_name": "%LC碧「……うん……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 604,
+      "text": "「よかった……痛いだけだったらって……\\n　俺だけ、気持ちよくても、嬉しくないから……！」%K%P",
+      "text_with_name": "%LCあげは「よかった……痛いだけだったらって……\\n　俺だけ、気持ちよくても、嬉しくないから……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 605,
+      "text": "「大丈夫だよ。本当に、気持ちよくて……幸せ……んっ、\\n　すごく、いいよ……信じられないくらい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 606,
+      "text": "「あげは……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 607,
+      "text": "「碧……動いて、もっと……気持ちいいから、もっとしてみて、\\n　好きなだけ……思いっきり！」%K%P",
+      "text_with_name": "%LC碧「碧……動いて、もっと……気持ちいいから、もっとしてみて、\\n　好きなだけ……思いっきり！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 608,
+      "text": "応えて、腰をぐいぐい動かしてみた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 609,
+      "text": "「んっ、んっ、はっ、あっ、あっ、はっ、んっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 610,
+      "text": "あげはの顔が歪み、その口から、さっきよりさらに甘い響きの声が漏れ出てきた。%K%P",
+      "text_with_name": "%LCあげはあげはの顔が歪み、その口から、さっきよりさらに甘い響きの声が漏れ出てきた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 611,
+      "text": "「じわっ、じわって、だんだん、気持ちいいのが、\\n　ふくらんで……きて……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 612,
+      "text": "あげはは、俺の腕をつかんだ。%K%P",
+      "text_with_name": "%LCあげはあげはは、俺の腕をつかんだ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 613,
+      "text": "「ど、どうしよう、碧、気持ちいいよ、これ、すごく、\\n　気持ちいいっ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 614,
+      "text": "「んっ……！」%K%P",
+      "text_with_name": "%LCあげは「んっ……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 615,
+      "text": "あげはが、気持ちよくなってる……俺のこれで――俺で！%K%P",
+      "text_with_name": "%LC碧あげはが、気持ちよくなってる……俺のこれで――俺で！%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 616,
+      "text": "そのことが、信じられないほどの興奮を生んだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 617,
+      "text": "「んんっ、んっ、はっ、ふっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 618,
+      "text": "息が切れ、めまいがする。%K%P",
+      "text_with_name": "%LC碧息が切れ、めまいがする。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 619,
+      "text": "腰がさらに動き、ペニスからの刺激もものすごいものになる。%K%P",
+      "text_with_name": "%LC碧腰がさらに動き、ペニスからの刺激もものすごいものになる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 620,
+      "text": "熱いところを擦りたて、ぬめぬめする感触に包まれるのが、気持ちよすぎる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 621,
+      "text": "「んうっ、うっ、あっ、あっ、やっ、あっ、あっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 622,
+      "text": "あげはの、腕をつかむ力が強くなり、ほとんど爪を立てるほどになる。%K%P",
+      "text_with_name": "%LCあげはあげはの、腕をつかむ力が強くなり、ほとんど爪を立てるほどになる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 623,
+      "text": "その内側を、ひたすら往復。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 624,
+      "text": "内側そのもののぬめり、気持ちよさはもちろんだけど。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 625,
+      "text": "俺の下でくねる裸の体、おっぱい……腰を動かすたびに触れる太もも……そういうものも、最高だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 626,
+      "text": "「はぅっ、んっ、んあっ、あっ……んっ、碧っ、あっ、あぁっ、\\n　んっ、はぁっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 627,
+      "text": "ああ、すごい、気持ちいい、たまらない、あげは、いいよ、いい……俺、すごく、いい……！%K%P",
+      "text_with_name": "%LCあげはああ、すごい、気持ちいい、たまらない、あげは、いいよ、いい……俺、すごく、いい……！%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 628,
+      "text": "「やっ、だ、だめっ、だめえっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 629,
+      "text": "あげはが、突然俺を押し返そうとしてきた。%K%P",
+      "text_with_name": "%LCあげはあげはが、突然俺を押し返そうとしてきた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 630,
+      "text": "「……やっぱり、痛いか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 631,
+      "text": "「違うのっ、痛いんじゃなくて……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 632,
+      "text": "その顔が、耳まで真っ赤になる。%K%P",
+      "text_with_name": "%LCあげはその顔が、耳まで真っ赤になる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 633,
+      "text": "「き……気持ちよすぎて……変になっちゃいそう……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 634,
+      "text": "「……！」%K%P",
+      "text_with_name": "%LCあげは「……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 635,
+      "text": "ペニスが破裂しそうになった。%K%P",
+      "text_with_name": "%LC碧ペニスが破裂しそうになった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 636,
+      "text": "あげはの中で、最大限にふくれあがり、ぎちぎち、みっちり、充満する。%K%P",
+      "text_with_name": "%LC碧あげはの中で、最大限にふくれあがり、ぎちぎち、みっちり、充満する。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 637,
+      "text": "「うあっ！　あっ、す、すご……い……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 638,
+      "text": "「くうっ、うっ……！」%K%P",
+      "text_with_name": "%LCあげは「くうっ、うっ……！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 639,
+      "text": "動かず、じっとしていてさえ、張り詰めたペニスが熱い襞に擦れて、快感が高まり、達しそうになる。%K%P",
+      "text_with_name": "%LC碧動かず、じっとしていてさえ、張り詰めたペニスが熱い襞に擦れて、快感が高まり、達しそうになる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 640,
+      "text": "う、動きたい……もっと感じて、出したい……！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 641,
+      "text": "でも、この状態でそんなことしたら、あげはが……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 642,
+      "text": "「はぁ、あ……だ……だめ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 643,
+      "text": "あげはが、真っ赤なまま、目をうるませて、俺を見た。%K%P",
+      "text_with_name": "%LCあげはあげはが、真っ赤なまま、目をうるませて、俺を見た。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 644,
+      "text": "その体のあちこちが変にぴくぴくして、口元も泣き笑いのような感じに引きつっていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 645,
+      "text": "「う……動いちゃ……今、これで、動かれたら……\\n　お、おかしく……なる……から……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 646,
+      "text": "言葉に続いて、熱い部分が、きゅっと締めつけてきた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 647,
+      "text": "「…………！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 648,
+      "text": "視界が一気に狭まり、意識が高熱に溶ける。%K%P",
+      "text_with_name": "%LC碧視界が一気に狭まり、意識が高熱に溶ける。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 649,
+      "text": "「う……動いたら……だめなんだな……！？」%K%P",
+      "text_with_name": "%LC碧「う……動いたら……だめなんだな……！？」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 650,
+      "text": "自分の声のはずなのに、乾いて、かすれて、低くて、別人のようだ。%K%P",
+      "text_with_name": "%LC碧自分の声のはずなのに、乾いて、かすれて、低くて、別人のようだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 651,
+      "text": "言いながら、俺は手を動かす。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 652,
+      "text": "腰は動かさないまま、あげはの胸に、手を添える。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 653,
+      "text": "「動いたら……動かしたら……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 654,
+      "text": "つぶやきながら、乳房を手で包み、乳首を指ではさんで、揉みしだいた。%K%P",
+      "text_with_name": "%LC碧つぶやきながら、乳房を手で包み、乳首を指ではさんで、揉みしだいた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 655,
+      "text": "「ひゃっ！　だ、だめっ！　それだめっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 656,
+      "text": "くりくりくり、もみもみもみ……とおっぱいをいじる。%K%P",
+      "text_with_name": "%LCあげはくりくりくり、もみもみもみ……とおっぱいをいじる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 657,
+      "text": "強く揉むと、指の間からおっぱいの肉がはみ出てくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 658,
+      "text": "「ひうっ、ふっ、はぁっ、あぅっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 659,
+      "text": "あげはは泣き顔になり、悶え、あそこをさらに熱くする。%K%P",
+      "text_with_name": "%LCあげはあげはは泣き顔になり、悶え、あそこをさらに熱くする。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 660,
+      "text": "「動いちゃ……だめなんだよな……動いたら……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 661,
+      "text": "口にするだけで、ぞく、ぞくっと、しびれが走り、鳥肌が立つ。%K%P",
+      "text_with_name": "%LC碧口にするだけで、ぞく、ぞくっと、しびれが走り、鳥肌が立つ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 662,
+      "text": "股間が、危険な状態になってきた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 663,
+      "text": "「やあぁ……だめ……や……やめ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 664,
+      "text": "あげはがおののき、下腹を波打たせた。%K%P",
+      "text_with_name": "%LCあげはあげはがおののき、下腹を波打たせた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 665,
+      "text": "太ももが俺の腰をはさみ、足が絡みついてくる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 666,
+      "text": "しがみつき、俺の動きを封じようというのか。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 667,
+      "text": "でも、そうされると、逆にあげはの奥の奥、一番深い部分に、張り詰めきった亀頭をぐりぐり押しつけるかたちになって――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 668,
+      "text": "「んんっ、んっ、うあっ！　やっ！　だめっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 669,
+      "text": "快感が爆発し、熱いものが全身を満たして、どうすることもできなくなって……！%K%P",
+      "text_with_name": "%LCあげは快感が爆発し、熱いものが全身を満たして、どうすることもできなくなって……！%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 670,
+      "text": "「うあっ！　あっ！　くうぅぅっ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 671,
+      "text": "あげはに覆いかぶさって。%K%P",
+      "text_with_name": "%LC碧あげはに覆いかぶさって。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 672,
+      "text": "おっぱいを、胸板で押しつぶして。%K%P",
+      "text_with_name": "%LC碧おっぱいを、胸板で押しつぶして。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 673,
+      "text": "唇に、無理矢理唇を押しつけて。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 674,
+      "text": "「んん～～～～～っ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 675,
+      "text": "もがき、うめくのを、肌で直接感じ取って。%K%P",
+      "text_with_name": "%LCあげはもがき、うめくのを、肌で直接感じ取って。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 676,
+      "text": "ほんの数センチ、いや数ミリの往復、摩擦、刺激――。%K%P",
+      "text_with_name": "%LCあげはほんの数センチ、いや数ミリの往復、摩擦、刺激――。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 677,
+      "text": "あげはの奥をぐりぐりし続けて、亀頭が擦れ、快感が、限界だと思ったところからさらに高まっていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 678,
+      "text": "「うあ、うあっ、あっ、ああっ、あああああああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 679,
+      "text": "「くううっ、うっ、うあっ！」%K%P",
+      "text_with_name": "%LCあげは「くううっ、うっ、うあっ！」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 680,
+      "text": "二人そろって、強く、激しくうめく。%K%P",
+      "text_with_name": "%LC碧二人そろって、強く、激しくうめく。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 681,
+      "text": "熱い、熱い、熱い、熱い、熱いっ！%K%P",
+      "text_with_name": "%LC碧熱い、熱い、熱い、熱い、熱いっ！%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 682,
+      "text": "「あっ、あっ！　ああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 683,
+      "text": "先に、あげはが強く叫び、両脚を震わせ、びくびくし始めた。%K%P",
+      "text_with_name": "%LCあげは先に、あげはが強く叫び、両脚を震わせ、びくびくし始めた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 684,
+      "text": "脚の拘束がゆるみ、俺の腰が、解放された。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 685,
+      "text": "「ふあああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 686,
+      "text": "雄叫びをあげて、俺は腰を弾けさせる。%K%P",
+      "text_with_name": "%LC碧雄叫びをあげて、俺は腰を弾けさせる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 687,
+      "text": "気遣いも、遠慮も、意識から吹っ飛んで。%K%P",
+      "text_with_name": "%LC碧気遣いも、遠慮も、意識から吹っ飛んで。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 688,
+      "text": "擦りたい、感じたい、出したい――射精したい！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 689,
+      "text": "凶悪といってもいいほどの衝動に突き動かされ、俺は腰を激しく前後させた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 690,
+      "text": "「あ！　あ゛、あ゛、あ゛、あ゛、あ゛！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 691,
+      "text": "あげはが、短く速い悲鳴をあげる。%K%P",
+      "text_with_name": "%LCあげはあげはが、短く速い悲鳴をあげる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 692,
+      "text": "熱く濡れたその部分で、ぐちゅぐちゅぐちゅぐちゅ、ものすごい粘着音が鳴る。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 693,
+      "text": "ああ、擦れる、気持ちいい、気持ちいいっ、出るっ、出るっ！%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 694,
+      "text": "「くうううっ！！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 695,
+      "text": "あげはが、強く叫んで、ぎゅっと顔を引き歪めた。%K%P",
+      "text_with_name": "%LCあげはあげはが、強く叫んで、ぎゅっと顔を引き歪めた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 696,
+      "text": "手で握ったみたいな強い感触に包まれる中で、俺は灼熱したものを、解きはなつ……！%K%P",
+      "text_with_name": "%LCあげは手で握ったみたいな強い感触に包まれる中で、俺は灼熱したものを、解きはなつ……！%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 697,
+      "text": "「うあああっ！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 698,
+      "text": "「あっ！　くあっ！　ぐっ！　うあ！」%K%P",
+      "text_with_name": "%LC碧「あっ！　くあっ！　ぐっ！　うあ！」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 699,
+      "text": "どびゅっ、どびゅっ、どびゅっ……。%K%P",
+      "text_with_name": "%LCあげはどびゅっ、どびゅっ、どびゅっ……。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 700,
+      "text": "脈打つ……ペニスが、腰が、全身が……激しく、脈動……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 701,
+      "text": "熱いものが噴き出る、激しく、大量に、どくどく、出ていく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 702,
+      "text": "あげはの腰が跳ね、痙攣する。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 703,
+      "text": "それと一緒に俺も震え、さらに熱いものを放ち――。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 704,
+      "text": "「うあっ……あっ……あ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 705,
+      "text": "ペニスが締めつけられ、包まれ、吸われ……。%K%P",
+      "text_with_name": "%LC碧ペニスが締めつけられ、包まれ、吸われ……。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 706,
+      "text": "「あっ……ふあ……あ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 707,
+      "text": "二人そろって、うめきながら、びくびく震える。%K%P",
+      "text_with_name": "%LCあげは二人そろって、うめきながら、びくびく震える。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 708,
+      "text": "「は……はぁ……はぁ……あぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 709,
+      "text": "「はぁ、はぁ、はぁっ……はぁ……」%K%P",
+      "text_with_name": "%LCあげは「はぁ、はぁ、はぁっ……はぁ……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 710,
+      "text": "頭の中が真っ白になって、身動きできない。%K%P",
+      "text_with_name": "%LC碧頭の中が真っ白になって、身動きできない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 711,
+      "text": "その状態で、ペニスが力を失ってゆくことだけがはっきりわかる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 712,
+      "text": "その、しぼんでゆく感じもまた、たまらなく気持ちよくて……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 713,
+      "text": "「はぁ……はぁ……ふぅぅぅ……あぁぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 714,
+      "text": "あげはが、だらんと手足を投げ出して、胸だけをしきりに上下させている。%K%P",
+      "text_with_name": "%LCあげはあげはが、だらんと手足を投げ出して、胸だけをしきりに上下させている。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 715,
+      "text": "それにつれて乳房が揺れて、大きなふくらみがゆらゆらしている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 716,
+      "text": "ぼうっとして、手足が時折ピクピク震える。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 717,
+      "text": "両脚は開いたままになって、ペニスが抜けた後の、女の子のその部分は、開いたままだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 718,
+      "text": "左右がぷっくり盛り上がっているそこから、どろっとしたものがあふれ出てきた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 719,
+      "text": "「ん…………んぅ…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 720,
+      "text": "あげはが、うつろな目を、こちらにゆっくり向けてきた。%K%P",
+      "text_with_name": "%LCあげはあげはが、うつろな目を、こちらにゆっくり向けてきた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 721,
+      "text": "俺の股間では、出し終えたモノが、ぶら下がっている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 722,
+      "text": "「……ん…………」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 723,
+      "text": "あげはの両腕が、重たげに、持ち上がった。%K%P",
+      "text_with_name": "%LCあげはあげはの両腕が、重たげに、持ち上がった。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 724,
+      "text": "「だっこ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 725,
+      "text": "「ああ……」%K%P",
+      "text_with_name": "%LCあげは「ああ……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 726,
+      "text": "応じようとしたら、俺の体も、鉛のように重かった。%K%P",
+      "text_with_name": "%LC碧応じようとしたら、俺の体も、鉛のように重かった。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 727,
+      "text": "そのまま、あげはに覆いかぶさり、柔らかい体を抱きしめる。%K%P",
+      "text_with_name": "%LC碧そのまま、あげはに覆いかぶさり、柔らかい体を抱きしめる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 728,
+      "text": "「ん……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 729,
+      "text": "どこまでも沈んでゆきそうな安らぎが、俺を包みこむ。%K%P",
+      "text_with_name": "%LC碧どこまでも沈んでゆきそうな安らぎが、俺を包みこむ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 730,
+      "text": "あげはの素肌が、柔らかくて、あったかくて、たまらない。%K%P",
+      "text_with_name": "%LC碧あげはの素肌が、柔らかくて、あったかくて、たまらない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 731,
+      "text": "「熱い……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 732,
+      "text": "あげはも、嬉しそうに俺にしがみついてきた。%K%P",
+      "text_with_name": "%LCあげはあげはも、嬉しそうに俺にしがみついてきた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 733,
+      "text": "「んふ……碧……しちゃったね……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 734,
+      "text": "「ああ……」%K%P",
+      "text_with_name": "%LCあげは「ああ……」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 735,
+      "text": "「すっごく……よかったよ……最高……」%K%P",
+      "text_with_name": "%LC碧「すっごく……よかったよ……最高……」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 736,
+      "text": "吐息まじりの声が、耳にくすぐったかった。%K%P",
+      "text_with_name": "%LCあげは吐息まじりの声が、耳にくすぐったかった。%K%P",
+      "char_name": "あげは"
+    }
+  ]
+}

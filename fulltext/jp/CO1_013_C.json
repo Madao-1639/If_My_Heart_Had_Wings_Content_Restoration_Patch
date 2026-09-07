@@ -1,0 +1,1657 @@
+{
+  "script": "CO1_013_C",
+  "source": "Rio.arc",
+  "total": 275,
+  "texts": [
+    {
+      "lng_idx": 0,
+      "text": "「飛行訓練って、\\n　どうやってやるんですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 1,
+      "text": "２年が全員集合したところで、俺は天音先輩に尋ねた。%K%P",
+      "text_with_name": "%LC碧２年が全員集合したところで、俺は天音先輩に尋ねた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 2,
+      "text": "先輩はさっきからゴチャゴチャしたパソコンの配線を弄っていて、机の向こうに頭頂部だけが見える。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 3,
+      "text": "「飛ぶんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 4,
+      "text": "「飛ぶ？？」%K%P",
+      "text_with_name": "%LC天音「飛ぶ？？」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 5,
+      "text": "筋トレやって基礎体力つけて……ってんじゃないのは想像してたけど。%K%P",
+      "text_with_name": "%LC碧筋トレやって基礎体力つけて……ってんじゃないのは想像してたけど。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 6,
+      "text": "「でもまだ飛べないんですよね？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 7,
+      "text": "まさか、折れた翼で飛ぶわけじゃ……%K%P",
+      "text_with_name": "%LC碧まさか、折れた翼で飛ぶわけじゃ……%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 8,
+      "text": "「そこの壁際の荷物をどかせてくれ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 9,
+      "text": "俺たちは言われた通りに、ガレージの壁際に積まれた荷物を片付ける。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 10,
+      "text": "「うわぁ、なんだかよくわかんない物が\\n　山盛りだねぇ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 11,
+      "text": "ここのガレージには、天音先輩たちが来る以前からあるという、謎の段ボールやら年代物のパーツやらが放置されている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 12,
+      "text": "「なにこれ、\\n　なんでこんなところに剣とか槍があるの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 13,
+      "text": "「こっちにヌンチャクあるよー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 14,
+      "text": "「壊れたモデルガンとかもあるな……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 15,
+      "text": "もちろん、剣や槍はよくできたレプリカだ。%K%P",
+      "text_with_name": "%LC碧もちろん、剣や槍はよくできたレプリカだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 16,
+      "text": "他にも、もし俺なら買って帰った後、%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 17,
+      "text": "『なんでこんなもん買ったんだ……』%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 18,
+      "text": "と確実に後悔しそうな、いわゆる修学旅行のお土産的な物が沢山あった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 19,
+      "text": "ずーっと昔の先輩たちが、このガレージを私物化していたことがよくわかる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 20,
+      "text": "「できたわよ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 21,
+      "text": "「よし、じゃあ電気を消してくれ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 22,
+      "text": "電気を消すと、ガレージ内は真っ暗になった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 23,
+      "text": "天音先輩が何かの機械を操作する。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 24,
+      "text": "すると、さっき荷物をどけた壁に、パソコンの画面が映し出された。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 25,
+      "text": "「プロジェクターだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 26,
+      "text": "「映画館みたい……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 27,
+      "text": "教則ビデオでも観るんだろうか。%K%P",
+      "text_with_name": "%LC小鳥教則ビデオでも観るんだろうか。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 28,
+      "text": "「碧くん、こっちへきてくれ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 29,
+      "text": "天音先輩が用意した椅子に座ると、ゲーム用のコントローラを渡された。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 30,
+      "text": "「なにするんですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 31,
+      "text": "「だから、飛ぶんだよ。\\n　これはフライトシミュレータだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 32,
+      "text": "「フライトシミュレータ？」%K%P",
+      "text_with_name": "%LC天音「フライトシミュレータ？」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 33,
+      "text": "聞いた事ある言葉だけど、正確な意味は知らない。%K%P",
+      "text_with_name": "%LC碧聞いた事ある言葉だけど、正確な意味は知らない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 34,
+      "text": "「ゲームみたいなものだ。\\n　フライトを疑似体験できる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 35,
+      "text": "「実際に飛ばなくても、\\n　操作方法やグライダーで飛ぶ感覚は、\\n　ある程度身に付けられるはずだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 36,
+      "text": "「よくわかんないけど、\\n　なんだか凄そうね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 37,
+      "text": "「市販のやつですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 38,
+      "text": "「いや、自分で作った」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 39,
+      "text": "「これは風ヶ浦の地形と、\\n　我々のグライダーに特化したシミュレータだからな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 40,
+      "text": "天音先輩の操作で、映像が切り替わった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 41,
+      "text": "俺たちのよく知る町並み――風ヶ浦を上空から見下ろす景観が、壁一面に映し出された。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 42,
+      "text": "それは、少なくとも最新ゲーム機のＲＰＧのデモムービー並に綺麗なＣＧだった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 43,
+      "text": "「やっぱすごいよこの人……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 44,
+      "text": "プロジェクターが映しだした画面を見ながらあげはがうなる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 45,
+      "text": "「昨日のうちにデータは最新のものにしておいたから。\\n　よりリアルな感覚で飛べるはずだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 46,
+      "text": "「はい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 47,
+      "text": "天音先輩のスゴイところをサラッと見せられ、俺も気合いが入る。%K%P",
+      "text_with_name": "%LC碧天音先輩のスゴイところをサラッと見せられ、俺も気合いが入る。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 48,
+      "text": "「では始めるぞ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 49,
+      "text": "画面に、ＣＧでモデリングされたグライダーが映し出された。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 50,
+      "text": "「操作を覚える前に、\\n　グライダーの動きについて説明するぞ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 51,
+      "text": "「グライダーの運動は、縦軸・横軸・垂直軸、\\n　この３つの軸を回転する動きで説明できる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 52,
+      "text": "「まずはローリング」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 53,
+      "text": "画面に、機体の中心を進行方向に貫く“縦軸”と、それを軸とした回転の動きが表示された。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 54,
+      "text": "これがローリングという動きだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 55,
+      "text": "「次にピッチング」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 56,
+      "text": "今度は、機体を横に向かって貫く“横軸”と、それを軸とした回転の動きが表示された。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 57,
+      "text": "この機首を上げ下げする動きがピッチングだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 58,
+      "text": "「そして最後はヨーイング」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 59,
+      "text": "機体の中心を垂直に貫く“垂直軸”と、それを軸とした回転方向の動きが表示された。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 60,
+      "text": "この、首を左右に振るような動きがヨーイング。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 61,
+      "text": "「この３つがグライダーの基本的な動きだ。\\n　わかるか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 62,
+      "text": "「はい、なんとなく」%K%P",
+      "text_with_name": "%LC天音「はい、なんとなく」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 63,
+      "text": "「グライダーがどんなに複雑な\\n　{機動:マニューバ}を描いてるように見えても、実は、\\n　この３つの動作の組み合わせによるものなんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 64,
+      "text": "「だから、パイロットは、\\n　この３つの動きを操作するだけでいい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 65,
+      "text": "「なるほど……\\n　基本は単純だってことか」%K%P",
+      "text_with_name": "%LC天音「なるほど……\\n　基本は単純だってことか」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 66,
+      "text": "小鳥とあげはも、俺の後ろで話を聞いて、うんうん頷いている。%K%P",
+      "text_with_name": "%LC碧小鳥とあげはも、俺の後ろで話を聞いて、うんうん頷いている。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 67,
+      "text": "「じゃあ、それを踏まえた上で、\\n　実際に操縦してみよう」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 68,
+      "text": "天音先輩がパソコン上でモード選択をすると、画面が切り替わった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 69,
+      "text": "空と地平線が壁一杯に映し出されている。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 70,
+      "text": "「これはコックピットから見た映像ですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 71,
+      "text": "「ああ、そうだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 72,
+      "text": "「へぇ、こんな風に見えるんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 73,
+      "text": "すでにグライダーは空を飛んでいる状態だが、ゲームなんかでこういうのに慣れていると、すごく遅く感じる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 74,
+      "text": "前に進んでいる感じがほとんどしない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 75,
+      "text": "「離陸と着陸、特殊な状況を除いて、\\n　キミが操作する物は２つ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 76,
+      "text": "「{操縦桿:そうじゅうかん}とラダーペダルだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 77,
+      "text": "コックピットは何度か見ているので知っている。%K%P",
+      "text_with_name": "%LC天音コックピットは何度か見ているので知っている。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 78,
+      "text": "操縦桿というのは、パイロットの足の間から出てる棒のことだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 79,
+      "text": "戦闘機のパイロットが操縦している場面を映画なんかで観たことあるが、彼らが握っているのがこの操縦桿。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 80,
+      "text": "ボタンがついてて、押せばミサイルが発射されたりするアレ。もちろん、グライダーにそんなもの付いていないが。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 81,
+      "text": "車でいうハンドルのようなものだろう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 82,
+      "text": "そして、ラダーペダルは左右に一つずつ、足で踏んで操作できるようになっていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 83,
+      "text": "「それぞれ、コントローラに対応している。\\n　左のアナログスティックが操縦桿。\\n　Ｌ・Ｒボタンがラダーペダルだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 84,
+      "text": "俺は、ゲームパッドのアナログスティックとＬボタン、Ｒボタンを操作してみた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 85,
+      "text": "少し遅れて、画面の中の視界がぐわっと動いた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 86,
+      "text": "「おおっと！？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 87,
+      "text": "「無茶をすると{失速:ストール}して墜落するから気をつけろ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 88,
+      "text": "「は、はい」%K%P",
+      "text_with_name": "%LC天音「は、はい」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 89,
+      "text": "「操縦桿だが。\\n　これは、さっき説明した３つのうち２つ、\\n　ローリングとピッチングを操作できる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 90,
+      "text": "「左右に倒せば、\\n　その方向に機体がロールする」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 91,
+      "text": "俺はアナログスティック――すなわち操縦桿を、左にゆっくりと傾けていった。%K%P",
+      "text_with_name": "%LC天音俺はアナログスティック――すなわち操縦桿を、左にゆっくりと傾けていった。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 92,
+      "text": "少し遅れて機体が反応する。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 93,
+      "text": "映像の中の地平線が、右に傾いていった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 94,
+      "text": "「操縦桿を倒すと、\\n　どうして機体が傾くの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 95,
+      "text": "「いい質問だ。\\n　それは、操縦桿でエルロンを操作しているからだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 96,
+      "text": "「エルロン？？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 97,
+      "text": "聞き慣れない言葉に、小鳥の頭に「？」が浮かぶ。%K%P",
+      "text_with_name": "%LC小鳥聞き慣れない言葉に、小鳥の頭に「？」が浮かぶ。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 98,
+      "text": "「主翼についている補助翼のことだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 99,
+      "text": "「主翼の外側の後ろについていて、\\n　操縦桿を左に倒せば、左翼のエルロンが上がり、\\n　右翼のエルロンが下がる」%K%P",
+      "text_with_name": "%LC天音「主翼の外側の後ろについていて、\\n　操縦桿を左に倒せば、左翼のエルロンが上がり、\\n　右翼のエルロンが下がる」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 100,
+      "text": "「そうすると、左翼の揚力は減少、\\n　逆に右翼の揚力は増大するから、\\n　機体は左にバンク、つまり傾いて旋回をする」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 101,
+      "text": "「傾けることで曲がるのか。\\n　自転車と同じだな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 102,
+      "text": "自転車もハンドルはついているが、それを左右に動かして曲がるわけじゃない。車体を傾けることで曲がる。%K%P",
+      "text_with_name": "%LC碧自転車もハンドルはついているが、それを左右に動かして曲がるわけじゃない。車体を傾けることで曲がる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 103,
+      "text": "「操縦桿を使ったもう一つの操作、\\n　ピッチングについてだが」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 104,
+      "text": "「ピッチングとは、\\n　ようは機首を上げ下げする動きのことだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 105,
+      "text": "「操縦桿を後ろに引けば頭が上がり、\\n　前に倒せば下がる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 106,
+      "text": "俺は、試しに操縦桿を前に倒してみた。%K%P",
+      "text_with_name": "%LC天音俺は、試しに操縦桿を前に倒してみた。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 107,
+      "text": "「おおっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 108,
+      "text": "映像が動いて、地面の比率が多くなる。%K%P",
+      "text_with_name": "%LC碧映像が動いて、地面の比率が多くなる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 109,
+      "text": "機体が下を向いていて、心なしかスピード感が増している感じがする。%K%P",
+      "text_with_name": "%LC碧機体が下を向いていて、心なしかスピード感が増している感じがする。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 110,
+      "text": "「機首を下に向けると機体は下降していくが、\\n　その分速度が増す」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 111,
+      "text": "「なるほど……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 112,
+      "text": "空気の上を滑り落ちていくイメージか。%K%P",
+      "text_with_name": "%LC碧空気の上を滑り落ちていくイメージか。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 113,
+      "text": "今度は、操縦桿を後ろに引いてみた。%K%P",
+      "text_with_name": "%LC碧今度は、操縦桿を後ろに引いてみた。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 114,
+      "text": "映像が動いて、空ばかりに。\\n地平線が見えなくなった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 115,
+      "text": "浮遊感があり、速度が落ちてるのがわかる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 116,
+      "text": "「これはどうやって操作しているの？\\n　またさっきのエルロン？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 117,
+      "text": "「いや、ちがう。\\n　以前、紙飛行機で実験しただろう？\\n　機体の上下の動きを制御していたのは……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 118,
+      "text": "小鳥は紙飛行機の翼を弄って、綺麗な宙返りをさせていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 119,
+      "text": "「あ、水平尾翼！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 120,
+      "text": "天音先輩が「よくできました」という顔で頷く。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 121,
+      "text": "「ピッチング――つまり上下の動きは、\\n　水平尾翼についたエレベータという{舵:かじ}で操作する」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 122,
+      "text": "今度は聞いたことある言葉だが、ビルを上り下りするあれとは別物だろう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 123,
+      "text": "「通常、機首を上げれば揚力は高まる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 124,
+      "text": "つまり、機体が上昇するってことか。%K%P",
+      "text_with_name": "%LC天音つまり、機体が上昇するってことか。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 125,
+      "text": "「だが、上げ過ぎると、\\n　逆に揚力を失うことになる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 126,
+      "text": "「気流が、翼面に沿って流れることができなくなり、\\n　{剥離:はくり}してしまうからだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 127,
+      "text": "「この現象を“{失速:ストール}”という。\\n　揚力を失うとどうなるかは、説明するまでもないな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 128,
+      "text": "揚力がないと飛べないんだから、必然的に墜ちることになる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 129,
+      "text": "「そうなったら、\\n　もう墜ちるしかないんですか？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 130,
+      "text": "「いや、立て直すことは可能だ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 131,
+      "text": "「“{失速:ストール}”はどんな時にも起こりえるから、\\n　失速からの回復訓練はしっかり積んでおく必要がある」%K%P",
+      "text_with_name": "%LC天音「“{失速:ストール}”はどんな時にも起こりえるから、\\n　失速からの回復訓練はしっかり積んでおく必要がある」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 132,
+      "text": "「はい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 133,
+      "text": "墜落の可能性を示唆されて、気が引き締まる。%K%P",
+      "text_with_name": "%LC碧墜落の可能性を示唆されて、気が引き締まる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 134,
+      "text": "空を飛ぶんだ、どんな些細なミスも命取りになりかねない。%K%P",
+      "text_with_name": "%LC碧空を飛ぶんだ、どんな些細なミスも命取りになりかねない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 135,
+      "text": "「試しに一度墜ちてみようか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 136,
+      "text": "「え？」%K%P",
+      "text_with_name": "%LC天音「え？」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 137,
+      "text": "天音先輩が、アナログスティックをぐぐーっと後ろに倒した。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 138,
+      "text": "機首はどんどん上に向いていき、あるところで……%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 139,
+      "text": "「臨界{迎:むか}え角を超えた。\\n　{失速:ストール}したぞ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 140,
+      "text": "急にふわっと浮くような感じになって機体は停止、次の瞬間、映像はぐちゃぐちゃに回りながら、ズドーンと地面に落ちた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 141,
+      "text": "　　　　　　　　　ＧＡＭＥ　　　ＯＶＥＲ%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 142,
+      "text": "「ゲームオーバーって……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 143,
+      "text": "「とまあ、こんな感じだ。\\n　訓練では、わざと{失速:ストール}やスピンを起こして、\\n　そこから回復する練習をするんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 144,
+      "text": "「実際に空でやると、恐いぞー。\\n　死ぬかと思うぞ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 145,
+      "text": "高所恐怖症の人なら、ほんとにそうだろうなぁ……。%K%P",
+      "text_with_name": "%LC天音高所恐怖症の人なら、ほんとにそうだろうなぁ……。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 146,
+      "text": "シミュレータがよくできているせいか、映像だけでも充分迫力があった。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 147,
+      "text": "天音先輩がモードをセレクトし、再び飛んでいるところから始める。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 148,
+      "text": "「で、次はラダーペダル」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 149,
+      "text": "シミュレータでは、ＬボタンとＲボタンで操作する。%K%P",
+      "text_with_name": "%LC天音シミュレータでは、ＬボタンとＲボタンで操作する。%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 150,
+      "text": "「これはラダーを操作するわけだが、\\n　ラダーとは日本語で{方向舵:ほうこうだ}という。\\n　垂直尾翼についている」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 151,
+      "text": "「右を踏めば、機首が右を向き、\\n　左を踏めば、機首が左を向く。\\n　ヨーイングの動きを制御するんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 152,
+      "text": "「横を向くの？　でも、曲がる時は、\\n　主翼についてるエルロンを使うんでしょう？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 153,
+      "text": "「エルロンだけで旋回した場合、\\n　グライダーは正面を向いたまま、\\n　バンクした内側に滑っていくように移動することになる」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 154,
+      "text": "「どういうこと？？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 155,
+      "text": "「前を向いたまま、\\n　斜めに進むってことじゃない？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 156,
+      "text": "天音先輩が頷く。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 157,
+      "text": "「そこで、同時にラダーを操作してやり、\\n　旋回したい方向へ頭を向けてやるんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 158,
+      "text": "「自転車のハンドルのようなものか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 159,
+      "text": "自転車も車体を傾けながら、ハンドルをそっちの方向へ曲げる。そうしないと上手く曲がれない。%K%P",
+      "text_with_name": "%LC碧自転車も車体を傾けながら、ハンドルをそっちの方向へ曲げる。そうしないと上手く曲がれない。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 160,
+      "text": "自転車で例えるなら、車体を左右に傾けるのがエルロン、ハンドルの動きがラダーってとこだろう。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 161,
+      "text": "「なるほど……\\n　旋回したい時は、エルロンとラダー両方が必要と」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 162,
+      "text": "「そうだ。\\n　けど、それだけじゃまだ不十分だ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 163,
+      "text": "「旋回中、機体を傾けると揚力が減るので、\\n　機体が大きく降下してしまう」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 164,
+      "text": "「なるべく高度を保ったまま旋回するには、\\n　操縦桿を横に倒しながら、\\n　少しだけ後ろに引いてやる必要があるんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 165,
+      "text": "「旋回する時は、\\n　全ての{舵:かじ}を同時に使用するってことか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 166,
+      "text": "何をどれくらい使うか、というのは、かなり感覚的になりそうだ。%K%P",
+      "text_with_name": "%LC碧何をどれくらい使うか、というのは、かなり感覚的になりそうだ。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 167,
+      "text": "「以上。\\n　飛んでいる時に必要な操作はこれだけだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 168,
+      "text": "説明を終えると、先輩はガレージの電気をつけた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 169,
+      "text": "「結構簡単なのね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 170,
+      "text": "「そうだね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 171,
+      "text": "エルロンだラダーだと聞き慣れない単語が出てきてややこしいようだが、やることは単純。%K%P",
+      "text_with_name": "%LCあげはエルロンだラダーだと聞き慣れない単語が出てきてややこしいようだが、やることは単純。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 172,
+      "text": "操縦桿を前後左右に倒し、左右のペダルを踏む。\\nそれだけだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 173,
+      "text": "「{曲芸飛行:アクロバット}でもしない限り、\\n　難しい操作はほとんどない」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 174,
+      "text": "「グライダー乗りに必要なのは、\\n　風を見つける能力なんだ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 175,
+      "text": "「風を見つける……？」%K%P",
+      "text_with_name": "%LC天音「風を見つける……？」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 176,
+      "text": "「どこにどんな風が吹いているか。\\n　{上昇気流:サーマル}はどこにあるのか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 177,
+      "text": "「そうして見つけた風に、\\n　上手に乗ることができるかどうか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 178,
+      "text": "「知識や経験、感覚が物を言うってことでしょうか」%K%P",
+      "text_with_name": "%LC天音「知識や経験、感覚が物を言うってことでしょうか」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 179,
+      "text": "「そんなところだな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 180,
+      "text": "「計器類の見方はおいおい覚えてもらうとして、\\n　まずは慣れることだな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 181,
+      "text": "「あとは、こっちのパソコンの画面で練習してみてくれ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 182,
+      "text": "「わかりました」%K%P",
+      "text_with_name": "%LC天音「わかりました」%K%P",
+      "char_name": "天音"
+    },
+    {
+      "lng_idx": 183,
+      "text": "俺はパソコンの前に陣取って、早速練習を開始した。%K%P",
+      "text_with_name": "%LC碧俺はパソコンの前に陣取って、早速練習を開始した。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 184,
+      "text": "部活が終わって、帰り道。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 185,
+      "text": "「あづい……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 186,
+      "text": "あげはが、汗ばんだ制服の胸元をパタパタさせる。%K%P",
+      "text_with_name": "%LCあげはあげはが、汗ばんだ制服の胸元をパタパタさせる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 187,
+      "text": "のを、つい見てしまう俺。%K%P",
+      "text_with_name": "%LCあげはのを、つい見てしまう俺。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 188,
+      "text": "「お？　なになに、なに見てんの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 189,
+      "text": "俺の視線を胸元に感じて、あげはが嬉しそうに聞いてくる。%K%P",
+      "text_with_name": "%LCあげは俺の視線を胸元に感じて、あげはが嬉しそうに聞いてくる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 190,
+      "text": "「おまえさぁ、\\n　もうちょい女らしくしろよな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 191,
+      "text": "「しょーがないじゃーん。\\n　ムネが一番汗かくんだもーん」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 192,
+      "text": "「これって、女らしいってことじゃない？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 193,
+      "text": "と、またパタパタやる。%K%P",
+      "text_with_name": "%LCあげはと、またパタパタやる。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 194,
+      "text": "軽く、俺に見せる感じで。%K%P",
+      "text_with_name": "%LCあげは軽く、俺に見せる感じで。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 195,
+      "text": "「ガレージのエアコン、弱くない？\\n　お尻が蒸れちゃうんだけど」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 196,
+      "text": "と、今度は小鳥がお尻をもぞもぞさせる。%K%P",
+      "text_with_name": "%LC小鳥と、今度は小鳥がお尻をもぞもぞさせる。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 197,
+      "text": "こいつらときたら……。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 198,
+      "text": "「広いし、天井とか断熱効果ゼロだからなぁ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 199,
+      "text": "プレハブのような建物だ。屋根裏もないし、陽射しの熱がそのまま内部に伝わってくる。%K%P",
+      "text_with_name": "%LC碧プレハブのような建物だ。屋根裏もないし、陽射しの熱がそのまま内部に伝わってくる。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 200,
+      "text": "エアコンをつけてても、効果半減だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 201,
+      "text": "「ロボット部よりかはましよ。\\n　あっちは人数多いから蒸し蒸しするのよね……汗で」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 202,
+      "text": "あげはの話を聞いて、小鳥が「うげぇ」って顔をする。%K%P",
+      "text_with_name": "%LCあげはあげはの話を聞いて、小鳥が「うげぇ」って顔をする。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 203,
+      "text": "「さてと、わたしこっちだから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 204,
+      "text": "いつもの分かれ道に差し掛かったところで、あげはが俺たちとは違う道へと向きを変える。%K%P",
+      "text_with_name": "%LCあげはいつもの分かれ道に差し掛かったところで、あげはが俺たちとは違う道へと向きを変える。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 205,
+      "text": "「じゃーね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 206,
+      "text": "「なあ、あげは」%K%P",
+      "text_with_name": "%LCあげは「なあ、あげは」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 207,
+      "text": "「？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 208,
+      "text": "「コンビニでアイス食ってかね？」%K%P",
+      "text_with_name": "%LCあげは「コンビニでアイス食ってかね？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 209,
+      "text": "「いいけど……なんで急に？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 210,
+      "text": "「おまえらが暑い暑いって言うから、\\n　急に食いたくなったんだよ」%K%P",
+      "text_with_name": "%LCあげは「おまえらが暑い暑いって言うから、\\n　急に食いたくなったんだよ」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 211,
+      "text": "「小鳥も食べるよな？」%K%P",
+      "text_with_name": "%LC碧「小鳥も食べるよな？」%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 212,
+      "text": "「え？　い、いいけど……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 213,
+      "text": "小鳥が、なんとなくあげはを意識して答える。%K%P",
+      "text_with_name": "%LC小鳥小鳥が、なんとなくあげはを意識して答える。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 214,
+      "text": "「じゃ、いこうか」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 215,
+      "text": "俺は先に立って歩き出した。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 216,
+      "text": "コンビニの駐車場で、買ってきたアイスをかじる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 217,
+      "text": "コンビニの前にたむろするのは、俺たち学生の特権だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 218,
+      "text": "あげははスイカ味の棒アイス、小鳥はチョコチップのカップ、俺はバニラモナカを選んでいた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 219,
+      "text": "「羽々音さんはカップ派か」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 220,
+      "text": "「……棒のアイスは途中で溶けてきて、\\n　手がべとべとするから好きじゃないの」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 221,
+      "text": "アイスを食べるにも、それぞれこだわりがあるらしい。%K%P",
+      "text_with_name": "%LC小鳥アイスを食べるにも、それぞれこだわりがあるらしい。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 222,
+      "text": "「ねえ、碧。\\n　シミュレータ、どうだった？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 223,
+      "text": "「んー、まだよくわかんねーなぁ。\\n　結構むずかった」%K%P",
+      "text_with_name": "%LCあげは「んー、まだよくわかんねーなぁ。\\n　結構むずかった」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 224,
+      "text": "「どこがどう難しいの？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 225,
+      "text": "「なんていうか、不便な乗り物？\\n　何かしようって思った時、\\n　すぐにはどうにもならないっていうか……」%K%P",
+      "text_with_name": "%LC小鳥「なんていうか、不便な乗り物？\\n　何かしようって思った時、\\n　すぐにはどうにもならないっていうか……」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 226,
+      "text": "「動かした感じ、速度がある方が、\\n　操縦が利きやすいみたいなんだけど」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 227,
+      "text": "「エルロンもラダーもエレベータも、\\n　風を受けなきゃ効果ないもんね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 228,
+      "text": "「そうそう」%K%P",
+      "text_with_name": "%LCあげは「そうそう」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 229,
+      "text": "それらは、風の力を機体に伝えて姿勢を制御する。%K%P",
+      "text_with_name": "%LC碧それらは、風の力を機体に伝えて姿勢を制御する。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 230,
+      "text": "当然、受ける風が強ければ、少しの操舵で大きな効果が得られることになる。逆もまた然りだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 231,
+      "text": "しかし、グライダーにはエンジンがない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 232,
+      "text": "お手軽に加速したり減速したりできないわけだ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 233,
+      "text": "「何か一つの事をするのに、\\n　他の全部のことが影響してきて、\\n　それがむずいかなぁ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 234,
+      "text": "現状を把握するだけじゃなく、先のことまで考えて行動しておかなくちゃいけない。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 235,
+      "text": "そういう意味じゃ、やはり経験が物を言う乗り物だと思う。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 236,
+      "text": "「ふぅん……\\n　乗ってて気持ちよかった？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 237,
+      "text": "「いや、正直、シミュレータじゃさっぱり……。\\n　画面見てただろ？」%K%P",
+      "text_with_name": "%LC小鳥「いや、正直、シミュレータじゃさっぱり……。\\n　画面見てただろ？」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 238,
+      "text": "「うん。\\n　なんていうか……すごいもどかしい感じだった」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 239,
+      "text": "「３Ｄのシューティングゲームに比べると、\\n　圧倒的に爽快感がなかったわね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 240,
+      "text": "「そうそう」%K%P",
+      "text_with_name": "%LCあげは「そうそう」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 241,
+      "text": "「実際に飛ぶのとは、\\n　やっぱり違うのかなぁ……」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 242,
+      "text": "「だと思う。\\n　なんとなく、イメージはできるんだ」%K%P",
+      "text_with_name": "%LC小鳥「だと思う。\\n　なんとなく、イメージはできるんだ」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 243,
+      "text": "あれでほんとに空を飛んだらどんな感じか。%K%P",
+      "text_with_name": "%LC碧あれでほんとに空を飛んだらどんな感じか。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 244,
+      "text": "まだおぼろげだけど。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 245,
+      "text": "「……いいなぁ。\\n　私も飛んでみたい」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 246,
+      "text": "「シミュレータなら、\\n　やってみればいいんじゃない？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 247,
+      "text": "すべて手で操作可能だ。%K%P",
+      "text_with_name": "%LCあげはすべて手で操作可能だ。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 248,
+      "text": "「いい。\\n　今は碧くんがやるべき時だから」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 249,
+      "text": "今はガマンするの――そんな調子で言う。%K%P",
+      "text_with_name": "%LC小鳥今はガマンするの――そんな調子で言う。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 250,
+      "text": "思わず、俺とあげはは顔を見合わせていた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 251,
+      "text": "「じゃあ、早いとこ翼を造って、\\n　実際に飛べるようにしないとね」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 252,
+      "text": "「おお」%K%P",
+      "text_with_name": "%LCあげは「おお」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 253,
+      "text": "早く一人で飛べるようになって、小鳥を乗せてやろう。%K%P",
+      "text_with_name": "%LC碧早く一人で飛べるようになって、小鳥を乗せてやろう。%K%P",
+      "char_name": "碧"
+    },
+    {
+      "lng_idx": 254,
+      "text": "少し気が早いかもしれないけど、目標がある方ががんばれる。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 255,
+      "text": "「ちぇっ、ハズレかぁ。\\n　残念」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 256,
+      "text": "あげはが、食べ終わったアイスの棒をゴミ箱に投げ入れた。%K%P",
+      "text_with_name": "%LCあげはあげはが、食べ終わったアイスの棒をゴミ箱に投げ入れた。%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 257,
+      "text": "俺も食べ終わったので、モナカの袋をゴミ箱に捨てにいく。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 258,
+      "text": "「はぐはぐ……！」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 259,
+      "text": "まだ食べていた小鳥が、慌ててチョコチップアイスをかき込む。%K%P",
+      "text_with_name": "%LC小鳥まだ食べていた小鳥が、慌ててチョコチップアイスをかき込む。%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 260,
+      "text": "天音先輩ほどじゃないが、美人が台無しな感じの食べ方だ。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 261,
+      "text": "それからわたわたと車椅子を走らせ、ゴミ箱へカップを捨てに行った。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 262,
+      "text": "早くしないとおいていかれる、とでも思っているんだろうか。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 263,
+      "text": "小鳥が離れている間に、あげはが俺の隣に寄り添ってきた。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 264,
+      "text": "「気を遣ってくれてありがと」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 265,
+      "text": "「なんのことだ？」%K%P",
+      "text_with_name": "%LCあげは「なんのことだ？」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 266,
+      "text": "「とぼけちゃって。\\n　わたしと羽々音さんのために、\\n　誘ってくれたんでしょ？」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 267,
+      "text": "「……さあて、どうだったかな」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 268,
+      "text": "むっつりととぼける俺を見て、あげはは楽しそうに笑った。%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 269,
+      "text": "「お、おまたせっ」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 270,
+      "text": "「……そんな慌てなくていいのに」%K%P",
+      "text_with_name": "%LC小鳥「……そんな慌てなくていいのに」%K%P",
+      "char_name": "小鳥"
+    },
+    {
+      "lng_idx": 271,
+      "text": "「それじゃ、帰りますか。\\n　また明日ねー」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 272,
+      "text": "「おお、またな」%K%P",
+      "text_with_name": "%LCあげは「おお、またな」%K%P",
+      "char_name": "あげは"
+    },
+    {
+      "lng_idx": 273,
+      "text": "「さ、さようなら」%K%P",
+      "text_with_name": null,
+      "char_name": null
+    },
+    {
+      "lng_idx": 274,
+      "text": "手を振って帰って行くあげはを見送ると、俺は小鳥の車椅子を押して、寮への道を辿っていった。%K%P",
+      "text_with_name": "%LC小鳥手を振って帰って行くあげはを見送ると、俺は小鳥の車椅子を押して、寮への道を辿っていった。%K%P",
+      "char_name": "小鳥"
+    }
+  ]
+}

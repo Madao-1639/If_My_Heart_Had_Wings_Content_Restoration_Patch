@@ -1,0 +1,12 @@
+__pycache__/
+tmp/
+
+test_save_files/*.png
+backup/
+*.backup*
+
+payload/*
+!payload/metadata.json
+releases
+build
+*.spec
