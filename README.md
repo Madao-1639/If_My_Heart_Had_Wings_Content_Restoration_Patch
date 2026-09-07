@@ -2,6 +2,10 @@
 
 为 Steam 版 [《在这苍穹展翅》（If My Heart Had Wings）](https://store.steampowered.com/app/326480/) 还原被移除的剧情内容，同时完整保留 Steam 成就系统与官方中文本地化，还原文本使用 [羽翼汉化组的汉化文本](https://github.com/jszhtian/oozora_CHSpatch)。
 
+本补丁仅供已购买正版游戏的用户使用，不包含任何游戏本体文件。
+
+![Banner](https://shared.steamstatic.com/store_item_assets/steam/apps/326480/library_hero.jpg?t=1573643772)
+
 ## 当前状态
 
 项目处于文档与工具搭建阶段。已完成：
