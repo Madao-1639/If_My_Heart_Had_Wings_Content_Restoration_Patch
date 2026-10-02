@@ -1,0 +1,606 @@
+{
+ "est": [],
+ "meta": {
+  "conflict_names": 132,
+  "reference_scan": "指令操作数级（0x1e/0x28/0x33/0x34 第二字符串），span = 台账插入区间",
+  "referenced_names": 2437,
+  "restored_scripts": [
+   "AGE_001",
+   "AGE_005",
+   "AGE_006",
+   "AGE_007",
+   "AGE_008",
+   "AGE_009",
+   "AGE_010",
+   "AGE_011",
+   "AMA_004",
+   "AMA_005",
+   "AMA_006",
+   "AMA_007",
+   "AMA_010",
+   "ASA_001",
+   "ASA_003",
+   "ASA_005",
+   "HUT_004",
+   "KOT_003",
+   "KOT_004",
+   "KOT_006",
+   "KOT_009",
+   "YOR_002",
+   "YOR_004",
+   "YOR_006",
+   "YOR_008"
+  ],
+  "rule": "仅冲突且被还原内容引用才改名；缺失资源继承原名；号段从后往前；B/S 与 .MOS 连带",
+  "segment": "9X (L1-L3)；8X 留给 L4",
+  "spec": "doc/resource-naming.md"
+ },
+ "mos": [
+  {
+   "orig": "age_10_001b.mos",
+   "patch": "AGE_99_001B.mos",
+   "source_archive": "CHIP2.arc"
+  },
+  {
+   "orig": "age_10_002b.mos",
+   "patch": "AGE_99_002B.mos",
+   "source_archive": "CHIP2.arc"
+  }
+ ],
+ "sprite": [
+  {
+   "orig": "AGE_10_001S.png",
+   "patch": "AGE_99_001S.png",
+   "role": "primary",
+   "source_archive": "CHIP2.arc"
+  },
+  {
+   "orig": "AGE_10_002S.png",
+   "patch": "AGE_99_002S.png",
+   "role": "primary",
+   "source_archive": "CHIP2.arc"
+  },
+  {
+   "orig": "AGE_10_001B.png",
+   "patch": "AGE_99_001B.png",
+   "role": "sibling",
+   "source_archive": "CHIP2.arc"
+  },
+  {
+   "orig": "AGE_10_002B.png",
+   "patch": "AGE_99_002B.png",
+   "role": "sibling",
+   "source_archive": "CHIP2.arc"
+  }
+ ],
+ "unparseable": [],
+ "unused_conflicts": [
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_001s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_007s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_010s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_013b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_013s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_014b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_014s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_015b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_015s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_016b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_016s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_017s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_018b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_018s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_019b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_019s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_022b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_022s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_023b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_023s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_024b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "AGE_05_024s.png"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AGE_1309.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AGE_3722.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AGE_3941.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AGE_3942.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_0976.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_0977.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_0978.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_0979.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_0980.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_1711.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_2013.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_2014.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_2015.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_2760.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "AMA_2761.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "ASA_1412.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "ASA_1413.ogg"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_001b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_001s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_004s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_013b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_013s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_014b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_014s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_015b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_015s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_016b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_016s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_017b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_017s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_018b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_018s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_020s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_021b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_021s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_022b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_022s.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_024b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "COM_02_024s.png"
+  },
+  {
+   "archive": "CHIP3.arc",
+   "name": "HUT_01_001b.png"
+  },
+  {
+   "archive": "CHIP3.arc",
+   "name": "HUT_01_001s.png"
+  },
+  {
+   "archive": "CHIP3.arc",
+   "name": "HUT_01_002s.png"
+  },
+  {
+   "archive": "CHIP3.arc",
+   "name": "HUT_01_003b.png"
+  },
+  {
+   "archive": "CHIP3.arc",
+   "name": "HUT_01_003s.png"
+  },
+  {
+   "archive": "CHIP3.arc",
+   "name": "HUT_01_004b.png"
+  },
+  {
+   "archive": "CHIP3.arc",
+   "name": "HUT_01_004s.png"
+  },
+  {
+   "archive": "CHIP5.arc",
+   "name": "KOT_02_001b.png"
+  },
+  {
+   "archive": "CHIP5.arc",
+   "name": "KOT_02_001s.png"
+  },
+  {
+   "archive": "CHIP5.arc",
+   "name": "KOT_02_002b.png"
+  },
+  {
+   "archive": "CHIP5.arc",
+   "name": "KOT_02_002s.png"
+  },
+  {
+   "archive": "CHIP5.arc",
+   "name": "KOT_02_003b.png"
+  },
+  {
+   "archive": "CHIP5.arc",
+   "name": "KOT_02_003s.png"
+  },
+  {
+   "archive": "CHIP5.arc",
+   "name": "KOT_02_004b.png"
+  },
+  {
+   "archive": "CHIP5.arc",
+   "name": "KOT_02_004s.png"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_0387.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2025.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2026.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2027.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2028.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2029.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2032.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2033.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2161.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2848.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2849.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2850.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2851.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2852.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2853.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2854.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2855.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2856.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2857.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2858.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2859.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2860.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2861.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2862.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2863.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2864.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2865.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2866.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2867.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2868.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2869.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2870.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2871.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2872.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2873.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2874.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2875.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_2876.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_3374.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "KOT_3837.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "YOR_1658.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "YOR_1659.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "YOR_1660.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "YOR_1661.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "YOR_1662.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "YOR_1663.ogg"
+  },
+  {
+   "archive": "VOICE.arc",
+   "name": "YOR_1665.ogg"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "sdev19_01b.png"
+  },
+  {
+   "archive": "CHIP2.arc",
+   "name": "sdev19_01s.png"
+  }
+ ],
+ "voice": [
+  {
+   "orig": "AGE_3538.ogg",
+   "patch": "AGE_9999.ogg",
+   "source_archive": "VOICE.arc"
+  },
+  {
+   "orig": "AGE_4509.ogg",
+   "patch": "AGE_9998.ogg",
+   "source_archive": "VOICE.arc"
+  },
+  {
+   "orig": "AMA_2374.ogg",
+   "patch": "AMA_9999.ogg",
+   "source_archive": "VOICE.arc"
+  },
+  {
+   "orig": "KOT_2847.ogg",
+   "patch": "KOT_9999.ogg",
+   "source_archive": "VOICE.arc"
+  },
+  {
+   "orig": "YOR_1666.ogg",
+   "patch": "YOR_9999.ogg",
+   "source_archive": "VOICE.arc"
+  }
+ ]
+}

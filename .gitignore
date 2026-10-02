@@ -5,8 +5,12 @@ test_save_files/*.png
 backup/
 *.backup*
 
+asset/
 payload/*
 !payload/metadata.json
 releases
 build
 *.spec
+
+.mcp.json
+*.local.*

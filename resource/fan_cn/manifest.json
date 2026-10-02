@@ -1,0 +1,2184 @@
+{
+  "generator": "script/build_fan_translations.py",
+  "pairing": "resource/corpus/pairing.jsonl",
+  "pairing_doctrine": "positional: the fan table (AdvPatch.dll PAK/#101) is a line-by-line dump of the original script text sequence, so each Chinese entry is taken from its aligned slot, not from the Nth occurrence of a crc32 key",
+  "text_layer": {
+    "mechanical": "tool/textfix.normalize (work-notes, ruby, term map, trad->simp, kana residue)",
+    "contextual": "resource/corpus/review_fixes.jsonl (concurrent per-script semantic review + in-place translation of gaps)"
+  },
+  "key": "0x88",
+  "conventions": {
+    "dialogue": "entry keeps %K/%P markers, like official zh-CN lng",
+    "menu": "bare label at its 0x0f option id slot, no %K/%P",
+    "flagcheck": "label at its FLAG_CHECK id slot; non-ASCII-validated so binary noise no longer inflates slots",
+    "empty_ctrl": "'%P' for speaker-less clear-box lines (official convention)",
+    "names": "not in per-script text; see NameTable.json (NameTable.txt only with --emit-lng)",
+    "fallback": "none: every content-bearing line must carry Chinese (build gate G1)"
+  },
+  "totals": {
+    "scripts_with_output": 104,
+    "scripts_empty_skipped": 0,
+    "slot_space": 54253,
+    "json_entries_written": 54253,
+    "dialogue": 54218,
+    "clear_lines": 18,
+    "menu_labels": 13,
+    "flagcheck_labels": 5,
+    "name_rows": 33101,
+    "unique_names": 99,
+    "nametable_identity": 22,
+    "review_fixes_applied": 3526,
+    "terminator_aligned": 0,
+    "bracket_balanced": 16,
+    "soft_break_diff": 1347,
+    "cn_source_distribution": {
+      "positional": 87311,
+      "review-fix": 3526,
+      "ctrl": 18,
+      "crc-tail": 24,
+      "need-translate": 2
+    }
+  },
+  "scripts": {
+    "AGE_001": {
+      "size": 696,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 2,
+      "n_dlg": 696,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 486,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 1182,
+        "review-fix": 46
+      },
+      "review_fixes": 46,
+      "entries_written": 696,
+      "legacy_total": 696,
+      "size_matches_legacy": true
+    },
+    "AGE_002": {
+      "size": 770,
+      "terminator_aligned": 0,
+      "bracket_balanced": 1,
+      "soft_break_diff": 23,
+      "n_dlg": 770,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 528,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 1298,
+        "review-fix": 85
+      },
+      "review_fixes": 85,
+      "entries_written": 770,
+      "legacy_total": 770,
+      "size_matches_legacy": true
+    },
+    "AGE_003": {
+      "size": 854,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 854,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 537,
+      "n_unique_name": 11,
+      "src": {
+        "positional": 1391,
+        "review-fix": 53
+      },
+      "review_fixes": 53,
+      "entries_written": 854,
+      "legacy_total": 854,
+      "size_matches_legacy": true
+    },
+    "AGE_004": {
+      "size": 529,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 5,
+      "n_dlg": 529,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 415,
+      "n_unique_name": 11,
+      "src": {
+        "positional": 944,
+        "review-fix": 45
+      },
+      "review_fixes": 45,
+      "entries_written": 529,
+      "legacy_total": 529,
+      "size_matches_legacy": true
+    },
+    "AGE_005": {
+      "size": 737,
+      "terminator_aligned": 0,
+      "bracket_balanced": 1,
+      "soft_break_diff": 4,
+      "n_dlg": 737,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 309,
+      "n_unique_name": 6,
+      "src": {
+        "positional": 1046,
+        "review-fix": 44
+      },
+      "review_fixes": 44,
+      "entries_written": 737,
+      "legacy_total": 737,
+      "size_matches_legacy": true
+    },
+    "AGE_006": {
+      "size": 906,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 65,
+      "n_dlg": 906,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 611,
+      "n_unique_name": 15,
+      "src": {
+        "positional": 1517,
+        "review-fix": 55
+      },
+      "review_fixes": 55,
+      "entries_written": 906,
+      "legacy_total": 906,
+      "size_matches_legacy": true
+    },
+    "AGE_007": {
+      "size": 1180,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 1180,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 652,
+      "n_unique_name": 7,
+      "src": {
+        "positional": 1832,
+        "review-fix": 69
+      },
+      "review_fixes": 69,
+      "entries_written": 1180,
+      "legacy_total": 1180,
+      "size_matches_legacy": true
+    },
+    "AGE_008": {
+      "size": 574,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 574,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 401,
+      "n_unique_name": 10,
+      "src": {
+        "positional": 975,
+        "review-fix": 51
+      },
+      "review_fixes": 51,
+      "entries_written": 574,
+      "legacy_total": 574,
+      "size_matches_legacy": true
+    },
+    "AGE_009": {
+      "size": 772,
+      "terminator_aligned": 0,
+      "bracket_balanced": 1,
+      "soft_break_diff": 0,
+      "n_dlg": 772,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 548,
+      "n_unique_name": 11,
+      "src": {
+        "positional": 1320,
+        "review-fix": 57
+      },
+      "review_fixes": 57,
+      "entries_written": 772,
+      "legacy_total": 772,
+      "size_matches_legacy": true
+    },
+    "AGE_010": {
+      "size": 964,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 2,
+      "n_dlg": 964,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 476,
+      "n_unique_name": 3,
+      "src": {
+        "positional": 1440,
+        "review-fix": 102
+      },
+      "review_fixes": 102,
+      "entries_written": 964,
+      "legacy_total": 964,
+      "size_matches_legacy": true
+    },
+    "AGE_011": {
+      "size": 856,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 6,
+      "n_dlg": 856,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 537,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 1393,
+        "review-fix": 53
+      },
+      "review_fixes": 53,
+      "entries_written": 856,
+      "legacy_total": 856,
+      "size_matches_legacy": true
+    },
+    "AGE_012": {
+      "size": 80,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 80,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 78,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 158,
+        "review-fix": 14
+      },
+      "review_fixes": 14,
+      "entries_written": 80,
+      "legacy_total": 80,
+      "size_matches_legacy": true
+    },
+    "AMA_001": {
+      "size": 343,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 14,
+      "n_dlg": 343,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 170,
+      "n_unique_name": 11,
+      "src": {
+        "positional": 513,
+        "review-fix": 23
+      },
+      "review_fixes": 23,
+      "entries_written": 343,
+      "legacy_total": 343,
+      "size_matches_legacy": true
+    },
+    "AMA_002": {
+      "size": 687,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 39,
+      "n_dlg": 687,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 376,
+      "n_unique_name": 13,
+      "src": {
+        "positional": 1063,
+        "review-fix": 26
+      },
+      "review_fixes": 26,
+      "entries_written": 687,
+      "legacy_total": 687,
+      "size_matches_legacy": true
+    },
+    "AMA_003": {
+      "size": 562,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 27,
+      "n_dlg": 562,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 414,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 976,
+        "review-fix": 33
+      },
+      "review_fixes": 33,
+      "entries_written": 562,
+      "legacy_total": 562,
+      "size_matches_legacy": true
+    },
+    "AMA_004": {
+      "size": 1170,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 23,
+      "n_dlg": 1170,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 610,
+      "n_unique_name": 7,
+      "src": {
+        "positional": 1780,
+        "review-fix": 86
+      },
+      "review_fixes": 86,
+      "entries_written": 1170,
+      "legacy_total": 1170,
+      "size_matches_legacy": true
+    },
+    "AMA_005": {
+      "size": 769,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 10,
+      "n_dlg": 769,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 477,
+      "n_unique_name": 13,
+      "src": {
+        "positional": 1246,
+        "review-fix": 43
+      },
+      "review_fixes": 43,
+      "entries_written": 769,
+      "legacy_total": 769,
+      "size_matches_legacy": true
+    },
+    "AMA_006": {
+      "size": 1188,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 19,
+      "n_dlg": 1188,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 700,
+      "n_unique_name": 10,
+      "src": {
+        "positional": 1888,
+        "review-fix": 57
+      },
+      "review_fixes": 57,
+      "entries_written": 1188,
+      "legacy_total": 1188,
+      "size_matches_legacy": true
+    },
+    "AMA_007": {
+      "size": 1264,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 17,
+      "n_dlg": 1264,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 746,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 2010,
+        "review-fix": 65
+      },
+      "review_fixes": 65,
+      "entries_written": 1264,
+      "legacy_total": 1264,
+      "size_matches_legacy": true
+    },
+    "AMA_008": {
+      "size": 613,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 613,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 348,
+      "n_unique_name": 11,
+      "src": {
+        "positional": 961,
+        "review-fix": 25
+      },
+      "review_fixes": 25,
+      "entries_written": 613,
+      "legacy_total": 613,
+      "size_matches_legacy": true
+    },
+    "AMA_009": {
+      "size": 758,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 758,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 455,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 1213,
+        "review-fix": 37
+      },
+      "review_fixes": 37,
+      "entries_written": 758,
+      "legacy_total": 758,
+      "size_matches_legacy": true
+    },
+    "AMA_010": {
+      "size": 855,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 3,
+      "n_dlg": 855,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 499,
+      "n_unique_name": 11,
+      "src": {
+        "positional": 1354,
+        "review-fix": 44
+      },
+      "review_fixes": 44,
+      "entries_written": 855,
+      "legacy_total": 855,
+      "size_matches_legacy": true
+    },
+    "ASA_001": {
+      "size": 1170,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 1169,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 766,
+      "n_unique_name": 15,
+      "src": {
+        "ctrl": 1,
+        "positional": 1935,
+        "review-fix": 57
+      },
+      "review_fixes": 57,
+      "entries_written": 1170,
+      "legacy_total": 1169,
+      "size_matches_legacy": false
+    },
+    "ASA_002": {
+      "size": 453,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 453,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 284,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 737,
+        "review-fix": 18
+      },
+      "review_fixes": 18,
+      "entries_written": 453,
+      "legacy_total": 453,
+      "size_matches_legacy": true
+    },
+    "ASA_003": {
+      "size": 349,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 8,
+      "n_dlg": 349,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 262,
+      "n_unique_name": 6,
+      "src": {
+        "positional": 611,
+        "review-fix": 21
+      },
+      "review_fixes": 21,
+      "entries_written": 349,
+      "legacy_total": 349,
+      "size_matches_legacy": true
+    },
+    "ASA_004": {
+      "size": 371,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 371,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 248,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 619,
+        "review-fix": 17
+      },
+      "review_fixes": 17,
+      "entries_written": 371,
+      "legacy_total": 371,
+      "size_matches_legacy": true
+    },
+    "ASA_005": {
+      "size": 431,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 8,
+      "n_dlg": 431,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 266,
+      "n_unique_name": 13,
+      "src": {
+        "positional": 697,
+        "review-fix": 19
+      },
+      "review_fixes": 19,
+      "entries_written": 431,
+      "legacy_total": 431,
+      "size_matches_legacy": true
+    },
+    "CO1_001": {
+      "size": 518,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 3,
+      "n_dlg": 518,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 261,
+      "n_unique_name": 11,
+      "src": {
+        "crc-tail": 1,
+        "positional": 778,
+        "review-fix": 24
+      },
+      "review_fixes": 24,
+      "entries_written": 518,
+      "legacy_total": 518,
+      "size_matches_legacy": true
+    },
+    "CO1_002": {
+      "size": 746,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 6,
+      "n_dlg": 746,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 372,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 1118,
+        "review-fix": 31
+      },
+      "review_fixes": 31,
+      "entries_written": 746,
+      "legacy_total": 746,
+      "size_matches_legacy": true
+    },
+    "CO1_003": {
+      "size": 689,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 4,
+      "n_dlg": 689,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 397,
+      "n_unique_name": 10,
+      "src": {
+        "positional": 1086,
+        "review-fix": 19
+      },
+      "review_fixes": 19,
+      "entries_written": 689,
+      "legacy_total": 689,
+      "size_matches_legacy": true
+    },
+    "CO1_004": {
+      "size": 245,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 245,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 146,
+      "n_unique_name": 6,
+      "src": {
+        "positional": 391,
+        "review-fix": 6
+      },
+      "review_fixes": 6,
+      "entries_written": 245,
+      "legacy_total": 245,
+      "size_matches_legacy": true
+    },
+    "CO1_005": {
+      "size": 369,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 369,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 220,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 589,
+        "review-fix": 16
+      },
+      "review_fixes": 16,
+      "entries_written": 369,
+      "legacy_total": 369,
+      "size_matches_legacy": true
+    },
+    "CO1_006": {
+      "size": 478,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 2,
+      "n_dlg": 478,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 266,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 744,
+        "review-fix": 31
+      },
+      "review_fixes": 31,
+      "entries_written": 478,
+      "legacy_total": 478,
+      "size_matches_legacy": true
+    },
+    "CO1_007": {
+      "size": 329,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 6,
+      "n_dlg": 329,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 236,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 565,
+        "review-fix": 10
+      },
+      "review_fixes": 10,
+      "entries_written": 329,
+      "legacy_total": 329,
+      "size_matches_legacy": true
+    },
+    "CO1_008": {
+      "size": 305,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 6,
+      "n_dlg": 305,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 180,
+      "n_unique_name": 6,
+      "src": {
+        "positional": 485,
+        "review-fix": 13
+      },
+      "review_fixes": 13,
+      "entries_written": 305,
+      "legacy_total": 305,
+      "size_matches_legacy": true
+    },
+    "CO1_009": {
+      "size": 682,
+      "terminator_aligned": 0,
+      "bracket_balanced": 1,
+      "soft_break_diff": 12,
+      "n_dlg": 682,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 394,
+      "n_unique_name": 6,
+      "src": {
+        "positional": 1076,
+        "review-fix": 23
+      },
+      "review_fixes": 23,
+      "entries_written": 682,
+      "legacy_total": 682,
+      "size_matches_legacy": true
+    },
+    "CO1_010": {
+      "size": 188,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 188,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 115,
+      "n_unique_name": 7,
+      "src": {
+        "positional": 303,
+        "review-fix": 7
+      },
+      "review_fixes": 7,
+      "entries_written": 188,
+      "legacy_total": 188,
+      "size_matches_legacy": true
+    },
+    "CO1_011": {
+      "size": 309,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 10,
+      "n_dlg": 309,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 188,
+      "n_unique_name": 7,
+      "src": {
+        "positional": 497,
+        "review-fix": 12
+      },
+      "review_fixes": 12,
+      "entries_written": 309,
+      "legacy_total": 309,
+      "size_matches_legacy": true
+    },
+    "CO1_012": {
+      "size": 421,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 42,
+      "n_dlg": 421,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 263,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 684,
+        "review-fix": 16
+      },
+      "review_fixes": 16,
+      "entries_written": 421,
+      "legacy_total": 421,
+      "size_matches_legacy": true
+    },
+    "CO1_013": {
+      "size": 53,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 3,
+      "n_dlg": 51,
+      "n_menu": 2,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 29,
+      "n_unique_name": 5,
+      "src": {
+        "crc-tail": 3,
+        "positional": 79,
+        "review-fix": 3
+      },
+      "review_fixes": 3,
+      "entries_written": 53,
+      "legacy_total": 51,
+      "size_matches_legacy": false
+    },
+    "CO1_013_A": {
+      "size": 61,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 60,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 46,
+      "n_unique_name": 3,
+      "src": {
+        "ctrl": 1,
+        "positional": 106,
+        "review-fix": 7
+      },
+      "review_fixes": 7,
+      "entries_written": 61,
+      "legacy_total": 60,
+      "size_matches_legacy": false
+    },
+    "CO1_013_B": {
+      "size": 61,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 8,
+      "n_dlg": 60,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 42,
+      "n_unique_name": 2,
+      "src": {
+        "ctrl": 1,
+        "positional": 102,
+        "review-fix": 3
+      },
+      "review_fixes": 3,
+      "entries_written": 61,
+      "legacy_total": 60,
+      "size_matches_legacy": false
+    },
+    "CO1_013_C": {
+      "size": 275,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 4,
+      "n_dlg": 275,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 158,
+      "n_unique_name": 4,
+      "src": {
+        "positional": 433,
+        "review-fix": 23
+      },
+      "review_fixes": 23,
+      "entries_written": 275,
+      "legacy_total": 275,
+      "size_matches_legacy": true
+    },
+    "CO1_014": {
+      "size": 258,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 2,
+      "n_dlg": 258,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 175,
+      "n_unique_name": 5,
+      "src": {
+        "positional": 433,
+        "review-fix": 8
+      },
+      "review_fixes": 8,
+      "entries_written": 258,
+      "legacy_total": 258,
+      "size_matches_legacy": true
+    },
+    "CO1_015": {
+      "size": 799,
+      "terminator_aligned": 0,
+      "bracket_balanced": 1,
+      "soft_break_diff": 6,
+      "n_dlg": 799,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 546,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 1345,
+        "review-fix": 25
+      },
+      "review_fixes": 25,
+      "entries_written": 799,
+      "legacy_total": 799,
+      "size_matches_legacy": true
+    },
+    "CO1_016": {
+      "size": 516,
+      "terminator_aligned": 0,
+      "bracket_balanced": 1,
+      "soft_break_diff": 24,
+      "n_dlg": 516,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 358,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 874,
+        "review-fix": 25
+      },
+      "review_fixes": 25,
+      "entries_written": 516,
+      "legacy_total": 516,
+      "size_matches_legacy": true
+    },
+    "CO1_016_A": {
+      "size": 29,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 27,
+      "n_menu": 2,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 11,
+      "n_unique_name": 2,
+      "src": {
+        "crc-tail": 3,
+        "positional": 37,
+        "review-fix": 6
+      },
+      "review_fixes": 6,
+      "entries_written": 29,
+      "legacy_total": 27,
+      "size_matches_legacy": false
+    },
+    "CO1_016_B": {
+      "size": 12,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 11,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 8,
+      "n_unique_name": 2,
+      "src": {
+        "ctrl": 1,
+        "positional": 19,
+        "review-fix": 2
+      },
+      "review_fixes": 2,
+      "entries_written": 12,
+      "legacy_total": 11,
+      "size_matches_legacy": false
+    },
+    "CO1_016_C": {
+      "size": 7,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 6,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 4,
+      "n_unique_name": 2,
+      "src": {
+        "ctrl": 1,
+        "positional": 10,
+        "review-fix": 1
+      },
+      "review_fixes": 1,
+      "entries_written": 7,
+      "legacy_total": 6,
+      "size_matches_legacy": false
+    },
+    "CO1_016_D": {
+      "size": 23,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 23,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 10,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 33,
+        "review-fix": 2
+      },
+      "review_fixes": 2,
+      "entries_written": 23,
+      "legacy_total": 23,
+      "size_matches_legacy": true
+    },
+    "CO1_016_E": {
+      "size": 46,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 46,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 29,
+      "n_unique_name": 4,
+      "src": {
+        "positional": 75,
+        "review-fix": 12
+      },
+      "review_fixes": 12,
+      "entries_written": 46,
+      "legacy_total": 46,
+      "size_matches_legacy": true
+    },
+    "CO1_017": {
+      "size": 747,
+      "terminator_aligned": 0,
+      "bracket_balanced": 1,
+      "soft_break_diff": 9,
+      "n_dlg": 747,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 427,
+      "n_unique_name": 11,
+      "src": {
+        "positional": 1174,
+        "review-fix": 26
+      },
+      "review_fixes": 26,
+      "entries_written": 747,
+      "legacy_total": 747,
+      "size_matches_legacy": true
+    },
+    "CO1_018": {
+      "size": 110,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 106,
+      "n_menu": 4,
+      "n_flag": 1,
+      "n_ctrl": 0,
+      "n_name_row": 57,
+      "n_unique_name": 5,
+      "src": {
+        "crc-tail": 6,
+        "positional": 162,
+        "review-fix": 9
+      },
+      "review_fixes": 9,
+      "entries_written": 110,
+      "legacy_total": 106,
+      "size_matches_legacy": false
+    },
+    "CO1_018_A": {
+      "size": 12,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 11,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 8,
+      "n_unique_name": 4,
+      "src": {
+        "ctrl": 1,
+        "positional": 19,
+        "review-fix": 2
+      },
+      "review_fixes": 2,
+      "entries_written": 12,
+      "legacy_total": 11,
+      "size_matches_legacy": false
+    },
+    "CO1_018_B": {
+      "size": 12,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 11,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 11,
+      "n_unique_name": 3,
+      "src": {
+        "ctrl": 1,
+        "positional": 22,
+        "review-fix": 1
+      },
+      "review_fixes": 1,
+      "entries_written": 12,
+      "legacy_total": 11,
+      "size_matches_legacy": false
+    },
+    "CO1_018_C": {
+      "size": 14,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 13,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 9,
+      "n_unique_name": 4,
+      "src": {
+        "ctrl": 1,
+        "positional": 22
+      },
+      "review_fixes": 0,
+      "entries_written": 14,
+      "legacy_total": 13,
+      "size_matches_legacy": false
+    },
+    "CO1_018_D": {
+      "size": 9,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 8,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 6,
+      "n_unique_name": 4,
+      "src": {
+        "ctrl": 1,
+        "positional": 14,
+        "review-fix": 1
+      },
+      "review_fixes": 1,
+      "entries_written": 9,
+      "legacy_total": 8,
+      "size_matches_legacy": false
+    },
+    "CO1_018_E": {
+      "size": 401,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 3,
+      "n_dlg": 401,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 235,
+      "n_unique_name": 6,
+      "src": {
+        "positional": 636,
+        "review-fix": 20
+      },
+      "review_fixes": 20,
+      "entries_written": 401,
+      "legacy_total": 401,
+      "size_matches_legacy": true
+    },
+    "CO1_019": {
+      "size": 806,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 26,
+      "n_dlg": 806,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 501,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 1307,
+        "review-fix": 30
+      },
+      "review_fixes": 30,
+      "entries_written": 806,
+      "legacy_total": 806,
+      "size_matches_legacy": true
+    },
+    "CO1_020": {
+      "size": 142,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 2,
+      "n_dlg": 134,
+      "n_menu": 0,
+      "n_flag": 4,
+      "n_ctrl": 4,
+      "n_name_row": 52,
+      "n_unique_name": 5,
+      "src": {
+        "crc-tail": 4,
+        "ctrl": 4,
+        "need-translate": 1,
+        "positional": 185,
+        "review-fix": 9
+      },
+      "review_fixes": 9,
+      "entries_written": 142,
+      "legacy_total": 134,
+      "size_matches_legacy": false
+    },
+    "CO1_020_A": {
+      "size": 83,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 83,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 51,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 134,
+        "review-fix": 9
+      },
+      "review_fixes": 9,
+      "entries_written": 83,
+      "legacy_total": 83,
+      "size_matches_legacy": true
+    },
+    "CO1_020_B": {
+      "size": 103,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 103,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 61,
+      "n_unique_name": 2,
+      "src": {
+        "need-translate": 1,
+        "positional": 163,
+        "review-fix": 18
+      },
+      "review_fixes": 18,
+      "entries_written": 103,
+      "legacy_total": 103,
+      "size_matches_legacy": true
+    },
+    "CO1_020_C": {
+      "size": 147,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 147,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 86,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 233,
+        "review-fix": 22
+      },
+      "review_fixes": 22,
+      "entries_written": 147,
+      "legacy_total": 147,
+      "size_matches_legacy": true
+    },
+    "CO1_020_D": {
+      "size": 45,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 45,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 22,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 67,
+        "review-fix": 6
+      },
+      "review_fixes": 6,
+      "entries_written": 45,
+      "legacy_total": 45,
+      "size_matches_legacy": true
+    },
+    "CO1_020_E": {
+      "size": 580,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 580,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 323,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 903,
+        "review-fix": 77
+      },
+      "review_fixes": 77,
+      "entries_written": 580,
+      "legacy_total": 580,
+      "size_matches_legacy": true
+    },
+    "CO1_021": {
+      "size": 65,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 65,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 37,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 102,
+        "review-fix": 20
+      },
+      "review_fixes": 20,
+      "entries_written": 65,
+      "legacy_total": 65,
+      "size_matches_legacy": true
+    },
+    "CO1_021_A": {
+      "size": 50,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 50,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 19,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 69,
+        "review-fix": 26
+      },
+      "review_fixes": 26,
+      "entries_written": 50,
+      "legacy_total": 50,
+      "size_matches_legacy": true
+    },
+    "CO1_021_B": {
+      "size": 104,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 104,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 47,
+      "n_unique_name": 6,
+      "src": {
+        "positional": 151,
+        "review-fix": 17
+      },
+      "review_fixes": 17,
+      "entries_written": 104,
+      "legacy_total": 104,
+      "size_matches_legacy": true
+    },
+    "CO2_001": {
+      "size": 137,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 137,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 80,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 217,
+        "review-fix": 17
+      },
+      "review_fixes": 17,
+      "entries_written": 137,
+      "legacy_total": 137,
+      "size_matches_legacy": true
+    },
+    "CO2_002": {
+      "size": 638,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 638,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 426,
+      "n_unique_name": 15,
+      "src": {
+        "positional": 1064,
+        "review-fix": 78
+      },
+      "review_fixes": 78,
+      "entries_written": 638,
+      "legacy_total": 638,
+      "size_matches_legacy": true
+    },
+    "CO2_003": {
+      "size": 795,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 795,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 499,
+      "n_unique_name": 11,
+      "src": {
+        "positional": 1294,
+        "review-fix": 102
+      },
+      "review_fixes": 102,
+      "entries_written": 795,
+      "legacy_total": 795,
+      "size_matches_legacy": true
+    },
+    "CO2_004": {
+      "size": 491,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 491,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 309,
+      "n_unique_name": 10,
+      "src": {
+        "positional": 800,
+        "review-fix": 64
+      },
+      "review_fixes": 64,
+      "entries_written": 491,
+      "legacy_total": 491,
+      "size_matches_legacy": true
+    },
+    "CO2_005": {
+      "size": 59,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 56,
+      "n_menu": 3,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 35,
+      "n_unique_name": 6,
+      "src": {
+        "crc-tail": 4,
+        "positional": 90,
+        "review-fix": 4
+      },
+      "review_fixes": 4,
+      "entries_written": 59,
+      "legacy_total": 56,
+      "size_matches_legacy": false
+    },
+    "CO2_005_A": {
+      "size": 291,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 290,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 183,
+      "n_unique_name": 3,
+      "src": {
+        "ctrl": 1,
+        "positional": 473,
+        "review-fix": 18
+      },
+      "review_fixes": 18,
+      "entries_written": 291,
+      "legacy_total": 290,
+      "size_matches_legacy": false
+    },
+    "CO2_005_B": {
+      "size": 161,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 160,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 84,
+      "n_unique_name": 5,
+      "src": {
+        "ctrl": 1,
+        "positional": 244,
+        "review-fix": 35
+      },
+      "review_fixes": 35,
+      "entries_written": 161,
+      "legacy_total": 160,
+      "size_matches_legacy": false
+    },
+    "CO2_005_C": {
+      "size": 188,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 1,
+      "n_dlg": 187,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 129,
+      "n_unique_name": 7,
+      "src": {
+        "ctrl": 1,
+        "positional": 316,
+        "review-fix": 28
+      },
+      "review_fixes": 28,
+      "entries_written": 188,
+      "legacy_total": 187,
+      "size_matches_legacy": false
+    },
+    "CO2_005_D": {
+      "size": 513,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 512,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 333,
+      "n_unique_name": 12,
+      "src": {
+        "ctrl": 1,
+        "positional": 845,
+        "review-fix": 102
+      },
+      "review_fixes": 102,
+      "entries_written": 513,
+      "legacy_total": 512,
+      "size_matches_legacy": false
+    },
+    "CO2_999": {
+      "size": 53,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 53,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 17,
+      "n_unique_name": 6,
+      "src": {
+        "positional": 70,
+        "review-fix": 15
+      },
+      "review_fixes": 15,
+      "entries_written": 53,
+      "legacy_total": 53,
+      "size_matches_legacy": true
+    },
+    "HUT_001": {
+      "size": 548,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 37,
+      "n_dlg": 548,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 383,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 931,
+        "review-fix": 28
+      },
+      "review_fixes": 28,
+      "entries_written": 548,
+      "legacy_total": 548,
+      "size_matches_legacy": true
+    },
+    "HUT_002": {
+      "size": 674,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 15,
+      "n_dlg": 674,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 486,
+      "n_unique_name": 12,
+      "src": {
+        "positional": 1160,
+        "review-fix": 29
+      },
+      "review_fixes": 29,
+      "entries_written": 674,
+      "legacy_total": 674,
+      "size_matches_legacy": true
+    },
+    "HUT_003": {
+      "size": 498,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 29,
+      "n_dlg": 498,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 360,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 858,
+        "review-fix": 22
+      },
+      "review_fixes": 22,
+      "entries_written": 498,
+      "legacy_total": 498,
+      "size_matches_legacy": true
+    },
+    "HUT_004": {
+      "size": 553,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 553,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 382,
+      "n_unique_name": 8,
+      "src": {
+        "positional": 935,
+        "review-fix": 33
+      },
+      "review_fixes": 33,
+      "entries_written": 553,
+      "legacy_total": 553,
+      "size_matches_legacy": true
+    },
+    "HUT_005": {
+      "size": 747,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 0,
+      "n_dlg": 745,
+      "n_menu": 2,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 456,
+      "n_unique_name": 8,
+      "src": {
+        "crc-tail": 3,
+        "positional": 1200,
+        "review-fix": 22
+      },
+      "review_fixes": 22,
+      "entries_written": 747,
+      "legacy_total": 745,
+      "size_matches_legacy": false
+    },
+    "KOT_001": {
+      "size": 676,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 49,
+      "n_dlg": 676,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 475,
+      "n_unique_name": 8,
+      "src": {
+        "positional": 1151,
+        "review-fix": 31
+      },
+      "review_fixes": 31,
+      "entries_written": 676,
+      "legacy_total": 676,
+      "size_matches_legacy": true
+    },
+    "KOT_002": {
+      "size": 1011,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 25,
+      "n_dlg": 1011,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 682,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 1693,
+        "review-fix": 48
+      },
+      "review_fixes": 48,
+      "entries_written": 1011,
+      "legacy_total": 1011,
+      "size_matches_legacy": true
+    },
+    "KOT_003": {
+      "size": 1774,
+      "terminator_aligned": 0,
+      "bracket_balanced": 2,
+      "soft_break_diff": 118,
+      "n_dlg": 1774,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 986,
+      "n_unique_name": 10,
+      "src": {
+        "positional": 2760,
+        "review-fix": 51
+      },
+      "review_fixes": 51,
+      "entries_written": 1774,
+      "legacy_total": 1774,
+      "size_matches_legacy": true
+    },
+    "KOT_004": {
+      "size": 1030,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 71,
+      "n_dlg": 1030,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 548,
+      "n_unique_name": 13,
+      "src": {
+        "positional": 1578,
+        "review-fix": 45
+      },
+      "review_fixes": 45,
+      "entries_written": 1030,
+      "legacy_total": 1030,
+      "size_matches_legacy": true
+    },
+    "KOT_005": {
+      "size": 556,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 40,
+      "n_dlg": 556,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 346,
+      "n_unique_name": 11,
+      "src": {
+        "positional": 902,
+        "review-fix": 28
+      },
+      "review_fixes": 28,
+      "entries_written": 556,
+      "legacy_total": 556,
+      "size_matches_legacy": true
+    },
+    "KOT_006": {
+      "size": 1294,
+      "terminator_aligned": 0,
+      "bracket_balanced": 5,
+      "soft_break_diff": 230,
+      "n_dlg": 1294,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 825,
+      "n_unique_name": 16,
+      "src": {
+        "positional": 2119,
+        "review-fix": 72
+      },
+      "review_fixes": 72,
+      "entries_written": 1294,
+      "legacy_total": 1294,
+      "size_matches_legacy": true
+    },
+    "KOT_007": {
+      "size": 774,
+      "terminator_aligned": 0,
+      "bracket_balanced": 1,
+      "soft_break_diff": 39,
+      "n_dlg": 774,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 437,
+      "n_unique_name": 14,
+      "src": {
+        "positional": 1211,
+        "review-fix": 27
+      },
+      "review_fixes": 27,
+      "entries_written": 774,
+      "legacy_total": 774,
+      "size_matches_legacy": true
+    },
+    "KOT_008": {
+      "size": 1497,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 7,
+      "n_dlg": 1497,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 872,
+      "n_unique_name": 20,
+      "src": {
+        "positional": 2369,
+        "review-fix": 95
+      },
+      "review_fixes": 95,
+      "entries_written": 1497,
+      "legacy_total": 1497,
+      "size_matches_legacy": true
+    },
+    "KOT_009": {
+      "size": 1116,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 12,
+      "n_dlg": 1116,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 655,
+      "n_unique_name": 19,
+      "src": {
+        "positional": 1771,
+        "review-fix": 37
+      },
+      "review_fixes": 37,
+      "entries_written": 1116,
+      "legacy_total": 1116,
+      "size_matches_legacy": true
+    },
+    "SL_AGE_001": {
+      "size": 851,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 7,
+      "n_dlg": 851,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 474,
+      "n_unique_name": 6,
+      "src": {
+        "positional": 1325,
+        "review-fix": 49
+      },
+      "review_fixes": 49,
+      "entries_written": 851,
+      "legacy_total": null,
+      "size_matches_legacy": null
+    },
+    "SL_AMA_001": {
+      "size": 714,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 3,
+      "n_dlg": 714,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 405,
+      "n_unique_name": 7,
+      "src": {
+        "positional": 1119,
+        "review-fix": 38
+      },
+      "review_fixes": 38,
+      "entries_written": 714,
+      "legacy_total": null,
+      "size_matches_legacy": null
+    },
+    "SL_HUT_001": {
+      "size": 788,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 3,
+      "n_dlg": 788,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 505,
+      "n_unique_name": 4,
+      "src": {
+        "positional": 1293,
+        "review-fix": 70
+      },
+      "review_fixes": 70,
+      "entries_written": 788,
+      "legacy_total": null,
+      "size_matches_legacy": null
+    },
+    "SL_KOT_001": {
+      "size": 875,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 2,
+      "n_dlg": 875,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 510,
+      "n_unique_name": 3,
+      "src": {
+        "positional": 1385,
+        "review-fix": 35
+      },
+      "review_fixes": 35,
+      "entries_written": 875,
+      "legacy_total": null,
+      "size_matches_legacy": null
+    },
+    "YOR_001": {
+      "size": 677,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 45,
+      "n_dlg": 676,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 1,
+      "n_name_row": 413,
+      "n_unique_name": 11,
+      "src": {
+        "ctrl": 1,
+        "positional": 1089,
+        "review-fix": 67
+      },
+      "review_fixes": 67,
+      "entries_written": 677,
+      "legacy_total": 676,
+      "size_matches_legacy": false
+    },
+    "YOR_002": {
+      "size": 812,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 61,
+      "n_dlg": 812,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 583,
+      "n_unique_name": 13,
+      "src": {
+        "positional": 1395,
+        "review-fix": 40
+      },
+      "review_fixes": 40,
+      "entries_written": 812,
+      "legacy_total": 812,
+      "size_matches_legacy": true
+    },
+    "YOR_003": {
+      "size": 322,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 11,
+      "n_dlg": 322,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 183,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 505,
+        "review-fix": 31
+      },
+      "review_fixes": 31,
+      "entries_written": 322,
+      "legacy_total": 322,
+      "size_matches_legacy": true
+    },
+    "YOR_004": {
+      "size": 847,
+      "terminator_aligned": 0,
+      "bracket_balanced": 1,
+      "soft_break_diff": 52,
+      "n_dlg": 847,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 486,
+      "n_unique_name": 9,
+      "src": {
+        "positional": 1333,
+        "review-fix": 41
+      },
+      "review_fixes": 41,
+      "entries_written": 847,
+      "legacy_total": 847,
+      "size_matches_legacy": true
+    },
+    "YOR_005": {
+      "size": 284,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 2,
+      "n_dlg": 284,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 171,
+      "n_unique_name": 2,
+      "src": {
+        "positional": 455,
+        "review-fix": 68
+      },
+      "review_fixes": 68,
+      "entries_written": 284,
+      "legacy_total": 284,
+      "size_matches_legacy": true
+    },
+    "YOR_006": {
+      "size": 306,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 10,
+      "n_dlg": 306,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 212,
+      "n_unique_name": 15,
+      "src": {
+        "positional": 518,
+        "review-fix": 26
+      },
+      "review_fixes": 26,
+      "entries_written": 306,
+      "legacy_total": 306,
+      "size_matches_legacy": true
+    },
+    "YOR_007": {
+      "size": 374,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 3,
+      "n_dlg": 374,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 241,
+      "n_unique_name": 4,
+      "src": {
+        "positional": 615,
+        "review-fix": 106
+      },
+      "review_fixes": 106,
+      "entries_written": 374,
+      "legacy_total": 374,
+      "size_matches_legacy": true
+    },
+    "YOR_008": {
+      "size": 579,
+      "terminator_aligned": 0,
+      "bracket_balanced": 0,
+      "soft_break_diff": 13,
+      "n_dlg": 579,
+      "n_menu": 0,
+      "n_flag": 0,
+      "n_ctrl": 0,
+      "n_name_row": 325,
+      "n_unique_name": 17,
+      "src": {
+        "positional": 904,
+        "review-fix": 61
+      },
+      "review_fixes": 61,
+      "entries_written": 579,
+      "legacy_total": 579,
+      "size_matches_legacy": true
+    }
+  },
+  "acceptance": {
+    "per_script_size_vs_legacy_extraction": {
+      "compared": 100,
+      "mismatch": [
+        "ASA_001",
+        "CO1_013",
+        "CO1_013_A",
+        "CO1_013_B",
+        "CO1_016_A",
+        "CO1_016_B",
+        "CO1_016_C",
+        "CO1_018",
+        "CO1_018_A",
+        "CO1_018_B",
+        "CO1_018_C",
+        "CO1_018_D",
+        "CO1_020",
+        "CO2_005",
+        "CO2_005_A",
+        "CO2_005_B",
+        "CO2_005_C",
+        "CO2_005_D",
+        "HUT_005",
+        "YOR_001"
+      ],
+      "note": "legacy = resource/corpus/zh/*.json, produced by the retired per-key walker; mismatch means the slot count differs, not that text is missing"
+    },
+    "gates": {
+      "G1_empty": 0,
+      "G2_kana_ruby_note": 0,
+      "G3_roundtrip": "all scripts",
+      "G4_flow_markers": "0 (JP/CN %K/%P sequences identical)",
+      "G5_leader": "0 (%LC/%XS prefix parity)",
+      "G6_name": "0 (NameTable display has no Japanese name / placeholder)",
+      "G7_placeholder": "0 (no table-address residue like ●000824●●)"
+    }
+  }
+}

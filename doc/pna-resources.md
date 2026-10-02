@@ -68,5 +68,5 @@ layer_count    (int32)
 
 ## 待办
 
-- [ ] 若还原内容需要引入隔离命名空间（例如给还原资源加前缀区分 Steam 版与还原版），需要先按 [engine-mechanics.md](engine-mechanics.md) 中的方法验证资源槏位是否对命名有隐藏限制
+- [ ] 新增号段首次使用前，按 [engine-mechanics.md](engine-mechanics.md) §资源槏位命名 的方法验证该槏位是否对命名有隐藏限制（命名规则见 [resource-naming.md](resource-naming.md)）
 - [ ] 若还原范围涉及新增脚本未直接引用过的资源变体，再单独核实该变体的具体含义（日常照搬脚本已指定的引用不需要）
