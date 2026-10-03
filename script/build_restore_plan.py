@@ -142,8 +142,8 @@ def scan_resources(orig_dec, spans, ofmt):
             parts = ops.split(b'\x00')
             if len(parts) < 2:
                 continue
-            chan = parts[0].decode('ascii', 'replace').upper()
-            fname = parts[1].decode('ascii', 'replace').upper()
+            chan = parts[0].decode('cp932', 'replace').upper()
+            fname = parts[1].decode('cp932', 'replace').upper()
             if not fname:
                 continue
             if op == 0x28:
@@ -334,8 +334,8 @@ def main():
 
     # 资源三分类
     steam_names = {}
-    for arch in ('VOICE.arc', 'CHIP2.arc', 'CHIP3.arc', 'CHIP4.arc', 'CHIP5.arc',
-                 'CHIP6.arc', 'GRAPHIC.arc', 'SE.arc', 'BGM.arc'):
+    for arch in ('VOICE.arc', 'Chip1.arc', 'CHIP2.arc', 'CHIP3.arc', 'CHIP4.arc',
+                 'CHIP5.arc', 'CHIP6.arc', 'GRAPHIC.arc', 'SE.arc', 'BGM.arc'):
         steam_names[arch] = arc_names(os.path.join(paths.STEAM, arch))
     orig_index = {}
     for arch in ('VOICE.arc', 'Chip1.arc', 'CHIP2.arc', 'CHIP3.arc', 'CHIP4.arc',

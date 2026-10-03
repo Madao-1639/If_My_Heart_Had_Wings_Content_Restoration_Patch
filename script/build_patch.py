@@ -7,7 +7,8 @@
   `SE.arc`（本体 9 + L4 的 3 = 需求并集，全部取自原版）、VOICE/CHIP*/GRAPHIC（补缺 + 改名）。
 - L4 独有交付从 `script/build_l4.py` 的产物树收割：`Script.arc`（G1/G2/G6）、
   `PVOICE.arc`/`PCHIP.arc`（G7）、裸 `RIO/SL_*.ws2`（G3）。
-- 其余归档（BGM/SysVoice/SysGraphic/Effect/Chip1 若无改动）逐字节照抄 backup。
+- **交付面只含有差异的归档**：与 backup 无差异者（BGM/SysVoice/SysGraphic/Effect/Chip1）
+  **不写入 `asset/`**，安装期由玩家原档直接提供。
 
 硬纪律：backup 只读；同一归档只一趟写盘；可复现（同输入两次构建逐字节一致）。
 """
@@ -33,7 +34,6 @@ PLAN = os.path.join(ROOT, 'resource', 'restore_plan.json')
 STEAM = paths.STEAM
 ORIG = None
 
-VERBATIM_ARCHIVES = ['BGM.arc', 'SysVoice.arc', 'SysGraphic.arc', 'Effect.arc', 'Chip1.arc']
 ADD_ARCHIVES = ['VOICE.arc', 'Chip1.arc', 'CHIP2.arc', 'CHIP3.arc', 'CHIP4.arc',
                 'CHIP5.arc', 'CHIP6.arc', 'GRAPHIC.arc', 'SE.arc']
 
@@ -134,8 +134,11 @@ def main():
     # ── 3. 资源归档（补缺 + 改名隔离）──
     # 需求并集按归档分组；G9：33 张后日谈分层立绘 .pna 无条件并入 GRAPHIC.arc
     sys.path.insert(0, os.path.join(ROOT, 'script'))
-    from build_l4 import SL_PNA  # noqa: E402
+    from build_l4 import SL_PNA, EXTRA_SE  # noqa: E402
     need = collections.defaultdict(dict)     # arch -> {low_name: patch_name or None}
+    for se in EXTRA_SE:                      # G8：L4 独有 SE 并入主线 SE 趟
+        if 'SE.arc' not in need or se.lower() not in need['SE.arc']:
+            need['SE.arc'][se.lower()] = None
     for e in plan['resources']['copy']:
         need[e['archive']][e['orig'].lower()] = None
     for e in plan['resources']['rename']:
@@ -156,25 +159,36 @@ def main():
                 if low in want and low not in got:
                     got[low] = (n, d)
         missing = [w for w in want if w not in got]
+        if missing and arch == 'SE.arc' and os.path.exists(os.path.join(ORIG, 'PSE.arc')):
+            for nb, d in arcbuild.read_raw(os.path.join(ORIG, 'PSE.arc')):   # G8：L4 SE 源 = PSE
+                n = nb.decode('utf-16le', 'replace')
+                low = n.lower()
+                if low in missing and low not in got:
+                    got[low] = (n, d)
+        missing = [w for w in want if w not in got]
         assert not missing, '%s: 原版缺成员 %d 个，如 %r' % (arch, len(missing), missing[:5])
+        have = {k.lower() for k in members}
+        added = 0
         for low, (n, d) in got.items():
             patch = want[low]
-            members[patch if patch else n] = d
+            if patch:
+                assert patch.lower() not in have, \
+                    '%s: 改名目标 %s 与 Steam 原成员重名（违反零破坏性）' % (arch, patch)
+                members[patch] = d
+            elif low in have:
+                continue          # Steam 已有同名成员（可能仅大小写不同），补入即重名成员
+            else:
+                members[n] = d
+            added += 1
         out = os.path.join(ASSET, arch)
-        if got:
+        if added:
             arcbuild.write_arc([(k.encode('utf-16le'), v) for k, v in members.items()], out)
             arcbuild.verify(out, expect_count=len(members))
-            report.append('%s: +%d' % (arch, len(got)))
+            report.append('%s: +%d' % (arch, added))
         else:
-            shutil.copyfile(os.path.join(STEAM, arch), out)
-            report.append('%s: verbatim' % arch)
+            report.append('%s: 与 backup 无差异，不交付' % arch)
 
-    # ── 4. 照抄归档 ──
-    import shutil
-    for arch in VERBATIM_ARCHIVES:
-        shutil.copyfile(os.path.join(STEAM, arch), os.path.join(ASSET, arch))
-
-    # ── 5. L4 独有交付 ──
+    # ── 4. L4 独有交付 ──
     shutil.copyfile(os.path.join(L4_TREE, 'Script.arc'), os.path.join(ASSET, 'Script.arc'))
     for arch in ('PVOICE.arc', 'PCHIP.arc'):
         p = os.path.join(L4_TREE, arch)

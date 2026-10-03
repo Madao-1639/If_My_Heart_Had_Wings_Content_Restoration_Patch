@@ -1,6 +1,6 @@
 # resource/ 数据索引
 
-本目录是补丁的数据层：文本层底稿、中文文本产物、还原判定台账与施工计划。目录条目写**文件结构**，单表条目写**表结构**，并标出生产者与消费方；判读口径、工序与验收读数一律见 `doc/`，本文件不重复。
+本目录是补丁的数据层：文本层底稿、中文文本产物、还原判定台账、施工计划。目录条目写**文件结构**，单表条目写**表结构**，并标出生产者与消费方；判读口径、工序与验收读数一律见 `doc/`，本文件不重复。
 
 ## resource/corpus/ —— 文本层底稿
 
@@ -167,7 +167,7 @@
 | `resources` | dict | 资源三分类：`copy`(list[{kind, archive, orig}])、`rename`(list[{kind, archive, orig, patch}])、`have`(int，Steam 已存在的数量) |
 | `gates` | dict | `{'slots_<脚本名>': int}`，各脚本最终槽数，出包逐宿主核对 |
 
-**生产者**：`script/build_restore_plan.py`（输入为 `adjudication/`、`carrier_map.json`、`rename_map.json`、`fan_cn/` 与官方 zh-CN `.lng`）。**消费方**：出包构建（按 `hosts` 的槽位序与 `resources` 写盘）。路线与门禁语义见 [restoration-route.md](../doc/restoration-route.md)。
+**生产者**：`script/build_restore_plan.py`（输入为 `adjudication/`、`carrier_map.json`、`rename_map.json`、`fan_cn/` 与官方 zh-CN `.lng`）。**消费方**：`script/build_patch.py`（按 `hosts` 的槽位序写盘、按 `resources` 的 `copy`／`rename` 补资源与改名，`have` 不写盘）。路线与门禁语义见 [restoration-route.md](../doc/restoration-route.md)。
 
 ## resource/achievement_map.json —— 成就基线
 

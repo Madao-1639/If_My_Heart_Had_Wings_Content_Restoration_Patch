@@ -29,6 +29,8 @@ payload/  (增量，发布用) → 安装器
 | `BGM.arc` / `SysVoice.arc` | **不改动** | **不改动**（`PBGM` 分支不注入） |
 | `SysGraphic.arc` / `Effect.arc` | **不改动** | **不改动** |
 
+**交付面**：`asset/` 只写相对 `backup/` **有差异**的归档；无差异者（`BGM.arc`／`Chip1.arc`／`SysVoice.arc`／`SysGraphic.arc`／`Effect.arc`）**不进 `asset/`**，安装期由玩家原档直接提供。`Chip1.arc` 落进无差异一类，是因为它的图形需求在 Steam 侧**已有同名同内容成员**（成员名仅大小写不同），补入只会造出重名成员。
+
 ## 2. 硬纪律
 
 1. **基线只有一个 = `backup/`**。`asset/` 任何时候都能从 `backup/` + `resource/` 重建。
@@ -53,9 +55,10 @@ payload/  (增量，发布用) → 安装器
 | 1 | `script/build_carrier_map.py` | **承载图**：原版行 `r` → Steam 槽位 `k`；出逐脚本 blocks → `resource/carrier_map.json` |
 | 2 | `script/build_rename_map.py` | 同名冲突**改名表**（原版名 → 补丁名）；规则解不掉的**单列，不许静默跳过** → `resource/rename_map.json` |
 | 3 | `script/build_restore_plan.py` | **插入计划**：宿主脚本 / 插入点 / 源行区间 / 随行演出 / 取哪条中文 → `resource/restore_plan.json` |
-| 4 | `script/build_patch.py` | **从 `backup/` 起底**：逐脚本写盘（插入 / 删格 / 名字框同步 / **跳转回写**）+ 补资源 → `asset/` |
-| 5 | `script/generate_payload.py` | `asset/` vs `backup/` → `payload/` + `METADATA.json` + **回读校验** |
+| 4 | `script/build_patch.py` | **从 `backup/` 起底**：逐脚本写盘（插入 / 删格 / 名字框同步 / **跳转回写**）+ 补资源，**只写有差异的归档** → `asset/` |
+| 5 | `script/generate_payload.py` | 按 `asset/` 实际产物分三形态 → `payload/` + `METADATA.json` + **回读校验**（重放安装流程，须与 `asset/` 逐字节一致）：`copy` = 整档覆盖（`OVERWRITE` 名单里体量小的归档 + `backup` 无此档的新档，补丁档与交付路径同名）；`merge` = 资源级合并（其余归档出 `<名>_patch.arc` + 按 asset 序的成员表）；`loose` = 裸文件（`RIO/`） |
 | 6 | `script/final_verification.py` | 全量验收 |
+| 7 | `script/pack.sh` | **发布链**：PyInstaller onefile 把 `tool/install.py` + `payload/` + `VERSION` + `resource/icon.ico` 打成 `releases/` 单文件安装器（`releases/` 不进版本库）。安装期由 `tool/install.py` 按 `METADATA.json` 逐条交付（合并／整档覆盖／裸文件），交付后逐条校验哈希 |
 
 **闸的次序固定**：**只看表**（表自洽：格数自洽 / 覆盖无空档 / 行序单调）→ **写盘** → **表↔产物** → **全量验收**。
 
@@ -67,6 +70,7 @@ payload/  (增量，发布用) → 安装器
 - **指令排布照抄 Steam**：相邻 `15`（设名）**不折叠**；`drop` 删**整格**（`14` + 设名 `15` + 清框 `15`），带「不改动任何存活格名字框」的守卫。
 - **名字框是"继承"语义**：插入段发完必须**恢复现场**（重发进入时那条名字框），否则紧随的原始格会张冠李戴。
 - **逐槽核"该槽有没有处置"，漏一格即中止**（不静默产出空条目）。
+- **补资源只补 Steam 缺的成员**：需求成员名（忽略大小写）已在 Steam 归档内 ⇒ **跳过**，既不改写原成员（零破坏性）也不追加仅大小写不同的重名成员；改名目标与 Steam 成员同名一律**中止**。归档**无净增成员则不写盘**（见 §1 交付面）。
 
 ### 4.1 后日谈（L4）在施工层里的位置
 
@@ -84,7 +88,16 @@ L4 的改动**全部属步骤 4（写盘）**；步骤 3 的「插入计划」�
 | G9 | `GRAPHIC.arc`（**L4 不写盘**） | `script/build_l4.py --verify <产物目录或 GRAPHIC.arc>` | 产物 `GRAPHIC.arc` ＋ 原版／`backup/` 基线 | 逐名断言 33 名在位 ＋ 名单未漂移（原版有、Steam 基线无） |
 | G10 | `zh-CN/Rio.arc` → `NameTable.txt` | `script/build_nametable.py` | `backup/zh-CN/Rio.arc` 官方表 + `resource/fan_cn/NameTable.json` | 官方条目保序且值不被改写；`SL_*` 用到的 8 个日文名牌键逐一在表 |
 
-**现状与接口**：`script/build_l4.py` 与 `script/convert_sl_ws2.py` 输出到同一棵独立测试树 `tmp/_l4/asset/`（`RIO/` 放 G3 的裸脚本），从 `backup/` 起底、可复现（跑两次逐字节一致）。原版发行目录**不进版本库**，两个构建器都按 `--orig-dir` 或环境变量 `IFMH_ORIG_DIR` 取用（口径见 [restoration-targets.md](restoration-targets.md)「素材来源」），未提供即拒绝运行。它与主线**重叠 3 个归档**（§2 硬纪律 4），故并入主线时二选一：L4 改动项进主线同一趟，或 L4 改以主线 `asset/` 为输入。
+**现状与接口**：L4 的构建器 `script/build_l4.py`（`script/convert_sl_ws2.py` 供 G3 转码）输出到中间树 `tmp/_l4/asset/`（`RIO/` 放 G3 的裸脚本），从 `backup/` 起底、可复现（跑两次逐字节一致）。原版发行目录**不进版本库**，两个 L4 构建器按 `--orig-dir` 或环境变量 `IFMH_ORIG_DIR` 取用（口径见 [restoration-targets.md](restoration-targets.md)「素材来源」），未提供即拒绝运行；主线写盘器只认 `IFMH_ORIG_DIR`。
+
+**并入方式已定为 §2 硬纪律 4 的①**：`script/build_patch.py` 先跑 `build_l4.py`（幂等），再单趟写全部共享归档，重叠的 3 个归档不出现两趟写盘：
+
+| 归档 | 主线写盘器从 L4 中间树取什么 |
+|---|---|
+| `Rio.arc` | 只取 `start.ws2`（G4），其余成员由主线自己重建 |
+| `zh-CN/Rio.arc` | 只取 4 个 `SL_*.lng`（G5）与合并后的 `NameTable.txt`（G10） |
+| `SE.arc` | 需求并集含 L4 的 3 个独有 SE（G8，源为原版 `PSE.arc`） |
+| `Script.arc` / `PVOICE.arc` / `PCHIP.arc` / 裸 `RIO/` | L4 独有交付，整份收割进 `asset/` |
 
 **判给本体线的前置项**（判据＝引用面，逐项实测见 [afterstory-mechanics.md](afterstory-mechanics.md) §10.1）：33 张 `.pna`（G9，全部被原版主线脚本引用 ⇒ L4 不搬运）、`se43b`（G8 的三分之一）、日文名牌键全量合并（G10 的条目来源 `resource/fan_cn/NameTable.json`）、原版→Steam 的 WS2 编码转换（G3 的工序）。L4 的净自有交付＝门控与路由（G1／G2／G4／G6）＋后日谈独有资源（G7、`T_se91`、`pw129_4`）＋ FD 文本层（G5）。
 
@@ -92,7 +105,7 @@ L4 的改动**全部属步骤 4（写盘）**；步骤 3 的「插入计划」�
 
 ## 5. 验收
 
-1. **归档完整性**（`tool/arcbuild.verify()`，含无 null padding）
+1. **归档完整性**（`tool/arcbuild.verify()`，含无 null padding）；`asset/` 的归档集合**等于交付名单**（不含无差异归档），资源配对对未交付归档回落 `backup/` 解析
 2. **调用链完整性**（跳转目标全部可达；A-1 的 5 处跳转已恢复）
 3. **成就触发点完整性**：Steam 的 **922 处 / 51 脚本**调用 + **29 处 `0xF0`** 逐点核对，**指令与成就 id 均不变**，一处不少、不新增、不重算
 4. **资源配对正确性**（插入段引用的原版名 → 改名表 → 产物成员，逐个可解析）
@@ -122,5 +135,5 @@ L4 的改动**全部属步骤 4（写盘）**；步骤 3 的「插入计划」�
 
 - **文本层**（`resource/fan_cn/*.json` + `NameTable.json`）**就是** `resource/` 的输入表之一，直接沿用；`.lng` 与合并后的 `NameTable.txt` 只是装载形态，按 §4「派生形态不留档」在写盘时现做。
 - `tool/` 已有 `arcbuild.py`（归档读写 + `verify()`）/ `ws2.py` / `ws2dis.py` + `ws2fmt.txt` / `scriptext.py` / `lng.py` / `pna.py` / `fancn.py` / `textfix.py` / `v5lib.py`，与参照项目同源，可直接扩展。
-- **施工层已在链**：步骤 1／2 的 `script/build_carrier_map.py`、`script/build_rename_map.py`；L4 侧的 `script/build_l4.py`（写盘 G1／G2／G4～G8／G10，G9 只做端到端验收）、`script/convert_sl_ws2.py`（G3）、`script/build_nametable.py`（G10 唯一合并出口）。L4 现输出到独立测试树 `tmp/_l4/asset/`，并入主线按 §2 硬纪律 4 二选一。
-- **尚缺**：`script/build_restore_plan.py`、`script/build_patch.py`、`script/generate_payload.py`、`script/final_verification.py`（§4 步骤 3／4／5／6），`tool/writer.py`（结构写盘器）。反汇编已由 `tool/ws2dis.py` 承担（操作数格式表从引擎 `off_553EC0` 导出，对本作权威）。
+- **施工层已在链**：§4 的 7 步全部有脚本——主线 `script/build_carrier_map.py`／`build_rename_map.py`／`build_restore_plan.py`／`build_patch.py`／`generate_payload.py`／`final_verification.py`，L4 侧 `script/build_l4.py`（写盘 G1／G2／G4～G8／G10，G9 只做端到端验收）、`script/convert_sl_ws2.py`（G3）、`script/build_nametable.py`（G10 唯一合并出口），发布链 `script/pack.sh` + `tool/install.py`。结构写盘器为 `tool/writer.py`，反汇编由 `tool/ws2dis.py` 承担（操作数格式表从引擎 `off_553EC0` 导出，对本作权威）。
+- **机检不覆盖的一项**：§5 第 7 项**实机测试**（关键场景＝A-1 的 5 个整脚本入口、A-2 插入点前后、后日谈入口链路）只能手工跑图，不由 `script/final_verification.py` 断言。

@@ -37,6 +37,7 @@
 - 修改验收标准 → 更新 `doc/acceptance-criteria.md`
 - 确认新的还原范围 → 更新 `doc/restoration-targets.md`
 - 修改还原技术方案 → 更新 `doc/restoration-route.md`
+- 修改交付形态、打包或安装流程 → 更新 `doc/restoration-route.md` §4（流水线与发布链）与本文 §3「测试与发布流程」
 - 修改后日谈机制或改动点 → 更新 `doc/afterstory-mechanics.md`
 - 修改引擎机制认知（如磁盘裸 `RIO/` 的覆盖语义、`LAYER_ORDER` 行为） → 更新 `doc/engine-mechanics.md`
 
@@ -64,9 +65,9 @@
 
 ### 3. 测试与发布流程
 
-**测试阶段**：只关注 `asset/` 目录下的文件，测试时直接将 `asset/` 下的文件覆盖到游戏目录。
+**测试阶段**：`asset/` 只含相对 `backup/` **有差异**的交付文件（无差异归档不进这里，测试时沿用游戏目录里 Steam 自带的那份）；测试时直接把 `asset/` 下的文件覆盖到游戏目录。
 
-**发布阶段**：从 `asset/` 生成增量补丁到 `payload/`，制作安装器打包 `payload/` 内容。
+**发布阶段**：从 `asset/` 生成增量补丁到 `payload/`，三种交付形态＝**整档覆盖**（打包侧 `OVERWRITE` 名单里体量小的归档 + 玩家目录原本不存在的新档，补丁档与交付路径同名）、**资源级合并**（其余归档按成员表重组玩家原档）、**裸文件**（`RIO/`）；制作安装器打包 `payload/` 内容。
 
 **原则**：开发和测试使用完整文件（`asset/`），发布时才制作增量包（`payload/`）。
 
@@ -95,6 +96,8 @@
 **不提交的文件**：`tmp/` 目录下的所有文件、备份文件（`*.before_*`）、临时输出文件（见 `.gitignore`）。
 
 **必须提交的文件**：所有 Python 脚本、文档文件（`README.md` 和 `doc/` 下所有文件）、配置文件。
+
+**发布链的入库边界**：二进制交付物（`asset/`、`payload/` 里的归档与裸脚本、`releases/` 安装器）**不进版本库**，一律由脚本按 `backup/` + `resource/` + 原版目录重建；安装器要可在版本库里复原，最小集合是 `VERSION`（版本号唯一来源，`script/pack.sh` 与 `tool/install.py` 都读它）、`resource/icon.ico`（安装包图标）、`payload/METADATA.json`（交付成员表与校验和，发布内容的唯一可读记录，也是可复现性闸比对的产物指纹）。
 
 ### 8. 安全要求
 
