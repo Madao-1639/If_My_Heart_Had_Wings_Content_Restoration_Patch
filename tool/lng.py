@@ -45,6 +45,22 @@ def parse_lng(raw, key=KEY_OOZORA):
     return out
 
 
+
+def parse_lng_tolerant(raw, key=KEY_STEAM_ZHCN):
+    """parse_lng 的容错版：长度表覆盖之外的**尾部残留**按 count 截断后解析。
+
+    官方 `CO1_003.lng`/`CO2_002.lng` 的长度表外各有 20/6 字节残留（见 doc/file-formats.md），
+    count 与脚本行数严格一致 ⇒ 截断即可，别把尾巴当第 count+1 条。
+    """
+    count = struct.unpack_from('<I', raw, 0)[0]
+    lens = struct.unpack_from('<%dH' % count, raw, 4)
+    off = 4 + 2 * count
+    need = sum(lens)
+    if off + need > len(raw):
+        raise ValueError('lng length table exceeds payload')
+    raw = raw[:off + need]
+    return parse_lng(raw, key)
+
 def detect_key(raw):
     """Guess the XOR key of an lng blob.
 

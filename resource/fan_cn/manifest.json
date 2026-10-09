@@ -1,5 +1,5 @@
 {
-  "generator": "script/build_fan_translations.py",
+  "generator": "script/corpus/build_fan_translations.py",
   "pairing": "resource/corpus/pairing.jsonl",
   "pairing_doctrine": "positional: the fan table (AdvPatch.dll PAK/#101) is a line-by-line dump of the original script text sequence, so each Chinese entry is taken from its aligned slot, not from the Nth occurrence of a crc32 key",
   "text_layer": {

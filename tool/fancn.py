@@ -2,7 +2,7 @@
 
 主产物不是 `.lng`：原版脚本不消费 lng，Steam 版也要先按官方改动改造才能装载，
 所以持久存储用扁平 JSON（只写有行的槽位，缺失 key = 该槽无行）。`.lng` 由
-`script/build_fan_translations.py --emit-lng` 按需派生。
+`script/corpus/build_fan_translations.py --emit-lng` 按需派生。
 
 `load_texts` 刻意与 `tool.lng.parse_lng` 同形（按 idx 展开的列表，空洞为空串），
 复检脚本换读取源不必改判定逻辑。

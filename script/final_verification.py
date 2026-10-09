@@ -24,9 +24,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
-    sys.path.insert(0, os.path.join(ROOT, 'tmp', 'restdiff'))
 from tool import arcbuild, ws2, ws2dis, lng  # noqa: E402
-import paths  # noqa: E402
+from tool import paths  # noqa: E402
 
 ASSET = os.path.join(ROOT, 'asset')
 BACKUP = os.path.join(ROOT, 'backup')
@@ -184,9 +183,22 @@ def main():
             intended.add(s + '.ws2')
             intended.add(('zh-CN/Rio.arc', s + '.lng'))   # 宿主 .lng 按新槽位序重建
     intended.add(('zh-CN/Rio.arc', 'NameTable.txt'))      # G10 名牌表合并
+    # 同名整名覆盖是方针（resource-naming.md §1–§3）：判定表 overwrite 子集逐名豁免；
+    # 名单外一律不得替换（route §4 写盘器硬要求）。
+    roster = set()
+    for fn, alist in (('censor_map.json', 'members'), ('voice_conflict_map.json', 'members')):
+        mp = json.load(open(os.path.join(ROOT, 'resource', fn), encoding='utf-8'))
+        for m in mp.get(alist, []):
+            if m.get('action') == 'overwrite':
+                roster.add((m['archive'].lower(), m['name'].lower()))
     unexpected = [x for x in swapped
-                  if (x[0], x[1]) not in intended and x[1] not in intended]
-    check('5 Steam 原有成员未被意外替换', not unexpected, str(unexpected[:8]))
+                  if (x[0], x[1]) not in intended and x[1] not in intended
+                  and (x[0].lower(), x[1].lower()) not in roster]
+    check('5 Steam 原有成员未被意外替换（覆盖名单内为方针允许）', not unexpected, str(unexpected[:8]))
+    replaced = {(a.lower(), n.lower()) for a, n in swapped if (a.lower(), n.lower()) in roster}
+    check('5b 覆盖名单条数 = 实际替换次数（逐名对齐）',
+          len(roster) > 0 and replaced == roster,
+          'roster %d / replaced %d / 缺 %s' % (len(roster), len(replaced), sorted(roster - replaced)[:5]))
 
     # ── 6. 可复现性（asset vs payload/METADATA.json）──
     # 本闸证明「当期 asset == 当期交付表」；跨构建复现看效果：重跑步 4/5 后
@@ -219,7 +231,7 @@ def main():
         check('6 交付表存在', False, 'payload/METADATA.json 缺失（先跑步 5）')
 
     # ── 8. 交付项完整性 ──
-    sys.path.insert(0, os.path.join(ROOT, 'script'))
+    sys.path.insert(0, os.path.join(ROOT, 'script', 'build'))
     try:
         from build_l4 import SL_PNA  # noqa: E402
         graph = {n.lower() for n in read_members(os.path.join(ASSET, 'GRAPHIC.arc'))}

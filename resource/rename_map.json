@@ -31,48 +31,13 @@
    "YOR_006",
    "YOR_008"
   ],
-  "rule": "仅冲突且被还原内容引用才改名；缺失资源继承原名；号段从后往前；B/S 与 .MOS 连带",
-  "segment": "9X (L1-L3)；8X 留给 L4",
+  "retired": true,
+  "rule": "改名路线已取消：同名冲突一律整名覆盖、不进本表；Steam 缺失的资源直接继承原名；号段只服务新增成员（当前无需求）",
+  "segment": "9X (L1-L3)；8X 留给 L4（当前均无用途）",
   "spec": "doc/resource-naming.md"
  },
- "mos": [
-  {
-   "orig": "age_10_001b.mos",
-   "patch": "AGE_99_001B.mos",
-   "source_archive": "CHIP2.arc"
-  },
-  {
-   "orig": "age_10_002b.mos",
-   "patch": "AGE_99_002B.mos",
-   "source_archive": "CHIP2.arc"
-  }
- ],
- "sprite": [
-  {
-   "orig": "AGE_10_001S.png",
-   "patch": "AGE_99_001S.png",
-   "role": "primary",
-   "source_archive": "CHIP2.arc"
-  },
-  {
-   "orig": "AGE_10_002S.png",
-   "patch": "AGE_99_002S.png",
-   "role": "primary",
-   "source_archive": "CHIP2.arc"
-  },
-  {
-   "orig": "AGE_10_001B.png",
-   "patch": "AGE_99_001B.png",
-   "role": "sibling",
-   "source_archive": "CHIP2.arc"
-  },
-  {
-   "orig": "AGE_10_002B.png",
-   "patch": "AGE_99_002B.png",
-   "role": "sibling",
-   "source_archive": "CHIP2.arc"
-  }
- ],
+ "mos": [],
+ "sprite": [],
  "unparseable": [],
  "unused_conflicts": [
   {
@@ -576,31 +541,5 @@
    "name": "sdev19_01s.png"
   }
  ],
- "voice": [
-  {
-   "orig": "AGE_3538.ogg",
-   "patch": "AGE_9999.ogg",
-   "source_archive": "VOICE.arc"
-  },
-  {
-   "orig": "AGE_4509.ogg",
-   "patch": "AGE_9998.ogg",
-   "source_archive": "VOICE.arc"
-  },
-  {
-   "orig": "AMA_2374.ogg",
-   "patch": "AMA_9999.ogg",
-   "source_archive": "VOICE.arc"
-  },
-  {
-   "orig": "KOT_2847.ogg",
-   "patch": "KOT_9999.ogg",
-   "source_archive": "VOICE.arc"
-  },
-  {
-   "orig": "YOR_1666.ogg",
-   "patch": "YOR_9999.ogg",
-   "source_archive": "VOICE.arc"
-  }
- ]
+ "voice": []
 }

@@ -2,7 +2,7 @@
 
 行索引口径与承载图（resource/carrier_map.json）一致：dlg/ctrl 行、0 起；
 块区间沿用承载图的**闭区间** [start, end]。
-资源存在性判据用 tmp/scope/res_diff.json 的名单，避免全量哈希比对：
+资源存在性判据用 resource/res_diff.json 的名单，避免全量哈希比对：
 名字不在某归档 `orig_only` 名单 ⇒ Steam 侧存在；不在 `steam_only` 名单 ⇒ 原版侧存在。
 """
 import bisect
@@ -14,9 +14,8 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
-sys.path.insert(0, os.path.join(ROOT, 'tmp', 'restdiff'))
 from tool import arcbuild, ws2, scriptext  # noqa: E402
-import paths  # noqa: E402
+from tool import paths  # noqa: E402
 
 VOICE_RX = re.compile(rb'char[A-Z]{2,4}\x00([A-Za-z0-9_]+\.OGG)\x00', re.I)
 PNG_RX = re.compile(rb'\x33[A-Za-z0-9_]{2,12}\x00([A-Za-z0-9_.\-]+\.PNG)\x00', re.I)
@@ -39,7 +38,7 @@ def _resdiff_sets(archive):
     """(orig_only_upper, steam_only_upper) 名单集合。"""
     global _resdiff
     if _resdiff is None:
-        with open(os.path.join(ROOT, 'tmp', 'scope', 'res_diff.json'), encoding='utf-8') as f:
+        with open(os.path.join(ROOT, 'resource', 'res_diff.json'), encoding='utf-8') as f:
             raw = json.load(f)
         _resdiff = {a: ({n.upper() for n in e.get('orig_only', [])},
                         {n.upper() for n in e.get('steam_only', [])})
@@ -73,10 +72,23 @@ def png_in_steam(name):
 
 
 def lng_official():
+    """{脚本名大写: [官方 zh-CN 文本]}——直接对 backup/zh-CN/Rio.arc 的全部 .lng 成员容错解析。
+
+    官方 `CO1_003.lng`/`CO2_002.lng` 的长度表外各有残留（见 doc/file-formats.md），
+    严格解析会失败 ⇒ 一律用 `parse_lng_tolerant` 直读 backup，不再依赖任何转储文件。
+    """
     global _lng
     if _lng is None:
-        with open(os.path.join(ROOT, 'tmp', 'align', 'steam_lng_text.json'), encoding='utf-8') as f:
-            _lng = json.load(f)
+        from tool import lng as _lngmod
+        _lng = {}
+        for nb, d in arcbuild.read_raw(os.path.join(paths.STEAM, 'zh-CN', 'Rio.arc')):
+            n = nb.decode('utf-16le', 'replace')
+            if not n.lower().endswith('.lng'):
+                continue
+            try:
+                _lng[n[:-4].upper()] = _lngmod.parse_lng_tolerant(d, key=_lngmod.KEY_STEAM_ZHCN)
+            except Exception:
+                pass
     return _lng
 
 
@@ -156,9 +168,11 @@ def jp_texts(script):
 
 
 def blocks(script):
-    """非平凡块（ambiguous / orig_only / steam_only），承载图原序。"""
+    """需人工判读的块：非平凡块（ambiguous / orig_only / steam_only）
+    ＋ 带 `content_suspect` 的 1:1 块（等长但两侧语音号不一致 ⇒ 疑为 Steam 改写，见 §41／§46）。"""
     return [b for b in carrier()[script.upper()]['blocks']
-            if b['kind'] in ('ambiguous', 'orig_only', 'steam_only')]
+            if b['kind'] in ('ambiguous', 'orig_only', 'steam_only')
+            or b.get('content_suspect')]
 
 
 def scripts_with_blocks():

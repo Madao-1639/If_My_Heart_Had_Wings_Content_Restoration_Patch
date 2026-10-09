@@ -1,0 +1,381 @@
+{
+ "meta": {
+  "purpose": "承载图（resource/carrier_map.json）里**已知的假锚/拆行**判定表：机器按 token 值相等钉出来的锚，其两侧内容并不是同一句（或一行动词被 Steam 拆成两格）。本表是把「台账的决定」与「承载图的机械配对」的差异显式记账，供 script/checks/check_carrier_ledger.py 只读对账。",
+  "producer": "人工（2026-10-08 锚点全面抽查；证据见各条 evidence）",
+  "consumer": "script/checks/check_carrier_ledger.py",
+  "kinds": {
+   "false_anchor": "锚对两侧不是同一句；机械槽位是错的承载格",
+   "missing_seam": "原版行夹在两段还原插入之间被漏（机械上被某个错槽『承载』）",
+   "split_row": "原版一行被 Steam 拆成两格（零删减，结构现象）"
+  },
+  "ledger_rules": {
+   "slot_dropped": "对账要求：该机械槽位在 plan.drops 里（台账已把它删掉/改绑）",
+   "text_override": "对账要求：该槽在 plan.text_overrides 里，且绑定的原版行 ≠ 机械配对行",
+   "row_inserted": "对账要求：该原版行在 plan.inserts 的插入区间里",
+   "none": "无需台账动作"
+  },
+  "口径": "本表只记账，不改判据：承载图仍是资源/跳转映射的机械底图；产物以 resource/adjudication/ 的决定为准。若哪天重新生成承载图导致某条机械配对消失，对账脚本报 STALE（提示本表该条可退休），不报警。"
+ },
+ "quirks": [
+  {
+   "script": "AGE_005",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     271,
+     271
+    ],
+    "steam": [
+     185,
+     185
+    ]
+   },
+   "truth": "s185 是 Steam 自写行「――！？」；o271「お互い、体をまさぐりながら…」夹在 o270 与 o272 之间",
+   "ledger": "新增条目 s185 rebind←o271（原为净丢，且 s185 是未登记的默认 keep）",
+   "ledger_rule": "slot_dropped",
+   "evidence": "tmp/_q_anchor_verify.md"
+  },
+  {
+   "script": "AGE_008",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     317,
+     317
+    ],
+    "steam": [
+     315,
+     315
+    ]
+   },
+   "truth": "s315 是被净化改写过的旁白「佳奈子听错了的那番话……」；o317「セ……セフレ……。」未承载",
+   "ledger": "新增条目 s315 rebind←o317",
+   "ledger_rule": "slot_dropped",
+   "evidence": "tmp/_q_anchor_verify.md"
+  },
+  {
+   "script": "ASA_003",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     323,
+     323
+    ],
+    "steam": [
+     294,
+     294
+    ]
+   },
+   "truth": "s294「Mmmmm...」属 Steam 新写的夜景段；o323「そう、俺には約束があるのだった。」未承载",
+   "ledger": "EQR_B1_ASA_003 扩为 [323,348]↔[294,319]，补 s294 rebind←o323",
+   "ledger_rule": "slot_dropped",
+   "evidence": "tmp/_q_anchor_verify2.md"
+  },
+  {
+   "script": "AMA_004",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     657,
+     657
+    ],
+    "steam": [
+     663,
+     663
+    ]
+   },
+   "truth": "真承载格是 s637（同语音 AMA_1712、官中同句）；s663 属被删的 Steam 告白替代段",
+   "ledger": "FIX13_AMA_004_657_657 由 rebind 改 drop（去重复插入）",
+   "ledger_rule": "slot_dropped",
+   "evidence": "tmp/_q_ama004.md"
+  },
+  {
+   "script": "AMA_004",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     662,
+     662
+    ],
+    "steam": [
+     684,
+     684
+    ]
+   },
+   "truth": "真承载格是 s642（同语音 AMA_1713）；s684 属被删的 Steam 替代段",
+   "ledger": "FIX13_AMA_004_662_662 由 rebind 改 drop",
+   "ledger_rule": "slot_dropped",
+   "evidence": "tmp/_q_ama004.md"
+  },
+  {
+   "script": "KOT_006",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     691,
+     691
+    ],
+    "steam": [
+     597,
+     597
+    ]
+   },
+   "truth": "s597「哇哇，小碧啊！」是替代句；o691「小鳥は言われた通りに…」被漏",
+   "ledger": "FIX43_KOT_006_691_597 由 insert-only 升级为 rebind",
+   "ledger_rule": "slot_dropped",
+   "evidence": "tmp/anchor_review/SUMMARY.md"
+  },
+  {
+   "script": "KOT_009",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     433,
+     433
+    ],
+    "steam": [
+     437,
+     437
+    ]
+   },
+   "truth": "o433「小鳥も、抱きしめ返してくる。」已由 s433 承载；s437 是替代句",
+   "ledger": "KOT_009 [433,432]↔[433,436] 扩为 [433,437]，s437 补 drop",
+   "ledger_rule": "slot_dropped",
+   "evidence": "tmp/_q_d7.md"
+  },
+  {
+   "script": "KOT_009",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     437,
+     437
+    ],
+    "steam": [
+     449,
+     449
+    ]
+   },
+   "truth": "s449「……嘿嘿，碧，最喜欢你了！」是替代句；o437「小鳥をベッドに寝かせた。」被漏",
+   "ledger": "FIX43_KOT_009_437_449 由 insert-only 升级为 rebind",
+   "ledger_rule": "slot_dropped",
+   "evidence": "tmp/_q_d7.md"
+  },
+  {
+   "script": "AGE_010",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     24,
+     24
+    ],
+    "steam": [
+     23,
+     23
+    ]
+   },
+   "truth": "真对齐是 o23↔s23（语音 AGE_3537）、o24↔s24（语音 AGE_3538）；s23 本来就承载 o23",
+   "ledger": "[21,23]↔[21,22] 扩为 [21,23] 并给 s23 挂 keep+text_override(bind o23)；[25,53]↔[24,31] 去掉 s24 的 drop、插入锚点改 24",
+   "ledger_rule": "text_override",
+   "evidence": "tmp/_q_age010.md"
+  },
+  {
+   "script": "AGE_005",
+   "kind": "missing_seam",
+   "mechanical": {
+    "orig": [
+     167,
+     167
+    ],
+    "steam": [
+     182,
+     182
+    ]
+   },
+   "truth": "o167「あげはの指が、胸元に動く。」夹在还原段 [162,166] 与 [168,270] 之间被漏",
+   "ledger": "FIX43_AGE_005_167_182：insert [182,167,167]",
+   "ledger_rule": "row_inserted",
+   "evidence": "doc/restoration-targets.md"
+  },
+  {
+   "script": "AGE_007",
+   "kind": "missing_seam",
+   "mechanical": {
+    "orig": [
+     202,
+     202
+    ],
+    "steam": [
+     190,
+     190
+    ]
+   },
+   "truth": "o202 的内容在 s188，而该拍两侧被 drop ⇒ o202 本身净丢",
+   "ledger": "FIX43：insert（见 §48「外加 1 条真冲突」）",
+   "ledger_rule": "row_inserted",
+   "evidence": "doc/restoration-targets.md"
+  },
+  {
+   "script": "AGE_007",
+   "kind": "missing_seam",
+   "mechanical": {
+    "orig": [
+     425,
+     425
+    ],
+    "steam": [
+     421,
+     421
+    ]
+   },
+   "truth": "o425 夹在两段还原插入之间被漏",
+   "ledger": "FIX43_AGE_007_425 系单行缝 insert",
+   "ledger_rule": "row_inserted",
+   "evidence": "doc/restoration-targets.md"
+  },
+  {
+   "script": "AGE_007",
+   "kind": "missing_seam",
+   "mechanical": {
+    "orig": [
+     495,
+     495
+    ],
+    "steam": [
+     425,
+     425
+    ]
+   },
+   "truth": "o495「ここは確かに、人目につかないが……」属被喷嚏擦鼻段顶替的湖边野外段",
+   "ledger": "FIX43_AGE_007_495_425：整段顶替，插回",
+   "ledger_rule": "row_inserted",
+   "evidence": "tmp/recheck_blocks/SUMMARY.md"
+  },
+  {
+   "script": "AMA_004",
+   "kind": "missing_seam",
+   "mechanical": {
+    "orig": [
+     664,
+     664
+    ],
+    "steam": [
+     697,
+     697
+    ]
+   },
+   "truth": "o664「俺は上半身を起こした。」夹在还原段之间被漏",
+   "ledger": "FIX43_AMA_004_664_697：insert [697,664,664]",
+   "ledger_rule": "row_inserted",
+   "evidence": "doc/restoration-targets.md"
+  },
+  {
+   "script": "AMA_006",
+   "kind": "missing_seam",
+   "mechanical": {
+    "orig": [
+     759,
+     759
+    ],
+    "steam": [
+     713,
+     713
+    ]
+   },
+   "truth": "o759「……ここなら見られる心配ないんで」夹在还原段之间被漏",
+   "ledger": "FIX43_AMA_006_759_713：insert [713,759,759]",
+   "ledger_rule": "row_inserted",
+   "evidence": "doc/restoration-targets.md"
+  },
+  {
+   "script": "AMA_010",
+   "kind": "missing_seam",
+   "mechanical": {
+    "orig": [
+     286,
+     286
+    ],
+    "steam": [
+     254,
+     254
+    ]
+   },
+   "truth": "o286 夹在两段还原插入之间被漏",
+   "ledger": "FIX43_AMA_010_286 系单行缝 insert",
+   "ledger_rule": "row_inserted",
+   "evidence": "doc/restoration-targets.md"
+  },
+  {
+   "script": "AMA_007",
+   "kind": "missing_seam",
+   "mechanical": {
+    "orig": [
+     741,
+     741
+    ],
+    "steam": [
+     460,
+     460
+    ]
+   },
+   "truth": "o741「色々拭き取って、身なりを整え直した後、俺は……」与 o742 同句跨行，被区间起点漏掉",
+   "ledger": "插入区间 [742,762] 扩为 [741,762]",
+   "ledger_rule": "row_inserted",
+   "evidence": "tmp/_q_anchor_verify.md"
+  },
+  {
+   "script": "CO2_002",
+   "kind": "split_row",
+   "mechanical": {
+    "orig": [
+     252,
+     252
+    ],
+    "steam": [
+     252,
+     252
+    ]
+   },
+   "truth": "原版 o252 一整句被 Steam 拆成 s252+s253；自 o253 起两侧恒 +1 位移（零删减）",
+   "ledger": "无需动作（台账已记『机械锚错位假象』）",
+   "ledger_rule": "none",
+   "evidence": "tmp/anchor_review/ctx_CO2_002.md"
+  },
+  {
+   "script": "CO1_003",
+   "kind": "split_row",
+   "mechanical": {
+    "orig": [
+     134,
+     134
+    ],
+    "steam": [
+     134,
+     134
+    ]
+   },
+   "truth": "原版 o134 一整句被 Steam 拆成 s134+s135；自 o135 起两侧恒 +1 位移（零删减）",
+   "ledger": "无需动作（台账 [135,136]↔[135,137] 已判『机械锚错位假象』）",
+   "ledger_rule": "none",
+   "evidence": "tmp/anchor_review/ctx_CO1_003.md"
+  },
+  {
+   "script": "AGE_005",
+   "kind": "false_anchor",
+   "mechanical": {
+    "orig": [
+     135,
+     135
+    ],
+    "steam": [
+     126,
+     126
+    ]
+   },
+   "truth": "两侧共用 CN 名 AGE_06_007S 把锚钉偏一格：真身 o134↔s126（AGE_06_002S）、o135↔s127（AGE_06_007S）",
+   "ledger": "resource/cg_site_rewrites.json 成对登记 s126←o134 与 s127←o135；台账 [132,134] waived 收为 [132,133]",
+   "ledger_rule": "slot_dropped",
+   "evidence": "tmp/_q_o134_before.md"
+  }
+ ]
+}

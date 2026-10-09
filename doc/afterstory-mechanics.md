@@ -351,7 +351,7 @@ var101 == 3（第 3 页）var110 1..3  → 全局 19/20/21 → 各自 SetFlag 12
 - 两版引擎各自带 256 项操作数格式表；**Steam = 原版 + 若干操作码尾部追加常量操作数（`0x00` / f32 `0.0`）+ 新增操作码**，不存在原版有而 Steam 无的操作码 ⇒ 原版脚本总是可转换。
 - SL 脚本用到的差异操作码仅 6 个：`0x11`（str 与 f32 间插 `0x00`）、`0x14`/`0x15`/`0x16`（尾插 `0x00`）、`0x1e`/`0x28`（尾插 f32 `0.0`）；其余操作码格式一致、操作数两版逐字节相同，原样复制。
 - `0x1c` 两版都是**双 name**（第二个为空串），只差尾部 1 个 u8，且 SL 脚本不含 `0x1c`；`0x84` 在原版表中为 NULL（Steam 新增操作码），原版脚本里的 `0x84` 字节只是操作数 ⇒ 不存在「原版 `0x1c` 单 name」「原版转场标记 `0x84`」这两种形态。
-- **转换实现**：`script/convert_sl_ws2.py` 把 4 个原版裸 `SL_*.ws2` 转为 Steam 编码（校验：Steam 表回读自洽、头部 `var127=1.0`/`var110=18..21` 与尾部 `SetFlag 126=0 → NextFile "TITLE"` 原样、无成就指令混入）。产物在 L4 构建层 `tmp/_l4/asset/RIO/`。
+- **转换实现**：`script/build/convert_sl_ws2.py` 把 4 个原版裸 `SL_*.ws2` 转为 Steam 编码（校验：Steam 表回读自洽、头部 `var127=1.0`/`var110=18..21` 与尾部 `SetFlag 126=0 → NextFile "TITLE"` 原样、无成就指令混入）。产物在 L4 构建层 `tmp/_l4/asset/RIO/`。
 - ⚠️ **插入取值的依据 = Steam 自身 159 个成员中该字段的取值分布**（`0x11` 插值 1552/1552 为 `0x00`、`0x14` 43881/43886、`0x15` 87739/87739、`0x16` 7950/7950、`0x1e` 1149/1150、`0x28` 20947/20948 为 `0.0`；反例全部来自线性解析失步的 `CG_PAGE09` 系）。**两版同名的 `CO1_*`/`HUT_004` 配对脚本不可用于取值验证**：它们两版正文已分化（`CO1_001` 首指令原版 `0x16` vs Steam `0xf0`，`CO1_003/015`、`HUT_004` 在第 3–5 条即分叉），无法逐条对齐。交叉验证：同一批原版脚本用 Steam 表解析会在开头 `0xc2`–`0x406` 处撞到无格式操作码而失败，用原版表则完整解析（6234/6571/5156/5950 条）；还原产物反之 —— 只有 Steam 表能完整解析，且指令数与原版一致。
 
 ---
@@ -384,7 +384,7 @@ var101 == 3（第 3 页）var110 1..3  → 全局 19/20/21 → 各自 SetFlag 12
 | 2 | `Script.arc` → `ui_language.lua`（或任一已 include 模块） | 追加 `function openAfter(...) return openSceneSelect(...) end` | **1 行** | 低（⚠️ 依赖 §4.6） |
 | 3 | `Rio.arc` | 新增 4 个 `SL_*.ws2`（原版裸 `RIO/SL_*.ws2` 回填，须按 Steam WS2 编码校验／转换） | 小 | 中（§5.4） |
 | 4 | `mainmenu.ws2` / `REPLAY_EXE.ws2` / `start.ws2` / `ui_button.lua` / `menu_base.lua` | **无** | — | — |
-| 5 | `SysGraphic.arc` / `PVOICE.arc` / `PCHIP.arc` / `PBGM.arc` / `PSE.arc` / `CHIP4.arc` | 回填 `SL_*` 引用资源 | 中 | 低（同名冲突按项目约定「只隔离改名、禁覆盖」处理） |
+| 5 | `SysGraphic.arc` / `PVOICE.arc` / `PCHIP.arc` / `PBGM.arc` / `PSE.arc` / `CHIP4.arc` | 回填 `SL_*` 引用资源 | 中 | 低（同名冲突一律**整名覆盖**回原版、不改名，动作逐名见判定表 `resource/censor_map.json` 与 [resource-naming.md](resource-naming.md) §1–§3） |
 
 **备选方案（改动 1）**：pc 90 的 C 操作数改为寄存器 `R2`（`0x8bc6c049` → `0x8b808049`，同偏移 2 字节）⇒ `PatchFlag = GetFlag(1005)`，sweet 按钮仅在 YOR 通关后创建。与原版「补丁开关」语义不同，但最终可见结果（5 线全通才可点）一致。
 
@@ -400,7 +400,7 @@ var101 == 3（第 3 页）var110 1..3  → 全局 19/20/21 → 各自 SetFlag 12
 | **A. 归档重建** | 把 `SL_*.ws2` 打进 `asset/Rio.arc` | 无（一定可行） |
 | **B. 裸目录覆盖** | 交付 `RIO/SL_*.ws2` 裸文件，**与原版特典同形** | 读取裸目录 ✅（实机：`Rio.arc` 内无 `SL_*`，覆盖后仍能进入后日谈）；同名成员的**优先级**待测 |
 
-路线 B 可省去归档重建、天然满足「零破坏性」，且**与原版发行形态一致**；路线 A 是保底。
+路线 B 可省去归档重建，交付面只有新增的裸文件、不触碰任何既有归档（**改动面收敛**），且**与原版发行形态一致**；路线 A 是保底。
 
 > **裁定**：4 个 `SL_*.ws2` 走**路线 B（裸 `RIO/`）**；`start.ws2` 走**就地修改**（不交付裸覆盖）；`CO1_001/002/003/015`、`HUT_004/005` **不引入**。⚠️ 但**引用资源**另有归档路由障碍（Steam 不加载 `PVOICE/PCHIP/PBGM`），见 §9.4。
 
@@ -439,7 +439,7 @@ var101 == 3（第 3 页）var110 1..3  → 全局 19/20/21 → 各自 SetFlag 12
 1. **4 个 `SL_*.ws2` 走磁盘裸 `RIO/` 目录**（与原版スウィートラブパッチ同形），**不进 `Rio.arc`**。
 2. **`start.ws2` 就地修改，不走裸覆盖** —— 在归档内改，不交付裸 `RIO/start.ws2`。理由：原版裸文件用 `PULLTOP_LOGO_BLUE.PNG`、Steam 用 `MOENOVEL_LOGO.PNG`，直接覆盖会顶掉 Steam 的 logo。
 3. **忽略** `CO1_001/002/003/015.ws2`、`HUT_004/005.ws2`（属 L5）。
-4. **33 张后日谈分层立绘（G9）不由 L4 交付**：这 33 名全部被原版主线脚本引用 ⇒ 归本体线的缺失资源工序并入 `GRAPHIC.arc`，L4 只按名端到端验收（`python script/build_l4.py --verify <产物目录或 GRAPHIC.arc>`）。
+4. **33 张后日谈分层立绘（G9）不由 L4 交付**：这 33 名全部被原版主线脚本引用 ⇒ 归本体线的缺失资源工序并入 `GRAPHIC.arc`，L4 只按名端到端验收（`python script/build/build_l4.py --verify <产物目录或 GRAPHIC.arc>`）。
 
 ### 9.2 改动清单（精确偏移）
 
@@ -447,14 +447,14 @@ var101 == 3（第 3 页）var110 1..3  → 全局 19/20/21 → 各自 SetFlag 12
 |---|---|---|---|
 | **G1** | `Script.arc` → `LegacyGame.lua` | `49 c0 c6 8b` → `49 00 c9 8b`（解除 `PatchFlag` 硬置 false） | 成员内 **`0x234b0`**（4 B） |
 | **G2** | `Script.arc` → `LegacyGame.lua` | 字符串常量项 `\x04 <len=16> "openSceneSelect"\0` → `\x04 <len=10> "openAfter"\0`（**长度前缀与含 NUL 的字节块一起改**，15 字符 → 9 字符）—— 直接接上 `mainmenu.ws2` 的 `ExecuteFunction "openAfter"` | 成员内 **`0x2a18`**（全库唯一一处） |
-| **G3** | 裸 `RIO/SL_{KOT,AGE,AMA,HUT}_001.ws2` | 从原版裸 `RIO/` 回填并转成 **Steam WS2 编码**：语义零改动，只有「补插恒为 0 的新操作数」＋「跳转偏移重定基」两类编码适配（见 §5.4 与 [file-formats.md](file-formats.md)） | 源：原版 `RIO/`；构建器 `script/convert_sl_ws2.py` |
+| **G3** | 裸 `RIO/SL_{KOT,AGE,AMA,HUT}_001.ws2` | 从原版裸 `RIO/` 回填并转成 **Steam WS2 编码**：语义零改动，只有「补插恒为 0 的新操作数」＋「跳转偏移重定基」两类编码适配（见 §5.4 与 [file-formats.md](file-formats.md)） | 源：原版 `RIO/`；构建器 `script/build/convert_sl_ws2.py` |
 | **G4** | `Rio.arc` → `start.ws2` | `SetFlag 1000` 0→1：解码偏移 **5** 的 `00`→`01`；原始文件（rotate-6）同偏移 `00`→**`04`** | 成员偏移 **`0x05`** |
 | **G5** | `zh-CN/Rio.arc` | 追加 4 个 `SL_*.lng`：构建时从 `resource/fan_cn/SL_*.json` 现做（`tool/fancn.load_texts` → `tool/lng.encode_lng`，XOR 0x88），不留档 | 见 §9.3 |
-| **G6** | `Script.arc` → `ArcFileName.lua` | 注入 `GetFlag(126) == 1` 归档路由分支（**A2 精简**：graphics +66 条 → `PChip.arc`、sound +34 条 → `PVoice.arc`，**不含 `bgm` 子块**） | 插入点 graphics pc 18 / sound pc 27；构建器 `script/build_l4.py` |
+| **G6** | `Script.arc` → `ArcFileName.lua` | 注入 `GetFlag(126) == 1` 归档路由分支（**A2 精简**：graphics +66 条 → `PChip.arc`、sound +34 条 → `PVoice.arc`，**不含 `bgm` 子块**） | 插入点 graphics pc 18 / sound pc 27；构建器 `script/build/build_l4.py` |
 | **G7** | `PVOICE.arc` / `PCHIP.arc` | 原版**整档复制**（1253 个 `*_100xx.ogg` / 126 个 `*_P*_*.png`），裸归档放游戏根目录 | 源：原版根目录 |
 | **G8** | `SE.arc` | 追加 3 个 `PSE` 独有 SE（`T_se91.ogg`／`pw129_4.ogg`／`se43b.ogg`） | 见 §9.7-3 |
-| **G9** | `GRAPHIC.arc`（**L4 不写盘**） | 33 个后日谈 PNA 分层立绘由**本体线**并入 `GRAPHIC.arc`；L4 按名单逐一断言产物含这 33 名，并复核名单未漂移（原版有／Steam 基线无）。缺则 `st01` 等立绘槽加载 `Bあげは_01L.pna` 失败并报 `サブプレイヤーが存在しません`；名单见 `script/build_l4.py` `SL_PNA` | 验收器 `script/build_l4.py --verify` |
-| **G10** | `zh-CN/Rio.arc` | `NameTable.txt` 合并 L2 的 `resource/fan_cn/NameTable.json`（99 条日文名牌键；读取时把组合名中点 `·` 归一为官方用字 `・`）。官方表只覆盖英文键，还原脚本的 `%LC小鳥` 等查不到会裸显日文；机制见 [file-formats.md](file-formats.md) §NameTable，L4 侧不维护条目，只逐一断言 `SL_*` 用到的 8 个键在表内（名单 `script/build_l4.py` `SL_NAME_KEYS`） | 构建器 `script/build_nametable.py` |
+| **G9** | `GRAPHIC.arc`（**L4 不写盘**） | 33 个后日谈 PNA 分层立绘由**本体线**并入 `GRAPHIC.arc`；L4 按名单逐一断言产物含这 33 名，并复核名单未漂移（原版有／Steam 基线无）。缺则 `st01` 等立绘槽加载 `Bあげは_01L.pna` 失败并报 `サブプレイヤーが存在しません`；名单见 `script/build/build_l4.py` `SL_PNA` | 验收器 `script/build/build_l4.py --verify` |
+| **G10** | `zh-CN/Rio.arc` | `NameTable.txt` 合并 L2 的 `resource/fan_cn/NameTable.json`（99 条日文名牌键；读取时把组合名中点 `·` 归一为官方用字 `・`）。官方表只覆盖英文键，还原脚本的 `%LC小鳥` 等查不到会裸显日文；机制见 [file-formats.md](file-formats.md) §NameTable，L4 侧不维护条目，只逐一断言 `SL_*` 用到的 8 个键在表内（名单 `script/build/build_l4.py` `SL_NAME_KEYS`） | 构建器 `script/build/build_nametable.py` |
 
 **G3 跳转重定基约束**：插入式编码转换必须重定基**所有**携带绝对偏移的跳转。每个 `SL_*` 只有 **2 条 `0x01.b` ＋ 1 条 `0x06`** 的目标因插入而改变（4 个文件合计 8 + 4 处），二者分属两条不同路径：
 
@@ -477,7 +477,7 @@ var101 == 3（第 3 页）var110 1..3  → 全局 19/20/21 → 各自 SetFlag 12
 
 文本主产物是逐脚本 JSON：`resource/fan_cn/SL_{KOT,AGE,AMA,HUT}_001.json`（875 / 851 / 714 / 788 槽，按原版 idx）。`.lng` 是引擎装载形态，**构建时现做**：`tool/fancn.load_texts()` 按 idx 展开槽位（空洞为空串）→ `tool/lng.encode_lng(key=0x88)` → 直接封进 `zh-CN/Rio.arc`，L4 无翻译工作量，也不保留 `.lng` 留档。
 
-**不留档的依据**：留档与主产物分属两次重建会**静默落后** —— 重跑文本层只刷新 JSON，磁盘上的 `.lng` 停在上一波，且没有任何断言会因此变红。失步量级的实测见 [script-text-extraction.md](script-text-extraction.md) §6「装载形态不留档」。按需生成后该失步类别不存在。
+**不留档的依据**：留档与主产物分属两次重建会**静默落后** —— 重跑文本层只刷新 JSON，磁盘上的 `.lng` 停在上一波，且没有任何断言会因此变红。见 [script-text-extraction.md](script-text-extraction.md) §5「装载形态不留档」。按需生成后该失步类别不存在。
 
 现做口径的复核：104 个脚本按 JSON 现做的 `.lng` 与此前留档**逐字节相同**（`SL_*` 4 个 0 差异槽），且 G5 改读取源前后 `zh-CN/Rio.arc` md5 相同 ⇒ 施工层生成与旧留档等价，文本改动必然落到产物。
 
@@ -561,7 +561,7 @@ getGraphicsArcFileName(slot, R1)               # 判定全用 R1（文件名）
 
 ### 9.5 路线 A 的字节级实现
 
-**结论：不需要 Lua 5.1 编译器。** 实现 = `script/build_l4.py` 的 `inject_route_branches()`（G6）：把原版 `main.41`／`main.42` 的 flag 126 分支整块搬进 Steam `ArcFileName.lua`，输出可被完整反汇编回读。
+**结论：不需要 Lua 5.1 编译器。** 实现 = `script/build/build_l4.py` 的 `inject_route_branches()`（G6）：把原版 `main.41`／`main.42` 的 flag 126 分支整块搬进 Steam `ArcFileName.lua`，输出可被完整反汇编回读。
 
 **三条支撑事实**
 
@@ -571,7 +571,7 @@ getGraphicsArcFileName(slot, R1)               # 判定全用 R1（文件名）
 2. **插入块内部全为相对跳转 ⇒ `sBx` 与原版逐条相同，可原样复制。** 原版 `JMP pc += 60`（graphics）／`JMP pc += 42`（sound）在块内位置恰好等于块长度，逐位吻合。
 3. **插入点前后都没有需要修正的跳转。** 插入点（graphics = Steam `main.1` pc **18**；sound = Steam `main.3` pc **27**）之前的 `JMP` 目标也在插入点之前；之后的 `JMP` **全部是 `sBx = +2` 的局部短跳**。⇒ **零跳转修正。**
 
-**改动量（实测）**
+**改动量**
 
 | proto | code | 常量 | maxstack | 插入位置 |
 |---|---|---|---|---|
@@ -582,10 +582,10 @@ getGraphicsArcFileName(slot, R1)               # 判定全用 R1（文件名）
 
 **另需同步**：`lineinfo` 数组在 Steam 侧已被 strip（`nli == 0`），**无需同步插入**（`luaU_undump` 不校验 `sizelineinfo == sizecode`）。成员变大后须用 `tool/arcbuild.py` 重建 `Script.arc`。
 
-**实测提醒**：`getJPatchFlag()` 在 Steam `main.1` 的 pc 0–1 被调用但返回值从未被读（`local patch = getJPatchFlag()` 的死代码，分支体已删）⇒ **不能复用 `getJPatchFlag` 做 126 分支**，必须新调 `cfunc.LegacyGame__lua_GetFlag(126)`。
+**注意**：`getJPatchFlag()` 在 Steam `main.1` 的 pc 0–1 被调用但返回值从未被读（`local patch = getJPatchFlag()` 的死代码，分支体已删）⇒ **不能复用 `getJPatchFlag` 做 126 分支**，必须新调 `cfunc.LegacyGame__lua_GetFlag(126)`。
 
 **A2 精简变体（当前交付采用，只路由真正不同的部分）**：去掉末尾的 `bgm` → `PBgm.arc` 子块后，sound 块 **48 → 34 条**，**只需修正块首那一条 `JMP` 的 `sBx`（42 → 28）**，其余全部不变。回读反汇编落点正确（插入点 pc 27 + 34 = 61），常量映射中不再出现 `PBgm.arc`。
-依据：`PBGM.arc` 的 15 个成员与主线 `BGM.arc` **md5 完全相同**（§9.7-3），让 `bgm` 走常规 `Bgm.arc` 行为完全等价 ⇒ 可省 33 MB 交付。`script/build_l4.py` 即按此形态注入（sound 块只含 `char`/`bgv`）。
+依据：`PBGM.arc` 的 15 个成员与主线 `BGM.arc` **md5 完全相同**（§9.7-3），让 `bgm` 走常规 `Bgm.arc` 行为完全等价 ⇒ 可省 33 MB 交付。`script/build/build_l4.py` 即按此形态注入（sound 块只含 `char`/`bgv`）。
 
 > **⚠️ 措辞红线**：跳过的是**待注入的 `flag 126` 块里**的 `bgm` 子块（即「不搬」这一子块），**不是删除 Steam 常规链里的 `find(R0,"bgm") → Bgm.arc`**。后者是主线 BGM 的唯一路由，删掉会让全游戏 BGM 落入 `Se.arc` 兜底而全部失效。
 > 同理，`char`/`bgv` 子块**不能省** —— `PVOICE` 的 1253 个与 `VOICE.arc` **0 同名**，省掉就是真缺语音。
@@ -596,7 +596,7 @@ getGraphicsArcFileName(slot, R1)               # 判定全用 R1（文件名）
 |---|---|---|
 | `.ogg` | 1256 | **`PVOICE.arc` 1253**（全部为 10000 段语音，**仅被 4 个 `SL_*` 引用**）＋ `PSE.arc` **3**（`T_se91`／`pw129_4`／`se43b`）；`PSE` 剩余 22 个与 `SE.arc` 同名（md5 全同 ⇒ 跳过） |
 | `.png` | 139 | **`PCHIP.arc` 126** |
-| `.pna` | **33** | **原版 `GRAPHIC.arc`**（5 位女主后日谈分层立绘 `A小鳥/Bあげは/C天音/D亜紗/E夜瑠_0X_[L/M/W].pna`；路由按默认分支 → `Graphic.arc`，与 flag 126 无关 ⇒ 须并入 `GRAPHIC.arc`；该并入属本体线缺失资源工序，L4 只验收（见 §9.2 G9））。另：`EST_2302.PNG`/`EST_334.PNG`（仅 `SL_HUT_001` 各引用 1 次）**原版发行版亦缺**，属原版 Sweet Love 补丁自身缺口，按零破坏纪律保持原样 |
+| `.pna` | **33** | **原版 `GRAPHIC.arc`**（5 位女主后日谈分层立绘 `A小鳥/Bあげは/C天音/D亜紗/E夜瑠_0X_[L/M/W].pna`；路由按默认分支 → `Graphic.arc`，与 flag 126 无关 ⇒ 须并入 `GRAPHIC.arc`；该并入属本体线缺失资源工序，L4 只验收（见 §9.2 G9））。另：`EST_2302.PNG`/`EST_334.PNG`（仅 `SL_HUT_001` 各引用 1 次）**原版发行版亦缺**，属原版 Sweet Love 补丁自身缺口，两侧都无此素材、无源可取，按改动面收敛纪律保持原样 |
 
 ⚠️ 「哪儿都找不到」的残留清单必须用**完整名匹配**复核：朴素正则会把前置操作码字节混进文件名（如 `fEFMSK_11.PNG` 实为 `EFMSK_11.PNG`，Steam `GRAPHIC.arc` 已有），Shift-JIS 成员名同样会被截断；复核后仅 `EST_2302/334.PNG` 这类为真缺。
 
@@ -694,8 +694,8 @@ getGraphicsArcFileName(slot, R1)               # 判定全用 R1（文件名）
 
 | 交付项 | 引用面 | 归属 | L4 侧动作 |
 |---|---|---|---|
-| **G9** 33 张分层立绘 `.pna` | **33/33 被原版主线脚本引用**（每名 16–2569 处）；Steam 脚本**零引用**；`SL_*` 亦引用每名 1–105 处 | **L3** 缺失资源工序（无同名冲突 ⇒ 继承原名，见 [resource-naming.md](resource-naming.md)） | **不搬运文件**；对产物 `GRAPHIC.arc` 逐名断言这 33 名在位（`script/build_l4.py --verify`） |
-| **G10** `NameTable.txt` 补充 | 名牌族只有 `%LC` 一族（脚本侧 63074 处引用、196 个去重键）；**非 ASCII 键 100 个，官方表 94 键全 ASCII ⇒ 覆盖 0 个**；引用面 = 仅主线 **92** ／ 主线+FD **7** ／ 仅 FD **1**。L2 产物 `resource/fan_cn/NameTable.json`（99 条，**覆盖这 100 个键里的 99 个、零冗余键**；未覆盖的 1 个键引用面为**仅主线** ⇒ **`SL_*` 用到的 8 个键（7 共用 + 1 专属）全部命中，L4 侧零缺口**） | **L2/L3 的 zh-CN 构建**（`script/build_nametable.py` 是唯一的合并出口：官方保序在前 + 日文键追加） | 构建器直接消费 `resource/fan_cn/NameTable.json`（组合名中点在读取时 `·`→`・` 归一）；L4 侧**不维护条目**，只按 `SL_NAME_KEYS` 断言这 8 键在合并表内。消费前提见 §10.3 |
+| **G9** 33 张分层立绘 `.pna` | **33/33 被原版主线脚本引用**（每名 16–2569 处）；Steam 脚本**零引用**；`SL_*` 亦引用每名 1–105 处 | **L3** 缺失资源工序（无同名冲突 ⇒ 继承原名，见 [resource-naming.md](resource-naming.md)） | **不搬运文件**；对产物 `GRAPHIC.arc` 逐名断言这 33 名在位（`script/build/build_l4.py --verify`） |
+| **G10** `NameTable.txt` 补充 | 名牌族只有 `%LC` 一族（脚本侧 63074 处引用、196 个去重键）；**非 ASCII 键 100 个，官方表 94 键全 ASCII ⇒ 覆盖 0 个**；引用面 = 仅主线 **92** ／ 主线+FD **7** ／ 仅 FD **1**。L2 产物 `resource/fan_cn/NameTable.json`（99 条，**覆盖这 100 个键里的 99 个、零冗余键**；未覆盖的 1 个键引用面为**仅主线** ⇒ **`SL_*` 用到的 8 个键（7 共用 + 1 专属）全部命中，L4 侧零缺口**） | **L2/L3 的 zh-CN 构建**（`script/build/build_nametable.py` 是唯一的合并出口：官方保序在前 + 日文键追加） | 构建器直接消费 `resource/fan_cn/NameTable.json`（组合名中点在读取时 `·`→`・` 归一）；L4 侧**不维护条目**，只按 `SL_NAME_KEYS` 断言这 8 键在合并表内。消费前提见 §10.3 |
 | **G8** 3 个 `PSE` 独有 SE | `T_se91`（`SL_AMA_001`）、`pw129_4`（`SL_HUT_001`）**仅 `SL_*` 引用**；`se43b` 另被原版 `AMA_010`、`KOT_003` 引用，而 Steam 脚本无此引用 ⇒ 该引用属被阉割的本体内容 | `se43b` → **L3**；其余 2 个 → L4 | 校验 `SE.arc` 含 3 名 |
 | **G7** `PVOICE`（1253 个语音基名） | **全部仅 `SL_*` 引用** | L4 | 保持 |
 | **G7** `PCHIP`（138 个 PNG 基名） | 127 个被 `SL_*` 引用；91 个被非 `SL_*` 引用，但其中 **90 个的这类引用只来自 `CG_PAGE12`** —— 后日谈 CG 相册页的条目表（该成员含内嵌数据表，线性解析会失步，见 [file-formats.md](file-formats.md) 的「Steam 表覆盖缺口」；Steam 侧该页数据仍保留）；余下 1 个是 `AMA_08_002S`（唯一同名同内容者，`AMA_009`/`CG_PAGE04`/`CG_PAGE06` 命中皆由此） | L4（"主线引用"实为后日谈数据页） | 保持 |
@@ -707,22 +707,22 @@ getGraphicsArcFileName(slot, R1)               # 判定全用 R1（文件名）
 
 1. **本体先行**：L1–L3 的交付应包含 33 张 `.pna`、`se43b`、以 L2 的 `resource/fan_cn/NameTable.json` 为来源合并出的**全量** `%LC` 日文键名牌表（官方 94 键 + 100 个日文键，见 §10.3），以及通用的原版→Steam WS2 编码转换能力。
 2. **L4 校验**：L4 构建前逐项按名断言「交付归档含该成员」「NameTable 含该键」「`SL_*.ws2` 经公共转换器回读通过」；断言失败的缺口若落在主线引用面 ⇒ **回报本体线**，不在 L4 内代做。
-3. **按需加工**：只有 FD 需要且本体范围天然不覆盖的增量由 L4 追加 —— 资源写进各自归档；名牌表 L4 **无自有条目**（§10.1 的 G10 行）。号段约定（`9X` 归 L1–L3、`8X` 归 L4）**仅在同名冲突改名时启用**，无冲突仍继承原名，因此两线并载同名资源不会撞名。
+3. **按需加工**：只有 FD 需要且本体范围天然不覆盖的增量由 L4 追加 —— 资源写进各自归档；名牌表 L4 **无自有条目**（§10.1 的 G10 行）。号段约定（`9X` 归 L1–L3、`8X` 归 L4）**只服务真新增资源**（新增资源需避让已占号位时才改号），无冲突仍继承原名，因此两线并载同名资源不会撞名。**同名内容差一律整名覆盖** ⇒ 不改名、不占号段（成员名不变）；后日谈侧**无「同名而内容不同」的成员**（唯一同名者 `AMA_08_002S` 系同名同内容）⇒ 覆盖方针在 L4 无适用面，只在主线 CHIP／GRAPHIC 工序里生效。
 
 ⇒ L4 的净自有交付 = **门控与路由（G1/G2/G4/G6）+ 后日谈独有资源（G7、`T_se91`、`pw129_4`）+ FD 文本层（G5）**；G10 的条目全部来自 L2 表（L4 只消费 + 断言），G9 的文件由本体线搬运（L4 只按名验收），`se43b` 同理应由本体线交付。
 
-**执行口径**：`script/build_l4.py` 不产出 `GRAPHIC.arc`，因此 L4 的独立输出树**不足以**完整实机验证后日谈（立绘槽会报 `サブプレイヤーが存在しません` 类加载失败）；后日谈的实机与端到端验收一律在本线产物（或游戏目录）上跑 `--verify`。
+**执行口径**：`script/build/build_l4.py` 不产出 `GRAPHIC.arc`，因此 L4 的独立输出树**不足以**完整实机验证后日谈（立绘槽会报 `サブプレイヤーが存在しません` 类加载失败）；后日谈的实机与端到端验收一律在本线产物（或游戏目录）上跑 `--verify`。
 
 ### 10.3 消费 L2 名牌表（`resource/fan_cn/NameTable.json`）的前提
 
-该表是 `script/build_fan_translations.py` 的产物（日文说话名不进正文、只进这张表，且显示名已过假名/占位符门禁），覆盖 §10.1 那 100 个非 ASCII 键里的 **99 个**，且不含脚本未引用的冗余键。它不能单独成为成品表，L4 的接入方式是把它作为补充条目喂给 `script/build_nametable.py`（这张 JSON 是补充条目的唯一来源；显示名要改就走机械层 `tool/textfix.py` 的 `NAME_FIX`，重建后落进 JSON）。以下四项分别是消费约束（1、2）与归属本体线的对账（3、4）：
+该表是 `script/corpus/build_fan_translations.py` 的产物（日文说话名不进正文、只进这张表，且显示名已过假名/占位符门禁），覆盖 §10.1 那 100 个非 ASCII 键里的 **99 个**，且不含脚本未引用的冗余键。它不能单独成为成品表，L4 的接入方式是把它作为补充条目喂给 `script/build/build_nametable.py`（这张 JSON 是补充条目的唯一来源；显示名要改就走机械层 `tool/textfix.py` 的 `NAME_FIX`，重建后落进 JSON）。以下四项分别是消费约束（1、2）与归属本体线的对账（3、4）：
 
-1. **必须与官方 94 键合并**。`build_fan_translations.py --emit-lng` 写出的 `NameTable.txt` **只含这 99 条、不含官方英文键** ⇒ 若用它建 `zh-CN/Rio.arc`，Steam 原生英文底本的名字串（`%LCKotori` 等）会全部查不中而裸显英文。合并出口只能是 `script/build_nametable.py`（官方保序在前 ⇒ 同键覆盖 ⇒ 新键追加），两线共用。
+1. **必须与官方 94 键合并**。`script/corpus/build_fan_translations.py --emit-lng` 写出的 `NameTable.txt` **只含这 99 条、不含官方英文键** ⇒ 若用它建 `zh-CN/Rio.arc`，Steam 原生英文底本的名字串（`%LCKotori` 等）会全部查不中而裸显英文。合并出口只能是 `script/build/build_nametable.py`（官方保序在前 ⇒ 同键覆盖 ⇒ 新键追加），两线共用。
 2. **组合名分隔符归一在读取时进行，不回写 L2 产物**：官方值域用 `・`(U+30FB)，出现 9 次（7 个组合值），`·`(U+00B7) 在官方值域**零出现**；本表 9 个组合值用的是 `·`，其中 **7 个**官方有同名组合（`%LCあげは・小鳥`→扬羽·小鸟 对官方 `%LCAgeha,Kotori`→扬羽・小鸟），统一为 `・` 后即逐字一致；余下 2 个（`%LC亜紗・依瑠`、`%LC碧・小鳥・亜紗・依瑠`）官方无对应组合，归一后仍是本表自有译法。本表**键**用的已是 `・`（9 个组合键），归一只动值 ⇒ 不会产生新键或撞键。
 3. **与官方英文表逐名对账**：99 个值里 38 个已在官方值域内（如 全员／小鸟／扬羽／云雀），61 个自造（多为配角，例：`%LCハット`→哈特、`%LCイスカ`→易鸟、`%LC先生`→先生、`%LC気象学者`→气象学者）；按第 2 条归一后自造数降到 **54**。反向可量化冲突面：官方 94 键中有 **48 条**（未归一时 55 条）的中文值没有被本表任何一个值用到，其中相当一部分与本表某条日文键疑似指向同一人（官方 `%LCTeacher`→老师 / 本表 `%LC先生`→先生；官方 `%LCIsuka`→伊斯卡 / 本表 `%LCイスカ`→易鸟；官方 `%LCAgeha's mother`→姬城妈妈 / 本表 `%LC姫城母`→姬城母亲；官方 `%LCTouring Club Staff`→机车社员 / 本表 `%LCツーリング部員`→旅游部员；官方 `%LCMeteorologist`→空中观察员 / 本表 `%LC気象学者`→气象学者）。两线并载时同一人物的名字串会分别命中英文键与日文键 ⇒ 同人不同译上屏，需按这 48 条逐条裁决同人关系再定名。**这项对账属本体线**：`SL_*` 用到的 8 个键中 **6 个与官方逐字相同**（小鸟／扬羽／天音／亚纱／依瑠／碧，各与一个英文键 1:1），余 2 个是官方无对应的组合名 ⇒ FD 侧不存在与官方冲突的人名。
 4. **1 个键补表也查不中**：`%LC%XS35ト　　　ビ　　　ウ　　　オ　　　荘%K%P` —— 名字串里嵌了 `%XS` 场景标记、全角空格和行尾 `%K%P`，而引擎查表是**整串精确匹配** ⇒ 官方表与本表都没有它。引用面为仅主线（原版 `Rio.arc`、裸 `RIO/` 各 1 处，`SL_*` 无）；这类要按 `0x15` 操作数的实际语义判定（名牌被标记切碎），属遗留缺陷，不在补表范围内。
 
-⇒ **L4 侧的落地形态**：`script/build_nametable.py` 以这张 JSON 为补充条目来源（读取时 `·`→`・` 归一），`script/build_l4.py` 用 `SL_NAME_KEYS` 断言 `SL_*` 的 8 个日文键都在合并表内。1、2 两项是**消费方式**的约束，3、4 两项是**归属本体线**的待办。
+⇒ **L4 侧的落地形态**：`script/build/build_nametable.py` 以这张 JSON 为补充条目来源（读取时 `·`→`・` 归一），`script/build/build_l4.py` 用 `SL_NAME_KEYS` 断言 `SL_*` 的 8 个日文键都在合并表内。1、2 两项是**消费方式**的约束，3、4 两项是**归属本体线**的待办。
 
 ## 11. 参考
 
@@ -732,6 +732,6 @@ getGraphicsArcFileName(slot, R1)               # 判定全用 R1（文件名）
 | 原版脚本 | 原版发行版的 `Rio.arc`、`Script.arc`（外置，见文首基线说明；其裸 `RIO/` 含 `SL_*.ws2`） |
 | Steam 脚本 | `backup/Rio.arc`、`backup/Script.arc` |
 | Lua 反汇编器 | `tmp/lua51dis.py`（Lua 5.1 undump 解析 + 反汇编；`tmp/` **未纳入版本管理**。**直接命令行调用**：`python tmp/lua51dis.py <file.lua> [--list\|--grep <s>\|--func <n 或 main.41>]`） |
-| Lua 路由注入 | `script/build_l4.py`（G6：常量追加 + 分支插入 + 序列化回写，**纯字节，无需 Lua 编译器**；原理见 §9.5） |
+| Lua 路由注入 | `script/build/build_l4.py`（G6：常量追加 + 分支插入 + 序列化回写，**纯字节，无需 Lua 编译器**；原理见 §9.5） |
 | 归档读写 | `tool/arcbuild.py`；WS2 编解码 `tool/ws2.py`；PNA 图层 `tool/pna.py` |
 | 原版 WS2 反汇编 | `tool/ws2dis.py` + 原版引擎格式表，见 §5.2 |

@@ -9,8 +9,11 @@ asset/
 payload/*
 !payload/metadata.json
 releases
-build
+/build
 *.spec
 
 .mcp.json
 *.local.*
+.pi
+.zcode*
+.workbuddy*

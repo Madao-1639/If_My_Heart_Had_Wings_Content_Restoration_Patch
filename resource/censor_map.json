@@ -1,0 +1,5629 @@
+{
+ "members": [
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    961,
+    523,
+    1255,
+    872
+   ],
+   "big_pixels": 22196,
+   "big_ratio": 0.006021,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_04_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 112.07,
+   "mos": [],
+   "name": "AGE_04_001b.png",
+   "nearest": {
+    "distance": 0.66,
+    "name": "AGE_04_001B.png"
+   },
+   "orig_name": "AGE_04_001B.png",
+   "pair": [
+    "AGE_04_001s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.66,
+   "series": "CHIP2.arc/age_04",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.68,
+    "mad": 0.68,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    480,
+    262,
+    627,
+    436
+   ],
+   "big_pixels": 5683,
+   "big_ratio": 0.006166,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_04_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 109.52,
+   "mos": [],
+   "name": "AGE_04_001s.png",
+   "nearest": {
+    "distance": 0.73,
+    "name": "AGE_04_001S.png"
+   },
+   "orig_name": "AGE_04_001S.png",
+   "pair": [
+    "AGE_04_001b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 3,
+    "steam": 3
+   },
+   "review": "visual",
+   "same_name_distance": 0.73,
+   "series": "CHIP2.arc/age_04",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.9,
+    "mad": 0.9,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    961,
+    523,
+    1255,
+    872
+   ],
+   "big_pixels": 22196,
+   "big_ratio": 0.006021,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_04_003",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 112.07,
+   "mos": [],
+   "name": "AGE_04_003b.png",
+   "nearest": {
+    "distance": 0.66,
+    "name": "AGE_04_003B.png"
+   },
+   "orig_name": "AGE_04_003B.png",
+   "pair": [
+    "AGE_04_003s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.66,
+   "series": "CHIP2.arc/age_04",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.68,
+    "mad": 0.68,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    480,
+    262,
+    627,
+    436
+   ],
+   "big_pixels": 5683,
+   "big_ratio": 0.006166,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_04_003",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 109.52,
+   "mos": [],
+   "name": "AGE_04_003s.png",
+   "nearest": {
+    "distance": 0.73,
+    "name": "AGE_04_003S.png"
+   },
+   "orig_name": "AGE_04_003S.png",
+   "pair": [
+    "AGE_04_003b.png"
+   ],
+   "referenced": true,
+   "refs": {
+    "orig": 5,
+    "steam": 5
+   },
+   "review": "visual",
+   "same_name_distance": 0.73,
+   "series": "CHIP2.arc/age_04",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.9,
+    "mad": 0.9,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    480,
+    262,
+    627,
+    436
+   ],
+   "big_pixels": 5683,
+   "big_ratio": 0.006166,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_04_004",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 109.52,
+   "mos": [],
+   "name": "AGE_04_004s.png",
+   "nearest": {
+    "distance": 0.73,
+    "name": "AGE_04_004S.png"
+   },
+   "orig_name": "AGE_04_004S.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.73,
+   "series": "CHIP2.arc/age_04",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.9,
+    "mad": 0.9,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    961,
+    523,
+    1255,
+    872
+   ],
+   "big_pixels": 22196,
+   "big_ratio": 0.006021,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_04_005",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 112.07,
+   "mos": [],
+   "name": "AGE_04_005b.png",
+   "nearest": {
+    "distance": 0.66,
+    "name": "AGE_04_005B.png"
+   },
+   "orig_name": "AGE_04_005B.png",
+   "pair": [
+    "AGE_04_005s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.66,
+   "series": "CHIP2.arc/age_04",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.68,
+    "mad": 0.68,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "ref-overflow",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    480,
+    262,
+    627,
+    436
+   ],
+   "big_pixels": 5683,
+   "big_ratio": 0.006166,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_04_005",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 109.52,
+   "mos": [],
+   "name": "AGE_04_005s.png",
+   "nearest": {
+    "distance": 0.73,
+    "name": "AGE_04_005S.png"
+   },
+   "orig_name": "AGE_04_005S.png",
+   "pair": [
+    "AGE_04_005b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.73,
+   "series": "CHIP2.arc/age_04",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.9,
+    "mad": 0.9,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    480,
+    262,
+    627,
+    436
+   ],
+   "big_pixels": 5683,
+   "big_ratio": 0.006166,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_04_006",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 109.52,
+   "mos": [],
+   "name": "AGE_04_006s.png",
+   "nearest": {
+    "distance": 0.73,
+    "name": "AGE_04_006S.png"
+   },
+   "orig_name": "AGE_04_006S.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.73,
+   "series": "CHIP2.arc/age_04",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.9,
+    "mad": 0.9,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    480,
+    262,
+    627,
+    436
+   ],
+   "big_pixels": 5683,
+   "big_ratio": 0.006166,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_04_007",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 109.52,
+   "mos": [],
+   "name": "AGE_04_007s.png",
+   "nearest": {
+    "distance": 0.73,
+    "name": "AGE_04_007S.png"
+   },
+   "orig_name": "AGE_04_007S.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.73,
+   "series": "CHIP2.arc/age_04",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.9,
+    "mad": 0.9,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_001s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_001s.png"
+   },
+   "orig_name": "AGE_05_001s.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_007",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_007s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_007s.png"
+   },
+   "orig_name": "AGE_05_007s.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 3,
+    "steam": 3
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_010",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_010s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_010s.png"
+   },
+   "orig_name": "AGE_05_010s.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 4,
+    "steam": 4
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    729,
+    1166,
+    873,
+    1318
+   ],
+   "big_pixels": 3040,
+   "big_ratio": 0.000825,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_05_013",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 243,
+   "mean_diff": 93.94,
+   "mos": [],
+   "name": "AGE_05_013b.png",
+   "nearest": {
+    "distance": 0.09,
+    "name": "AGE_05_013b.png"
+   },
+   "orig_name": "AGE_05_013b.png",
+   "pair": [
+    "AGE_05_013s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.09,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.08,
+    "mad": 0.08,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_013",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_013s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_013s.png"
+   },
+   "orig_name": "AGE_05_013s.png",
+   "pair": [
+    "AGE_05_013b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    729,
+    1166,
+    873,
+    1318
+   ],
+   "big_pixels": 3040,
+   "big_ratio": 0.000825,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_05_014",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 243,
+   "mean_diff": 93.94,
+   "mos": [],
+   "name": "AGE_05_014b.png",
+   "nearest": {
+    "distance": 0.09,
+    "name": "AGE_05_014b.png"
+   },
+   "orig_name": "AGE_05_014b.png",
+   "pair": [
+    "AGE_05_014s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 4,
+    "steam": 4
+   },
+   "review": "visual",
+   "same_name_distance": 0.09,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.08,
+    "mad": 0.08,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_014",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_014s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_014s.png"
+   },
+   "orig_name": "AGE_05_014s.png",
+   "pair": [
+    "AGE_05_014b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    729,
+    1166,
+    873,
+    1318
+   ],
+   "big_pixels": 3040,
+   "big_ratio": 0.000825,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_05_015",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 243,
+   "mean_diff": 93.94,
+   "mos": [],
+   "name": "AGE_05_015b.png",
+   "nearest": {
+    "distance": 0.09,
+    "name": "AGE_05_015b.png"
+   },
+   "orig_name": "AGE_05_015b.png",
+   "pair": [
+    "AGE_05_015s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.09,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.08,
+    "mad": 0.08,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_015",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_015s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_015s.png"
+   },
+   "orig_name": "AGE_05_015s.png",
+   "pair": [
+    "AGE_05_015b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    729,
+    1166,
+    873,
+    1318
+   ],
+   "big_pixels": 3040,
+   "big_ratio": 0.000825,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_05_016",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 243,
+   "mean_diff": 93.94,
+   "mos": [],
+   "name": "AGE_05_016b.png",
+   "nearest": {
+    "distance": 0.09,
+    "name": "AGE_05_016b.png"
+   },
+   "orig_name": "AGE_05_016b.png",
+   "pair": [
+    "AGE_05_016s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.09,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.08,
+    "mad": 0.08,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_016",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_016s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_016s.png"
+   },
+   "orig_name": "AGE_05_016s.png",
+   "pair": [
+    "AGE_05_016b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_017",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_017s.png",
+   "nearest": {
+    "distance": 0.15,
+    "name": "AGE_05_017s.png"
+   },
+   "orig_name": "AGE_05_017s.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.15,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    729,
+    1166,
+    873,
+    1318
+   ],
+   "big_pixels": 3040,
+   "big_ratio": 0.000825,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_05_018",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 243,
+   "mean_diff": 93.94,
+   "mos": [],
+   "name": "AGE_05_018b.png",
+   "nearest": {
+    "distance": 0.09,
+    "name": "AGE_05_018b.png"
+   },
+   "orig_name": "AGE_05_018b.png",
+   "pair": [
+    "AGE_05_018s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.09,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.08,
+    "mad": 0.08,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_018",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_018s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_018s.png"
+   },
+   "orig_name": "AGE_05_018s.png",
+   "pair": [
+    "AGE_05_018b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    729,
+    1166,
+    873,
+    1318
+   ],
+   "big_pixels": 3040,
+   "big_ratio": 0.000825,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_05_019",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 243,
+   "mean_diff": 93.94,
+   "mos": [],
+   "name": "AGE_05_019b.png",
+   "nearest": {
+    "distance": 0.09,
+    "name": "AGE_05_019b.png"
+   },
+   "orig_name": "AGE_05_019b.png",
+   "pair": [
+    "AGE_05_019s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 7,
+    "steam": 7
+   },
+   "review": "visual",
+   "same_name_distance": 0.09,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.08,
+    "mad": 0.08,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_019",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_019s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_019s.png"
+   },
+   "orig_name": "AGE_05_019s.png",
+   "pair": [
+    "AGE_05_019b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 7,
+    "steam": 7
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    729,
+    1166,
+    873,
+    1318
+   ],
+   "big_pixels": 3040,
+   "big_ratio": 0.000825,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_05_022",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 243,
+   "mean_diff": 93.94,
+   "mos": [],
+   "name": "AGE_05_022b.png",
+   "nearest": {
+    "distance": 0.09,
+    "name": "AGE_05_022b.png"
+   },
+   "orig_name": "AGE_05_022b.png",
+   "pair": [
+    "AGE_05_022s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 6,
+    "steam": 6
+   },
+   "review": "visual",
+   "same_name_distance": 0.09,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.08,
+    "mad": 0.08,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_022",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_022s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_022s.png"
+   },
+   "orig_name": "AGE_05_022s.png",
+   "pair": [
+    "AGE_05_022b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    729,
+    1166,
+    873,
+    1318
+   ],
+   "big_pixels": 3040,
+   "big_ratio": 0.000825,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_05_023",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 243,
+   "mean_diff": 93.94,
+   "mos": [],
+   "name": "AGE_05_023b.png",
+   "nearest": {
+    "distance": 0.09,
+    "name": "AGE_05_023b.png"
+   },
+   "orig_name": "AGE_05_023b.png",
+   "pair": [
+    "AGE_05_023s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.09,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.08,
+    "mad": 0.08,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_023",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_023s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_023s.png"
+   },
+   "orig_name": "AGE_05_023s.png",
+   "pair": [
+    "AGE_05_023b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    729,
+    1166,
+    873,
+    1318
+   ],
+   "big_pixels": 3040,
+   "big_ratio": 0.000825,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "age_05_024",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 243,
+   "mean_diff": 93.94,
+   "mos": [],
+   "name": "AGE_05_024b.png",
+   "nearest": {
+    "distance": 0.09,
+    "name": "AGE_05_024b.png"
+   },
+   "orig_name": "AGE_05_024b.png",
+   "pair": [
+    "AGE_05_024s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.09,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.08,
+    "mad": 0.08,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    364,
+    585,
+    435,
+    659
+   ],
+   "big_pixels": 775,
+   "big_ratio": 0.000841,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_05_024",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 91.99,
+   "mos": [],
+   "name": "AGE_05_024s.png",
+   "nearest": {
+    "distance": 0.16,
+    "name": "AGE_05_024s.png"
+   },
+   "orig_name": "AGE_05_024s.png",
+   "pair": [
+    "AGE_05_024b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.16,
+   "series": "CHIP2.arc/age_05",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.31,
+    "mad": 0.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 44668,
+   "big_ratio": 0.048468,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_06_001",
+   "group_lock": false,
+   "margin": 0.01,
+   "max_abs": 128,
+   "mean_diff": 21.45,
+   "mos": [],
+   "name": "AGE_06_001s.png",
+   "nearest": {
+    "distance": 1.31,
+    "name": "AGE_06_001B.png"
+   },
+   "orig_name": "AGE_06_001S.png",
+   "pair": [],
+   "referenced": true,
+   "refs": {
+    "orig": 2,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 1.33,
+   "series": "CHIP2.arc/age_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 1.34,
+    "mad": 1.34,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 44668,
+   "big_ratio": 0.048468,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_06_007",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 128,
+   "mean_diff": 21.45,
+   "mos": [],
+   "name": "AGE_06_007s.png",
+   "nearest": {
+    "distance": 1.33,
+    "name": "AGE_06_007S.png"
+   },
+   "orig_name": "AGE_06_007S.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 1.33,
+   "series": "CHIP2.arc/age_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 1.34,
+    "mad": 1.34,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "ref-overflow",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 44668,
+   "big_ratio": 0.048468,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_06_008",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 128,
+   "mean_diff": 21.45,
+   "mos": [],
+   "name": "AGE_06_008s.png",
+   "nearest": {
+    "distance": 1.33,
+    "name": "AGE_06_008S.png"
+   },
+   "orig_name": "AGE_06_008S.png",
+   "pair": [],
+   "referenced": true,
+   "refs": {
+    "orig": 2,
+    "steam": 3
+   },
+   "review": "visual",
+   "same_name_distance": 1.33,
+   "series": "CHIP2.arc/age_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 1.34,
+    "mad": 1.34,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 865610,
+   "big_ratio": 0.939247,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_10_001",
+   "group_lock": false,
+   "margin": 3.33,
+   "max_abs": 255,
+   "mean_diff": 81.44,
+   "mos": [
+    "AGE_10_001S.MOS"
+   ],
+   "name": "AGE_10_001S.png",
+   "nearest": {
+    "distance": 69.94,
+    "name": "SDEV05_03b.png"
+   },
+   "orig_name": "AGE_10_001S.png",
+   "pair": [],
+   "referenced": true,
+   "refs": {
+    "orig": 2,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 73.27,
+   "series": "CHIP2.arc/age_10",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 76.75,
+    "mad": 4.63,
+    "offset": [
+     1556,
+     0
+    ],
+    "scale": 2.5,
+    "window": [
+     512,
+     288,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 866324,
+   "big_ratio": 0.940022,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "age_10_002",
+   "group_lock": false,
+   "margin": 2.73,
+   "max_abs": 255,
+   "mean_diff": 80.79,
+   "mos": [
+    "AGE_10_002S.MOS"
+   ],
+   "name": "AGE_10_002S.png",
+   "nearest": {
+    "distance": 70.08,
+    "name": "SDEV05_03b.png"
+   },
+   "orig_name": "AGE_10_002S.png",
+   "pair": [],
+   "referenced": true,
+   "refs": {
+    "orig": 2,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 72.81,
+   "series": "CHIP2.arc/age_10",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 76.22,
+    "mad": 4.74,
+    "offset": [
+     1556,
+     0
+    ],
+    "scale": 2.5,
+    "window": [
+     512,
+     288,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_001b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_001b.png"
+   },
+   "orig_name": "COM_02_001b.png",
+   "pair": [
+    "COM_02_001s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_001s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_001s.png"
+   },
+   "orig_name": "COM_02_001s.png",
+   "pair": [
+    "COM_02_001b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_004",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_004s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_004s.png"
+   },
+   "orig_name": "COM_02_004s.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_013",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_013b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_013b.png"
+   },
+   "orig_name": "COM_02_013b.png",
+   "pair": [
+    "COM_02_013s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_013",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_013s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_013s.png"
+   },
+   "orig_name": "COM_02_013s.png",
+   "pair": [
+    "COM_02_013b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_014",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_014b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_014b.png"
+   },
+   "orig_name": "COM_02_014b.png",
+   "pair": [
+    "COM_02_014s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_014",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_014s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_014s.png"
+   },
+   "orig_name": "COM_02_014s.png",
+   "pair": [
+    "COM_02_014b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 3,
+    "steam": 3
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_015",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_015b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_015b.png"
+   },
+   "orig_name": "COM_02_015b.png",
+   "pair": [
+    "COM_02_015s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_015",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_015s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_015s.png"
+   },
+   "orig_name": "COM_02_015s.png",
+   "pair": [
+    "COM_02_015b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_016",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_016b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_016b.png"
+   },
+   "orig_name": "COM_02_016b.png",
+   "pair": [
+    "COM_02_016s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 5,
+    "steam": 5
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_016",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_016s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_016s.png"
+   },
+   "orig_name": "COM_02_016s.png",
+   "pair": [
+    "COM_02_016b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_017",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_017b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_017b.png"
+   },
+   "orig_name": "COM_02_017b.png",
+   "pair": [
+    "COM_02_017s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_017",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_017s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_017s.png"
+   },
+   "orig_name": "COM_02_017s.png",
+   "pair": [
+    "COM_02_017b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_018",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_018b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_018b.png"
+   },
+   "orig_name": "COM_02_018b.png",
+   "pair": [
+    "COM_02_018s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_018",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_018s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_018s.png"
+   },
+   "orig_name": "COM_02_018s.png",
+   "pair": [
+    "COM_02_018b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_020",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_020s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_020s.png"
+   },
+   "orig_name": "COM_02_020s.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_021",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_021b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_021b.png"
+   },
+   "orig_name": "COM_02_021b.png",
+   "pair": [
+    "COM_02_021s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_021",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_021s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_021s.png"
+   },
+   "orig_name": "COM_02_021s.png",
+   "pair": [
+    "COM_02_021b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_022",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_022b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_022b.png"
+   },
+   "orig_name": "COM_02_022b.png",
+   "pair": [
+    "COM_02_022s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_022",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_022s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_022s.png"
+   },
+   "orig_name": "COM_02_022s.png",
+   "pair": [
+    "COM_02_022b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    449,
+    500,
+    2305,
+    1440
+   ],
+   "big_pixels": 582681,
+   "big_ratio": 0.158062,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "com_02_024",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 196,
+   "mean_diff": 23.89,
+   "mos": [],
+   "name": "COM_02_024b.png",
+   "nearest": {
+    "distance": 3.93,
+    "name": "COM_02_024b.png"
+   },
+   "orig_name": "COM_02_024b.png",
+   "pair": [
+    "COM_02_024s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 3.93,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    225,
+    250,
+    1150,
+    720
+   ],
+   "big_pixels": 146002,
+   "big_ratio": 0.158422,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "com_02_024",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 188,
+   "mean_diff": 23.78,
+   "mos": [],
+   "name": "COM_02_024s.png",
+   "nearest": {
+    "distance": 3.94,
+    "name": "COM_02_024s.png"
+   },
+   "orig_name": "COM_02_024s.png",
+   "pair": [
+    "COM_02_024b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 3.94,
+   "series": "CHIP2.arc/com_02",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 2.86,
+    "mad": 2.86,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    0,
+    0,
+    1271,
+    720
+   ],
+   "big_pixels": 238673,
+   "big_ratio": 0.258977,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "sdev19_01",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 132.83,
+   "mos": [],
+   "name": "sdev19_01b.png",
+   "nearest": {
+    "distance": 30.66,
+    "name": "sdev19_01b.png"
+   },
+   "orig_name": "sdev19_01b.png",
+   "pair": [
+    "sdev19_01s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 30.66,
+   "series": "CHIP2.arc/sdev19",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 34.04,
+    "mad": 34.04,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP2.arc",
+   "bbox": [
+    17,
+    17,
+    800,
+    451
+   ],
+   "big_pixels": 129310,
+   "big_ratio": 0.337779,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     818,
+     468
+    ],
+    "steam": [
+     818,
+     468
+    ]
+   },
+   "frame": "sdev19_01",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 107.57,
+   "mos": [],
+   "name": "sdev19_01s.png",
+   "nearest": {
+    "distance": 28.89,
+    "name": "sdev19_01s.png"
+   },
+   "orig_name": "sdev19_01s.png",
+   "pair": [
+    "sdev19_01b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 28.89,
+   "series": "CHIP2.arc/sdev19",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 36.57,
+    "mad": 36.57,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     818,
+     468,
+     818,
+     468
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    860,
+    607,
+    2037,
+    1416
+   ],
+   "big_pixels": 9127,
+   "big_ratio": 0.002476,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "hut_01_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 247,
+   "mean_diff": 55.47,
+   "mos": [],
+   "name": "HUT_01_001b.png",
+   "nearest": {
+    "distance": 0.17,
+    "name": "HUT_01_001b.png"
+   },
+   "orig_name": "HUT_01_001b.png",
+   "pair": [
+    "HUT_01_001s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.17,
+   "series": "CHIP3.arc/hut_01",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.17,
+    "mad": 0.17,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    430,
+    309,
+    1018,
+    704
+   ],
+   "big_pixels": 2349,
+   "big_ratio": 0.002549,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "hut_01_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 53.51,
+   "mos": [],
+   "name": "HUT_01_001s.png",
+   "nearest": {
+    "distance": 0.24,
+    "name": "HUT_01_001s.png"
+   },
+   "orig_name": "HUT_01_001s.png",
+   "pair": [
+    "HUT_01_001b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.24,
+   "series": "CHIP3.arc/hut_01",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.44,
+    "mad": 0.44,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    430,
+    309,
+    1018,
+    704
+   ],
+   "big_pixels": 2349,
+   "big_ratio": 0.002549,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "hut_01_002",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 53.51,
+   "mos": [],
+   "name": "HUT_01_002s.png",
+   "nearest": {
+    "distance": 0.24,
+    "name": "HUT_01_002s.png"
+   },
+   "orig_name": "HUT_01_002s.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.24,
+   "series": "CHIP3.arc/hut_01",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.44,
+    "mad": 0.44,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    860,
+    607,
+    2037,
+    1416
+   ],
+   "big_pixels": 9127,
+   "big_ratio": 0.002476,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "hut_01_003",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 247,
+   "mean_diff": 55.47,
+   "mos": [],
+   "name": "HUT_01_003b.png",
+   "nearest": {
+    "distance": 0.17,
+    "name": "HUT_01_003b.png"
+   },
+   "orig_name": "HUT_01_003b.png",
+   "pair": [
+    "HUT_01_003s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.17,
+   "series": "CHIP3.arc/hut_01",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.17,
+    "mad": 0.17,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    430,
+    309,
+    1018,
+    704
+   ],
+   "big_pixels": 2349,
+   "big_ratio": 0.002549,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "hut_01_003",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 53.51,
+   "mos": [],
+   "name": "HUT_01_003s.png",
+   "nearest": {
+    "distance": 0.24,
+    "name": "HUT_01_003s.png"
+   },
+   "orig_name": "HUT_01_003s.png",
+   "pair": [
+    "HUT_01_003b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 0.24,
+   "series": "CHIP3.arc/hut_01",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.44,
+    "mad": 0.44,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    860,
+    607,
+    2037,
+    1416
+   ],
+   "big_pixels": 9127,
+   "big_ratio": 0.002476,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "hut_01_004",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 247,
+   "mean_diff": 55.47,
+   "mos": [],
+   "name": "HUT_01_004b.png",
+   "nearest": {
+    "distance": 0.17,
+    "name": "HUT_01_004b.png"
+   },
+   "orig_name": "HUT_01_004b.png",
+   "pair": [
+    "HUT_01_004s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 0.17,
+   "series": "CHIP3.arc/hut_01",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.17,
+    "mad": 0.17,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    430,
+    309,
+    1018,
+    704
+   ],
+   "big_pixels": 2349,
+   "big_ratio": 0.002549,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "hut_01_004",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 255,
+   "mean_diff": 53.51,
+   "mos": [],
+   "name": "HUT_01_004s.png",
+   "nearest": {
+    "distance": 0.24,
+    "name": "HUT_01_004s.png"
+   },
+   "orig_name": "HUT_01_004s.png",
+   "pair": [
+    "HUT_01_004b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.24,
+   "series": "CHIP3.arc/hut_01",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 0.44,
+    "mad": 0.44,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    471,
+    304,
+    1588,
+    1440
+   ],
+   "big_pixels": 518603,
+   "big_ratio": 0.14068,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "hut_06_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 224,
+   "mean_diff": 38.24,
+   "mos": [],
+   "name": "HUT_06_001b.png",
+   "nearest": {
+    "distance": 5.35,
+    "name": "HUT_06_001B.png"
+   },
+   "orig_name": "HUT_06_001B.png",
+   "pair": [
+    "HUT_06_001s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 5.35,
+   "series": "CHIP3.arc/hut_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 3.88,
+    "mad": 3.88,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    236,
+    152,
+    1280,
+    720
+   ],
+   "big_pixels": 130101,
+   "big_ratio": 0.141169,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "hut_06_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 217,
+   "mean_diff": 38.07,
+   "mos": [],
+   "name": "HUT_06_001s.png",
+   "nearest": {
+    "distance": 5.42,
+    "name": "HUT_06_001S.png"
+   },
+   "orig_name": "HUT_06_001S.png",
+   "pair": [
+    "HUT_06_001b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 5.42,
+   "series": "CHIP3.arc/hut_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 4.12,
+    "mad": 4.12,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    471,
+    304,
+    1588,
+    1440
+   ],
+   "big_pixels": 518603,
+   "big_ratio": 0.14068,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "hut_06_002",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 224,
+   "mean_diff": 38.24,
+   "mos": [],
+   "name": "HUT_06_002b.png",
+   "nearest": {
+    "distance": 5.35,
+    "name": "HUT_06_002B.png"
+   },
+   "orig_name": "HUT_06_002B.png",
+   "pair": [
+    "HUT_06_002s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 5.35,
+   "series": "CHIP3.arc/hut_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 3.88,
+    "mad": 3.88,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    236,
+    152,
+    1280,
+    720
+   ],
+   "big_pixels": 130101,
+   "big_ratio": 0.141169,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "hut_06_002",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 217,
+   "mean_diff": 38.07,
+   "mos": [],
+   "name": "HUT_06_002s.png",
+   "nearest": {
+    "distance": 5.42,
+    "name": "HUT_06_002S.png"
+   },
+   "orig_name": "HUT_06_002S.png",
+   "pair": [
+    "HUT_06_002b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 5.42,
+   "series": "CHIP3.arc/hut_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 4.12,
+    "mad": 4.12,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    471,
+    304,
+    1588,
+    1440
+   ],
+   "big_pixels": 518603,
+   "big_ratio": 0.14068,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2560,
+     1440
+    ],
+    "steam": [
+     2560,
+     1440
+    ]
+   },
+   "frame": "hut_06_003",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 224,
+   "mean_diff": 38.24,
+   "mos": [],
+   "name": "HUT_06_003b.png",
+   "nearest": {
+    "distance": 5.35,
+    "name": "HUT_06_003B.png"
+   },
+   "orig_name": "HUT_06_003B.png",
+   "pair": [
+    "HUT_06_003s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 5.35,
+   "series": "CHIP3.arc/hut_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 3.88,
+    "mad": 3.88,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2560,
+     1440,
+     2560,
+     1440
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    236,
+    152,
+    1280,
+    720
+   ],
+   "big_pixels": 130101,
+   "big_ratio": 0.141169,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "hut_06_003",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 217,
+   "mean_diff": 38.07,
+   "mos": [],
+   "name": "HUT_06_003s.png",
+   "nearest": {
+    "distance": 5.42,
+    "name": "HUT_06_003S.png"
+   },
+   "orig_name": "HUT_06_003S.png",
+   "pair": [
+    "HUT_06_003b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 5.42,
+   "series": "CHIP3.arc/hut_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 4.12,
+    "mad": 4.12,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP3.arc",
+   "bbox": [
+    236,
+    152,
+    1280,
+    720
+   ],
+   "big_pixels": 130101,
+   "big_ratio": 0.141169,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "hut_06_004",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 217,
+   "mean_diff": 38.07,
+   "mos": [],
+   "name": "HUT_06_004s.png",
+   "nearest": {
+    "distance": 5.42,
+    "name": "HUT_06_004S.png"
+   },
+   "orig_name": "HUT_06_004S.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 5.42,
+   "series": "CHIP3.arc/hut_06",
+   "size_diff": false,
+   "zoom": {
+    "direct_mad": 4.12,
+    "mad": 4.12,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    2048,
+    1152
+   ],
+   "big_pixels": 339516,
+   "big_ratio": 0.143906,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2046,
+     1148
+    ],
+    "steam": [
+     2048,
+     1152
+    ]
+   },
+   "frame": "kot_02_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 223,
+   "mean_diff": 27.57,
+   "mos": [],
+   "name": "KOT_02_001b.png",
+   "nearest": {
+    "distance": 4.22,
+    "name": "KOT_02_001b.png"
+   },
+   "orig_name": "KOT_02_001b.png",
+   "pair": [
+    "KOT_02_001s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 4.22,
+   "series": "CHIP5.arc/kot_02",
+   "size_diff": true,
+   "zoom": {
+    "direct_mad": null,
+    "mad": 4.29,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2048,
+     1152,
+     2048,
+     1152
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 133045,
+   "big_ratio": 0.144363,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     718
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_02_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 199,
+   "mean_diff": 26.5,
+   "mos": [],
+   "name": "KOT_02_001s.png",
+   "nearest": {
+    "distance": 4.22,
+    "name": "KOT_02_001b.png"
+   },
+   "orig_name": "KOT_02_001s.png",
+   "pair": [
+    "KOT_02_001b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 4.23,
+   "series": "CHIP5.arc/kot_02",
+   "size_diff": true,
+   "zoom": {
+    "direct_mad": null,
+    "mad": 4.17,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    2048,
+    1152
+   ],
+   "big_pixels": 338650,
+   "big_ratio": 0.143539,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2046,
+     1148
+    ],
+    "steam": [
+     2048,
+     1152
+    ]
+   },
+   "frame": "kot_02_002",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 223,
+   "mean_diff": 27.56,
+   "mos": [],
+   "name": "KOT_02_002b.png",
+   "nearest": {
+    "distance": 4.22,
+    "name": "KOT_02_002b.png"
+   },
+   "orig_name": "KOT_02_002b.png",
+   "pair": [
+    "KOT_02_002s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 4.22,
+   "series": "CHIP5.arc/kot_02",
+   "size_diff": true,
+   "zoom": {
+    "direct_mad": null,
+    "mad": 4.28,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2048,
+     1152,
+     2048,
+     1152
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 132679,
+   "big_ratio": 0.143966,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     718
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_02_002",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 199,
+   "mean_diff": 26.49,
+   "mos": [],
+   "name": "KOT_02_002s.png",
+   "nearest": {
+    "distance": 4.22,
+    "name": "KOT_02_002b.png"
+   },
+   "orig_name": "KOT_02_002s.png",
+   "pair": [
+    "KOT_02_002b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 0,
+    "steam": 0
+   },
+   "review": "visual",
+   "same_name_distance": 4.22,
+   "series": "CHIP5.arc/kot_02",
+   "size_diff": true,
+   "zoom": {
+    "direct_mad": null,
+    "mad": 4.15,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    2048,
+    1152
+   ],
+   "big_pixels": 340500,
+   "big_ratio": 0.144323,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2046,
+     1148
+    ],
+    "steam": [
+     2048,
+     1152
+    ]
+   },
+   "frame": "kot_02_003",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 223,
+   "mean_diff": 27.58,
+   "mos": [],
+   "name": "KOT_02_003b.png",
+   "nearest": {
+    "distance": 4.23,
+    "name": "KOT_02_003b.png"
+   },
+   "orig_name": "KOT_02_003b.png",
+   "pair": [
+    "KOT_02_003s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 4.23,
+   "series": "CHIP5.arc/kot_02",
+   "size_diff": true,
+   "zoom": {
+    "direct_mad": null,
+    "mad": 4.31,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2048,
+     1152,
+     2048,
+     1152
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 133155,
+   "big_ratio": 0.144482,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     718
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_02_003",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 199,
+   "mean_diff": 26.51,
+   "mos": [],
+   "name": "KOT_02_003s.png",
+   "nearest": {
+    "distance": 4.23,
+    "name": "KOT_02_003b.png"
+   },
+   "orig_name": "KOT_02_003s.png",
+   "pair": [
+    "KOT_02_003b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 4.23,
+   "series": "CHIP5.arc/kot_02",
+   "size_diff": true,
+   "zoom": {
+    "direct_mad": null,
+    "mad": 4.18,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    2048,
+    1152
+   ],
+   "big_pixels": 340108,
+   "big_ratio": 0.144157,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     2046,
+     1148
+    ],
+    "steam": [
+     2048,
+     1152
+    ]
+   },
+   "frame": "kot_02_004",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 223,
+   "mean_diff": 27.57,
+   "mos": [],
+   "name": "KOT_02_004b.png",
+   "nearest": {
+    "distance": 4.22,
+    "name": "KOT_02_004b.png"
+   },
+   "orig_name": "KOT_02_004b.png",
+   "pair": [
+    "KOT_02_004s.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 3,
+    "steam": 3
+   },
+   "review": "visual",
+   "same_name_distance": 4.22,
+   "series": "CHIP5.arc/kot_02",
+   "size_diff": true,
+   "zoom": {
+    "direct_mad": null,
+    "mad": 4.3,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     2048,
+     1152,
+     2048,
+     1152
+    ]
+   }
+  },
+  {
+   "action": "overwrite",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 132972,
+   "big_ratio": 0.144284,
+   "class": "censor",
+   "dims": {
+    "orig": [
+     1280,
+     718
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_02_004",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 199,
+   "mean_diff": 26.5,
+   "mos": [],
+   "name": "KOT_02_004s.png",
+   "nearest": {
+    "distance": 4.22,
+    "name": "KOT_02_004b.png"
+   },
+   "orig_name": "KOT_02_004s.png",
+   "pair": [
+    "KOT_02_004b.png"
+   ],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 1
+   },
+   "review": "visual",
+   "same_name_distance": 4.23,
+   "series": "CHIP5.arc/kot_02",
+   "size_diff": true,
+   "zoom": {
+    "direct_mad": null,
+    "mad": 4.17,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  },
+  {
+   "action": "keep",
+   "alias": null,
+   "ambiguity": "ref-overflow",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    1
+   ],
+   "big_pixels": 2,
+   "big_ratio": 2e-06,
+   "class": "noise",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_12_001",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 26,
+   "mean_diff": 17.33,
+   "mos": [],
+   "name": "KOT_12_001s.png",
+   "nearest": {
+    "distance": 0.02,
+    "name": "KOT_12_001S.png"
+   },
+   "orig_name": "KOT_12_001S.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 3
+   },
+   "review": "visual",
+   "same_name_distance": 0.02,
+   "series": "CHIP5.arc/kot_12",
+   "size_diff": false,
+   "zoom": null
+  },
+  {
+   "action": "keep",
+   "alias": null,
+   "ambiguity": "ref-overflow",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    1
+   ],
+   "big_pixels": 2,
+   "big_ratio": 2e-06,
+   "class": "noise",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_12_002",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 26,
+   "mean_diff": 17.33,
+   "mos": [],
+   "name": "KOT_12_002s.png",
+   "nearest": {
+    "distance": 0.02,
+    "name": "KOT_12_002S.png"
+   },
+   "orig_name": "KOT_12_002S.png",
+   "pair": [],
+   "referenced": true,
+   "refs": {
+    "orig": 1,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.02,
+   "series": "CHIP5.arc/kot_12",
+   "size_diff": false,
+   "zoom": null
+  },
+  {
+   "action": "keep",
+   "alias": null,
+   "ambiguity": "none",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    1
+   ],
+   "big_pixels": 2,
+   "big_ratio": 2e-06,
+   "class": "noise",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_12_003",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 26,
+   "mean_diff": 17.33,
+   "mos": [],
+   "name": "KOT_12_003s.png",
+   "nearest": {
+    "distance": 0.02,
+    "name": "KOT_12_003S.png"
+   },
+   "orig_name": "KOT_12_003S.png",
+   "pair": [],
+   "referenced": true,
+   "refs": {
+    "orig": 2,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 0.02,
+   "series": "CHIP5.arc/kot_12",
+   "size_diff": false,
+   "zoom": null
+  },
+  {
+   "action": "keep",
+   "alias": null,
+   "ambiguity": "ref-overflow",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    1
+   ],
+   "big_pixels": 2,
+   "big_ratio": 2e-06,
+   "class": "noise",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_12_004",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 26,
+   "mean_diff": 17.33,
+   "mos": [],
+   "name": "KOT_12_004s.png",
+   "nearest": {
+    "distance": 0.02,
+    "name": "KOT_12_004S.png"
+   },
+   "orig_name": "KOT_12_004S.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 3
+   },
+   "review": "visual",
+   "same_name_distance": 0.02,
+   "series": "CHIP5.arc/kot_12",
+   "size_diff": false,
+   "zoom": null
+  },
+  {
+   "action": "keep",
+   "alias": null,
+   "ambiguity": "ref-overflow",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    1
+   ],
+   "big_pixels": 2,
+   "big_ratio": 2e-06,
+   "class": "noise",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_12_006",
+   "group_lock": false,
+   "margin": 0.0,
+   "max_abs": 26,
+   "mean_diff": 17.33,
+   "mos": [],
+   "name": "KOT_12_006s.png",
+   "nearest": {
+    "distance": 0.02,
+    "name": "KOT_12_006S.png"
+   },
+   "orig_name": "KOT_12_006S.png",
+   "pair": [],
+   "referenced": false,
+   "refs": {
+    "orig": 1,
+    "steam": 3
+   },
+   "review": "visual",
+   "same_name_distance": 0.02,
+   "series": "CHIP5.arc/kot_12",
+   "size_diff": false,
+   "zoom": null
+  },
+  {
+   "action": "overwrite",
+   "alias": {
+    "frame": "kot_12_002",
+    "mad": 0.58,
+    "name": "KOT_12_002S.png"
+   },
+   "ambiguity": "alias+ref-overflow",
+   "archive": "CHIP5.arc",
+   "bbox": [
+    0,
+    0,
+    1280,
+    720
+   ],
+   "big_pixels": 86530,
+   "big_ratio": 0.093891,
+   "class": "reuse",
+   "dims": {
+    "orig": [
+     1280,
+     720
+    ],
+    "steam": [
+     1280,
+     720
+    ]
+   },
+   "frame": "kot_12_007",
+   "group_lock": false,
+   "margin": 7.06,
+   "max_abs": 255,
+   "mean_diff": 81.61,
+   "mos": [],
+   "name": "KOT_12_007s.png",
+   "nearest": {
+    "distance": 0.48,
+    "name": "KOT_12_002S.png"
+   },
+   "orig_name": "KOT_12_007S.png",
+   "pair": [],
+   "referenced": true,
+   "refs": {
+    "orig": 1,
+    "steam": 2
+   },
+   "review": "visual",
+   "same_name_distance": 7.54,
+   "series": "CHIP5.arc/kot_12_007",
+   "size_diff": false,
+   "surviving_sites": [
+    {
+     "chan": "ev",
+     "checks": {
+      "text": "两侧逐句互译（人工确认，证据 tmp/audit_reconcile/reuse_block_check.txt）",
+      "voice": "该格无 0x28 语音调用（两侧同为空）"
+     },
+     "decision": "rewrite",
+     "name_offset": 199186,
+     "note": "对齐到的原版行显示另一帧 ⇒ 改写该调用点",
+     "orig_display": [
+      "KOT_12_002B.PNG"
+     ],
+     "orig_row": 1103,
+     "plan": "host",
+     "rewrite_to": "KOT_12_002B.PNG",
+     "script": "KOT_003",
+     "slot": 1093,
+     "steam_display": "KOT_12_007s.png"
+    },
+    {
+     "chan": "ev",
+     "decision": "cover_ok",
+     "name_offset": 208591,
+     "note": "被删格残留：还原后不再消费 Steam 素材，不触发改写",
+     "orig_display": [],
+     "orig_row": null,
+     "plan": "host",
+     "script": "KOT_003",
+     "slot": 1174,
+     "steam_display": "KOT_12_007s.png"
+    }
+   ],
+   "zoom": {
+    "direct_mad": 7.91,
+    "mad": 7.91,
+    "offset": [
+     0,
+     0
+    ],
+    "scale": 1.0,
+    "window": [
+     1280,
+     720,
+     1280,
+     720
+    ]
+   }
+  }
+ ],
+ "meta": {
+  "actions": {
+   "keep": "不动：Steam 原件保留（仅重编码噪声级差异）",
+   "overwrite": "唯一覆盖动作：整名覆盖，成员名与归档表位置不变、内容取原版字节，不改脚本引用；还原插入段照用原名（画面由覆盖接管），不产生改名映射"
+  },
+  "archives": [
+   "CHIP2.arc",
+   "CHIP3.arc",
+   "CHIP5.arc"
+  ],
+  "class_values": [
+   "censor",
+   "reuse",
+   "noise"
+  ],
+  "excluded": "系统 UI 归档（SysGraphic.arc 的 .pna）按「系统归档不改动」排除；Effect.arc 的成员差异是引擎着色器版本差，不属图像内容差",
+  "gate": "未登记的成员不得被替换；覆盖名单与改名表互斥；覆盖不以「被还原内容引用」为门槛（referenced 只作核对）；非噪声者一律整名覆盖，**没有改名类动作**；class=reuse（顶包）须给存活格核对结论——逐点写明它对齐到的原版行显示哪张图、因此改写还是不改写，改写只落在还原后仍保留的那一个 Steam 显示调用点上",
+  "method": "SHA256 筛同名内容差 -> 全分辨率逐像素比对（异尺寸先按 Steam 尺寸对齐）-> 同归档原版库缩略图最近邻 -> 放大裁切匹配（取景变化）-> 顶包确认与两侧脚本引用点数；机械动作＝噪声 keep / 其余 overwrite（顶包不改变动作，只触发存活格核对），类别由人工逐张看图定案",
+  "spec": "doc/resource-naming.md"
+ },
+ "series": {
+  "CHIP2.arc/age_04": {
+   "class": "censor",
+   "scene": "沙滩比基尼：上装改画、胸部遮挡增强"
+  },
+  "CHIP2.arc/age_05": {
+   "class": "censor",
+   "scene": "草地并坐：裙间与大腿处补画深色布料"
+  },
+  "CHIP2.arc/age_06": {
+   "class": "censor",
+   "scene": "湿衬衫：胸前透光被削弱为不透明"
+  },
+  "CHIP2.arc/age_10": {
+   "class": "censor",
+   "scene": "取景变化式和谐：Steam 把原版画面放大 2.5 倍后裁掉裸露区域，不是整幅重绘、也不是号位复用（人工看图定案，放大裁切匹配的窗内 MAD 4.6 对直比 76.8）"
+  },
+  "CHIP2.arc/com_02": {
+   "class": "censor",
+   "scene": "温泉：三名角色胸前各加浴巾遮挡"
+  },
+  "CHIP2.arc/sdev19": {
+   "class": "censor",
+   "scene": "Q 版床上：前景插入另一人物后脑与汗滴，遮挡裙底视角"
+  },
+  "CHIP3.arc/hut_01": {
+   "class": "censor",
+   "scene": "夕阳楼梯：裙底裸露皮肤补画成深色布料"
+  },
+  "CHIP3.arc/hut_06": {
+   "class": "censor",
+   "scene": "浴室：裸身改加布巾遮挡"
+  },
+  "CHIP5.arc/kot_02": {
+   "class": "censor",
+   "scene": "浴池：胸前加白色浴巾遮挡（同时画布尺寸被改）"
+  },
+  "CHIP5.arc/kot_12": {
+   "class": "noise",
+   "scene": "重编码噪声：全图最大差 26、大差像素个位数"
+  },
+  "CHIP5.arc/kot_12_007": {
+   "class": "reuse",
+   "scene": "顶包（引用歧义）：Steam 的 007 内容与原版 KOT_12_002 同帧（闭眼无手 vs 原版睁眼伸手），全分辨率 MAD 0.58 达副本级；在还原后的脚本产物上，该号位同时被 Steam 保留格（KOT_003 槽 1093）与原版插入段（原版行 1177）引用，两侧要看的画面不同 ⇒ 整名覆盖会把 Steam 保留段顶错镜头、不改名则还原段拿到 Steam 的顶包图，走隔离改名"
+  }
+ }
+}

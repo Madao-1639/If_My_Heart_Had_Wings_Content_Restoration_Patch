@@ -1,0 +1,140 @@
+{
+ "meta": {
+  "purpose": "保留行上「原版事件 CG 显示点」缺口的处置表：每条例 = 一个应显示、但产物不显示的事件 CG。计划器消费方式＝把 `slot` 按 `rebind` 落到原版行 `orig_row`（drop 该 Steam 槽 + 插入原版行，随行带入 `0x33` 显示指令），并把 `name` 的成员并入 resources.copy。",
+  "producer": "人工（2026-10-08 语义评审 + 父级复算；生成器 tmp/gen_cg_sites.py）",
+  "consumer": "script/build/build_restore_plan.py",
+  "excluded": "两侧同名的画面改动不从本表走（那是 censor_map 的覆盖面）；已由 plan.reuse_rewrites 构建期改写的站点不在本表。",
+  "note_AGE_005": "s126/s127 成对：承载图因两侧共用 CN 名 AGE_06_007S 而把锚钉成 o135↔s126（真身 o134↔s126、o135↔s127）；单点会换一个缺口，故成对登记。",
+  "kinds": {
+   "missing": "产物缺该 CG ⇒ rebind 该槽到原版行（随行带入显示）",
+   "extra": "产物多出/张冠李戴的显示 ⇒ rebind 该槽到原版行（丢掉 Steam 的显示指令）"
+  },
+  "resolved_2026-10-08": [
+   {
+    "script": "AGE_007",
+    "slot": 421,
+    "how": "台账 drop（不属 CG 表）",
+    "why": "s421 是替代戏（s379–s424，已判「同拍去 H 版 ⇒ 全 drop」）里的存活格；原台账因承载图假锚 o425↔s421 把它当「接回点」保留。它自带 AGE_10_001S（H CG）⇒ 补 drop 后产物 CG 序列与原版一致。"
+   }
+  ]
+ },
+ "sites": [
+  {
+   "script": "AGE_005",
+   "slot": 119,
+   "orig_row": 122,
+   "name": "AGE_06_001S.PNG",
+   "archive": "CHIP2.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "AGE_005",
+   "slot": 126,
+   "orig_row": 134,
+   "name": "AGE_06_002S.PNG",
+   "archive": "CHIP2.arc",
+   "reason": "Steam 把该事件 CG 显示点换成 AGE_06_007S（异名 ⇒ censor_map 管不到）；s126 是保留 1:1 ⇒ 产物不显示 AGE_06_002S",
+   "evidence": "tmp/_q_o134_before.md"
+  },
+  {
+   "script": "AGE_005",
+   "slot": 127,
+   "orig_row": 135,
+   "name": "AGE_06_007S.PNG",
+   "archive": null,
+   "reason": "配合上一条：s126 被 rebind 到 o134 后，AGE_06_007S 失去显示点（原来靠 s126 的指令）；原版在 o135 显示它 ⇒ 成对 rebind 保显示",
+   "evidence": "tmp/_q_o134_before.md"
+  },
+  {
+   "script": "AGE_011",
+   "slot": 723,
+   "orig_row": 728,
+   "name": "AGE_08_003S.PNG",
+   "archive": "CHIP2.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_003",
+   "slot": 1078,
+   "orig_row": 1088,
+   "name": "KOT_12_001B.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 527,
+   "orig_row": 541,
+   "name": "KOT_15_003S.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 544,
+   "orig_row": 558,
+   "name": "KOT_15_001S.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 552,
+   "orig_row": 566,
+   "name": "KOT_15_001S.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 558,
+   "orig_row": 572,
+   "name": "KOT_15_003S.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 567,
+   "orig_row": 581,
+   "name": "KOT_15_001S.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 577,
+   "orig_row": 591,
+   "name": "KOT_15_002S.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 578,
+   "orig_row": 592,
+   "name": "KOT_15_001S.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 585,
+   "orig_row": 599,
+   "name": "KOT_15_002S.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
+   "evidence": "doc/lessons-learned.md §17"
+  }
+ ]
+}

@@ -3,7 +3,13 @@
 
 把判读台账的处置落到 Steam 宿主脚本字节上：
 
-- **删格**：整格删除（`14` + 邻接 `15`，带「不改动任何存活格名字框」守卫，移植 CC 算法）。
+- **删格**：删被删行的正文指令 `14` ＋**该行的演出前缀区**（上一条 `14` 之后 → 本行 `14`
+  之前）内除 `KEEP_OPS` 外的全部指令（语音/显示/BGM/图层/特效——纯表现，删之无副作用）
+  ＋它自带的名字框指令 `15`（带「不改动任何存活格名字框」守卫，移植 CC 算法）。
+  **状态写入（`09`/`0b`）、跳转（`01`/`02`/`06`/`07`）、菜单（`0f`）、成就（`f0` 与
+  非 `LAYER_ORDER` 的 `04` 调用）一律逐字节保留**——删演出残留的原因见
+  `doc/lessons-learned.md` §16（残留排在插入的原版块之后执行 ⇒ 把画面/BGM 顶回
+  Steam 素材、并造成无对白连播语音）。
 - **插入原版块**：台账行区间 → 原版指令 span（行 = 原 `14`，已实证 1:1）→ 逐条过
   `tool.ws2conv.CONV` 格式差 → 块内跳转立即重定基；跨块目标由计划器的
   `external` 表（orig off → steam 槽位）解析到宿主 `14` 的新偏移。
@@ -25,6 +31,22 @@ from tool import ws2, ws2dis
 from tool.ws2conv import CONV, REBASE_OPS, parse as conv_parse
 
 BLOCK_STOP = {0x01, 0x02, 0x06, 0x07, 0xFF}   # 原版块在其前截断（其后属宿主结尾）
+
+# 被删行「演出前缀区」内**保留**的操作码：状态写入（`09` 变量/图层权重、`0b` 布尔）、
+# 流程控制（`01`/`02`/`06`/`07`）、菜单（`0f`）、成就（`f0`）、名字框（`15`）、终结符。
+# 其余（语音 `2e`+`28`、显示 `33`/`34`、BGM `1e`、图层定位 `46`、特效…）都是**纯表现**，
+# 随该行一起删——否则它们排在插入的原版块之后执行，会把画面/BGM 顶回 Steam 素材，
+# 并造成「相邻两条语音触发之间没有 14」的无对白连播（见 doc/lessons-learned.md §16）。
+KEEP_OPS = {0x01, 0x02, 0x05, 0x06, 0x07, 0x09, 0x0B, 0x0F, 0x15, 0xF0, 0xFF}
+
+
+def _keep_in_perf_zone(op, ops):
+    """演出前缀区内的指令是否保留（保留 = 状态/流程/成就；`04` 只保留非 LAYER_ORDER 调用）。"""
+    if op in KEEP_OPS:
+        return True
+    if op == 0x04:
+        return ops.split(b'\x00')[0] != b'LAYER_ORDER'
+    return False
 
 
 def _pfx(ops):
@@ -52,7 +74,14 @@ def eff_names(instrs, skip=frozenset()):
 
 
 def drop_units(instrs, drop_slots):
-    """删格偏移集：被删槽的 `14` + 邻接 `15`（守卫：试删后任何存活格生效名字框不得改变）。"""
+    """删格偏移集。
+
+    三项内容：
+      1. 被删槽的正文指令 `14`；
+      2. 该槽**演出前缀区**（上一条 `14` 之后 → 本槽 `14` 之前）内**除 KEEP_OPS 外**的
+         全部指令——即该行自己的语音/显示/BGM/图层/特效，删之无状态与流程副作用；
+      3. 邻接 `15`（守卫：试删后任何存活格生效名字框不得改变）。
+    """
     slot_of = {}
     k = 0
     for off, op, size, ops in instrs:
@@ -61,10 +90,20 @@ def drop_units(instrs, drop_slots):
             k += 1
     kill = {off for off, op, size, ops in instrs
             if op == 0x14 and slot_of.get(off) in drop_slots}
+    # 演出前缀区：从被删 `14` 往前扫到上一条 `14`（不含），删掉其中的非 KEEP_OPS 指令
     idx = {ins[0]: j for j, ins in enumerate(instrs)}
+    for o in sorted(kill):
+        i = idx[o] - 1
+        while i >= 0 and instrs[i][1] != 0x14:
+            if not _keep_in_perf_zone(instrs[i][1], instrs[i][3]):
+                kill.add(instrs[i][0])
+            i -= 1
+    # 邻接 15（守卫：试删后任何存活格生效名字框不得改变）
     cand = set()
-    for o in kill:
+    for o in sorted(kill):
         j = idx[o]
+        if instrs[j][1] != 0x14:
+            continue
         for d in (j - 1, j + 1):
             if 0 <= d < len(instrs) and instrs[d][1] == 0x15:
                 cand.add(instrs[d][0])
@@ -110,7 +149,7 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
     """重建宿主脚本。
 
     plan = {
-      'drops':   [steam 槽位(14 序)]                       # 整格删除
+      'drops':   [steam 槽位(14 序)]                       # 删该行的文本与名字框指令
       'inserts': [(after_slot, r0, r1)],                  # 原版行闭区间；after_slot=-1 脚本头
       'external': {orig_off: steam_slot},                 # 跨块跳转解析（缺省空）
       'restore_frame': True,                              # 插入后恢复名字框（缺省开）
@@ -152,17 +191,20 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
             ranges.sort()
             assert all(r1 < r2 for (_, r1), (r2, _) in zip(ranges, ranges[1:])), \
                 '锚 %d 的插入区间须按原版行序排列' % a
+    ins_rows = set()
+    for _a, r0, r1 in plan['inserts']:
+        ins_rows.update(range(r0, r1 + 1))
+    del ins_rows   # 保留计算仅为可读性；块跨度已不再依赖它（见 block_span 注释）
 
     def block_span(r0, r1):
+        """块 = 行 r0..r1 各自的**演出前缀 ＋ 正文**。
+
+        右端收到 r1 的 `14` **之后**即止（`o14[r1]+1`），**不再携带 r1+1 的演出前缀**：
+        那一段在宿主侧由对应槽自带、或由承载 r1+1 的那一块自带，本块再带一遍就会让
+        同一语音/显示触发连发两次（产物出现「同格重复语音」，见 doc/lessons-learned.md §16）。
+        """
         i0 = o14[r0 - 1] + 1 if r0 > 0 else 0
-        if r1 + 1 < len(o14):
-            i1 = o14[r1 + 1]
-        else:
-            i1 = len(oinstrs)
-            for j in range(o14[r1] + 1, len(oinstrs)):
-                if oinstrs[j][0] in BLOCK_STOP:
-                    i1 = j
-                    break
+        i1 = o14[r1] + 1
         n14 = sum(1 for j in range(i0, i1) if oinstrs[j][0] == 0x14)
         assert n14 == r1 - r0 + 1, '块 14 数 %d != 行数 %d（r%d-%d）' % (n14, r1 - r0 + 1, r0, r1)
         assert not any(oinstrs[j][0] == 0x0F for j in range(i0, i1)), \
@@ -200,6 +242,13 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
         for j in range(i0, i1):
             op, ops = oinstrs[j]
             ops2 = _conv(op, ops, names)
+            if op == 0x14:
+                # 池序号全量重算：插入行的 `14.id` 必须改写为新槽序。原版行号与
+                # 新槽序只在"插入块紧邻其原位置、且其前无删格"时才恰好相等；一旦
+                # 其前有删格，沿用原号就会与宿主侧已重排的号位撞号，而引擎按 id
+                # 索引 zh-CN 覆盖层 ⇒ 撞号处及其后的中文整段错位
+                # （2026-10-06 复验 D2：9 脚本 / 1,435 槽）。长度不变，不影响 rel/q。
+                ops2 = struct.pack('<H', pool) + ops2[2:]
             for k in REBASE_OPS.get(op, ()):
                 v = struct.unpack_from('<I', ops2, k)[0] if len(ops2) >= k + 4 else 0
                 if not v:

@@ -26020,7 +26020,27 @@
      186,
      212
     ],
-    "form": "1:1（头对齐）"
+    "form": "1:1（内容存疑：两侧语音号不一致）",
+    "content_suspect": [
+     {
+      "orig_row": 282,
+      "steam_slot": 196,
+      "orig_voice": "AGE_2707.OGG",
+      "steam_voice": "AGE_6017.OGG"
+     },
+     {
+      "orig_row": 289,
+      "steam_slot": 203,
+      "orig_voice": "AGE_2709.OGG",
+      "steam_voice": "AGE_6019.OGG"
+     },
+     {
+      "orig_row": 295,
+      "steam_slot": 209,
+      "orig_voice": "AGE_2710.OGG",
+      "steam_voice": "AGE_6021.OGG"
+     }
+    ]
    },
    {
     "kind": "orig_only",
@@ -47760,7 +47780,16 @@
     "steam": [
      32,
      32
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 54,
+      "steam_slot": 32,
+      "orig_voice": "AGE_3547.OGG",
+      "steam_voice": "AGE_6051.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -48311,7 +48340,16 @@
     "steam": [
      16,
      16
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 16,
+      "steam_slot": 16,
+      "orig_voice": "AGE_3848.OGG",
+      "steam_voice": "AGE_6061.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -71202,8 +71240,16 @@
      136,
      140
     ],
-    "form": "1:1",
-    "anchor": "（区间内无锚点，条数相等）"
+    "form": "1:1（内容存疑：两侧语音号不一致）",
+    "anchor": "（区间内无锚点，条数相等）",
+    "content_suspect": [
+     {
+      "orig_row": 149,
+      "steam_slot": 137,
+      "orig_voice": "AMA_1644.OGG",
+      "steam_voice": "AMA_6016.OGG"
+     }
+    ]
    },
    {
     "kind": "anchor",
@@ -74807,7 +74853,16 @@
     "steam": [
      663,
      663
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 657,
+      "steam_slot": 663,
+      "orig_voice": "AMA_1712.OGG",
+      "steam_voice": "AMA_6024.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -74830,7 +74885,16 @@
     "steam": [
      684,
      684
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 662,
+      "steam_slot": 684,
+      "orig_voice": "AMA_1713.OGG",
+      "steam_voice": "AMA_6033.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -76317,8 +76381,16 @@
      116,
      120
     ],
-    "form": "1:1",
-    "anchor": "（区间内无锚点，条数相等）"
+    "form": "1:1（内容存疑：两侧语音号不一致）",
+    "anchor": "（区间内无锚点，条数相等）",
+    "content_suspect": [
+     {
+      "orig_row": 119,
+      "steam_slot": 119,
+      "orig_voice": "AMA_1882.OGG",
+      "steam_voice": "AMA_6054.OGG"
+     }
+    ]
    },
    {
     "kind": "anchor",
@@ -87389,7 +87461,16 @@
     "steam": [
      695,
      695
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 724,
+      "steam_slot": 695,
+      "orig_voice": "AMA_2184.OGG",
+      "steam_voice": "AMA_6065.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -118211,7 +118292,16 @@
     "steam": [
      1124,
      1124
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 1151,
+      "steam_slot": 1124,
+      "orig_voice": "ASA_1769.OGG",
+      "steam_voice": "ASA_6009.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "match",
@@ -118223,7 +118313,15 @@
      1125,
      1142
     ],
-    "form": "1:1（头对齐）"
+    "form": "1:1（内容存疑：两侧语音号不一致）",
+    "content_suspect": [
+     {
+      "orig_row": 1166,
+      "steam_slot": 1139,
+      "orig_voice": "ASA_1773.OGG",
+      "steam_voice": "ASA_6013.OGG"
+     }
+    ]
    },
    {
     "kind": "steam_only",
@@ -121050,7 +121148,15 @@
      295,
      319
     ],
-    "form": "1:1（头对齐）"
+    "form": "1:1（内容存疑：两侧语音号不一致）",
+    "content_suspect": [
+     {
+      "orig_row": 331,
+      "steam_slot": 302,
+      "orig_voice": "ASA_2002.OGG",
+      "steam_voice": "ASA_6021.OGG"
+     }
+    ]
    },
    {
     "kind": "steam_only",
@@ -300803,7 +300909,16 @@
     "steam": [
      1130,
      1130
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 1120,
+      "steam_slot": 1130,
+      "orig_voice": "KOT_2194.OGG",
+      "steam_voice": "KOT_6011.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -300826,7 +300941,16 @@
     "steam": [
      1155,
      1155
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 1137,
+      "steam_slot": 1155,
+      "orig_voice": "KOT_2200.OGG",
+      "steam_voice": "KOT_6021.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -300849,7 +300973,16 @@
     "steam": [
      1175,
      1175
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 1178,
+      "steam_slot": 1175,
+      "orig_voice": "KOT_2213.OGG",
+      "steam_voice": "KOT_6027.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "match",
@@ -317759,7 +317892,16 @@
     "steam": [
      483,
      483
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 485,
+      "steam_slot": 483,
+      "orig_voice": "KOT_2829.OGG",
+      "steam_voice": "KOT_6031.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -318355,7 +318497,16 @@
     "steam": [
      647,
      647
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 888,
+      "steam_slot": 647,
+      "orig_voice": "KOT_2971.OGG",
+      "steam_voice": "KOT_6067.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -319236,7 +319387,16 @@
     "steam": [
      756,
      756
-    ]
+    ],
+    "content_suspect": [
+     {
+      "orig_row": 1113,
+      "steam_slot": 756,
+      "orig_voice": "KOT_3017.OGG",
+      "steam_voice": "KOT_6077.OGG"
+     }
+    ],
+    "form": "1:1（内容存疑：两侧语音号不一致）"
    },
    {
     "kind": "ambiguous",
@@ -357748,7 +357908,21 @@
      771,
      790
     ],
-    "form": "1:1（头对齐）"
+    "form": "1:1（内容存疑：两侧语音号不一致）",
+    "content_suspect": [
+     {
+      "orig_row": 793,
+      "steam_slot": 772,
+      "orig_voice": "YOR_1670.OGG",
+      "steam_voice": "YOR_6002.OGG"
+     },
+     {
+      "orig_row": 796,
+      "steam_slot": 775,
+      "orig_voice": "YOR_1672.OGG",
+      "steam_voice": "YOR_6003.OGG"
+     }
+    ]
    },
    {
     "kind": "steam_only",
@@ -363335,7 +363509,15 @@
      759,
      761
     ],
-    "form": "1:1（头对齐）"
+    "form": "1:1（内容存疑：两侧语音号不一致）",
+    "content_suspect": [
+     {
+      "orig_row": 842,
+      "steam_slot": 760,
+      "orig_voice": "YOR_1941.OGG",
+      "steam_voice": "YOR_6020.OGG"
+     }
+    ]
    },
    {
     "kind": "orig_only",
@@ -363373,7 +363555,27 @@
      0,
      8
     ],
-    "form": "1:1（尾对齐）"
+    "form": "1:1（内容存疑：两侧语音号不一致）",
+    "content_suspect": [
+     {
+      "orig_row": 11,
+      "steam_slot": 0,
+      "orig_voice": "YOR_2057.OGG",
+      "steam_voice": "YOR_6021.OGG"
+     },
+     {
+      "orig_row": 13,
+      "steam_slot": 2,
+      "orig_voice": "YOR_2058.OGG",
+      "steam_voice": "YOR_6022.OGG"
+     },
+     {
+      "orig_row": 15,
+      "steam_slot": 4,
+      "orig_voice": "YOR_2059.OGG",
+      "steam_voice": "YOR_6023.OGG"
+     }
+    ]
    },
    {
     "kind": "anchor",
@@ -365860,7 +366062,33 @@
      270,
      293
     ],
-    "form": "1:1（头对齐）"
+    "form": "1:1（内容存疑：两侧语音号不一致）",
+    "content_suspect": [
+     {
+      "orig_row": 289,
+      "steam_slot": 277,
+      "orig_voice": "YOR_2096.OGG",
+      "steam_voice": "ASA_6061.OGG"
+     },
+     {
+      "orig_row": 293,
+      "steam_slot": 281,
+      "orig_voice": "ASA_2497.OGG",
+      "steam_voice": "ASA_6062.OGG"
+     },
+     {
+      "orig_row": 297,
+      "steam_slot": 285,
+      "orig_voice": "ASA_2498.OGG",
+      "steam_voice": "ASA_6064.OGG"
+     },
+     {
+      "orig_row": 302,
+      "steam_slot": 290,
+      "orig_voice": "ASA_2499.OGG",
+      "steam_voice": "YOR_6027.OGG"
+     }
+    ]
    },
    {
     "kind": "steam_only",
