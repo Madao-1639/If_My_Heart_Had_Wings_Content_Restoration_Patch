@@ -121,9 +121,28 @@
 
 **生产者**：`script/build/build_carrier_map.py`。**消费方**：`tool/v5lib.py`（唯一直接读取口，判读批次生成与校验器都经它）。
 
+## resource/align_fixes.json —— 人工定案的逐槽对齐（残余对齐评审的落地形态）
+
+**定位**：演出同步（`resource/perf_sync_map.json`）要把保留槽的演出对齐到原版行再决定删/换。对齐靠三套机制——承载图 `anchor`/`match`、**语音号自证**（整脚本唯一同号行）、**等长缺口内插**；三者都失败的槽（落在 `ambiguous` 块中部、语音是 Steam 独有、缺口长度不等）无法自动处置，只能留残余（闸 REVIEW）。本表就是这些槽的**人工定案**。
+
+**表结构**：顶层 `meta` 与 `fixes`：
+
+```json
+{"fixes": {"<脚本>": {"<steam 槽位>": <原版行号 | null>}}}
+```
+
+- 值＝**原版行号** ⇒ 该槽的真实对齐行（覆盖承载图/语音/内插的推断）。
+- 值＝**`null`** ⇒ 该槽**无对应原版行**（Steam 自写）⇒ 从对齐来源里剔除；该槽退回「对齐无关」判据（`extra_absent`）或留 REVIEW，其 Steam 演出保留（属声明内偏差）。
+
+**只放人工定案**；机械可判的不入本表。假锚的「机械配对不可用」另记 `resource/carrier_quirks.json`。
+
+**语义强度**：本表的条目**直接视为可信**——`tool/perfsync.py` 的可信度判据（「两侧自带语音号相等」）对它豁免（人工已按「同句」核过）。这条例外是必要的：像 `ASA_001` s1082↔o1084 这种「原版该行有语音、Steam 该行无语音」的对位，语音判据必然挡下，只有人工定案能放行。
+
+**生产者**：人工（残余对齐评审；判据＝「Steam 本格 EN/官中 与候选行日文是否**同一句**」＋单调性约束）。**消费方**：`tool/perfsync.py::align_map()`（产出端 `script/build/build_perf_sync_map.py` 与闸 `script/checks/perf_sync_check.py` 共用）。
+
 ## resource/carrier_quirks.json —— 承载图已知假锚/拆行判定表
 
-**定位**：承载图只按 **token 值相等**钉锚，不读文本 ⇒ 会出现「同名 token、两句内容」的**假锚**（见 [restoration-targets.md](../doc/restoration-targets.md)）。本表把「台账的决定」与「承载图的机械配对」的差异**显式记账**：每条 = 一个已知不良机械配对 + 真相 + 台账已落的动作，供只读对账用；**本身不含任何处置动作**（产物仍以 `resource/adjudication/` 为准）。
+**定位**：承载图只按 **token 值相等**钉锚，不读文本 ⇒ 会出现「同名 token、两句内容」的**假锚**（见 [restoration-targets.md](../doc/restoration-targets.md)）。本表把「台账的决定」与「承载图的机械配对」的差异**显式记账**：每条 = 一个已知不良机械配对 + 真相 + 台账已落的动作。**两个消费方**：① `script/checks/check_carrier_ledger.py` 只读对账；② `tool/perfsync.py::align_map()` —— `false_anchor`／`missing_seam` 的机械配对**不得**用作演出同步的对齐来源（机械配错会把别的行的演出搬过来）。
 
 **表结构**：顶层 `meta`（口径 + `kinds` + `ledger_rules` 枚举）与 `quirks[]`：
 
@@ -137,7 +156,7 @@
 | `ledger_rule` | str | 对账规则 ∈ `slot_dropped`／`text_override`／`row_inserted`／`none` |
 | `evidence` | str | 证据文件（`tmp/` 或 `doc/`） |
 
-**生产者**：人工（锚点全面抽查）。**消费方**：`script/checks/check_carrier_ledger.py`（只读）。
+**生产者**：人工（锚点全面抽查）。**消费方**：`script/checks/check_carrier_ledger.py`（只读）、`tool/perfsync.py::align_map()`（排除机械配对）。
 
 ## resource/adjudication/ —— 判读台账
 
@@ -222,6 +241,31 @@
 **消费方式**：`script/build/build_restore_plan.py` 把每条按 **rebind 同形**落到计划——drop 该保留槽 + 插入该原版行（随行带入 `0x33` 显示指令），资源扫描再把该成员并入 `resources.copy`；计划里落 `plan.<host>.cg_sites` 供核对。
 
 **生产者**：人工（语义评审 + 父级复算；判据：原版该行自有 CG 类 `\x33` 显示 ∧ 该槽为保留 1:1 ∧ 该名在 Steam 侧任何位置都未显示）。**消费方**：`script/build/build_restore_plan.py`。
+
+## resource/perf_sync_map.json —— 演出同步判定表（保留槽多余演出的处置）
+
+**定位**：Steam 把原版**事件 CG 的显示点换成背景 + 立绘**（两侧**异名**）时，同名冲突表（入口「同名两侧字节不同」）与两条文本机检都看不见；`cg_site_rewrites.json` 只补 CG 显示点本身、**不覆盖它周围的保留行演出** ⇒ 产物里出现「原版 CG 与 Steam 立绘／背景同屏」。本表按「逐槽演出对账」补上这条通道，方针＝**「每类演出（语音 / CG / 立绘 / 背景）要么两侧同时存在且相等，要么都不存在」**（见 [restoration-route.md](../doc/restoration-route.md) §6 V-10）。
+
+**表结构**：顶层 `meta`、`sites[]`、`review[]`、`summary`。
+
+| 字段 | 类型 | 含义 |
+|---|---|---|
+| `script` / `slot` | str / int | 脚本名；**Steam 保留槽**（14 序，未删格） |
+| `orig_row` | int \| null | 对齐到的原版行（`carrier_map` 的 anchor/match 等长 1:1 块内插）；**对齐无关类为 `null`** |
+| `action` | str | 处置 ∈ `drop`（删该槽演出前缀区内这些通道的**显示块**）／`replace`（把该槽自带的立绘／背景演出**整段换成原版行 r 的**：删该槽全部立绘／背景显示块与清屏指令，再把原版行 r 的图像演出块按原顺序补在**该槽前缀区开头**） |
+| `kind` | str | 类别 ∈ `extra`（产物自带、原版**对齐行在屏**没有）／`extra_absent`（产物自带、原版**全脚本**都不出现的图名＝Steam 新增素材，**与对齐无关**）／`replace`（两侧「通道→图名」不等）／`missing`／`different`／`ev_extra` |
+| `channels` | list[str] | 该槽要删的显示通道（`st01`／`bg01` …）；`ev` 不搬（CG 序列另管） |
+| `prod` / `orig` | dict | 该通道在产物自带 / 原版行的图名（证据） |
+| `voice` | str \| null | 该槽自带语音号（可信度判据用） |
+| `evidence` | str | 判据出处 |
+
+`review[]` 逐条记不自动处置的差异（`trusted`／`extra`／`ev_extra`／`items`：`missing`／`different`），供人工裁定。
+
+**判据与对齐来源**（实现＝`tool/perfsync.py`，产出端与闸共用）：方针、判据要点与落地形态见 [restoration-route.md](../doc/restoration-route.md) §6 V-10。本表特有的对齐口径：承载图 `anchor`／`match` 等长 1:1 块 ＋ **语音号自证**（`voice_align`）＋ **等长缺口内插**（`interp_align`）＋ **人工定案**（`align_fixes.json` 覆盖）＋ **剔除已知假锚**（`carrier_quirks.json` 的 `false_anchor`／`missing_seam`）。
+
+**消费方式**：`script/build/build_restore_plan.py` 把 `action` 子集落进 `plan.<host>.perf_sync = {steam 槽位: {'mode','orig_row'|'channels'}}`，`tool/writer.py` 的 `perf_sync_apply()` 删/换显示块；`replace` 补块**照抄原版资源名** ⇒ 原版素材经 `resources.copy` 补入产物归档（**补素材、不重写本版名**）。闸 `script/checks/perf_sync_check.py`（HARD＝产物显示原版全脚本都不出现的图／名单未落地）。
+
+**生产者**：`script/build/build_perf_sync_map.py`（`--orig-dir`／`IFMH_ORIG_DIR`）。**消费方**：`script/build/build_restore_plan.py`（`action=drop`）、`script/checks/perf_sync_check.py`、`script/final_verification.py`（第 4b 项「名单数＝落地数」）。
 
 ## resource/voice_conflict_map.json —— 语音同名冲突判定表
 

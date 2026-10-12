@@ -40,6 +40,7 @@ if ROOT not in sys.path:
 from tool import arcbuild, ws2, ws2dis, lng, scriptext, fancn  # noqa: E402
 from tool import v5lib  # noqa: E402
 from tool import paths  # noqa: E402
+from tool import perfsync  # noqa: E402
 from tool.ws2conv import load_orig_formats, parse as conv_parse, convert_script, REBASE_OPS  # noqa: E402
 from tool import writer  # noqa: E402
 
@@ -123,6 +124,34 @@ def load_cg_sites():
     if os.path.exists(p):
         for site in json.load(open(p, encoding='utf-8')).get('sites', []):
             out[site['script']].append(site)
+    return out
+
+
+def load_perf_sync():
+    """resource/perf_sync_map.json → {script: {steam 槽位: spec}}。
+
+    方针与判据见 doc/restoration-route.md §7 V-10 与 doc/lessons-learned.md §27。
+    `spec` 两种（写盘器 `tool/writer.perf_sync_apply` 消费）：
+      · `{'mode': 'drop', 'channels': [通道]}`——删该槽这些通道的显示块；
+      · `{'mode': 'replace', 'orig_row': r}`——把该槽自带的立绘／背景演出整段换成原版行 r 的
+        （资源名照抄原版，靠 `resources.copy` 补入原版素材）。
+    `review` 条目只作记录，不进计划。
+    """
+    p = os.path.join(ROOT, 'resource', 'perf_sync_map.json')
+    out = collections.defaultdict(dict)
+    if os.path.exists(p):
+        for site in json.load(open(p, encoding='utf-8')).get('sites', []):
+            act = site.get('action')
+            if act not in ('drop', 'replace'):
+                continue
+            if act == 'replace':
+                if site.get('orig_row') is None:
+                    continue
+                out[site['script']][int(site['slot'])] = {'mode': 'replace',
+                                                          'orig_row': int(site['orig_row'])}
+            else:
+                out[site['script']][int(site['slot'])] = {'mode': 'drop',
+                                                          'channels': list(site['channels'])}
     return out
 
 
@@ -275,7 +304,12 @@ def build_host_plan(script, blocks, ofmt, gates, ren):
     # text 覆盖槽不得同时被删（两套动作对同一格互斥）
     clash = text_overrides.keys() & set(drops)
     assert not clash, '%s: 槽 %s 同时登记 text 覆盖与删格' % (script, sorted(clash))
-    if not drops and not inserts and not text_overrides:
+    # 演出同步（判定表 action=drop／replace）：写盘器删该槽演出前缀区内的显示块
+    # （replace 另在原版行取图像演出块补回）。与删格互斥——被删槽的演出已随删格清掉。
+    perf_sync = {int(k): v for k, v in PERF_SYNC.get(script, {}).items()}
+    clash_perf = set(perf_sync) & set(drops)
+    assert not clash_perf, '%s: 槽 %s 同时登记演出同步与删格' % (script, sorted(clash_perf))
+    if not drops and not inserts and not text_overrides and not perf_sync:
         # 全 keep（典型 = 机械锚错位假象）：宿主零改动，官方 .lng 原样保留
         return {'kind': 'skip'}
     kept = [s for s in range(len(v5lib.rows('steam', script))) if s not in set(drops)]
@@ -342,11 +376,38 @@ def build_host_plan(script, blocks, ofmt, gates, ren):
             # 匹配行文本覆盖（2026-10-07 口径）：steam 槽位 → 原版行，zh 交付该槽
             # 用民汉、脚本指令不动。verify_sync 的 B3 文本核对按此声明取期望文本。
             'text_overrides': {str(k): v for k, v in sorted(text_overrides.items())},
-            'cg_sites': cg_sites}
+            'cg_sites': cg_sites,
+            # 演出同步：{steam 槽位: {'mode': 'drop'|'replace', ...}}，写盘器删该槽前缀区内
+            # 这些通道的显示块（replace 另补原版行的图像演出块）。
+            'perf_sync': {str(k): v for k, v in sorted(perf_sync.items())}}
     res = writer.rebuild_host(steam_dec, orig_dec, plan, ofmt)
     assert res['ok'] and res['fix_bad'] == 0, \
         '%s: rebuild fail ok=%s fix_bad=%d n14=%d n_slots=%d pool=%d' % (
             script, res['ok'], res['fix_bad'], res['n14'], res['n_slots'], res['pool'])
+    # 闸：判定表条目逐槽落地（每个请求槽都有报告；`missed` 空；replace 的补块数对齐）
+    perf_report = {int(k): v for k, v in (res.get('perf_kill') or {}).items()}
+    assert set(perf_report) == set(perf_sync), \
+        '%s: 演出同步槽位未逐槽落地（名单 %s / 报告 %s）' % (
+            script, sorted(perf_sync), sorted(perf_report))
+    assert not any(v['missed'] for v in perf_report.values()), \
+        '%s: 演出同步通道未命中：%s' % (script, {k: v['missed'] for k, v in perf_report.items()
+                                             if v['missed']})
+    exp_add = 0
+    for _slot, _spec in perf_sync.items():
+        if _spec.get('mode') != 'replace':
+            continue
+        _r = _spec['orig_row']
+        _i0 = o14[_r - 1] + 1 if _r > 0 else 0
+        _i1 = o14[_r]
+        for _b in perfsync.image_blocks([(op, ops) for op, ops in oinstrs[_i0:_i1]]):
+            if _b['chan'] == 'ev':
+                continue                          # `ev` 不搬（与 writer 同口径）
+            exp_add += len([i for i in _b['idx'] if oinstrs[_i0 + i][0] != 0x0B])
+    got_add = sum(v['added'] for v in perf_report.values())
+    assert got_add == exp_add, \
+        '%s: 演出同步补块数 %d != 期望 %d' % (script, got_add, exp_add)
+    gates['perf_sync_%s' % script] = len(perf_report)
+    gates['perf_add_%s' % script] = got_add
 
     # 槽位文本
     off_lng = official_lng(script)
@@ -381,6 +442,13 @@ def build_host_plan(script, blocks, ofmt, gates, ren):
         i0 = o14[r0 - 1] + 1 if r0 > 0 else 0
         i1 = o14[r1] + 1        # 与 writer.block_span 同口径：右端收到 r1 的 14 之后
         spans.append((i0, i1))
+    # 演出同步 `replace`：补块照抄**原版资源名** ⇒ 该原版行前缀区引用的资源也要进需求面
+    # （Steam 缺的走 `resources.copy` 补入原版素材；用户 2026-10-10 定案：补素材、不重写名）。
+    for _slot, _spec in perf_sync.items():
+        if _spec.get('mode') != 'replace':
+            continue
+        _r = _spec['orig_row']
+        spans.append((o14[_r - 1] + 1 if _r > 0 else 0, o14[_r]))
     need = scan_resources(orig_dec, spans, ofmt)
     names = {n.lower(): ren[n.lower()] for kinds in need.values() for n in kinds
              if n.lower() in ren}
@@ -424,8 +492,9 @@ def os_enc(script):
 def main():
     ofmt = load_orig_formats(paths.orig_dir())
     led = load_ledgers()
-    global CG_SITES
+    global CG_SITES, PERF_SYNC
     CG_SITES = load_cg_sites()
+    PERF_SYNC = load_perf_sync()
     gates = {}
     errors = []
     plans = {'A1': {}, 'hosts': {}, 'jumps': [list(j) for j in JUMP_REVERTS]}

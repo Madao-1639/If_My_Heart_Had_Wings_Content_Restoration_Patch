@@ -2870,6 +2870,12 @@
      "348": 349
     },
     "cg_sites": [],
+    "perf_sync": {
+     "90": {
+      "mode": "replace",
+      "orig_row": 91
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -6363,6 +6369,7 @@
     ],
     "pna": [
      "A小鳥_01M.PNA",
+     "A小鳥_02M.PNA",
      "Bあげは_01M.PNA",
      "Bあげは_02M.PNA",
      "Gほたる_01M.PNA"
@@ -6394,6 +6401,7 @@
      "79": 79
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -10271,6 +10279,7 @@
      "670": 670
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -14830,6 +14839,7 @@
       "name": "AGE_06_007S.PNG"
      }
     ],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -18840,6 +18850,12 @@
      "608": 633
     },
     "cg_sites": [],
+    "perf_sync": {
+     "12": {
+      "mode": "replace",
+      "orig_row": 12
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -23396,7 +23412,9 @@
     ],
     "png": [
      "BG00_01S.PNG",
+     "BG00_02S.PNG",
      "BG16_02S.PNG",
+     "BG21_01S.PNG",
      "EST_1000.PNG"
     ],
     "bgm": [
@@ -23628,6 +23646,12 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {
+     "364": {
+      "mode": "replace",
+      "orig_row": 393
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -29550,6 +29574,7 @@
      "AGE_2994.OGG",
      "AGE_2995.OGG",
      "AGE_2996.OGG",
+     "AGE_2997.OGG",
      "AGE_3005.OGG",
      "AGE_3006.OGG",
      "AGE_3007.OGG",
@@ -29943,6 +29968,7 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -32888,6 +32914,7 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -36874,6 +36901,76 @@
      "23": 23
     },
     "cg_sites": [],
+    "perf_sync": {
+     "12": {
+      "mode": "replace",
+      "orig_row": 12
+     },
+     "14": {
+      "mode": "replace",
+      "orig_row": 14
+     },
+     "15": {
+      "mode": "replace",
+      "orig_row": 15
+     },
+     "16": {
+      "mode": "replace",
+      "orig_row": 16
+     },
+     "18": {
+      "mode": "replace",
+      "orig_row": 18
+     },
+     "19": {
+      "mode": "replace",
+      "orig_row": 19
+     },
+     "20": {
+      "mode": "replace",
+      "orig_row": 20
+     },
+     "23": {
+      "mode": "replace",
+      "orig_row": 23
+     },
+     "24": {
+      "mode": "replace",
+      "orig_row": 24
+     },
+     "40": {
+      "mode": "replace",
+      "orig_row": 544
+     },
+     "42": {
+      "mode": "replace",
+      "orig_row": 546
+     },
+     "46": {
+      "mode": "replace",
+      "orig_row": 550
+     },
+     "50": {
+      "mode": "replace",
+      "orig_row": 555
+     },
+     "52": {
+      "mode": "replace",
+      "orig_row": 557
+     },
+     "53": {
+      "mode": "replace",
+      "orig_row": 558
+     },
+     "60": {
+      "mode": "replace",
+      "orig_row": 567
+     },
+     "64": {
+      "mode": "replace",
+      "orig_row": 571
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -41702,6 +41799,11 @@
    ],
    "resources": {
     "voice": [
+     "AGE_3534.OGG",
+     "AGE_3535.OGG",
+     "AGE_3536.OGG",
+     "AGE_3537.OGG",
+     "AGE_3538.OGG",
      "AGE_3539.OGG",
      "AGE_3540.OGG",
      "AGE_3541.OGG",
@@ -41879,9 +41981,16 @@
      "AGE_3713.OGG",
      "AGE_3714.OGG",
      "AGE_3715.OGG",
+     "AGE_3719.OGG",
+     "AGE_3720.OGG",
+     "AGE_3721.OGG",
+     "AGE_3722.OGG",
+     "AGE_3723.OGG",
      "AGE_3725.OGG",
      "AGE_3726.OGG",
      "AGE_3727.OGG",
+     "AGE_3728.OGG",
+     "AGE_3729.OGG",
      "AGE_3731.OGG",
      "AGE_3732.OGG",
      "AGE_3733.OGG",
@@ -42080,9 +42189,11 @@
      "BG20_01S.PNG",
      "BG21_01S.PNG",
      "EST_1000.PNG",
+     "EST_1022.PNG",
      "SKY01_03S.PNG"
     ],
     "bgm": [
+     "BGM03.OGG",
      "BGM20.OGG",
      "BGM22.OGG"
     ],
@@ -42156,6 +42267,20 @@
       "name": "AGE_08_003S.PNG"
      }
     ],
+    "perf_sync": {
+     "715": {
+      "mode": "replace",
+      "orig_row": 720
+     },
+     "724": {
+      "mode": "replace",
+      "orig_row": 729
+     },
+     "727": {
+      "mode": "replace",
+      "orig_row": 732
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -46450,16 +46575,20 @@
    "resources": {
     "png": [
      "AGE_08_003S.PNG",
-     "BG11_03S.PNG"
+     "BG00_02S.PNG",
+     "BG11_03S.PNG",
+     "BG23_14B.PNG"
     ],
     "pna": [
+     "Bあげは_01L.PNA",
      "Bあげは_02M.PNA",
      "Bあげは_03M.PNA"
     ],
     "voice": [
      "AGE_3848.OGG",
      "AGE_3849.OGG",
-     "AGE_3942.OGG"
+     "AGE_3942.OGG",
+     "AGE_3943.OGG"
     ]
    },
    "n_drops": 4,
@@ -46475,6 +46604,7 @@
      "146": 146
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -48479,6 +48609,42 @@
      "343": 359
     },
     "cg_sites": [],
+    "perf_sync": {
+     "67": {
+      "mode": "replace",
+      "orig_row": 61
+     },
+     "97": {
+      "mode": "drop",
+      "channels": [
+       "bg01"
+      ]
+     },
+     "116": {
+      "mode": "replace",
+      "orig_row": 127
+     },
+     "558": {
+      "mode": "replace",
+      "orig_row": 574
+     },
+     "560": {
+      "mode": "replace",
+      "orig_row": 576
+     },
+     "598": {
+      "mode": "replace",
+      "orig_row": 616
+     },
+     "605": {
+      "mode": "replace",
+      "orig_row": 623
+     },
+     "735": {
+      "mode": "replace",
+      "orig_row": 1135
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -54343,7 +54509,10 @@
    "resources": {
     "png": [
      "AMA_06_001B.PNG",
+     "AMA_06_002B.PNG",
      "AMA_06_006B.PNG",
+     "AMA_06_007B.PNG",
+     "AMA_06_007S.PNG",
      "AMA_09_001S.PNG",
      "AMA_09_002B.PNG",
      "AMA_09_002S.PNG",
@@ -54407,9 +54576,11 @@
      "AMA_1631.OGG",
      "AMA_1634.OGG",
      "AMA_1635.OGG",
+     "AMA_1636.OGG",
      "AMA_1641.OGG",
      "AMA_1642.OGG",
      "AMA_1644.OGG",
+     "AMA_1700.OGG",
      "AMA_1714.OGG",
      "AMA_1715.OGG",
      "AMA_1716.OGG",
@@ -54538,7 +54709,8 @@
      "AMA_1839.OGG",
      "AMA_1840.OGG",
      "AMA_1841.OGG",
-     "AMA_1842.OGG"
+     "AMA_1842.OGG",
+     "AMA_1847.OGG"
     ],
     "pna": [
      "C天音_01L.PNA",
@@ -54549,6 +54721,7 @@
     ],
     "se": [
      "HSE_137.OGG",
+     "HSE_160.OGG",
      "PW059_1.OGG",
      "TRSE_031.OGG",
      "TRSE_131.OGG"
@@ -54620,6 +54793,7 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -58581,6 +58755,7 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -64821,6 +64996,7 @@
      "807": 1111
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -71412,6 +71588,20 @@
      "202": 211
     },
     "cg_sites": [],
+    "perf_sync": {
+     "279": {
+      "mode": "replace",
+      "orig_row": 749
+     },
+     "288": {
+      "mode": "replace",
+      "orig_row": 758
+     },
+     "294": {
+      "mode": "replace",
+      "orig_row": 764
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -75700,6 +75890,7 @@
    ],
    "resources": {
     "pna": [
+     "A小鳥_01M.PNA",
      "A小鳥_01W.PNA",
      "C天音_01L.PNA",
      "C天音_01M.PNA",
@@ -75864,7 +76055,8 @@
      "HAT_0201.OGG",
      "HAT_0202.OGG",
      "HAT_0203.OGG",
-     "KOT_4605.OGG"
+     "KOT_4605.OGG",
+     "KOT_4606.OGG"
     ],
     "se": [
      "HSE_115.OGG",
@@ -75873,6 +76065,7 @@
      "NSE37.OGG",
      "OTSE_004.OGG",
      "PW059_1.OGG",
+     "SE29.OGG",
      "SE43A.OGG",
      "SE43B.OGG",
      "TRSE_131.OGG",
@@ -75924,6 +76117,7 @@
      "AMA_15_024S.PNG",
      "BG00_01S.PNG",
      "BG00_02S.PNG",
+     "BG05E_01B.PNG",
      "BG08_01B.PNG",
      "BG08_01S.PNG",
      "BG11_01B.PNG",
@@ -75933,6 +76127,7 @@
      "BG13_01B.PNG",
      "BG13_02B.PNG",
      "BG13_02S.PNG",
+     "EST_1022.PNG",
      "SKY01_01S.PNG"
     ]
    },
@@ -76136,6 +76331,20 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {
+     "1082": {
+      "mode": "replace",
+      "orig_row": 1084
+     },
+     "1083": {
+      "mode": "replace",
+      "orig_row": 1085
+     },
+     "1099": {
+      "mode": "replace",
+      "orig_row": 1101
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -82017,6 +82226,8 @@
     ],
     "voice": [
      "ASA_1739.OGG",
+     "ASA_1740.OGG",
+     "ASA_1748.OGG",
      "ASA_1749.OGG",
      "ASA_1750.OGG",
      "ASA_1751.OGG",
@@ -82265,6 +82476,7 @@
      "81": 104
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -84101,6 +84313,7 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -86297,6 +86510,7 @@
      "43": 43
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -88912,6 +89126,7 @@
      "621": 619
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -92716,6 +92931,7 @@
      "688": 687
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -96188,6 +96404,7 @@
      "227": 227
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -97435,6 +97652,7 @@
      "284": 284
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -99303,6 +99521,7 @@
      "17": 17
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -100973,6 +101192,7 @@
      "313": 313
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -104404,6 +104624,7 @@
      "224": 222
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -108430,6 +108651,7 @@
      "349": 349
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -111030,6 +111252,7 @@
      "15": 15
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -111280,6 +111503,7 @@
      "10": 10
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -111373,6 +111597,7 @@
      "79": 79
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -111911,6 +112136,7 @@
      "292": 292
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -114864,6 +115090,7 @@
      "618": 617
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -118095,6 +118322,7 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -120891,6 +121119,7 @@
      "74": 74
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -125962,6 +126191,7 @@
     "drops": [
      275,
      283,
+     1073,
      1078,
      1104,
      1105,
@@ -126063,6 +126293,11 @@
       1002,
       1007,
       1012
+     ],
+     [
+      1072,
+      1083,
+      1083
      ],
      [
       1077,
@@ -126184,8 +126419,23 @@
       "slot": 1078,
       "orig_row": 1088,
       "name": "KOT_12_001B.PNG"
+     },
+     {
+      "slot": 1073,
+      "orig_row": 1083,
+      "name": "KOT_12_001S.PNG"
      }
     ],
+    "perf_sync": {
+     "1072": {
+      "mode": "replace",
+      "orig_row": 1082
+     },
+     "1082": {
+      "mode": "replace",
+      "orig_row": 1092
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -130521,8 +130771,8 @@
       1072
      ],
      [
-      "steam",
-      1073
+      "orig",
+      1083
      ],
      [
       "steam",
@@ -134370,7 +134620,7 @@
     "「诶……？」%K%P",
     "我把小鸟的脚搬到床上后，自己也躺在了她的旁边。%K%P",
     "「小碧……？」%K%P",
-    "「这样比较轻松吧？」%K%P",
+    "「这样的话，会更轻松些？」%K%P",
     "「嗯……但是，太近了」%K%P",
     "「我以为你喜欢靠近呢」%K%P",
     "「虽然近一点会好……。\\n　但是很不好意思啊」%K%P",
@@ -135081,6 +135331,8 @@
      "KAN_0230.OGG",
      "KAN_0231.OGG",
      "KOT_2042.OGG",
+     "KOT_2181.OGG",
+     "KOT_2185.OGG",
      "KOT_2193.OGG",
      "KOT_2194.OGG",
      "KOT_2195.OGG",
@@ -135276,8 +135528,10 @@
      "BG13_04B.PNG",
      "EST_1022.PNG",
      "KOT_12_001B.PNG",
+     "KOT_12_001S.PNG",
      "KOT_12_002S.PNG",
      "KOT_12_003S.PNG",
+     "KOT_12_004S.PNG",
      "KOT_12_007S.PNG",
      "KOT_12_008S.PNG",
      "KOT_12_009S.PNG",
@@ -135342,8 +135596,8 @@
      "BGM22.OGG"
     ]
    },
-   "n_drops": 87,
-   "n_insert_rows": 673
+   "n_drops": 88,
+   "n_insert_rows": 674
   },
   "KOT_004": {
    "kind": "host",
@@ -135385,6 +135639,7 @@
      "479": 498
     },
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -140869,6 +141124,100 @@
       "name": "KOT_15_002S.PNG"
      }
     ],
+    "perf_sync": {
+     "530": {
+      "mode": "replace",
+      "orig_row": 544
+     },
+     "531": {
+      "mode": "replace",
+      "orig_row": 545
+     },
+     "533": {
+      "mode": "replace",
+      "orig_row": 547
+     },
+     "534": {
+      "mode": "replace",
+      "orig_row": 548
+     },
+     "541": {
+      "mode": "replace",
+      "orig_row": 555
+     },
+     "542": {
+      "mode": "replace",
+      "orig_row": 556
+     },
+     "546": {
+      "mode": "replace",
+      "orig_row": 560
+     },
+     "548": {
+      "mode": "replace",
+      "orig_row": 562
+     },
+     "549": {
+      "mode": "replace",
+      "orig_row": 563
+     },
+     "550": {
+      "mode": "replace",
+      "orig_row": 564
+     },
+     "551": {
+      "mode": "replace",
+      "orig_row": 565
+     },
+     "560": {
+      "mode": "replace",
+      "orig_row": 574
+     },
+     "561": {
+      "mode": "replace",
+      "orig_row": 575
+     },
+     "562": {
+      "mode": "replace",
+      "orig_row": 576
+     },
+     "569": {
+      "mode": "replace",
+      "orig_row": 583
+     },
+     "571": {
+      "mode": "replace",
+      "orig_row": 585
+     },
+     "574": {
+      "mode": "replace",
+      "orig_row": 588
+     },
+     "575": {
+      "mode": "replace",
+      "orig_row": 589
+     },
+     "580": {
+      "mode": "replace",
+      "orig_row": 594
+     },
+     "582": {
+      "mode": "replace",
+      "orig_row": 596
+     },
+     "587": {
+      "mode": "replace",
+      "orig_row": 601
+     },
+     "678": {
+      "mode": "replace",
+      "orig_row": 1035
+     },
+     "762": {
+      "mode": "replace",
+      "orig_row": 1154
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -147363,6 +147712,8 @@
      "BG12_03S.PNG",
      "BG13_03B.PNG",
      "BG13_03S.PNG",
+     "BG20B_01S.PNG",
+     "BG22_03S.PNG",
      "EST_1022.PNG",
      "KOT_15_001B.PNG",
      "KOT_15_001S.PNG",
@@ -147400,9 +147751,12 @@
     "pna": [
      "A小鳥_01L.PNA",
      "A小鳥_01M.PNA",
-     "A小鳥_02M.PNA"
+     "A小鳥_02M.PNA",
+     "A小鳥_03L.PNA",
+     "D亜紗_02M.PNA"
     ],
     "voice": [
+     "ASA_0610.OGG",
      "KOT_2825.OGG",
      "KOT_2826.OGG",
      "KOT_2827.OGG",
@@ -147426,12 +147780,33 @@
      "KOT_2845.OGG",
      "KOT_2846.OGG",
      "KOT_2847.OGG",
+     "KOT_2848.OGG",
+     "KOT_2849.OGG",
+     "KOT_2850.OGG",
+     "KOT_2851.OGG",
+     "KOT_2852.OGG",
+     "KOT_2853.OGG",
      "KOT_2854.OGG",
+     "KOT_2855.OGG",
+     "KOT_2856.OGG",
+     "KOT_2857.OGG",
+     "KOT_2858.OGG",
+     "KOT_2859.OGG",
      "KOT_2860.OGG",
+     "KOT_2861.OGG",
+     "KOT_2862.OGG",
+     "KOT_2863.OGG",
      "KOT_2864.OGG",
+     "KOT_2865.OGG",
+     "KOT_2866.OGG",
+     "KOT_2868.OGG",
+     "KOT_2869.OGG",
      "KOT_2870.OGG",
      "KOT_2871.OGG",
+     "KOT_2873.OGG",
+     "KOT_2874.OGG",
      "KOT_2875.OGG",
+     "KOT_2876.OGG",
      "KOT_2877.OGG",
      "KOT_2878.OGG",
      "KOT_2879.OGG",
@@ -147584,7 +147959,8 @@
      "KOT_3026.OGG",
      "KOT_3027.OGG",
      "KOT_3028.OGG",
-     "KOT_3029.OGG"
+     "KOT_3029.OGG",
+     "KOT_3030.OGG"
     ],
     "se": [
      "HSE_023.OGG",
@@ -147665,6 +148041,20 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {
+     "433": {
+      "mode": "replace",
+      "orig_row": 433
+     },
+     "450": {
+      "mode": "replace",
+      "orig_row": 957
+     },
+     "456": {
+      "mode": "replace",
+      "orig_row": 986
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -153265,8 +153655,10 @@
      "BG00_01S.PNG",
      "BG00_02S.PNG",
      "BG08_01B.PNG",
+     "BG08_01S.PNG",
      "BG13_01B.PNG",
      "BG13_01S.PNG",
+     "EST_1044.PNG",
      "KOT_18_001B.PNG",
      "KOT_18_001S.PNG",
      "KOT_18_002S.PNG",
@@ -153299,9 +153691,12 @@
      "KOT_20_004B.PNG",
      "KOT_20_004S.PNG",
      "KOT_20_005S.PNG",
-     "KOT_20_006S.PNG"
+     "KOT_20_006S.PNG",
+     "SKY01_01S.PNG",
+     "SKY02_01B.PNG"
     ],
     "voice": [
+     "HAT_0157.OGG",
      "KOT_3379.OGG",
      "KOT_3380.OGG",
      "KOT_3381.OGG",
@@ -153486,9 +153881,11 @@
     "pna": [
      "A小鳥_01L.PNA",
      "A小鳥_01M.PNA",
-     "A小鳥_02L.PNA"
+     "A小鳥_02L.PNA",
+     "Rハット_01M.PNA"
     ],
     "bgm": [
+     "BGM03.OGG",
      "BGM21.OGG",
      "BGM22.OGG"
     ]
@@ -153725,6 +154122,12 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {
+     "710": {
+      "mode": "replace",
+      "orig_row": 728
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -157797,6 +158200,7 @@
      "Bあげは_02M.PNA",
      "Bあげは_03M.PNA",
      "E夜瑠_01M.PNA",
+     "E夜瑠_02M.PNA",
      "E夜瑠_03L.PNA"
     ],
     "voice": [
@@ -157811,6 +158215,7 @@
      "AGE_4507.OGG",
      "AGE_4508.OGG",
      "YOR_1641.OGG",
+     "YOR_1643.OGG",
      "YOR_1667.OGG",
      "YOR_1670.OGG",
      "YOR_1671.OGG",
@@ -157945,6 +158350,12 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {
+     "0": {
+      "mode": "replace",
+      "orig_row": 85
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -162189,13 +162600,20 @@
    "resources": {
     "png": [
      "BG00_01S.PNG",
+     "BG00_02S.PNG",
      "BG08_03B.PNG",
      "BG08_03S.PNG",
-     "BG13_03S.PNG"
+     "BG13_03S.PNG",
+     "CUTIN_99_02_A.PNG",
+     "CUTIN_99_02_B.PNG",
+     "EST_1022.PNG",
+     "SKY01_01B.PNG",
+     "SKY01_03B.PNG"
     ],
     "bgm": [
      "BGM07.OGG",
-     "BGM20.OGG"
+     "BGM20.OGG",
+     "BGM21.OGG"
     ],
     "voice": [
      "ASA_2417.OGG",
@@ -162519,6 +162937,16 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {
+     "9": {
+      "mode": "replace",
+      "orig_row": 20
+     },
+     "269": {
+      "mode": "replace",
+      "orig_row": 281
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -164057,7 +164485,9 @@
    ],
    "resources": {
     "png": [
-     "BG21_01S.PNG"
+     "BG00_01S.PNG",
+     "BG21_01S.PNG",
+     "EST_1022.PNG"
     ],
     "pna": [
      "D亜紗_01M.PNA",
@@ -164084,6 +164514,7 @@
      "YOR_2057.OGG",
      "YOR_2058.OGG",
      "YOR_2059.OGG",
+     "YOR_2060.OGG",
      "YOR_2095.OGG",
      "YOR_2096.OGG",
      "YOR_2097.OGG",
@@ -164107,6 +164538,7 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
+    "perf_sync": {},
     "names": {},
     "slot_sources": [
      [
@@ -167110,6 +167542,11 @@
    {
     "kind": "pna",
     "archive": "GRAPHIC.arc",
+    "orig": "A小鳥_03L.PNA"
+   },
+   {
+    "kind": "pna",
+    "archive": "GRAPHIC.arc",
     "orig": "Bあげは_01L.PNA"
    },
    {
@@ -167261,6 +167698,11 @@
     "kind": "pna",
     "archive": "GRAPHIC.arc",
     "orig": "I佳奈子_01M.PNA"
+   },
+   {
+    "kind": "pna",
+    "archive": "GRAPHIC.arc",
+    "orig": "Rハット_01M.PNA"
    },
    {
     "kind": "pna",
@@ -176180,6 +176622,11 @@
    {
     "kind": "voice",
     "archive": "VOICE.arc",
+    "orig": "ASA_1740.OGG"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
     "orig": "ASA_1749.OGG"
    },
    {
@@ -183324,8 +183771,56 @@
    {
     "kind": "voice",
     "archive": "VOICE.arc",
+    "name": "AGE_3538.ogg",
+    "orig_name": "AGE_3538.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "AGE_3722.ogg",
+    "orig_name": "AGE_3722.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
     "name": "KOT_2847.ogg",
     "orig_name": "KOT_2847.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2848.ogg",
+    "orig_name": "KOT_2848.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2849.ogg",
+    "orig_name": "KOT_2849.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2850.ogg",
+    "orig_name": "KOT_2850.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2851.ogg",
+    "orig_name": "KOT_2851.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2852.ogg",
+    "orig_name": "KOT_2852.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2853.ogg",
+    "orig_name": "KOT_2853.ogg"
    },
    {
     "kind": "voice",
@@ -183336,14 +183831,86 @@
    {
     "kind": "voice",
     "archive": "VOICE.arc",
+    "name": "KOT_2855.ogg",
+    "orig_name": "KOT_2855.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2856.ogg",
+    "orig_name": "KOT_2856.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2857.ogg",
+    "orig_name": "KOT_2857.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2858.ogg",
+    "orig_name": "KOT_2858.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2859.ogg",
+    "orig_name": "KOT_2859.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
     "name": "KOT_2860.ogg",
     "orig_name": "KOT_2860.ogg"
    },
    {
     "kind": "voice",
     "archive": "VOICE.arc",
+    "name": "KOT_2861.ogg",
+    "orig_name": "KOT_2861.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2862.ogg",
+    "orig_name": "KOT_2862.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2863.ogg",
+    "orig_name": "KOT_2863.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
     "name": "KOT_2864.ogg",
     "orig_name": "KOT_2864.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2865.ogg",
+    "orig_name": "KOT_2865.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2866.ogg",
+    "orig_name": "KOT_2866.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2868.ogg",
+    "orig_name": "KOT_2868.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2869.ogg",
+    "orig_name": "KOT_2869.ogg"
    },
    {
     "kind": "voice",
@@ -183360,8 +183927,26 @@
    {
     "kind": "voice",
     "archive": "VOICE.arc",
+    "name": "KOT_2873.ogg",
+    "orig_name": "KOT_2873.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2874.ogg",
+    "orig_name": "KOT_2874.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
     "name": "KOT_2875.ogg",
     "orig_name": "KOT_2875.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "KOT_2876.ogg",
+    "orig_name": "KOT_2876.ogg"
    },
    {
     "kind": "png",
@@ -183822,18 +184407,6 @@
    {
     "kind": "voice",
     "archive": "VOICE.arc",
-    "name": "AGE_3538.ogg",
-    "orig_name": "AGE_3538.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "AGE_3722.ogg",
-    "orig_name": "AGE_3722.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
     "name": "AGE_3941.ogg",
     "orig_name": "AGE_3941.ogg"
    },
@@ -183888,140 +184461,14 @@
    {
     "kind": "voice",
     "archive": "VOICE.arc",
-    "name": "KOT_2848.ogg",
-    "orig_name": "KOT_2848.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2849.ogg",
-    "orig_name": "KOT_2849.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2850.ogg",
-    "orig_name": "KOT_2850.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2851.ogg",
-    "orig_name": "KOT_2851.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2852.ogg",
-    "orig_name": "KOT_2852.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2853.ogg",
-    "orig_name": "KOT_2853.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2855.ogg",
-    "orig_name": "KOT_2855.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2856.ogg",
-    "orig_name": "KOT_2856.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2857.ogg",
-    "orig_name": "KOT_2857.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2858.ogg",
-    "orig_name": "KOT_2858.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2859.ogg",
-    "orig_name": "KOT_2859.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2861.ogg",
-    "orig_name": "KOT_2861.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2862.ogg",
-    "orig_name": "KOT_2862.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2863.ogg",
-    "orig_name": "KOT_2863.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2865.ogg",
-    "orig_name": "KOT_2865.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2866.ogg",
-    "orig_name": "KOT_2866.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
     "name": "KOT_2867.ogg",
     "orig_name": "KOT_2867.ogg"
    },
    {
     "kind": "voice",
     "archive": "VOICE.arc",
-    "name": "KOT_2868.ogg",
-    "orig_name": "KOT_2868.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2869.ogg",
-    "orig_name": "KOT_2869.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
     "name": "KOT_2872.ogg",
     "orig_name": "KOT_2872.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2873.ogg",
-    "orig_name": "KOT_2873.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2874.ogg",
-    "orig_name": "KOT_2874.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "KOT_2876.ogg",
-    "orig_name": "KOT_2876.ogg"
    },
    {
     "kind": "voice",
@@ -184060,7 +184507,7 @@
     "orig_name": "YOR_1666.ogg"
    }
   ],
-  "have": 97
+  "have": 134
  },
  "gates": {
   "slots_ASA_002": 453,
@@ -184068,90 +184515,176 @@
   "slots_YOR_003": 322,
   "slots_YOR_005": 284,
   "slots_YOR_007": 374,
+  "perf_sync_AGE_001": 1,
+  "perf_add_AGE_001": 18,
   "text_overrides_AGE_001": 3,
   "slots_AGE_001": 696,
+  "perf_sync_AGE_002": 0,
+  "perf_add_AGE_002": 0,
   "text_overrides_AGE_002": 1,
   "slots_AGE_002": 771,
+  "perf_sync_AGE_003": 0,
+  "perf_add_AGE_003": 0,
   "text_overrides_AGE_003": 3,
   "slots_AGE_003": 854,
+  "perf_sync_AGE_005": 0,
+  "perf_add_AGE_005": 0,
   "text_overrides_AGE_005": 0,
   "slots_AGE_005": 738,
+  "perf_sync_AGE_006": 1,
+  "perf_add_AGE_006": 18,
   "text_overrides_AGE_006": 2,
   "slots_AGE_006": 906,
+  "perf_sync_AGE_007": 1,
+  "perf_add_AGE_007": 7,
   "text_overrides_AGE_007": 0,
   "slots_AGE_007": 1181,
+  "perf_sync_AGE_008": 0,
+  "perf_add_AGE_008": 0,
   "text_overrides_AGE_008": 0,
   "slots_AGE_008": 575,
+  "perf_sync_AGE_009": 0,
+  "perf_add_AGE_009": 0,
   "text_overrides_AGE_009": 0,
   "slots_AGE_009": 773,
+  "perf_sync_AGE_010": 17,
+  "perf_add_AGE_010": 83,
   "text_overrides_AGE_010": 1,
   "slots_AGE_010": 964,
+  "perf_sync_AGE_011": 3,
+  "perf_add_AGE_011": 29,
   "text_overrides_AGE_011": 1,
   "slots_AGE_011": 857,
+  "perf_sync_AMA_001": 0,
+  "perf_add_AMA_001": 0,
   "text_overrides_AMA_001": 1,
   "slots_AMA_001": 343,
+  "perf_sync_AMA_004": 8,
+  "perf_add_AMA_004": 36,
   "text_overrides_AMA_004": 1,
   "slots_AMA_004": 1171,
+  "perf_sync_AMA_005": 0,
+  "perf_add_AMA_005": 0,
   "text_overrides_AMA_005": 0,
   "slots_AMA_005": 769,
+  "perf_sync_AMA_006": 0,
+  "perf_add_AMA_006": 0,
   "text_overrides_AMA_006": 0,
   "slots_AMA_006": 1189,
+  "perf_sync_AMA_007": 0,
+  "perf_add_AMA_007": 0,
   "text_overrides_AMA_007": 1,
   "slots_AMA_007": 1266,
+  "perf_sync_AMA_010": 3,
+  "perf_add_AMA_010": 30,
   "text_overrides_AMA_010": 1,
   "slots_AMA_010": 856,
+  "perf_sync_ASA_001": 3,
+  "perf_add_ASA_001": 17,
   "text_overrides_ASA_001": 0,
   "slots_ASA_001": 1171,
+  "perf_sync_ASA_003": 0,
+  "perf_add_ASA_003": 0,
   "text_overrides_ASA_003": 1,
   "slots_ASA_003": 350,
+  "perf_sync_ASA_005": 0,
+  "perf_add_ASA_005": 0,
   "text_overrides_ASA_005": 0,
   "slots_ASA_005": 433,
+  "perf_sync_CO1_001": 0,
+  "perf_add_CO1_001": 0,
   "text_overrides_CO1_001": 1,
   "slots_CO1_001": 519,
+  "perf_sync_CO1_002": 0,
+  "perf_add_CO1_002": 0,
   "text_overrides_CO1_002": 1,
   "slots_CO1_002": 748,
+  "perf_sync_CO1_003": 0,
+  "perf_add_CO1_003": 0,
   "text_overrides_CO1_003": 45,
   "slots_CO1_003": 690,
+  "perf_sync_CO1_004": 0,
+  "perf_add_CO1_004": 0,
   "text_overrides_CO1_004": 3,
   "slots_CO1_004": 245,
+  "perf_sync_CO1_005": 0,
+  "perf_add_CO1_005": 0,
   "text_overrides_CO1_005": 3,
   "slots_CO1_005": 369,
+  "perf_sync_CO1_007": 0,
+  "perf_add_CO1_007": 0,
   "text_overrides_CO1_007": 1,
   "slots_CO1_007": 330,
+  "perf_sync_CO1_009": 0,
+  "perf_add_CO1_009": 0,
   "text_overrides_CO1_009": 1,
   "slots_CO1_009": 682,
+  "perf_sync_CO1_015": 0,
+  "perf_add_CO1_015": 0,
   "text_overrides_CO1_015": 2,
   "slots_CO1_015": 801,
+  "perf_sync_CO1_016": 0,
+  "perf_add_CO1_016": 0,
   "text_overrides_CO1_016": 2,
   "slots_CO1_016": 516,
+  "perf_sync_CO1_016_E": 0,
+  "perf_add_CO1_016_E": 0,
   "text_overrides_CO1_016_E": 1,
   "slots_CO1_016_E": 46,
+  "perf_sync_CO1_018_C": 0,
+  "perf_add_CO1_018_C": 0,
   "text_overrides_CO1_018_C": 1,
   "slots_CO1_018_C": 14,
+  "perf_sync_CO1_020_B": 0,
+  "perf_add_CO1_020_B": 0,
   "text_overrides_CO1_020_B": 1,
   "slots_CO1_020_B": 103,
+  "perf_sync_CO1_020_E": 0,
+  "perf_add_CO1_020_E": 0,
   "text_overrides_CO1_020_E": 1,
   "slots_CO1_020_E": 580,
+  "perf_sync_CO2_002": 0,
+  "perf_add_CO2_002": 0,
   "text_overrides_CO2_002": 34,
   "slots_CO2_002": 639,
+  "perf_sync_HUT_004": 0,
+  "perf_add_HUT_004": 0,
   "text_overrides_HUT_004": 0,
   "slots_HUT_004": 553,
+  "perf_sync_KOT_002": 0,
+  "perf_add_KOT_002": 0,
   "text_overrides_KOT_002": 1,
   "slots_KOT_002": 1011,
+  "perf_sync_KOT_003": 2,
+  "perf_add_KOT_003": 6,
   "text_overrides_KOT_003": 1,
   "slots_KOT_003": 1774,
+  "perf_sync_KOT_004": 0,
+  "perf_add_KOT_004": 0,
   "text_overrides_KOT_004": 1,
   "slots_KOT_004": 1031,
+  "perf_sync_KOT_006": 23,
+  "perf_add_KOT_006": 44,
   "text_overrides_KOT_006": 0,
   "slots_KOT_006": 1296,
+  "perf_sync_KOT_009": 3,
+  "perf_add_KOT_009": 48,
   "text_overrides_KOT_009": 0,
   "slots_KOT_009": 1117,
+  "perf_sync_YOR_002": 1,
+  "perf_add_YOR_002": 15,
   "text_overrides_YOR_002": 0,
   "slots_YOR_002": 812,
+  "perf_sync_YOR_004": 1,
+  "perf_add_YOR_004": 55,
   "text_overrides_YOR_004": 0,
   "slots_YOR_004": 847,
+  "perf_sync_YOR_006": 2,
+  "perf_add_YOR_006": 22,
   "text_overrides_YOR_006": 0,
   "slots_YOR_006": 306,
+  "perf_sync_YOR_008": 0,
+  "perf_add_YOR_008": 0,
   "text_overrides_YOR_008": 0,
   "slots_YOR_008": 583
  }

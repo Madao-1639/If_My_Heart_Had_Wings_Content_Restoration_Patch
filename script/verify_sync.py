@@ -36,6 +36,7 @@ if ROOT not in sys.path:
 
 from tool import arcbuild, lng, scriptext, ws2, ws2dis  # noqa: E402
 from tool import fancn  # noqa: E402
+from tool import perfsync  # noqa: E402
 from tool.ws2conv import load_orig_formats, parse as conv_parse  # noqa: E402
 
 RESOURCE_ARCHIVES = ['VOICE.arc', 'Chip1.arc', 'CHIP2.arc', 'CHIP3.arc', 'CHIP4.arc',
@@ -555,6 +556,7 @@ def main():
             tail = {}
             drops = set()
             text_overrides = {}
+            perf_spec = {}
         else:
             host = plan['hosts'][script]
             exp, tail = expected_sequence(host, len(s_cells))
@@ -563,6 +565,8 @@ def main():
             # 到这里已是上一脚本的残留值
             text_overrides = {int(k): v for k, v in
                               (host['plan'].get('text_overrides') or {}).items()}
+            perf_spec = {int(k): v for k, v in
+                         (host['plan'].get('perf_sync') or {}).items()}
         fan = fancn.load_texts(script)
         off_lng = zh_off.get(script, [])
         prod_lng = zh_prod.get(script, [])
@@ -636,7 +640,53 @@ def main():
             if tr is not None and tr < len(o_cells):
                 own = merge_own(own, o_cells[tr]['own'])
             if src_cell is not None:
-                own = merge_own(own, src_cell['own'])
+                # 演出同步（plan.perf_sync）：`drop`＝该槽这些通道的 Steam 显示已被写盘器
+                # 删掉；`replace`＝该槽**全部**立绘/背景显示与清屏已被删、并补回原版行 r 的
+                # 图像演出 ⇒ 期望值取原版行 r 的图像 own（见 doc/restoration-route.md §7 V-10）。
+                _spec = perf_spec.get(idx) if kind == 'steam' else None
+                if _spec and _spec.get('mode') == 'replace':
+                    # 写盘器动作＝「先发补块（原版行的**立绘/背景**演出），再发该槽 Steam 前缀里
+                    # **存活**的项」⇒ 期望值按同一顺序复现（末值优先）。存活判据与写盘器同源：
+                    # `perfsync.sb_chan()`——`st*`/`bg*` 且**图名不是 CG**的才被删；`ev` 与
+                    # 「塞在 bg 通道里的 CG」都留下（见 doc/restoration-route.md §7 V-10）。
+                    def _merge_tok(acc, kk, chan, nm):
+                        if kk == 'sprite':
+                            acc.setdefault('sprite', {})[chan.upper()] = nm
+                        elif kk == 'se':
+                            acc.setdefault('se', []).append(nm)
+                        else:
+                            acc[kk] = nm
+                        return acc
+
+                    def _is_sb(chan, nm):
+                        # 不吞异常：这里一旦静默失败就会把「被删的项」当成存活，期望值全错
+                        return perfsync.sb_chan(chan.decode('cp932'), nm.decode('cp932'))
+
+                    own = {}
+                    if _spec['orig_row'] < len(o_cells):
+                        for kk, chan, nm in o_cells[_spec['orig_row']]['tok']:
+                            if _is_sb(chan, nm):        # 补块只搬立绘/背景
+                                own = _merge_tok(own, kk, chan, nm)
+                    for kk, chan, nm in src_cell['tok']:
+                        if _is_sb(chan, nm):            # 被删的不发
+                            continue
+                        own = _merge_tok(own, kk, chan, nm)
+                    for _kk, _nm in src_cell['own'].items():
+                        if _kk in ('voice', 'se', 'bgm'):
+                            own[_kk] = _nm
+                elif _spec and _spec.get('channels'):
+                    _drop = {c.encode('cp932') for c in _spec['channels']}
+                    for kk, chan, nm in src_cell['tok']:
+                        if chan in _drop:
+                            continue
+                        if kk == 'sprite':
+                            own.setdefault('sprite', {})[chan.upper()] = nm
+                        elif kk == 'se':
+                            own.setdefault('se', []).append(nm)
+                        else:
+                            own[kk] = nm
+                else:
+                    own = merge_own(own, src_cell['own'])
             if kind == 'steam' and idx in rewrites:
                 to, _frm = rewrites[idx]
                 if own.get('cg') != _frm or to in (b'', b'????'):
@@ -717,7 +767,7 @@ def main():
                     res['res_cg'] += 1
                     if not in_orig_any('cg', got_cg):
                         only['cg'].add(s(got_cg))
-                elif (s(want_cg).upper(), s(got_cg).upper()) in reuse_pairs:
+                elif ((s(want_cg) or '').upper(), (s(got_cg) or '').upper()) in reuse_pairs:
                     # 原版复用名改写：脚本名义 carry 名（from）与原版实际显示名（to）不同，
                     # 画面偏移完全由 reuse_rewrites 解释，产物与原版行为一致 ⇒ 非偏移。
                     A['b6_reuse_benign'] += 1
@@ -746,7 +796,7 @@ def main():
                     B['b8_ok'] += 1
                     continue
                 cause = ('drop-residue' if gv in drop_voice.get(k, set()) else 'unknown')
-                if k == 'cg' and (s(wv).upper(), s(gv).upper()) in reuse_pairs:
+                if k == 'cg' and ((s(wv) or '').upper(), (s(gv) or '').upper()) in reuse_pairs:
                     # 原版复用名改写解释的在屏画面偏移 ⇒ 良性（见 B6 同源说明）
                     A['b8_reuse_benign'] += 1
                     continue

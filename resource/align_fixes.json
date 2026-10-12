@@ -1,0 +1,44 @@
+{
+ "meta": {
+  "purpose": "**人工定案的逐槽对齐**（残余对齐评审的落地形态）。承载图给不出映射、语音号自证与等长缺口内插也都失败的 Steam 槽，由评审按「同句」判据定案后写在这里，供 tool/perfsync.py::align_map() 覆盖/剔除。",
+  "producer": "人工（2026-10-10 残余对齐评审 align_00：align 3 / no_counterpart 3 / false_anchor 3 / cg 1；2026-10-10 主 agent 定案：ASA_001 s1062/1067/1068/1082、KOT_009 s433 对齐、s434–s440 无对应；判据见 doc/lessons-learned.md §27）",
+  "consumer": "tool/perfsync.py::align_map（产出端 script/build/build_perf_sync_map.py 与闸 script/checks/perf_sync_check.py 共用）",
+  "semantics": {
+   "fixes[脚本][steam 槽位] = 原版行号": "该槽的真实对齐行（覆盖承载图/语音/内插的推断）",
+   "fixes[脚本][steam 槽位] = null": "该槽**无对应原版行**（Steam 自写）⇒ 从对齐来源里剔除，该槽退回「对齐无关」判据（extra_absent）或留 REVIEW"
+  },
+  "note": "本表只放**人工定案**；机械可判的（承载图 anchor/match、语音自证、1:1 内插）不入本表。假锚的「机械配对不可用」另记 resource/carrier_quirks.json。"
+ },
+ "fixes": {
+  "AGE_005": {
+   "182": null
+  },
+  "AGE_010": {
+   "23": 23,
+   "37": null
+  },
+  "AGE_011": {
+   "192": 196
+  },
+  "AMA_010": {
+   "254": null
+  },
+  "ASA_001": {
+   "1069": 1071,
+   "1062": 1063,
+   "1067": 1068,
+   "1068": 1069,
+   "1082": 1084
+  },
+  "KOT_009": {
+   "433": 433,
+   "434": null,
+   "435": null,
+   "436": null,
+   "437": null,
+   "438": null,
+   "439": null,
+   "440": null
+  }
+ }
+}

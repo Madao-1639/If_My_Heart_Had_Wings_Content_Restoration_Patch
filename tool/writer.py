@@ -27,7 +27,7 @@ A-1 整脚本不走本模块（整脚本走 `tool.ws2conv.convert_script`，槽�
 """
 import struct
 
-from tool import ws2, ws2dis
+from tool import ws2, ws2dis, perfsync
 from tool.ws2conv import CONV, REBASE_OPS, parse as conv_parse
 
 BLOCK_STOP = {0x01, 0x02, 0x06, 0x07, 0xFF}   # 原版块在其前截断（其后属宿主结尾）
@@ -38,6 +38,157 @@ BLOCK_STOP = {0x01, 0x02, 0x06, 0x07, 0xFF}   # 原版块在其前截断（其�
 # 随该行一起删——否则它们排在插入的原版块之后执行，会把画面/BGM 顶回 Steam 素材，
 # 并造成「相邻两条语音触发之间没有 14」的无对白连播（见 doc/lessons-learned.md §16）。
 KEEP_OPS = {0x01, 0x02, 0x05, 0x06, 0x07, 0x09, 0x0B, 0x0F, 0x15, 0xF0, 0xFF}
+
+# ── 演出同步（见 doc/restoration-route.md §7 V-10）──
+# 显示块 = 显示指令（`33`/`34`）＋ 其图层伴生：`39`（建层）、`04 LAYER_ORDER` 调用、
+# `09`（图层权重）、`46`（图层定位）、`3e`/`65`（块尾标记/转场），前置 `64`。这是一段
+# **连续**指令（`0b` 状态写入夹在块内时算块的一段，但删块时保留、补块时不重复写）。
+_PERF_BLOCK = perfsync.BLOCK_OPS
+_PERF_PRESERVE = perfsync.BLOCK_MOVE_SKIP
+_is_layer_order = perfsync._is_layer_order
+
+
+def _perf_zone(instrs, idx, s14off, slot):
+    """槽 `slot` 的演出前缀区 → (zone_lo, j_cur) 指令下标区间。"""
+    if slot >= len(s14off):
+        return None
+    j_cur = idx[s14off[slot]]
+    j = j_cur - 1
+    while j >= 0 and instrs[j][1] != 0x14:
+        j -= 1
+    return j + 1, j_cur
+
+
+def _perf_block_kill(instrs, j_cur, zone_lo, chans, with_clear=False):
+    """某槽演出前缀区内、`chans` 各通道的显示块 → 要删的指令偏移集。
+
+    `chans=None` ⇒ 命中所有**立绘／背景**通道（`st*`／`bg*`；`ev` 交 CG 序列专管，不动）。
+    `with_clear` 为真时连同这些通道的 `37` 清屏指令一起删（`replace` 模式用；
+    `drop` 模式不动清屏）。只删**显示块**：显示指令及其图层伴生；`0b` 状态写入一律保留。
+    返回 (kill_offsets, hit_chans)。
+    """
+    kill, hit = set(), set()
+
+    def _match(chan, name):
+        if not chan:
+            return False
+        if chans is None:
+            # `replace`：该槽**全部立绘/背景**——但**图名是 CG 的不算**（Steam 会把第二张 CG
+            # 塞进 bg 通道做 B→S 交叉淡入；按通道判会把 CG 层当背景删掉，见 tool/perfsync.py
+            # `is_cg_name` 的说明）。
+            return perfsync.sb_chan(chan, name)
+        return chan in chans
+
+    for j in range(zone_lo, j_cur):
+        op, ops = instrs[j][1], instrs[j][3]
+        if op == 0x37 and with_clear:
+            chan = _chan_of(ops)
+            if _match(chan, None):
+                hit.add(chan)
+                kill.add(instrs[j][0])
+            continue
+        if op not in (0x33, 0x34):
+            continue
+        chan, name = _chan_name(ops)
+        if not _match(chan, name):
+            continue
+        hit.add(chan)
+        s = j
+        while s - 1 >= zone_lo and instrs[s - 1][1] == 0x64:
+            s -= 1
+        e = j + 1
+        while e < j_cur:
+            o2, x2 = instrs[e][1], instrs[e][3]
+            if o2 in _PERF_BLOCK or _is_layer_order(o2, x2):
+                e += 1
+                continue
+            break
+        for k in range(s, e):
+            o3 = instrs[k][1]
+            if o3 in _PERF_PRESERVE:
+                continue
+            kill.add(instrs[k][0])
+    return kill, hit
+
+
+def _chan_name(ops):
+    """显示指令操作数 → (通道名, 图名)。"""
+    parts = ops.split(b'\x00')
+    out = []
+    for p0 in parts[:2]:
+        if not p0:
+            out.append(None)
+            continue
+        try:
+            out.append(p0.decode('cp932'))
+        except UnicodeDecodeError:
+            out.append(None)
+    return (out + [None, None])[:2]
+
+
+def _chan_of(ops):
+    """显示/清屏指令操作数的首个 NUL 定界串（通道名）。"""
+    parts = ops.split(b'\x00')
+    if not parts or not parts[0]:
+        return None
+    try:
+        return parts[0].decode('cp932')
+    except UnicodeDecodeError:
+        return None
+
+
+def perf_sync_apply(instrs, s14off, oinstrs, o14, perf_sync):
+    """演出同步 → (kill_offsets, add_blocks, report)。
+
+    `perf_sync = {steam 槽位: spec}`，`spec` 两种：
+
+    * `{'mode': 'drop', 'channels': [通道]}`：删该槽演出前缀区内这些通道的显示块；
+    * `{'mode': 'replace', 'orig_row': r}`：**把该槽自带的图像演出整段换成原版行 r 的**
+      ——删该槽前缀区内**所有图像通道**的显示块与清屏指令，再把原版行 r 的
+      图像演出块（按原顺序、经格式差转换、**照抄原版资源名**）在**前缀区开头**补回。
+      资源名照抄 ⇒ 依赖 `resources.copy` 把原版素材补入产物归档（用户 2026-10-10 定案：
+      **补入原版素材、不重写本版名**）。
+
+    `add_blocks = {槽位: [(op, ops), ...]}`（原版格式，调用方经 `_conv` 转换后发出）。
+    `report` 逐槽记 `{'killed','hit','missed','added'}`。
+    """
+    if not perf_sync:
+        return set(), {}, {}
+    idx = {ins[0]: j for j, ins in enumerate(instrs)}
+    kill, add_blocks, report = set(), {}, {}
+    for slot, spec in sorted(perf_sync.items()):
+        slot = int(slot)
+        if not isinstance(spec, dict):                 # 兼容旧形 {slot: [通道]}
+            spec = {'mode': 'drop', 'channels': list(spec)}
+        zone = _perf_zone(instrs, idx, s14off, slot)
+        mode = spec.get('mode', 'drop')
+        chans = None if mode == 'replace' else set(spec.get('channels') or ())
+        if zone is None:
+            report[slot] = {'killed': 0, 'hit': [], 'missed': sorted(chans or ()), 'added': 0}
+            continue
+        k, hit = _perf_block_kill(instrs, zone[1], zone[0], chans,
+                                  with_clear=(mode == 'replace'))
+        kill |= k
+        added = []
+        if mode == 'replace':
+            r = spec['orig_row']
+            i0 = o14[r - 1] + 1 if r > 0 else 0
+            i1 = o14[r]
+            blocks = perfsync.image_blocks([(op, ops) for op, ops in oinstrs[i0:i1]])
+            for b in blocks:
+                if not perfsync.sb_chan(b['chan'], b['name']):
+                    continue                    # CG（含塞在 bg 通道里的那张）不搬：交 cg_seq_check
+                for i in b['idx']:
+                    op, ops = oinstrs[i0 + i]
+                    if op in _PERF_PRESERVE:
+                        continue
+                    added.append((op, ops))
+        if added:
+            add_blocks[slot] = added
+        report[slot] = {'killed': len(k), 'hit': sorted(hit),
+                        'missed': sorted((chans or set()) - hit), 'added': len(added)}
+    return kill, add_blocks, report
+
 
 
 def _keep_in_perf_zone(op, ops):
@@ -152,12 +303,15 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
       'drops':   [steam 槽位(14 序)]                       # 删该行的文本与名字框指令
       'inserts': [(after_slot, r0, r1)],                  # 原版行闭区间；after_slot=-1 脚本头
       'external': {orig_off: steam_slot},                 # 跨块跳转解析（缺省空）
+      'perf_sync': {steam 槽位: {'mode','orig_row'|'channels'}},   # 演出同步（删/换显示块）
       'restore_frame': True,                              # 插入后恢复名字框（缺省开）
     }
-    返回 {'raw', 'slot_sources', 'ok', 'n14', 'n_slots', 'pool', 'fixups', 'fix_bad'}。
+    返回 {'raw', 'slot_sources', 'ok', 'n14', 'n_slots', 'pool', 'fixups', 'fix_bad',
+          'perf_kill'}。
     """
     ext = plan.get('external', {})
     restore_frame = plan.get('restore_frame', True)
+    perf_sync = plan.get('perf_sync') or {}
     names = {k.encode('ascii'): v.encode('ascii') for k, v in plan.get('names', {}).items()}
 
     sinstrs, ok = ws2dis.disassemble(steam_dec)
@@ -169,8 +323,16 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
         p += 1 + len(ops)
     o14 = [j for j, (op, ops) in enumerate(oinstrs) if op == 0x14]   # 行 r ↔ o14[r]
 
-    kill = drop_units(sinstrs, set(plan['drops']))
     s14off = [off for off, op, size, ops in sinstrs if op == 0x14]
+    # 演出同步（见 doc/restoration-route.md §7 V-10）：与删格同形——删该槽前缀区内
+    # 的**显示块**（`drop` 模式删指定通道、`replace` 模式删全部图像通道再补原版行的），
+    # 不碰状态写入与流程控制。`replace` 的补块在**前缀区开头**发出（排在语音/名字框之前，
+    # 与 doc/file-formats.md「格内指令的归属次序」一致），资源名照抄原版（依赖 copy 补素材）。
+    perf_kill, perf_add, perf_report = perf_sync_apply(sinstrs, s14off, oinstrs, o14, perf_sync)
+    perf_missed = {k: v['missed'] for k, v in perf_report.items() if v['missed']}
+    assert not perf_missed, \
+        'perf_sync 通道在槽前缀区内找不到显示指令: %s' % perf_missed
+    kill = drop_units(sinstrs, set(plan['drops'])) | perf_kill
 
     # 宿主结尾起点：最后一个保留 14 之后的第一条流程控制指令
     kept_slots = [s for s in range(len(s14off)) if s not in plan['drops']]
@@ -273,9 +435,20 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
             if nxt is not None and nxt[1] != 0x15:
                 out.extend(_mk15(cur_pfx))
 
+    def emit_perf_add(slot):
+        """演出同步 `replace` 的补块：原版行 r 的图像演出，按原顺序发出。
+
+        排在**该槽前缀区开头**（即上一条 `14`／其锚定插入块之后），因此先于该槽自带的
+        语音（`2e`+`28`）与名字框（`15`）执行——与 doc/file-formats.md「格内指令的归属
+        次序」（演出 → 语音 → 名字框 → `14`）一致。资源名照抄原版脚本里的名字。
+        """
+        for op, ops in perf_add.get(slot, ()):
+            out.extend(bytes([op]) + _conv(op, ops, names))
+
     # 脚本头插入
     for r0, r1 in by_anchor.get(-1, []):
         emit_block(r0, r1, -1)
+    emit_perf_add(0)
 
     pos = 0
     for off, op, size, ops in sinstrs:
@@ -283,6 +456,10 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
         if off in kill:
             if op == 0x14:
                 si += 1
+                # 被删槽不发出正文，但**演出同步的补块仍要挂到下一个槽**（否则「前一个槽
+                # 被删」的槽永远补不上——补块锚在「上一条 `14` 之后」）。
+                flush15()
+                emit_perf_add(si)
             continue
         if op == 0x15:
             if buf15 is not None:
@@ -326,10 +503,12 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
             si += 1
             for r0, r1 in by_anchor.get(si - 1, []):
                 emit_block(r0, r1, off)
+            emit_perf_add(si)
     flush15()
     out.extend(steam_dec[pos:])                       # 0xff 后的 8 字节尾
 
     fix_bad = 0
+    bad_detail = []
     for pos, kind, key in fixes:
         if kind == 's':
             nt = remap_s.get(key)
@@ -342,6 +521,7 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
             nt = remap_s.get(s14off[slot]) if slot < len(s14off) else None
         if nt is None:
             fix_bad += 1
+            bad_detail.append({'kind': kind, 'target': key})
             continue
         struct.pack_into('<I', out, pos, nt)
 
@@ -357,4 +537,7 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
         'pool': pool,
         'fixups': len(fixes),
         'fix_bad': fix_bad,
+        'fix_bad_detail': bad_detail,
+        'perf_kill': {k: v for k, v in sorted(perf_report.items())},
+        'perf_add': {k: len(v) for k, v in sorted(perf_add.items())},
     }

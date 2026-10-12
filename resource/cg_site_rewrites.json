@@ -1,7 +1,7 @@
 {
  "meta": {
   "purpose": "保留行上「原版事件 CG 显示点」缺口的处置表：每条例 = 一个应显示、但产物不显示的事件 CG。计划器消费方式＝把 `slot` 按 `rebind` 落到原版行 `orig_row`（drop 该 Steam 槽 + 插入原版行，随行带入 `0x33` 显示指令），并把 `name` 的成员并入 resources.copy。",
-  "producer": "人工（2026-10-08 语义评审 + 父级复算；生成器 tmp/gen_cg_sites.py）",
+  "producer": "人工（2026-10-08 语义评审 + 父级复算；生成器 tmp/gen_cg_sites.py；2026-10-10 补 KOT_003 s1073←o1083）",
   "consumer": "script/build/build_restore_plan.py",
   "excluded": "两侧同名的画面改动不从本表走（那是 censor_map 的覆盖面）；已由 plan.reuse_rewrites 构建期改写的站点不在本表。",
   "note_AGE_005": "s126/s127 成对：承载图因两侧共用 CN 名 AGE_06_007S 而把锚钉成 o135↔s126（真身 o134↔s126、o135↔s127）；单点会换一个缺口，故成对登记。",
@@ -135,6 +135,15 @@
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
    "evidence": "doc/lessons-learned.md §17"
+  },
+  {
+   "script": "KOT_003",
+   "slot": 1073,
+   "orig_row": 1083,
+   "name": "KOT_12_001S.PNG",
+   "archive": "CHIP5.arc",
+   "reason": "Steam 在 s1072 前缀用 `0x37 ev` 清掉 CG，而原版在 o1083 **重显** CG（KOT_12_001B → KOT_12_001S 的 B→S 换帧第二帧）⇒ 产物该行不显示这张 CG；rebind s1073←o1083 随行带入 `0x33` 显示指令",
+   "evidence": "tmp/_q_cg_seq.md（cg_seq_check「异系列」段）；2026-10-10 演出同步评审附带发现"
   }
  ]
 }

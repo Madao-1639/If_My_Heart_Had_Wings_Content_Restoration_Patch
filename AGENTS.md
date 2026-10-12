@@ -33,7 +33,9 @@
 
 - 修改脚本改写逻辑 → 更新 `doc/file-formats.md`
 - 新增资源命名规则 → 更新 `doc/resource-naming.md`（PNA 图层命名与层序见 `doc/pna-resources.md`）
-- 修改**同名素材冲突的处置方针**（一律整名覆盖 / 噪声不动 / 顶包只在**存活调用点**改名，不设隔离改名路线）→ 更新 `doc/resource-naming.md` §1–§3，并同步 `doc/restoration-targets.md`「同名冲突（图像类）」与「L1-G · 画面还原」及 `doc/restoration-route.md` §2／§4／§5／§6 V-2、V-7、§7 V-8、`doc/acceptance-criteria.md`「资源配对正确性」，判定表字段口径同步 `resource/README.md`
+- 修改**同名素材冲突的处置方针**（一律整名覆盖 / 噪声不动 / 顶包只在**存活调用点**改名，不设隔离改名路线）→ 更新 `doc/resource-naming.md` §1–§3，并同步 `doc/restoration-targets.md`「同名冲突（图像类）」与「L1-G · 画面还原」及 `doc/restoration-route.md` §2／§4／§5／§6 V-2、V-7、V-8、`doc/acceptance-criteria.md`「资源配对正确性」，判定表字段口径同步 `resource/README.md`
+- 修改**演出同步方针**（保留槽「多余 Steam 演出」的删除判据 / 范围 / 对齐口径）→ 更新 `doc/restoration-route.md` §6 V-10 与 `doc/lessons-learned.md` §27，并同步**产出端** `script/build/build_perf_sync_map.py`、**入库表** `resource/perf_sync_map.json`、**消费端** `script/build/build_restore_plan.py` + `tool/writer.py`、**闸** `script/checks/perf_sync_check.py` 与 `script/final_verification.py` 第 4b 项；共用判据放 `tool/perfsync.py`（禁止各脚本各写一份）
+- 修改**对齐来源**（承载图锚 / 语音自证 / 等长缺口内插 / 人工定案）→ 同步 `tool/perfsync.py::align_map`、入库表 `resource/align_fixes.json`（人工定案）与 `resource/carrier_quirks.json`（机械配对不可用），并更新 `resource/README.md` 对应两节
 - 新增或修改 `resource/` 输入表 → 更新 `resource/README.md`（表结构 + 生产者／消费方）
 - 修改调用链结构 → 更新 `doc/restoration-route.md` §2.1（调用链组织）
 - 发现新问题/解决方案 → 更新 `doc/lessons-learned.md`

@@ -4975,7 +4975,7 @@
   },
   "GRAPHIC.arc": {
     "kind": "merge",
-    "checksum": "1db48064748ec5c1499d73325ef9ed97c2a08386949005e278a6d61a515eedd7",
+    "checksum": "73f496008e672b2444731a66f203375597bf93e26b7ecba298c594d084b665ba",
     "members": [
       {
         "name": "CUTIN_23_01B.png",
@@ -5986,6 +5986,10 @@
         "type": "added"
       },
       {
+        "name": "A小鳥_03L.pna",
+        "type": "added"
+      },
+      {
         "name": "A小鳥_03M.pna",
         "type": "added"
       },
@@ -6134,6 +6138,10 @@
         "type": "added"
       },
       {
+        "name": "Rハット_01M.pna",
+        "type": "added"
+      },
+      {
         "name": "Rハット_01W.pna",
         "type": "added"
       }
@@ -6149,7 +6157,7 @@
   },
   "Rio.arc": {
     "kind": "copy",
-    "checksum": "7ff5d4499a3da09ba09fbe40c1179658bb2716a16d2adfc5433dc41ffdc47680"
+    "checksum": "d341bc0f0c4c79b0ff2667ce7d1e3b1806839df9c26920012eb30f0444671a31"
   },
   "SE.arc": {
     "kind": "merge",
@@ -7687,7 +7695,7 @@
   },
   "VOICE.arc": {
     "kind": "merge",
-    "checksum": "1422244c2f50afaa2211973dc875e004b814f8ea27b25fd753d78384a1ed13e0",
+    "checksum": "7c5b87091374649ed5c560871eb5b1b0ffdcebac3e1787c0d31c54c1f3787fb8",
     "members": [
       {
         "name": "AGE_0001.ogg",
@@ -89454,6 +89462,10 @@
         "type": "added"
       },
       {
+        "name": "ASA_1740.ogg",
+        "type": "added"
+      },
+      {
         "name": "ASA_1749.ogg",
         "type": "added"
       },
@@ -95133,7 +95145,7 @@
   },
   "zh-CN/Rio.arc": {
     "kind": "copy",
-    "checksum": "2dac18f8daee7e3d078e8065d6c2aa74cf062d286792bf7e2f19d6ad175a49b9"
+    "checksum": "623648cc818509890784062220eb5ab56bfd710428b38abee058156aa43f481c"
   },
   "RIO": {
     "kind": "loose",

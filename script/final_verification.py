@@ -157,6 +157,22 @@ def main():
                     unres.add((n[:-4], kind, fname))
     check('4 资源引用全部可解析', not unres, str(sorted(unres)[:6]))
 
+    # ── 4b. 演出同步（保留槽演出：删多余 / 换回原版行）：判定表条目逐条落地 ──
+    # 方针「每类演出要么两侧同时存在且相等、要么都不存在」见 doc/restoration-route.md §7 V-10；
+    # 判定表 resource/perf_sync_map.json 的 action=drop／replace 子集必须逐条落到产物
+    # （名单槽数＝落地槽数；replace 的补块数另由计划器断言）。
+    _plan = json.load(open(os.path.join(ROOT, 'resource', 'restore_plan.json'), encoding='utf-8'))
+    ps_path = os.path.join(ROOT, 'resource', 'perf_sync_map.json')
+    if os.path.exists(ps_path):
+        _pm = json.load(open(ps_path, encoding='utf-8'))
+        _want = sum(1 for s0 in _pm.get('sites', [])
+                    if s0.get('action') in ('drop', 'replace'))
+        _got = sum(v for k, v in _plan.get('gates', {}).items() if k.startswith('perf_sync_'))
+        check('4b 演出同步名单逐条落地（名单 %d 条）' % _want, _want > 0 and _want == _got,
+              '落地 %d' % _got)
+    else:
+        check('4b 演出同步判定表存在', False, 'resource/perf_sync_map.json 缺失')
+
     # ── 5. 零破坏性（keep 成员与 backup 逐字节相等）──
     swapped = []
     for arch in SHIPPED_ARCHIVES:
