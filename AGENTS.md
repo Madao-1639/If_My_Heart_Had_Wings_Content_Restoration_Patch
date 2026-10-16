@@ -29,30 +29,37 @@
 
 ### 1. 文档同步要求
 
-**任何大型修改都必须同步到文档中**
+**任何大型修改都必须同步到对应专题文档**；同一知识以专题文档为唯一去处，不在别处复制正文：
 
-- 修改脚本改写逻辑 → 更新 `doc/file-formats.md`
-- 新增资源命名规则 → 更新 `doc/resource-naming.md`（PNA 图层命名与层序见 `doc/pna-resources.md`）
-- 修改**同名素材冲突的处置方针**（一律整名覆盖 / 噪声不动 / 顶包只在**存活调用点**改名，不设隔离改名路线）→ 更新 `doc/resource-naming.md` §1–§3，并同步 `doc/restoration-targets.md`「同名冲突（图像类）」与「L1-G · 画面还原」及 `doc/restoration-route.md` §2／§4／§5／§6 V-2、V-7、V-8、`doc/acceptance-criteria.md`「资源配对正确性」，判定表字段口径同步 `resource/README.md`
-- 修改**演出同步方针**（保留槽「多余 Steam 演出」的删除判据 / 范围 / 对齐口径）→ 更新 `doc/restoration-route.md` §6 V-10 与 `doc/lessons-learned.md` §27，并同步**产出端** `script/build/build_perf_sync_map.py`、**入库表** `resource/perf_sync_map.json`、**消费端** `script/build/build_restore_plan.py` + `tool/writer.py`、**闸** `script/checks/perf_sync_check.py` 与 `script/final_verification.py` 第 4b 项；共用判据放 `tool/perfsync.py`（禁止各脚本各写一份）
-- 修改**对齐来源**（承载图锚 / 语音自证 / 等长缺口内插 / 人工定案）→ 同步 `tool/perfsync.py::align_map`、入库表 `resource/align_fixes.json`（人工定案）与 `resource/carrier_quirks.json`（机械配对不可用），并更新 `resource/README.md` 对应两节
-- 新增或修改 `resource/` 输入表 → 更新 `resource/README.md`（表结构 + 生产者／消费方）
-- 修改调用链结构 → 更新 `doc/restoration-route.md` §2.1（调用链组织）
-- 发现新问题/解决方案 → 更新 `doc/lessons-learned.md`
-- 修改验收标准 → 更新 `doc/acceptance-criteria.md`
-- 确认新的还原范围 → 更新 `doc/restoration-targets.md`
-- 修改还原技术方案 → 更新 `doc/restoration-route.md`
-- 修改交付形态、打包或安装流程 → 更新 `doc/restoration-route.md` §4（流水线与发布链）与本文 §3「测试与发布流程」
-- 修改后日谈机制或改动点 → 更新 `doc/afterstory-mechanics.md`
-- 修改引擎机制认知（如磁盘裸 `RIO/` 的覆盖语义、`LAYER_ORDER` 行为） → 更新 `doc/engine-mechanics.md`
-
-**文档写法**：只写**最新结论、工作范围、目标、标准/方针/原则、分层与工程约定**；**不写过程叙述**（逐轮进展、发现经过、"推进到 N 批"、实测方法与分歧裁决过程）。过程证据与逐轮记录一律放 `tmp/`（草稿区，不提交）。唯一例外是 `doc/lessons-learned.md`——它就是"问题记录"的指定位置。
+| 改动内容 | 同步目标 |
+|---|---|
+| 文件格式、编解码与尾表 | `doc/file-formats.md` |
+| 引擎机制认知（裸目录覆盖语义、`LAYER_ORDER` 行为等） | `doc/engine-mechanics.md` |
+| PNA 图层命名与层序 | `doc/pna-resources.md` |
+| 资源命名规则、同名冲突分类判据与处置方针 | `doc/resource-naming.md`（判定表字段口径同步 `resource/README.md`） |
+| 还原范围、目标与判定标准 | `doc/restoration-targets.md` |
+| 还原技术方案、调用链、流水线、交付打包与安装 | `doc/restoration-route.md`（交付打包安装另同步本文 §3「测试与发布流程」） |
+| 脚本文本提取与语料流水线 | `doc/script-text-extraction.md` |
+| 全量逐行通读的评审判据 | `doc/sem-review-protocol.md` |
+| 验收标准 | `doc/acceptance-criteria.md` |
+| 后日谈机制或改动点 | `doc/afterstory-mechanics.md` |
+| 成就机制 | `doc/achievement-mechanics.md` |
+| `resource/` 输入表、判定表生成脚本与人工定案表 | `resource/README.md`（表结构 + 生产者／消费方） |
+| 新发现的问题与遗留项 | `doc/lessons-learned.md`（已沉淀进专题文档的结论不再写入条目） |
 
 文档中标注了状态图例（✅ 已确认 / ⚠️ 部分确认 / ❓ 未知），修改前应先确认相关内容的当前状态，已确认的事实可直接使用，未确认的假设需要先验证再依赖。
 
-**方针改动必须三处同步**：处置方针（同名冲突怎么处置、改名路线是否启用、覆盖名单从哪来）改动时，**产出端脚本**（判据／表生成脚本）、**入库表**（`resource/*.json`）、**消费端脚本**（计划器／写盘器）三处必须一起改。只改文档、或只改其中一两处，缺口是**静默**的（跳过不报错、产物照样生成），唯一能拦住的是**端到端断言**（如「覆盖名单数 ＝ 实际替换数」）。同源教训见 `doc/lessons-learned.md` §23。
+**方针改动必须三处同步**：处置方针（怎么处置、名单从哪来、谁消费）改动时，**产出端脚本**（判据／生成脚本）、**入库表**（`resource/*.json`）、**消费端脚本**（计划器／写盘器）三处必须一起改；共用判据放单一公共模块，禁止各脚本各写一份。只改文档、或只改其中一两处，缺口是**静默**的（跳过不报错、产物照样生成），唯一能拦住的是**端到端断言**（如「覆盖名单数 ＝ 实际替换数」）。
 
-**闸门要能验内容**：条数／长度／区间这类**结构量**对「内容被整体替换成占位符」结构性沉默。凡「产物要被玩家读到」的字段，闸门必须落在**内容面**（逐条非空、不含纯数字占位、无假名残留）。同源教训见 `doc/lessons-learned.md` §12。
+**闸门要能验内容**：条数／长度／区间这类**结构量**对「内容被整体替换成占位符」结构性沉默。凡「产物要被玩家读到」的字段，闸门必须落在**内容面**（逐条非空、不含纯数字占位、无假名残留）。
+
+**文档纪律**：
+
+- 只写**最新结论、工作范围、目标、标准/方针/原则、分层与工程约定**；不写问题历史（时间、状态沿革、发现与裁决经过）与动态定位点（轮次、批次、行号、日期、脚本名）——结论被推翻时直接改写为新结论并删除旧表述，不留「上一版如何」。
+- 不写过程叙述（逐轮进展、实测方法、一次性读数）；过程证据与逐轮记录一律放 `tmp/`（草稿区，不提交）；入库文档只保留可复用的判定规则。
+- 落地状态只报现行：已落地的写成现行机制；未落地的以一句话标注「未落地」充当待办，不逐批记批次号与日期。
+- 文档必须整行成段，**禁止按固定字符数自动换行**，不得拆散一个逻辑行。
+- 条目过期即删，不迁就旧文字；`doc/lessons-learned.md` 的定位是**遗留问题台账 ＋ 零散结论**（性质类似 to-do），与各文档「待办」部分随定案及时清理——遗留项定案即删，结论沉淀进专题文档即从留档删除，同一遗留项不在多处重复登记。
 
 ### 2. 临时文件管理
 
@@ -89,7 +96,7 @@
 **编码规范**：
 
 - 归档成员名、脚本内资源名/对白：Shift-JIS 或 UTF-16LE（视具体字段，见 `doc/file-formats.md`）
-- 控制台输出使用 ASCII，或对 stdout 做 UTF-8 reconfigure；解码出的日文/中文文本不要直接 print，先写入 UTF-8 文件再用文件查看工具核对（见 `doc/lessons-learned.md` §1）
+- 控制台输出使用 ASCII，或对 stdout 做 UTF-8 reconfigure；解码出的日文/中文文本不要直接 print，先写入 UTF-8 文件再用文件查看工具核对，凡涉及原文的判读必须从 UTF-8 文件读，不得凭控制台乱码推测下结论
 - 使用 NUL 前缀的精确替换模式改写脚本内的资源引用，不要用朴素字符串替换
 
 ### 5. 验收流程
