@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "purpose": "人工定案的**语音引用重指**：产物脚本里指向 **Steam 自有号段**的语音 token（原版 `VOICE.arc` 无此成员）改指到**对齐原版行**所用的那条原版录音，并把该原版成员并入交付（`resources.copy`）。",
+  "producer": "人工逐条定案。判据（三条同时成立）：① 该槽与某原版行**逐行 1:1 对齐**（文本成对 ＋ 语音位置成对）；② 该原版行自带原版语音；③ 产物 token 在原版 `VOICE.arc` 不存在（Steam 自有）。已定案范围见表内条目。",
+  "consumer": "script/build/build_restore_plan.py（→ `plan.voice_repoints`，并把 `to` 并入该脚本的资源需求 ⇒ Steam 缺则走 `resources.copy`）；script/build/build_patch.py 落盘（**等长** NUL 定界替换 ＋ 回读）；script/final_verification.py 第 10 项（内容面）。",
+  "constraints": "只改**语音 token**：必须**等长**、NUL 定界、脚本内该 token **唯一**；不动文本／演出／成就钩子；`to` 必须存在于原版 `VOICE.arc`。本表是**内容还原**决策（「听哪条录音」），与 `voice_conflict_map.json`（同名不同字节的处置）分工不同：本表处理的是**异名**。",
+  "evidence": "对齐证据 tmp/_age010_two_side.md（逐行文本成对 ＋ 语音位置成对；原判 align_fixes AGE_010 \"37\": null 已改正）；录音证据：ffmpeg 解码 8 kHz 单声道 PCM 相关（tool/script/build/build_voice_conflict_map.py::classify）：三条均判 `rerecord`（pcm_corr 0.044／0.008／0.041，时长差 −2.10／−0.218／−0.386 s），且在原版全部 `AGE_37xx` 里找最近邻 corr 均 < 0.5（0.454／0.173／0.338）⇒ 不是改名、不是重编码，是**另一条录音**。"
+ },
+ "repoints": [
+  {
+   "script": "AGE_010",
+   "slot": 34,
+   "from": "AGE_6052.OGG",
+   "to": "AGE_3716.OGG",
+   "reason": "对齐原版 o538「………………」用的就是 AGE_3716；Steam 槽 34 自带自有号 AGE_6052。"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 35,
+   "from": "AGE_6053.OGG",
+   "to": "AGE_3717.OGG",
+   "reason": "对齐原版 o539「「なんでもない」」＝AGE_3717；Steam 槽 35 自带自有号 AGE_6053。"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 37,
+   "from": "AGE_6054.OGG",
+   "to": "AGE_3718.OGG",
+   "reason": "对齐原版 o541「「……」」＝AGE_3718；Steam 槽 37 自带自有号 AGE_6054。"
+  }
+ ]
+}

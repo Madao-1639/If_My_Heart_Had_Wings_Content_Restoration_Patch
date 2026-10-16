@@ -33,6 +33,7 @@
    "extra_absent": "Steam 保留槽自带、原版**全脚本**都不出现的图名（Steam 新增素材）⇒ 删该通道（**与对齐无关**，不需 1:1 对齐即可判定）",
    "replace": "该槽自带的立绘／背景演出与原版对齐行的**不等** ⇒ 整段换成原版行的（删该槽全部立绘／背景显示块与清屏指令，再补原版行的图像演出块；资源名照抄原版，靠 resources.copy 补入原版素材）",
    "missing": "原版在屏有、产物没有 ⇒ review（对齐不可信时不自动补）",
+   "layer": "该槽的立绘**图名归一后与原版相同**，但脚本列的**子图层 id 上的子图不同**（Steam 改画/重排了差分层）⇒ 整段换成原版行（同 replace 动作）。",
    "different": "两侧同通道取值不同（且原版那张图产物没有）⇒ review",
    "ev_extra": "ev 通道的差异 ⇒ review（CG 序列另有 cg_seq_check.py + cg_site_rewrites 专管）"
   },
@@ -65,7 +66,7 @@
     "st02": "EST_1014.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_006",
@@ -86,7 +87,67 @@
     "st03": "EST_1000.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AGE_006",
+   "slot": 311,
+   "orig_row": 335,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_AGEHA_02M.PNA"
+   },
+   "orig": {
+    "st02": "Bあげは_02M.PNA"
+   },
+   "voice": "AGE_2865.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_006",
+   "slot": 313,
+   "orig_row": 337,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_AGEHA_02M.PNA"
+   },
+   "orig": {
+    "st02": "Bあげは_02M.PNA"
+   },
+   "voice": "AGE_2866.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_006",
+   "slot": 470,
+   "orig_row": 495,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01",
+    "st02",
+    "st03"
+   ],
+   "prod": {
+    "st03": "ST_YORU_01M.PNA",
+    "st01": "ST_SANAE_01M.PNA",
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st03": "E夜瑠_01M.PNA",
+    "st01": "O早苗_01M.PNA",
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "YOR_0552.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "AGE_007",
@@ -106,7 +167,79 @@
     "st01": "Bあげは_03L.PNA"
    },
    "voice": "AGE_2997.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AGE_007",
+   "slot": 375,
+   "orig_row": 404,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_03L.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_03L.PNA"
+   },
+   "voice": "AGE_3002.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_007",
+   "slot": 377,
+   "orig_row": 406,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_03L.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_03L.PNA"
+   },
+   "voice": "AGE_3003.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_007",
+   "slot": 378,
+   "orig_row": 407,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_03L.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_03L.PNA"
+   },
+   "voice": "AGE_3004.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_008",
+   "slot": 101,
+   "orig_row": 103,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KOTORI_01M.PNA"
+   },
+   "orig": {
+    "st02": "A小鳥_01M.PNA"
+   },
+   "voice": null,
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "AGE_010",
@@ -137,7 +270,7 @@
     "st03": "EST_1022.PNG"
    },
    "voice": "AGE_3538.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -158,7 +291,7 @@
     "st01": "Bあげは_03M.PNA"
    },
    "voice": "AGE_3534.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -170,7 +303,7 @@
    "prod": {},
    "orig": {},
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -186,7 +319,7 @@
     "bg01": "BG20B_01B.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -202,7 +335,7 @@
     "st01": "Bあげは_01M.PNA"
    },
    "voice": "AGE_3535.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -218,7 +351,7 @@
     "st01": "Bあげは_01M.PNA"
    },
    "voice": "AGE_3536.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -230,7 +363,7 @@
    "prod": {},
    "orig": {},
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -246,7 +379,7 @@
     "st01": "Bあげは_01L.PNA"
    },
    "voice": "AGE_3537.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -262,7 +395,47 @@
    },
    "orig": {},
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 35,
+   "orig_row": 539,
+   "action": "replace",
+   "kind": "replace",
+   "channels": [
+    "st01",
+    "st02"
+   ],
+   "prod": {
+    "st02": "Bあげは_03L.PNA"
+   },
+   "orig": {
+    "st02": null,
+    "st01": "Bあげは_01M.PNA"
+   },
+   "voice": "AGE_6053.OGG",
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 37,
+   "orig_row": 541,
+   "action": "replace",
+   "kind": "replace",
+   "channels": [
+    "st01",
+    "st02"
+   ],
+   "prod": {
+    "st02": "Bあげは_03L.PNA"
+   },
+   "orig": {
+    "st02": null,
+    "st01": "Bあげは_03M.PNA"
+   },
+   "voice": "AGE_6054.OGG",
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -282,7 +455,7 @@
     "st01": "Bあげは_01M.PNA"
    },
    "voice": "AGE_3719.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -300,7 +473,7 @@
     "st02": null
    },
    "voice": "AGE_3720.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -320,7 +493,7 @@
     "st01": "Bあげは_03M.PNA"
    },
    "voice": "AGE_3721.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -336,7 +509,7 @@
    },
    "orig": {},
    "voice": "AGE_3722.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -354,7 +527,7 @@
    },
    "orig": {},
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -372,7 +545,25 @@
     "st01": "Bあげは_01M.PNA"
    },
    "voice": "AGE_3723.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 55,
+   "orig_row": 560,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_01M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_01M.PNA"
+   },
+   "voice": "AGE_3724.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "AGE_010",
@@ -390,7 +581,7 @@
     "st01": "Bあげは_01M.PNA"
    },
    "voice": "AGE_3728.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_010",
@@ -408,7 +599,187 @@
     "st01": "Bあげは_03M.PNA"
    },
    "voice": "AGE_3729.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 66,
+   "orig_row": 573,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_03M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_03M.PNA"
+   },
+   "voice": "AGE_3730.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 84,
+   "orig_row": 952,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_01M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_01M.PNA"
+   },
+   "voice": "AGE_3838.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 87,
+   "orig_row": 956,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_02M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_02M.PNA"
+   },
+   "voice": "AGE_3839.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 88,
+   "orig_row": 957,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_02M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_02M.PNA"
+   },
+   "voice": "AGE_3840.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 89,
+   "orig_row": 958,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_01M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_01M.PNA"
+   },
+   "voice": "AGE_3841.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_011",
+   "slot": 12,
+   "orig_row": 12,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_03M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_03M.PNA"
+   },
+   "voice": "AGE_3846.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_011",
+   "slot": 14,
+   "orig_row": 14,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_03M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_03M.PNA"
+   },
+   "voice": "AGE_3847.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_011",
+   "slot": 705,
+   "orig_row": 710,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_02L.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_02L.PNA"
+   },
+   "voice": "AGE_3935.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_011",
+   "slot": 709,
+   "orig_row": 714,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_02L.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_02L.PNA"
+   },
+   "voice": "AGE_3939.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AGE_011",
+   "slot": 714,
+   "orig_row": 719,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_01L.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_01L.PNA"
+   },
+   "voice": "AGE_3940.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "AGE_011",
@@ -424,7 +795,7 @@
     "st01": "Bあげは_01L.PNA"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_011",
@@ -442,7 +813,7 @@
     "bg01": null
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_011",
@@ -463,7 +834,7 @@
     "st01": "Bあげは_01L.PNA"
    },
    "voice": "AGE_3943.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AMA_004",
@@ -479,7 +850,7 @@
    },
    "orig": {},
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AMA_004",
@@ -508,7 +879,61 @@
     "st04": null
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AMA_004",
+   "slot": 40,
+   "orig_row": 40,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AMANE_03M.PNA"
+   },
+   "orig": {
+    "st01": "C天音_03M.PNA"
+   },
+   "voice": "AMA_1612.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AMA_004",
+   "slot": 44,
+   "orig_row": 44,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AMANE_03M.PNA"
+   },
+   "orig": {
+    "st01": "C天音_03M.PNA"
+   },
+   "voice": "AMA_1613.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AMA_004",
+   "slot": 66,
+   "orig_row": 60,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AMANE_01L.PNA"
+   },
+   "orig": {
+    "st01": "C天音_01L.PNA"
+   },
+   "voice": "AMA_1616.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "AMA_004",
@@ -529,7 +954,43 @@
     "st01": "C天音_01M.PNA"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AMA_004",
+   "slot": 82,
+   "orig_row": 76,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AMANE_02L.PNA"
+   },
+   "orig": {
+    "st01": "C天音_02L.PNA"
+   },
+   "voice": "AMA_1622.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AMA_004",
+   "slot": 110,
+   "orig_row": 113,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AMANE_01M.PNA"
+   },
+   "orig": {
+    "st01": "C天音_01M.PNA"
+   },
+   "voice": "AMA_1633.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "AMA_004",
@@ -547,7 +1008,7 @@
     "st01": "C天音_02M.PNA"
    },
    "voice": "AMA_1636.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AMA_004",
@@ -559,7 +1020,7 @@
    "prod": {},
    "orig": {},
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AMA_004",
@@ -571,7 +1032,7 @@
    "prod": {},
    "orig": {},
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AMA_004",
@@ -583,7 +1044,25 @@
    "prod": {},
    "orig": {},
    "voice": "AMA_1700.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AMA_004",
+   "slot": 733,
+   "orig_row": 1133,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AMANE_01L.PNA"
+   },
+   "orig": {
+    "st01": "C天音_01L.PNA"
+   },
+   "voice": "AMA_1846.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "AMA_004",
@@ -599,7 +1078,61 @@
    },
    "orig": {},
    "voice": "AMA_1847.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AMA_006",
+   "slot": 675,
+   "orig_row": 678,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AMANE_01M.PNA"
+   },
+   "orig": {
+    "st01": "C天音_01M.PNA"
+   },
+   "voice": "AMA_2170.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AMA_007",
+   "slot": 381,
+   "orig_row": 391,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AMANE_01M.PNA"
+   },
+   "orig": {
+    "st01": "C天音_01M.PNA"
+   },
+   "voice": "AMA_2351.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "AMA_007",
+   "slot": 401,
+   "orig_row": 414,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AMANE_01M.PNA"
+   },
+   "orig": {
+    "st01": "C天音_01M.PNA"
+   },
+   "voice": "AMA_2359.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "AMA_010",
@@ -620,7 +1153,7 @@
     "st01": "A小鳥_01M.PNA"
    },
    "voice": "KOT_4606.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AMA_010",
@@ -638,7 +1171,7 @@
     "bg01": "BG05E_01B.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AMA_010",
@@ -659,7 +1192,7 @@
     "bg02": "EST_1022.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "ASA_001",
@@ -675,7 +1208,7 @@
     "st01": "D亜紗_02M.PNA"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "ASA_001",
@@ -691,7 +1224,7 @@
     "bg01": "BG08_03B.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "ASA_001",
@@ -707,7 +1240,1402 @@
    },
    "orig": {},
    "voice": "ASA_1748.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 202,
+   "orig_row": 225,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0656.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 204,
+   "orig_row": 227,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0657.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 206,
+   "orig_row": 229,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0658.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 210,
+   "orig_row": 233,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0660.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 214,
+   "orig_row": 237,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0662.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 216,
+   "orig_row": 239,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0663.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 218,
+   "orig_row": 241,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0664.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 220,
+   "orig_row": 243,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0665.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 222,
+   "orig_row": 245,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0666.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 223,
+   "orig_row": 246,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0667.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 229,
+   "orig_row": 252,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0668.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_003",
+   "slot": 233,
+   "orig_row": 256,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0669.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_005",
+   "slot": 83,
+   "orig_row": 79,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0698.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_005",
+   "slot": 86,
+   "orig_row": 82,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0699.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_005",
+   "slot": 88,
+   "orig_row": 84,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01",
+    "st02"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA",
+    "st02": "ST_YORU_02M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA",
+    "st02": "E夜瑠_02M.PNA"
+   },
+   "voice": "YOR_1341.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_005",
+   "slot": 89,
+   "orig_row": 85,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0700.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_005",
+   "slot": 90,
+   "orig_row": 86,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01",
+    "st02"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA",
+    "st02": "ST_KOTORI_03M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA",
+    "st02": "A小鳥_03M.PNA"
+   },
+   "voice": "KOT_4796.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_005",
+   "slot": 91,
+   "orig_row": 87,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0701.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_005",
+   "slot": 92,
+   "orig_row": 88,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01",
+    "st02"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA",
+    "st02": "ST_ASA_03M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA",
+    "st02": "D亜紗_03M.PNA"
+   },
+   "voice": "ASA_2173.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_005",
+   "slot": 93,
+   "orig_row": 89,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0702.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "ASA_005",
+   "slot": 94,
+   "orig_row": 90,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0703.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_001",
+   "slot": 319,
+   "orig_row": 319,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0001.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_001",
+   "slot": 320,
+   "orig_row": 320,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02",
+    "st03"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA",
+    "st03": "EST_1022.PNG"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA",
+    "st03": "EST_1022.PNG"
+   },
+   "voice": null,
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_001",
+   "slot": 323,
+   "orig_row": 323,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0002.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_001",
+   "slot": 327,
+   "orig_row": 327,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0003.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_001",
+   "slot": 329,
+   "orig_row": 329,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0004.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_001",
+   "slot": 334,
+   "orig_row": 334,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0005.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 16,
+   "orig_row": 16,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": null,
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 18,
+   "orig_row": 18,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0100.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 20,
+   "orig_row": 20,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0101.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 40,
+   "orig_row": 40,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0102.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 41,
+   "orig_row": 41,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01",
+    "st02"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA",
+    "st02": "ST_KOTORI_02M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA",
+    "st02": "A小鳥_02M.PNA"
+   },
+   "voice": "KOT_0849.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 48,
+   "orig_row": 48,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0103.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 77,
+   "orig_row": 77,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0104.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 79,
+   "orig_row": 79,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0105.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 81,
+   "orig_row": 81,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0106.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 83,
+   "orig_row": 83,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0107.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 84,
+   "orig_row": 84,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0108.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 87,
+   "orig_row": 87,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0109.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 88,
+   "orig_row": 88,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0110.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_016",
+   "slot": 92,
+   "orig_row": 92,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st02": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0111.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "CO1_020_E",
+   "slot": 108,
+   "orig_row": 108,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01",
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_AMANE_01L.PNA",
+    "st01": "EST_1022.PNG"
+   },
+   "orig": {
+    "st02": "C天音_01L.PNA",
+    "st01": "EST_1022.PNG"
+   },
+   "voice": "AMA_0835.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 136,
+   "orig_row": 137,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0546.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 138,
+   "orig_row": 139,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0547.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 140,
+   "orig_row": 141,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0548.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 145,
+   "orig_row": 146,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0550.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 147,
+   "orig_row": 148,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0551.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 149,
+   "orig_row": 150,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0552.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 153,
+   "orig_row": 154,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0553.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 155,
+   "orig_row": 156,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0554.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 160,
+   "orig_row": 161,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0556.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 166,
+   "orig_row": 167,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0557.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 170,
+   "orig_row": 171,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0558.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 174,
+   "orig_row": 175,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0559.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 176,
+   "orig_row": 177,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0560.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 208,
+   "orig_row": 209,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01",
+    "st02",
+    "st03"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA",
+    "st02": "ST_ASA_01M.PNA",
+    "st03": "ST_YORU_02M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA",
+    "st02": "D亜紗_01M.PNA",
+    "st03": "E夜瑠_02M.PNA"
+   },
+   "voice": "KAN_0562.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 210,
+   "orig_row": 211,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0563.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 212,
+   "orig_row": 213,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0564.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 216,
+   "orig_row": 217,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0565.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 218,
+   "orig_row": 219,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0566.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 219,
+   "orig_row": 220,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0567.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 221,
+   "orig_row": 222,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0568.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 222,
+   "orig_row": 223,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0569.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 225,
+   "orig_row": 226,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0570.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 228,
+   "orig_row": 229,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0571.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 231,
+   "orig_row": 232,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0572.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 235,
+   "orig_row": 236,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0574.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 236,
+   "orig_row": 237,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0575.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 238,
+   "orig_row": 239,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0577.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 241,
+   "orig_row": 242,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0578.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 243,
+   "orig_row": 244,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0580.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 245,
+   "orig_row": 246,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0581.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 252,
+   "orig_row": 253,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0582.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 257,
+   "orig_row": 258,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0583.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "HUT_004",
+   "slot": 262,
+   "orig_row": 263,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KANAKO_01M.PNA"
+   },
+   "orig": {
+    "st01": "I佳奈子_01M.PNA"
+   },
+   "voice": "KAN_0584.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_002",
+   "slot": 754,
+   "orig_row": 754,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01",
+    "st02"
+   ],
+   "prod": {
+    "st01": "ST_ASA_01L.PNA",
+    "st02": "EST_1022.PNG"
+   },
+   "orig": {
+    "st01": "D亜紗_01L.PNA",
+    "st02": "EST_1022.PNG"
+   },
+   "voice": null,
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "KOT_003",
@@ -725,7 +2653,43 @@
     "bg01": null
    },
    "voice": "KOT_2181.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "KOT_003",
+   "slot": 276,
+   "orig_row": 276,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_01L.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_01L.PNA"
+   },
+   "voice": "KOT_2039.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_003",
+   "slot": 995,
+   "orig_row": 999,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_02M.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_02M.PNA"
+   },
+   "voice": "KOT_2156.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "KOT_003",
@@ -737,7 +2701,61 @@
    "prod": {},
    "orig": {},
    "voice": "KOT_2185.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "KOT_004",
+   "slot": 301,
+   "orig_row": 320,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_02M.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_02M.PNA"
+   },
+   "voice": "KOT_2436.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_004",
+   "slot": 303,
+   "orig_row": 322,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_02M.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_02M.PNA"
+   },
+   "voice": "KOT_2437.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 286,
+   "orig_row": 286,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_02L.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_02L.PNA"
+   },
+   "voice": null,
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "KOT_006",
@@ -755,7 +2773,7 @@
     "st01": null
    },
    "voice": "KOT_2848.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -773,7 +2791,7 @@
     "st01": null
    },
    "voice": "KOT_2849.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -791,7 +2809,7 @@
     "st01": null
    },
    "voice": "KOT_2850.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -809,7 +2827,7 @@
     "st01": null
    },
    "voice": "KOT_2851.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -827,7 +2845,7 @@
     "st01": null
    },
    "voice": "KOT_2852.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -845,7 +2863,7 @@
     "st01": null
    },
    "voice": "KOT_2853.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -863,7 +2881,7 @@
     "st01": null
    },
    "voice": "KOT_2855.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -881,7 +2899,7 @@
     "st01": null
    },
    "voice": "KOT_2856.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -899,7 +2917,7 @@
     "st01": null
    },
    "voice": "KOT_2857.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -917,7 +2935,7 @@
     "st01": null
    },
    "voice": "KOT_2858.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -935,7 +2953,7 @@
     "st01": null
    },
    "voice": "KOT_2859.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -953,7 +2971,7 @@
     "st01": null
    },
    "voice": "KOT_2861.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -971,7 +2989,7 @@
     "st01": null
    },
    "voice": "KOT_2862.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -989,7 +3007,7 @@
     "st01": null
    },
    "voice": "KOT_2863.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -1007,7 +3025,7 @@
     "st01": null
    },
    "voice": "KOT_2865.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -1025,7 +3043,7 @@
     "st01": null
    },
    "voice": "KOT_2866.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -1043,7 +3061,7 @@
     "st01": null
    },
    "voice": "KOT_2868.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -1061,7 +3079,7 @@
     "st01": null
    },
    "voice": "KOT_2869.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -1079,7 +3097,7 @@
     "st01": null
    },
    "voice": "KOT_2873.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -1100,7 +3118,7 @@
     "st01": null
    },
    "voice": "KOT_2874.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -1118,7 +3136,7 @@
     "st01": null
    },
    "voice": "KOT_2876.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -1139,7 +3157,7 @@
     "st01": "D亜紗_02M.PNA"
    },
    "voice": "ASA_0610.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -1159,7 +3177,133 @@
     "st01": "A小鳥_03L.PNA"
    },
    "voice": "KOT_3030.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 768,
+   "orig_row": 1158,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_03L.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_03L.PNA"
+   },
+   "voice": "KOT_3031.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 770,
+   "orig_row": 1160,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_03L.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_03L.PNA"
+   },
+   "voice": "KOT_3032.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 772,
+   "orig_row": 1162,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_03L.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_03L.PNA"
+   },
+   "voice": "KOT_3033.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 775,
+   "orig_row": 1165,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_03L.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_03L.PNA"
+   },
+   "voice": "KOT_3034.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 776,
+   "orig_row": 1166,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_03L.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_03L.PNA"
+   },
+   "voice": "KOT_3035.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 783,
+   "orig_row": 1173,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_03L.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_03L.PNA"
+   },
+   "voice": "KOT_3036.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "KOT_006",
+   "slot": 784,
+   "orig_row": 1174,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_KOTORI_03L.PNA"
+   },
+   "orig": {
+    "st01": "A小鳥_03L.PNA"
+   },
+   "voice": "KOT_3037.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "KOT_009",
@@ -1175,7 +3319,7 @@
     "bg01": "BG08_01S.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_009",
@@ -1199,7 +3343,7 @@
     "st01": "Rハット_01M.PNA"
    },
    "voice": "HAT_0157.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_009",
@@ -1217,7 +3361,43 @@
     "bg01": "SKY02_01B.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "YOR_002",
+   "slot": 619,
+   "orig_row": 627,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_01M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_01M.PNA"
+   },
+   "voice": "AGE_4509.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "YOR_002",
+   "slot": 621,
+   "orig_row": 629,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st01"
+   ],
+   "prod": {
+    "st01": "ST_AGEHA_01M.PNA"
+   },
+   "orig": {
+    "st01": "Bあげは_01M.PNA"
+   },
+   "voice": "AGE_4510.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "YOR_002",
@@ -1237,7 +3417,7 @@
     "st01": "E夜瑠_02M.PNA"
    },
    "voice": "YOR_1643.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "YOR_004",
@@ -1258,7 +3438,7 @@
     "st05": "EST_1022.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "YOR_006",
@@ -1276,7 +3456,133 @@
     "st02": "E夜瑠_02L.PNA"
    },
    "voice": "YOR_2060.OGG",
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "YOR_006",
+   "slot": 18,
+   "orig_row": 29,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_YORU_01M.PNA"
+   },
+   "orig": {
+    "st02": "E夜瑠_01M.PNA"
+   },
+   "voice": "YOR_2061.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "YOR_006",
+   "slot": 19,
+   "orig_row": 30,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_YORU_02M.PNA"
+   },
+   "orig": {
+    "st02": "E夜瑠_02M.PNA"
+   },
+   "voice": "YOR_2062.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "YOR_006",
+   "slot": 21,
+   "orig_row": 32,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_YORU_02M.PNA"
+   },
+   "orig": {
+    "st02": "E夜瑠_02M.PNA"
+   },
+   "voice": "YOR_2063.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "YOR_006",
+   "slot": 23,
+   "orig_row": 34,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_YORU_01M.PNA"
+   },
+   "orig": {
+    "st02": "E夜瑠_01M.PNA"
+   },
+   "voice": "YOR_2064.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "YOR_006",
+   "slot": 25,
+   "orig_row": 36,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_YORU_01M.PNA"
+   },
+   "orig": {
+    "st02": "E夜瑠_01M.PNA"
+   },
+   "voice": "YOR_2065.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "YOR_006",
+   "slot": 28,
+   "orig_row": 39,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_YORU_01M.PNA"
+   },
+   "orig": {
+    "st02": "E夜瑠_01M.PNA"
+   },
+   "voice": "YOR_2066.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
+  },
+  {
+   "script": "YOR_006",
+   "slot": 30,
+   "orig_row": 41,
+   "action": "replace",
+   "kind": "layer",
+   "channels": [
+    "st02"
+   ],
+   "prod": {
+    "st02": "ST_YORU_01M.PNA"
+   },
+   "orig": {
+    "st02": "E夜瑠_01M.PNA"
+   },
+   "voice": "YOR_2067.OGG",
+   "evidence": "doc/resource-naming.md §3（立绘差分层编排：脚本列的子图层 id 上的子图与原版不同；图名归一后相同 ⇒ 只看图名会漏）"
   },
   {
    "script": "YOR_006",
@@ -1299,7 +3605,7 @@
     "st06": "BG00_01S.PNG"
    },
    "voice": null,
-   "evidence": "doc/lessons-learned.md §17／§27"
+   "evidence": "doc/restoration-route.md §6 V-10"
   }
  ],
  "review": [
@@ -1447,34 +3753,19 @@
    "items": [],
    "prod_voice": null,
    "orig_voice": null
-  },
-  {
-   "script": "KOT_003",
-   "slot": 1096,
-   "orig_row": 1106,
-   "trusted": true,
-   "extra": [],
-   "ev_extra": [
-    "ev"
-   ],
-   "items": [],
-   "prod_voice": [
-    "KOT_2189.OGG"
-   ],
-   "orig_voice": [
-    "KOT_2189.OGG"
-   ]
   }
  ],
  "summary": {
-  "pairs": 17265,
-  "replace_slots": 68,
+  "pairs": 24714,
+  "replace_slots": 70,
   "out_of_scope": 16,
-  "review_slots": 10,
+  "review_slots": 9,
+  "layer_slots": 124,
   "untrusted": 1,
   "absent_slots": 7,
   "absent_chans": 13,
-  "extra_slots": 29,
-  "extra_chans": 35
- }
+  "extra_slots": 31,
+  "extra_chans": 37
+ },
+ "member_overwrites": []
 }

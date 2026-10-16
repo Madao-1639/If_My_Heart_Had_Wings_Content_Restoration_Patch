@@ -271,7 +271,7 @@ def expected_sequence(host, n_steam_cells):
       seq[j]  = 产物第 j 格的来源 ('steam', k) | ('orig', r)
       tail[j] = 恒为空。写盘器的块跨度＝`[o14[r0-1]+1, o14[r1]+1)`，即行 r0..r1 各自的
                 演出前缀＋正文；**不携带 r1+1 的演出前缀**（携带会让同一触发连发两次
-                ⇒ 产物出现「同格重复语音」，见 doc/lessons-learned.md §16）。
+                ⇒ 产物出现「同格重复语音」）。
     锚点落在被删格上（rebind 改绑）时，插入块就位于该格原本的位置。
     """
     plan = host['plan']
@@ -293,7 +293,7 @@ def expected_sequence(host, n_steam_cells):
         for r in range(r0, r1 + 1):
             emit(('orig', r))
         # 写盘器的块跨度右端收到 r1 的 `14` 之后即止，**不携带 r1+1 的演出前缀**
-        # ⇒ 无「块尾前奏」，`tail` 恒为空（见 doc/lessons-learned.md §16）
+        # ⇒ 无「块尾前奏」，`tail` 恒为空（见 doc/file-formats.md「格内指令的归属次序」）
         pending[0] = None
 
     for r0, r1 in sorted(by_anchor.get(-1, [])):
@@ -460,7 +460,7 @@ def main():
         if not s_raw or not o_raw:
             add(HARD, 'A0-no-source', script, steam=bool(s_raw), orig=bool(o_raw))
             continue
-        # 匹配行文本覆盖口径（2026-10-07）：计划声明这些 steam 槽的 zh 用原版行民汉；
+        # 匹配行文本覆盖口径：计划声明这些 steam 槽的 zh 用原版行民汉；
         # 覆盖槽上的语音/画面分歧属声明内已知偏差（见 A1 发射处的降级）
         _hp = plan['hosts'].get(script, {})
         text_overrides = {int(k): v for k, v in
@@ -497,7 +497,7 @@ def main():
                             A['voice_diff_carried_latin'] += 1
                     else:
                         A['voice_diff_other'] += 1
-                    # 覆盖槽＝该对已被等长复审判定且按 2026-10-07 口径只做文本覆盖，
+                    # 覆盖槽＝该对已被等长复审判定且按口径只做文本覆盖，
                     # 语音/画面留 Steam 侧是**声明内的已知偏差**，不是未处理缺陷
                     overridden = k in text_overrides
                     add(REVIEW if overridden else (HARD if carried else REVIEW),
@@ -561,7 +561,7 @@ def main():
             host = plan['hosts'][script]
             exp, tail = expected_sequence(host, len(s_cells))
             drops = set(host['plan']['drops'])
-            # 覆盖口径（2026-10-07）在**本循环**再取一次：上面的定义属路 A 循环，
+            # 覆盖口径在**本循环**再取一次：上面的定义属路 A 循环，
             # 到这里已是上一脚本的残留值
             text_overrides = {int(k): v for k, v in
                               (host['plan'].get('text_overrides') or {}).items()}
@@ -590,7 +590,7 @@ def main():
             return bool(arch) and low in orig_tab.get(arch, {})
 
         # 删格残留**按产物实测**：`tool/writer.drop_units()` 已把被删行的演出前缀区
-        # （语音/显示/BGM/图层/特效）一并摘除（见 doc/lessons-learned.md §16）⇒ 残留只可能
+        # （语音/显示/BGM/图层/特效）一并摘除（见 doc/file-formats.md「格内指令的归属次序」）⇒ 残留只可能
         # 来自「产物里真出现了被删格的名字」。在下面的逐格核对里累计：
         # B4/B6/B7 判为 residue 的格、B8 判为 drop-residue 的 bgm 差、以及单格携带多条
         # 语音触发（= 相邻语音触发之间没有 `14`，无对白连播）。
@@ -659,8 +659,10 @@ def main():
                         return acc
 
                     def _is_sb(chan, nm):
-                        # 不吞异常：这里一旦静默失败就会把「被删的项」当成存活，期望值全错
-                        return perfsync.sb_chan(chan.decode('cp932'), nm.decode('cp932'))
+                        # 与写盘器同源：`replace` 删**该槽全部** `st*`/`bg*` 显示（不再按
+                        # 「图名是不是 CG」豁免；删掉的部分由补块带回原版行自己的块）。
+                        # 不吞异常：这里一旦静默失败就会把「被删的项」当成存活，期望值全错。
+                        return perfsync.is_sb_channel(chan.decode('cp932'))
 
                     own = {}
                     if _spec['orig_row'] < len(o_cells):

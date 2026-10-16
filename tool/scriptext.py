@@ -11,7 +11,7 @@
 
 `crc` 是引擎口径的查表键：cp932 解码 → UTF-16LE 字节 → CRC32（有符号 int32）。
 
-噪声排除（doc/lessons-learned.md）：
+噪声排除（行模型见 doc/file-formats.md「已确认的操作码/操作数模式」）：
   - \\x14 巧合命中 LAYER_ORDER 等二进制块：flag!=0、speaker 不是 char/空、
     text 含 NUL、空 speaker 但 text 不是 %P 的候选全部丢弃。
   - FLAG_CHECK 扫描：真标签必为 cp932 可解码且含非 ASCII 字符（全是人名/

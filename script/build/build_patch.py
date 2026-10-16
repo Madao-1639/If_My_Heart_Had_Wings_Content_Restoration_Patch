@@ -131,9 +131,26 @@ def main():
         rio[name] = ws2.encode(dec[:off] + new + dec[off + len(old):])
         report.append('Rio reuse-rewrite %s @%#x: %s -> %s'
                       % (rw['script'], off, rw['from'], rw['to']))
+    # 语音引用重指（人工定案 `resource/voice_repoint_manual.json`）：产物里指向 **Steam 自有
+    # 号段**的语音 token 改指到**对齐原版行**那条原版录音。**等长** NUL 定界精确替换——
+    # 长度不变 ⇒ 不动任何偏移；脚本内该 token 须**唯一**（多义即中止）。原版成员由
+    # `resources.copy` 并入交付（计划器已把它并入资源需求）。理由与证据见表。
+    for rw in plan.get('voice_repoints', []):
+        name = rw['script'] + '.ws2'
+        dec = ws2.decode(rio[name])
+        old = rw['from'].encode('ascii')
+        new = rw['to'].encode('ascii')
+        assert len(old) == len(new), '语音重指长度不一致 %s -> %s' % (rw['from'], rw['to'])
+        assert dec.count(old) == 1, \
+            '%s: 语音 %s 在脚本里出现 %d 次（须唯一，否则不得重指）' % (
+                rw['script'], rw['from'], dec.count(old))
+        rio[name] = ws2.encode(dec.replace(old, new))
+        report.append('Rio voice-repoint %s s%s: %s -> %s'
+                      % (rw['script'], rw['slot'], rw['from'], rw['to']))
     # 改写点在**产物槽序**里的位置（rebuild 会删被删格的 14/15 ⇒ 产物槽序 ≠ Steam 原槽序，
     # 须经 `slot_sources` 换算）。这里记下改写点的 Steam 侧 `14.id` 与各宿主的槽序来源表。
     reuse_sid, slot_sources_of = {}, {}
+    state_fix_res = set()                       # 状态对齐引用的图像名（写盘器回传）
     for script, pl in plan['hosts'].items():
         if pl['kind'] == 'skip':
             continue
@@ -148,8 +165,12 @@ def main():
             '%s: rebuild fail ok=%s fix_bad=%d' % (script, res['ok'], res['fix_bad'])
         rio[name] = res['raw']
         slot_sources_of[script] = res['slot_sources']
-        report.append('Rio host %s: slots %d (drops %d, rows +%d)'
-                      % (script, res['n_slots'], len(pl['plan']['drops']), pl['n_insert_rows']))
+        for e in res.get('state_fix_log') or []:      # 状态对齐需要补入的原版素材
+            if e['action'] == 'set':
+                state_fix_res.add(e['value'])
+        report.append('Rio host %s: slots %d (drops %d, rows +%d, state_fix %d)'
+                      % (script, res['n_slots'], len(pl['plan']['drops']), pl['n_insert_rows'],
+                         res.get('state_fix', 0)))
     if 'start.ws2' in l4_rio:
         rio['start.ws2'] = l4_rio['start.ws2']          # G4（SetFlag 1000=1）
         report.append('Rio start.ws2 <- L4 (G4)')
@@ -174,6 +195,16 @@ def main():
                 '%s: 顶包调用点改写未落到产物槽 %d（实为 %r）' % (rw['script'], idxs[0], found)
             report.append('回读 reuse-rewrite %s 产物槽 %d: %s -> %s'
                           % (rw['script'], idxs[0], rw['from'], rw['to']))
+
+    # 回读校验：语音重指必须落到产物（旧 token 消失、新 token 在位）
+    if plan.get('voice_repoints'):
+        back = read_members(out)
+        for rw in plan['voice_repoints']:
+            dec2 = ws2.decode(back[rw['script'] + '.ws2'])
+            assert rw['to'].encode('ascii') in dec2 and rw['from'].encode('ascii') not in dec2, \
+                '%s: 语音重指未落到产物（%s -> %s）' % (rw['script'], rw['from'], rw['to'])
+            report.append('回读 voice-repoint %s s%s: %s -> %s'
+                          % (rw['script'], rw['slot'], rw['from'], rw['to']))
 
     # ── 2. zh-CN/Rio.arc ──
     zh = read_members(os.path.join(STEAM, 'zh-CN', 'Rio.arc'))
@@ -212,6 +243,27 @@ def main():
         overwrite[e['archive']][e['name'].lower()] = (e['name'], e['orig_name'])
     for pna in SL_PNA:
         need['GRAPHIC.arc'].setdefault(pna.lower(), None)
+    # 状态对齐（写盘器的状态规范化）引用的原版素材：写盘器回传、本处补入。
+    # 归档归属直接查入库表 `resource/res_diff.json` 的 `orig_only`（原版独有成员名单），
+    # 不再扫归档（扫一遍就要读几 GB）。Steam 已有的同名成员不必补。
+    if state_fix_res:
+        rd = json.load(open(os.path.join(ROOT, 'resource', 'res_diff.json'), encoding='utf-8'))
+        # `res_diff` 是**大小写敏感**的：仅大小写不同的同名成员会同时落进 orig_only 与
+        # steam_only。→ 索引只收「真正原版独有」的：去掉 steam_only（大小写噪声）与覆盖名单。
+        steam_only = {n.upper() for info in rd.values() for n in (info.get('steam_only') or [])}
+        ow_names = {e['name'].upper() for e in plan['resources'].get('overwrite', [])}
+        orig_only = {n.upper(): arch for arch, info in rd.items()
+                     for n in (info.get('orig_only') or [])}
+        orig_only = {k: v for k, v in orig_only.items()
+                     if k not in steam_only and k not in ow_names}
+        n_add = 0
+        for n in sorted(state_fix_res):
+            arch = orig_only.get(n.upper())
+            if arch:
+                need[arch].setdefault(n.lower(), None)
+                n_add += 1
+        report.append('state_fix 素材需求 %d 名（其中原版独有需补入 %d 名）'
+                      % (len(state_fix_res), n_add))
 
     import shutil
     ow_done = 0

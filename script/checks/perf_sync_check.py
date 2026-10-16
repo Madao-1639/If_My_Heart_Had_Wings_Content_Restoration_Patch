@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """演出同步闸（产物 vs 原版，逐槽对账）。
 
-方针（用户 2026-10-10 定案，见 doc/restoration-route.md §7 V-10）：
+方针（见 doc/restoration-route.md §7 V-10）：
 **与原版相比，每类演出（语音 / CG / 立绘 / 背景）要么两侧同时存在且相等，要么都不存在。**
 
 对齐 = `resource/restore_plan.json` 的 `slot_sources`（产物槽 → steam 槽 / 原版行）
@@ -175,6 +175,13 @@ def main(argv=None):
 
     # 闸：判定表条目必须逐条落地（`plan.gates.perf_sync_*` 之和 ＝ 判定表 sites 数）
     want = sum(1 for s in pmap.get('sites', []) if s.get('action') in ('drop', 'replace'))
+    _cgp = ROOT / 'resource' / 'cg_site_rewrites.json'   # CG 线表的 ev_drops 同样并入落地
+    if _cgp.exists():
+        want += len(json.load(open(_cgp, encoding='utf-8')).get('ev_drops') or [])
+    _psm = ROOT / 'resource' / 'perf_sync_manual.json'
+    if _psm.exists():
+        _pmd = json.load(open(_psm, encoding='utf-8'))
+        want += len(_pmd.get('drops') or []) + len(_pmd.get('replaces') or []) + len(_pmd.get('keeps') or [])
     got = sum(v for k, v in plan.get('gates', {}).items() if k.startswith('perf_sync_'))
     stat['table_sites'] = want
     stat['applied_sites'] = got

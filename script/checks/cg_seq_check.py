@@ -44,7 +44,7 @@ ROUTES = {'AGE', 'AMA', 'ASA', 'CO1', 'CO2', 'HUT', 'KOT', 'YOR'}   # 路线/场
 
 
 def is_cg(n):
-    """**权威口径（2026-10-08 用户明确）**：CG = 名字形如 `{路线名}_{编号}`（`AGE_06_001S`、`KOT_12_003B`）；
+    """**权威口径（与 tool/perfsync.is_cg_name 一致）**：CG = 名字形如 `{路线名}_{编号}`（`AGE_06_001S`、`KOT_12_003B`）；
     其余（`BG*`/`SKY*`/`EST_*`/`CUTIN_*`/`COM_*`/`ST*`/`IMD*`/`MOS*`）为**其他素材**（背景/立绘/转场），不入本判据。"""
     if not n:
         return False

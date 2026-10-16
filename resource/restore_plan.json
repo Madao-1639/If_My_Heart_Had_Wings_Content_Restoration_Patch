@@ -14839,7 +14839,26 @@
       "name": "AGE_06_007S.PNG"
      }
     ],
-    "perf_sync": {},
+    "perf_sync": {
+     "122": {
+      "mode": "drop",
+      "channels": [
+       "ev"
+      ]
+     },
+     "137": {
+      "mode": "drop",
+      "channels": [
+       "ev"
+      ]
+     },
+     "182": {
+      "mode": "drop",
+      "channels": [
+       "ev"
+      ]
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -18854,6 +18873,18 @@
      "12": {
       "mode": "replace",
       "orig_row": 12
+     },
+     "311": {
+      "mode": "replace",
+      "orig_row": 335
+     },
+     "313": {
+      "mode": "replace",
+      "orig_row": 337
+     },
+     "470": {
+      "mode": "replace",
+      "orig_row": 495
      }
     },
     "names": {},
@@ -23396,7 +23427,11 @@
     "pna": [
      "Bあげは_01M.PNA",
      "Bあげは_02M.PNA",
-     "Bあげは_03M.PNA"
+     "Bあげは_03M.PNA",
+     "E夜瑠_01M.PNA",
+     "E夜瑠_03M.PNA",
+     "I佳奈子_01M.PNA",
+     "O早苗_01M.PNA"
     ],
     "voice": [
      "AGE_2807.OGG",
@@ -23407,8 +23442,11 @@
      "AGE_2854.OGG",
      "AGE_2855.OGG",
      "AGE_2856.OGG",
+     "AGE_2865.OGG",
+     "AGE_2866.OGG",
      "AGE_2867.OGG",
-     "AGE_2868.OGG"
+     "AGE_2868.OGG",
+     "YOR_0552.OGG"
     ],
     "png": [
      "BG00_01S.PNG",
@@ -23650,6 +23688,18 @@
      "364": {
       "mode": "replace",
       "orig_row": 393
+     },
+     "375": {
+      "mode": "replace",
+      "orig_row": 404
+     },
+     "377": {
+      "mode": "replace",
+      "orig_row": 406
+     },
+     "378": {
+      "mode": "replace",
+      "orig_row": 407
      }
     },
     "names": {},
@@ -29575,6 +29625,9 @@
      "AGE_2995.OGG",
      "AGE_2996.OGG",
      "AGE_2997.OGG",
+     "AGE_3002.OGG",
+     "AGE_3003.OGG",
+     "AGE_3004.OGG",
      "AGE_3005.OGG",
      "AGE_3006.OGG",
      "AGE_3007.OGG",
@@ -29968,7 +30021,12 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "101": {
+      "mode": "replace",
+      "orig_row": 103
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -32853,12 +32911,16 @@
    "resources": {
     "png": [
      "BG00_01S.PNG",
-     "BG08_03S.PNG"
+     "BG00_02S.PNG",
+     "BG08_03S.PNG",
+     "BG16_01S.PNG"
     ],
     "bgm": [
      "BGM20.OGG"
     ],
     "pna": [
+     "A小鳥_01M.PNA",
+     "A小鳥_02M.PNA",
      "Bあげは_02W.PNA",
      "Gほたる_01W.PNA"
     ],
@@ -32866,6 +32928,9 @@
      "AGE_3287.OGG",
      "HIT_0502.OGG",
      "HIT_0503.OGG"
+    ],
+    "se": [
+     "HSE_109A.OGG"
     ]
    },
    "n_drops": 11,
@@ -36938,6 +37003,14 @@
       "mode": "replace",
       "orig_row": 24
      },
+     "35": {
+      "mode": "replace",
+      "orig_row": 539
+     },
+     "37": {
+      "mode": "replace",
+      "orig_row": 541
+     },
      "40": {
       "mode": "replace",
       "orig_row": 544
@@ -36962,6 +37035,10 @@
       "mode": "replace",
       "orig_row": 558
      },
+     "55": {
+      "mode": "replace",
+      "orig_row": 560
+     },
      "60": {
       "mode": "replace",
       "orig_row": 567
@@ -36969,6 +37046,26 @@
      "64": {
       "mode": "replace",
       "orig_row": 571
+     },
+     "66": {
+      "mode": "replace",
+      "orig_row": 573
+     },
+     "84": {
+      "mode": "replace",
+      "orig_row": 952
+     },
+     "87": {
+      "mode": "replace",
+      "orig_row": 956
+     },
+     "88": {
+      "mode": "replace",
+      "orig_row": 957
+     },
+     "89": {
+      "mode": "replace",
+      "orig_row": 958
      }
     },
     "names": {},
@@ -41981,16 +42078,21 @@
      "AGE_3713.OGG",
      "AGE_3714.OGG",
      "AGE_3715.OGG",
+     "AGE_3716.OGG",
+     "AGE_3717.OGG",
+     "AGE_3718.OGG",
      "AGE_3719.OGG",
      "AGE_3720.OGG",
      "AGE_3721.OGG",
      "AGE_3722.OGG",
      "AGE_3723.OGG",
+     "AGE_3724.OGG",
      "AGE_3725.OGG",
      "AGE_3726.OGG",
      "AGE_3727.OGG",
      "AGE_3728.OGG",
      "AGE_3729.OGG",
+     "AGE_3730.OGG",
      "AGE_3731.OGG",
      "AGE_3732.OGG",
      "AGE_3733.OGG",
@@ -42094,12 +42196,17 @@
      "AGE_3831.OGG",
      "AGE_3832.OGG",
      "AGE_3833.OGG",
-     "AGE_3834.OGG"
+     "AGE_3834.OGG",
+     "AGE_3838.OGG",
+     "AGE_3839.OGG",
+     "AGE_3840.OGG",
+     "AGE_3841.OGG"
     ],
     "pna": [
      "Bあげは_01L.PNA",
      "Bあげは_01M.PNA",
      "Bあげは_02L.PNA",
+     "Bあげは_02M.PNA",
      "Bあげは_02W.PNA",
      "Bあげは_03L.PNA",
      "Bあげは_03M.PNA"
@@ -42194,12 +42301,14 @@
     ],
     "bgm": [
      "BGM03.OGG",
+     "BGM15.OGG",
      "BGM20.OGG",
      "BGM22.OGG"
     ],
     "se": [
      "OTSE_031.OGG",
-     "SE67.OGG"
+     "SE67.OGG",
+     "TRSE_052.OGG"
     ]
    },
    "n_drops": 26,
@@ -42211,6 +42320,7 @@
     "drops": [
      15,
      16,
+     716,
      718,
      723
     ],
@@ -42241,6 +42351,11 @@
       197
      ],
      [
+      715,
+      721,
+      721
+     ],
+     [
       717,
       723,
       723
@@ -42265,9 +42380,34 @@
       "slot": 723,
       "orig_row": 728,
       "name": "AGE_08_003S.PNG"
+     },
+     {
+      "slot": 716,
+      "orig_row": 721,
+      "name": "AGE_08_002S.PNG"
      }
     ],
     "perf_sync": {
+     "12": {
+      "mode": "replace",
+      "orig_row": 12
+     },
+     "14": {
+      "mode": "replace",
+      "orig_row": 14
+     },
+     "705": {
+      "mode": "replace",
+      "orig_row": 710
+     },
+     "709": {
+      "mode": "replace",
+      "orig_row": 714
+     },
+     "714": {
+      "mode": "replace",
+      "orig_row": 719
+     },
      "715": {
       "mode": "replace",
       "orig_row": 720
@@ -45168,8 +45308,8 @@
       715
      ],
      [
-      "steam",
-      716
+      "orig",
+      721
      ],
      [
       "steam",
@@ -46435,7 +46575,7 @@
     "于是扬羽就——。%K%P",
     "「因为，小碧是我的男人啊！」%K%P",
     "说着——她捧着我的脖子。%K%P",
-    "「啾～～～～～～～～～～～～！」%K%P",
+    "「啾呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜呜！」%K%P",
     "「呜呣！？」%K%P",
     "双唇互相重合、扬羽的舌头伸入进来不停搅动着。%K%P",
     "我不由得僵直了身子，手也僵硬地停在了空中。%K%P",
@@ -46574,25 +46714,39 @@
    ],
    "resources": {
     "png": [
+     "AGE_08_001B.PNG",
+     "AGE_08_001S.PNG",
+     "AGE_08_002S.PNG",
      "AGE_08_003S.PNG",
+     "BG00_01S.PNG",
      "BG00_02S.PNG",
      "BG11_03S.PNG",
      "BG23_14B.PNG"
     ],
     "pna": [
      "Bあげは_01L.PNA",
+     "Bあげは_02L.PNA",
      "Bあげは_02M.PNA",
      "Bあげは_03M.PNA"
     ],
     "voice": [
+     "AGE_3846.OGG",
+     "AGE_3847.OGG",
      "AGE_3848.OGG",
      "AGE_3849.OGG",
+     "AGE_3935.OGG",
+     "AGE_3939.OGG",
+     "AGE_3940.OGG",
+     "AGE_3941.OGG",
      "AGE_3942.OGG",
      "AGE_3943.OGG"
+    ],
+    "se": [
+     "SE31.OGG"
     ]
    },
-   "n_drops": 4,
-   "n_insert_rows": 10
+   "n_drops": 5,
+   "n_insert_rows": 11
   },
   "AMA_001": {
    "kind": "host",
@@ -48610,15 +48764,35 @@
     },
     "cg_sites": [],
     "perf_sync": {
+     "40": {
+      "mode": "replace",
+      "orig_row": 40
+     },
+     "44": {
+      "mode": "replace",
+      "orig_row": 44
+     },
+     "66": {
+      "mode": "replace",
+      "orig_row": 60
+     },
      "67": {
       "mode": "replace",
       "orig_row": 61
+     },
+     "82": {
+      "mode": "replace",
+      "orig_row": 76
      },
      "97": {
       "mode": "drop",
       "channels": [
        "bg01"
       ]
+     },
+     "110": {
+      "mode": "replace",
+      "orig_row": 113
      },
      "116": {
       "mode": "replace",
@@ -48639,6 +48813,16 @@
      "605": {
       "mode": "replace",
       "orig_row": 623
+     },
+     "723": {
+      "mode": "drop",
+      "channels": [
+       "st01"
+      ]
+     },
+     "733": {
+      "mode": "replace",
+      "orig_row": 1133
      },
      "735": {
       "mode": "replace",
@@ -54560,13 +54744,18 @@
      "BGM07.OGG",
      "BGM08A.OGG",
      "BGM08B.OGG",
+     "BGM09A.OGG",
      "BGM12.OGG",
      "BGM22.OGG"
     ],
     "voice": [
+     "AMA_1612.OGG",
+     "AMA_1613.OGG",
      "AMA_1614.OGG",
      "AMA_1615.OGG",
+     "AMA_1616.OGG",
      "AMA_1620.OGG",
+     "AMA_1622.OGG",
      "AMA_1623.OGG",
      "AMA_1624.OGG",
      "AMA_1625.OGG",
@@ -54574,6 +54763,7 @@
      "AMA_1627.OGG",
      "AMA_1628.OGG",
      "AMA_1631.OGG",
+     "AMA_1633.OGG",
      "AMA_1634.OGG",
      "AMA_1635.OGG",
      "AMA_1636.OGG",
@@ -54710,6 +54900,7 @@
      "AMA_1840.OGG",
      "AMA_1841.OGG",
      "AMA_1842.OGG",
+     "AMA_1846.OGG",
      "AMA_1847.OGG"
     ],
     "pna": [
@@ -54717,7 +54908,8 @@
      "C天音_01M.PNA",
      "C天音_02L.PNA",
      "C天音_02M.PNA",
-     "C天音_03L.PNA"
+     "C天音_03L.PNA",
+     "C天音_03M.PNA"
     ],
     "se": [
      "HSE_137.OGG",
@@ -58755,7 +58947,12 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "675": {
+      "mode": "replace",
+      "orig_row": 678
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -64717,6 +64914,7 @@
     "voice": [
      "AMA_2083.OGG",
      "AMA_2121.OGG",
+     "AMA_2170.OGG",
      "AMA_2171.OGG",
      "AMA_2172.OGG",
      "AMA_2173.OGG",
@@ -64996,7 +65194,16 @@
      "807": 1111
     },
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "381": {
+      "mode": "replace",
+      "orig_row": 391
+     },
+     "401": {
+      "mode": "replace",
+      "orig_row": 414
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -71390,7 +71597,9 @@
      "AMA_2348.OGG",
      "AMA_2349.OGG",
      "AMA_2350.OGG",
+     "AMA_2351.OGG",
      "AMA_2358.OGG",
+     "AMA_2359.OGG",
      "AMA_2376.OGG",
      "AMA_2377.OGG",
      "AMA_2378.OGG",
@@ -71589,6 +71798,16 @@
     },
     "cg_sites": [],
     "perf_sync": {
+     "254": {
+      "mode": "drop",
+      "channels": [
+       "st01"
+      ]
+     },
+     "277": {
+      "mode": "replace",
+      "orig_row": 325
+     },
      "279": {
       "mode": "replace",
       "orig_row": 749
@@ -76080,9 +76299,11 @@
      "BGM08A.OGG",
      "BGM16.OGG",
      "BGM20.OGG",
-     "BGM21.OGG"
+     "BGM21.OGG",
+     "BGM22.OGG"
     ],
     "png": [
+     "AMA_14_001B.PNG",
      "AMA_14_001S.PNG",
      "AMA_14_002S.PNG",
      "AMA_14_003S.PNG",
@@ -82476,7 +82697,56 @@
      "81": 104
     },
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "202": {
+      "mode": "replace",
+      "orig_row": 225
+     },
+     "204": {
+      "mode": "replace",
+      "orig_row": 227
+     },
+     "206": {
+      "mode": "replace",
+      "orig_row": 229
+     },
+     "210": {
+      "mode": "replace",
+      "orig_row": 233
+     },
+     "214": {
+      "mode": "replace",
+      "orig_row": 237
+     },
+     "216": {
+      "mode": "replace",
+      "orig_row": 239
+     },
+     "218": {
+      "mode": "replace",
+      "orig_row": 241
+     },
+     "220": {
+      "mode": "replace",
+      "orig_row": 243
+     },
+     "222": {
+      "mode": "replace",
+      "orig_row": 245
+     },
+     "223": {
+      "mode": "replace",
+      "orig_row": 246
+     },
+     "229": {
+      "mode": "replace",
+      "orig_row": 252
+     },
+     "233": {
+      "mode": "replace",
+      "orig_row": 256
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -84242,7 +84512,8 @@
      "D亜紗_01M.PNA",
      "D亜紗_02M.PNA",
      "D亜紗_03M.PNA",
-     "I佳奈子_01L.PNA"
+     "I佳奈子_01L.PNA",
+     "I佳奈子_01M.PNA"
     ],
     "bgm": [
      "BGM12.OGG",
@@ -84265,6 +84536,18 @@
      "ASA_2002.OGG",
      "ASA_2003.OGG",
      "ASA_2004.OGG",
+     "KAN_0656.OGG",
+     "KAN_0657.OGG",
+     "KAN_0658.OGG",
+     "KAN_0660.OGG",
+     "KAN_0662.OGG",
+     "KAN_0663.OGG",
+     "KAN_0664.OGG",
+     "KAN_0665.OGG",
+     "KAN_0666.OGG",
+     "KAN_0667.OGG",
+     "KAN_0668.OGG",
+     "KAN_0669.OGG",
      "KAN_0695.OGG",
      "KAN_0696.OGG",
      "KAN_0697.OGG"
@@ -84313,7 +84596,44 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "83": {
+      "mode": "replace",
+      "orig_row": 79
+     },
+     "86": {
+      "mode": "replace",
+      "orig_row": 82
+     },
+     "88": {
+      "mode": "replace",
+      "orig_row": 84
+     },
+     "89": {
+      "mode": "replace",
+      "orig_row": 85
+     },
+     "90": {
+      "mode": "replace",
+      "orig_row": 86
+     },
+     "91": {
+      "mode": "replace",
+      "orig_row": 87
+     },
+     "92": {
+      "mode": "replace",
+      "orig_row": 88
+     },
+     "93": {
+      "mode": "replace",
+      "orig_row": 89
+     },
+     "94": {
+      "mode": "replace",
+      "orig_row": 90
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -86487,14 +86807,26 @@
    ],
    "resources": {
     "pna": [
+     "A小鳥_03M.PNA",
      "D亜紗_02M.PNA",
-     "D亜紗_03M.PNA"
+     "D亜紗_03M.PNA",
+     "E夜瑠_02M.PNA",
+     "I佳奈子_01M.PNA"
     ],
     "voice": [
      "ASA_2163.OGG",
      "ASA_2164.OGG",
      "ASA_2165.OGG",
-     "ASA_2166.OGG"
+     "ASA_2166.OGG",
+     "ASA_2173.OGG",
+     "KAN_0698.OGG",
+     "KAN_0699.OGG",
+     "KAN_0700.OGG",
+     "KAN_0701.OGG",
+     "KAN_0702.OGG",
+     "KAN_0703.OGG",
+     "KOT_4796.OGG",
+     "YOR_1341.OGG"
     ]
    },
    "n_drops": 16,
@@ -86510,7 +86842,32 @@
      "43": 43
     },
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "319": {
+      "mode": "replace",
+      "orig_row": 319
+     },
+     "320": {
+      "mode": "replace",
+      "orig_row": 320
+     },
+     "323": {
+      "mode": "replace",
+      "orig_row": 323
+     },
+     "327": {
+      "mode": "replace",
+      "orig_row": 327
+     },
+     "329": {
+      "mode": "replace",
+      "orig_row": 329
+     },
+     "334": {
+      "mode": "replace",
+      "orig_row": 334
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -89112,7 +89469,22 @@
     "虽然从一开始就很乱来。%K%P",
     "我有那强烈的预感――\\n从明天起，应该会过得很快乐。%K%P"
    ],
-   "resources": {},
+   "resources": {
+    "png": [
+     "BG11_02B.PNG",
+     "EST_1022.PNG"
+    ],
+    "pna": [
+     "I佳奈子_01M.PNA"
+    ],
+    "voice": [
+     "KAN_0001.OGG",
+     "KAN_0002.OGG",
+     "KAN_0003.OGG",
+     "KAN_0004.OGG",
+     "KAN_0005.OGG"
+    ]
+   },
    "n_drops": 0,
    "n_insert_rows": 0
   },
@@ -108651,7 +109023,64 @@
      "349": 349
     },
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "16": {
+      "mode": "replace",
+      "orig_row": 16
+     },
+     "18": {
+      "mode": "replace",
+      "orig_row": 18
+     },
+     "20": {
+      "mode": "replace",
+      "orig_row": 20
+     },
+     "40": {
+      "mode": "replace",
+      "orig_row": 40
+     },
+     "41": {
+      "mode": "replace",
+      "orig_row": 41
+     },
+     "48": {
+      "mode": "replace",
+      "orig_row": 48
+     },
+     "77": {
+      "mode": "replace",
+      "orig_row": 77
+     },
+     "79": {
+      "mode": "replace",
+      "orig_row": 79
+     },
+     "81": {
+      "mode": "replace",
+      "orig_row": 81
+     },
+     "83": {
+      "mode": "replace",
+      "orig_row": 83
+     },
+     "84": {
+      "mode": "replace",
+      "orig_row": 84
+     },
+     "87": {
+      "mode": "replace",
+      "orig_row": 87
+     },
+     "88": {
+      "mode": "replace",
+      "orig_row": 88
+     },
+     "92": {
+      "mode": "replace",
+      "orig_row": 92
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -111238,7 +111667,34 @@
     "前辈已经在食堂桌子上打开了设计图，\\n一只手拿着牛奶，全身心的投入到设计图研究当中了。%K%P",
     "她已经再说什么也听不进去了，于是我决定先去泡澡。%K%P"
    ],
-   "resources": {},
+   "resources": {
+    "pna": [
+     "A小鳥_02M.PNA",
+     "I佳奈子_01M.PNA"
+    ],
+    "voice": [
+     "KAN_0100.OGG",
+     "KAN_0101.OGG",
+     "KAN_0102.OGG",
+     "KAN_0103.OGG",
+     "KAN_0104.OGG",
+     "KAN_0105.OGG",
+     "KAN_0106.OGG",
+     "KAN_0107.OGG",
+     "KAN_0108.OGG",
+     "KAN_0109.OGG",
+     "KAN_0110.OGG",
+     "KAN_0111.OGG",
+     "KOT_0849.OGG"
+    ],
+    "png": [
+     "BG12_03S.PNG"
+    ],
+    "bgm": [
+     "BGM03.OGG",
+     "BGM08A.OGG"
+    ]
+   },
    "n_drops": 0,
    "n_insert_rows": 0
   },
@@ -112136,7 +112592,12 @@
      "292": 292
     },
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "108": {
+      "mode": "replace",
+      "orig_row": 108
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -115043,7 +115504,25 @@
     "「……那就再见了」%K%P",
     "前辈的喃喃自语和云彩回廊一起，融合在空中消失了。%K%P"
    ],
-   "resources": {},
+   "resources": {
+    "png": [
+     "BG00_01S.PNG",
+     "BG19_12B.PNG",
+     "EST_1022.PNG",
+     "SKY02_07B.PNG"
+    ],
+    "pna": [
+     "C天音_01L.PNA",
+     "KUSA01S.PNA"
+    ],
+    "se": [
+     "HSE_124.OGG",
+     "TRSE_102.OGG"
+    ],
+    "voice": [
+     "AMA_0835.OGG"
+    ]
+   },
    "n_drops": 0,
    "n_insert_rows": 0
   },
@@ -118322,7 +118801,140 @@
     "external": {},
     "text_overrides": {},
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "136": {
+      "mode": "replace",
+      "orig_row": 137
+     },
+     "138": {
+      "mode": "replace",
+      "orig_row": 139
+     },
+     "140": {
+      "mode": "replace",
+      "orig_row": 141
+     },
+     "145": {
+      "mode": "replace",
+      "orig_row": 146
+     },
+     "147": {
+      "mode": "replace",
+      "orig_row": 148
+     },
+     "149": {
+      "mode": "replace",
+      "orig_row": 150
+     },
+     "153": {
+      "mode": "replace",
+      "orig_row": 154
+     },
+     "155": {
+      "mode": "replace",
+      "orig_row": 156
+     },
+     "160": {
+      "mode": "replace",
+      "orig_row": 161
+     },
+     "166": {
+      "mode": "replace",
+      "orig_row": 167
+     },
+     "170": {
+      "mode": "replace",
+      "orig_row": 171
+     },
+     "174": {
+      "mode": "replace",
+      "orig_row": 175
+     },
+     "176": {
+      "mode": "replace",
+      "orig_row": 177
+     },
+     "208": {
+      "mode": "replace",
+      "orig_row": 209
+     },
+     "210": {
+      "mode": "replace",
+      "orig_row": 211
+     },
+     "212": {
+      "mode": "replace",
+      "orig_row": 213
+     },
+     "216": {
+      "mode": "replace",
+      "orig_row": 217
+     },
+     "218": {
+      "mode": "replace",
+      "orig_row": 219
+     },
+     "219": {
+      "mode": "replace",
+      "orig_row": 220
+     },
+     "221": {
+      "mode": "replace",
+      "orig_row": 222
+     },
+     "222": {
+      "mode": "replace",
+      "orig_row": 223
+     },
+     "225": {
+      "mode": "replace",
+      "orig_row": 226
+     },
+     "228": {
+      "mode": "replace",
+      "orig_row": 229
+     },
+     "231": {
+      "mode": "replace",
+      "orig_row": 232
+     },
+     "235": {
+      "mode": "replace",
+      "orig_row": 236
+     },
+     "236": {
+      "mode": "replace",
+      "orig_row": 237
+     },
+     "238": {
+      "mode": "replace",
+      "orig_row": 239
+     },
+     "241": {
+      "mode": "replace",
+      "orig_row": 242
+     },
+     "243": {
+      "mode": "replace",
+      "orig_row": 244
+     },
+     "245": {
+      "mode": "replace",
+      "orig_row": 246
+     },
+     "252": {
+      "mode": "replace",
+      "orig_row": 253
+     },
+     "257": {
+      "mode": "replace",
+      "orig_row": 258
+     },
+     "262": {
+      "mode": "replace",
+      "orig_row": 263
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -121094,7 +121706,54 @@
     "搞不清现状的我，只好留在原地发呆。%K%P",
     "只明白她并不是依瑠而是亚纱，仅此而已。%K%P"
    ],
-   "resources": {},
+   "resources": {
+    "png": [
+     "BG11_02S.PNG"
+    ],
+    "pna": [
+     "D亜紗_01M.PNA",
+     "E夜瑠_02M.PNA",
+     "I佳奈子_01M.PNA"
+    ],
+    "voice": [
+     "KAN_0546.OGG",
+     "KAN_0547.OGG",
+     "KAN_0548.OGG",
+     "KAN_0550.OGG",
+     "KAN_0551.OGG",
+     "KAN_0552.OGG",
+     "KAN_0553.OGG",
+     "KAN_0554.OGG",
+     "KAN_0556.OGG",
+     "KAN_0557.OGG",
+     "KAN_0558.OGG",
+     "KAN_0559.OGG",
+     "KAN_0560.OGG",
+     "KAN_0562.OGG",
+     "KAN_0563.OGG",
+     "KAN_0564.OGG",
+     "KAN_0565.OGG",
+     "KAN_0566.OGG",
+     "KAN_0567.OGG",
+     "KAN_0568.OGG",
+     "KAN_0569.OGG",
+     "KAN_0570.OGG",
+     "KAN_0571.OGG",
+     "KAN_0572.OGG",
+     "KAN_0574.OGG",
+     "KAN_0575.OGG",
+     "KAN_0577.OGG",
+     "KAN_0578.OGG",
+     "KAN_0580.OGG",
+     "KAN_0581.OGG",
+     "KAN_0582.OGG",
+     "KAN_0583.OGG",
+     "KAN_0584.OGG"
+    ],
+    "bgm": [
+     "BGM04.OGG"
+    ]
+   },
    "n_drops": 0,
    "n_insert_rows": 1
   },
@@ -121119,7 +121778,12 @@
      "74": 74
     },
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "754": {
+      "mode": "replace",
+      "orig_row": 754
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -126181,7 +126845,20 @@
     "「好的～，我现在就去～～」%K%P",
     "小鸟在远处呆呆地看着我们准备下一次试飞的样子。%K%P"
    ],
-   "resources": {},
+   "resources": {
+    "pna": [
+     "D亜紗_01L.PNA",
+     "D亜紗_02L.PNA"
+    ],
+    "se": [
+     "NSE11B.OGG"
+    ],
+    "png": [
+     "BG00_01S.PNG",
+     "BG19_01B.PNG",
+     "EST_1022.PNG"
+    ]
+   },
    "n_drops": 1,
    "n_insert_rows": 1
   },
@@ -126193,6 +126870,8 @@
      283,
      1073,
      1078,
+     1091,
+     1096,
      1104,
      1105,
      1106,
@@ -126303,6 +126982,16 @@
       1077,
       1088,
       1088
+     ],
+     [
+      1090,
+      1101,
+      1101
+     ],
+     [
+      1095,
+      1106,
+      1106
      ],
      [
       1103,
@@ -126424,9 +127113,27 @@
       "slot": 1073,
       "orig_row": 1083,
       "name": "KOT_12_001S.PNG"
+     },
+     {
+      "slot": 1091,
+      "orig_row": 1101,
+      "name": "KOT_12_003S.PNG"
+     },
+     {
+      "slot": 1096,
+      "orig_row": 1106,
+      "name": "KOT_12_006S.PNG"
      }
     ],
     "perf_sync": {
+     "276": {
+      "mode": "replace",
+      "orig_row": 276
+     },
+     "995": {
+      "mode": "replace",
+      "orig_row": 999
+     },
      "1072": {
       "mode": "replace",
       "orig_row": 1082
@@ -126434,6 +127141,18 @@
      "1082": {
       "mode": "replace",
       "orig_row": 1092
+     },
+     "1086": {
+      "mode": "drop",
+      "channels": [
+       "ev"
+      ]
+     },
+     "1092": {
+      "mode": "drop",
+      "channels": [
+       "ev"
+      ]
      }
     },
     "names": {},
@@ -130843,8 +131562,8 @@
       1090
      ],
      [
-      "steam",
-      1091
+      "orig",
+      1101
      ],
      [
       "steam",
@@ -130863,8 +131582,8 @@
       1095
      ],
      [
-      "steam",
-      1096
+      "orig",
+      1106
      ],
      [
       "steam",
@@ -134643,7 +135362,7 @@
     "「……如果就这样睡着了的话，一定会梦到很好的梦。\\n　晚安」%K%P",
     "闭上了眼睛。%K%P",
     "「喂，别睡啊」%K%P",
-    "「……没关系吧。\\n　我想让小碧陪我睡觉。\\n　呐，给我唱摇篮曲吧」%K%P",
+    "「……有什么不好？\\n　我可是很想和你睡在一起呢。呐，给我唱支摇篮曲吧」%K%P",
     "「你啊……实在是太没防备了」%K%P",
     "「？」%K%P",
     "「在你睡着的时候，我可能会捉弄你啊」%K%P",
@@ -135316,6 +136035,7 @@
     "pna": [
      "A小鳥_01L.PNA",
      "A小鳥_02L.PNA",
+     "A小鳥_02M.PNA",
      "I佳奈子_01M.PNA",
      "Rハット_01W.PNA"
     ],
@@ -135330,9 +136050,12 @@
      "KAN_0229.OGG",
      "KAN_0230.OGG",
      "KAN_0231.OGG",
+     "KOT_2039.OGG",
      "KOT_2042.OGG",
+     "KOT_2156.OGG",
      "KOT_2181.OGG",
      "KOT_2185.OGG",
+     "KOT_2189.OGG",
      "KOT_2193.OGG",
      "KOT_2194.OGG",
      "KOT_2195.OGG",
@@ -135532,6 +136255,7 @@
      "KOT_12_002S.PNG",
      "KOT_12_003S.PNG",
      "KOT_12_004S.PNG",
+     "KOT_12_006S.PNG",
      "KOT_12_007S.PNG",
      "KOT_12_008S.PNG",
      "KOT_12_009S.PNG",
@@ -135596,8 +136320,8 @@
      "BGM22.OGG"
     ]
    },
-   "n_drops": 88,
-   "n_insert_rows": 674
+   "n_drops": 90,
+   "n_insert_rows": 676
   },
   "KOT_004": {
    "kind": "host",
@@ -135639,7 +136363,16 @@
      "479": 498
     },
     "cg_sites": [],
-    "perf_sync": {},
+    "perf_sync": {
+     "301": {
+      "mode": "replace",
+      "orig_row": 320
+     },
+     "303": {
+      "mode": "replace",
+      "orig_row": 322
+     }
+    },
     "names": {},
     "slot_sources": [
      [
@@ -140813,7 +141546,9 @@
      "KOT_2394.OGG",
      "KOT_2395.OGG",
      "KOT_2396.OGG",
-     "KOT_2435.OGG"
+     "KOT_2435.OGG",
+     "KOT_2436.OGG",
+     "KOT_2437.OGG"
     ]
    },
    "n_drops": 3,
@@ -141125,6 +141860,10 @@
      }
     ],
     "perf_sync": {
+     "286": {
+      "mode": "replace",
+      "orig_row": 286
+     },
      "530": {
       "mode": "replace",
       "orig_row": 544
@@ -141216,6 +141955,34 @@
      "762": {
       "mode": "replace",
       "orig_row": 1154
+     },
+     "768": {
+      "mode": "replace",
+      "orig_row": 1158
+     },
+     "770": {
+      "mode": "replace",
+      "orig_row": 1160
+     },
+     "772": {
+      "mode": "replace",
+      "orig_row": 1162
+     },
+     "775": {
+      "mode": "replace",
+      "orig_row": 1165
+     },
+     "776": {
+      "mode": "replace",
+      "orig_row": 1166
+     },
+     "783": {
+      "mode": "replace",
+      "orig_row": 1173
+     },
+     "784": {
+      "mode": "replace",
+      "orig_row": 1174
      }
     },
     "names": {},
@@ -147751,6 +148518,7 @@
     "pna": [
      "A小鳥_01L.PNA",
      "A小鳥_01M.PNA",
+     "A小鳥_02L.PNA",
      "A小鳥_02M.PNA",
      "A小鳥_03L.PNA",
      "D亜紗_02M.PNA"
@@ -147960,13 +148728,21 @@
      "KOT_3027.OGG",
      "KOT_3028.OGG",
      "KOT_3029.OGG",
-     "KOT_3030.OGG"
+     "KOT_3030.OGG",
+     "KOT_3031.OGG",
+     "KOT_3032.OGG",
+     "KOT_3033.OGG",
+     "KOT_3034.OGG",
+     "KOT_3035.OGG",
+     "KOT_3036.OGG",
+     "KOT_3037.OGG"
     ],
     "se": [
      "HSE_023.OGG",
      "HSE_165.OGG",
      "NSE04A.OGG",
      "NSE14D.OGG",
+     "OTSE_023.OGG",
      "SE29.OGG"
     ],
     "bgm": [
@@ -148048,7 +148824,10 @@
      },
      "450": {
       "mode": "replace",
-      "orig_row": 957
+      "orig_row": 957,
+      "keep": [
+       "ev"
+      ]
      },
      "456": {
       "mode": "replace",
@@ -154123,6 +154902,14 @@
     "text_overrides": {},
     "cg_sites": [],
     "perf_sync": {
+     "619": {
+      "mode": "replace",
+      "orig_row": 627
+     },
+     "621": {
+      "mode": "replace",
+      "orig_row": 629
+     },
      "710": {
       "mode": "replace",
       "orig_row": 728
@@ -158214,6 +159001,8 @@
      "AGE_4506.OGG",
      "AGE_4507.OGG",
      "AGE_4508.OGG",
+     "AGE_4509.OGG",
+     "AGE_4510.OGG",
      "YOR_1641.OGG",
      "YOR_1643.OGG",
      "YOR_1667.OGG",
@@ -162942,6 +163731,34 @@
       "mode": "replace",
       "orig_row": 20
      },
+     "18": {
+      "mode": "replace",
+      "orig_row": 29
+     },
+     "19": {
+      "mode": "replace",
+      "orig_row": 30
+     },
+     "21": {
+      "mode": "replace",
+      "orig_row": 32
+     },
+     "23": {
+      "mode": "replace",
+      "orig_row": 34
+     },
+     "25": {
+      "mode": "replace",
+      "orig_row": 36
+     },
+     "28": {
+      "mode": "replace",
+      "orig_row": 39
+     },
+     "30": {
+      "mode": "replace",
+      "orig_row": 41
+     },
      "269": {
       "mode": "replace",
       "orig_row": 281
@@ -164494,6 +165311,7 @@
      "D亜紗_02W.PNA",
      "D亜紗_03M.PNA",
      "E夜瑠_01L.PNA",
+     "E夜瑠_01M.PNA",
      "E夜瑠_02L.PNA",
      "E夜瑠_02M.PNA",
      "E夜瑠_03M.PNA"
@@ -164515,6 +165333,13 @@
      "YOR_2058.OGG",
      "YOR_2059.OGG",
      "YOR_2060.OGG",
+     "YOR_2061.OGG",
+     "YOR_2062.OGG",
+     "YOR_2063.OGG",
+     "YOR_2064.OGG",
+     "YOR_2065.OGG",
+     "YOR_2066.OGG",
+     "YOR_2067.OGG",
      "YOR_2095.OGG",
      "YOR_2096.OGG",
      "YOR_2097.OGG",
@@ -167512,6 +168337,29 @@
    "to": "KOT_12_002B.PNG"
   }
  ],
+ "voice_repoints": [
+  {
+   "script": "AGE_010",
+   "slot": 34,
+   "from": "AGE_6052.OGG",
+   "to": "AGE_3716.OGG",
+   "reason": "对齐原版 o538「………………」用的就是 AGE_3716；Steam 槽 34 自带自有号 AGE_6052。"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 35,
+   "from": "AGE_6053.OGG",
+   "to": "AGE_3717.OGG",
+   "reason": "对齐原版 o539「「なんでもない」」＝AGE_3717；Steam 槽 35 自带自有号 AGE_6053。"
+  },
+  {
+   "script": "AGE_010",
+   "slot": 37,
+   "from": "AGE_6054.OGG",
+   "to": "AGE_3718.OGG",
+   "reason": "对齐原版 o541「「……」」＝AGE_3718；Steam 槽 37 自带自有号 AGE_6054。"
+  }
+ ],
  "resources": {
   "copy": [
    {
@@ -167543,6 +168391,11 @@
     "kind": "pna",
     "archive": "GRAPHIC.arc",
     "orig": "A小鳥_03L.PNA"
+   },
+   {
+    "kind": "pna",
+    "archive": "GRAPHIC.arc",
+    "orig": "A小鳥_03M.PNA"
    },
    {
     "kind": "pna",
@@ -167702,6 +168555,11 @@
    {
     "kind": "pna",
     "archive": "GRAPHIC.arc",
+    "orig": "O早苗_01M.PNA"
+   },
+   {
+    "kind": "pna",
+    "archive": "GRAPHIC.arc",
     "orig": "Rハット_01M.PNA"
    },
    {
@@ -167783,6 +168641,11 @@
     "kind": "png",
     "archive": "CHIP2.arc",
     "orig": "AGE_07_004S.PNG"
+   },
+   {
+    "kind": "png",
+    "archive": "CHIP2.arc",
+    "orig": "AGE_08_002S.PNG"
    },
    {
     "kind": "png",
@@ -168908,6 +169771,11 @@
     "kind": "png",
     "archive": "CHIP6.arc",
     "orig": "AMA_13_038S.PNG"
+   },
+   {
+    "kind": "png",
+    "archive": "CHIP6.arc",
+    "orig": "AMA_14_001B.PNG"
    },
    {
     "kind": "png",
@@ -173358,6 +174226,21 @@
     "kind": "voice",
     "archive": "VOICE.arc",
     "orig": "AGE_3715.OGG"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "orig": "AGE_3716.OGG"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "orig": "AGE_3717.OGG"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "orig": "AGE_3718.OGG"
    },
    {
     "kind": "voice",
@@ -183783,6 +184666,18 @@
    {
     "kind": "voice",
     "archive": "VOICE.arc",
+    "name": "AGE_3941.ogg",
+    "orig_name": "AGE_3941.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
+    "name": "AGE_4509.ogg",
+    "orig_name": "AGE_4509.ogg"
+   },
+   {
+    "kind": "voice",
+    "archive": "VOICE.arc",
     "name": "KOT_2847.ogg",
     "orig_name": "KOT_2847.ogg"
    },
@@ -184407,18 +185302,6 @@
    {
     "kind": "voice",
     "archive": "VOICE.arc",
-    "name": "AGE_3941.ogg",
-    "orig_name": "AGE_3941.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
-    "name": "AGE_4509.ogg",
-    "orig_name": "AGE_4509.ogg"
-   },
-   {
-    "kind": "voice",
-    "archive": "VOICE.arc",
     "name": "AMA_1711.ogg",
     "orig_name": "AMA_1711.ogg"
    },
@@ -184507,7 +185390,7 @@
     "orig_name": "YOR_1666.ogg"
    }
   ],
-  "have": 134
+  "have": 272
  },
  "gates": {
   "slots_ASA_002": 453,
@@ -184516,174 +185399,217 @@
   "slots_YOR_005": 284,
   "slots_YOR_007": 374,
   "perf_sync_AGE_001": 1,
+  "cg_ev_drop_AGE_001": 0,
   "perf_add_AGE_001": 18,
   "text_overrides_AGE_001": 3,
   "slots_AGE_001": 696,
   "perf_sync_AGE_002": 0,
+  "cg_ev_drop_AGE_002": 0,
   "perf_add_AGE_002": 0,
   "text_overrides_AGE_002": 1,
   "slots_AGE_002": 771,
   "perf_sync_AGE_003": 0,
+  "cg_ev_drop_AGE_003": 0,
   "perf_add_AGE_003": 0,
   "text_overrides_AGE_003": 3,
   "slots_AGE_003": 854,
-  "perf_sync_AGE_005": 0,
+  "perf_sync_AGE_005": 3,
+  "cg_ev_drop_AGE_005": 3,
   "perf_add_AGE_005": 0,
   "text_overrides_AGE_005": 0,
   "slots_AGE_005": 738,
-  "perf_sync_AGE_006": 1,
-  "perf_add_AGE_006": 18,
+  "perf_sync_AGE_006": 4,
+  "cg_ev_drop_AGE_006": 0,
+  "perf_add_AGE_006": 56,
   "text_overrides_AGE_006": 2,
   "slots_AGE_006": 906,
-  "perf_sync_AGE_007": 1,
-  "perf_add_AGE_007": 7,
+  "perf_sync_AGE_007": 4,
+  "cg_ev_drop_AGE_007": 0,
+  "perf_add_AGE_007": 28,
   "text_overrides_AGE_007": 0,
   "slots_AGE_007": 1181,
-  "perf_sync_AGE_008": 0,
-  "perf_add_AGE_008": 0,
+  "perf_sync_AGE_008": 1,
+  "cg_ev_drop_AGE_008": 0,
+  "perf_add_AGE_008": 33,
   "text_overrides_AGE_008": 0,
   "slots_AGE_008": 575,
   "perf_sync_AGE_009": 0,
+  "cg_ev_drop_AGE_009": 0,
   "perf_add_AGE_009": 0,
   "text_overrides_AGE_009": 0,
   "slots_AGE_009": 773,
-  "perf_sync_AGE_010": 17,
-  "perf_add_AGE_010": 83,
+  "perf_sync_AGE_010": 25,
+  "cg_ev_drop_AGE_010": 0,
+  "perf_add_AGE_010": 139,
   "text_overrides_AGE_010": 1,
   "slots_AGE_010": 964,
-  "perf_sync_AGE_011": 3,
-  "perf_add_AGE_011": 29,
+  "perf_sync_AGE_011": 8,
+  "cg_ev_drop_AGE_011": 0,
+  "perf_add_AGE_011": 82,
   "text_overrides_AGE_011": 1,
   "slots_AGE_011": 857,
   "perf_sync_AMA_001": 0,
+  "cg_ev_drop_AMA_001": 0,
   "perf_add_AMA_001": 0,
   "text_overrides_AMA_001": 1,
   "slots_AMA_001": 343,
-  "perf_sync_AMA_004": 8,
-  "perf_add_AMA_004": 36,
+  "perf_sync_AMA_004": 15,
+  "cg_ev_drop_AMA_004": 0,
+  "perf_add_AMA_004": 81,
   "text_overrides_AMA_004": 1,
   "slots_AMA_004": 1171,
   "perf_sync_AMA_005": 0,
+  "cg_ev_drop_AMA_005": 0,
   "perf_add_AMA_005": 0,
   "text_overrides_AMA_005": 0,
   "slots_AMA_005": 769,
-  "perf_sync_AMA_006": 0,
-  "perf_add_AMA_006": 0,
+  "perf_sync_AMA_006": 1,
+  "cg_ev_drop_AMA_006": 0,
+  "perf_add_AMA_006": 7,
   "text_overrides_AMA_006": 0,
   "slots_AMA_006": 1189,
-  "perf_sync_AMA_007": 0,
-  "perf_add_AMA_007": 0,
+  "perf_sync_AMA_007": 2,
+  "cg_ev_drop_AMA_007": 0,
+  "perf_add_AMA_007": 14,
   "text_overrides_AMA_007": 1,
   "slots_AMA_007": 1266,
-  "perf_sync_AMA_010": 3,
-  "perf_add_AMA_010": 30,
+  "perf_sync_AMA_010": 5,
+  "cg_ev_drop_AMA_010": 0,
+  "perf_add_AMA_010": 46,
   "text_overrides_AMA_010": 1,
   "slots_AMA_010": 856,
   "perf_sync_ASA_001": 3,
+  "cg_ev_drop_ASA_001": 0,
   "perf_add_ASA_001": 17,
   "text_overrides_ASA_001": 0,
   "slots_ASA_001": 1171,
-  "perf_sync_ASA_003": 0,
-  "perf_add_ASA_003": 0,
+  "perf_sync_ASA_003": 12,
+  "cg_ev_drop_ASA_003": 0,
+  "perf_add_ASA_003": 85,
   "text_overrides_ASA_003": 1,
   "slots_ASA_003": 350,
-  "perf_sync_ASA_005": 0,
-  "perf_add_ASA_005": 0,
+  "perf_sync_ASA_005": 9,
+  "cg_ev_drop_ASA_005": 0,
+  "perf_add_ASA_005": 89,
   "text_overrides_ASA_005": 0,
   "slots_ASA_005": 433,
-  "perf_sync_CO1_001": 0,
-  "perf_add_CO1_001": 0,
+  "perf_sync_CO1_001": 6,
+  "cg_ev_drop_CO1_001": 0,
+  "perf_add_CO1_001": 69,
   "text_overrides_CO1_001": 1,
   "slots_CO1_001": 519,
   "perf_sync_CO1_002": 0,
+  "cg_ev_drop_CO1_002": 0,
   "perf_add_CO1_002": 0,
   "text_overrides_CO1_002": 1,
   "slots_CO1_002": 748,
   "perf_sync_CO1_003": 0,
+  "cg_ev_drop_CO1_003": 0,
   "perf_add_CO1_003": 0,
   "text_overrides_CO1_003": 45,
   "slots_CO1_003": 690,
   "perf_sync_CO1_004": 0,
+  "cg_ev_drop_CO1_004": 0,
   "perf_add_CO1_004": 0,
   "text_overrides_CO1_004": 3,
   "slots_CO1_004": 245,
   "perf_sync_CO1_005": 0,
+  "cg_ev_drop_CO1_005": 0,
   "perf_add_CO1_005": 0,
   "text_overrides_CO1_005": 3,
   "slots_CO1_005": 369,
   "perf_sync_CO1_007": 0,
+  "cg_ev_drop_CO1_007": 0,
   "perf_add_CO1_007": 0,
   "text_overrides_CO1_007": 1,
   "slots_CO1_007": 330,
   "perf_sync_CO1_009": 0,
+  "cg_ev_drop_CO1_009": 0,
   "perf_add_CO1_009": 0,
   "text_overrides_CO1_009": 1,
   "slots_CO1_009": 682,
   "perf_sync_CO1_015": 0,
+  "cg_ev_drop_CO1_015": 0,
   "perf_add_CO1_015": 0,
   "text_overrides_CO1_015": 2,
   "slots_CO1_015": 801,
-  "perf_sync_CO1_016": 0,
-  "perf_add_CO1_016": 0,
+  "perf_sync_CO1_016": 14,
+  "cg_ev_drop_CO1_016": 0,
+  "perf_add_CO1_016": 190,
   "text_overrides_CO1_016": 2,
   "slots_CO1_016": 516,
   "perf_sync_CO1_016_E": 0,
+  "cg_ev_drop_CO1_016_E": 0,
   "perf_add_CO1_016_E": 0,
   "text_overrides_CO1_016_E": 1,
   "slots_CO1_016_E": 46,
   "perf_sync_CO1_018_C": 0,
+  "cg_ev_drop_CO1_018_C": 0,
   "perf_add_CO1_018_C": 0,
   "text_overrides_CO1_018_C": 1,
   "slots_CO1_018_C": 14,
   "perf_sync_CO1_020_B": 0,
+  "cg_ev_drop_CO1_020_B": 0,
   "perf_add_CO1_020_B": 0,
   "text_overrides_CO1_020_B": 1,
   "slots_CO1_020_B": 103,
-  "perf_sync_CO1_020_E": 0,
-  "perf_add_CO1_020_E": 0,
+  "perf_sync_CO1_020_E": 1,
+  "cg_ev_drop_CO1_020_E": 0,
+  "perf_add_CO1_020_E": 43,
   "text_overrides_CO1_020_E": 1,
   "slots_CO1_020_E": 580,
   "perf_sync_CO2_002": 0,
+  "cg_ev_drop_CO2_002": 0,
   "perf_add_CO2_002": 0,
   "text_overrides_CO2_002": 34,
   "slots_CO2_002": 639,
-  "perf_sync_HUT_004": 0,
-  "perf_add_HUT_004": 0,
+  "perf_sync_HUT_004": 33,
+  "cg_ev_drop_HUT_004": 0,
+  "perf_add_HUT_004": 255,
   "text_overrides_HUT_004": 0,
   "slots_HUT_004": 553,
-  "perf_sync_KOT_002": 0,
-  "perf_add_KOT_002": 0,
+  "perf_sync_KOT_002": 1,
+  "cg_ev_drop_KOT_002": 0,
+  "perf_add_KOT_002": 29,
   "text_overrides_KOT_002": 1,
   "slots_KOT_002": 1011,
-  "perf_sync_KOT_003": 2,
-  "perf_add_KOT_003": 6,
+  "perf_sync_KOT_003": 6,
+  "cg_ev_drop_KOT_003": 0,
+  "perf_add_KOT_003": 20,
   "text_overrides_KOT_003": 1,
   "slots_KOT_003": 1774,
-  "perf_sync_KOT_004": 0,
-  "perf_add_KOT_004": 0,
+  "perf_sync_KOT_004": 2,
+  "cg_ev_drop_KOT_004": 0,
+  "perf_add_KOT_004": 16,
   "text_overrides_KOT_004": 1,
   "slots_KOT_004": 1031,
-  "perf_sync_KOT_006": 23,
-  "perf_add_KOT_006": 44,
+  "perf_sync_KOT_006": 31,
+  "cg_ev_drop_KOT_006": 0,
+  "perf_add_KOT_006": 110,
   "text_overrides_KOT_006": 0,
   "slots_KOT_006": 1296,
-  "perf_sync_KOT_009": 3,
+  "perf_sync_KOT_009": 4,
+  "cg_ev_drop_KOT_009": 0,
   "perf_add_KOT_009": 48,
   "text_overrides_KOT_009": 0,
   "slots_KOT_009": 1117,
-  "perf_sync_YOR_002": 1,
-  "perf_add_YOR_002": 15,
+  "perf_sync_YOR_002": 3,
+  "cg_ev_drop_YOR_002": 0,
+  "perf_add_YOR_002": 29,
   "text_overrides_YOR_002": 0,
   "slots_YOR_002": 812,
   "perf_sync_YOR_004": 1,
+  "cg_ev_drop_YOR_004": 0,
   "perf_add_YOR_004": 55,
   "text_overrides_YOR_004": 0,
   "slots_YOR_004": 847,
-  "perf_sync_YOR_006": 2,
-  "perf_add_YOR_006": 22,
+  "perf_sync_YOR_006": 9,
+  "cg_ev_drop_YOR_006": 0,
+  "perf_add_YOR_006": 72,
   "text_overrides_YOR_006": 0,
   "slots_YOR_006": 306,
   "perf_sync_YOR_008": 0,
+  "cg_ev_drop_YOR_008": 0,
   "perf_add_YOR_008": 0,
   "text_overrides_YOR_008": 0,
   "slots_YOR_008": 583

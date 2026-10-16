@@ -1,13 +1,18 @@
 # -*- coding: utf-8 -*-
 """演出同步（演出状态对账）共享库 —— 产出端脚本与闸共用同一套判据。
 
-方针（用户 2026-10-10 定案，见 doc/restoration-route.md §7 V-10）：
+方针（见 doc/restoration-route.md §7 V-10）：
 **与原版相比，每类演出（语音 / CG / 立绘 / 背景）要么两侧同时存在且相等，要么都不存在。**
 
 两版命名差异
 ------------
-* **立绘**：同一份资源的两套命名（Steam `ST_KOTORI_02L.PNA` ↔ 原版 `A小鳥_02L.PNA`，
-  PNA 逐层结构一致）⇒ 比之前先归一（`norm_sprite`）。
+* **立绘**：Steam 用 `ST_<罗马字>_<姿势>.PNA`、原版用 `<字母><日文名>_<姿势>.PNA`，
+  两套命名**一一对应但内容不保证相同** ⇒ 比之前先用 `norm_sprite` 归一。
+  ⚠️ **归一 ≠ 等价**：实测 97 个 `ST_*.PNA` 里 **59 个的尾部差分（表情）层被 Steam 改过**
+  （底图逐层像素全同、尾部差分不同），而且**两版脚本列的图层 id 列表也不同**
+  （例：产物 `0x39` 列 `{46,29}` ↔ 原版 `{50,39}`）。⇒ 归一只能说「同一姿势」，
+  **不能当作「同一张画」或「同一层编排」的证据**；立绘的差分层复原走**按槽 `replace`**
+  （带回原版图名 ＋ 原版 id 列表），只换成员字节不够。见 doc/resource-naming.md §3。
 * **背景**：文件两版同名（实测 `BG*` 两版归档皆有），但**通道号可能不同**
   （原版 `bg01` ↔ Steam `bg02`，Steam 用 `bg01` 放 CG 替身）⇒ 判「多不多」按
   **在屏图名集合**，不按通道号。
@@ -23,6 +28,7 @@ own / eff
 import json
 import os
 import re
+import struct
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -42,6 +48,88 @@ CLEAR = 0x37
 VOICE = 0x28
 BGM = 0x1E
 ROW = 0x14
+
+# **族级清屏**：操作数不带通道号的 `clear bg`／`clear st` 一次清掉该族全部通道
+# （实测原版 `st` 160 处／`ev` 184 处／`bg` 20 处／`movie` 12 处）。旧模型只按精确通道名
+# 弹栈，`state.pop('bg')` 对 `bg01`／`bg02` 无效 ⇒ 把已清掉的图继续算作在屏，
+# 实测会把残留窗口高估 3.5 倍、并造出整组幽灵残留（占当次读数 18%）。
+FAMILY = ('bg', 'st')
+
+
+def _pair(x):
+    """兼容 `(off, op, size, ops)` 与 `(op, ops)` 两种指令表示。"""
+    return (x[1], x[3]) if len(x) == 4 else (x[0], x[1])
+
+
+def pop_clear(state, chan):
+    """清屏（族级展开）：`bg`／`st` 清同一族全部通道，其余按名清。"""
+    if chan in FAMILY:
+        for k in [k for k in state if k.startswith(chan)]:
+            state.pop(k)
+    else:
+        state.pop(chan, None)
+
+
+def row_setters(instrs):
+    """逐 `14` 行的 **(在屏状态, 赋值块)**。
+
+    * 状态：族级清屏已展开（与 `perf_rows` 同口径）；
+    * 赋值块 `setters[r][chan] = (i0, i1)`：把该通道赋成 `states[r][chan]` 的那一次
+      **显示块**在 `instrs` 里的下标区间（显示指令＋图层伴生＋前置 `64`）——
+      写盘器做「状态对齐」时照抄这一段的字节。
+
+    返回 `(states, setters)`，下标与 `14` 出现序一一对应。
+    """
+    ins = [_pair(x) for x in instrs]
+    states, setters = [], []
+    state, setter, i, n = {}, {}, 0, len(ins)
+    while i < n:
+        op, ops = ins[i]
+        if op == ROW:
+            states.append(dict(state))
+            setters.append(dict(setter))
+            i += 1
+            continue
+        if op in DISPLAY:
+            s = _strs(ops)
+            if len(s) >= 2 and _is_img_chan(s[0]):
+                lo = i
+                if lo - 1 >= 0 and ins[lo - 1][0] == 0x64:
+                    lo -= 1
+                k = i + 1
+                while k < n and (ins[k][0] in BLOCK_OPS or _is_layer_order(*ins[k])):
+                    k += 1
+                state[s[0]] = norm_sprite(s[1])
+                setter[s[0]] = (lo, k)
+                i = k
+                continue
+        elif op == CLEAR:
+            s = _strs(ops)
+            if s:
+                c = s[0]
+                for k in ([k for k in setter if k.startswith(c)] if c in FAMILY else [c]):
+                    setter.pop(k, None)
+                pop_clear(state, c)
+        i += 1
+    return states, setters
+
+
+def pairing_set(instrs):
+    """`st*`／`bg*` 通道上出现过的 **(通道, 归一图名)** 配对集合。
+
+    用途：判某个 Steam 显示是不是「外来配对」（原版从未这样用过该通道）——
+    V-10／V-11 的守卫判据：**不得按「图名是不是 CG」整类豁免**（原版自己就有 243 个
+    「CG 名图挂 `st*/bg*` 通道」的配对），只能按配对判。
+    """
+    out = set()
+    for x in instrs:
+        op, ops = _pair(x)
+        if op not in DISPLAY:
+            continue
+        s = _strs(ops)
+        if len(s) >= 2 and (s[0].startswith('st') or s[0].startswith('bg')):
+            out.add((s[0], norm_sprite(s[1])))
+    return out
 
 
 def _strs(ops):
@@ -68,6 +156,66 @@ def norm_sprite(name):
     return name
 
 
+def layer_ids(rows, chan=None):
+    """该槽前缀区里 `0x39`（建层）指令列出的**子图层 id 列表**（按出现顺序）。
+
+    操作数格式（`tool/ws2fmt.txt` 的 0x39 = `06 08 00 00 07 01 ff`）：
+    `<通道名>\0` ＋ 1 字节 ＋ 1 字节 ＋ **1 字节条数** ＋ 条数 × u16（子图层 id）。
+    实测 p560 `{46,29}` / 原版 o560 `{50,39}`——脚本就是**按这些 id** 让引擎从 PNA 里取子图。
+    """
+    out = []
+    for op, ops in rows:
+        if op != 0x39:
+            continue
+        s = _strs(ops)
+        if not s or (chan is not None and s[0] != chan):
+            continue
+        rest = ops.split(b'\x00', 1)[1]
+        if len(rest) < 3:
+            continue
+        for k in range(rest[2]):
+            if 3 + 2 * k + 2 > len(rest):
+                break
+            out.append(struct.unpack_from('<H', rest, 3 + 2 * k)[0])
+    return out
+
+
+def subimage_verdict(cur_tab, org_tab, ids_cur, ids_org):
+    """逐位比「脚本引用的子图」→ `'same'` / `'repoint'` / `'import'`。
+
+    `cur_tab` ＝**当前加载的那个 PNA** 的子图表（`tool/subimg.subimage_table` 的产物；
+    产物侧规则＝Steam 归档里有该名就用 Steam 的，否则用原版的），`org_tab` ＝原版那张。
+    判「同」的两种情形：**成员内嵌图片字节相同**，或**像素相同**（仅重编码噪声）。
+
+    三档（对应用户定下的逐位流程）：
+    - `same`：每位都已相同 ⇒ **不动**；
+    - `repoint`：有差异，但**原版那张在当前的 PNA 里另有相同子图** ⇒ 只需改脚本里那一项 id；
+    - `import`：有差异且当前 PNA 里找不到 ⇒ **原版独有** ⇒ 须引入原版 PNA
+      （同名成员 ⇒ 整名覆盖为原版字节；异名 ⇒ 换用原版成员）。
+    """
+    if not ids_cur or not ids_org:
+        return 'unknown'
+    cur_pix = {h for _b, h in cur_tab.values()}
+    need_repoint = False
+    for k in range(min(len(ids_cur), len(ids_org))):
+        a = cur_tab.get(ids_cur[k])
+        b = org_tab.get(ids_org[k])
+        if b is None:
+            # 该 id 在**原版子图表**里不存在 ⇒ 说明本成员上「0x39 的 u16 不等于子图 layer_id」
+            # （实测仅 39 处，集中在 `Rハット_01W`、`KUSA01S` 等小立绘；其余 10,465 处成立）
+            # ⇒ 本判据对这类成员**不适用**，交人工，不自动处置也不报错。
+            return 'unknown'
+        if a is None:
+            return 'import'
+        if a[0] == b[0] or a[1] == b[1]:
+            continue
+        if b[1] in cur_pix:            # 原版那张在本 PNA 内另有相同子图
+            need_repoint = True
+        else:
+            return 'import'
+    return 'repoint' if need_repoint else 'same'
+
+
 def perf_rows(instrs):
     """逐 `14` 槽 → {'own': {...}, 'eff': {...}}。
 
@@ -83,8 +231,11 @@ def perf_rows(instrs):
             state[chan] = name
         elif op == CLEAR and s:
             own.setdefault('clear', set()).add(s[0])
-            (own.get('display') or {}).pop(s[0], None)   # 同前缀内「设后即清」⇒ 净效果为无
-            state.pop(s[0], None)
+            # 同前缀内「设后即清」⇒ 净效果为无；族级清屏（`bg`／`st`）展开到各通道
+            for c in ([k for k in (own.get('display') or {}) if k.startswith(s[0])]
+                      if s[0] in FAMILY else [s[0]]):
+                (own.get('display') or {}).pop(c, None)
+            pop_clear(state, s[0])
         elif op == BGM and s:
             own.setdefault('bgm', []).append(s[0])
             state['bgm'] = s[0]
@@ -116,13 +267,13 @@ _CG_RX = re.compile(r'^[A-Z]{3}_\d{2,4}(_\d{2,4}[A-Z]?)?\.PNG$')
 
 def is_cg_name(name):
     """图名是不是 **CG** —— 权威口径与 `script/checks/cg_seq_check.py::is_cg` 完全一致
-    （用户 2026-10-08 明确）：CG ＝ 名字形如 `{路线名}_{编号}`（`AGE_06_001S`、`KOT_12_003B`）；
+    权威口径：CG ＝ 名字形如 `{路线名}_{编号}`（`AGE_06_001S`、`KOT_12_003B`）；
     其余（`BG*`／`SKY*`／`EST_*`／`CUTIN_*`／`COM_*`／`ST*`／`IMD*`／`MOS*`）是**其他素材**。
 
     ⚠️ **为什么判据要按「图名」而不是「通道名」**：Steam 会把**第二张 CG 塞进 `bg` 通道**
     （B→S 交叉淡入的那一层），于是通道名会说谎——按通道判会把 CG 层当「背景」删掉/换掉，
-    既破坏 CG 序列，又让 `cg_seq_check` 报出本不该有的缺口（2026-10-10 实测 `KOT_003` s1072
-    的 `bg02=KOT_12_003S`）。**CG 一律归 `cg_seq_check` + `cg_site_rewrites.json` 管，
+    既破坏 CG 序列，又让 `cg_seq_check` 报出本不该有的缺口。
+    **CG 一律归 `cg_seq_check` + `cg_site_rewrites.json` 管，
     本机制不碰**（无论它落在哪个通道）。
     """
     if not name:
@@ -132,8 +283,18 @@ def is_cg_name(name):
 
 
 def sb_chan(chan, name):
-    """是不是本机制该管的**立绘/背景**通道：`st*`/`bg*` 且图名**不是 CG**。"""
-    return (chan.startswith('st') or chan.startswith('bg')) and not is_cg_name(name)
+    """是不是本机制该管的**立绘/背景**通道：`st*`/`bg*` 且图名**不是 CG**。
+
+    ⚠️ **仅用于产出端/闸的判读面**（判「这显示是不是多余演出」）；写盘器 `replace` 的
+    **删除**用 `is_sb_channel()`（只看通道）——整槽替换时 CG 名图也要删，删掉的部分由补块
+    带回原版行自己的块。旧版把本函数也用在删除上，造成 CG 名图「既不删也不读数」的盲区。
+    """
+    return is_sb_channel(chan) and not is_cg_name(name)
+
+
+def is_sb_channel(chan):
+    """通道是不是 `st*`／`bg*`（不论图名形状）——写盘器 `replace` 与闸的期望模型共用。"""
+    return bool(chan) and (chan.startswith('st') or chan.startswith('bg'))
 
 
 # 显示块的图层伴生操作码：`39` 建层、`04 LAYER_ORDER` 调用、`09` 图层权重、
@@ -177,7 +338,13 @@ def image_blocks(instrs):
                         'idx': list(range(lo, k))})
             j = k
         elif op == CLEAR and s and _is_img_chan(s[0]):
-            out.append({'kind': 'clear', 'chan': s[0], 'name': None, 'idx': [j]})
+            # 只收**精确通道名**的清屏（`37 st01\0`）。族级清屏（`37 st\0` / `37 bg\0`）
+            # **不入块、也不由搬运负责**：它们是「净状态」范畴，由写盘器的状态对齐
+            # （`writer.align_state`）按「该点应有状态」逐通道发**最小修正**；
+            # 让 `replace` 顺带搬原版清屏会把净状态重新塞回搬运里（见 tool/writer.py 的
+            # `_perf_clear_kill` 与 `with_clear` 注释、doc/restoration-route.md §4）。
+            out.append({'kind': 'clear', 'chan': s[0], 'name': None,
+                        'idx': [j]})
             j += 1
         else:
             j += 1
@@ -289,7 +456,7 @@ def align_map(script, carrier):
 
     **剔除已知假锚/漏缝**：`resource/carrier_quirks.json` 里 `kind ∈ {false_anchor,
     missing_seam}` 的机械配对不得用作演出同步的对齐来源——机械配错会把**别的行**的演出
-    搬过来（2026-10-10 演出同步评审实证：AGE_005 s128、AMA_010 s277）。
+    搬过来。
     **人工定案优先**：`resource/align_fixes.json` 的条目覆盖推断值（`null` ＝ 剔除）。
     """
     s2o = {}

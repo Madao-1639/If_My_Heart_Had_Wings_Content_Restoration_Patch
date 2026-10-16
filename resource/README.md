@@ -222,9 +222,9 @@
 
 ## resource/cg_site_rewrites.json —— 保留行事件 CG 显示点缺口表
 
-**定位**：Steam 把原版**事件 CG** 的显示点换成**背景**时，两侧名字**不同** ⇒ `censor_map`（入口是「同名两侧字节不同」）与两条文本机检都看不见；若该行是保留 1:1，产物就照搬 Steam 指令、玩家看不到那张 CG（见 [lessons-learned.md](../doc/lessons-learned.md) §17）。本表逐条记账并驱动修复。
+**定位**：Steam 把原版**事件 CG** 的显示点换成**背景**时，两侧名字**不同** ⇒ `censor_map`（入口是「同名两侧字节不同」）与两条文本机检都看不见；若该行是保留 1:1，产物就照搬 Steam 指令、玩家看不到那张 CG；机制与落地面见 [restoration-route.md](../doc/restoration-route.md) §6 V-10。本表逐条记账并驱动修复。
 
-**表结构**：顶层 `meta` 与 `sites[]`：
+**表结构**：顶层 `meta`、`sites[]` 与 **`ev_drops[]`**：
 
 | 字段 | 类型 | 含义 |
 |---|---|---|
@@ -236,9 +236,11 @@
 | `kind` | str | ∈ `missing`（产物缺该 CG）／`extra`（产物多出或张冠李戴的显示）；缺省按 `missing` 理解 |
 | `reason` / `evidence` | str | 判据与证据 |
 
+`ev_drops[]`（第二机制：**删多余重设、不改名**）字段：`script` / `slot` / `chan`（通常 `ev`）/ `reason`。**定位**：该保留槽自带 `ev` 设点，而对齐到的原版行处 `ev` 是**延续**（无设点）且帧名不同 ⇒ 判「多余/顶替的重设」，删该槽的显示块、让原版帧延续。**与 `sites[]` 互斥**（后者是 rebind：drop 槽＋插原版行）。**判据硬要求**：必须给出 **CG 序列证据**（双侧 `ev` 时间线＋承载块类型＋语音自证＋文本逐行成对）；机制见 [restoration-route.md](../doc/restoration-route.md) §7 V-11。
+
 顶层 `meta.pending[]` 记**不宜由本表修**的站点（如 `AGE_007` s421：结构性重复），供回台账裁定。
 
-**消费方式**：`script/build/build_restore_plan.py` 把每条按 **rebind 同形**落到计划——drop 该保留槽 + 插入该原版行（随行带入 `0x33` 显示指令），资源扫描再把该成员并入 `resources.copy`；计划里落 `plan.<host>.cg_sites` 供核对。
+**消费方式**：① `sites[]`——`script/build/build_restore_plan.py` 把每条按 **rebind 同形**落到计划（drop 该保留槽 + 插入该原版行，随行带入 `0x33` 显示指令），资源扫描再把该成员并入 `resources.copy`；计划里落 `plan.<host>.cg_sites` 供核对。② `ev_drops[]`——并入 `plan.<host>.perf_sync` 的 `{mode: drop, channels: [chan]}`（写盘器删该通道显示块；`missed` 非空即中止），落地数记 `plan.gates.cg_ev_drop_<脚本>`；两闸的「名单＝落地」断言把本段条数一并计入（`final_verification` 第 4b 项与 `perf_sync_check`）。
 
 **生产者**：人工（语义评审 + 父级复算；判据：原版该行自有 CG 类 `\x33` 显示 ∧ 该槽为保留 1:1 ∧ 该名在 Steam 侧任何位置都未显示）。**消费方**：`script/build/build_restore_plan.py`。
 
@@ -267,6 +269,23 @@
 
 **生产者**：`script/build/build_perf_sync_map.py`（`--orig-dir`／`IFMH_ORIG_DIR`）。**消费方**：`script/build/build_restore_plan.py`（`action=drop`）、`script/checks/perf_sync_check.py`、`script/final_verification.py`（第 4b 项「名单数＝落地数」）。
 
+## resource/perf_sync_manual.json —— 人工定案的演出处置（判定表覆盖不到的位点）
+
+**定位**：`perf_sync_map.json` 是**生成**表（入口＝对齐上的保留槽）；但有两类位点它覆盖不到：① **无对齐来源的保留槽**（`align_fixes` 定案 `null` 或落在 `ambiguous`），机械判据按纪律不得自动处置；② 需要「**把该槽图像演出整段换成原版某一行**」的位点。本表逐条记账并驱动修复（**人工定案**）。
+
+**表结构**：顶层 `meta`、`drops[]`、`replaces[]`、`keeps[]`：
+
+| 字段 | 类型 | 含义 |
+|---|---|---|
+| `script` / `slot` | str / int | 脚本名；**保留的 Steam 槽**（14 序） |
+| `chan`（`drops`／`keeps`） | str | `drops`＝要删**显示块**的图像通道；`keeps`＝要删**清屏**的图像通道（两者都让该通道**延续上一格的在屏值**，方向相反、勿混） |
+| `orig_row`（`replaces`） | int | 该槽图像演出整段替换成**原版行 r** 的（沿用既有 `replace` 机制；补块照抄原版名，素材并入 `resources.copy`） |
+| `reason` / `note` | str | 判据与证据（**必须给 CG 序列证据**，见本表 ev_drops 同款硬要求与 [restoration-route.md](../doc/restoration-route.md) §7 V-11） |
+
+**消费方式**：`script/build/build_restore_plan.py` 把 `drops` 并入 `plan.<host>.perf_sync` 的 `{mode: drop, channels: [chan]}`、`keeps` 并入 `{mode: keep, channels: [chan]}`（写盘器只删该通道的 `37` 清屏、保留在屏状态延续）、`replaces` 并入 `{mode: replace, orig_row: r}`；`keeps` 可与同一槽既有的 `drop`／`replace` **正交合并**（`spec` 的 `keep` 列表，各有各的通道），其余与删格／判定表条目**互斥**（计划器断言）。两闸的「名单＝落地」断言（`script/final_verification.py` 第 4b 项、`script/checks/perf_sync_check.py`）把本表条数一并计入。
+
+**生产者**：人工逐脚本余项裁定（当前 6 条：`drops`＝`AMA_004` s723 `st01`／`AMA_010` s254 `st01`／`KOT_003` s1086·s1092 `ev`；`keeps`＝`KOT_009` s450 `ev`；`replaces`＝`AMA_010` s277 `bg01` ← o325）。**注意**：等长改名（`plan.reuse_rewrites`）要求两侧图名**字节等长**，不等长时只能走 `replaces`。
+
 ## resource/voice_conflict_map.json —— 语音同名冲突判定表
 
 **定位**：语音侧与 `censor_map.json` **同构**的入库判定表——写盘器覆盖语音成员的唯一依据。一行 = 一个两侧 `VOICE.arc` **大小写折叠同名、SHA256 不同**的 `.OGG` 成员。
@@ -287,6 +306,22 @@
 **判据**：两侧同名 ∧ 字节不同 ⇒ 解码 8 kHz 单声道 PCM → 5 ms 包络粗对齐 + 1 采样精修求原始 PCM 相关；**`noise` 需同时满足「相关 ≥0.98」与「时长差 ≤0.15 s」**（只看相关会漏判「同一录音被剪掉一截」——重叠段相关仍近 1，但时长差大，属内容差）。`action`：`noise` ⇒ `keep`；其余 ⇒ `overwrite`。
 
 **生产者**：`script/build/build_voice_conflict_map.py`（`--orig-dir` 或环境变量 `IFMH_ORIG_DIR`；`--ffmpeg` 可显式给路径，缺省自动探测 `FFMPEG` 环境变量 / `PATH` / `D:\ffmpeg\bin\ffmpeg.exe`，全无则退化容器级判据）。**消费方**：`script/build/build_restore_plan.py`（`action=overwrite` 子集**逐名**进资源分派的 `overwrite`，**不以「被还原内容引用」为门槛**，并以「语音覆盖名单数 ＝ 判定表 overwrite 数」为闸）、`script/build/build_patch.py`（整名替换同名成员，名单数须等于替换数）。判据与连带规则见 [resource-naming.md](../doc/resource-naming.md) §3。
+
+## resource/voice_repoint_manual.json —— 人工定案的语音引用重指（Steam 自有号段）
+
+**定位**：语音侧与 `voice_conflict_map.json` **分工不同**的另一类还原：那一条管「**同名**、字节不同」；本条管「**异名**」——产物脚本引用的语音 token 在**原版 `VOICE.arc` 里根本不存在**（不是改名、不是重编码，是 Steam 自己的另一条录音，实测 PCM 相关 <0.5、时长差 0.2～2.1 s）。处置＝**改指到本槽对齐原版行所用的那条原版录音**，并把该原版成员并入交付（Steam 缺 ⇒ `resources.copy`）。
+
+**表结构**：顶层 `meta`、`repoints[]`：
+
+| 字段 | 类型 | 含义 / 取值 |
+|---|---|---|
+| `script` / `slot` | str / int | 脚本名；**保留的 Steam 槽**（14 序） |
+| `from` / `to` | str | 该槽现引用的 Steam 自有 token / 要对齐到的原版 token（**必须等长**，脚本内 `from` 须唯一） |
+| `reason` | str | 判据与证据（**三条同时成立**：① 该槽与某原版行逐行 1:1 对齐（文本成对 ＋ 语音位置成对）；② 该原版行自带原版语音；③ `from` 在原版 `VOICE.arc` 不存在） |
+
+**判据落到机制上的两个前提**：① **对齐先行**——先修 `align_fixes.json`（本作実例：AGE_010 s33–s39 逐行 1:1，原“s37: null”有误）；② **自查口径要用文本成对**，不能只看语音 token：Steam 重录会把「语音自证」这条机械对齐打掉（同一行两侧 token 不同），只靠它会得出「无对齐」而静默放过。
+
+**生产者**：人工逐条定案。**消费方**：`script/build/build_restore_plan.py`（→ `plan.voice_repoints`，并把 `to` 并入该脚本资源需求 ⇒ Steam 缺则走 `resources.copy`）、`script/build/build_patch.py`（**等长** NUL 定界替换 ＋ 回读：旧 token 必须消失、新 token 必须在位）、`script/final_verification.py` 第 10 项（内容面：脚本引用已改指 **且** 交付 `VOICE.arc` 里该成员字节 == 原版）。
 
 ## resource/restore_plan.json —— 插入与改档计划
 

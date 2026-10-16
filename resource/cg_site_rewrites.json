@@ -1,7 +1,7 @@
 {
  "meta": {
   "purpose": "保留行上「原版事件 CG 显示点」缺口的处置表：每条例 = 一个应显示、但产物不显示的事件 CG。计划器消费方式＝把 `slot` 按 `rebind` 落到原版行 `orig_row`（drop 该 Steam 槽 + 插入原版行，随行带入 `0x33` 显示指令），并把 `name` 的成员并入 resources.copy。",
-  "producer": "人工（2026-10-08 语义评审 + 父级复算；生成器 tmp/gen_cg_sites.py；2026-10-10 补 KOT_003 s1073←o1083）",
+  "producer": "人工定案（语义评审＋父级复算）",
   "consumer": "script/build/build_restore_plan.py",
   "excluded": "两侧同名的画面改动不从本表走（那是 censor_map 的覆盖面）；已由 plan.reuse_rewrites 构建期改写的站点不在本表。",
   "note_AGE_005": "s126/s127 成对：承载图因两侧共用 CN 名 AGE_06_007S 而把锚钉成 o135↔s126（真身 o134↔s126、o135↔s127）；单点会换一个缺口，故成对登记。",
@@ -9,14 +9,15 @@
    "missing": "产物缺该 CG ⇒ rebind 该槽到原版行（随行带入显示）",
    "extra": "产物多出/张冠李戴的显示 ⇒ rebind 该槽到原版行（丢掉 Steam 的显示指令）"
   },
-  "resolved_2026-10-08": [
+  "resolved": [
    {
     "script": "AGE_007",
     "slot": 421,
     "how": "台账 drop（不属 CG 表）",
     "why": "s421 是替代戏（s379–s424，已判「同拍去 H 版 ⇒ 全 drop」）里的存活格；原台账因承载图假锚 o425↔s421 把它当「接回点」保留。它自带 AGE_10_001S（H CG）⇒ 补 drop 后产物 CG 序列与原版一致。"
    }
-  ]
+  ],
+  "ev_drops": "保留槽上**多余/顶替**的事件 CG 显示块的处置：该槽自带 `ev` 设点，而对齐到的原版行处 `ev` 是**延续**（无设点）且帧名不同 ⇒ 判「多余重设」，删该槽的 `ev` 显示块（**不改名**），让原版帧延续。消费方式＝并入 `plan.<host>.perf_sync` 的 `{mode: drop, channels: [ev]}`；`plan.gates.cg_ev_drop_<脚本>` 记落地数。与 `sites`（rebind：drop 槽＋插原版行）**互斥**。判据：**必须给 CG 序列证据**（双侧时间线＋承载块类型＋语音自证＋文本逐行成对），机制见 doc/restoration-route.md §7 V-11。"
  },
  "sites": [
   {
@@ -26,7 +27,7 @@
    "name": "AGE_06_001S.PNG",
    "archive": "CHIP2.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "AGE_005",
@@ -53,7 +54,7 @@
    "name": "AGE_08_003S.PNG",
    "archive": "CHIP2.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_003",
@@ -62,7 +63,7 @@
    "name": "KOT_12_001B.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -71,7 +72,7 @@
    "name": "KOT_15_003S.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -80,7 +81,7 @@
    "name": "KOT_15_001S.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -89,7 +90,7 @@
    "name": "KOT_15_001S.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -98,7 +99,7 @@
    "name": "KOT_15_003S.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -107,7 +108,7 @@
    "name": "KOT_15_001S.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -116,7 +117,7 @@
    "name": "KOT_15_002S.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -125,7 +126,7 @@
    "name": "KOT_15_001S.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_006",
@@ -134,7 +135,7 @@
    "name": "KOT_15_002S.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 把该事件 CG 显示点换成背景（两侧异名 ⇒ censor_map 管不到）；该行是保留 1:1 ⇒ 产物不显示这张 CG",
-   "evidence": "doc/lessons-learned.md §17"
+   "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
    "script": "KOT_003",
@@ -143,7 +144,54 @@
    "name": "KOT_12_001S.PNG",
    "archive": "CHIP5.arc",
    "reason": "Steam 在 s1072 前缀用 `0x37 ev` 清掉 CG，而原版在 o1083 **重显** CG（KOT_12_001B → KOT_12_001S 的 B→S 换帧第二帧）⇒ 产物该行不显示这张 CG；rebind s1073←o1083 随行带入 `0x33` 显示指令",
-   "evidence": "tmp/_q_cg_seq.md（cg_seq_check「异系列」段）；2026-10-10 演出同步评审附带发现"
+   "evidence": "cg_seq_check「异系列」段（复算证据属 tmp，不入库）"
+  },
+  {
+   "script": "KOT_003",
+   "slot": 1091,
+   "orig_row": 1101,
+   "name": "KOT_12_003S.PNG",
+   "archive": "CHIP5.arc",
+   "kind": "missing",
+   "reason": "原版 o1101 自有 `0x33 ev=KOT_12_003S` 显示点，产物该槽（s1091，match→o1101，两侧无语音、文本成翻译对）没有它 ⇒ drop 该槽＋插回原版行 o1101（随行带入显示指令），fix 1102–1103 共 2 格。"
+  },
+  {
+   "script": "KOT_003",
+   "slot": 1096,
+   "orig_row": 1106,
+   "name": "KOT_12_006S.PNG",
+   "archive": "CHIP5.arc",
+   "kind": "missing",
+   "reason": "原版 o1106 自有 `0x33 ev=KOT_12_006S` 显示点，产物该槽（s1096，anchor→o1096，语音 KOT_2186 相等）反而是 Steam 的 ev=KOT_12_001S ⇒ drop 该槽＋插回 o1106，fix 1106–1119 共 14 格。"
+  },
+  {
+   "script": "AGE_011",
+   "slot": 716,
+   "orig_row": 721,
+   "name": "AGE_08_002S.PNG",
+   "archive": "CHIP2.arc",
+   "kind": "missing",
+   "reason": "原版 o721 同格「清 st01 ＋ 设 st01=AGE_08_002S」（净=设，用**立绘层挂 CG**），产物该槽（s716，anchor→o721，语音 AGE_3941 相等）只有清、没有设 ⇒ drop 该槽＋插回 o721（随行带入该显示指令），fix 721–727 共 7 格；该 CG 成员 Steam 缺，资源扫描并入 resources.copy。"
+  }
+ ],
+ "ev_drops": [
+  {
+   "script": "AGE_005",
+   "slot": 122,
+   "chan": "ev",
+   "reason": "保留槽自带 `ev` 设点，而对齐到的原版行 o130 处 `ev` 是**延续**（自 o122 的 AGE_06_001S）⇒ 该设点是**多余/顶替**，删显示块让原版帧延续。序列证据：原版时间线 o117 设 001S→o119 设 001B→o122 设 001S→（延续至 o133）；产物原为 p130 重设 AGE_06_004S（Steam 独有、和谐，与 001S 像素差 0.69%、bbox x827–1033 y20–270）。对账面：s122/s123 为 anchor，语音 AGE_2677/2678 两侧相等；文本为翻译对。"
+  },
+  {
+   "script": "AGE_005",
+   "slot": 137,
+   "chan": "ev",
+   "reason": "同上：对齐原版行 o147 处 `ev` 是延续（自 o139 的 AGE_06_008S）⇒ 删掉该槽的 AGE_06_010S 重设。序列证据：原版 o135 设 007S→o139 设 008S→（延续至 o166）；产物原为 p147 重设 010S（Steam 独有、和谐，与 008S 像素差 0.53%、bbox x829–1017 y33–270）。对账面：s137 为 anchor（语音 AGE_2680 相等），s138–147 为 1:1 `match` 块，逐行翻译对。"
+  },
+  {
+   "script": "AGE_005",
+   "slot": 182,
+   "chan": "ev",
+   "reason": "同上：该槽无对齐（`carrier_quirks` 记 `missing_seam`；`align_fixes` 定案 182=null），但其在原版时间线上占的是 o164 设的 AGE_06_008S 的延续位（o167 清）⇒ 删掉该槽的 AGE_06_008B（Steam 独有；008 帧的 2560×1440 放大/和谐形态）。删后该处延续 008S、p168 的清与原版 o167 的清同拍。"
   }
  ]
 }

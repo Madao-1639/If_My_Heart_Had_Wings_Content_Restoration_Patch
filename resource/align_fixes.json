@@ -1,7 +1,7 @@
 {
  "meta": {
   "purpose": "**人工定案的逐槽对齐**（残余对齐评审的落地形态）。承载图给不出映射、语音号自证与等长缺口内插也都失败的 Steam 槽，由评审按「同句」判据定案后写在这里，供 tool/perfsync.py::align_map() 覆盖/剔除。",
-  "producer": "人工（2026-10-10 残余对齐评审 align_00：align 3 / no_counterpart 3 / false_anchor 3 / cg 1；2026-10-10 主 agent 定案：ASA_001 s1062/1067/1068/1082、KOT_009 s433 对齐、s434–s440 无对应；判据见 doc/lessons-learned.md §27）",
+    "producer": "人工定案（判据＝逐行文本成对＋语音位置成对；机制见 doc/resource-naming.md §3 与 doc/restoration-route.md §7 V-12）",
   "consumer": "tool/perfsync.py::align_map（产出端 script/build/build_perf_sync_map.py 与闸 script/checks/perf_sync_check.py 共用）",
   "semantics": {
    "fixes[脚本][steam 槽位] = 原版行号": "该槽的真实对齐行（覆盖承载图/语音/内插的推断）",
@@ -15,7 +15,13 @@
   },
   "AGE_010": {
    "23": 23,
-   "37": null
+   "37": 541,
+   "33": 537,
+   "34": 538,
+   "35": 539,
+   "36": 540,
+   "38": 542,
+   "39": 543
   },
   "AGE_011": {
    "192": 196

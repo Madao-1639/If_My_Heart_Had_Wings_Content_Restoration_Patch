@@ -127,10 +127,60 @@ def load_cg_sites():
     return out
 
 
+def load_perf_sync_manual():
+    """resource/perf_sync_manual.json → (drops, replaces, keeps)。
+
+    * `drops`：人工定案的「只删该槽指定通道的显示块」——判定表 `perf_sync_map.json`
+      覆盖不到的**无对齐保留槽**（机械判据按纪律不处置）；并入 `plan.perf_sync`。
+    * `replaces`：人工定案的「把该槽图像演出整段换成原版行 r 的」（既有 replace 机制）——
+      用于「Steam 在该处设了另一张图、原版是这一张，且两侧图名**不等长**（等长改名做不了）」。
+    """
+    p = os.path.join(ROOT, 'resource', 'perf_sync_manual.json')
+    drops, replaces = collections.defaultdict(dict), collections.defaultdict(dict)
+    keeps = collections.defaultdict(dict)
+    if os.path.exists(p):
+        d = json.load(open(p, encoding='utf-8'))
+        for e in (d.get('drops') or []):
+            drops[e['script']][int(e['slot'])] = e
+        for e in (d.get('replaces') or []):
+            replaces[e['script']][int(e['slot'])] = e
+        for e in (d.get('keeps') or []):
+            keeps[e['script']][int(e['slot'])] = e
+    return drops, replaces, keeps
+
+
+def load_voice_repoints():
+    """resource/voice_repoint_manual.json → {脚本: [条目, ...]}（人工定案的语音引用重指）。
+
+    「**Steam 自有号段**语音」＝产物引用的语音 token 在原版 `VOICE.arc` 里不存在（不是
+    改名、不是重编码，是 Steam 另一条录音）。处置＝改指到**对齐原版行**那条原版录音，
+    并把该原版成员并入交付（Steam 缺 ⇒ `resources.copy`）。判据与证据见 [resource/README.md]。
+    """
+    p = os.path.join(ROOT, 'resource', 'voice_repoint_manual.json')
+    out = collections.defaultdict(list)
+    if os.path.exists(p):
+        for e in (json.load(open(p, encoding='utf-8')).get('repoints') or []):
+            out[e['script']].append(e)
+    return out
+
+
+def load_cg_ev_drops():
+    """resource/cg_site_rewrites.json 的 `ev_drops`：保留槽上**多余/顶替**的事件 CG 显示块
+    （该槽自带 `ev` 设点，而对齐到的原版行处 `ev` 是延续 ⇒ 删显示块、**不改名**）。
+    判据与三联证据（CG 序列／承载块／语音自证）见该表 meta 与 doc/restoration-route.md §7 V-11。
+    """
+    p = os.path.join(ROOT, 'resource', 'cg_site_rewrites.json')
+    out = collections.defaultdict(dict)
+    if os.path.exists(p):
+        for e in (json.load(open(p, encoding='utf-8')).get('ev_drops') or []):
+            out[e['script']][int(e['slot'])] = e
+    return out
+
+
 def load_perf_sync():
     """resource/perf_sync_map.json → {script: {steam 槽位: spec}}。
 
-    方针与判据见 doc/restoration-route.md §7 V-10 与 doc/lessons-learned.md §27。
+    方针与判据见 doc/restoration-route.md §6 V-10。
     `spec` 两种（写盘器 `tool/writer.perf_sync_apply` 消费）：
       · `{'mode': 'drop', 'channels': [通道]}`——删该槽这些通道的显示块；
       · `{'mode': 'replace', 'orig_row': r}`——把该槽自带的立绘／背景演出整段换成原版行 r 的
@@ -184,8 +234,7 @@ def fan_texts(script):
 
     ⚠️ 该 JSON 是**扁平映射** `{"0": 文本, "1": 文本}`（口径见 `tool/fancn.py`），
     既不是列表、也没有 `texts` 键。**不得对它直接 for-in**——那会迭代出键
-    （行号字符串）并把行号当正文写进交付（2026-10-06 复验 D1：8,010 个槽位
-    全部落成行号）。统一走 `tool.fancn.load_texts()`。
+    （行号字符串）并把行号当正文写进交付。统一走 `tool.fancn.load_texts()`。
     """
     p = os.path.join(ROOT, 'resource', 'fan_cn', script + '.json')
     if not os.path.exists(p):
@@ -307,6 +356,33 @@ def build_host_plan(script, blocks, ofmt, gates, ren):
     # 演出同步（判定表 action=drop／replace）：写盘器删该槽演出前缀区内的显示块
     # （replace 另在原版行取图像演出块补回）。与删格互斥——被删槽的演出已随删格清掉。
     perf_sync = {int(k): v for k, v in PERF_SYNC.get(script, {}).items()}
+    # 事件 CG 显示点（CG 线表 `cg_site_rewrites.json` 的 `ev_drops`）：保留槽上多余的 `ev` 重设
+    # ⇒ 并入演出同步的 drop（写盘器删该通道显示块、**不改名**）；与删格／判定表条目互斥。
+    ev_drops = CG_EV_DROPS.get(script, {})
+    for _k, _e in sorted(ev_drops.items()):
+        assert _k not in set(drops), '%s: ev_drop 槽 %d 已登记为删格' % (script, _k)
+        assert _k not in perf_sync, '%s: ev_drop 槽 %d 已有判定表条目' % (script, _k)
+        perf_sync[_k] = {'mode': 'drop', 'channels': [_e['chan']]}
+    # 人工定案的演出处置（`resource/perf_sync_manual.json` 的 `drops`）：判定表覆盖不到的
+    # **无对齐保留槽**——只删该通道显示块；与删格／判定表条目互斥。
+    for _k, _e in sorted(PSM_DROPS.get(script, {}).items()):
+        assert _k not in set(drops), '%s: manual drop 槽 %d 已登记为删格' % (script, _k)
+        assert _k not in perf_sync, '%s: manual drop 槽 %d 已有演出同步条目' % (script, _k)
+        perf_sync[_k] = {'mode': 'drop', 'channels': [_e['chan']]}
+    # 人工定案的整体替换（`replaces`）：把该槽图像演出整段换成原版行 r 的（既有 replace 机制）
+    for _k, _e in sorted(PSM_REPLACES.get(script, {}).items()):
+        assert _k not in set(drops), '%s: manual replace 槽 %d 已登记为删格' % (script, _k)
+        assert _k not in perf_sync, '%s: manual replace 槽 %d 已有演出同步条目' % (script, _k)
+        perf_sync[_k] = {'mode': 'replace', 'orig_row': int(_e['orig_row'])}
+    # 人工定案的「删多余清屏」（`keeps`）：保留在屏状态延续（与 drops 方向相反）
+    for _k, _e in sorted(PSM_KEEPS.get(script, {}).items()):
+        if _k in perf_sync:                       # 与既有条目**正交合并**（各有各的通道）
+            _s = perf_sync[_k]
+            _s.setdefault('keep', [])
+            assert _e['chan'] not in _s['keep'], '%s: keep 槽 %d 通道重复' % (script, _k)
+            _s['keep'].append(_e['chan'])
+        else:
+            perf_sync[_k] = {'mode': 'keep', 'channels': [_e['chan']]}
     clash_perf = set(perf_sync) & set(drops)
     assert not clash_perf, '%s: 槽 %s 同时登记演出同步与删格' % (script, sorted(clash_perf))
     if not drops and not inserts and not text_overrides and not perf_sync:
@@ -373,7 +449,7 @@ def build_host_plan(script, blocks, ofmt, gates, ren):
     plan = {'drops': drops,
             'inserts': [(a, r0, r1) for a, r0, r1 in ins_ranges],
             'external': ext,
-            # 匹配行文本覆盖（2026-10-07 口径）：steam 槽位 → 原版行，zh 交付该槽
+            # 匹配行文本覆盖：steam 槽位 → 原版行，zh 交付该槽
             # 用民汉、脚本指令不动。verify_sync 的 B3 文本核对按此声明取期望文本。
             'text_overrides': {str(k): v for k, v in sorted(text_overrides.items())},
             'cg_sites': cg_sites,
@@ -406,7 +482,8 @@ def build_host_plan(script, blocks, ofmt, gates, ren):
     got_add = sum(v['added'] for v in perf_report.values())
     assert got_add == exp_add, \
         '%s: 演出同步补块数 %d != 期望 %d' % (script, got_add, exp_add)
-    gates['perf_sync_%s' % script] = len(perf_report)
+    gates['perf_sync_%s' % script] = sum(v.get('actions', 1) for v in perf_report.values())
+    gates['cg_ev_drop_%s' % script] = sum(1 for _k in ev_drops if _k in perf_report)
     gates['perf_add_%s' % script] = got_add
 
     # 槽位文本
@@ -443,13 +520,16 @@ def build_host_plan(script, blocks, ofmt, gates, ren):
         i1 = o14[r1] + 1        # 与 writer.block_span 同口径：右端收到 r1 的 14 之后
         spans.append((i0, i1))
     # 演出同步 `replace`：补块照抄**原版资源名** ⇒ 该原版行前缀区引用的资源也要进需求面
-    # （Steam 缺的走 `resources.copy` 补入原版素材；用户 2026-10-10 定案：补素材、不重写名）。
+    # （Steam 缺的走 `resources.copy` 补入原版素材：补素材、不重写名）。
     for _slot, _spec in perf_sync.items():
         if _spec.get('mode') != 'replace':
             continue
         _r = _spec['orig_row']
         spans.append((o14[_r - 1] + 1 if _r > 0 else 0, o14[_r]))
     need = scan_resources(orig_dec, spans, ofmt)
+    # 人工定案的**语音引用重指**：把 `to`（原版录音）并入本脚本资源需求 ⇒ Steam 缺 → `copy`
+    for _e in VOICE_REPOINTS.get(script, ()):
+        need.setdefault('voice', set()).add(_e['to'])
     names = {n.lower(): ren[n.lower()] for kinds in need.values() for n in kinds
              if n.lower() in ren}
     gates['slots_%s' % script] = len(slot_texts)
@@ -492,9 +572,12 @@ def os_enc(script):
 def main():
     ofmt = load_orig_formats(paths.orig_dir())
     led = load_ledgers()
-    global CG_SITES, PERF_SYNC
+    global CG_SITES, PERF_SYNC, CG_EV_DROPS, PSM_DROPS, PSM_REPLACES, PSM_KEEPS, VOICE_REPOINTS
     CG_SITES = load_cg_sites()
     PERF_SYNC = load_perf_sync()
+    CG_EV_DROPS = load_cg_ev_drops()
+    PSM_DROPS, PSM_REPLACES, PSM_KEEPS = load_perf_sync_manual()
+    VOICE_REPOINTS = load_voice_repoints()
     gates = {}
     errors = []
     plans = {'A1': {}, 'hosts': {}, 'jumps': [list(j) for j in JUMP_REVERTS]}
@@ -525,8 +608,8 @@ def main():
     #   · 语音：判定表 `resource/voice_conflict_map.json` 的 `action=overwrite` 子集
     #     （`class=noise` 一律 keep ⇒ 保留 Steam 字节）。
     #     need 驱动的同名不同字节分支**只做遵守 + 缺录报警**，不得自行定类：
-    #     实测 `AGE_3942.ogg`（判定表 `noise/keep`）曾被它当 overwrite 加进来，
-    #     被「名单数＝替换数」闸拦住（2026-10-08）。
+    #     判定表 `noise/keep` 的成员曾被它当 overwrite 加进来，
+    #     但「名单数＝替换数」闸会拦住。
     # **没有 rename 分类**——隔离改名路线已取消（§1）：插入段照抄原版脚本里的名字
     # 即为正确，覆盖落盘后原名承载的就是原版画面。
     censor = json.load(open(os.path.join(ROOT, 'resource', 'censor_map.json'), encoding='utf-8'))
@@ -536,6 +619,15 @@ def main():
     for m in list(censor['members']) + list(vmap['members']):
         if m['action'] == 'overwrite':
             ow_index[(m['archive'].lower(), m['name'].lower())] = m
+    # 立绘同名冲突（**子图级**判定：口径见 tool/subimg.py / doc/resource-naming.md §3）⇒ 整名覆盖。
+    # 名单来自演出同步表的 `member_overwrites`（生成器逐位比「脚本列的子图层 id 上的子图」得出：
+    # 两侧同名但当前 PNA 里找不到原版那张 ⇒ 把该成员字节换回原版，脚本与调用点不动）。
+    try:
+        _psm = json.load(open(os.path.join(ROOT, 'resource', 'perf_sync_map.json'), encoding='utf-8'))
+    except Exception:
+        _psm = {}
+    for m in (_psm.get('member_overwrites') or []):
+        ow_index[(m['archive'].lower(), m['name'].lower())] = dict(m, action='overwrite')
     # 闸（§7.5）：判定表 overwrite 成员不得同时出现在改名表
     for k in ('voice', 'sprite', 'mos', 'est'):
         for e in rename.get(k, []):
@@ -645,7 +737,7 @@ def main():
             classify(tgt, {'.png': 'png', '.pna': 'pna', '.ogg': 'voice'}.get(ext, 'png'))
     # ── 闸：等长 1:1 块的内容面存疑对不得被「1:1 承载」掉 ──
     # 承载图的 1:1 判据只看 token 骨架（行数相等即判 1:1）；两侧语音号不一致者已由
-    # `script/build/build_carrier_map.py` 标 `content_suspect`（见 doc/lessons-learned.md §14／§16）。
+    # `script/build/build_carrier_map.py` 标 `content_suspect`（判据见 doc/resource-naming.md §2「对齐证据要先核实」）。
     # 这些对（两侧语音号都存在且不同 ⇒ 非同一行）**必须走还原**（drop/rebind，原版行进产物）。
     # 民汉覆盖（`text_override`）只挂在 verified 保留格上，对 content_suspect 对无效（见
     # doc/restoration-targets.md：build_host_plan 对「保留格 + text_override 但槽在
@@ -667,6 +759,19 @@ def main():
                       '交判读定形态；例：%s' % (len(carried), ', '.join(carried[:6])))
 
     plans['reuse_rewrites'] = reuse_rewrites
+    # 人工定案的语音重指（resource/voice_repoint_manual.json）：只保留属于计划内宿主的条目，
+    # 并逐条核 `to` 实在原版 VOICE.arc（缺一个即中止——重指目标不存在会变成无声）。
+    vrep = []
+    for sc, entries in sorted(VOICE_REPOINTS.items()):
+        if sc not in plans['hosts']:
+            errors.append('语音重指条目落在非宿主脚本 %s ⇒ 中止写盘' % sc)
+            continue
+        for e in entries:
+            if e['to'].lower() not in orig_index or orig_index[e['to'].lower()] != 'VOICE.arc':
+                errors.append('语音重指目标 %s 不在原版 VOICE.arc ⇒ 中止写盘' % e['to'])
+                continue
+            vrep.append(e)
+    plans['voice_repoints'] = vrep
     plans['resources'] = resource_plan
     plans['gates'] = gates
 
@@ -691,10 +796,10 @@ def main():
     with open(OUT_MD, 'w', encoding='utf-8', newline='\n') as f:
         f.write('\n'.join(md))
     print('plan: A1 %d / hosts %d / jumps %d ; resources copy %d overwrite %d have %d ; '
-          'reuse_rewrites %d ; errors %d'
+          'reuse_rewrites %d ; voice_repoints %d ; errors %d'
           % (len(plans['A1']), len(plans['hosts']), len(plans['jumps']),
              len(resource_plan['copy']), len(resource_plan['overwrite']),
-             resource_plan['have'], len(reuse_rewrites), len(errors)))
+             resource_plan['have'], len(reuse_rewrites), len(vrep), len(errors)))
     for e in errors[:15]:
         print('  ERR', e.encode('ascii', 'replace').decode())
     sys.exit(1 if errors else 0)

@@ -89,7 +89,7 @@ def align(name, oraw, sraw):
 
         语音号是强身份锚点：两侧同一行却用不同录音，说明 Steam 改写过该行
         （实测这类行 Steam 侧语音号是 Steam 自有号段 `*_6xxx`／`HIT_04xx`）。
-        这类块**不得当作 1:1 承载**，须进判读面（见 doc/lessons-learned.md §14／§16）。
+        这类块**不得当作 1:1 承载**，须进判读面（判据见 doc/resource-naming.md §2「对齐证据要先核实」）。
         """
         bad = []
         for k in range(n):

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""承载图 × 判读台账 **只读对账**（2026-10-08）。
+"""承载图 × 判读台账 **只读对账**。
 
 用法：
     python script/checks/check_carrier_ledger.py [--content-scan] [--out tmp/carrier_ledger_check.md]
@@ -14,7 +14,7 @@
       - 机械配对是否仍在承载图上（不在 ⇒ STALE：本表该条可退休，仅提示）
       - 台账动作是否已落地（未落 ⇒ UNFIXED：**报警（退出码 1）**）
   C 内容面候选（`--content-scan`，只报告不报警）：原版行民汉 vs Steam 槽官中的**同中文**字符相似度低
-    （`ratio < 0.18` 或字符集 Jaccard < 0.12，且较短者 ≥6 字 —— 与 2026-10-08 锚点抽查同口径）
+    （`ratio < 0.18` 或字符集 Jaccard < 0.12，且较短者 ≥6 字 —— 与锚点抽查同口径）
     ⇒ 列出人工需读的候选（假锚类别里机器唯一能自动再发现的信号，见 doc/restoration-targets.md）。
 
 只读：不改任何 resource/ 文件。明细写 `--out`（默认 tmp/carrier_ledger_check.md），控制台只输出 ASCII 摘要。

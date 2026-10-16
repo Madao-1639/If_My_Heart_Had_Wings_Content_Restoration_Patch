@@ -1,7 +1,7 @@
 {
  "meta": {
   "purpose": "承载图（resource/carrier_map.json）里**已知的假锚/拆行**判定表：机器按 token 值相等钉出来的锚，其两侧内容并不是同一句（或一行动词被 Steam 拆成两格）。本表是把「台账的决定」与「承载图的机械配对」的差异显式记账。**两个消费方**：① script/checks/check_carrier_ledger.py 只读对账；② tool/perfsync.py 的 align_map()——`false_anchor`／`missing_seam` 两条的机械配对**不得**用作演出同步（`resource/perf_sync_map.json`）的对齐来源（机械配错会把别的行的演出搬过来）。",
-  "producer": "人工（2026-10-08 锚点全面抽查；2026-10-10 演出同步评审补 2 条；证据见各条 evidence）",
+  "producer": "人工（锚点全面抽查＋演出同步评审补录；证据见各条 evidence）",
   "consumer": "script/checks/check_carrier_ledger.py（只读对账）、tool/perfsync.py::align_map（排除机械配对）",
   "kinds": {
    "false_anchor": "锚对两侧不是同一句；机械槽位是错的承载格",
@@ -391,7 +391,7 @@
     ]
    },
    "truth": "s128 本格是状态描写（EN「Ageha's cheeks reddened and then reddened some more as I looked.」），o139 是独词对白「あ……」；两侧本槽自带语音皆空 ⇒ 只靠承载图/缺口内插的假锚",
-   "ledger": "演出同步评审 2026-10-10：s128 的 replace(bg02) 撤回，不自动处置（真对齐需按前后叙事「顔をそむけ…身を縮め」重判）",
+   "ledger": "演出同步评审：s128 的 replace(bg02) 撤回，不自动处置（真对齐需按前后叙事「顔をそむけ…身を縮め」重判）",
    "ledger_rule": "none",
    "evidence": "tmp/perf_review/findings_00.jsonl"
   },
@@ -409,7 +409,7 @@
     ]
    },
    "truth": "s277 本格是时间过渡（EN「A few days later...」），o325 是性描写「俺は天音のスカートの中に潜り込むと、ふとももの隙間に顔をうずめた。」；两侧本槽自带语音皆空 ⇒ 只靠承载图/缺口内插的假锚",
-   "ledger": "演出同步评审 2026-10-10：s277 的 replace(bg01) 撤回，不自动处置",
+   "ledger": "演出同步评审：s277 的 replace(bg01) 撤回，不自动处置",
    "ledger_rule": "none",
    "evidence": "tmp/perf_review/findings_00.jsonl"
   },
@@ -427,7 +427,7 @@
     ]
    },
    "truth": "机械对齐把 s724 钉到 o732（窗口 [729,731] 之外），原版 o732「こういうこと。誰か、文句ある？」与 Steam「With a look of satisfaction Ageha removes her lips.」语义无关；窗口内 o729「唇を離し、伸びた唾液の糸を、舐めとった」是离唇+舔唾液、o731「自信たっぷりにみんなを見回す」是得意环视，均非「满意地离开唇」的同一句，故为假锚，入 carrier_quirks.json。",
-   "ledger": "演出同步·残余对齐评审 2026-10-10（align_00）：该槽不自动处置，从对齐来源剔除",
+   "ledger": "演出同步·残余对齐评审（align_00）：该槽不自动处置，从对齐来源剔除",
    "ledger_rule": "none",
    "evidence": "tmp/perf_review/align_00.jsonl"
   }

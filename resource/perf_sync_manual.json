@@ -1,0 +1,52 @@
+{
+ "meta": {
+  "purpose": "人工定案的演出处置：① `drops`＝只删该槽**指定通道**的显示块（不删清屏、不删文本/语音/成就钩子）；② `renames`＝就地把该槽显示指令的图名换成原版那张（**必须等长**）。用于判定表 `perf_sync_map.json` 覆盖不到的位点——**无对齐来源的保留槽**（s2o 无映射，机械判据按纪律不处置）。",
+  "producer": "人工（逐脚本余项裁定）",
+  "consumer": "script/build/build_restore_plan.py：`drops` → `{mode:drop, channels:[chan]}`；`keeps` → `{mode:keep, channels:[chan]}`；`replaces` → `{mode:replace, orig_row:r}`。两闸的「名单＝落地」断言把三者一并计入（`cg_site_rewrites.json` 的 `sites`／`ev_drops` 同样计入）。",
+  "guard": "两类都**必须先有 CG 序列证据**（双侧时间线＋承载块类型＋语音自证＋文本逐行成对），见 doc/restoration-route.md §7 V-11；`replaces` 的 `orig_row` 必须给出该行净演出（计划器按 replace 口径复算补块数）。",
+  "keeps": "**删多余清屏**：该保留槽自带一条 `37 <通道>`，把原版在此处**延续**的画面清掉了 ⇒ 删这条清屏（**保留在屏状态延续**，不加任何演出）。与 `drops`（删显示块）方向相反、勿混。判据同 `guard`（必须给 CG 序列证据）。"
+ },
+ "drops": [
+  {
+   "script": "AMA_004",
+   "slot": 723,
+   "chan": "st01",
+   "reason": "原版 o1119/o1121/o1122/o1125 连续设 C天音_01L；产物在 s723（**无对齐**的 Steam 新写段）多设 C天音_01M ⇒ 删该显示块，让 01L 延续到 p1126 原版设点处。"
+  },
+  {
+   "script": "AMA_010",
+   "slot": 254,
+   "chan": "st01",
+   "reason": "原版 o285 起为 Rハット_01W，o287 才换 C天音_01M；产物在 s254（**无对齐**）多设 C天音_01L ⇒ 删该显示块，让 Rハット_01W 延续到 p288 原版设点处。"
+  },
+  {
+   "script": "KOT_003",
+   "slot": 1086,
+   "chan": "ev",
+   "reason": "原版 o1092 设 KOT_12_004S 后**延续**到 o1101；产物在 s1086（anchor→o1096）多设 KOT_12_006S ⇒ 删该显示块，让 004S 延续（fix 1096–1101 共 6 格）。对账面：s1086 为 anchor、语音 KOT_2186 两侧相等。"
+  },
+  {
+   "script": "KOT_003",
+   "slot": 1092,
+   "chan": "ev",
+   "reason": "原版 o1101 设 KOT_12_003S 后**延续**到 o1103（o1104 才换 002B）；产物在 s1092（match→o1102）多设 KOT_12_004S ⇒ 删该显示块，让 003S 延续（fix 1102–1103 共 2 格）。"
+  }
+ ],
+ "replaces": [
+  {
+   "script": "AMA_010",
+   "slot": 277,
+   "orig_row": 325,
+   "reason": "原版 o325 的净演出＝`clear bg01/st01` ＋ 设 `bg01=AMA_14_001B`（2560×1440，原版独有），o326 延续该背景；产物在 s277（**无对齐**的转场行「几天后——」）设 `SKY01_01S`（与前者像素差 98.8%）⇒ 按 `replace` 把该槽图像演出整段换成原版行 325 的（补块带回 `AMA_14_001B`）。",
+   "note": "改名路线不可用：`SKY01_01S.PNG`(13) 与 `AMA_14_001B.PNG`(14) **不等长**，等长替换做不了。"
+  }
+ ],
+ "keeps": [
+  {
+   "script": "KOT_009",
+   "slot": 450,
+   "chan": "ev",
+   "reason": "原版 ev=KOT_20_006S 自 ≤o955 起**一直挂着**（与 bg01/bg02/st01 同屏），到 o1114 才换 SKY02_01B；产物在 s450（anchor→o957，语音 HAT_0157 两侧相等）多加了一条 `37 ev` ⇒ 删该清屏、让 CG 延续（fix 958–1114 共 157 格）。"
+  }
+ ]
+}

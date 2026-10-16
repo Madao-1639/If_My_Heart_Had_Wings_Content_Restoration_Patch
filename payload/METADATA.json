@@ -1,7 +1,7 @@
 {
   "CHIP2.arc": {
     "kind": "merge",
-    "checksum": "3fce74b1392ad91b5d1bc85cab0d409f13eb3a4b16c6e42f2e204458fbac6fdc",
+    "checksum": "00f386ec7354224f9c7bb159bd203cf45a75fce2333b7bc81b120599a70cbbcd",
     "members": [
       {
         "name": "AGE_01_001b.png",
@@ -1009,6 +1009,10 @@
       },
       {
         "name": "AGE_07_004S.png",
+        "type": "added"
+      },
+      {
+        "name": "AGE_08_002S.png",
         "type": "added"
       },
       {
@@ -4133,7 +4137,7 @@
   },
   "CHIP6.arc": {
     "kind": "merge",
-    "checksum": "0ba4439e94a390449a8a866c9112256e8407a2de86a2259db7c99d85356ef77b",
+    "checksum": "5fc7753acdb6eb038dd54b147e54d0ffe9fc7876fbd5592d098c57130e9ea742",
     "members": [
       {
         "name": "AMA_01_001b.png",
@@ -4844,6 +4848,10 @@
         "type": "added"
       },
       {
+        "name": "AMA_14_001B.png",
+        "type": "added"
+      },
+      {
         "name": "AMA_14_001S.png",
         "type": "added"
       },
@@ -4975,7 +4983,7 @@
   },
   "GRAPHIC.arc": {
     "kind": "merge",
-    "checksum": "73f496008e672b2444731a66f203375597bf93e26b7ecba298c594d084b665ba",
+    "checksum": "cf12414d3f9ac718058cb4370cd90dc49594fa1138ec843e304f303b0bb495f2",
     "members": [
       {
         "name": "CUTIN_23_01B.png",
@@ -6138,6 +6146,10 @@
         "type": "added"
       },
       {
+        "name": "O早苗_01M.pna",
+        "type": "added"
+      },
+      {
         "name": "Rハット_01M.pna",
         "type": "added"
       },
@@ -6157,7 +6169,7 @@
   },
   "Rio.arc": {
     "kind": "copy",
-    "checksum": "d341bc0f0c4c79b0ff2667ce7d1e3b1806839df9c26920012eb30f0444671a31"
+    "checksum": "ec1d4ea9ae5bd6a1762732349af356b8a69982a1e9ca9f506bcb432e9558665f"
   },
   "SE.arc": {
     "kind": "merge",
@@ -7695,7 +7707,7 @@
   },
   "VOICE.arc": {
     "kind": "merge",
-    "checksum": "7c5b87091374649ed5c560871eb5b1b0ffdcebac3e1787c0d31c54c1f3787fb8",
+    "checksum": "24b8d8867c05bec99fcb1111a9f6e0633b608fa32a8421618874e93d7a6b15c7",
     "members": [
       {
         "name": "AGE_0001.ogg",
@@ -86854,6 +86866,18 @@
         "type": "added"
       },
       {
+        "name": "AGE_3716.ogg",
+        "type": "added"
+      },
+      {
+        "name": "AGE_3717.ogg",
+        "type": "added"
+      },
+      {
+        "name": "AGE_3718.ogg",
+        "type": "added"
+      },
+      {
         "name": "AGE_3725.ogg",
         "type": "added"
       },
@@ -95145,7 +95169,7 @@
   },
   "zh-CN/Rio.arc": {
     "kind": "copy",
-    "checksum": "623648cc818509890784062220eb5ab56bfd710428b38abee058156aa43f481c"
+    "checksum": "73cfa3d1c6b0928f7b84e40ba450d8302f024b50d5f94794d01baf1b0603c701"
   },
   "RIO": {
     "kind": "loose",

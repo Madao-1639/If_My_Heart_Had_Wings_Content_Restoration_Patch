@@ -24,7 +24,7 @@ def orig_dir():
             _ORIG = env
         else:
             for d in os.listdir(ROOT):
-                # 兼容历史目录名（在这片天空…汉化版）与 2026-10-02 改名后的 If_My_Heart_Had_Wings_Original
+                # 兼容历史目录名（在这片天空…汉化版）与改名后的 If_My_Heart_Had_Wings_Original
                 if d.startswith(u'\u5728\u8fd9\u7247\u5929\u7a7a') or d == 'If_My_Heart_Had_Wings_Original':
                     _ORIG = os.path.join(ROOT, d)
                     break

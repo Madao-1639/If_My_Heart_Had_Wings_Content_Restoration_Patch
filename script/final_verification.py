@@ -167,6 +167,14 @@ def main():
         _pm = json.load(open(ps_path, encoding='utf-8'))
         _want = sum(1 for s0 in _pm.get('sites', [])
                     if s0.get('action') in ('drop', 'replace'))
+        # CG 线表 `cg_site_rewrites.json` 的 `ev_drops` 同样并入 `plan.perf_sync` 落地
+        _cgp = os.path.join(ROOT, 'resource', 'cg_site_rewrites.json')
+        if os.path.exists(_cgp):
+            _want += len(json.load(open(_cgp, encoding='utf-8')).get('ev_drops') or [])
+        _psm = os.path.join(ROOT, 'resource', 'perf_sync_manual.json')
+        if os.path.exists(_psm):
+            _pmd = json.load(open(_psm, encoding='utf-8'))
+            _want += len(_pmd.get('drops') or []) + len(_pmd.get('replaces') or []) + len(_pmd.get('keeps') or [])
         _got = sum(v for k, v in _plan.get('gates', {}).items() if k.startswith('perf_sync_'))
         check('4b 演出同步名单逐条落地（名单 %d 条）' % _want, _want > 0 and _want == _got,
               '落地 %d' % _got)
@@ -202,7 +210,8 @@ def main():
     # 同名整名覆盖是方针（resource-naming.md §1–§3）：判定表 overwrite 子集逐名豁免；
     # 名单外一律不得替换（route §4 写盘器硬要求）。
     roster = set()
-    for fn, alist in (('censor_map.json', 'members'), ('voice_conflict_map.json', 'members')):
+    for fn, alist in (('censor_map.json', 'members'), ('voice_conflict_map.json', 'members'),
+                      ('perf_sync_map.json', 'member_overwrites')):
         mp = json.load(open(os.path.join(ROOT, 'resource', fn), encoding='utf-8'))
         for m in mp.get(alist, []):
             if m.get('action') == 'overwrite':
@@ -279,6 +288,60 @@ def main():
             zl = lng.parse_lng(zrio[s + '.lng'], key=lng.KEY_STEAM_ZHCN)
             ok = len(zl) == n
         check('8 A-1 %s（脚本+lng %d 槽）' % (s, n), ok)
+
+    # ── 9. WS2 尾表（末尾 8 字节明文表：[消息数][选项条目数]）──
+    # 引擎按该表给「已读消息位图」（存档目录 MessageFlag.dat）分配
+    # (消息数+选项数+7)/8 字节，而写位**不做边界检查** ⇒ 表小于真实消息数时
+    # 高位下标直接写到相邻堆块上 ⇒ 概率性 0xc0000374 闪退（见 GalRev
+    # docs/engines/advhd/file-formats.md「末尾 8 字节」/ save-system.md）。
+    # 因此：任何插入/删格必须同步重写该表；这里闸「产物 == 实算」，并把
+    # 「基线自己就偏离」的脚本排除（本作 Steam 基线有 3 个如此）。
+    tail_checked = 0
+    tail_bad = []
+    for rel in sorted(asset_arcs()):
+        ap = os.path.join(ASSET, rel)
+        bp = os.path.join(BACKUP, rel)
+        try:
+            ms = read_members(ap)
+        except Exception:
+            continue
+        if not any(n.lower().endswith('.ws2') for n in ms):
+            continue
+        base = None
+        if os.path.exists(bp):
+            try:
+                base = read_members(bp)
+            except Exception:
+                base = None
+        _ok, bad = ws2.check_tails(ms, base)
+        tail_checked += len(ms)
+        tail_bad += ['%s:%s(%s<%s)' % (rel, n, t[0], c[0]) for n, c, t in bad if t[0] < c[0]]
+    check('9 WS2 尾表 >= 消息数（检查 %d 成员，危险 %d）' % (tail_checked, len(tail_bad)),
+          not tail_bad, str(tail_bad[:6]))
+
+    # ── 10. 语音重指（人工定案 resource/voice_repoint_manual.json）──
+    # 判据落在**内容面**（不能只查名单条数）：产物脚本里旧 token 消失／新 token 在位，
+    # 且交付 `VOICE.arc` 里该成员的**字节 == 原版**——否则玩家听到的还是 Steam 那条录音。
+    vp = os.path.join(ROOT, 'resource', 'voice_repoint_manual.json')
+    if os.path.exists(vp):
+        reps = json.load(open(vp, encoding='utf-8')).get('repoints') or []
+        _vo = os.path.join(ASSET, 'VOICE.arc')
+        vol = ({k.lower(): v for k, v in read_members(_vo).items()}
+               if os.path.exists(_vo) else {})
+        try:
+            orig_v = {k.lower(): v for k, v in read_members(
+                os.path.join(paths.orig_dir(), 'VOICE.arc')).items()}
+        except Exception:
+            orig_v = {}
+        for e in reps:
+            key = e['script'] + '.ws2'
+            dec = ws2.decode(rio[key]) if key in rio else b''
+            check('10 语音重指 %s %s→%s（旧 token 消失／新 token 在位）'
+                  % (e['script'], e['from'], e['to']),
+                  e['from'].encode('ascii') not in dec and e['to'].encode('ascii') in dec)
+            if orig_v:
+                check('10 语音重指成员 %s 字节 == 原版' % e['to'],
+                      vol.get(e['to'].lower()) == orig_v.get(e['to'].lower()))
 
     # ── 汇总 ──
     lines.append('')

@@ -33,6 +33,84 @@ DISPLAY = re.compile(
     rb'\x0b(..)\x01\x0b(..)\x01', re.S)
 
 
+# ── 文件末尾 8 字节「明文尾表」 ────────────────────────────────────────────────
+# 文件**末尾 8 字节**是不参与混淆的明文表 `[u32 消息数][u32 选项条目数]`
+# （0x14 条数 / 0x0f 的 entry 数）。引擎**加载脚本时**读它（`data[size-8]`），
+# 用来给「已读消息位图」（存档目录 `MessageFlag.dat`）分配容量
+# `(消息数 + 选项条目数 + 7) / 8` 字节；而写位函数 `bitmap[idx>>3] |= 1<<(idx&7)`
+# **不做边界检查** ⇒ 尾表小于脚本真实消息数时，高位下标直接写到相邻堆块上，
+# 延迟到某次 free 被堆校验抓到 ⇒ `0xc0000374` 概率性闪退（不是崩在写位处）。
+# ⇒ **任何改变 0x14 / 0x0f 条数的改动都必须同步重写这 8 字节**，且要在
+#   `encode()` **之后**写（写成明文；先写会被旋转成垃圾）。
+# （机制与跨作验证见 GalRev `docs/engines/advhd/file-formats.md`「末尾 8 字节」
+#   与 `save-system.md`「MessageFlag.dat」。）
+TAIL_LEN = 8
+
+
+def read_tail_counts(raw):
+    """读原始成员末尾 8 字节 → (消息数, 选项条目数)。"""
+    if len(raw) < TAIL_LEN:
+        raise ValueError('ws2 too short for a tail table (%d bytes)' % len(raw))
+    return struct.unpack('<II', raw[-TAIL_LEN:])
+
+
+def tail_counts(decoded):
+    """数解码流里的 (0x14 指令数, 0x0f 的 entry 数)。"""
+    from tool import ws2dis
+    msgs = choices = 0
+    for _off, op, _sz, ops in ws2dis.disassemble(decoded)[0]:
+        if op == 0x14:
+            msgs += 1
+        elif op == 0x0f and ops:
+            choices += ops[0]          # 变长块首字节 = 条目数（格式表 0x0f = `00 ff`）
+    return msgs, choices
+
+
+def set_tail_counts(raw, counts):
+    """重写明文尾表；**必须在 `encode()` 之后调用**。"""
+    return raw[:-TAIL_LEN] + struct.pack('<II', int(counts[0]), int(counts[1]))
+
+
+def fix_tail_after_rewrite(raw_new, decoded_new, raw_base, decoded_base):
+    """按「基线约定」自适应重写改写后脚本的尾表。
+
+    基线自身两侧一致（尾表 == 实算）时写实算值；基线自身就不一致时
+    （本作 Steam 基线有 3 个脚本如此，见 `check_tails`）按增量平移，
+    以免把基线自己的偏离当成新破坏。
+    """
+    base_tail = read_tail_counts(raw_base)
+    base_cnt = tail_counts(decoded_base)
+    new_cnt = tail_counts(decoded_new)
+    if base_cnt == base_tail:
+        want = new_cnt
+    else:
+        want = (base_tail[0] + (new_cnt[0] - base_cnt[0]),
+                base_tail[1] + (new_cnt[1] - base_cnt[1]))
+    return set_tail_counts(raw_new, want), want
+
+
+def check_tails(members, base_members=None):
+    """逐成员查尾表。返回 (ok_list, bad_list)。
+
+    bad_list 元素为 (成员名, 实算, 尾表)；给 `base_members` 时只报
+    「基线本来没问题、产物却坏了」的成员（真正的新增破坏）。
+    """
+    ok, bad = [], []
+    for name, raw in members.items():
+        if not name.lower().endswith('.ws2'):
+            continue
+        cnt = tail_counts(decode(raw))
+        tail = read_tail_counts(raw)
+        if cnt == tail:
+            ok.append(name)
+            continue
+        if base_members and name in base_members:
+            if tail_counts(decode(base_members[name])) != read_tail_counts(base_members[name]):
+                continue                       # 基线自身就偏离 ⇒ 不计新增破坏
+        bad.append((name, cnt, tail))
+    return ok, bad
+
+
 def decode(raw):
     """反混淆一个 .ws2 成员（rotate left 6）。"""
     return bytes(((c << 6) | (c >> 2)) & 0xff for c in raw)
