@@ -561,6 +561,76 @@ def build_whole_plan(script, ofmt, gates, ren):
             'resources': {k: sorted(v) for k, v in need.items()}}
 
 
+def head_scope_hosts(plans):
+    """首改动槽位 == 0 的宿主（即「插入/删格/演出同步/CG 显示点」落在脚本最前面）。
+
+    与 A-1 整脚本合起来就是跨脚本接缝的**结构适用范围**：插入内容的前缀/后缀
+    所在的位置。判据是槽位最小值，不靠人工登记。
+    """
+    out = set()
+    for s, h in plans['hosts'].items():
+        if h.get('kind') != 'host':
+            continue
+        pl = h['plan']
+        cand = []
+        for v in (pl.get('inserts') or []):
+            cand.append(v[1])
+        for v in (pl.get('drops') or []):
+            cand.append(v)
+        for v in (pl.get('perf_sync') or {}):
+            cand.append(int(v))
+        for v in (pl.get('cg_sites') or []):
+            cand.append(v[0] if isinstance(v, (list, tuple)) else v.get('slot'))
+        cand = [x for x in cand if x is not None]
+        if cand and min(cand) == 0:
+            out.add(s)
+    return out
+
+
+def _with_offsets(instrs):
+    """`[(op, ops)]` → `[(op, ops, None)]`（占位偏移，供统一调用形状）。"""
+    for op, ops in instrs:
+        yield op, ops, None
+
+
+def build_seam_clears(plans, ofmt):
+    """跨脚本接缝的入口清屏（见 tool/perfsync.py「跨脚本接缝」）。
+
+    适用范围＝结构定义：A-1 整脚本（整个新增脚本的前缀）＋ 首改动槽位为 0 的宿主
+    （插入区间的前缀）。判据＝「产物各入场路径的在屏通道并集 − 原版同口径并集」。
+    清屏幂等 ⇒ 多入口（剧情前序／回想列表）不需分来源，重复清无害。
+
+    返回 ({目标脚本: [需清通道]}, scope)，**空集也写**（区分「查过且空」与「没查」）。
+    """
+    steam = rio_dec('steam')
+    orig = rio_dec('orig')
+    odir = paths.orig_dir()
+    prod_prof, orig_prof = {}, {}
+    # 产物侧＝Steam 侧，但 A-1 那 5 个换成原版转码版（A-1 是整脚本回填，不经 rebuild_host）
+    for k, d in steam.items():
+        prod_prof[k] = perfsync.script_profile(ws2dis.disassemble(d)[0])
+    for k in A1_SCRIPTS:
+        # 注意：rio_dec 返回的是**已解码**字节，convert_script 要的是原始编码字节 ⇒ 用 os_enc
+        conv = ws2.decode(convert_script(os_enc(k), odir))
+        prod_prof[k] = perfsync.script_profile(ws2dis.disassemble(conv)[0])
+    for k, d in orig.items():
+        try:
+            insts, _t = conv_parse(d, ofmt)
+        except AssertionError:
+            continue          # 内嵌数据表脚本（CO1_018 等），跨脚本边不可解析
+        orig_prof[k] = perfsync.script_profile(list(_with_offsets(insts)))
+    # 产物侧边集 = Steam 侧 + **跳转恢复**（JUMP_REVERTS 在写盘期才落到字节，
+    # 计划器里必须先在 profile 上应用，否则会拿「Steam 还在跳过 A-1」的假边集来算，
+    # 得出与事实相反的读数：A-1 目标看起来没有剧情前序、`st03` 反而"原版才有"）。
+    for script, old_t, new_t in plans.get('jumps') or []:
+        pf = prod_prof.get(script)
+        if pf is None:
+            continue
+        pf['jumps'] = [new_t.upper() if j == old_t.upper() else j for j in pf['jumps']]
+    scope = set(A1_SCRIPTS) | head_scope_hosts(plans)
+    return perfsync.seam_clear(prod_prof, orig_prof, scope), scope
+
+
 def os_enc(script):
     """orig 侧原始编码字节（rotate-6 未解码）。"""
     for nb, d in arcbuild.read_raw(os.path.join(paths.orig_dir(), 'Rio.arc')):
@@ -776,6 +846,18 @@ def main():
                 continue
             vrep.append(e)
     plans['voice_repoints'] = vrep
+    # ── 跨脚本接缝入口清屏（见 tool/perfsync.py「跨脚本接缝」）──
+    # 适用范围由结构决定（A-1 整脚本 ＋ 首改动槽位为 0 的宿主），不靠「哪里测出残留」。
+    try:
+        seam, seam_scope = build_seam_clears(plans, ofmt)
+    except AssertionError as ex:
+        errors.append('接缝判据失败: %s' % ex)
+        seam, seam_scope = {}, set()
+    plans['seam'] = {
+        'scope': sorted(seam_scope),
+        'entry_clear': seam,
+        'note': 'entry_clear 空集也列：区分「查过且空」与「没查」。',
+    }
     plans['resources'] = resource_plan
     plans['gates'] = gates
 

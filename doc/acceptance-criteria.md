@@ -16,6 +16,7 @@
 
 - [ ] 所有新插入的跳转/调用目标脚本在归档中确实存在
 - [ ] 原地插入的还原内容片段之后，脚本原有的其余部分（包括 Steam 版新增的成就调用指令）未被破坏或误删。删格**只移除被删文本行的正文指令 `14` 与其名字框指令 `15`**（守卫＝不改变任何存活格的生效名字框），**格内其余指令（演出、变量与布尔写入、图层调用、跳转、成就调用）逐字节原位**（见 [restoration-route.md](restoration-route.md) §7 V-9）
+- [ ] **跨脚本接缝的入口状态对齐**：A-1 整脚本与「首个改动槽位为 0 的宿主」的**每一条入边**，产物入场通道并集必须等于原版同口径并集（判据与适用范围见 [restoration-route.md](restoration-route.md) §4「跨脚本接缝」）。`resource/restore_plan.json` 的 `seam.entry_clear` 逐脚本登记（**空集也列**）；`build_patch.py` 断言**名单条数 == 落地条数**；`script/final_verification.py` 第 4c 项逐脚本回读产物前缀含该清屏；独立闸 `python script/checks/seam_check.py` 退出码 0（范围按**结构枚举**、范围内所有入边全查、逐条带两侧状态，两个方向都 HARD）。症状＝**黑屏**（前序脚本残留的全黑图 `st03 = BG00_01S.PNG` 一路盖住还原回的场景）
 - [ ] **删格演出摘净**：被删行的演出前缀区（语音 `2e`+`28`、显示 `33`/`34`、BGM `1e`、图层定位 `46`、特效）随该行一并摘除（`tool/writer.drop_units()` 的 `KEEP_OPS` 之外全删）；状态写入／跳转／成就调用逐字节原位
 - [ ] **无对白语音连播 = 0**：产物里不得出现「同一格携带多条**残留**语音触发」（名字属被删格）的段——`script/verify_sync.py` 的 `R.residue_voice_burst` ＝ 0 且 `R.residue_voice` ＝ 0。合唱行（原版自身一格多触发）不算
 - [ ] **残留显示点 = 0**：`R.residue_cg`／`R.residue_sprite`／`R.residue_bgm` 全为 0，`B9-drop-residue`／`B8-picture`／`B8-bgm`／`B4`/`B6`/`B7-*-residue` 无 HARD。**只有顶包名（判定表 `class=reuse`）需要逐点核对**，且核对的作用域＝**还原后仍保留的 Steam 格**；每个需改写的格都有对应的**调用点级**改写结论或人工定案

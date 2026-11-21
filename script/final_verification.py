@@ -181,6 +181,40 @@ def main():
     else:
         check('4b 演出同步判定表存在', False, 'resource/perf_sync_map.json 缺失')
 
+    # ── 4c. 跨脚本接缝（seam）：范围内全部入边的入口状态对齐 ──
+    # 判据与适用范围见 doc/restoration-route.md §4「跨脚本接缝」、tool/perfsync.py「跨脚本接缝」。
+    # 范围按**结构枚举**（A-1 整脚本 ＋ 首改动槽位为 0 的宿主）⇒ 范围边数必须等于计划表
+    # 登记值，不等即判「范围枚举失效」（防止判据自己漂移后静默放行）。
+    _seam = _plan.get('seam') or {}
+    if _seam:
+        _want_seam = {k: v for k, v in (_seam.get('entry_clear') or {}).items() if v}
+        _scope = _seam.get('scope') or []
+        check('4c 接缝适用范围已登记（%d 脚本）' % len(_scope), len(_scope) > 0, '')
+        # 落地断言：产物里每个需清脚本的**前缀区**（第一条 0x14 之前）必须含该清屏通道
+        _rio = dict(read_members(os.path.join(ASSET, 'Rio.arc')))
+        _okc, _badc = 0, []
+        for _sc, _chans in sorted(_want_seam.items()):
+            _raw = None
+            for _n, _d in _rio.items():
+                if _n.lower() == _sc.lower() + '.ws2':
+                    _raw = _d
+                    break
+            if _raw is None:
+                _badc.append((_sc, 'missing member'))
+                continue
+            _dec = ws2.decode(_raw)
+            _pfx = _dec.split(b'\x14', 1)[0]
+            _miss = [c for c in _chans
+                     if (b'\x37' + c.encode('ascii') + b'\x00') not in _pfx]
+            if _miss:
+                _badc.append((_sc, _miss))
+            else:
+                _okc += 1
+        check('4c 接缝清屏逐脚本落地（%d/%d）' % (_okc, len(_want_seam)),
+              not _badc, repr(_badc[:4]))
+    else:
+        check('4c 接缝登记区块存在', False, 'resource/restore_plan.json 缺 seam')
+
     # ── 5. 零破坏性（keep 成员与 backup 逐字节相等）──
     swapped = []
     for arch in SHIPPED_ARCHIVES:

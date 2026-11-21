@@ -280,3 +280,63 @@ def convert_script(raw, orig_dir):
             assert v in starts, \
                 'rebased target %#x (op %#x field %#x) not at instruction start' % (v, op, k)
     return ws2.encode(out_decoded)
+
+
+# ── 脚本头部前缀插指令（跨脚本接缝的入口清屏用）──────────────────────────────
+CLEAR_OP = 0x37
+
+
+def insert_head_clear(decoded, chans):
+    """在**解码流**最前面插入 `37 <通道>\0` 清屏，并把所有绝对偏移字段整体重定基。
+
+    用途：跨脚本接缝的入口状态规范化（见 tool/perfsync.py「跨脚本接缝」）。清屏是
+    **幂等**的（通道不在屏时清它是空操作），所以多入口（剧情前序／回想列表列表页）
+    共用同一个前缀清屏不需要分来源；重复清只浪费 1 条指令，不影响画面。
+
+    `decoded` 是**解码后**的 Steam 编码流（`convert_script` 的产物再 `ws2.decode`）。
+    返回 `(new_decoded, n_rebased)`；`chans` 为空时原样返回。
+
+    硬约束（调用方负责断言，本函数内部能查的都查了）：
+      1. 重定基后每个非零目标都必须落在**指令起点**；
+      2. 反汇编自洽；
+      3. 末尾 8 字节尾表**不变**（`0x14`/`0x0f` 条数没变）；
+      4. 只发 `0x37`，**不携带任何 `0x04` 成就钩子**（不新增成就触发点）。
+    """
+    chans = [c for c in (chans or [])]
+    if not chans:
+        return decoded, 0
+    ins = b''.join(bytes([CLEAR_OP]) + c.encode('ascii') + b'\x00' for c in chans)
+    n = len(ins)
+    out = bytearray(ins + decoded)
+    insts, _ok = ws2dis.disassemble(bytes(out))
+    rebased = 0
+    for off, op, sz, _ops in insts:
+        ks = REBASE_OPS.get(op)
+        if not ks:
+            continue
+        base = off + 1
+        for k in ks:
+            if sz - 1 < k + 4:
+                continue
+            v = struct.unpack_from('<I', out, base + k)[0]
+            if v == 0:                     # 0 = 无此目标，必须跳过
+                continue
+            struct.pack_into('<I', out, base + k, v + n)
+            rebased += 1
+    new = bytes(out)
+    # ── 自校验 ──
+    insts2, ok2 = ws2dis.disassemble(new)
+    assert ok2, 'insert_head_clear: 插入后反汇编不自洽'
+    starts = {off for off, _op, _sz, _o in insts2}
+    for off, op, sz, ops2 in insts2:
+        for k in REBASE_OPS.get(op, ()):
+            if sz - 1 < k + 4:
+                continue
+            v = struct.unpack_from('<I', ops2, k)[0]
+            assert not v or v in starts, \
+                'insert_head_clear: 重定基目标 %#x（op %#x @%#x）不落在指令起点' % (v, op, off)
+    assert new[-8:] == decoded[-8:], 'insert_head_clear: 尾表被改动'
+    assert sum(1 for _o, op, _s, _p in insts2 if op == 0x14) == \
+           sum(1 for _o, op, _s, _p in ws2dis.disassemble(decoded)[0] if op == 0x14), \
+        'insert_head_clear: 0x14 条数变化（.lng 对位会错）'
+    return new, rebased

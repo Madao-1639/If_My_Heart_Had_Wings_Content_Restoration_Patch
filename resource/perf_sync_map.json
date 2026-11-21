@@ -69,6 +69,22 @@
    "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
+   "script": "AGE_005",
+   "slot": 128,
+   "orig_row": null,
+   "action": "drop",
+   "kind": "extra_absent",
+   "channels": [
+    "bg02"
+   ],
+   "prod": {
+    "bg02": "AGE_06_008B.PNG"
+   },
+   "orig": {},
+   "voice": null,
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
    "script": "AGE_006",
    "slot": 12,
    "orig_row": 12,
@@ -863,14 +879,16 @@
     "st01",
     "st02",
     "st03",
-    "st04"
+    "st04",
+    "st05"
    ],
    "prod": {
     "st01": "EST_1006.PNG",
     "st02": "EST_1005.PNG",
     "st03": "EST_1002.PNG",
     "st04": "EST_1095.PNG",
-    "bg02": "EST_1000.PNG"
+    "bg02": "EST_1000.PNG",
+    "st05": "AMA_06_002B.PNG"
    },
    "orig": {
     "bg02": null,
@@ -1032,6 +1050,24 @@
    "prod": {},
    "orig": {},
    "voice": null,
+   "evidence": "doc/restoration-route.md §6 V-10"
+  },
+  {
+   "script": "AMA_004",
+   "slot": 567,
+   "orig_row": 583,
+   "action": "replace",
+   "kind": "replace",
+   "channels": [
+    "bg01"
+   ],
+   "prod": {
+    "bg01": "AMA_06_001B.PNG"
+   },
+   "orig": {
+    "bg01": null
+   },
+   "voice": "AMA_1695.OGG",
    "evidence": "doc/restoration-route.md §6 V-10"
   },
   {
@@ -2644,13 +2680,16 @@
    "action": "replace",
    "kind": "replace",
    "channels": [
-    "bg01"
+    "bg01",
+    "bg02"
    ],
    "prod": {
-    "bg01": "BG00_02S.PNG"
+    "bg01": "BG00_02S.PNG",
+    "bg02": "KOT_12_003S.PNG"
    },
    "orig": {
-    "bg01": null
+    "bg01": null,
+    "bg02": null
    },
    "voice": "KOT_2181.OGG",
    "evidence": "doc/restoration-route.md §6 V-10"
@@ -3757,15 +3796,15 @@
  ],
  "summary": {
   "pairs": 24714,
-  "replace_slots": 70,
+  "replace_slots": 71,
   "out_of_scope": 16,
+  "absent_slots": 8,
+  "absent_chans": 14,
   "review_slots": 9,
   "layer_slots": 124,
   "untrusted": 1,
-  "absent_slots": 7,
-  "absent_chans": 13,
-  "extra_slots": 31,
-  "extra_chans": 37
+  "extra_slots": 32,
+  "extra_chans": 39
  },
  "member_overwrites": []
 }

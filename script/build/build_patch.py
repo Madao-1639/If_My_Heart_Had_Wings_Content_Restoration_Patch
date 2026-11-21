@@ -29,7 +29,7 @@ if ROOT not in sys.path:
 from tool import arcbuild, ws2, lng, ws2dis  # noqa: E402
 from tool import writer  # noqa: E402
 from tool import paths  # noqa: E402
-from tool.ws2conv import load_orig_formats, convert_script  # noqa: E402
+from tool.ws2conv import load_orig_formats, convert_script, insert_head_clear  # noqa: E402
 
 ASSET = os.path.join(ROOT, 'asset')
 L4_TREE = os.path.join(ROOT, 'tmp', '_l4', 'asset')
@@ -96,6 +96,8 @@ def main():
 
     # ── 1. Rio.arc ──
     rio = read_members(os.path.join(STEAM, 'Rio.arc'))
+    seam_clear = (plan.get('seam') or {}).get('entry_clear') or {}
+    seam_done = {}
     for script, pl in plan['A1'].items():
         name = script + '.ws2'
         conv = convert_script(read_orig_raw(script), orig_dir)
@@ -104,6 +106,16 @@ def main():
                                      {k.encode('ascii'): v.encode('ascii')
                                       for k, v in pl['names'].items()})
             conv = ws2.encode(dec)
+        # 跨脚本接缝的入口清屏（见 tool/perfsync.py「跨脚本接缝」）：A-1 是**整脚本回填**、
+        # 不经 rebuild_host 的状态规范化，必须在脚本前缀补上，否则前序脚本残留的黑幕
+        # （Steam 在被删段收场处新增的 `st03`）会一路盖住还原回的场景。
+        chans = seam_clear.get(script) or []
+        if chans:
+            dec, n_rb = insert_head_clear(ws2.decode(conv), chans)
+            conv = ws2.encode(dec)
+            seam_done[script] = chans
+            report.append('Rio seam-clear %s: %s (rebased %d)'
+                          % (script, ','.join(chans), n_rb))
         rio[name] = conv
         report.append('Rio +A1 %s (%dB)' % (script, len(conv)))
     for script, old, new in plan['jumps']:
@@ -318,6 +330,14 @@ def main():
             report.append('%s: +%d 补入, %d 覆盖' % (arch, added, replaced))
         else:
             report.append('%s: 与 backup 无差异，不交付' % arch)
+    # 接缝清屏：名单条数 == 落地条数（未落地即中止，不得静默跳过）
+    want_seam = {k: v for k, v in (seam_clear or {}).items() if v}
+    assert seam_done == want_seam,         '接缝清屏未逐条落地：落地 %r != 名单 %r（tool/perfsync.py「跨脚本接缝」）' % (
+            sorted(seam_done), sorted(want_seam))
+    if want_seam:
+        report.append('接缝清屏: %d 个脚本（%s）'
+                      % (len(want_seam), ', '.join(sorted(want_seam))))
+
     assert ow_done == len(plan['resources'].get('overwrite', [])), \
         '覆盖子集未逐名落地：写盘 %d != 名单 %d（route §4 硬要求）' % (
             ow_done, len(plan['resources'].get('overwrite', [])))

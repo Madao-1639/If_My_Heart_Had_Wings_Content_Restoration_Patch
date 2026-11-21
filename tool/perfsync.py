@@ -70,19 +70,22 @@ def pop_clear(state, chan):
         state.pop(chan, None)
 
 
-def row_setters(instrs):
+def row_setters(instrs, entry=None):
     """逐 `14` 行的 **(在屏状态, 赋值块)**。
 
     * 状态：族级清屏已展开（与 `perf_rows` 同口径）；
     * 赋值块 `setters[r][chan] = (i0, i1)`：把该通道赋成 `states[r][chan]` 的那一次
       **显示块**在 `instrs` 里的下标区间（显示指令＋图层伴生＋前置 `64`）——
       写盘器做「状态对齐」时照抄这一段的字节。
+    * `entry`：**跨脚本入场状态**——前序脚本末尾的在屏画面会被带进目标脚本的
+      工程前提见 doc/restoration-route.md §4「跨脚本接缝」。缺省 `None` ⇒ 从空屏起算，
+      即「单脚本内视角」，与改造前行为完全一致。
 
     返回 `(states, setters)`，下标与 `14` 出现序一一对应。
     """
     ins = [_pair(x) for x in instrs]
     states, setters = [], []
-    state, setter, i, n = {}, {}, 0, len(ins)
+    state, setter, i, n = dict(entry or {}), {}, 0, len(ins)
     while i < n:
         op, ops = ins[i]
         if op == ROW:
@@ -216,13 +219,14 @@ def subimage_verdict(cur_tab, org_tab, ids_cur, ids_org):
     return 'repoint' if need_repoint else 'same'
 
 
-def perf_rows(instrs):
+def perf_rows(instrs, entry=None):
     """逐 `14` 槽 → {'own': {...}, 'eff': {...}}。
 
     `own` 只含本槽自带演出；`eff` 为含延续的末值（`ev`／`st*`／`bg*`／`bgm` 延续，
     `voice` 逐行）。显示值为**归一后**的图名。
+    `entry`：跨脚本入场状态（口径同 `row_setters`）；缺省 `None` ⇒ 空屏起算。
     """
-    state, rows, own, voice = {}, [], {}, []
+    state, rows, own, voice = dict(entry or {}), [], {}, []
     for _off, op, _sz, ops in instrs:
         s = _strs(ops)
         if op in DISPLAY and len(s) >= 2:
@@ -624,3 +628,103 @@ def restored_scope(s_own, o_own, drops, inserts, n_steam):
                 if src == 'steam' and setter[chan] is not None:
                     out[setter[chan]] = True
     return out
+
+
+# ── 跨脚本接缝（seam）─────────────────────────────────────────────────────────
+# 背景：`0x07 <脚本名>` 是跨脚本跳转，前序脚本末尾的在屏画面会被带进目标脚本
+# （工程前提与实测缺陷形态见 doc/restoration-route.md §4「跨脚本接缝」）。
+# 因此「某脚本第一行看到什么」取决于**谁跳进来**，
+# 而单脚本视角（`row_setters`/`perf_rows` 从空屏起算）在结构上看不见这件事。
+#
+# 本项目已实测的缺陷形态：Steam 在被删 H 段的收场处新增了一幕 `st03`（全黑 PNG），
+# 补丁把删掉的 A-1 整脚本补回后，该黑幕无人接管、一路盖住新补回的 HS 场景 ⇒ 黑屏。
+#
+# 判据（与处置动作的后果直接相关，不做「按图名/按引用数」之类的代理量）：
+#   产物入场通道 = ∪ { 产物前序脚本末尾在屏通道 }
+#   原版入场通道 = ∪ { 原版前序脚本末尾在屏通道 }
+#   需清通道     = 产物入场通道 − 原版入场通道
+# 清屏**幂等**（通道不在屏时清它是空操作）⇒ 多入口（剧情前序 / 回想列表）不需分来源。
+JUMP = 0x07
+
+
+def script_profile(instrs):
+    """单脚本 → {'end': 末尾在屏状态, 'jumps': [0x07 目标名大写], 'put': 设过的通道}。
+
+    `end` 只保留图像类通道（`ev`／`st*`／`bg*`），值已归一（与 `perf_rows` 同口径）。
+    `put` 收集该脚本**碰过**的通道（显示或清屏，族级清屏展开到族名），
+    用于「这个脚本会不会自己接管该通道」的判断。
+    """
+    ins = [_pair(x) for x in instrs]
+    state, put = {}, set()
+    jumps = []
+    for op, ops in ins:
+        if op == JUMP:
+            s = _strs(ops)
+            if s:
+                jumps.append(s[0].upper())
+            continue
+        if op in DISPLAY:
+            s = _strs(ops)
+            if len(s) >= 2 and _is_img_chan(s[0]):
+                state[s[0]] = norm_sprite(s[1])
+                put.add(s[0])
+        elif op == CLEAR:
+            s = _strs(ops)
+            if not s:
+                continue
+            ch = s[0]
+            if ch in FAMILY:
+                put |= {k for k in state if k.startswith(ch)}
+                put.add(ch)
+            else:
+                put.add(ch)
+            pop_clear(state, ch)
+    return {'end': {k: v for k, v in state.items() if _is_img_chan(k)},
+            'jumps': jumps, 'put': put}
+
+
+def entry_channels(profiles, targets, orig=False):
+    """逐目标脚本 → 其**各入场路径**的末尾在屏通道并集。
+
+    `profiles` = {脚本名: script_profile(...)}；`targets` = 需要算的脚本名集合。
+    只沿 `0x07` 边收集（`0x02`/`0x06` 是文件内跳转，不跨脚本）。
+    """
+    out = {t: {} for t in targets}
+    for pre, p in profiles.items():
+        for t in p['jumps']:
+            if t not in out or t == pre:
+                continue
+            for chan, val in p['end'].items():
+                out[t].setdefault(chan, set()).add(val)
+    return out
+
+
+def seam_clear(prod_profiles, orig_profiles, targets):
+    """→ {目标脚本: [需清的通道, ...]}（`targets` 内每个脚本都出现，**空集也写**）。
+
+    判据见本节抬头。空集也返回是关键：让「查过且为空」与「根本没查」在产物上可区分，
+    否则下一批新增内容会以同样方式静默复发。
+    """
+    pc = entry_channels(prod_profiles, targets)
+    oc = entry_channels(orig_profiles, targets, orig=True)
+    out = {}
+    for t in targets:
+        out[t] = sorted(c for c in pc.get(t, {}) if c not in oc.get(t, {}))
+    return out
+
+
+def seam_rows(prod_profiles, orig_profiles, targets):
+    """闸用：逐目标脚本给出**带两侧状态**的明细（不只计数）。"""
+    pc = entry_channels(prod_profiles, targets)
+    oc = entry_channels(orig_profiles, targets, orig=True)
+    rows = []
+    for t in sorted(targets):
+        have, want = pc.get(t, {}), oc.get(t, {})
+        rows.append({
+            'script': t,
+            'prod_entry': {k: sorted(v) for k, v in sorted(have.items())},
+            'orig_entry': {k: sorted(v) for k, v in sorted(want.items())},
+            'clear': sorted(c for c in have if c not in want),
+            'extra_value': sorted(c for c in have if c in want and have[c] != want[c]),
+        })
+    return rows
