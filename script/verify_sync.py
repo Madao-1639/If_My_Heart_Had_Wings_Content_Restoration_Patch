@@ -583,6 +583,16 @@ def main():
                 for kind, _chan, nm in s_cells[k]['tok']:
                     drop_voice[kind].add(nm)
 
+        # **语音重指**（人工定案 `resource/voice_repoint_manual.json` → `plan.voice_repoints`）：
+        # 产物里指向 **Steam 自有号段**的语音 token 已被改成对齐原版行那条原版录音。
+        # 所以期望值不能直接取 Steam 槽自带的 token，必须先套这张表换成改指后的名字。
+        # 不消费它 ⇒ 重指会让「正确结果」被读成 B5-voice-shift（HARD 误报）。
+        # 表里没有的 (槽, token) 保持原样（多数槽本就不需重指）。
+        repoint = {}
+        for _e in (plan.get('voice_repoints') or []):
+            if _e.get('script') == script:
+                repoint[(int(_e['slot']), _e['from'].upper())] = _e['to'].upper()
+
         # 被删格携带的演出名若在原版归档里查无同名成员 ⇒ 字节层覆盖消化不了（「回退面」）
         def in_orig_any(kind, nm):
             low = s(nm).lower()
@@ -647,8 +657,8 @@ def main():
                 if _spec and _spec.get('mode') == 'replace':
                     # 写盘器动作＝「先发补块（原版行的**立绘/背景**演出），再发该槽 Steam 前缀里
                     # **存活**的项」⇒ 期望值按同一顺序复现（末值优先）。存活判据与写盘器同源：
-                    # `perfsync.sb_chan()`——`st*`/`bg*` 且**图名不是 CG**的才被删；`ev` 与
-                    # 「塞在 bg 通道里的 CG」都留下（见 doc/restoration-route.md §7 V-10）。
+                    # `perfsync.is_sb_channel()`——`st*`/`bg*` 上的**全部**显示（含
+                    # 「塞在 bg 通道里的 CG」）都被删；`ev` 留下（见 doc/restoration-route.md §7 V-10）。
                     def _merge_tok(acc, kk, chan, nm):
                         if kk == 'sprite':
                             acc.setdefault('sprite', {})[chan.upper()] = nm
@@ -696,6 +706,14 @@ def main():
                         expect=s(_frm), got=s(own.get('cg')), to=s(to))
                 else:
                     own['cg'] = to
+            else:
+                # 重指后的期望名：表里登记过 (该 Steam 槽, 原名) 就取 `to`，否则保持原值。
+                # `own['voice']` 可能是 None（该槽无语音）——先查表再比较，不用对 None 取 upper。
+                _v = own.get('voice')
+                if kind == 'steam' and _v:
+                    _rep = repoint.get((idx, s(_v).upper()))
+                    if _rep:
+                        own['voice'] = _rep.encode('ascii')
             want_owns.append(own)
         want_effs = eff_chain(want_owns)
 

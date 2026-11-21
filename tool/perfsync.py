@@ -282,27 +282,71 @@ def is_cg_name(name):
     return u.split('_')[0] in ROUTES and bool(_CG_RX.match(u))
 
 
-def sb_chan(chan, name):
-    """是不是本机制该管的**立绘/背景**通道：`st*`/`bg*` 且图名**不是 CG**。
-
-    ⚠️ **仅用于产出端/闸的判读面**（判「这显示是不是多余演出」）；写盘器 `replace` 的
-    **删除**用 `is_sb_channel()`（只看通道）——整槽替换时 CG 名图也要删，删掉的部分由补块
-    带回原版行自己的块。旧版把本函数也用在删除上，造成 CG 名图「既不删也不读数」的盲区。
-    """
-    return is_sb_channel(chan) and not is_cg_name(name)
-
-
 def is_sb_channel(chan):
-    """通道是不是 `st*`／`bg*`（不论图名形状）——写盘器 `replace` 与闸的期望模型共用。"""
+    """这条显示归不归「立绘/背景演出」机制管：**只看通道，不看图名**。
+
+    * `st*`／`bg*` 通道上的显示一律归本机制——**包括 CG 名图**。Steam 会把第二张 CG
+      塞进 `bg` 通道（B→S 交叉淡入那一层），原版也大量这么用（原版 329 处、Steam 249 处）
+      ⇒ 这些点是**合法演出**，更该被审。不得按「图名是不是 CG」整类豁免——那会让这类点
+      落在「`perf_sync_map` 不覆盖 ＋ `cg_seq_check` 每行只取首张」的缝里，两边都不管。
+    * `ev` 通道归 CG 序列线（`cg_seq_check.py` ＋ `cg_site_rewrites.json`）。
+    * 其余通道（`bgm` 等）不归本机制。
+
+    槽级归属另由 `slot_owner()` 定：登记进 `cg_site_rewrites.json` 的槽**整槽归 CG 线**。
+    两者合起来才是「不多不少」：槽归谁由表定，通道内哪条显示归谁由通道定。
+    """
     return bool(chan) and (chan.startswith('st') or chan.startswith('bg'))
+
+
+_CG_SLOTS = None
+
+
+def slot_owner(script, slot):
+    """该槽归哪条线：`'cg'`（CG 序列线）或 `'perf'`（立绘/背景演出线）。
+
+    口径＝**按槽定罪**：`resource/cg_site_rewrites.json` 里登记过的槽（`sites`／`ev_drops`
+    的 `slot`）归 CG 线，其余归演出线。槽级归属与通道级归属（`is_sb_channel`）正交：
+    整槽归 CG 线时，该槽所有通道（含 `st*/bg*` 上的 CG 名图）都交 CG 线，本机制不插手。
+    """
+    global _CG_SLOTS
+    if _CG_SLOTS is None:
+        s = set()
+        p = os.path.join(ROOT, 'resource', 'cg_site_rewrites.json')
+        if os.path.exists(p):
+            d = json.load(open(p, encoding='utf-8'))
+            for k in ('sites', 'ev_drops'):
+                for e in (d.get(k) or []):
+                    if e.get('script') is not None and e.get('slot') is not None:
+                        s.add((e['script'], int(e['slot'])))
+        _CG_SLOTS = s
+    return 'cg' if (script, slot) in _CG_SLOTS else 'perf'
 
 
 # 显示块的图层伴生操作码：`39` 建层、`04 LAYER_ORDER` 调用、`09` 图层权重、
 # `46` 图层定位、`3e`/`65` 块尾标记；显示指令本身为 `33`/`34`，前置 `64`。
-# `0b`（布尔状态写入）夹在块内时**属块的一段**（块要连续扫过去），但**不随块搬运**
-# ——写入是状态、不是演出，删块时保留、补块时不重复写。
-BLOCK_OPS = {0x09, 0x0B, 0x39, 0x3E, 0x46, 0x65}
+# `0b`（布尔状态写入）与 `04 CG_ACHIEVEMENT`（成就脚本调用）**夹在块内时属块的一段**
+# （块要连续扫过去，否则块尾会被截在半路），但**不随块搬运**：它们是**解锁位点**
+# （画廊条目号 / 成就调用），不是演出——删块时保留、补块时不重复写。
+# ⚠ 两者都必须入 `BLOCK_OPS` 且入 `BLOCK_MOVE_SKIP`：只入 `BLOCK_MOVE_SKIP` 不入
+# `BLOCK_OPS` 会让它们在 `replace` 里被当块外孤立指令删掉（见 `BLOCK_MOVE_SKIP` 注释）。
+BLOCK_OPS = {0x04, 0x09, 0x0B, 0x39, 0x3E, 0x46, 0x65}
+# `04` 只有 `CG_ACHIEVEMENT` 调用是解锁位点；`LAYER_ORDER` 调用属块本身、要随块搬。
+# 因此 `BLOCK_MOVE_SKIP` 里的 `04` 由 `_is_unlock_call()` 进一步收窄。
 BLOCK_MOVE_SKIP = {0x0B}
+
+
+def _is_unlock_call(op, ops):
+    """该指令是不是**不可搬**的解锁位点（`04 CG_ACHIEVEMENT`）。
+
+    `04 <脚本名>\0` 是 RunFile 子程序调用：`LAYER_ORDER` 属演出块的一部分（随块搬），
+    `CG_ACHIEVEMENT` 属**成就触发**（不得随块搬、也不得因块被删而消失）。
+    """
+    return op == 0x04 and ops.split(b'\x00')[0] == b'CG_ACHIEVEMENT'
+
+
+def is_unmovable(op, ops):
+    """块内不随块搬运的指令（解锁位点）。搬运侧遇到它们要跳过。"""
+    return op in BLOCK_MOVE_SKIP or _is_unlock_call(op, ops)
 
 
 def _is_layer_order(op, ops):
@@ -375,7 +419,7 @@ def ev_name(state):
     return state.get('ev')
 
 
-def classify(prod_own, prod_eff, orig_eff):
+def classify(prod_own, prod_eff, orig_eff, script=None, slot=None):
     """本槽自带演出 vs 原版对齐行的**在屏**演出 → (extra, review, ev_extra)。
 
     * `extra`：本槽自带的 `st*`／`bg*` 显示是**多余演出**（原版在屏没有这张图），删。
@@ -386,14 +430,22 @@ def classify(prod_own, prod_eff, orig_eff):
     * `review`：其余差异（原版该通道是另一张图且产物没有 = different；原版在屏有、
       产物没有 = missing），逐条登记供人工裁定，不自动处置。
     * `ev_extra`：`ev` 通道的多余显示单列（CG 序列另有 `cg_seq_check.py` 专管）。
+
+    `script` / `slot` 给了就按 **`slot_owner()`** 判槽归属：登记进
+    `cg_site_rewrites.json` 的槽**整槽归 CG 线**，本机制不插手；其余槽按通道判
+    （`st*`/`bg*` 全归本机制，含 CG 名图）。
     """
     o_img = images(orig_eff)
     p_img = images(prod_eff)
     extra, review, ev_extra = [], [], []
+    own_by_cg = (script is not None and slot is not None
+                 and slot_owner(script, slot) == 'cg')
     for chan, name in sorted((prod_own.get('display') or {}).items()):
         if name in o_img:
             continue                                  # 原版在屏也有这张图 ⇒ 不多余
-        if sb_chan(chan, name):                       # `st*`/`bg*` 且**图名不是 CG**
+        if is_sb_channel(chan):                       # `st*`/`bg*`，**不看图名**
+            if own_by_cg:
+                continue                              # 整槽归 CG 线
             if chan not in orig_eff or orig_eff[chan] in p_img:
                 extra.append(chan)
             else:
@@ -401,7 +453,7 @@ def classify(prod_own, prod_eff, orig_eff):
                                'prod': name, 'orig': orig_eff.get(chan)})
         elif chan == 'ev':
             ev_extra.append(chan)
-        # 其余（`st*`/`bg*` 通道但**图名是 CG**）不进本机制：CG 归 cg_seq_check 管
+        # 其余（`bgm` 等非图像通道）不进本机制
     for chan in sorted(set(orig_eff) - set(prod_eff)):
         if _is_img_chan(chan) and orig_eff[chan] not in p_img:
             review.append({'kind': 'missing', 'chan': chan,

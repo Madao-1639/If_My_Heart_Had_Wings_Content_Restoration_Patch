@@ -42,6 +42,7 @@ from tool import v5lib  # noqa: E402
 from tool import paths  # noqa: E402
 from tool import perfsync  # noqa: E402
 from tool.ws2conv import load_orig_formats, parse as conv_parse, convert_script, REBASE_OPS  # noqa: E402
+from tool import cgunlock  # noqa: E402
 from tool import writer  # noqa: E402
 
 A1_SCRIPTS = ['ASA_002', 'ASA_004', 'YOR_003', 'YOR_005', 'YOR_007']
@@ -573,6 +574,9 @@ def main():
     ofmt = load_orig_formats(paths.orig_dir())
     led = load_ledgers()
     global CG_SITES, PERF_SYNC, CG_EV_DROPS, PSM_DROPS, PSM_REPLACES, PSM_KEEPS, VOICE_REPOINTS
+    # 解锁对的编号归属映射由 tool/cgunlock.default_map() 进程内缓存提供
+    # （全库共用只读常量，不写进计划表——否则会逐 host 复制 395 条 × 54 份）。
+    cgunlock.default_map()
     CG_SITES = load_cg_sites()
     PERF_SYNC = load_perf_sync()
     CG_EV_DROPS = load_cg_ev_drops()

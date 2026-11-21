@@ -44,6 +44,65 @@ CONV = {
 REBASE_OPS = {0x01: (7, 11), 0x02: (0,), 0x06: (0,)}
 
 
+# ── 跨引擎「标志字节」归一（只改取值、不改长度；坐标偏移全不动）────────────
+# 两侧工具链对 `0x46`／`0x47` 这两个同族指令的取值**零交叉**：原版 `0x46 ∈ {0x00,0x80}`、
+# `0x47.B ∈ {0x00,0x80}`；Steam `0x46 ∈ {0x00,0xf0}`、`0x47.B ∈ {0x00,0x10,0xc0}`。
+# 带着原版取值进 Steam 引擎会落在目标引擎自身的词表外：`0x46` 欠绑定子层槽（未重绑的槽保留
+# 上一次显示的子图 ⇒ 立绘残留）、`0x47` 的参数来源位失配（动画照跑、终点不对，不报错不闪退）。
+# 语义与依据见 doc/engine-mechanics.md「动画组的工作机制」与「0x47 Effect1 语义与跨引擎标志换算」。
+
+def norm_op46_flag(ops):
+    """`0x46` 子层槽绑定标志：原版 `0x80` → Steam `0xf0`（幂等）。
+
+    操作数布局 `<通道>\\0` ＋ u16 ＋ **u8 标志** ＋ 4×f32（`tool/ws2fmt.txt` 的 `0x46`），
+    所以标志在首个 NUL 之后的第 3 个字节。
+    """
+    i = ops.find(b'\x00')
+    if 0 <= i and len(ops) > i + 3 and ops[i + 3] == 0x80:
+        return ops[:i + 3] + b'\xf0' + ops[i + 4:]
+    return ops
+
+
+def norm_op47_flag(ops, last_drag_type):
+    """`0x47` Effect1 的参数来源标志：原版 `0x80` → Steam `0x10` / `0xc0`（幂等）。
+
+    布局 `<通道>\\0` ＋ `<特效名>\\0` ＋ u16 sel ＋ u8 A ＋ **u8 B(bit7=参数走变量)** ＋ …，
+    所以 B 在**第二个** NUL 之后第 5 个字节（`ws2fmt.txt` 的 `0x47 = 06 08 | 06 08 | 01 00 | 00 05…`：
+    u16 sel 占 2 字节后是 A，再下一个就是 B）。
+
+    `B` 的取值**跟随流内上一条 `0x45` 的 `type`**：type 6（复位/缩放，字面）⇒ `0x10`；
+    其余（0/2…，参数走变量）⇒ `0xc0`。所以本函数必须按脚本整体走一遍（`norm_flags`），
+    不能逐条独立调用。依据：参考实现 `advanced_hd` 工具链的 update 规则，以及两侧同位置
+    1,404 条样本 99.3% 命中。
+    """
+    i = ops.find(b'\x00')
+    j = ops.find(b'\x00', i + 1) if i >= 0 else -1
+    if j < 0 or len(ops) <= j + 4 or ops[j + 4] != 0x80:
+        return ops
+    return ops[:j + 4] + (b'\x10' if last_drag_type == 6 else b'\xc0') + ops[j + 5:]
+
+
+def norm_flags(instrs):
+    """整表标志字节归一（`0x46` + `0x47`，长度不变 ⇒ 偏移可直接沿用）。
+
+    返回新的 `[(op, ops)]`；对已是 Steam 取值的流是恒等变换（幂等）。
+    `0x47` 的取值依赖**流内前文**（上一条 `0x45` 的 type），所以必须整表走。
+    """
+    out = []
+    drag = None
+    for op, ops in instrs:
+        if op == 0x46:
+            ops = norm_op46_flag(ops)
+        elif op == 0x45:
+            k = ops.find(b'\x00')
+            if k >= 0 and len(ops) >= k + 3:
+                drag = int.from_bytes(ops[k + 1:k + 3], 'little', signed=True)
+        elif op == 0x47:
+            ops = norm_op47_flag(ops, drag)
+        out.append((op, ops))
+    return out
+
+
 def load_orig_formats(orig_dir):
     """从原版 exe 提取 256 项操作数格式表，返回 {op: [type codes]}（不含 0xff）。"""
     from pathlib import Path
@@ -193,11 +252,15 @@ def emit(instrs, tail):
 
 
 def convert_script(raw, orig_dir):
-    """整脚本转换（A-1 / SL 用）：原版编码字节 → Steam 编码字节，含回读校验。"""
+    """整脚本转换（A-1 / SL 用）：原版编码字节 → Steam 编码字节，含回读校验。
+
+    两步：① `convert()` 应用格式差并重定基；② `norm_flags()` 归化 `0x46`/`0x47` 的
+    跨引擎标志字节（长度不变，不影响已算好的偏移）。
+    """
     from tool import ws2
     d = ws2.decode(raw)
     instrs, tail = parse(d, load_orig_formats(orig_dir))
-    conv = convert(instrs)
+    conv = norm_flags(convert(instrs))
     out_decoded = emit(conv, tail)
     back, back_tail = parse(out_decoded, ws2dis.FORMATS)
     assert len(back) == len(conv), 'instruction count changed: %d -> %d' % (len(instrs), len(back))

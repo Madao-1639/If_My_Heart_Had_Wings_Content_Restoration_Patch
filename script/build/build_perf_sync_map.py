@@ -171,8 +171,12 @@ def main(argv=None):
                 if k in drops:
                     continue
                 own = s_rows[k]['own'].get('display') or {}
-                absent = {c: n for c, n in own.items()
-                          if perfsync.sb_chan(c, n) and n not in orig_imgs}
+                # 按通道判（`st*`/`bg*` 全归本机制，含 CG 名图）；整槽归 CG 线的除外
+                if perfsync.slot_owner(script, k) == 'cg':
+                    absent = {}
+                else:
+                    absent = {c: n for c, n in own.items()
+                              if perfsync.is_sb_channel(c) and n not in orig_imgs}
                 if absent:
                     add_site(k, absent.keys(), 'extra_absent', absent, {},
                              (s_rows[k]['own'].get('voice') or [None])[0])
@@ -198,7 +202,8 @@ def main(argv=None):
             trust = (pv == ov) or ((script, k) in perfsync.align_fixes())
             if not trust:
                 stat['untrusted'] += 1
-            extra, rev, ev_extra = perfsync.classify(P['own'], P['eff'], O['eff'])
+            extra, rev, ev_extra = perfsync.classify(P['own'], P['eff'], O['eff'],
+                                                    script=script, slot=k)
             # `missing` 一律不在此登记：产出端只看得到 Steam 流，看不到还原后的产物，
             # 「原版有、产物没有」必须由闸（script/checks/perf_sync_check.py）在产物上判。
             rev = [x for x in rev if x['kind'] != 'missing']
@@ -212,10 +217,11 @@ def main(argv=None):
             # 触发＝两侧「本槽自带的立绘/背景图名集合」不等（含一侧有清屏）；`ev` 不在
             # 此列（CG 序列另有 cg_site_rewrites + cg_seq_check 专管）。资源名照抄原版，
             # 由 resources.copy 把原版素材补入产物归档（补素材、不重写本版名）。
-            p_sb = {c: n for c, n in (P['own'].get('display') or {}).items()
-                    if perfsync.sb_chan(c, n)}
-            o_sb = {c: n for c, n in (O['own'].get('display') or {}).items()
-                    if perfsync.sb_chan(c, n)}
+            _by_cg = perfsync.slot_owner(script, k) == 'cg'
+            p_sb = {} if _by_cg else {c: n for c, n in (P['own'].get('display') or {}).items()
+                                      if perfsync.is_sb_channel(c)}
+            o_sb = {} if _by_cg else {c: n for c, n in (O['own'].get('display') or {}).items()
+                                      if perfsync.is_sb_channel(c)}
             p_clr = {c for c in (P['own'].get('clear') or ()) if c.startswith(('st', 'bg'))}
             o_clr = {c for c in (O['own'].get('clear') or ()) if c.startswith(('st', 'bg'))}
             # 判据按**通道→图名**比（不是图名集合）——两版把同一张图放在不同通道号时，

@@ -52,23 +52,35 @@ def _parse_orig(raw, ofmt):
     return out
 
 
-def _state_images(state):
-    """在屏图像 → {归一图名: 通道}（`ev`／`st\\d+`／`bg\\d+`，排除 `bgm`）。"""
+def _state_images(state, by_cg=False):
+    r"""在屏图像 → {归一图名: 通道}（`ev`／`st\d+`／`bg\d+`，排除 `bgm`）。
+
+    **按通道定罪**（`perfsync.is_sb_channel`）：`st*`/`bg*` 上的显示**含 CG 名图**
+    都归本闸；`ev` 归 CG 序列线。旧实现按图名整类跳过 CG，实测让 211 处落在两条线的缝里
+    （见 `doc/restoration-route.md` §7 V-11）。
+    `by_cg=True`（整槽登记在 `cg_site_rewrites.json`）⇒ 该槽只留 `ev`，其余交 CG 线。
+    """
     out = {}
     for k, v in state.items():
-        if perfsync._is_img_chan(k) and v and not perfsync.is_cg_name(v):
-            out[v] = k          # CG 名图不进本闸（无论落在哪个通道）：交 cg_seq_check
+        if not (perfsync._is_img_chan(k) and v):
+            continue
+        if by_cg:
+            if k == 'ev':
+                out[v] = k
+            continue
+        if k == 'ev' or perfsync.is_sb_channel(k):
+            out[v] = k
     return out
 
 
-def _image_diff(pa, oa):
+def _image_diff(pa, oa, by_cg=False):
     """两快照的在屏图名集合差 → (extra, missing)。
 
     `extra`＝产物在屏、原版在屏没有的图（缺陷类，`ev` 单列见调用方）；
     `missing`＝原版在屏、产物没有的图。**按图名比，不按通道号**——容忍两版背景
     通道号错位（原版 `bg01` ↔ Steam `bg02`）。
     """
-    pi, oi = _state_images(pa), _state_images(oa)
+    pi, oi = _state_images(pa, by_cg), _state_images(oa, by_cg)
     extra = [(img, pi[img]) for img in sorted(pi) if img not in oi]
     missing = [(img, oi[img]) for img in sorted(oi) if img not in pi]
     return extra, missing
@@ -145,7 +157,9 @@ def main(argv=None):
                 continue
             stat['pairs'] += 1
             pe, oe = p_rows[i]['eff'], o_rows[r]['eff']
-            ex, miss = _image_diff(pe, oe)
+            # 槽归属：登记进 `cg_site_rewrites.json` 的槽整槽交 CG 线（`ev` 仍在本闸只读）
+            _by_cg = perfsync.slot_owner(script, i) == 'cg'
+            ex, miss = _image_diff(pe, oe, _by_cg)
             hard_ex, soft_ex = [], []
             for img, c in ex:
                 # 分类：图名在原版全脚本都不存在（Steam 新增素材）或该图根槽在判定表内

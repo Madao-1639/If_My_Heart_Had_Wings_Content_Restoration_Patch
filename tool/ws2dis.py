@@ -110,11 +110,6 @@ def disassemble(data, stop_at_end=True):
     return out, False
 
 
-def disassemble_strict(data):
-    """只要指令列表（向后兼容）。"""
-    return disassemble(data)[0]
-
-
 def _main():
     args = sys.argv[1:]
     if args and args[0] == "--arc":

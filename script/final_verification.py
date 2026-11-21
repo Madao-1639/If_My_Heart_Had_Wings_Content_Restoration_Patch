@@ -343,6 +343,81 @@ def main():
                 check('10 语音重指成员 %s 字节 == 原版' % e['to'],
                       vol.get(e['to'].lower()) == orig_v.get(e['to'].lower()))
 
+    # ── 11. 解锁位点（CG 画廊条目 / CG_ACHIEVEMENT / 0xF0 成就）──
+    # 判据落在**内容面**：Steam 有 N 个解锁位点，产物必须 ≥ N 个（**只拦丢失**）。
+    # 为什么不用「逐点位置相等」：删格会让位点随相邻存活格移位、还原段会带入原版自己的
+    # `0b` 对（合法增加）——位置比对会把这两种正常形态误判成缺陷。
+    # 丢失的症状完全没有报错：画廊格子永久锁死、收集类成就不弹（见
+    # doc/engine-mechanics.md「成就触发点契约」）。
+    try:
+        import importlib.util
+        _spec = importlib.util.spec_from_file_location(
+            'cg_unlock_check', os.path.join(ROOT, 'script', 'checks', 'cg_unlock_check.py'))
+        _cuc = importlib.util.module_from_spec(_spec)
+        _spec.loader.exec_module(_cuc)
+        _pm = _cuc._members_arch(os.path.join(ASSET, 'Rio.arc'))
+        _pm.update(_cuc._members_loose(os.path.join(ASSET, 'RIO')))
+        _base, _ = _cuc.scan(_cuc._members_arch(os.path.join(BACKUP, 'Rio.arc')))
+        _prod, _sk = _cuc.scan(_pm)
+        _lost = []
+        for _n, _b in sorted(_base.items()):
+            _p = _prod.get(_n)
+            if _p is None:
+                continue
+            if _p['cg'] < _b['cg']:
+                _lost.append('%s:CG %d->%d' % (_n, _b['cg'], _p['cg']))
+            if _b['flags'] - _p['flags']:
+                _lost.append('%s:0b %s' % (_n, sorted(_b['flags'] - _p['flags'])[:5]))
+            if _b['f0'] - _p['f0']:
+                _lost.append('%s:F0 %s' % (_n, sorted(_b['f0'] - _p['f0'])))
+        # 第二组：归属不得串号——`0b (A,B)` 只认 Steam 的编号空间。
+        # 原版段带着**原版编号**的解锁对照抄进产物 ⇒ 数量变多、集合变大（第一组全绿），
+        # 但 `CG_PAGE` 会点亮一张完全不相干的画廊条目 ⇒ 必须单独判。
+        # 限定：只对「Steam 基线里有同名脚本」者判（A-1 整脚本与后日谈 `SL_*` 在 Steam
+        # 侧没有同名脚本，用原版编号是对的）。
+        _sp = set()
+        for _b in _base.values():
+            _sp |= _b.get('pairs') or set()
+        _foreign = []
+        if _sp:
+            for _n, _p in sorted(_prod.items()):
+                if _n not in _base:
+                    continue
+                _bad = (_p.get('pairs') or set()) - _sp
+                if _bad:
+                    _foreign.append('%s:%d' % (_n, len(_bad)))
+        check('11 解锁位点不丢失且不串号（CG_ACHIEVEMENT / 0b / 0xF0）',
+              not _lost and not _foreign,
+              '丢失 %s ；串号 %s' % (_lost[:6], _foreign[:6]))
+    except Exception as ex:                       # noqa: BLE001 —— 闸自身失败也必须报
+        check('11 解锁位点闸可运行', False, str(ex))
+
+    # ── 12. 跨引擎标志词表（`0x46` 子层槽绑定 / `0x47` 参数来源）──
+    # 判据落在**内容面**：产物里原版取值（`0x80`）的**计数必须为 0**。只看「取值属于合法集合」
+    # 不够——两边各有自己的合法值，只要集合有交集就会判通过而全部漏检。
+    # 后果与机理见 doc/engine-mechanics.md「动画组的工作机制」：`0x46` 欠绑定子层槽（立绘
+    # 残留/表情层错位）、`0x47` 参数来源位失配（动画照跑、终点不对），两者都**不报错**。
+    try:
+        sys.path.insert(0, os.path.join(ROOT, 'script', 'checks'))
+        import importlib.util
+        _spec = importlib.util.spec_from_file_location(
+            'op46_flag_check', os.path.join(ROOT, 'script', 'checks', 'op46_flag_check.py'))
+        _ofc = importlib.util.module_from_spec(_spec)
+        _spec.loader.exec_module(_ofc)
+        _r = _ofc.scan(
+            _ofc.collect(os.path.join(ASSET, 'Rio.arc'), os.path.join(ASSET, 'RIO')),
+            'product')
+        _orig_val = sum(1 for x in _r['bad'] if x['flag'] == _ofc.ORIG_VALUE)
+        check('12 标志词表：产物无原版取值(0x80) / 无越界（含裸 RIO 后日谈脚本）',
+              not _r['bad'],
+              '0x80 %d 处；其它越界 %d 处；0x46=%s 0x47=%s'
+              % (_orig_val, len(_r['bad']) - _orig_val,
+                 dict(sorted(_r['c46'].items())), dict(sorted(_r['c47'].items()))))
+        check('12 标志词表：线性解析不自洽脚本已记账（非静默）',
+              True, '%d 个 %s' % (len(_r['skipped']), _r['skipped'][:5]))
+    except Exception as ex:                       # noqa: BLE001 —— 闸自身失败也必须报
+        check('12 标志词表闸可运行', False, str(ex))
+
     # ── 汇总 ──
     lines.append('')
     lines.append('FAILS: %d -> %s' % (len(fails), fails))

@@ -27,8 +27,8 @@ A-1 整脚本不走本模块（整脚本走 `tool.ws2conv.convert_script`，槽�
 """
 import struct
 
-from tool import ws2, ws2dis, perfsync
-from tool.ws2conv import CONV, REBASE_OPS, parse as conv_parse
+from tool import ws2, ws2dis, perfsync, cgunlock
+from tool.ws2conv import CONV, REBASE_OPS, parse as conv_parse, norm_flags
 
 BLOCK_STOP = {0x01, 0x02, 0x06, 0x07, 0xFF}   # 原版块在其前截断（其后属宿主结尾）
 
@@ -44,7 +44,6 @@ KEEP_OPS = {0x01, 0x02, 0x05, 0x06, 0x07, 0x09, 0x0B, 0x0F, 0x15, 0xF0, 0xFF}
 # `09`（图层权重）、`46`（图层定位）、`3e`/`65`（块尾标记/转场），前置 `64`。这是一段
 # **连续**指令（`0b` 状态写入夹在块内时算块的一段，但删块时保留、补块时不重复写）。
 _PERF_BLOCK = perfsync.BLOCK_OPS
-_PERF_PRESERVE = perfsync.BLOCK_MOVE_SKIP
 _is_layer_order = perfsync._is_layer_order
 
 
@@ -84,8 +83,8 @@ def _perf_block_kill(instrs, j_cur, zone_lo, chans, with_clear=False):
 
     `keep` 模式：只删该槽这些通道的**清屏**（保留在屏状态延续），显示块不动。
     * `chans=None`（`replace`）：该槽**全部立绘／背景**显示块。
-      **不再按「图名是 CG」豁免**（旧版 `perfsync.sb_chan()` 的豁免让 Steam 塞进 `st*/bg*`
-      通道的 CG 层**既不删也不读数**，实测 `AMA_004` `st05` 555 格、`KOT_003` `bg02` 434 格）；
+      **不按「图名是 CG」豁免**（任何按图名豁免都会让 Steam 塞进 `st*/bg*` 通道的 CG 层
+      **既不删也不读数**，实测 `AMA_004` `st05` 555 格、`KOT_003` `bg02` 434 格）；
       删掉的部分**由补块带回原版行自己的块**（包括 CG 名图——原版自己就有 243 个此类配对），
       所以这里是「整槽替换」而非「配对判据」——配对判据属于产出端／闸的判读面
       （见 doc/restoration-route.md §7 V-11），不用于本删除。
@@ -130,9 +129,9 @@ def _perf_block_kill(instrs, j_cur, zone_lo, chans, with_clear=False):
                 continue
             break
         for k in range(s, e):
-            o3 = instrs[k][1]
-            if o3 in _PERF_PRESERVE:
-                continue
+            o3, x3 = instrs[k][1], instrs[k][3]
+            if perfsync.is_unmovable(o3, x3):
+                continue                       # 解锁位点（0b 对 / 04 CG_ACHIEVEMENT）不随块删
             kill.add(instrs[k][0])
     return kill, hit
 
@@ -217,8 +216,8 @@ def perf_sync_apply(instrs, s14off, oinstrs, o14, perf_sync):
                     continue                    # `ev` 不搬：交 cg_seq_check
                 for i in b['idx']:
                     op, ops = oinstrs[i0 + i]
-                    if op in _PERF_PRESERVE:
-                        continue
+                    if perfsync.is_unmovable(op, ops):
+                        continue               # 解锁位点不重复搬（原版段自己的已随块搬）
                     added.append((op, ops))
         k, hit = _perf_block_kill(instrs, zone[1], zone[0], chans,
                                   with_clear=(mode == 'replace'))
@@ -266,7 +265,51 @@ def eff_names(instrs, skip=frozenset()):
     return out
 
 
-def drop_units(instrs, drop_slots):
+def unlock_hoist(instrs, drop_slots, steam_unlock=None):
+    """被删格里的**解锁位点** → 要提前到「该区间前的存活格前缀」的指令列表。
+
+    返回 `{存活槽序号: [(op, ops), ...]}`（保持原出现顺序、按槽归拢）。
+
+    为什么必须**提前**而不是留在原地：删格只删该行演出、保留解锁位点（`KEEP_OPS`／
+    `is_unmovable()`），于是位点会**落到下一个存活格的前缀区**——语义上「解锁时机」被
+    推后了整整一个删格区间。ASFS 侧的定案是「把被替换区间内的解锁指令提前到区间前」，
+    这里同构：归到**被删区间前第一个存活槽**的前缀区。
+
+    值来源分两类：
+    * **Steam 字节**（值本就正确）⇒ 原样提前；
+    * **原版字节**（`steam_unlock` 给了映射时）⇒ 按帧反查 Steam 编号，**无同帧则丢弃**
+      （原版独有帧本无 Steam 画廊条目，点亮必然是错的 —— 见 `tool/cgunlock.py`）。
+    """
+    if not drop_slots:
+        return {}
+    slot_of, s = {}, 0
+    for _off, op, _sz, _ops in instrs:
+        if op == 0x14:
+            slot_of.setdefault(s, []).append(_off)
+            s += 1
+    # 每条指令 → 所属槽（前缀区口径：上一条 14 之后 → 本槽 14 之前）
+    s14 = [off for off, op, _sz, _ops in instrs if op == 0x14]
+    import bisect as _bis
+    out = {}
+    for i, (off, op, _sz, ops) in enumerate(instrs):
+        if op not in (0x0B, 0x04):
+            continue
+        if op == 0x04 and ops.split(b'\x00')[0] != b'CG_ACHIEVEMENT':
+            continue
+        slot = _bis.bisect_left(s14, off)
+        if slot not in drop_slots:
+            continue
+        # 往前找被删区间前第一个存活槽
+        tgt = slot - 1
+        while tgt >= 0 and tgt in drop_slots:
+            tgt -= 1
+        if tgt < 0:
+            continue
+        out.setdefault(tgt, []).append((op, ops))
+    return out
+
+
+def drop_units(instrs, drop_slots, hoisted=None):
     """删格偏移集。
 
     三项内容：
@@ -274,6 +317,9 @@ def drop_units(instrs, drop_slots):
       2. 该槽**演出前缀区**（上一条 `14` 之后 → 本槽 `14` 之前）内**除 KEEP_OPS 外**的
          全部指令——即该行自己的语音/显示/BGM/图层/特效，删之无状态与流程副作用；
       3. 邻接 `15`（守卫：试删后任何存活格生效名字框不得改变）。
+
+    `hoisted`（`unlock_hoist()` 的结果）：这些解锁位点会被**提前**到区间前的存活格，
+    所以在这里**删掉原位**（否则会在两处各置一次）。
     """
     slot_of = {}
     k = 0
@@ -283,6 +329,19 @@ def drop_units(instrs, drop_slots):
             k += 1
     kill = {off for off, op, size, ops in instrs
             if op == 0x14 and slot_of.get(off) in drop_slots}
+    # 被提前走的解锁位点：**原位删掉**（否则会在「区间前」与「原位」各置一次）。
+    # 归属口径＝前缀区（上一条 `14` 之后 → 本槽 `14` 之前），所以按指令所属槽判，
+    # 不能用 `slot_of`（它只记 `14` 自身的偏移）。
+    if hoisted:
+        import bisect as _bis
+        s14 = [off for off, op, _sz, _ops in instrs if op == 0x14]
+        for off, op, _size, ops in instrs:
+            if op not in (0x0B, 0x04):
+                continue
+            if op == 0x04 and ops.split(b'\x00')[0] != b'CG_ACHIEVEMENT':
+                continue
+            if _bis.bisect_left(s14, off) in drop_slots:
+                kill.add(off)
     # 演出前缀区：从被删 `14` 往前扫到上一条 `14`（不含），删掉其中的非 KEEP_OPS 指令
     idx = {ins[0]: j for j, ins in enumerate(instrs)}
     for o in sorted(kill):
@@ -358,7 +417,17 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
 
     sinstrs, ok = ws2dis.disassemble(steam_dec)
     assert ok, 'host steam-table parse not self-consistent: %s' % plan.get('script', '?')
+    # **解锁对的编号归属**：`(A,B)` 只认 Steam 的编号空间（见 tool/cgunlock.py）。
+    # 原版段的解锁对照抄进 Steam 编号会点亮一张完全不相干的画廊条目 ⇒ 必须在发出前
+    # 按帧反查 Steam 的 `(A,B)`；Steam 侧无同帧者（原版独有）**丢弃**该解锁对。
+    # Steam 帧 → (A,B)：全库共用的只读常量，不逐 host 存进计划表（见 tool/cgunlock.py）。
+    steam_unlock = cgunlock.default_map() if plan.get('unlock_rewrite', True) else None
     oinstrs, otail = conv_parse(orig_dec, orig_fmts)
+    # 跨引擎标志字节归一（`0x46` 子层槽绑定 / `0x47` 参数来源）：原版取值进 Steam 引擎会
+    # 落在目标引擎词表外，且**不报错**（立绘欠绑定而残留、动画终点错而照跑）。
+    # 必须在入表**之前**做：`0x47` 的取值依赖流内前一条 `0x45` 的 type，只能整表走；
+    # 长度不变 ⇒ 不影响下面算好的偏移。整脚本路径由 `convert_script` 内完成同一归一。
+    oinstrs = norm_flags(oinstrs)
     ooff, p = [], 0
     for op, ops in oinstrs:
         ooff.append(p)
@@ -377,7 +446,11 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
         'perf_sync keep 通道在槽前缀区内找不到清屏: %s' % perf_kept_missed
     assert not perf_missed, \
         'perf_sync 通道在槽前缀区内找不到显示指令: %s' % perf_missed
-    kill = drop_units(sinstrs, set(plan['drops'])) | perf_kill
+    # 被删格里的解锁位点 → 提前到「该区间前的存活格前缀」（口径见 unlock_hoist）。
+    # 值来自 Steam 字节者原样搬（本就正确）；原版独有帧的解锁对由 `_apply_unlock` 过滤。
+    s14 = [off for off, op, _sz, _ops in sinstrs if op == 0x14]
+    hoisted = unlock_hoist(sinstrs, set(plan['drops']))
+    kill = drop_units(sinstrs, set(plan['drops']), hoisted) | perf_kill
 
     # 宿主结尾起点：最后一个保留 14 之后的第一条流程控制指令
     kept_slots = [s for s in range(len(s14off)) if s not in plan['drops']]
@@ -484,19 +557,77 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
             buf15 = None
             buf15_off = None
 
+    def _apply_unlock(seq):
+        """原版指令序列 → 发出前做**解锁对改写**。`seq = [(j, op, ops)]`（`j` 是原版下标，
+        用于 `ooff[j]` 查跳转重定基）。
+
+        逐条扫：遇到 `.PNG` 显示点，其后紧邻的两个 `0b` 视为该点的解锁对 `(A,B)`——
+        * Steam 侧**有同帧** ⇒ 改写成 Steam 的 `(A,B)`（`0b` 恒 4 字节，**等长**，
+          偏移不受影响，`j` 沿用原值）；
+        * Steam 侧**无同帧**（原版独有帧）⇒ **丢弃**这两条（该帧本无 Steam 画廊条目，
+          点亮必然是错的）；
+        * `unlock_rewrite=False`（plan 开关）⇒ 原样保留。
+
+        等长前提由 `assert` 守住：一旦哪天 `0b` 变长，必须改成「重算偏移」而不是静默错位。
+        """
+        if not steam_unlock:
+            return seq
+        out, i, n = [], 0, len(seq)
+        while i < n:
+            j, op, ops = seq[i]
+            out.append((j, op, ops))
+            if op not in (0x33, 0x34):
+                i += 1
+                continue
+            parts = ops.split(b'\x00')[:2]
+            name = None
+            if len(parts) >= 2:
+                try:
+                    name = parts[1].decode('cp932')
+                except UnicodeDecodeError:
+                    name = None
+            if not (name and name.upper().endswith('.PNG')):
+                i += 1
+                continue
+            flags = []
+            k = i + 1
+            while k < n and len(flags) < 2 and seq[k][1] == 0x0B and len(seq[k][2]) >= 3:
+                flags.append(k)
+                k += 1
+            if len(flags) < 2:
+                i += 1
+                continue
+            pair = cgunlock.resolve_pair(name, steam_unlock)
+            if pair is None:
+                i = flags[1] + 1                   # 丢弃这两条解锁指令
+                continue
+            for slot_i, val in ((flags[0], pair[0]), (flags[1], pair[1])):
+                jj, oo, xx = seq[slot_i]
+                new_ops = struct.pack('<H', val) + b''
+                assert len(new_ops) == len(xx),                     '解锁对改写必须等长（%d != %d）' % (len(new_ops), len(xx))
+                out.append((jj, oo, new_ops))
+            i = flags[1] + 1
+        return out
+
     def emit_block(r0, r1, after_off):
         nonlocal pool
         align_state(r0 - 1)                  # 进入块之前：状态对齐到原版第 r0-1 行
         i0, i1 = block_span(r0, r1)
+        # 解锁对改写：先把块内序列过一遍（可能改写/丢弃 0b），**偏移计算必须基于改写后的
+        # 序列**，否则块内跳转的重定基会错位。
+        # 每条都带原始偏移（`ooff[j]`），改写/丢弃后只保留保留下来的那些。
+        seq = []
+        for j in range(i0, i1):
+            op, ops = oinstrs[j]
+            seq.append((j, op, ops))
+        seq = _apply_unlock(seq)
         base = len(out)
         rel = {}
         q = 0
-        for j in range(i0, i1):
-            op, ops = oinstrs[j]
+        for j, op, ops in seq:
             rel[ooff[j]] = q
             q += 1 + len(_conv(op, ops))
-        for j in range(i0, i1):
-            op, ops = oinstrs[j]
+        for j, op, ops in seq:
             ops2 = _conv(op, ops, names)
             if op == 0x14:
                 # 池序号全量重算：插入行的 `14.id` 必须改写为新槽序。原版行号与
@@ -537,9 +668,12 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
         语音（`2e`+`28`）与名字框（`15`）执行——与 doc/file-formats.md「格内指令的归属
         次序」（演出 → 语音 → 名字框 → `14`）一致。资源名照抄原版脚本里的名字。
         """
-        for op, ops in perf_add.get(slot, ()):
-            out.extend(bytes([op]) + _conv(op, ops, names))
-            _track(op, ops)
+        _adds = perf_add.get(slot, ())
+        if _adds:
+            _adds = [(k, op, ops) for k, (op, ops) in enumerate(_adds)]
+            for _j, op, ops in _apply_unlock(_adds):
+                out.extend(bytes([op]) + _conv(op, ops, names))
+                _track(op, ops)
         # 净状态不由搬运负责（见 `_perf_clear_kill`／`with_clear` 注释）：`replace` 处也要
         # 按「该点应有状态」把多出来的通道**最小地清掉**。计划里的槽位键是**字符串**，
         # 两种键型都试。目标行＝该槽对齐到的原版行 r（`row_setters` 的状态就是该行在屏状态，
@@ -578,6 +712,14 @@ def rebuild_host(steam_dec, orig_dec, plan, orig_fmts):
             cur_pfx = _pfx(ops)
             continue
         flush15()
+        # 被提前的解锁位点：挂在该存活槽**前缀区开头**（即上一条 `14`／其插入块之后），
+        # 与本槽自带的语音/名字框之前的次序一致（演出 → 解锁 → 语音 → 名字框 → `14`）。
+        # 解锁是**全局置位**，与显示点解耦 ⇒ 提前到区间前不改变语义，只把「时机」提前。
+        if op == 0x14 and hoisted.get(si):
+            for _op, _ops in hoisted[si]:
+                out.extend(b'' + _ops if _op == 0x0B else b'' + _ops)
+                _track(_op, _ops)
+            hoisted[si] = None
         remap_s[off] = len(out)
         body = bytearray(steam_dec[off:off + size])   # 全指令（含操作码）
         if op == 0x14:
