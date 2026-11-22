@@ -29,6 +29,7 @@ if ROOT not in sys.path:
 from tool import arcbuild, ws2, lng, ws2dis  # noqa: E402
 from tool import writer  # noqa: E402
 from tool import paths  # noqa: E402
+from tool import cgunlock  # noqa: E402
 from tool.ws2conv import load_orig_formats, convert_script, insert_head_clear  # noqa: E402
 
 ASSET = os.path.join(ROOT, 'asset')
@@ -88,6 +89,13 @@ def main():
     subprocess.run([sys.executable, os.path.join(ROOT, 'script', 'build', 'build_l4.py')],
                    check=True, env=env, cwd=ROOT,
                    stdout=subprocess.DEVNULL)
+    # G3：裸 RIO/SL_*.ws2 的原版→Steam 转码。**必须在这里跑**：build_l4 只起底
+    # Steam 成员，G3 是独立脚本、产物落在同一棵中间树；不跑就会把上一轮的旧
+    # `_l4/asset/RIO/*.ws2` 原样搬进交付（解锁对归一的修正永远进不去）。
+    subprocess.run([sys.executable, os.path.join(ROOT, 'script', 'build', 'convert_sl_ws2.py'),
+                    '--orig-dir', orig_dir],
+                   check=True, env=env, cwd=ROOT,
+                   stdout=subprocess.DEVNULL)
     l4_rio = read_members(os.path.join(L4_TREE, 'Rio.arc'))
     l4_zh = read_members(os.path.join(L4_TREE, 'zh-CN', 'Rio.arc'))
 
@@ -98,9 +106,13 @@ def main():
     rio = read_members(os.path.join(STEAM, 'Rio.arc'))
     seam_clear = (plan.get('seam') or {}).get('entry_clear') or {}
     seam_done = {}
+    # A-1 是**整脚本回填**（不经 rebuild_host），解锁对必须在这里同样落到 Steam 的
+    # 编号空间：原版 `(A,B)` 照抄会点亮 Steam 画廊里不相干的条目（含指向不存在图的
+    # 死条目），见 tool/cgunlock.py 开头。判据与 rebuild_host 共用同一份映射。
+    steam_unlock = cgunlock.default_map() if plan.get('unlock_rewrite', True) else None
     for script, pl in plan['A1'].items():
         name = script + '.ws2'
-        conv = convert_script(read_orig_raw(script), orig_dir)
+        conv = convert_script(read_orig_raw(script), orig_dir, steam_unlock=steam_unlock)
         if pl.get('names'):
             dec = writer.apply_names(ws2.decode(conv),
                                      {k.encode('ascii'): v.encode('ascii')

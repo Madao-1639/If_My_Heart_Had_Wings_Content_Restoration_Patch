@@ -174,11 +174,11 @@
 
 复判件字段为 `script` / `block_orig` / `block_steam` / `scene`(str，同拍／复述等场景类别) / `current`(str，原裁定) / `action`(str ∈ `stands` 等) / `reason`(str)，只作判读证据，消费方按 `rereview` 前缀跳过。
 
-**生产者**：人工逐块判读的交付（块与承载图相符、槽位与原版行全覆盖且每处恰一次、引文逐字命中）后落地。**例外**：等长 `match` 块复审落地的 `EQR_*` 条目（71 块，口径见 [restoration-targets.md](../doc/restoration-targets.md)「等长 match 块的复审与成因分诊」）走另一条验证链——交付方逐块人工读 ＋ 验收方四语对照逐块亲读；其 `cells` **只列动作槽**（`action=keep` + `text_override:true` + `bind_orig_row`，未列槽沿用承载图 keep 口径）、`quote` 留空（引文在评审交付物的 evidence/ 里），不适用常规全覆盖口径（该口径仍只认 `keep/drop/rebind` 且要求全覆盖，对这些条目会报错，属已知豁免）。**消费方**：`script/build/build_restore_plan.py`（`cells` 的 `drop` 与 `inserts` 合成删槽／插入行集；`keep+text_override` 合成 zh 交付的槽位文本覆盖，经 `plan.text_overrides` 声明并由 `script/verify_sync.py` 的 B3 核对）、`script/build/build_rename_map.py`（`inserts` ∪ `rebind` 的原版行号界定资源引用面）。裁定标准见 [restoration-targets.md](../doc/restoration-targets.md)「判定标准：差分形态与采用口径」。
+**生产者**：人工逐块判读的交付（块与承载图相符、槽位与原版行全覆盖且每处恰一次、引文逐字命中）后落地。**例外**：等长 `match` 块复审落地的 `EQR_*` 条目（口径见 [restoration-targets.md](../doc/restoration-targets.md)「等长 match 块的复审与成因分诊」）走人工逐块读的验证链；其 `cells` **只列动作槽**（`action=keep` + `text_override:true` + `bind_orig_row`，未列槽沿用承载图 keep 口径）、`quote` 留空（引文在评审交付物的 evidence/ 里），因此不适用常规全覆盖口径（该口径仍只认 `keep/drop/rebind` 且要求全覆盖，对这些条目会报错，属已知豁免）。**消费方**：`script/build/build_restore_plan.py`（`cells` 的 `drop` 与 `inserts` 合成删槽／插入行集；`keep+text_override` 合成 zh 交付的槽位文本覆盖，经 `plan.text_overrides` 声明并由 `script/verify_sync.py` 的 B3 核对）、`script/build/build_rename_map.py`（`inserts` ∪ `rebind` 的原版行号界定资源引用面）。裁定标准见 [restoration-targets.md](../doc/restoration-targets.md)「判定标准：差分形态与采用口径」。
 
 ## resource/rename_map.json —— 号段候选表（**改名路线已取消，本表恒空**）
 
-**定位**：两侧同名的冲突一律**整名覆盖** ⇒ **不改名、不进本表**；顶包也只改写那一个存活调用点。号段（`9X`／`8X`）只服务**真正的新增成员**，而新增成员按 [resource-naming.md](../doc/resource-naming.md) §1 第 4 条**直接继承原版名** ⇒ 本体还原侧当前**无号段用途**。故本表恒出空的 `voice`／`sprite`／`mos`／`est`，只保留**诊断清单**（冲突面与引用面读数），消费端的取名映射（`plan.names`）同步停用、恒为空。历史遗留的图像／`.MOS`／语音条目已清除（原「待撤销项」已执行）。
+**定位**：两侧同名的冲突一律**整名覆盖** ⇒ **不改名、不进本表**；顶包也只改写那一个存活调用点。号段（`9X`／`8X`）只服务**真正的新增成员**，而新增成员按 [resource-naming.md](../doc/resource-naming.md) §1 第 4 条**直接继承原版名** ⇒ 本体还原侧当前**无号段用途**。故 `voice`／`sprite`／`mos`／`est` 恒为空，表内只保留**诊断清单**（冲突面与引用面读数）；消费端的取名映射（`plan.names`）同步停用、恒为空。
 
 **表结构**
 
@@ -186,10 +186,10 @@
 |---|---|---|
 | `est` / `voice` / `sprite` / `mos` | list | **恒为空**。若「号段编号」这一潜在用途被启用（[resource-naming.md](../doc/resource-naming.md) §8），此处才会重新出现条目：含 `orig`（原名）、`patch`（补丁内名）、`source_archive`（归属归档），立绘条目另带 `role` |
 | `unparseable` | list | 解析不出补丁名或该类号段已用尽、因此未能自动改名的项；条目含 `name`、`archive`，另带 `referenced_as`（引用形态）或 `reason`（如号段耗尽）。**恒为空**（无规则在跑） |
-| `unused_conflicts` | list | 两侧同名冲突中**未被还原内容引用**的历史桶（候选按**文件体积差**筛，该口径已作废）。**不作任何处置依据**——图像同名冲突一律看 `censor_map.json`（非噪声者整名覆盖，**不设引用面门槛**） |
+| `unused_conflicts` | list | 历史桶：两侧同名冲突中**未被还原内容引用**的成员（按文件体积差筛出的旧口径产物）。**不作任何处置依据**——图像同名冲突一律看 `censor_map.json`（非噪声者整名覆盖，**不设引用面门槛**） |
 | `meta` | dict | `retired`(bool，改名路线是否已取消)、`conflict_names`(int)、`referenced_names`(int)、`restored_scripts`(list[str])、`reference_scan`(str，引用扫描的指令口径)、`rule`(str，现行口径)、`segment`(str，号段分配)、`spec`(str，规范文档) |
 
-**生产者**：`script/build/build_rename_map.py`（`RENAME_ROUTE_RETIRED` 开关；保留号段分配代码作回退位，但恒不产出条目）。**消费方**：`script/build/build_restore_plan.py`（只读它做互斥闸——判定表 `overwrite` 成员不得出现在本表，见 [resource-naming.md](../doc/resource-naming.md) §7.5）。**取名口径**（先于一切写盘）：插入块里的资源名**照抄原版脚本里的名字即为正确**——覆盖只换同名成员的内容、不改成员名 ⇒ 原名在还原后的归档里承载的就是原版画面。
+**生产者**：`script/build/build_rename_map.py`（`RENAME_ROUTE_RETIRED` 开关：保留号段分配代码作回退位，但恒不产出条目）。**消费方**：`script/build/build_restore_plan.py`（只读它做互斥闸——判定表 `overwrite` 成员不得出现在本表，见 [resource-naming.md](../doc/resource-naming.md) §7.5）。取名口径见 [resource-naming.md](../doc/resource-naming.md) §6（插入块照抄原版脚本里的资源名）。
 
 ## resource/censor_map.json —— 图像同名冲突判定表
 
@@ -246,7 +246,7 @@
 
 ## resource/perf_sync_map.json —— 演出同步判定表（保留槽多余演出的处置）
 
-**定位**：Steam 把原版**事件 CG 的显示点换成背景 + 立绘**（两侧**异名**）时，同名冲突表（入口「同名两侧字节不同」）与两条文本机检都看不见；`cg_site_rewrites.json` 只补 CG 显示点本身、**不覆盖它周围的保留行演出** ⇒ 产物里出现「原版 CG 与 Steam 立绘／背景同屏」。本表按「逐槽演出对账」补上这条通道，方针＝**「每类演出（语音 / CG / 立绘 / 背景）要么两侧同时存在且相等，要么都不存在」**（见 [restoration-route.md](../doc/restoration-route.md) §6 V-10）。
+**定位**：Steam 把原版**事件 CG 的显示点换成背景 + 立绘**（两侧**异名**）时，同名冲突表（入口「同名两侧字节不同」）与两条文本机检都看不见；`cg_site_rewrites.json` 只补 CG 显示点本身、**不覆盖它周围的保留行演出** ⇒ 本表按「逐槽演出对账」补上这条通道。方针、判据与机制见 [restoration-route.md](../doc/restoration-route.md) §6 V-10。
 
 **表结构**：顶层 `meta`、`sites[]`、`review[]`、`summary`。
 
@@ -284,7 +284,7 @@
 
 **消费方式**：`script/build/build_restore_plan.py` 把 `drops` 并入 `plan.<host>.perf_sync` 的 `{mode: drop, channels: [chan]}`、`keeps` 并入 `{mode: keep, channels: [chan]}`（写盘器只删该通道的 `37` 清屏、保留在屏状态延续）、`replaces` 并入 `{mode: replace, orig_row: r}`；`keeps` 可与同一槽既有的 `drop`／`replace` **正交合并**（`spec` 的 `keep` 列表，各有各的通道），其余与删格／判定表条目**互斥**（计划器断言）。两闸的「名单＝落地」断言（`script/final_verification.py` 第 4b 项、`script/checks/perf_sync_check.py`）把本表条数一并计入。
 
-**生产者**：人工逐脚本余项裁定（当前 6 条：`drops`＝`AMA_004` s723 `st01`／`AMA_010` s254 `st01`／`KOT_003` s1086·s1092 `ev`；`keeps`＝`KOT_009` s450 `ev`；`replaces`＝`AMA_010` s277 `bg01` ← o325）。**注意**：等长改名（`plan.reuse_rewrites`）要求两侧图名**字节等长**，不等长时只能走 `replaces`。
+**生产者**：人工逐脚本余项裁定（`drops`／`keeps`／`replaces` 三类；条数与位点以表内 `sites` 为准）。**注意**：等长改名（`plan.reuse_rewrites`）要求两侧图名字节等长，不等长时只能走 `replaces`。
 
 ## resource/voice_conflict_map.json —— 语音同名冲突判定表
 
@@ -303,7 +303,7 @@
 
 顶层 `meta`：`spec`、`producer`、`consumer`、`method`（判据全文）、`class_values`、`actions`、`gate`、`archives`；顶层 `summary` 记 `byte_diff` / `noise` / `recode` / `rerecord` / `overwrite` / `keep` 计数。
 
-**判据**：两侧同名 ∧ 字节不同 ⇒ 解码 8 kHz 单声道 PCM → 5 ms 包络粗对齐 + 1 采样精修求原始 PCM 相关；**`noise` 需同时满足「相关 ≥0.98」与「时长差 ≤0.15 s」**（只看相关会漏判「同一录音被剪掉一截」——重叠段相关仍近 1，但时长差大，属内容差）。`action`：`noise` ⇒ `keep`；其余 ⇒ `overwrite`。
+**判据**：见 [resource-naming.md](../doc/resource-naming.md) §3（同名∧字节不同 ⇒ 解码 PCM 相关与时长差定 `noise`／`recode`／`rerecord`；`noise` ⇒ `keep`，其余 ⇒ `overwrite`）。本表 `meta.method` 存该判据的机器可比对参数。
 
 **生产者**：`script/build/build_voice_conflict_map.py`（`--orig-dir` 或环境变量 `IFMH_ORIG_DIR`；`--ffmpeg` 可显式给路径，缺省自动探测 `FFMPEG` 环境变量 / `PATH` / `D:\ffmpeg\bin\ffmpeg.exe`，全无则退化容器级判据）。**消费方**：`script/build/build_restore_plan.py`（`action=overwrite` 子集**逐名**进资源分派的 `overwrite`，**不以「被还原内容引用」为门槛**，并以「语音覆盖名单数 ＝ 判定表 overwrite 数」为闸）、`script/build/build_patch.py`（整名替换同名成员，名单数须等于替换数）。判据与连带规则见 [resource-naming.md](../doc/resource-naming.md) §3。
 

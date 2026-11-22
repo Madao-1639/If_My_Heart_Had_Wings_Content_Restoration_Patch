@@ -611,7 +611,10 @@ def build_seam_clears(plans, ofmt):
         prod_prof[k] = perfsync.script_profile(ws2dis.disassemble(d)[0])
     for k in A1_SCRIPTS:
         # 注意：rio_dec 返回的是**已解码**字节，convert_script 要的是原始编码字节 ⇒ 用 os_enc
-        conv = ws2.decode(convert_script(os_enc(k), odir))
+        # 解锁对归一必须与 build_patch 写盘时一致（同一个映射、同一道判据），
+        # 否则剖面算出来的指令流与实际产物不是同一份。
+        conv = ws2.decode(convert_script(os_enc(k), odir,
+                                         steam_unlock=cgunlock.default_map()))
         prod_prof[k] = perfsync.script_profile(ws2dis.disassemble(conv)[0])
     for k, d in orig.items():
         try:

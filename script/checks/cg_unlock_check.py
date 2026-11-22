@@ -109,8 +109,10 @@ def scan(members):
             elif op == 0xF0 and ops:
                 f0.add(ops[0])
         # 显示点后的解锁对：用于第二组判据（归属不得串号）
-        pairs = {(a, b) for _dn, a, b in cgunlock.display_unlock_pairs(instrs)}
-        per[name] = {'cg': cg, 'flags': flags, 'f0': f0, 'pairs': pairs}
+        raw_pairs = list(cgunlock.display_unlock_pairs(instrs))
+        pairs = {(a, b) for _dn, a, b in raw_pairs}
+        per[name] = {'cg': cg, 'flags': flags, 'f0': f0,
+                     'pairs': pairs, 'raw_pairs': raw_pairs}
     return per, skipped
 
 
@@ -134,21 +136,51 @@ def main(argv=None):
     base, sk_b = scan(base_m)
 
     # 第二组：归属不得串号——产物里每个解锁对都必须属于 Steam 的编号集合
+    #
+    # ⚠️ **没有「A-1 整脚本无同名脚本 ⇒ 豁免」这一条了**。A-1 的 5 个被删脚本是**整脚本
+    # 回填原版内容**，但它们的解锁对落到的是 **Steam 引擎里的 Steam 画廊表**：原版 `(A,B)`
+    # 在 Steam 侧没有对应关系（实测同名帧 479 个、B 系统性错开 1–3 号，仅 10 个巧合相同），
+    # 照抄会点亮 Steam 画廊里完全不相干的条目——包括指向不存在图的「死条目」，实机表现为
+    # 点开或切换差分时报 `ファイルが無かった`。⇒ 判据改成**按帧解析**：与产出端共用
+    # `cgunlock.resolve_pair()`，原版独有帧（Steam 无同帧）不得残留解锁对。
+    steam_map = {}
     steam_pairs = set()
-    for _n, _b in base.items():
-        steam_pairs |= _b.get('pairs') or set()
+    for nb, d in arcbuild.read_raw(args.backup):
+        n = nb.decode('utf-16le', 'replace')
+        if not n.lower().endswith('.ws2'):
+            continue
+        try:
+            instrs, _ok = ws2dis.disassemble(ws2.decode(d))
+        except Exception:                         # noqa: BLE001
+            continue
+        for disp, a, b in cgunlock.display_unlock_pairs(instrs):
+            fk = cgunlock.frame_key(disp)
+            if fk is not None:
+                steam_map.setdefault(fk, (a, b))
+            steam_pairs.add((a, b))
+
     foreign = []
-    if steam_pairs:
+    if steam_map:
         for name, p in sorted(prod.items()):
-            # **只对 Steam 基线里存在的同名脚本判**：A-1 整脚本（5 个被 Steam 整段删除的
-            # 场景）与后日谈 `SL_*` 在 Steam 侧根本没有同名脚本 ⇒ 它们用的是原版编号，
-            # 而 Steam 也没有对应条目可点亮，保留原版编号是**正确**的，不属串号。
-            if name not in base:
-                continue
-            bad = (p.get('pairs') or set()) - steam_pairs
-            if bad:
-                foreign.append('%s: %d 个解锁对不在 Steam 编号集合 %s'
-                               % (name, len(bad), sorted(bad)[:4]))
+            # 基线里有同名脚本 ⇒ 其解锁对必须全在 Steam 集合内（值错也是一种缺陷）。
+            if name in base:
+                bad = (p.get('pairs') or set()) - steam_pairs
+                if bad:
+                    foreign.append('%s: %d 个解锁对不在 Steam 编号集合 %s'
+                                   % (name, len(bad), sorted(bad)[:4]))
+            # 新增脚本（A-1 整脚本 / 后日谈 SL_* / RIO 裸文件）⇒ 逐帧校验：
+            # 原版独有帧不得残留解锁对，有同帧则必须写成 Steam 的 (A,B)。
+            else:
+                bad = []
+                for disp, a, b in p.get('raw_pairs') or ():
+                    want = cgunlock.resolve_pair(disp, steam_map)
+                    if want is None:
+                        bad.append('%s(无同帧却留了解锁对 %d,%d)' % (disp, a, b))
+                    elif (a, b) != want:
+                        bad.append('%s(%d,%d≠Steam %d,%d)' % (disp, a, b, want[0], want[1]))
+                if bad:
+                    foreign.append('%s: %d 处解锁对未落到 Steam 编号空间 %s'
+                                   % (name, len(bad), bad[:3]))
 
     lost = []
     for name, b in sorted(base.items()):

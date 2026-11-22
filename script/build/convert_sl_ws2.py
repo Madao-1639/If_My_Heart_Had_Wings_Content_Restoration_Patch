@@ -13,6 +13,7 @@ sys.path.insert(0, str(BASE))
 
 from tool import scriptext  # noqa: E402
 from tool.ws2conv import convert_script  # noqa: E402
+from tool import cgunlock  # noqa: E402
 
 OUT_DIR = BASE / 'tmp' / '_l4' / 'asset' / 'RIO'
 SL_SCRIPTS = ['SL_KOT_001', 'SL_AGE_001', 'SL_AMA_001', 'SL_HUT_001']
@@ -33,10 +34,13 @@ def resolve_orig_dir(cli=None):
 
 def main(orig_dir):
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    # SL_* 同样是原版脚本：其显示点的 `(A,B)` 属于原版编号空间，必须归一到 Steam 侧，
+    # 否则会点亮 Steam 画廊里不相干的条目（判据见 tool/cgunlock.py）。
+    steam_unlock = cgunlock.default_map()
     for name in SL_SCRIPTS:
         src = orig_dir / 'RIO' / (name + '.ws2')
         raw = src.read_bytes()
-        out = convert_script(raw, orig_dir)
+        out = convert_script(raw, orig_dir, steam_unlock=steam_unlock)
         dst = OUT_DIR / (name + '.ws2')
         dst.write_bytes(out)
         print('%s: %d -> %d B (+%d) -> %s'

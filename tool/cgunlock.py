@@ -167,3 +167,66 @@ def flag_pair_bytes(a, b):
 def ach_call_bytes():
     """`04 CG_ACHIEVEMENT 00`（Steam 格式）一条指令的字节。"""
     return b'\x04' + ACH_CALL + b'\x00'
+
+
+def rewrite_unlock_pairs(instrs, steam_map):
+    """把序列里的解锁对改写／丢弃到 Steam 的编号空间（**整脚本级**出口）。
+
+    与 `tool/writer.py::rebuild_host._apply_unlock` 同口径、同判据，区别只在输入：
+    本函数吃 `[(off, op, ops)]`（带解码流偏移），把结果作为 `[(offset, op, ops)]`
+    返回，**偏移取保留下来那条指令各自的原始偏移**——`convert_script` 拿它重建
+    「原偏移 → 新偏移」映射，因此删掉的指令不会被重定基引用到。
+
+    ⚠️ 为什么要走这里：`convert_script`（A-1 整脚本回填 / SL）原本只做格式转换与
+    跳转重定基，**完全不碰解锁对** ⇒ 原版编号空间的 `(A,B)` 被原样写进 Steam 侧，
+    点亮的是 Steam 画廊里完全不相干（可能根本没有图）的条目。判据即本模块开头那两条：
+    有同帧则改写为 Steam 的 `(A,B)`，原版独有则丢弃。
+
+    `steam_map is None` ⇒ 原样返回（保留旧行为，供对照与测试）。
+    """
+    if not steam_map:
+        return list(instrs)
+    out, i, n = [], 0, len(instrs)
+    while i < n:
+        off, op, ops = instrs[i]
+        if op not in DISPLAY:
+            out.append((off, op, ops))
+            i += 1
+            continue
+        parts = ops.split(b'\x00')[:2]
+        name = None
+        if len(parts) >= 2:
+            try:
+                name = parts[1].decode('cp932')
+            except UnicodeDecodeError:
+                name = None
+        if not (name and name.upper().endswith('.PNG')):
+            out.append((off, op, ops))
+            i += 1
+            continue
+        # 解锁对＝紧跟其后的至多两个 `0b <u16> 01`（中间不允许插入显示／正文）
+        flags = []
+        k = i + 1
+        while k < n and len(flags) < 2:
+            op2, ops2 = instrs[k][1], instrs[k][2]
+            if op2 == FLAG and len(ops2) >= 3:
+                flags.append(k)
+                k += 1
+                continue
+            break
+        if len(flags) < 2:
+            out.append((off, op, ops))
+            i += 1
+            continue
+        pair = resolve_pair(name, steam_map)
+        out.append((off, op, ops))
+        if pair is not None:
+            for slot, val in ((flags[0], pair[0]), (flags[1], pair[1])):
+                fo, fop, fops = instrs[slot]
+                new_ops = struct.pack('<H', val) + fops[2:]
+                assert len(new_ops) == len(fops), \
+                    'unlock pair rewrite must keep length (%d != %d)' % (len(new_ops), len(fops))
+                out.append((fo, fop, new_ops))
+        # pair is None ⇒ 原版独有帧：两条解锁指令整对丢弃
+        i = flags[1] + 1
+    return out

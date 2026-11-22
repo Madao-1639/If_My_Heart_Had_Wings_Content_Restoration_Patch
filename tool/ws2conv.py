@@ -251,19 +251,59 @@ def emit(instrs, tail):
     return b''.join(bytes([op]) + ops for op, ops in instrs) + tail
 
 
-def convert_script(raw, orig_dir):
+def convert_script(raw, orig_dir, steam_unlock=None):
     """整脚本转换（A-1 / SL 用）：原版编码字节 → Steam 编码字节，含回读校验。
 
-    两步：① `convert()` 应用格式差并重定基；② `norm_flags()` 归化 `0x46`/`0x47` 的
-    跨引擎标志字节（长度不变，不影响已算好的偏移）。
+    三步：
+      ⓪ **解锁对归一**（`steam_unlock` 非空时）：原版编号空间的 `(A,B)` 不能照抄进
+         Steam 侧（见 `tool/cgunlock.py`）——有同帧则改写成 Steam 的 `(A,B)`，
+         原版独有帧则整对丢弃。丢弃会让后续指令前移，所以必须**在 `convert()` 之前**
+         做，并把所有跳转目标按「被删字节数」前移，再交给 `convert()` 做格式转换与重定基。
+      ① `convert()` 应用格式差并重定基；
+      ② `norm_flags()` 归化 `0x46`/`0x47` 的跨引擎标志字节（长度不变，不影响偏移）。
     """
-    from tool import ws2
+    from tool import ws2, cgunlock
     d = ws2.decode(raw)
     instrs, tail = parse(d, load_orig_formats(orig_dir))
+    if steam_unlock:
+        seq, p = [], 0
+        for op, ops in instrs:
+            seq.append((p, op, ops))
+            p += 1 + len(ops)
+        kept = cgunlock.rewrite_unlock_pairs(seq, steam_unlock)
+        if len(kept) != len(seq):
+            # 被丢弃的指令区间（按原始偏移累计），用于把跳转目标前移
+            keep_off = {off for off, _op, _ops in kept}
+            drops = []                     # [(原偏移, 长度)] 升序
+            for off, op, ops in seq:
+                if off not in keep_off:
+                    drops.append((off, 1 + len(ops)))
+            drop_ends = [off + ln for off, ln in drops]
+
+            def shift(tgt):
+                """原偏移 → 删对后的偏移（tgt 落在被删区间内则报错）。"""
+                import bisect
+                k = bisect.bisect_right(drop_ends, tgt)
+                if k < len(drops) and drops[k][0] <= tgt < drop_ends[k]:
+                    raise AssertionError(
+                        'jump target %#x lands inside a dropped unlock pair' % tgt)
+                return tgt - sum(ln for _off, ln in drops[:k])
+
+            fixed = []
+            for off, op, ops in kept:
+                for koff in REBASE_OPS.get(op, ()):
+                    if len(ops) < koff + 4:
+                        continue
+                    v = struct.unpack_from('<I', ops, koff)[0]
+                    if v == 0:
+                        continue
+                    ops = ops[:koff] + struct.pack('<I', shift(v)) + ops[koff + 4:]
+                fixed.append((op, ops))
+            instrs = fixed
     conv = norm_flags(convert(instrs))
     out_decoded = emit(conv, tail)
     back, back_tail = parse(out_decoded, ws2dis.FORMATS)
-    assert len(back) == len(conv), 'instruction count changed: %d -> %d' % (len(instrs), len(back))
+    assert len(back) == len(conv), 'instruction count changed: %d -> %d' % (len(conv), len(back))
     assert [op for op, _ in back] == [op for op, _ in conv], 'opcode sequence changed'
     assert [ops for _, ops in back] == [ops for _, ops in conv], 'operand roundtrip mismatch'
     assert back_tail == tail, 'tail changed'

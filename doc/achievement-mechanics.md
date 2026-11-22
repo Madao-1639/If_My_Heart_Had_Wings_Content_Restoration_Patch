@@ -121,11 +121,9 @@ for i in 0..count-1:
 
 脚本层的 `0xF0` 扫描可复现：`tool/ws2dis.py --arc <Rio.arc>`（解析率 153/158）。
 
-## 五、为什么还原不需要动它
+## 五、本补丁视角
 
-成就的**数据与触发条件**全在脚本层（`0x0b` 变量对 + `F0 <idx>` + `CG_Achievement.ws2`），引擎只做「按 idx 查运行时表 → 调 `SetAchievement` + `StoreStats`」。
-
-⇒ **只要原样保留 Steam 脚本里的成就指令，成就行为即完整复现**，不需要理解引擎内部实现，也不需要还原 `CG_Achievement.ws2`（Steam 版已含且未被删改）。
+成就的数据与触发条件全在脚本层（`0x0b` 变量对 + `F0 <idx>` + `CG_Achievement.ws2`），引擎只做「按 idx 查运行时表 → 调 `SetAchievement` + `StoreStats`」⇒ 原样保留指令即可。处置纪律与验收量见 [engine-mechanics.md](engine-mechanics.md) §成就触发点契约 与 [acceptance-criteria.md](acceptance-criteria.md)「成就触发点完整性」。
 
 ## 参考
 
